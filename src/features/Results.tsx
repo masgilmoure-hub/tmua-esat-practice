@@ -1,0 +1,43 @@
+import { useState } from 'react';
+import { ArrowRight, CheckCircle2, ExternalLink, XCircle } from 'lucide-react';
+import type { Question, Result } from '../types';
+import { useI18n } from '../i18n';
+import { formatTime, summary } from '../domain';
+import { moduleInfo } from '../data/catalog';
+import { Notice, PageHeading, PrivacyNote } from '../components/Common';
+
+type ExplanationMode = 'both' | 'zh' | 'en';
+function ReviewItem({ q, index, answer, mode }: { q: Question; index: number; answer: number | undefined; mode: ExplanationMode }) {
+  const { t, lang } = useI18n();
+  const correct = answer === q.correctIndex;
+  const languages = mode === 'both' ? ['zh', 'en'] as const : [mode];
+  return <article className="panel review-item" aria-label={t(`第 ${index + 1} 题解析`, `Explanation for question ${index + 1}`)}>
+    <div className="question-id">Question {index + 1} · {q.id}</div><p lang="en" className="review-prompt">{q.prompt}</p>
+    <div className={`answer-verdict ${correct ? 'correct' : 'wrong'}`}>{correct ? <CheckCircle2 size={18} /> : <XCircle size={18} />}<span>{correct ? t('回答正确', 'Correct') : answer === undefined ? t('未作答', 'Unanswered') : t('回答错误', 'Incorrect')} · {t('你的答案', 'Your answer')} {answer === undefined ? '—' : String.fromCharCode(65 + answer)} · {t('正确答案', 'Correct answer')} {String.fromCharCode(65 + q.correctIndex)}</span></div>
+    <div className="correct-answer" lang="en">{String.fromCharCode(65 + q.correctIndex)}. {q.options[q.correctIndex]}</div>
+    <details className="review-options"><summary>{t('查看全部选项', 'View all options')}</summary><ul>{q.options.map((option, i) => <li key={i} lang="en" className={i === q.correctIndex ? 'correct-text' : ''}>{String.fromCharCode(65 + i)}. {option}{i === q.correctIndex ? <CheckCircle2 size={14} /> : null}</li>)}</ul></details>
+    <h3>{mode === 'both' ? '完整解析 / Explanation' : mode === 'zh' ? '完整解析' : 'Explanation'}</h3>
+    <ol className="explanation-steps">{q.explanation[languages[0]].steps.map((_, i) => <li key={i}>{languages.map(language => <p lang={language === 'zh' ? 'zh-CN' : 'en'} key={language} className={language === 'en' && mode === 'both' ? 'english-explanation' : ''}>{q.explanation[language].steps[i]}</p>)}</li>)}</ol>
+    <div className="pitfall"><h4>{mode === 'both' ? '易错点 / Common pitfall' : mode === 'zh' ? '易错点' : 'Common pitfall'}</h4>{languages.map(language => <p key={language} lang={language === 'zh' ? 'zh-CN' : 'en'}>{q.explanation[language].pitfall}</p>)}</div>
+    <p className="review-source small muted">{t('原始来源', 'Original source')}：{q.source.title[lang]} · {q.source.originalNumber}{q.source.year ? ` · ${q.source.year}` : ''}{q.source.url ? <a href={q.source.url} target="_blank" rel="noreferrer">{t('来源链接', 'Source link')}<ExternalLink size={12} /></a> : null}</p>
+  </article>;
+}
+
+export function Results({ result, onRetry, onBank }: { result: Result; onRetry: (questions: Question[], limit: null) => void; onBank: () => void }) {
+  const { t, lang } = useI18n();
+  const [filter, setFilter] = useState<'all' | 'wrong'>('all');
+  const [mode, setMode] = useState<ExplanationMode>('both');
+  const stats = summary(result);
+  const mistakes = result.questions.filter(q => result.answers[q.id] !== q.correctIndex);
+  const displayed = filter === 'wrong' ? mistakes : result.questions;
+  return <>
+    <PageHeading title={t('每一次复盘，都是进步。', 'Learn from every attempt.')} subtitle={t(`${result.mode === 'mock' ? '缩短版示例模考' : '专项训练'} · ${stats.total} 道原创示例题 · 本地练习记录`, `${result.mode === 'mock' ? 'Shortened demo mock' : 'Focused practice'} · ${stats.total} original demos · local record`)} />
+    {result.expiredSections.length ? <Notice tone="warning">{t('本次有部分答题时间已到，系统自动提交。未答题单独计数，不计为答对。', 'One or more sections timed out and were submitted automatically. Unanswered questions are counted separately and do not count as correct.')}</Notice> : null}
+    <div className="result-stats" aria-label={t('本次结果', 'Attempt results')}><div><span>{t('答对题数', 'Correct answers')}</span><strong>{stats.correct} / {stats.total}</strong></div><div><span>{t('正确率', 'Accuracy')}</span><strong>{stats.accuracy}%</strong></div><div><span>{t('用时', 'Time spent')}</span><strong>{formatTime(result.elapsedSeconds)}</strong></div><div><span>{t('未答', 'Unanswered')}</span><strong>{stats.unanswered}</strong></div></div>
+    <p className="muted score-note">{t('本原型不换算官方 1–9 分。正确率以全部题目为分母；用时为各部分答题时间之和。', 'No conversion to official 1–9 scores. Accuracy uses all questions; time is the sum of answering time in each section.')}</p>
+    {result.mode === 'mock' ? <section className="panel section-results"><h2>{t('分卷 / 模块结果', 'Section results')}</h2><table><thead><tr><th>{t('试卷 / 模块', 'Section')}</th><th>{t('答对 / 总数', 'Correct / total')}</th><th>{t('用时', 'Time spent')}</th></tr></thead><tbody>{result.sections.map((section, i) => <tr key={section.moduleId}><td>{moduleInfo(section.moduleId).name[lang]}</td><td>{section.questionIds.filter(id => result.answers[id] === result.questions.find(q => q.id === id)?.correctIndex).length} / {section.questionIds.length}</td><td>{formatTime(result.sectionElapsed[i])}{result.expiredSections.includes(i) ? <span className="small muted"> · {t('时间到', 'Timed out')}</span> : null}</td></tr>)}</tbody></table></section> : null}
+    <div className="two-columns result-layout"><section className="review-column"><h2>{t('答案与解析', 'Answers & explanations')}</h2><div className="review-toolbar"><div className="review-tabs"><button aria-pressed={filter === 'all'} className={`button compact ${filter === 'all' ? 'primary' : 'secondary'}`} onClick={() => setFilter('all')}>{t('全部', 'All')} {stats.total}</button><button aria-pressed={filter === 'wrong'} className={`button compact ${filter === 'wrong' ? 'primary' : 'secondary'}`} onClick={() => setFilter('wrong')}>{t('仅错题 / 未答', 'Wrong / unanswered')} {mistakes.length}</button></div><div className="explanation-select"><label htmlFor="explanation-mode">{t('解析语言', 'Explanation language')}</label><select id="explanation-mode" value={mode} onChange={e => setMode(e.target.value as ExplanationMode)}><option value="both">{t('中英双语', 'Chinese & English')}</option><option value="zh">{t('仅中文', 'Chinese only')}</option><option value="en">{t('仅英文', 'English only')}</option></select></div></div>
+      {displayed.length ? displayed.map(q => <ReviewItem key={q.id} q={q} index={result.questions.findIndex(item => item.id === q.id)} answer={result.answers[q.id]} mode={mode} />) : <div className="empty-state panel"><CheckCircle2 size={30} /><h3>{t('本次全部答对了', 'All answers correct')}</h3><p>{t('可以返回题库选择其他知识点继续练习。', 'Choose another topic in the question bank to keep practising.')}</p></div>}
+    </section><aside className="sidebar-stack"><section className="panel performance-panel"><h2>{t('知识点表现', 'Topic performance')}</h2><div className="topic-performance">{stats.topics.map(topic => <div key={topic.name.en}><div className="performance-label"><strong>{topic.name[lang]}</strong><span>{topic.correct} / {topic.total}</span></div><div className="progress-track" role="meter" aria-label={topic.name[lang]} aria-valuemin={0} aria-valuemax={topic.total} aria-valuenow={topic.correct}><div style={{ width: `${topic.correct / topic.total * 100}%` }} /></div><span className="performance-percent">{Math.round(topic.correct / topic.total * 100)}%</span></div>)}</div><p className="muted small">{t('样本较少，表现仅供本次复盘，不代表完整知识掌握程度。', 'Small sample: these results describe this attempt, not complete topic mastery.')}</p><button className="button primary full" disabled={!mistakes.length} onClick={() => onRetry(mistakes, null)}>{t('练习本次错题', 'Practise these mistakes')}<ArrowRight size={17} /></button><button className="button outline full" onClick={onBank}>{t('返回题库', 'Back to question bank')}</button><PrivacyNote /></section></aside></div>
+  </>;
+}

@@ -1,0 +1,28 @@
+import { useState } from 'react';
+import { ArrowRight, BookOpen, Trash2 } from 'lucide-react';
+import type { Exam, Question, Result } from '../types';
+import { QUESTIONS } from '../data/questions';
+import { formatTime, latestOutcomes, summary } from '../domain';
+import { useI18n } from '../i18n';
+import { ConfirmDialog, PageHeading, PrivacyNote } from '../components/Common';
+
+export function History({ results, onResult, onPractice, onClear, onBank }: { results: Result[]; onResult: (id: string) => void; onPractice: (questions: Question[], limit: null) => void; onClear: () => void; onBank: () => void }) {
+  const { t, lang } = useI18n();
+  const [tab, setTab] = useState<'records' | 'mistakes'>('records');
+  const [confirm, setConfirm] = useState(false);
+  const [mistakeExam, setMistakeExam] = useState<Exam>('TMUA');
+  const outcomes = latestOutcomes(results);
+  const allMistakes = QUESTIONS.filter(q => outcomes[q.id] === 'wrong' || outcomes[q.id] === 'unanswered');
+  const mistakes = allMistakes.filter(q => q.exam === mistakeExam);
+  const dates = new Intl.DateTimeFormat(lang === 'zh' ? 'zh-CN' : 'en-GB', { dateStyle: 'medium', timeStyle: 'short', timeZone: 'Asia/Shanghai' });
+  return <>
+    <PageHeading title={t('留住练习，积累进步。', 'Keep your practice. Build your progress.')} subtitle={t('回看每次练习，也给错题一次新的机会。', 'Review each attempt and give mistakes another try.')}><button className="button secondary" onClick={() => setConfirm(true)}><Trash2 size={16} />{t('清空本地数据', 'Clear local data')}</button></PageHeading>
+    <PrivacyNote />
+    <div className="history-tabs"><button className={tab === 'records' ? 'active' : ''} onClick={() => setTab('records')} aria-pressed={tab === 'records'}>{t('练习记录', 'Attempt records')} <span>{results.length}</span></button><button className={tab === 'mistakes' ? 'active' : ''} onClick={() => setTab('mistakes')} aria-pressed={tab === 'mistakes'}>{t('错题本', 'Mistake notebook')} <span>{allMistakes.length}</span></button></div>
+    {tab === 'records' ? results.length ? <section className="panel records-panel"><div className="table-scroll"><table className="records-table"><thead><tr><th>{t('练习', 'Attempt')}</th><th>{t('时间（北京时间）', 'Date (Shanghai time)')}</th><th>{t('答对 / 总数', 'Correct / total')}</th><th>{t('正确率', 'Accuracy')}</th><th>{t('用时', 'Time spent')}</th><th><span className="sr-only">{t('查看', 'View')}</span></th></tr></thead><tbody>{[...results].reverse().map(result => { const s = summary(result); return <tr key={result.id}><td><strong>{result.exam} · {result.mode === 'mock' ? t('缩短版示例模考', 'Shortened demo mock') : t('专项训练', 'Practice')}</strong><small>{t(`${s.total} 道原创示例题`, `${s.total} original demos`)}</small></td><td>{dates.format(result.finishedAt)}</td><td>{s.correct} / {s.total}</td><td>{s.accuracy}%</td><td>{formatTime(result.elapsedSeconds)}</td><td><button className="button outline compact" onClick={() => onResult(result.id)}>{t('查看结果', 'View results')}</button></td></tr>; })}</tbody></table></div><p className="small muted retention-note">{t('最多保留最近 200 次提交。刷新会保留记录，清除浏览器数据或更换网址 / 浏览器不会迁移记录。', 'Keeps the last 200 submissions. Reloading retains records; clearing data or changing origin/browser does not migrate them.')}</p></section> : <div className="empty-state panel"><BookOpen size={32} /><h2>{t('从第一次练习开始', 'Start with your first practice')}</h2><p>{t('完成并提交练习后，结果会显示在这里。', 'Complete and submit a set to see your results here.')}</p><button className="button primary" onClick={onBank}>{t('前往题库', 'Go to question bank')}<ArrowRight size={17} /></button></div> : <>
+      <div className="mistakes-toolbar"><div><p className="muted">{t('按每题最近一次提交更新：答错或未答会进入错题本，重新答对后移出。', 'Based on each question’s latest submission: wrong or unanswered questions stay here until answered correctly.')}</p><div className="mistake-exam-label"><label htmlFor="mistake-exam">{t('错题考试', 'Exam for mistakes')}</label><select id="mistake-exam" value={mistakeExam} onChange={e => setMistakeExam(e.target.value as Exam)}><option>TMUA</option><option>ESAT</option></select></div></div><button className="button primary" disabled={!mistakes.length} onClick={() => onPractice(mistakes, null)}>{t('练习全部错题', 'Practise all mistakes')}<ArrowRight size={17} /></button></div>
+      {mistakes.length ? <section className="panel mistakes-list">{mistakes.map(q => <div className="mistake-row" key={q.id}><div><span className="question-id">DEMO · {q.id}</span><p lang="en">{q.prompt}</p><span className="topic-label">{q.topic.name[lang]} / {q.subtopic.name[lang]}</span></div><span className="status wrong">{outcomes[q.id] === 'unanswered' ? t('未答', 'Unanswered') : t('答错', 'Wrong')}</span><button className="button outline compact" onClick={() => onPractice([q], null)}>{t('重练', 'Retry')}</button></div>)}</section> : <div className="empty-state panel"><h2>{t('暂无错题', 'No mistakes yet')}</h2><p>{t('错题和未答题会在交卷后自动整理到这里。', 'Wrong and unanswered questions will appear here after submission.')}</p></div>}
+    </>}
+    <ConfirmDialog open={confirm} title={t('清空本地数据？', 'Clear local data?')} confirmLabel={t('确认清空', 'Clear all')} danger onCancel={() => setConfirm(false)} onConfirm={() => { setConfirm(false); onClear(); }}><p>{t('将删除此浏览器中的全部练习记录、错题和正在进行的练习。此操作无法撤销。', 'This deletes all records, mistakes and the active set in this browser. This cannot be undone.')}</p></ConfirmDialog>
+  </>;
+}

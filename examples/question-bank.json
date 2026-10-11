@@ -1,0 +1,27 @@
+{
+  "schemaVersion": 1,
+  "questions": [
+    {
+      "id": "TMUA-P1-001",
+      "exam": "TMUA",
+      "moduleId": "p1",
+      "topic": { "id": "algebra", "name": { "zh": "代数", "en": "Algebra" } },
+      "subtopic": { "id": "quadratics", "name": { "zh": "二次方程", "en": "Quadratics" } },
+      "prompt": "The roots of x² − 5x + 6 = 0 are a and b. What is a² + b²?",
+      "options": ["5", "7", "13", "25", "37"],
+      "correctIndex": 2,
+      "explanation": {
+        "zh": { "steps": ["由韦达定理，a + b = 5，ab = 6。", "a² + b² = (a + b)² − 2ab = 25 − 12 = 13。"], "pitfall": "平方和不等于和的平方。" },
+        "en": { "steps": ["By Vieta’s formulas, a + b = 5 and ab = 6.", "a² + b² = (a + b)² − 2ab = 25 − 12 = 13."], "pitfall": "The sum of squares is not the square of the sum." }
+      },
+      "source": {
+        "kind": "original-demo",
+        "title": { "zh": "原创示例", "en": "Original demo" },
+        "url": null,
+        "originalNumber": "DEMO-TMUA-P1-001",
+        "year": null,
+        "rightsNote": "Original prototype content. Not an official exam question."
+      }
+    }
+  ]
+}
