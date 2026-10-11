@@ -38,6 +38,10 @@ export function validQuestion(value: unknown): value is Question {
     || typeof s.originalNumber !== 'string' || !s.originalNumber.trim() || typeof s.rightsNote !== 'string' || !s.rightsNote.trim()
     || !(s.year === null || integer(s.year)) || !(s.url === null || safeSourceUrl(s.url))
     || (s.kind === 'official-public' && s.url === null)) return false;
+  if (value.external !== undefined && (!obj(value.external) || value.external.kind !== 'linked-paper'
+    || !safeSourceUrl(value.external.workedAnswersUrl) || !safeSourceUrl(value.external.answerKeyUrl)
+    || s.kind !== 'official-public' || s.url === null || s.year === null
+    || value.options.length !== 8 || value.options.some((option, i) => option !== String.fromCharCode(65 + i)))) return false;
   return true;
 }
 

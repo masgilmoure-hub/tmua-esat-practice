@@ -13,7 +13,7 @@ function FilterRow({ label, choices, value, onChange }: { label: string; choices
   return <fieldset className="filter-row"><legend>{label}</legend><div className="filter-choices">{choices.map(choice => <button key={choice.id} type="button" className={`filter-chip ${choice.id === value ? 'selected' : ''}`} aria-pressed={value === choice.id} onClick={() => onChange(choice.id)}>{choice.label}</button>)}</div></fieldset>;
 }
 
-export function QuestionBank({ bank, filters, onFilters, results, onPractice, trainingPage = false }: { bank: ReturnType<typeof useQuestionBank>; filters: Filters; onFilters: (filters: Filters) => void; results: Result[]; onPractice: (questions: Question[], limitSeconds: number | null) => void; trainingPage?: boolean }) {
+export function QuestionBank({ bank, filters, onFilters, results, onPractice, onArchive, trainingPage = false }: { bank: ReturnType<typeof useQuestionBank>; filters: Filters; onFilters: (filters: Filters) => void; results: Result[]; onPractice: (questions: Question[], limitSeconds: number | null) => void; onArchive: () => void; trainingPage?: boolean }) {
   const { t, lang } = useI18n();
   const [page, setPage] = useState(0);
   const [count, setCount] = useState(3);
@@ -34,6 +34,7 @@ export function QuestionBank({ bank, filters, onFilters, results, onPractice, tr
     <PageHeading title={trainingPage ? t('有目标地练习，逐步突破。', 'Focused practice. Steady progress.') : t('把练习，做得更有方向。', 'Give your practice a clear direction.')} subtitle={t('按知识点找到题目，从每一次练习中看见进步。', 'Find questions by topic and learn from every attempt.')} />
     <a href="#training-settings" className="button outline mobile-training-link">{t('设置专项训练', 'Set up practice')}<ArrowRight size={16} /></a>
     {questions.every(q => q.source.kind === 'original-demo') ? <DemoNotice /> : <Notice>{t('题目按文件声明的来源展示。导入材料仅保存在当前浏览器，专项训练不代表完整官方模考。', 'Sources reflect file declarations. Imports are stored in this browser; focused practice is not a full official mock.')}</Notice>}
+    <div className="official-entry"><div><strong>{t('想练官方历年真题？', 'Ready for official past papers?')}</strong><p className="small muted">{t('TMUA 2016–2023 两卷原卷 · 320 题答题卡 · 原题在官方 PDF', 'TMUA 2016–2023 · answer sheets for 320 questions · originals in official PDFs')}</p></div><button className="button outline compact" onClick={onArchive}>{t('打开官方历年卷', 'Browse past papers')}<ArrowRight size={16} /></button></div>
     <BankManager bank={bank} />
     <div className="two-columns bank-layout">
       <section className="panel bank-panel" aria-label={t('题库筛选和题目', 'Question filters and list')}>

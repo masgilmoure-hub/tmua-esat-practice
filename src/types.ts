@@ -14,6 +14,9 @@ export interface Question {
   options: string[];
   correctIndex: number;
   difficulty?: Difficulty;
+  // A letter-only answer sheet referring to an unchanged official PDF.
+  // The prompt/options are UI instructions, not transcribed exam content.
+  external?: { kind: 'linked-paper'; workedAnswersUrl: string; answerKeyUrl: string };
   explanation: Record<Language, { steps: string[]; pitfall: string }>;
   source: {
     kind: 'original-demo' | 'official-public';

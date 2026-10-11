@@ -109,6 +109,7 @@ export function topicRecommendations(result: Result, bank: Question[], results: 
   const outcomes = latestOutcomes(results);
   const groups = new Map<string, TopicRecommendation>();
   for (const q of result.questions) {
+    if (q.external) continue;
     const key = `${q.moduleId}:${q.topic.id}`;
     const row = groups.get(key) ?? { moduleId: q.moduleId, topicId: q.topic.id, name: q.topic.name, total: 0, missed: 0, fresh: [], retry: [] };
     row.total++;
