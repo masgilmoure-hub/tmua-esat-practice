@@ -32,7 +32,9 @@ npm run preview:standalone
 
 ## 部署学生测试网址
 
-已提供 GitHub Pages 自动验证与部署工作流。仓库管理员首次在 **Settings → Pages → Source** 选择 **GitHub Actions**，再在 Actions 手动运行 `Validate and deploy student preview`；此后推送到 `main` 自动验证并部署。最终网址、上线验收和回退说明见 [部署说明](docs/deployment.md)。成功推送代码不等于网站已经上线。
+当前学生测试网址：[TMUA / ESAT Practice](https://tmua-esat-practice-test.tealcreek7.chatgpt.site)。已通过 Codex Sites 发布，持有链接即可访问；仍为原创示例题原型，记录不跨设备同步。线上资源与本仓库生产构建一致，12 项交互检查通过；云 Chromium 的证书信任限制及验证方式见 [验证记录](docs/validation.md)。
+
+后续代码提交到 GitHub 不会自动更新这次 Sites 部署，需在同一站点发布新版本。GitHub Pages 保留为**手动备用工作流**：当前私有仓库的 GitHub 套餐不支持启用 Pages。部署方式、上线验收和回退说明见 [部署说明](docs/deployment.md)。
 
 ## 已实现
 
