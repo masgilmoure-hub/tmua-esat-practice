@@ -6,13 +6,23 @@
 
 - 名称：`TMUA / ESAT Practice`。
 - 网址：<https://tmua-esat-practice-test.tealcreek7.chatgpt.site>。
-- 访问：公开可访问，持有链接即可打开。
+- 访问模式：公开；平台域名的防护策略仍可能拒绝部分访问，详见下述学生反馈。
 - 来源：GitHub `main` 的 `228627d9644eebbea222d6c5ebdd4ad794af943e`，部署副本仅添加 `.openai/hosting.json` 静态托管配置，应用源码保持一致。
 - 构建：`npm run build`；静态目录：`dist`。
 
 2026-10-11 已确认网址及 HTML/JavaScript/CSS 返回成功，线上资源字节与当前生产构建一致。12 项交互测试在生产网址 origin 下通过；测试使用保留 TLS 验证的 curl 传输线上资源，因为云 Chromium 原生 HTTPS 导航遇到 `ERR_CERT_AUTHORITY_INVALID`。这项限制、覆盖范围及结果详见 [验证记录](validation.md)。普通学生浏览器的原生 HTTPS 打开仍需实际试用确认。
 
 更新时请使用此**已有站点**发布新版本，避免重复创建新站点。当前发布是手动执行的，GitHub `main` 更新不会自动替换 Sites 已发布版本。正式更改应用代码后，应先跑构建与测试，再通过 Sites 更新相同网址并复测。记录随网址 origin 保存，尽量保持现有网址稳定。
+
+### 学生访问被拦截（未解决）
+
+2026-10-11 学生反馈页面显示“Sorry, you have been blocked / You are unable to access chatgpt.site”。这是托管域名的安全拦截页，尚未进入应用；不能仅据此确定地区、IP 或浏览器是哪一项触发规则。同一时段从当前云环境以默认请求和桌面浏览器 User-Agent 获取该网址均为 HTTP 200、应用标题正确，未复现拦截。
+
+排查应记录学生使用的实际 URL、地区、浏览器、网络类型、时间及拦截页底部的 Ray ID（若显示）。先在普通 Chrome/Safari 中直接打开完整 HTTPS 链接，再用 Wi-Fi/移动网络各测试一次，观察是否局限于内置浏览器或某一网络。不要在公开文档中记录学生的 IP 或身份信息。
+
+若仍被拦截，需要 Sites 平台核查该访问请求的防护规则，或迁移至经学生真实网络验证可访问的托管网址；当前会话未提供 Sites 管理/防护设置工具，不能直接解除此拦截。当前无可用的替代公网部署凭据，迁移尚未执行。
+
+临时电脑试用可用已生成的自包含 HTML 文件：在项目运行 `npm run preview:standalone`，下载 `dist/tmua-esat-preview.html`，通过电脑浏览器打开。它不请求 `chatgpt.site` 或 CDN，保持现有完整练习功能；文件协议下的本地存储取决于浏览器，不代替稳定的线上托管或跨设备同步。
 
 ## GitHub Pages（手动备用）
 
