@@ -53,6 +53,37 @@ fieldset { border: 0; padding: 0; margin: 0; min-width: 0; }
 .panel { background: #fff; border: 1px solid var(--line); border-radius: 10px; }
 .sidebar-stack { display: flex; flex-direction: column; gap: 20px; }
 .sidebar-stack > .privacy-note { padding: 0 6px; }
+.bank-manager { margin-bottom: 22px; }
+.bank-manager > summary { display: flex; align-items: center; flex-wrap: wrap; gap: 10px; padding: 17px 22px; cursor: pointer; font-weight: 600; }
+.bank-manager > summary .muted { margin-left: auto; font-weight: 400; }
+.bank-manager[open] .manager-chevron { transform: rotate(180deg); }
+.bank-manager-content { padding: 0 22px 22px; border-top: 1px solid var(--line); }
+.bank-manager-content > h2 { margin-top: 20px; }
+.bank-manager-actions { display: flex; flex-wrap: wrap; align-items: center; gap: 12px; margin: 18px 0; }
+.import-inputs { display: grid; grid-template-columns: minmax(0, 1fr) minmax(0, 2fr); gap: 20px; }
+.import-inputs input[type="file"] { max-width: 100%; white-space: normal; font-size: 13px; }
+.import-inputs textarea { width: 100%; resize: vertical; font: 13px/1.6 monospace; color: inherit; background: #fafbfc; border: 1px solid #dce3e9; border-radius: 8px; padding: 12px; min-height: 130px; }
+.import-errors, .import-message, .import-preview { margin-top: 18px; padding: 16px 18px; border-radius: 10px; overflow-wrap: anywhere; }
+.import-errors, .import-message.error { background: #fff1f0; color: #9c3131; }
+.import-message.success { background: #eef8f3; color: #23684d; }
+.import-errors ul { padding-left: 22px; }
+.import-preview { background: #f5f8fb; border: 1px solid #dce3e9; }
+.import-preview ul { list-style: none; padding: 0; }
+.import-preview li { padding: 12px 0; border-bottom: 1px solid #dce3e9; }
+.import-preview li p { margin: 6px 0; }
+.import-confirm { display: flex; align-items: start; gap: 10px; margin: 20px 0; font-size: 14px; }
+.import-confirm input { flex-shrink: 0; margin-top: 4px; }
+.difficulty-note { padding: 0 22px; margin-bottom: 0; }
+.question-provenance { margin-top: 5px; overflow-wrap: anywhere; }
+.recommendation-panel { padding: 24px; }
+.topic-recommendation { border-top: 1px solid #e5ebef; padding-top: 16px; margin-top: 16px; }
+.topic-recommendation > strong, .topic-recommendation > span { display: block; margin-bottom: 5px; }
+@media (max-width: 640px) {
+  .import-inputs { grid-template-columns: minmax(0, 1fr); gap: 0; }
+  .bank-manager > summary, .bank-manager-content { padding-left: 16px; padding-right: 16px; }
+  .bank-manager > summary .muted { margin-left: 0; }
+  .recommendation-panel { padding: 20px; }
+}
 .button { display: inline-flex; align-items: center; justify-content: center; gap: 9px; min-height: 44px; padding: 10px 18px; border-radius: 6px; border: 1px solid transparent; font-weight: 500; line-height: 1.4; transition: background .12s, border-color .12s; }
 .button.primary { background: var(--blue); color: #fff; border-color: var(--blue); }
 .button.primary:hover:not(:disabled) { background: #224ad1; border-color: #224ad1; }

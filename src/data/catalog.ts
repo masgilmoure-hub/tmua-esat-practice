@@ -1,4 +1,11 @@
-import type { Bilingual, Exam, ModuleId } from '../types';
+import type { Bilingual, Difficulty, Exam, ModuleId } from '../types';
+
+export const DIFFICULTIES: Record<Difficulty | 'unrated', Bilingual> = {
+  foundation: { zh: '基础', en: 'Foundation' },
+  standard: { zh: '进阶', en: 'Standard' },
+  challenge: { zh: '挑战', en: 'Challenge' },
+  unrated: { zh: '未标注', en: 'Unrated' },
+};
 
 export const MODULES: { id: ModuleId; exam: Exam; name: Bilingual; questions: number; minutes: number }[] = [
   { id: 'p1', exam: 'TMUA', name: { zh: 'Paper 1 · 数学应用', en: 'Paper 1 · Applications' }, questions: 20, minutes: 75 },

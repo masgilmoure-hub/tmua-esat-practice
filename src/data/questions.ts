@@ -8,6 +8,8 @@ function demo(moduleId: ModuleId, number: number, topic: string, subtopic: [stri
     id, exam, moduleId, topic: { id: topic, name: TOPICS[topic] },
     subtopic: { id: subtopic[0], name: { zh: subtopic[1], en: subtopic[2] } },
     prompt, options, correctIndex,
+    // Teaching estimates for these demos, not calibrated official difficulty.
+    difficulty: moduleId === 'p2' || (moduleId === 'm2' && number !== 2) || (moduleId === 'm1' && number === 2) || (moduleId === 'physics' && number === 1) ? 'standard' : 'foundation',
     explanation: { zh: { steps: zhSteps, pitfall: zhPitfall }, en: { steps: enSteps, pitfall: enPitfall } },
     source: { kind: 'original-demo', title: { zh: '原创示例', en: 'Original demo' }, url: null, originalNumber: `DEMO-${id}`, year: null, rightsNote: 'Original prototype content. Not an official exam question.' },
   };

@@ -5,7 +5,7 @@ import { closeSection, createSession, filterQuestions, latestOutcomes, remaining
 import { emptyState, loadState, STORAGE_KEY, validQuestion } from '../src/storage';
 import type { Filters, Result } from '../src/types';
 
-const filters: Filters = { exam: 'TMUA', moduleId: 'all', topic: 'all', subtopic: 'all', source: 'all', status: 'all' };
+const filters: Filters = { exam: 'TMUA', moduleId: 'all', topic: 'all', subtopic: 'all', source: 'all', status: 'all', difficulty: 'all' };
 const q = QUESTIONS[0];
 function attempt(answer: number | undefined, now: number): Result {
   const active = createSession([q], [{ moduleId: q.moduleId, questionIds: [q.id], limitSeconds: null }], 'practice', now);

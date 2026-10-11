@@ -39,15 +39,15 @@ export function Session({ session, onAnswer, onFlag, onNavigate, onSubmit, onNex
       </section></>;
   }
   return <>
-    <PageHeading title={title} subtitle={t('原创示例 · 练习流程体验，非完整官方模考', 'Original demos · practice flow preview, not a full official mock')} />
-    <Notice tone="warning">{session.mode === 'mock' ? t(`本部分仅含 ${questions.length} 道原创示例题，按题量比例缩短计时。`, `This section has only ${questions.length} original demos with proportionally shorter timing.`) : t('题目为原创示例。交卷后可查看完整解析和易错点。', 'These are original demos. Full explanations and pitfalls are available after submission.')}</Notice>
+    <PageHeading title={title} subtitle={session.questions.every(q => q.source.kind === 'original-demo') ? t('原创示例 · 练习流程体验，非完整官方模考', 'Original demos · practice flow preview, not a full official mock') : t('本地题库专项训练 · 非完整官方模考', 'Focused practice from the local bank · not a full official mock')} />
+    <Notice tone="warning">{session.mode === 'mock' ? t(`本部分仅含 ${questions.length} 道原创示例题，按题量比例缩短计时。`, `This section has only ${questions.length} original demos with proportionally shorter timing.`) : session.questions.every(q => q.source.kind === 'original-demo') ? t('题目为原创示例。交卷后可查看完整解析和易错点。', 'These are original demos. Full explanations and pitfalls are available after submission.') : t('题目来源按导入文件标注。交卷后可查看完整解析和易错点。', 'Sources reflect the imported files. Full explanations and pitfalls are available after submission.')}</Notice>
     <div className="session-bar"><strong>{session.mode === 'mock' ? moduleInfo(section.moduleId).name[lang] : t(`${session.exam} · 专项训练`, `${session.exam} · Focused practice`)}</strong><SessionClock session={session} /></div>
     <div className="two-columns answering-layout">
       <section className="panel answer-panel" aria-label={t('答题区', 'Answer area')}>
         <div className="answer-content"><div className="question-top"><span>Question {session.questionIndex + 1} of {questions.length}</span><button className={`text-button flag-button ${session.flags.includes(q.id) ? 'flagged' : ''}`} aria-pressed={session.flags.includes(q.id)} onClick={() => onFlag(q.id)}><Flag size={19} />{session.flags.includes(q.id) ? t('已标记待检查', 'Flagged for review') : t('标记待检查', 'Flag for review')}</button></div>
           <p className="answer-prompt" lang="en" id="question-prompt">{q.prompt}</p>
           <fieldset className="answers" aria-labelledby="question-prompt"><legend className="sr-only">{t('选择一个答案', 'Choose one answer')}</legend>{q.options.map((option, index) => <label key={index} className={`answer-option ${session.answers[q.id] === index ? 'selected' : ''}`}><input type="radio" name={q.id} checked={session.answers[q.id] === index} onChange={() => onAnswer(q.id, index)} /><span className="option-letter">{String.fromCharCode(65 + index)}</span><span lang="en">{option}</span></label>)}</fieldset>
-          <p className="small muted source-inline">{t('来源：原创示例', 'Source: original demo')} · {q.source.originalNumber}</p>
+          <p className="small muted source-inline">{t('来源：', 'Source: ')}{q.source.title[lang]} · {q.source.originalNumber}</p>
         </div>
         <div className="answer-footer"><button className="button secondary" disabled={session.questionIndex === 0} onClick={() => onNavigate(session.questionIndex - 1)}><ChevronLeft size={18} />{t('上一题', 'Previous')}</button><button className="button primary" disabled={session.questionIndex + 1 === questions.length} onClick={() => onNavigate(session.questionIndex + 1)}>{t('下一题', 'Next')}<ChevronRight size={18} /></button></div>
       </section>

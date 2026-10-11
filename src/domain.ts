@@ -2,7 +2,7 @@ import type { ActiveSession, Filters, Question, Result, Section } from './types'
 import { moduleInfo } from './data/catalog';
 
 export function latestOutcomes(results: Result[]): Record<string, 'correct' | 'wrong' | 'unanswered'> {
-  const outcomes: Record<string, 'correct' | 'wrong' | 'unanswered'> = {};
+  const outcomes: Record<string, 'correct' | 'wrong' | 'unanswered'> = Object.create(null);
   for (const result of [...results].sort((a, b) => a.finishedAt - b.finishedAt)) {
     for (const q of result.questions) outcomes[q.id] = result.answers[q.id] === undefined ? 'unanswered' : result.answers[q.id] === q.correctIndex ? 'correct' : 'wrong';
   }
@@ -16,6 +16,7 @@ export function filterQuestions(questions: Question[], filters: Filters, results
     && (filters.topic === 'all' || q.topic.id === filters.topic)
     && (filters.subtopic === 'all' || q.subtopic.id === filters.subtopic)
     && (filters.source === 'all' || q.source.kind === filters.source)
+    && (filters.difficulty === 'all' || (q.difficulty ?? 'unrated') === filters.difficulty)
     && (filters.status === 'all'
       || (filters.status === 'new' && outcomes[q.id] === undefined)
       || (filters.status === 'done' && outcomes[q.id] !== undefined)
@@ -91,4 +92,45 @@ export function summary(result: Result) {
 export function formatTime(seconds: number): string {
   const n = Math.max(0, Math.floor(seconds));
   return `${String(Math.floor(n / 60)).padStart(2, '0')}:${String(n % 60).padStart(2, '0')}`;
+}
+
+export interface TopicRecommendation {
+  moduleId: Question['moduleId'];
+  topicId: string;
+  name: Question['topic']['name'];
+  total: number;
+  missed: number;
+  fresh: Question[];
+  retry: Question[];
+}
+
+// Recommendations describe mistakes in this attempt, never infer topic mastery.
+export function topicRecommendations(result: Result, bank: Question[], results: Result[] = [result]): TopicRecommendation[] {
+  const outcomes = latestOutcomes(results);
+  const groups = new Map<string, TopicRecommendation>();
+  for (const q of result.questions) {
+    const key = `${q.moduleId}:${q.topic.id}`;
+    const row = groups.get(key) ?? { moduleId: q.moduleId, topicId: q.topic.id, name: q.topic.name, total: 0, missed: 0, fresh: [], retry: [] };
+    row.total++;
+    if (result.answers[q.id] !== q.correctIndex) { row.missed++; row.retry.push(q); }
+    groups.set(key, row);
+  }
+  return [...groups.values()].filter(row => row.missed > 0).map(row => ({ ...row,
+    fresh: bank.filter(q => q.exam === result.exam && q.moduleId === row.moduleId && q.topic.id === row.topicId && outcomes[q.id] === undefined && !result.questions.some(item => item.id === q.id)),
+  })).sort((a, b) => b.missed / b.total - a.missed / a.total || b.missed - a.missed);
+}
+
+export function recommendedSet(row: TopicRecommendation, random = Math.random): Question[] {
+  const fresh = sampleQuestions(row.fresh, 3, random);
+  return [...fresh, ...sampleQuestions(row.retry, 3 - fresh.length, random)];
+}
+
+export function notebookQuestions(bank: Question[], results: Result[]): Question[] {
+  const snapshots = new Map<string, Question>();
+  for (const result of [...results].sort((a, b) => a.finishedAt - b.finishedAt)) {
+    for (const q of result.questions) snapshots.set(q.id, q);
+  }
+  for (const q of bank) snapshots.set(q.id, q);
+  const outcomes = latestOutcomes(results);
+  return [...snapshots.values()].filter(q => outcomes[q.id] === 'wrong' || outcomes[q.id] === 'unanswered');
 }

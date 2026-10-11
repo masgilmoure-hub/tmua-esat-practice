@@ -5,30 +5,38 @@ export const emptyState = (): SavedState => ({ version: 1, language: 'zh', activ
 const obj = (value: unknown): value is Record<string, unknown> => value !== null && typeof value === 'object' && !Array.isArray(value);
 const finite = (value: unknown): value is number => typeof value === 'number' && Number.isFinite(value) && value >= 0;
 const integer = (value: unknown): value is number => finite(value) && Number.isInteger(value);
-const bilingual = (value: unknown): boolean => obj(value) && typeof value.zh === 'string' && typeof value.en === 'string';
+const bilingual = (value: unknown): boolean => obj(value) && typeof value.zh === 'string' && !!value.zh.trim() && typeof value.en === 'string' && !!value.en.trim();
 const strings = (value: unknown): value is string[] => Array.isArray(value) && value.every(s => typeof s === 'string');
 const modules = ['p1', 'p2', 'm1', 'm2', 'biology', 'chemistry', 'physics'];
+const identifier = (value: unknown): value is string => typeof value === 'string' && /^[A-Za-z0-9_-]{1,100}$/.test(value) && !['__proto__', 'constructor', 'prototype'].includes(value);
+function safeSourceUrl(value: unknown): boolean {
+  if (typeof value !== 'string' || !/^https?:\/\//.test(value)) return false;
+  try { const url = new URL(value); return ['http:', 'https:'].includes(url.protocol) && !!url.hostname && !url.username && !url.password; }
+  catch { return false; }
+}
 
 export function validQuestion(value: unknown): value is Question {
-  if (!obj(value) || typeof value.id !== 'string' || !/^[A-Za-z0-9_-]{1,100}$/.test(value.id)
-    || !['TMUA', 'ESAT'].includes(String(value.exam)) || !modules.includes(String(value.moduleId))
+  if (!obj(value) || !identifier(value.id)
+    || typeof value.exam !== 'string' || !['TMUA', 'ESAT'].includes(value.exam) || typeof value.moduleId !== 'string' || !modules.includes(value.moduleId)
     || ((['p1', 'p2'].includes(String(value.moduleId))) !== (value.exam === 'TMUA'))
     || typeof value.prompt !== 'string' || !value.prompt.trim()
     || !strings(value.options) || value.options.length < 2 || value.options.length > 10 || value.options.some(s => !s.trim())
-    || !integer(value.correctIndex) || value.correctIndex >= value.options.length) return false;
+    || !integer(value.correctIndex) || value.correctIndex >= value.options.length
+    || (value.difficulty !== undefined && (typeof value.difficulty !== 'string' || !['foundation', 'standard', 'challenge'].includes(value.difficulty)))) return false;
   for (const key of ['topic', 'subtopic']) {
     const item = value[key];
-    if (!obj(item) || typeof item.id !== 'string' || !bilingual(item.name)) return false;
+    if (!obj(item) || !identifier(item.id) || !bilingual(item.name)) return false;
   }
   if (!obj(value.explanation)) return false;
   for (const lang of ['zh', 'en']) {
     const e = value.explanation[lang];
-    if (!obj(e) || !strings(e.steps) || !e.steps.length || typeof e.pitfall !== 'string') return false;
+    if (!obj(e) || !strings(e.steps) || !e.steps.length || e.steps.some(step => !step.trim()) || typeof e.pitfall !== 'string' || !e.pitfall.trim()) return false;
   }
+  if ((value.explanation.zh as { steps: string[] }).steps.length !== (value.explanation.en as { steps: string[] }).steps.length) return false;
   const s = value.source;
-  if (!obj(s) || !['original-demo', 'official-public'].includes(String(s.kind)) || !bilingual(s.title)
-    || typeof s.originalNumber !== 'string' || !s.originalNumber.trim() || typeof s.rightsNote !== 'string'
-    || !(s.year === null || integer(s.year)) || !(s.url === null || (typeof s.url === 'string' && /^https?:\/\//.test(s.url)))
+  if (!obj(s) || typeof s.kind !== 'string' || !['original-demo', 'official-public'].includes(s.kind) || !bilingual(s.title)
+    || typeof s.originalNumber !== 'string' || !s.originalNumber.trim() || typeof s.rightsNote !== 'string' || !s.rightsNote.trim()
+    || !(s.year === null || integer(s.year)) || !(s.url === null || safeSourceUrl(s.url))
     || (s.kind === 'official-public' && s.url === null)) return false;
   return true;
 }

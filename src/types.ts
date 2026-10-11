@@ -2,6 +2,7 @@ export type Language = 'zh' | 'en';
 export type Bilingual = { zh: string; en: string };
 export type Exam = 'TMUA' | 'ESAT';
 export type ModuleId = 'p1' | 'p2' | 'm1' | 'm2' | 'biology' | 'chemistry' | 'physics';
+export type Difficulty = 'foundation' | 'standard' | 'challenge';
 
 export interface Question {
   id: string;
@@ -12,6 +13,7 @@ export interface Question {
   prompt: string;
   options: string[];
   correctIndex: number;
+  difficulty?: Difficulty;
   explanation: Record<Language, { steps: string[]; pitfall: string }>;
   source: {
     kind: 'original-demo' | 'official-public';
@@ -61,4 +63,5 @@ export interface Filters {
   subtopic: string;
   source: string;
   status: 'all' | 'new' | 'done' | 'wrong';
+  difficulty: 'all' | Difficulty | 'unrated';
 }

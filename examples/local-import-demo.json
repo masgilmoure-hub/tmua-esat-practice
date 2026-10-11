@@ -1,0 +1,28 @@
+{
+  "schemaVersion": 1,
+  "questions": [
+    {
+      "id": "TMUA-P1-IMPORT-001",
+      "exam": "TMUA",
+      "moduleId": "p1",
+      "topic": { "id": "algebra", "name": { "zh": "代数", "en": "Algebra" } },
+      "subtopic": { "id": "linear-equations", "name": { "zh": "一次方程", "en": "Linear equations" } },
+      "difficulty": "foundation",
+      "prompt": "If 3x + 7 = 22, what is x?",
+      "options": ["3", "4", "5", "6", "7"],
+      "correctIndex": 2,
+      "explanation": {
+        "zh": { "steps": ["等式两边减去 7，得到 3x = 15。", "两边除以 3，得到 x = 5，因此选择 C。"], "pitfall": "对等式两边执行相同运算，避免移项时符号错误。" },
+        "en": { "steps": ["Subtract 7 from both sides to obtain 3x = 15.", "Divide both sides by 3 to obtain x = 5. Choose C."], "pitfall": "Apply the same operation to both sides to avoid sign errors." }
+      },
+      "source": {
+        "kind": "original-demo",
+        "title": { "zh": "原创导入示例", "en": "Original import demo" },
+        "url": null,
+        "originalNumber": "DEMO-IMPORT-001",
+        "year": null,
+        "rightsNote": "Original content for demonstrating local import. Not an official exam question."
+      }
+    }
+  ]
+}
