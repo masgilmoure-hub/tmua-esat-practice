@@ -30,6 +30,10 @@ npm run preview:standalone
 
 预览文件内置实际构建产物，不依赖 CDN，不是静态截图。`file://` 存储行为取决于浏览器；稳定保存建议使用 HTTP(S) 服务。同一应用在不同网址、端口、浏览器或设备中使用独立记录。
 
+## 部署学生测试网址
+
+已提供 GitHub Pages 自动验证与部署工作流。仓库管理员首次在 **Settings → Pages → Source** 选择 **GitHub Actions**，再在 Actions 手动运行 `Validate and deploy student preview`；此后推送到 `main` 自动验证并部署。最终网址、上线验收和回退说明见 [部署说明](docs/deployment.md)。成功推送代码不等于网站已经上线。
+
 ## 已实现
 
 - 六维题库筛选：考试、试卷/科目、知识点、细分考点、原始来源、做题状态，支持联动重置、分页与空状态。
