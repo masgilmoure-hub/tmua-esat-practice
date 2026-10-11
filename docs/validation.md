@@ -41,7 +41,7 @@ Browser 插件与 browser 技能在本会话未提供，因此使用 Playwright 
 
 ### 后续学生访问失败
 
-2026-10-11 收到学生截图：“Sorry, you have been blocked / You are unable to access chatgpt.site”。与云 Chromium 的证书错误不同，这是托管防护页拦截访问，应用尚未加载。当前云环境复测默认 curl 与桌面 Chrome User-Agent 的 HTTPS GET 均返回 200，标题为 `TMUA / ESAT · Practice`，未得到拦截页。云端检查通过不能据此声称所有学生网络可用；之前的 12 项应用交互通过结果仍成立，但**学生端实际可达性问题未解决**。地区、实际浏览器、网络与 Ray ID 尚待核实，不能直接认定某个地区被禁用。原生学生浏览器验证仍为未通过/未覆盖状态。
+2026-10-11 收到学生截图：“Sorry, you have been blocked / You are unable to access chatgpt.site”。与云 Chromium 的证书错误不同，这是托管防护页拦截访问，应用尚未加载。当前云环境复测默认 curl 与桌面 Chrome User-Agent 的 HTTPS GET 均返回 200，标题为 `TMUA / ESAT · Practice`，未得到拦截页。云端检查通过不能据此声称所有学生网络可用；之前的 12 项应用交互通过结果仍成立，但**学生端实际可达性问题未解决**。后续确认学生不在中国大陆、能打开 `chatgpt.com`、Safari 与 Chrome 均拦截；网络类型、Ray ID 和出错时间尚待核实，不能直接认定某个地区被禁用。原生学生浏览器验证仍为未通过/未覆盖状态。
 
 ## 视觉核对
 
