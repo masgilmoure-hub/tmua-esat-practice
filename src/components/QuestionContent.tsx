@@ -24,5 +24,5 @@ export function QuestionDiagram({ question }: { question: Question }) {
   const diagram = question.diagram;
   if (!diagram) return null;
   const embedded = window.__TMUA_QUESTION_IMAGES__?.[diagram.path];
-  return <figure className="question-diagram"><img src={embedded ?? `${import.meta.env.BASE_URL}${diagram.path}`} alt={diagram.alt} /><figcaption>Original diagram · TMUA {question.source.year} Paper 1 · Question {question.source.originalNumber}</figcaption></figure>;
+  return <figure className="question-diagram"><img src={embedded ?? `${import.meta.env.BASE_URL}${diagram.path}`} alt={diagram.alt} /><figcaption>Original diagram · TMUA {question.source.year} Paper {question.moduleId === 'p2' ? '2' : '1'} · Question {question.source.originalNumber}</figcaption></figure>;
 }

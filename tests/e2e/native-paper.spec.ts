@@ -75,6 +75,7 @@ test('all native questions render, full 75-minute marking, bilingual review, rec
 });
 test('year, delivery, topic and subtopic filters lead to focused practice on phone with English controls',async({page})=>{
  await page.setViewportSize({width:390,height:844});
+ await page.getByRole('group',{name:'试卷 / 科目',exact:true}).getByRole('button',{name:'Paper 1',exact:true}).click();
  await page.getByRole('group',{name:'来源',exact:true}).getByRole('button',{name:'官方公开材料',exact:true}).click();
  await page.getByRole('group',{name:'年份',exact:true}).getByRole('button',{name:'2023',exact:true}).click();
  await page.getByRole('group',{name:'作答方式',exact:true}).getByRole('button',{name:'文字题 · 直接作答',exact:true}).click();

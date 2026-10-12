@@ -1,0 +1,1227 @@
+[
+  {
+    "id": "ARCHIVE-TMUA-2023-P2-Q01",
+    "exam": "TMUA",
+    "moduleId": "p2",
+    "topic": {
+      "id": "algebra",
+      "name": {
+        "zh": "代数",
+        "en": "Algebra"
+      }
+    },
+    "subtopic": {
+      "id": "radical-fractions",
+      "name": {
+        "zh": "根式分式与定义域",
+        "en": "Radical fractions & domains"
+      }
+    },
+    "prompt": "Given that $$\\frac{1}{\\sqrt{x}-6}-\\frac{1}{\\sqrt{x}+6}=\\frac3{11},$$ what is the value of $x$?",
+    "options": [
+      "$2\\sqrt{15}$",
+      "$4\\sqrt5$",
+      "$5\\sqrt2$",
+      "$\\sqrt{58}$",
+      "$50$",
+      "$58$",
+      "$60$",
+      "$80$"
+    ],
+    "correctIndex": 7,
+    "format": "latex",
+    "difficulty": "foundation",
+    "explanation": {
+      "zh": {
+        "steps": [
+          "定义域要求 $x\\geq0$ 且 $x\\ne36$。通分后左侧为 $\\frac{(\\sqrt{x}+6)-(\\sqrt{x}-6)}{(\\sqrt{x}-6)(\\sqrt{x}+6)}=\\frac{12}{x-36}$。",
+          "由 $12/(x-36)=3/11$，得 $132=3x-108$，所以 $x=80$。满足定义域，选 H。"
+        ],
+        "pitfall": "根号只覆盖 $x$，分母是 $\\sqrt{x}-6$，不是 $\\sqrt{x-6}$；也不要把 $\\sqrt{x}$ 的值当作 $x$。"
+      },
+      "en": {
+        "steps": [
+          "The domain is $x\\geq0$ with $x\\ne36$. Combining the fractions gives $\\frac{(\\sqrt{x}+6)-(\\sqrt{x}-6)}{(\\sqrt{x}-6)(\\sqrt{x}+6)}=\\frac{12}{x-36}$.",
+          "From $12/(x-36)=3/11$, obtain $132=3x-108$, hence $x=80$. It satisfies the domain. Choose H."
+        ],
+        "pitfall": "The radical covers only $x$: the denominator is $\\sqrt{x}-6$, not $\\sqrt{x-6}$. Return $x$, not $\\sqrt{x}$."
+      }
+    },
+    "source": {
+      "kind": "official-public",
+      "title": {
+        "zh": "TMUA 2023 Paper 2 · 官方原卷",
+        "en": "TMUA 2023 Paper 2 · official archive"
+      },
+      "url": "https://uat-wp.s3.eu-west-2.amazonaws.com/wp-content/uploads/2024/04/30144111/TMUA-2023-paper-2.pdf",
+      "originalNumber": "1",
+      "year": 2023,
+      "rightsNote": "Original papers and worked solutions: Cambridge University Press & Assessment / Cambridge Assessment; public archive provided by UAT-UK. No affiliation or endorsement."
+    }
+  },
+  {
+    "id": "ARCHIVE-TMUA-2023-P2-Q02",
+    "exam": "TMUA",
+    "moduleId": "p2",
+    "topic": {
+      "id": "calculus",
+      "name": {
+        "zh": "微积分",
+        "en": "Calculus"
+      }
+    },
+    "subtopic": {
+      "id": "integral-difference-identity",
+      "name": {
+        "zh": "积分作差与恒等式",
+        "en": "Integral differences & identities"
+      }
+    },
+    "prompt": "Evaluate $$\\int_9^{16}\\left(\\frac1{\\sqrt{x}}+\\sqrt{x}\\right)^2\\,dx-\\int_9^{16}\\left(\\frac1{\\sqrt{x}}-\\sqrt{x}\\right)^2\\,dx.$$",
+    "options": [
+      "$0$",
+      "$2$",
+      "$4$",
+      "$7$",
+      "$14$",
+      "$28$",
+      "$75$",
+      "$175$"
+    ],
+    "correctIndex": 5,
+    "format": "latex",
+    "difficulty": "foundation",
+    "explanation": {
+      "zh": {
+        "steps": [
+          "两个积分上下限相同，可先把被积函数作差。用恒等式 $(u+v)^2-(u-v)^2=4uv$。",
+          "在 $[9,16]$ 上，取 $u=1/\\sqrt{x}$、$v=\\sqrt{x}$，有 $uv=1$。积分化为 $\\int_9^{16}4\\,dx=4(16-9)=28$，选 F。"
+        ],
+        "pitfall": "先化简差式，能避免分别积分时处理不必要的复杂项。"
+      },
+      "en": {
+        "steps": [
+          "The limits agree, so subtract the integrands first. Use $(u+v)^2-(u-v)^2=4uv$.",
+          "On $[9,16]$, take $u=1/\\sqrt{x}$ and $v=\\sqrt{x}$, so $uv=1$. The integral becomes $\\int_9^{16}4\\,dx=4(16-9)=28$. Choose F."
+        ],
+        "pitfall": "Simplify the difference before integrating; separate integration introduces unnecessary terms."
+      }
+    },
+    "source": {
+      "kind": "official-public",
+      "title": {
+        "zh": "TMUA 2023 Paper 2 · 官方原卷",
+        "en": "TMUA 2023 Paper 2 · official archive"
+      },
+      "url": "https://uat-wp.s3.eu-west-2.amazonaws.com/wp-content/uploads/2024/04/30144111/TMUA-2023-paper-2.pdf",
+      "originalNumber": "2",
+      "year": 2023,
+      "rightsNote": "Original papers and worked solutions: Cambridge University Press & Assessment / Cambridge Assessment; public archive provided by UAT-UK. No affiliation or endorsement."
+    }
+  },
+  {
+    "id": "ARCHIVE-TMUA-2023-P2-Q03",
+    "exam": "TMUA",
+    "moduleId": "p2",
+    "topic": {
+      "id": "reasoning",
+      "name": {
+        "zh": "逻辑与证明",
+        "en": "Logic & proof"
+      }
+    },
+    "subtopic": {
+      "id": "counterexample",
+      "name": {
+        "zh": "反例",
+        "en": "Counterexamples"
+      }
+    },
+    "prompt": "Consider the claim:\n\nFor all positive real numbers $x$ and $y$, $$\\sqrt{x^y}=x^{\\sqrt{y}}.$$ Which of the following is/are a counterexample to the claim?\n\nI   $x=1$, $y=16$\nII   $x=2$, $y=8$\nIII   $x=3$, $y=4$",
+    "options": [
+      "none of them",
+      "I only",
+      "II only",
+      "III only",
+      "I and II only",
+      "I and III only",
+      "II and III only",
+      "I, II and III"
+    ],
+    "correctIndex": 2,
+    "format": "latex",
+    "difficulty": "foundation",
+    "explanation": {
+      "zh": {
+        "steps": [
+          "因 $x>0$，左侧为 $x^{y/2}$。反例必须使左右两边不相等。",
+          "I：两边均为 1，不是反例。II：左侧 $2^4=16$，右侧 $2^{\\sqrt8}$；$\\sqrt8\\ne4$ 且底数 2 的指数函数单调，故不相等。",
+          "III：两边均为 $3^2=9$，不是反例。只有 II，选 C。"
+        ],
+        "pitfall": "反例是使原命题失败的取值；满足等式的例子不能反驳全称命题。"
+      },
+      "en": {
+        "steps": [
+          "As $x>0$, the left side is $x^{y/2}$. A counterexample must make the two sides unequal.",
+          "I: both sides are 1, so it is not a counterexample. II: the left is $2^4=16$, while the right is $2^{\\sqrt8}$. Since $\\sqrt8\\ne4$ and base-2 exponentiation is strictly increasing, they are unequal.",
+          "III: both sides equal $3^2=9$, so it is not a counterexample. Only II works. Choose C."
+        ],
+        "pitfall": "A counterexample falsifies the claim; examples satisfying the equality do not refute it."
+      }
+    },
+    "source": {
+      "kind": "official-public",
+      "title": {
+        "zh": "TMUA 2023 Paper 2 · 官方原卷",
+        "en": "TMUA 2023 Paper 2 · official archive"
+      },
+      "url": "https://uat-wp.s3.eu-west-2.amazonaws.com/wp-content/uploads/2024/04/30144111/TMUA-2023-paper-2.pdf",
+      "originalNumber": "3",
+      "year": 2023,
+      "rightsNote": "Original papers and worked solutions: Cambridge University Press & Assessment / Cambridge Assessment; public archive provided by UAT-UK. No affiliation or endorsement."
+    }
+  },
+  {
+    "id": "ARCHIVE-TMUA-2023-P2-Q04",
+    "exam": "TMUA",
+    "moduleId": "p2",
+    "topic": {
+      "id": "reasoning",
+      "name": {
+        "zh": "逻辑与证明",
+        "en": "Logic & proof"
+      }
+    },
+    "subtopic": {
+      "id": "prime-proof-error",
+      "name": {
+        "zh": "素数论证的第一处错误",
+        "en": "First errors in prime-number proofs"
+      }
+    },
+    "prompt": "A student attempts to answer the following question.\n\nWhat is the largest number of consecutive odd integers that are all prime?\n\nThe student’s attempt is as follows:\n\nI   There are two consecutive odd integers that are prime (for example: $17,19$).\nII   Any three consecutive odd integers can be written in the form $n-2,n,n+2$ for some $n$.\nIII   If $n$ is one more than a multiple of $3$, then $n+2$ is a multiple of $3$.\nIV   If $n$ is two more than a multiple of $3$, then $n-2$ is a multiple of $3$.\nV   The only other possibility is that $n$ is a multiple of $3$.\nVI   In each case, one of the integers is a multiple of $3$, so not prime.\nVII   Therefore the largest number of consecutive odd integers that are all prime is two.\n\nWhich of the following best describes this attempt?",
+    "options": [
+      "It is completely correct.",
+      "It is incorrect, and the first error is on line I.",
+      "It is incorrect, and the first error is on line II.",
+      "It is incorrect, and the first error is on line III.",
+      "It is incorrect, and the first error is on line IV.",
+      "It is incorrect, and the first error is on line V.",
+      "It is incorrect, and the first error is on line VI.",
+      "It is incorrect, and the first error is on line VII."
+    ],
+    "correctIndex": 6,
+    "format": "latex",
+    "difficulty": "standard",
+    "explanation": {
+      "zh": {
+        "steps": [
+          "I、II 正确。III、IV 分别对应 $n\\equiv1,2\\pmod3$，会使 $n+2,n-2$ 被 3 整除。V 补上 $n\\equiv0\\pmod3$，分类完整。",
+          "VI 前半句正确，但“3 的倍数就不是素数”漏掉了 3 本身。$3,5,7$ 正好是三个连续奇数且都是素数。",
+          "所以第一处错误在 VI，而不只是结论 VII；选 G。"
+        ],
+        "pitfall": "小素数本身是它自己的倍数。题目问第一处错误，需逐行检查，不能只指出末行错误。"
+      },
+      "en": {
+        "steps": [
+          "I and II are valid. III and IV cover $n\\equiv1,2\\pmod3$, making $n+2,n-2$ divisible by 3. V covers $n\\equiv0\\pmod3$, completing the cases.",
+          "The first part of VI is valid, but a multiple of 3 need not be composite: 3 itself is prime. The consecutive odd integers $3,5,7$ are all prime.",
+          "The first error is therefore VI, not merely the conclusion VII. Choose G."
+        ],
+        "pitfall": "A prime is a multiple of itself. Check each line to find the first error rather than only rejecting the conclusion."
+      }
+    },
+    "source": {
+      "kind": "official-public",
+      "title": {
+        "zh": "TMUA 2023 Paper 2 · 官方原卷",
+        "en": "TMUA 2023 Paper 2 · official archive"
+      },
+      "url": "https://uat-wp.s3.eu-west-2.amazonaws.com/wp-content/uploads/2024/04/30144111/TMUA-2023-paper-2.pdf",
+      "originalNumber": "4",
+      "year": 2023,
+      "rightsNote": "Original papers and worked solutions: Cambridge University Press & Assessment / Cambridge Assessment; public archive provided by UAT-UK. No affiliation or endorsement."
+    }
+  },
+  {
+    "id": "ARCHIVE-TMUA-2023-P2-Q05",
+    "exam": "TMUA",
+    "moduleId": "p2",
+    "topic": {
+      "id": "reasoning",
+      "name": {
+        "zh": "逻辑与证明",
+        "en": "Logic & proof"
+      }
+    },
+    "subtopic": {
+      "id": "integral-necessary-sufficient",
+      "name": {
+        "zh": "积分条件的充分必要性",
+        "en": "Necessary & sufficient integral conditions"
+      }
+    },
+    "prompt": "Consider the two statements:\n\nR:   $k$ is an integer multiple of $\\pi$\nS:   $\\int_0^k\\sin2x\\,dx=0$\n\nWhich of the following statements is true?",
+    "options": [
+      "R is necessary and sufficient for S.",
+      "R is necessary but not sufficient for S.",
+      "R is sufficient but not necessary for S.",
+      "R is not necessary and not sufficient for S."
+    ],
+    "correctIndex": 0,
+    "format": "latex",
+    "difficulty": "standard",
+    "explanation": {
+      "zh": {
+        "steps": [
+          "曲线 $y=\\sin2x$ 的周期为 $\\pi$。在 $[0,\\pi/2]$ 上方的面积与 $[\\pi/2,\\pi]$ 下方的面积相等，所以每个完整周期的积分为零。",
+          "令 $F(k)=\\int_0^k\\sin2x\\,dx$。每周期净面积为零，因此 $F(k+\\pi)=F(k)$。在 $0<k\\leq\\pi/2$ 时累计面积为正；随后逐渐减少，到 $k=\\pi$ 才完全抵消，所以 $0<k<\\pi$ 时均有 $F(k)>0$。",
+          "由周期性，$F(k)=0$ 当且仅当 $k=j\\pi$，其中 $j$ 为任意整数。因此 R 与 S 双向推出，R 是 S 的充分必要条件，选 A；也包括 $k=0$ 和负整数倍。"
+        ],
+        "pitfall": "这里是 sin(2x)，不是 sin²x；必要性和充分性都须分别成立。"
+      },
+      "en": {
+        "steps": [
+          "The graph $y=\\sin2x$ has period $\\pi$. The positive area over $[0,\\pi/2]$ equals the negative area over $[\\pi/2,\\pi]$, so the integral over a complete period is zero.",
+          "Let $F(k)=\\int_0^k\\sin2x\\,dx$. Zero net area per period gives $F(k+\\pi)=F(k)$. For $0<k\\leq\\pi/2$, the accumulated area is positive. It then decreases, cancelling completely only at $k=\\pi$. Thus $F(k)>0$ throughout $0<k<\\pi$.",
+          "By periodicity, $F(k)=0$ exactly when $k=j\\pi$ for any integer $j$. R and S therefore imply one another. R is necessary and sufficient for S. Choose A, including $k=0$ and negative multiples."
+        ],
+        "pitfall": "The integrand is sin(2x), not sin²x. Check both implication directions."
+      }
+    },
+    "source": {
+      "kind": "official-public",
+      "title": {
+        "zh": "TMUA 2023 Paper 2 · 官方原卷",
+        "en": "TMUA 2023 Paper 2 · official archive"
+      },
+      "url": "https://uat-wp.s3.eu-west-2.amazonaws.com/wp-content/uploads/2024/04/30144111/TMUA-2023-paper-2.pdf",
+      "originalNumber": "5",
+      "year": 2023,
+      "rightsNote": "Original papers and worked solutions: Cambridge University Press & Assessment / Cambridge Assessment; public archive provided by UAT-UK. No affiliation or endorsement."
+    }
+  },
+  {
+    "id": "ARCHIVE-TMUA-2023-P2-Q06",
+    "exam": "TMUA",
+    "moduleId": "p2",
+    "topic": {
+      "id": "functions",
+      "name": {
+        "zh": "函数",
+        "en": "Functions"
+      }
+    },
+    "subtopic": {
+      "id": "solution-count-transformations",
+      "name": {
+        "zh": "方程变换与解的个数",
+        "en": "Transformations & solution counts"
+      }
+    },
+    "prompt": "Consider the following equation where $a$ is a real number and $a>1$: $$(*)\\qquad a^x=x.$$ Which of the following equations must have the same number of real solutions as $(*)$?\n\nI   $\\log_a x=x$\nII   $a^{2x}=x^2$\nIII   $a^{2x}=2x$",
+    "options": [
+      "none of them",
+      "I only",
+      "II only",
+      "III only",
+      "I and II only",
+      "I and III only",
+      "II and III only",
+      "I, II and III"
+    ],
+    "correctIndex": 5,
+    "format": "latex",
+    "difficulty": "challenge",
+    "explanation": {
+      "zh": {
+        "steps": [
+          "原方程左侧恒正，所以任何解都有 $x>0$。在此定义域取以 $a$ 为底的对数，得到 $x=\\log_a x$，可逆且不增减解，所以 I 正确。",
+          "II 会保留原来的正解，却可能新增负解。例如 $a=4$、$x=-1/2$ 满足 $4^{2x}=x^2=1/4$，不满足 $4^x=x$。因此不能保证相同解数。",
+          "III 令 $u=2x$，得到 $a^u=u$。实数 $u$ 与 $x=u/2$ 一一对应，所以解数相同。I、III 正确，选 F。"
+        ],
+        "pitfall": "平方不总是等价变换，会引入符号不同的根；换元也要确认一一对应。"
+      },
+      "en": {
+        "steps": [
+          "The left side of the original equation is positive, so every root has $x>0$. Taking logarithms in base $a$ gives $x=\\log_a x$, reversibly and without changing roots. I is true.",
+          "II preserves the original positive roots but may add negative roots. For $a=4$, $x=-1/2$ satisfies $4^{2x}=x^2=1/4$ but not $4^x=x$. The root count is not guaranteed to agree.",
+          "In III, let $u=2x$. Then $a^u=u$. The real numbers $u$ and $x=u/2$ correspond one-to-one, so the root count is unchanged. I and III are true. Choose F."
+        ],
+        "pitfall": "Squaring may introduce roots with different signs. A change of variable must be one-to-one."
+      }
+    },
+    "source": {
+      "kind": "official-public",
+      "title": {
+        "zh": "TMUA 2023 Paper 2 · 官方原卷",
+        "en": "TMUA 2023 Paper 2 · official archive"
+      },
+      "url": "https://uat-wp.s3.eu-west-2.amazonaws.com/wp-content/uploads/2024/04/30144111/TMUA-2023-paper-2.pdf",
+      "originalNumber": "6",
+      "year": 2023,
+      "rightsNote": "Original papers and worked solutions: Cambridge University Press & Assessment / Cambridge Assessment; public archive provided by UAT-UK. No affiliation or endorsement."
+    }
+  },
+  {
+    "id": "ARCHIVE-TMUA-2023-P2-Q07",
+    "exam": "TMUA",
+    "moduleId": "p2",
+    "topic": {
+      "id": "reasoning",
+      "name": {
+        "zh": "逻辑与证明",
+        "en": "Logic & proof"
+      }
+    },
+    "subtopic": {
+      "id": "necessary-line-signs",
+      "name": {
+        "zh": "直线符号条件的必要性",
+        "en": "Necessary sign conditions for lines"
+      }
+    },
+    "prompt": "The graph of the line $ax+by=c$ is drawn, where $a$, $b$ and $c$ are real non-zero constants.\n\nWhich one of the following is a necessary but not sufficient condition for the line to have a positive gradient and a positive $y$-intercept?",
+    "options": [
+      "$\\frac cb>0$ and $\\frac ab<0$",
+      "$\\frac cb<0$ and $\\frac ab>0$",
+      "$a>b>c$",
+      "$a<b<c$",
+      "$a$ and $c$ have opposite signs",
+      "$a$ and $c$ have the same sign"
+    ],
+    "correctIndex": 4,
+    "format": "latex",
+    "difficulty": "challenge",
+    "explanation": {
+      "zh": {
+        "steps": [
+          "改写为 $y=-(a/b)x+c/b$。要求 $a/b<0$、$c/b>0$，因此 $a$ 与 $b$ 异号、$c$ 与 $b$ 同号，必有 $a,c$ 异号。",
+          "异号条件不充分：取 $a=-1,c=1,b=-1$，有 $a,c$ 异号，但斜率为 -1、截距为 -1。所以 E 符合。",
+          "A 是充分且必要，不符合“但不充分”。B 给出负截距。取 $a=-1,b=1,c=2$，斜率和截距都为正，却不满足 C 的顺序；取 $a=-1,b=2,c=1$ 又不满足 D。F 与所需符号相反。选 E。"
+        ],
+        "pitfall": "必要条件必须由目标性质推出；还要举反例说明该条件不能单独保证目标性质。"
+      },
+      "en": {
+        "steps": [
+          "Rewrite as $y=-(a/b)x+c/b$. We need $a/b<0$ and $c/b>0$, making $a$ opposite in sign to $b$ and $c$ the same sign as $b$. Hence $a,c$ must have opposite signs.",
+          "This is not sufficient: with $a=-1,c=1,b=-1$, $a,c$ have opposite signs but both slope and intercept are -1. E fits the requirement.",
+          "A is both necessary and sufficient, rather than necessary only. B gives a negative intercept. Taking $a=-1,b=1,c=2$ gives positive slope and intercept but violates C; $a=-1,b=2,c=1$ violates D. F gives the wrong sign relation. Choose E."
+        ],
+        "pitfall": "The target property must imply a necessary condition; show separately that the condition does not guarantee the target."
+      }
+    },
+    "source": {
+      "kind": "official-public",
+      "title": {
+        "zh": "TMUA 2023 Paper 2 · 官方原卷",
+        "en": "TMUA 2023 Paper 2 · official archive"
+      },
+      "url": "https://uat-wp.s3.eu-west-2.amazonaws.com/wp-content/uploads/2024/04/30144111/TMUA-2023-paper-2.pdf",
+      "originalNumber": "7",
+      "year": 2023,
+      "rightsNote": "Original papers and worked solutions: Cambridge University Press & Assessment / Cambridge Assessment; public archive provided by UAT-UK. No affiliation or endorsement."
+    }
+  },
+  {
+    "id": "ARCHIVE-TMUA-2023-P2-Q08",
+    "exam": "TMUA",
+    "moduleId": "p2",
+    "topic": {
+      "id": "geometry",
+      "name": {
+        "zh": "几何",
+        "en": "Geometry"
+      }
+    },
+    "subtopic": {
+      "id": "triangle-right-angle-cuts",
+      "name": {
+        "zh": "三角形中的直角分割线",
+        "en": "Cuts producing right triangles"
+      }
+    },
+    "prompt": "A student draws a triangle that is acute-angled or obtuse-angled but not right-angled.\n\nThe student counts the number of straight lines that divide the triangle into two triangles, at least one of which is right-angled.\n\nWhich of the following statements is/are true?\n\nI   The student can draw a triangle for which there is exactly $1$ such straight line.\nII   The student can draw a triangle for which there are exactly $2$ such straight lines.\nIII   The student can draw a triangle for which there are exactly $3$ such straight lines.",
+    "options": [
+      "none of them",
+      "I only",
+      "II only",
+      "III only",
+      "I and II only",
+      "I and III only",
+      "II and III only",
+      "I, II and III"
+    ],
+    "correctIndex": 3,
+    "format": "latex",
+    "difficulty": "challenge",
+    "explanation": {
+      "zh": {
+        "steps": [
+          "要把三角形分成两个三角形，分割线必须连接一个顶点与对边内部。新直角只能出现在交点，或出现在被分割的顶点。",
+          "锐角三角形：每个顶点的高都落在对边内部，产生三个有效分割。顶点原角均小于 90°，不能再从顶点切出直角，故恰好三条。",
+          "钝角三角形：只有从钝角顶点作出的高落在对边内部。还可从该顶点分别画垂直于两条邻边的线，各把钝角分成一个直角和一个锐角，得到另外两条内部有效分割。",
+          "这两条线与高互不相同，否则某个子三角形会有两个直角。其他顶点为锐角，不产生更多顶点直角。因此钝角情形也恰好三条，只有 III 正确，选 D。"
+        ],
+        "pitfall": "不能只数三条高。钝角顶点还可以被分成一个直角和一个锐角。"
+      },
+      "en": {
+        "steps": [
+          "A cut into two triangles must join a vertex to an interior point of the opposite side. A new right angle can occur at that intersection or at the vertex being split.",
+          "For an acute triangle, all three altitudes fall inside their opposite sides, giving three valid cuts. No original angle exceeds 90°, so no cut can create a right angle at a vertex. Exactly three cuts exist.",
+          "For an obtuse triangle, only the altitude from the obtuse vertex meets the opposite side internally. Two more internal cuts from that vertex, each perpendicular to one adjacent side, split the obtuse angle into a right angle and an acute angle.",
+          "These two lines are distinct from the altitude, otherwise a subtriangle would have two right angles. The other vertices are acute and produce no further vertex right angles. The obtuse case also gives exactly three cuts. Only III is true. Choose D."
+        ],
+        "pitfall": "Do not count only altitudes: an obtuse vertex can itself be split into a right angle and an acute angle."
+      }
+    },
+    "source": {
+      "kind": "official-public",
+      "title": {
+        "zh": "TMUA 2023 Paper 2 · 官方原卷",
+        "en": "TMUA 2023 Paper 2 · official archive"
+      },
+      "url": "https://uat-wp.s3.eu-west-2.amazonaws.com/wp-content/uploads/2024/04/30144111/TMUA-2023-paper-2.pdf",
+      "originalNumber": "8",
+      "year": 2023,
+      "rightsNote": "Original papers and worked solutions: Cambridge University Press & Assessment / Cambridge Assessment; public archive provided by UAT-UK. No affiliation or endorsement."
+    }
+  },
+  {
+    "id": "ARCHIVE-TMUA-2023-P2-Q09",
+    "exam": "TMUA",
+    "moduleId": "p2",
+    "topic": {
+      "id": "reasoning",
+      "name": {
+        "zh": "逻辑与证明",
+        "en": "Logic & proof"
+      }
+    },
+    "subtopic": {
+      "id": "pentagon-converse",
+      "name": {
+        "zh": "五边形命题的逆与逆否",
+        "en": "Converse & contrapositive for pentagons"
+      }
+    },
+    "prompt": "Consider the following statement about a pentagon $P$:\n\n$(*)$ If at least one of the interior angles in $P$ is $108^\\circ$, then all the interior angles in $P$ form an arithmetic sequence.\n\nWhich of the following is/are true?\n\nI   The statement $(*)$\nII   The contrapositive of $(*)$\nIII   The converse of $(*)$",
+    "options": [
+      "none of them",
+      "I only",
+      "II only",
+      "III only",
+      "I and II only",
+      "I and III only",
+      "II and III only",
+      "I, II and III"
+    ],
+    "correctIndex": 3,
+    "format": "latex",
+    "difficulty": "standard",
+    "explanation": {
+      "zh": {
+        "steps": [
+          "五边形内角和为 $540^\\circ$，平均角为 $108^\\circ$，但存在一个 $108^\\circ$ 的角不保证等差。比如把正五边形一条边轻微转动，可得到角 $108^\\circ,108^\\circ,108^\\circ,107^\\circ,109^\\circ$，这些不构成等差数列，故 I 假。",
+          "逆否命题与原命题等价，真假相同。因此 II 也假。",
+          "逆命题说等差的五个角必有一个为 $108^\\circ$。将五角写成 $c-2d,c-d,c,c+d,c+2d$，总和 $5c=540^\\circ$，得 $c=108^\\circ$。所以 III 真，选 D。"
+        ],
+        "pitfall": "原命题和逆否命题等价；逆命题需要独立判断，不能因原命题为假就认定逆命题为假。"
+      },
+      "en": {
+        "steps": [
+          "The angle sum is $540^\\circ$ and the mean $108^\\circ$, but one angle of $108^\\circ$ does not force an arithmetic sequence. Slightly rotate one side of a regular pentagon to obtain angles $108^\\circ,108^\\circ,108^\\circ,107^\\circ,109^\\circ$, which do not form an arithmetic sequence. I is false.",
+          "A statement is equivalent to its contrapositive, so II is also false.",
+          "The converse says that five angles in an arithmetic sequence include $108^\\circ$. Write them as $c-2d,c-d,c,c+d,c+2d$. Then $5c=540^\\circ$, so $c=108^\\circ$. III is true. Choose D."
+        ],
+        "pitfall": "A statement and its contrapositive are equivalent. Judge the converse separately; it can be true even when the original statement is false."
+      }
+    },
+    "source": {
+      "kind": "official-public",
+      "title": {
+        "zh": "TMUA 2023 Paper 2 · 官方原卷",
+        "en": "TMUA 2023 Paper 2 · official archive"
+      },
+      "url": "https://uat-wp.s3.eu-west-2.amazonaws.com/wp-content/uploads/2024/04/30144111/TMUA-2023-paper-2.pdf",
+      "originalNumber": "9",
+      "year": 2023,
+      "rightsNote": "Original papers and worked solutions: Cambridge University Press & Assessment / Cambridge Assessment; public archive provided by UAT-UK. No affiliation or endorsement."
+    }
+  },
+  {
+    "id": "ARCHIVE-TMUA-2023-P2-Q10",
+    "exam": "TMUA",
+    "moduleId": "p2",
+    "topic": {
+      "id": "algebra",
+      "name": {
+        "zh": "代数",
+        "en": "Algebra"
+      }
+    },
+    "subtopic": {
+      "id": "equivalent-inequalities",
+      "name": {
+        "zh": "不等式推导的等价性",
+        "en": "Equivalence in inequality arguments"
+      }
+    },
+    "prompt": "Here is an attempt to solve the inequality $x^4-2x^2-3<0$ by completing the square:\n\n$x^4-2x^2-3<0$\nI   if and only if $x^4-2x^2+1<4$\nII   if and only if $(x^2-1)^2<4$\nIII   if and only if $-2<x^2-1<2$\nIV   if and only if $x^2-1<2$\nV   if and only if $x^2<3$\nVI   if and only if $-\\sqrt3<x<\\sqrt3$\n\nWhich of the following statements is true?",
+    "options": [
+      "The argument is completely correct.",
+      "The first error occurs in line I.",
+      "The first error occurs in line II.",
+      "The first error occurs in line III.",
+      "The first error occurs in line IV.",
+      "The first error occurs in line V.",
+      "The first error occurs in line VI."
+    ],
+    "correctIndex": 0,
+    "format": "latex",
+    "difficulty": "standard",
+    "explanation": {
+      "zh": {
+        "steps": [
+          "I 是两边加 4；II 是恒等式配方；III 使用 $u^2<4\\iff-2<u<2$，均可逆。",
+          "IV 看似丢掉条件，但 $x^2-1\\geq-1>-2$ 对所有实数恒成立，所以左侧限制是多余的，删除后仍等价。",
+          "V 加 1 可逆；VI 的 $x^2<3\\iff-\\sqrt3<x<\\sqrt3$ 也正确。整个论证无错误，选 A。"
+        ],
+        "pitfall": "删除一个条件不一定错误：如果它在整个定义域恒成立，删除后仍等价。"
+      },
+      "en": {
+        "steps": [
+          "I adds 4 to both sides; II completes the square by an identity; III uses $u^2<4\\iff-2<u<2$. All are reversible.",
+          "IV seems to drop a condition, but $x^2-1\\geq-1>-2$ for every real $x$. The lower bound is redundant, so removing it preserves equivalence.",
+          "V reversibly adds 1, and VI correctly uses $x^2<3\\iff-\\sqrt3<x<\\sqrt3$. The whole argument is valid. Choose A."
+        ],
+        "pitfall": "Dropping a condition is valid when it holds throughout the entire domain."
+      }
+    },
+    "source": {
+      "kind": "official-public",
+      "title": {
+        "zh": "TMUA 2023 Paper 2 · 官方原卷",
+        "en": "TMUA 2023 Paper 2 · official archive"
+      },
+      "url": "https://uat-wp.s3.eu-west-2.amazonaws.com/wp-content/uploads/2024/04/30144111/TMUA-2023-paper-2.pdf",
+      "originalNumber": "10",
+      "year": 2023,
+      "rightsNote": "Original papers and worked solutions: Cambridge University Press & Assessment / Cambridge Assessment; public archive provided by UAT-UK. No affiliation or endorsement."
+    }
+  },
+  {
+    "id": "ARCHIVE-TMUA-2023-P2-Q11",
+    "exam": "TMUA",
+    "moduleId": "p2",
+    "topic": {
+      "id": "reasoning",
+      "name": {
+        "zh": "逻辑与证明",
+        "en": "Logic & proof"
+      }
+    },
+    "subtopic": {
+      "id": "equivalent-implications",
+      "name": {
+        "zh": "条件命题的等价表述",
+        "en": "Equivalent conditional statements"
+      }
+    },
+    "prompt": "In this question, $k$ is a positive integer.\n\nConsider the following theorem: $$\\text{If }2^k+1\\text{ is a prime, then }k\\text{ is a power of }2.\\qquad(*)$$ Which of the following statements, taken individually, is/are equivalent to $(*)$?\n\nI   If $k$ is a power of $2$, then $2^k+1$ is prime.\nII   $2^k+1$ is not prime only if $k$ is not a power of $2$.\nIII   A sufficient condition for $k$ to be a power of $2$ is that $2^k+1$ is prime.",
+    "options": [
+      "Statement I: Yes; Statement II: Yes; Statement III: Yes",
+      "Statement I: Yes; Statement II: Yes; Statement III: No",
+      "Statement I: Yes; Statement II: No; Statement III: Yes",
+      "Statement I: Yes; Statement II: No; Statement III: No",
+      "Statement I: No; Statement II: Yes; Statement III: Yes",
+      "Statement I: No; Statement II: Yes; Statement III: No",
+      "Statement I: No; Statement II: No; Statement III: Yes",
+      "Statement I: No; Statement II: No; Statement III: No"
+    ],
+    "correctIndex": 6,
+    "format": "latex",
+    "difficulty": "standard",
+    "explanation": {
+      "zh": {
+        "steps": [
+          "设 P 表示“$2^k+1$ 为素数”，Q 表示“$k$ 为 2 的幂”。原命题为 $P\\Rightarrow Q$。",
+          "I 为逆命题 $Q\\Rightarrow P$；II 的“only if”给出 $\\neg P\\Rightarrow\\neg Q$，它是 I 的逆否命题。这两者均不与原命题等价。",
+          "例如 $k=32$ 为 2 的幂，但 $2^{32}+1=641\\cdot6700417$ 非素数，展示了逆向结论的问题。III 明确说 P 是 Q 的充分条件，即 $P\\Rightarrow Q$，完全等价。",
+          "三个判断依次为 No、No、Yes，对应原表格 G。"
+        ],
+        "pitfall": "“A only if B”表示 A 推出 B；“B 的充分条件是 A”也表示 A 推出 B。"
+      },
+      "en": {
+        "steps": [
+          "Let P mean “$2^k+1$ is prime” and Q mean “$k$ is a power of 2”. The theorem is $P\\Rightarrow Q$.",
+          "I is the converse $Q\\Rightarrow P$. The “only if” in II gives $\\neg P\\Rightarrow\\neg Q$, the contrapositive of I. Neither is equivalent to the original theorem.",
+          "For example, $k=32$ is a power of 2 but $2^{32}+1=641\\cdot6700417$ is composite, showing the problem with reversing the implication. III says P is sufficient for Q, exactly $P\\Rightarrow Q$.",
+          "The answers are No, No, Yes, corresponding to row G in the original table."
+        ],
+        "pitfall": "“A only if B” means A implies B; “a sufficient condition for B is A” also means A implies B."
+      }
+    },
+    "source": {
+      "kind": "official-public",
+      "title": {
+        "zh": "TMUA 2023 Paper 2 · 官方原卷",
+        "en": "TMUA 2023 Paper 2 · official archive"
+      },
+      "url": "https://uat-wp.s3.eu-west-2.amazonaws.com/wp-content/uploads/2024/04/30144111/TMUA-2023-paper-2.pdf",
+      "originalNumber": "11",
+      "year": 2023,
+      "rightsNote": "Original papers and worked solutions: Cambridge University Press & Assessment / Cambridge Assessment; public archive provided by UAT-UK. No affiliation or endorsement."
+    }
+  },
+  {
+    "id": "ARCHIVE-TMUA-2023-P2-Q12",
+    "exam": "TMUA",
+    "moduleId": "p2",
+    "topic": {
+      "id": "trigonometry",
+      "name": {
+        "zh": "三角函数与方程",
+        "en": "Trigonometric functions & equations"
+      }
+    },
+    "subtopic": {
+      "id": "parameter-root-count",
+      "name": {
+        "zh": "参数方程解数与条件判断",
+        "en": "Parameter root counts & implications"
+      }
+    },
+    "prompt": "In this question, $p$ is a real constant.\n\nThe equation $\\sin x\\cos^2x=p^2\\sin x$ has $n$ distinct solutions in the range $0\\leq x\\leq2\\pi$.\n\nWhich of the following statements is/are true?\n\nI   $n=3$ is sufficient for $p>1$\nII   $n=7$ only if $-1<p<1$",
+    "options": [
+      "none of them",
+      "I only",
+      "II only",
+      "I and II"
+    ],
+    "correctIndex": 2,
+    "format": "latex",
+    "difficulty": "challenge",
+    "explanation": {
+      "zh": {
+        "steps": [
+          "因式分解为 $\\sin x(\\cos^2x-p^2)=0$。$\\sin x=0$ 永远给出 $0,\\pi,2\\pi$ 三解。另一类为 $\\cos^2x=p^2$。",
+          "当 $|p|>1$ 无新增解；$|p|=1$ 的解与三解重合，故这两类均 $n=3$。当 $p=0$ 增加 $\\pi/2,3\\pi/2$，所以 $n=5$；当 $0<|p|<1$ 增加四个不同解，故 $n=7$。",
+          "I 假：$p=1$ 也有 $n=3$，却不满足 $p>1$。II 真：$n=7$ 推出 $0<|p|<1$，当然推出 $-1<p<1$。只有 II，选 C。"
+        ],
+        "pitfall": "不同方程分支的重复根只能计一次；必要条件可以比精确条件弱，所以 II 包含 p = 0 不会使它变假。"
+      },
+      "en": {
+        "steps": [
+          "Factor as $\\sin x(\\cos^2x-p^2)=0$. The case $\\sin x=0$ always gives $0,\\pi,2\\pi$, three roots. The other case is $\\cos^2x=p^2$.",
+          "For $|p|>1$, there are no additional roots; for $|p|=1$, the roots coincide with the original three. Both give $n=3$. For $p=0$, add $\\pi/2,3\\pi/2$, giving $n=5$. For $0<|p|<1$, add four distinct roots, giving $n=7$.",
+          "I is false: $p=1$ gives $n=3$ without $p>1$. II is true: $n=7$ implies $0<|p|<1$, hence $-1<p<1$. Only II is true. Choose C."
+        ],
+        "pitfall": "Count overlapping roots once. A necessary condition may be weaker than an exact characterisation; including p = 0 in II does not make it false."
+      }
+    },
+    "source": {
+      "kind": "official-public",
+      "title": {
+        "zh": "TMUA 2023 Paper 2 · 官方原卷",
+        "en": "TMUA 2023 Paper 2 · official archive"
+      },
+      "url": "https://uat-wp.s3.eu-west-2.amazonaws.com/wp-content/uploads/2024/04/30144111/TMUA-2023-paper-2.pdf",
+      "originalNumber": "12",
+      "year": 2023,
+      "rightsNote": "Original papers and worked solutions: Cambridge University Press & Assessment / Cambridge Assessment; public archive provided by UAT-UK. No affiliation or endorsement."
+    }
+  },
+  {
+    "id": "ARCHIVE-TMUA-2023-P2-Q13",
+    "exam": "TMUA",
+    "moduleId": "p2",
+    "topic": {
+      "id": "reasoning",
+      "name": {
+        "zh": "逻辑与证明",
+        "en": "Logic & proof"
+      }
+    },
+    "subtopic": {
+      "id": "sufficiency-chain",
+      "name": {
+        "zh": "条件之间的蕴含关系",
+        "en": "Implications between conditions"
+      }
+    },
+    "prompt": "Let $x$ be a real number.\n\nWhich one of the following statements is a sufficient condition for exactly three of the other four statements?",
+    "options": [
+      "$x\\geq0$",
+      "$x=1$",
+      "$x=0$ or $x=1$",
+      "$x\\geq0$ or $x\\leq1$",
+      "$x\\geq0$ and $x\\leq1$"
+    ],
+    "correctIndex": 2,
+    "format": "latex",
+    "difficulty": "standard",
+    "explanation": {
+      "zh": {
+        "steps": [
+          "D 对所有实数恒真。C 限定 $x\\in\\{0,1\\}$，因此一定推出 A、D、E；它不一定推出 B，因为 $x=0$ 满足 C 而不满足 B。",
+          "其余选项：B（$x=1$）推出全部四个；E（$0\\leq x\\leq1$）只保证 A、D；A 只保证 D；D 不保证其他任何一个。",
+          "所以恰好推出另外三个的是 C。"
+        ],
+        "pitfall": "“或”是逻辑析取；x ≥ 0 或 x ≤ 1 覆盖所有实数。不要把“或”误读成“且”。"
+      },
+      "en": {
+        "steps": [
+          "D is true for every real number. C restricts $x$ to $\\{0,1\\}$, so implies A, D and E. It does not imply B, since $x=0$ satisfies C but not B.",
+          "For the other options: B ($x=1$) implies all four; E ($0\\leq x\\leq1$) guarantees only A and D; A guarantees only D; D guarantees none of the others.",
+          "Thus C is sufficient for exactly three of the other four."
+        ],
+        "pitfall": "“Or” is logical disjunction: x ≥ 0 or x ≤ 1 covers every real number. Do not read “or” as “and”."
+      }
+    },
+    "source": {
+      "kind": "official-public",
+      "title": {
+        "zh": "TMUA 2023 Paper 2 · 官方原卷",
+        "en": "TMUA 2023 Paper 2 · official archive"
+      },
+      "url": "https://uat-wp.s3.eu-west-2.amazonaws.com/wp-content/uploads/2024/04/30144111/TMUA-2023-paper-2.pdf",
+      "originalNumber": "13",
+      "year": 2023,
+      "rightsNote": "Original papers and worked solutions: Cambridge University Press & Assessment / Cambridge Assessment; public archive provided by UAT-UK. No affiliation or endorsement."
+    }
+  },
+  {
+    "id": "ARCHIVE-TMUA-2023-P2-Q14",
+    "exam": "TMUA",
+    "moduleId": "p2",
+    "topic": {
+      "id": "geometry",
+      "name": {
+        "zh": "几何",
+        "en": "Geometry"
+      }
+    },
+    "subtopic": {
+      "id": "cyclic-line-gradients",
+      "name": {
+        "zh": "循环直线方程与斜率",
+        "en": "Cyclic line equations & gradients"
+      }
+    },
+    "prompt": "Three lines are given by the equations: $$ax+by+c=0$$ $$bx+cy+a=0$$ $$cx+ay+b=0$$ where $a$, $b$ and $c$ are non-zero real numbers.\n\nWhich one of the following is correct?",
+    "options": [
+      "If two of the lines are parallel, then all three are parallel.",
+      "If two of the lines are parallel, then the third is perpendicular to the other two.",
+      "If two of the lines are parallel, then the third is parallel to $y=x$.",
+      "If two of the lines are parallel, then the third is perpendicular to $y=x$.",
+      "If two of the lines are perpendicular, then all three meet at a point.",
+      "If two of the lines are perpendicular, then the third is parallel to $y=x$.",
+      "If two of the lines are perpendicular, then the third is perpendicular to $y=x$."
+    ],
+    "correctIndex": 5,
+    "format": "latex",
+    "difficulty": "challenge",
+    "explanation": {
+      "zh": {
+        "steps": [
+          "三条斜率分别为 $-a/b,-b/c,-c/a$。因方程循环对称，可先假设前两条垂直，则斜率积 $a/c=-1$，所以 $a=-c$。",
+          "第三条斜率 $-c/a=1$，必平行于 $y=x$，所以 F 正确。其他垂直线对由循环换名给出同样结论。",
+          "排除平行情形 A–D：取 $a=1,b=2,c=4$，斜率为 $-1/2,-1/2,-4$，不满足这四个结论。G 与已求的斜率 1 相反。",
+          "E 也不必然成立：取 $a=1,b=2,c=-1$，三线为 $y=-x/2+1/2$、$y=2x+1$、$y=x-2$。后两线交于 $(-3,-5)$，第一条在 $x=-3$ 时为 $y=2$，不共点。选 F。"
+        ],
+        "pitfall": "垂直要求斜率乘积为 -1；不能由两线垂直就推断第三条经过交点。"
+      },
+      "en": {
+        "steps": [
+          "The gradients are $-a/b,-b/c,-c/a$. By cyclic symmetry, assume the first two are perpendicular. Their gradient product is $a/c=-1$, so $a=-c$.",
+          "The third gradient is $-c/a=1$, so it is parallel to $y=x$. F is true; relabelling cyclically gives the same conclusion for any perpendicular pair.",
+          "To rule out A–D, take $a=1,b=2,c=4$, giving gradients $-1/2,-1/2,-4$ and none of those four conclusions. G contradicts the derived gradient 1.",
+          "E is not guaranteed: for $a=1,b=2,c=-1$, the lines are $y=-x/2+1/2$, $y=2x+1$, and $y=x-2$. The last two meet at $(-3,-5)$, but the first has $y=2$ at $x=-3$, so they are not concurrent. Choose F."
+        ],
+        "pitfall": "Perpendicular slopes multiply to -1. Two perpendicular lines do not force the third to pass through their intersection."
+      }
+    },
+    "source": {
+      "kind": "official-public",
+      "title": {
+        "zh": "TMUA 2023 Paper 2 · 官方原卷",
+        "en": "TMUA 2023 Paper 2 · official archive"
+      },
+      "url": "https://uat-wp.s3.eu-west-2.amazonaws.com/wp-content/uploads/2024/04/30144111/TMUA-2023-paper-2.pdf",
+      "originalNumber": "14",
+      "year": 2023,
+      "rightsNote": "Original papers and worked solutions: Cambridge University Press & Assessment / Cambridge Assessment; public archive provided by UAT-UK. No affiliation or endorsement."
+    }
+  },
+  {
+    "id": "ARCHIVE-TMUA-2023-P2-Q15",
+    "exam": "TMUA",
+    "moduleId": "p2",
+    "topic": {
+      "id": "sequences",
+      "name": {
+        "zh": "数列与级数",
+        "en": "Sequences & series"
+      }
+    },
+    "subtopic": {
+      "id": "recurring-binary",
+      "name": {
+        "zh": "二进制循环小数",
+        "en": "Recurring binary fractions"
+      }
+    },
+    "prompt": "The base $10$ number $0.03841$ has the value $$0\\times10^{-1}+3\\times10^{-2}+8\\times10^{-3}+4\\times10^{-4}+1\\times10^{-5}=0.03841.$$ Similarly, the base $2$ number $0.01101$ has the value $$0\\times2^{-1}+1\\times2^{-2}+1\\times2^{-3}+0\\times2^{-4}+1\\times2^{-5}=\\frac{13}{32}.$$ What is the value of the recurring base $2$ number $0.\\overline{0011}=0.001100110011\\ldots$?",
+    "options": [
+      "$\\frac13$",
+      "$\\frac15$",
+      "$\\frac1{15}$",
+      "$\\frac2{15}$",
+      "$\\frac4{15}$",
+      "$\\frac3{16}$",
+      "$\\frac5{16}$",
+      "$\\frac6{31}$"
+    ],
+    "correctIndex": 1,
+    "format": "latex",
+    "difficulty": "standard",
+    "explanation": {
+      "zh": {
+        "steps": [
+          "首个四位循环节贡献 $2^{-3}+2^{-4}=3/16$。每向右移动四位，贡献乘 $2^{-4}=1/16$。",
+          "所以数值为等比级数 $\\frac3{16}(1+1/16+1/16^2+\\cdots)=\\frac{3/16}{1-1/16}=1/5$，选 B。"
+        ],
+        "pitfall": "二进制每位权重为 2 的负次幂；循环节 0011 共四位，不能按十进制处理。"
+      },
+      "en": {
+        "steps": [
+          "The first four-digit block contributes $2^{-3}+2^{-4}=3/16$. Shifting four places right multiplies each block contribution by $2^{-4}=1/16$.",
+          "The value is the geometric series $\\frac3{16}(1+1/16+1/16^2+\\cdots)=\\frac{3/16}{1-1/16}=1/5$. Choose B."
+        ],
+        "pitfall": "Binary places use negative powers of 2. The recurring block has four digits; do not treat it as a decimal fraction."
+      }
+    },
+    "source": {
+      "kind": "official-public",
+      "title": {
+        "zh": "TMUA 2023 Paper 2 · 官方原卷",
+        "en": "TMUA 2023 Paper 2 · official archive"
+      },
+      "url": "https://uat-wp.s3.eu-west-2.amazonaws.com/wp-content/uploads/2024/04/30144111/TMUA-2023-paper-2.pdf",
+      "originalNumber": "15",
+      "year": 2023,
+      "rightsNote": "Original papers and worked solutions: Cambridge University Press & Assessment / Cambridge Assessment; public archive provided by UAT-UK. No affiliation or endorsement."
+    }
+  },
+  {
+    "id": "ARCHIVE-TMUA-2023-P2-Q16",
+    "exam": "TMUA",
+    "moduleId": "p2",
+    "topic": {
+      "id": "sequences",
+      "name": {
+        "zh": "数列与级数",
+        "en": "Sequences & series"
+      }
+    },
+    "subtopic": {
+      "id": "recurrence-invariants",
+      "name": {
+        "zh": "递推数列的整除不变量",
+        "en": "Divisibility invariants in recurrences"
+      }
+    },
+    "prompt": "A sequence is defined by: $$u_1=a,\\qquad u_2=b,$$ $$u_{n+2}=u_n+u_{n+1}\\quad\\text{for }n\\geq1,$$ where $a$ and $b$ are positive integers. The highest common factor of $a$ and $b$ is $7$.\n\nWhich of the following statements must be true?\n\nI   $u_{2023}$ is a multiple of $7$\nII   If $u_1$ is not a factor of $u_2$, then $u_1$ is not a factor of $u_n$ for any $n>1$\nIII   The highest common factor of $u_1$ and $u_5$ is $7$",
+    "options": [
+      "none of them",
+      "I only",
+      "II only",
+      "III only",
+      "I and II only",
+      "I and III only",
+      "II and III only",
+      "I, II and III"
+    ],
+    "correctIndex": 1,
+    "format": "latex",
+    "difficulty": "challenge",
+    "explanation": {
+      "zh": {
+        "steps": [
+          "I 真：$u_1,u_2$ 都为 7 的倍数，两个 7 的倍数相加仍是 7 的倍数。由递推归纳，所有项包括 $u_{2023}$ 均为 7 的倍数。",
+          "II 假：取 $a=14,b=7$，公因数条件符合，且 14 不整除 7；但 $u_3=21,u_4=28$，14 整除 $u_4$。",
+          "III 假：$u_5=2a+3b$。取 $a=21,b=7$，则 $u_5=63$，$\\gcd(u_1,u_5)=21$，不是 7。所以只有 I，选 B。"
+        ],
+        "pitfall": "相邻项的公因数性质不能直接套到相隔多项的两个数；反例必须满足初始 gcd = 7。"
+      },
+      "en": {
+        "steps": [
+          "I is true: $u_1,u_2$ are multiples of 7, and their sum is a multiple of 7. Induction through the recurrence makes every term, including $u_{2023}$, a multiple of 7.",
+          "II is false: take $a=14,b=7$. The common-factor condition holds and 14 does not divide 7, but $u_3=21,u_4=28$, and 14 divides $u_4$.",
+          "III is false: $u_5=2a+3b$. With $a=21,b=7$, $u_5=63$, and $\\gcd(u_1,u_5)=21$, not 7. Only I is true. Choose B."
+        ],
+        "pitfall": "A common-factor property of adjacent terms cannot be assumed for nonadjacent terms. Counterexamples must satisfy the initial gcd = 7."
+      }
+    },
+    "source": {
+      "kind": "official-public",
+      "title": {
+        "zh": "TMUA 2023 Paper 2 · 官方原卷",
+        "en": "TMUA 2023 Paper 2 · official archive"
+      },
+      "url": "https://uat-wp.s3.eu-west-2.amazonaws.com/wp-content/uploads/2024/04/30144111/TMUA-2023-paper-2.pdf",
+      "originalNumber": "16",
+      "year": 2023,
+      "rightsNote": "Original papers and worked solutions: Cambridge University Press & Assessment / Cambridge Assessment; public archive provided by UAT-UK. No affiliation or endorsement."
+    }
+  },
+  {
+    "id": "ARCHIVE-TMUA-2023-P2-Q17",
+    "exam": "TMUA",
+    "moduleId": "p2",
+    "topic": {
+      "id": "calculus",
+      "name": {
+        "zh": "微积分",
+        "en": "Calculus"
+      }
+    },
+    "subtopic": {
+      "id": "ceiling-step-integral",
+      "name": {
+        "zh": "取整函数的分段积分",
+        "en": "Integrating ceiling step functions"
+      }
+    },
+    "prompt": "The ceiling of $x$, written $\\lceil x\\rceil$, is defined to be the value of $x$ rounded up to the nearest integer.\n\nFor example: $\\lceil\\pi\\rceil=4$, $\\lceil2.1\\rceil=3$, $\\lceil8\\rceil=8$.\n\nWhat is the value of the following integral? $$\\int_0^{99}2^{\\lceil x\\rceil}\\,dx$$",
+    "options": [
+      "$2^{99}$",
+      "$2^{99}-1$",
+      "$2^{99}-2$",
+      "$2^{100}$",
+      "$2^{100}-1$",
+      "$2^{100}-2$"
+    ],
+    "correctIndex": 5,
+    "format": "latex",
+    "difficulty": "standard",
+    "explanation": {
+      "zh": {
+        "steps": [
+          "对每个整数 $j=1,\\ldots,99$，在区间 $j-1<x\\leq j$ 上有 $\\lceil x\\rceil=j$，所以被积函数恒为 $2^j$。",
+          "孤立端点的值不改变积分；每个区间宽 1，因此积分为 $2^1+2^2+\\cdots+2^{99}$，共 99 项。",
+          "等比求和为 $2(2^{99}-1)/(2-1)=2^{100}-2$，选 F。"
+        ],
+        "pitfall": "不能把 x = 0 的孤立点当作一个宽度为 1 的区间；首项是 2，不是 1。"
+      },
+      "en": {
+        "steps": [
+          "For each integer $j=1,\\ldots,99$, on $j-1<x\\leq j$ we have $\\lceil x\\rceil=j$, so the integrand is $2^j$.",
+          "Values at isolated endpoints do not affect the integral. Each interval has width 1, giving $2^1+2^2+\\cdots+2^{99}$, a sum of 99 terms.",
+          "The geometric sum is $2(2^{99}-1)/(2-1)=2^{100}-2$. Choose F."
+        ],
+        "pitfall": "The isolated point x = 0 does not contribute a unit-width interval. The first term is 2, not 1."
+      }
+    },
+    "source": {
+      "kind": "official-public",
+      "title": {
+        "zh": "TMUA 2023 Paper 2 · 官方原卷",
+        "en": "TMUA 2023 Paper 2 · official archive"
+      },
+      "url": "https://uat-wp.s3.eu-west-2.amazonaws.com/wp-content/uploads/2024/04/30144111/TMUA-2023-paper-2.pdf",
+      "originalNumber": "17",
+      "year": 2023,
+      "rightsNote": "Original papers and worked solutions: Cambridge University Press & Assessment / Cambridge Assessment; public archive provided by UAT-UK. No affiliation or endorsement."
+    }
+  },
+  {
+    "id": "ARCHIVE-TMUA-2023-P2-Q18",
+    "exam": "TMUA",
+    "moduleId": "p2",
+    "topic": {
+      "id": "algebra",
+      "name": {
+        "zh": "代数",
+        "en": "Algebra"
+      }
+    },
+    "subtopic": {
+      "id": "quartic-positive-substitution",
+      "name": {
+        "zh": "四次方程与正根换元",
+        "en": "Quartics & positive substitution roots"
+      }
+    },
+    "prompt": "The equation $x^4+bx^2+c=0$ has four distinct real roots if and only if which of the following conditions is satisfied?",
+    "options": [
+      "$b^2>4c$",
+      "$b^2<4c$",
+      "$c>0$ and $b>2\\sqrt c$",
+      "$c>0$ and $b<-2\\sqrt c$",
+      "$c<0$ and $b<0$",
+      "$c<0$ and $b>0$"
+    ],
+    "correctIndex": 3,
+    "format": "latex",
+    "difficulty": "challenge",
+    "explanation": {
+      "zh": {
+        "steps": [
+          "令 $u=x^2$，方程为 $u^2+bu+c=0$。要有四个不同实根，必须且只需两个 $u$ 根不同且严格为正，分别给出 $\\pm\\sqrt{u_1},\\pm\\sqrt{u_2}$。",
+          "不同实根要求 $b^2-4c>0$。两个正根要求积 $c>0$ 且和 $-b>0$；这两个符号条件加上判别式条件，也足够保证两个根为正。",
+          "合并为 $c>0$、$b<0$、$b^2>4c$，即 $c>0$ 且 $b<-2\\sqrt c$，选 D。"
+        ],
+        "pitfall": "判别式为正只保证 u 的实根；u 是 x²，根还必须严格为正，否则不会产生四个不同的实数 x。"
+      },
+      "en": {
+        "steps": [
+          "Let $u=x^2$. The equation becomes $u^2+bu+c=0$. Four distinct real roots require and are guaranteed by two distinct strictly positive $u$ roots, giving $\\pm\\sqrt{u_1},\\pm\\sqrt{u_2}$.",
+          "Distinct real roots require $b^2-4c>0$. Two positive roots require product $c>0$ and sum $-b>0$; with the discriminant condition, these sign conditions also guarantee positivity.",
+          "Combining gives $c>0$, $b<0$, $b^2>4c$, equivalently $c>0$ and $b<-2\\sqrt c$. Choose D."
+        ],
+        "pitfall": "A positive discriminant only gives real u roots. Since u = x², they must also be strictly positive to produce four distinct real x roots."
+      }
+    },
+    "source": {
+      "kind": "official-public",
+      "title": {
+        "zh": "TMUA 2023 Paper 2 · 官方原卷",
+        "en": "TMUA 2023 Paper 2 · official archive"
+      },
+      "url": "https://uat-wp.s3.eu-west-2.amazonaws.com/wp-content/uploads/2024/04/30144111/TMUA-2023-paper-2.pdf",
+      "originalNumber": "18",
+      "year": 2023,
+      "rightsNote": "Original papers and worked solutions: Cambridge University Press & Assessment / Cambridge Assessment; public archive provided by UAT-UK. No affiliation or endorsement."
+    }
+  },
+  {
+    "id": "ARCHIVE-TMUA-2023-P2-Q19",
+    "exam": "TMUA",
+    "moduleId": "p2",
+    "topic": {
+      "id": "calculus",
+      "name": {
+        "zh": "微积分",
+        "en": "Calculus"
+      }
+    },
+    "subtopic": {
+      "id": "polynomial-root-stationary-counts",
+      "name": {
+        "zh": "多项式零点与驻点计数",
+        "en": "Polynomial roots & stationary-point counts"
+      }
+    },
+    "prompt": "In this question, $f(x)$ is a non-constant polynomial, and $g(x)=xf^\\prime(x)$.\n\n$f(x)=0$ for exactly $M$ real values of $x$.\n$g(x)=0$ for exactly $N$ real values of $x$.\n\nWhich of the following statements is/are true?\n\nI   It is possible that $M<N$\nII   It is possible that $M=N$\nIII   It is possible that $M>N$",
+    "options": [
+      "none of them",
+      "I only",
+      "II only",
+      "III only",
+      "I and II only",
+      "I and III only",
+      "II and III only",
+      "I, II and III"
+    ],
+    "correctIndex": 7,
+    "format": "latex",
+    "difficulty": "standard",
+    "explanation": {
+      "zh": {
+        "steps": [
+          "这是三个“有可能”的命题，只需分别给出符合条件的例子；三个命题不要求使用同一个多项式。",
+          "I：取 $f(x)=x^2+1$，没有实零点，$M=0$；$g(x)=2x^2$ 只有 $x=0$ 一个实零点，$N=1$，故 $M<N$。",
+          "II：取 $f(x)=x^2-2x$，零点为 0、2，$M=2$；$g(x)=2x(x-1)$ 的零点为 0、1，$N=2$，故相等。",
+          "III：取 $f(x)=x^2-1$，$M=2$；$g(x)=2x^2$，$N=1$，故 $M>N$。三个命题都成立，选 H。"
+        ],
+        "pitfall": "题目计的是不同实数零点，不是重数；x = 0 若同时来自两个因子，仍只计一次。"
+      },
+      "en": {
+        "steps": [
+          "Each statement asks whether a relation is possible, so provide a valid example for each. They do not need to use the same polynomial.",
+          "I: take $f(x)=x^2+1$, with no real zeros, so $M=0$. Then $g(x)=2x^2$ has only the zero $x=0$, so $N=1$ and $M<N$.",
+          "II: take $f(x)=x^2-2x$, with zeros 0 and 2, giving $M=2$. Then $g(x)=2x(x-1)$ has zeros 0 and 1, giving $N=2$.",
+          "III: take $f(x)=x^2-1$, giving $M=2$. Then $g(x)=2x^2$ gives $N=1$, so $M>N$. All three are possible. Choose H."
+        ],
+        "pitfall": "Count distinct real zeros, not multiplicities. If both factors give x = 0, count it only once."
+      }
+    },
+    "source": {
+      "kind": "official-public",
+      "title": {
+        "zh": "TMUA 2023 Paper 2 · 官方原卷",
+        "en": "TMUA 2023 Paper 2 · official archive"
+      },
+      "url": "https://uat-wp.s3.eu-west-2.amazonaws.com/wp-content/uploads/2024/04/30144111/TMUA-2023-paper-2.pdf",
+      "originalNumber": "19",
+      "year": 2023,
+      "rightsNote": "Original papers and worked solutions: Cambridge University Press & Assessment / Cambridge Assessment; public archive provided by UAT-UK. No affiliation or endorsement."
+    }
+  },
+  {
+    "id": "ARCHIVE-TMUA-2023-P2-Q20",
+    "exam": "TMUA",
+    "moduleId": "p2",
+    "topic": {
+      "id": "reasoning",
+      "name": {
+        "zh": "逻辑与证明",
+        "en": "Logic & proof"
+      }
+    },
+    "subtopic": {
+      "id": "integral-only-if-counterexamples",
+      "name": {
+        "zh": "积分命题的必要条件与反例",
+        "en": "Necessary integral conditions & counterexamples"
+      }
+    },
+    "prompt": "Let $f$ be a polynomial with real coefficients.\n\nThe integral $I_{p,q}$ where $p<q$ is defined by $$I_{p,q}=\\int_p^q(f(x))^2-(f(|x|))^2\\,dx.$$ Which of the following statements must be true?\n\n1   $I_{p,q}=0$ only if $0<p$\n2   $f^\\prime(x)<0$ for all $x$ only if $I_{p,q}<0$ for all $p<q<0$\n3   $I_{p,q}>0$ only if $p<0$",
+    "options": [
+      "none of them",
+      "1 only",
+      "2 only",
+      "3 only",
+      "1 and 2 only",
+      "1 and 3 only",
+      "2 and 3 only",
+      "1, 2 and 3"
+    ],
+    "correctIndex": 3,
+    "format": "latex",
+    "difficulty": "challenge",
+    "explanation": {
+      "zh": {
+        "steps": [
+          "当 $x\\geq0$，有 $|x|=x$，所以被积函数恒为零。因此只要 $p\\geq0$，积分就为零。",
+          "命题 1 假：取 $p=0,q=1$，任意实系数多项式都使积分为零，但不满足严格的 $0<p$。",
+          "命题 2 假：取 $f(x)=1-x$，导数为 -1。对 $x<0$，$(f(x))^2-(f(|x|))^2=(1-x)^2-(1+x)^2=-4x>0$，所以所有 $p<q<0$ 的积分反而为正。",
+          "命题 3 真：若 $p\\geq0$，积分只能为零，不可能大于零。因此 $I_{p,q}>0$ 必须有 $p<0$。只有 3，选 D。"
+        ],
+        "pitfall": "严格不等号的端点可以构成反例；函数递减不保证两个函数值的平方保持相同大小关系。"
+      },
+      "en": {
+        "steps": [
+          "For $x\\geq0$, $|x|=x$, so the integrand is zero. Therefore the integral is zero whenever $p\\geq0$.",
+          "Statement 1 is false: with $p=0,q=1$, every real-coefficient polynomial gives zero integral, while the strict condition $0<p$ fails.",
+          "Statement 2 is false: take $f(x)=1-x$, whose derivative is -1. For $x<0$, $(f(x))^2-(f(|x|))^2=(1-x)^2-(1+x)^2=-4x>0$, so the integral is positive for every $p<q<0$.",
+          "Statement 3 is true: if $p\\geq0$, the integral is zero and cannot be positive. Thus $I_{p,q}>0$ requires $p<0$. Only 3 is true. Choose D."
+        ],
+        "pitfall": "An excluded endpoint may provide a counterexample. Decreasing function values do not imply the same ordering after squaring."
+      }
+    },
+    "source": {
+      "kind": "official-public",
+      "title": {
+        "zh": "TMUA 2023 Paper 2 · 官方原卷",
+        "en": "TMUA 2023 Paper 2 · official archive"
+      },
+      "url": "https://uat-wp.s3.eu-west-2.amazonaws.com/wp-content/uploads/2024/04/30144111/TMUA-2023-paper-2.pdf",
+      "originalNumber": "20",
+      "year": 2023,
+      "rightsNote": "Original papers and worked solutions: Cambridge University Press & Assessment / Cambridge Assessment; public archive provided by UAT-UK. No affiliation or endorsement."
+    }
+  }
+]

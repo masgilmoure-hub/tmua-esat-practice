@@ -68,10 +68,10 @@ test('invalid uploads preserve the existing paper and page controls remain reada
   await page.screenshot({ path: '/tmp/tmua-reader-mobile.png', fullPage: true });
 });
 
-test('all 15 remaining PDF answer-sheet papers render their first and last question pages', async ({ page }) => {
+test('all 14 remaining PDF answer-sheet papers render their first and last question pages', async ({ page }) => {
   test.setTimeout(120_000);
   for (let year = 2016; year <= 2023; year++) for (const paper of ['p1', 'p2']) {
-    if (year === 2023 && paper === 'p1') continue;
+    if (year === 2023) continue;
     await page.getByRole('navigation').getByRole('button', { name: '官方历年卷', exact: true }).click();
     await page.getByLabel('原卷年份', { exact: true }).selectOption(String(year));
     await page.getByLabel('练习试卷', { exact: true }).selectOption(paper);

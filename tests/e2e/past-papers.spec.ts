@@ -5,8 +5,8 @@ async function openArchive(page: Page) {
   await page.getByRole('navigation').getByRole('button', { name: '官方历年卷', exact: true }).click();
 }
 async function start(page: Page) {
-  await page.getByLabel('我能打开所选官方原卷，已准备好开始。', { exact: true }).check();
-  await page.getByRole('button', { name: '开始原卷答题卡', exact: true }).click();
+  await page.locator('.import-confirm input').check();
+  await page.getByRole('button', { name: /^开始(真题整卷练习|原卷答题卡)$/ }).click();
 }
 async function submit(page: Page) {
   await page.locator('.navigator-panel').getByRole('button', { name: '提交本卷 / 模块', exact: true }).click();
@@ -28,7 +28,7 @@ test('year selection, original PDF links, two 75-minute papers, reload, marking 
   await expect(page).toHaveTitle('TMUA / ESAT · Practice');
   await expect(page.getByRole('heading', { level: 1 })).toHaveText('用官方原卷，认真练一次。');
   await expect(page.getByLabel('原卷年份', { exact: true }).locator('option')).toHaveCount(8);
-  await expect(page.getByRole('button', { name: '开始原卷答题卡', exact: true })).toBeDisabled();
+  await expect(page.getByRole('button', { name: '开始真题整卷练习', exact: true })).toBeDisabled();
   await expect(page.getByRole('link', { name: '打开官方原卷', exact: true }).first()).toHaveAttribute('href', /TMUA-2023-paper-1\.pdf$/);
   await expect(page.getByRole('link', { name: '官方英文详解', exact: true })).toHaveCount(0);
   await page.screenshot({ path: '/tmp/tmua-papers-desktop.png', fullPage: true });
@@ -61,13 +61,14 @@ test('year selection, original PDF links, two 75-minute papers, reload, marking 
   await expect(page.locator('.section-results tbody tr')).toHaveCount(2);
   await expect(page.getByLabel('解析语言', { exact: true })).toBeVisible();
   await expect(page.getByRole('heading', { name: '知识点表现', exact: true })).toBeVisible();
-  await expect(page.locator('.performance-panel')).toContainText('仅统计已标注的文字题');
-  await expect(page.locator('.linked-review').first()).toContainText('尚未提供本题的双语解析');
+  await expect(page.locator('.linked-review')).toHaveCount(0);
+  await expect(page.locator('.review-item')).toHaveCount(40);
+  await expect(page.getByLabel('第 21 题解析', { exact: true })).toContainText('x=80');
   await expect(page.getByLabel('第 1 题解析', { exact: true })).toContainText('不是官方译文');
-  await expect(page.getByRole('link', { name: '官方英文详解', exact: true }).first()).toHaveAttribute('href', /tmua-2023-p2-worked\.pdf$/);
+  await expect(page.getByRole('link', { name: '官方英文详解', exact: true }).first()).toHaveAttribute('href', /tmua-2023-p1-worked\.pdf$/);
   await page.reload();
   await page.getByRole('navigation').getByRole('button', { name: '练习记录', exact: true }).click();
-  await expect(page.locator('.records-table')).toContainText('官方历年原卷练习');
+  await expect(page.locator('.records-table')).toContainText('真题整卷练习');
   await page.getByRole('button', { name: '查看结果', exact: true }).click();
   await expect(page.locator('.result-stats')).toContainText('2 / 40');
 });

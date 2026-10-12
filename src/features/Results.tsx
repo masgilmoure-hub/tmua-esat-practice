@@ -24,7 +24,7 @@ function ReviewItem({ q, index, answer, mode }: { q: Question; index: number; an
     <h3>{mode === 'both' ? '完整解析 / Explanation' : mode === 'zh' ? '完整解析' : 'Explanation'}</h3>
     <ol className="explanation-steps">{q.explanation[languages[0]].steps.map((_, i) => <li key={i}>{languages.map(language => <p lang={language === 'zh' ? 'zh-CN' : 'en'} key={language} className={language === 'en' && mode === 'both' ? 'english-explanation' : ''}><MathText text={q.explanation[language].steps[i]} format={q.format} /></p>)}</li>)}</ol>
     <div className="pitfall"><h4>{mode === 'both' ? '易错点 / Common pitfall' : mode === 'zh' ? '易错点' : 'Common pitfall'}</h4>{languages.map(language => <p key={language} lang={language === 'zh' ? 'zh-CN' : 'en'}><MathText text={q.explanation[language].pitfall} format={q.format} /></p>)}</div>
-    <p className="review-source small muted">{t('原始来源', 'Original source')}：{q.source.title[lang]} · {q.source.originalNumber}{q.source.year ? ` · ${q.source.year}` : ''}{q.source.url ? <a href={q.source.url} target="_blank" rel="noreferrer">{t('来源链接', 'Source link')}<ExternalLink size={12} /></a> : null}</p>
+    <p className="review-source small muted">{t('原始来源', 'Original source')}：{q.source.title[lang]} · {q.source.originalNumber}{q.source.year ? ` · ${q.source.year}` : ''}{q.source.url ? <a href={q.source.url} target="_blank" rel="noreferrer">{t('来源链接', 'Source link')}<ExternalLink size={12} /></a> : null}{q.source.kind === 'official-public' && local ? <a href={localPaperUrl(local.workedFile)} onClick={event => { event.preventDefault(); openLocalPaper(local.workedFile); }} target="_blank" rel="noreferrer">{t('官方英文详解', 'Official English solution')}<ExternalLink size={12} /></a> : null}</p>
   </article>;
 }
 

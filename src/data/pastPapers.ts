@@ -1,17 +1,20 @@
 import data from './past-papers.json';
 import nativePaper from './tmua-2023-p1.json';
+import nativePaper2 from './tmua-2023-p2.json';
 import type { Question, Section } from '../types';
 export const PAST_PAPERS = data.papers;
 export const PAST_PAPER_SOURCE = data;
 export const PAST_PAPER_YEARS = [...new Set(PAST_PAPERS.map(paper => paper.year))].sort((a, b) => b - a);
 export type PastPaper = typeof PAST_PAPERS[number];
 export const NATIVE_2023_P1 = nativePaper as Question[];
-export const isNativePaper = (paper: PastPaper) => paper.year === 2023 && paper.moduleId === 'p1';
+export const NATIVE_2023_P2 = nativePaper2 as Question[];
+const nativePapers: Record<string, Question[]> = { '2023:p1': NATIVE_2023_P1, '2023:p2': NATIVE_2023_P2 };
+export const isNativePaper = (paper: PastPaper) => !!nativePapers[`${paper.year}:${paper.moduleId}`];
 
 export function linkedQuestions(paper: PastPaper): Question[] {
   if (!['p1', 'p2'].includes(paper.moduleId) || paper.questionCount !== 20 || paper.minutes !== 75
     || !/^[A-H]{20}$/.test(paper.answers)) throw new Error('Invalid official answer index');
-  if (isNativePaper(paper)) return NATIVE_2023_P1;
+  if (isNativePaper(paper)) return nativePapers[`${paper.year}:${paper.moduleId}`];
   return [...paper.answers].map((answer, index) => ({
     id: `ARCHIVE-TMUA-${paper.year}-${paper.moduleId.toUpperCase()}-Q${String(index + 1).padStart(2, '0')}`,
     exam: 'TMUA', moduleId: paper.moduleId as 'p1' | 'p2',
