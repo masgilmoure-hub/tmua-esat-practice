@@ -8,8 +8,8 @@
 | --- | --- |
 | `npm ci --cache /workspace/.cache/npm --no-audit --no-fund` | 成功；重复安装可用，使用锁文件，校验未关闭 |
 | `npm run build` | 成功，包含严格 TypeScript 检查与生产构建 |
-| `npm test` | 23 个测试全部通过；0 失败、0 跳过 |
-| `npm run test:e2e` | 22 个 Chromium 浏览器用例全部通过；0 失败、0 跳过，2 workers |
+| `npm test` | 25 个测试全部通过；0 失败、0 跳过 |
+| `npm run test:e2e` | 27 个 Chromium 浏览器用例全部通过；0 失败、0 跳过，2 workers |
 | `npm run validate:bank -- examples/question-bank.json` | 示例题库结构校验成功 |
 | 单文件预览 | 成功生成 `/workspace/tmua-esat-preview.html`，通过独立 HTTP 服务验证 |
 
@@ -104,3 +104,19 @@ Browser 插件与 browser 技能在本会话未提供，因此使用 Playwright 
 当前没有逐题知识点、难度、站内双语数学解析或易错点；这些需要后续审校。来源、正确答案与题号快照兼容既有记录。Sites 尚未重新发布，本地和 GitHub 版本不能当作线上新版本的验证证明。
 
 新版实际构建的单文件预览已通过独立 HTTP 服务再次验证：进入官方历年卷 → 2023 Paper 1 不限时 → 选 F → 刷新恢复 → 确认交卷，得到 1/20、5%。页面额外资源请求 0、应用错误 0；官方 PDF 仅在用户主动点击外链时加载。首次视口截图 `/tmp/tmua-papers-desktop-viewport.png`、`/tmp/tmua-papers-mobile-viewport.png`；预览面板打开请求 queued，不代表客户端已经打开。
+
+## 用户 ZIP 导入与站内原卷阅读器验收
+
+2026-10-12，源为用户实际上传的约 16.6 MB ZIP。安全读取固定资料条目，不执行附带说明和 HTML。原卷、英文解答、答案表的哈希与已核实官方文件一致；上传的 320 个答案逐一匹配。已接入 32 份 PDF（16 原卷 + 16 英文解答），早期样卷暂不接入。320 个页码映射完整，针对 2016 年乱码数字和拆分题号做了处理。
+
+`npm test` 25 通过，`npm run build` 严格类型检查 / 生产构建通过，`npm run test:e2e` 27 通过，0 失败 / 0 跳过。Browser plugin not available，使用 Playwright / 系统 Chromium。新增 PDF.js 6.4.299、锁文件与 Node ≥22.13 的引擎要求；当前 Node 24 支持。
+
+流程：题库筛选官方来源 → 找到 320 题 → 单题站内原卷渲染 → 作答 → 1/1、100% → 本地英文详解链接。另通过各卷开始 → 正确页码 → 上传 / 保存 → 手动校正 → 刷新还原答案与校正 → 确认移除 → 恢复内置原卷且保留答案。
+
+实际对 16 份原卷逐一渲染第一题 / 最后一题页，核对页码及画布有实际笔迹，全部通过。测试损坏 PDF 保留旧文件、存储阻断仍能读取内置卷、个性上传未保存的可见提示、手机翻页和无全局横向溢出。应用 console/page error 为零，无框架覆盖层。
+
+桌面 1536×1024 与手机 390×844 已截图并用 view_image 检查。调整原卷布局避免导航面板被拉成整页高度：桌面答案和导航放在右栏并保持可见；阅读窗口限制高度，支持实际缩放 / 内部滚动。手机采用单列，答案和提交可正常操作。
+
+便携预览约 23 MB，内含原卷、解答、worker 和真实应用代码。独立 HTTP 服务验证单题原卷读取 → 作答 → 1/1、100%，外部 HTTP 资源请求 0，应用错误 0。截图 `/tmp/tmua-reader-desktop.png`、`/tmp/tmua-reader-mobile.png`。未验证直接 file:// 打开、Safari / Firefox 或屏幕阅读器整套体验。
+
+本轮按用户个人实验范围保存到既有私有 GitHub 仓库（API 已核实 private=true），不重新发布公开 Sites 网址。320 题以 PDF 原貌呈现，未完成可编辑题干转换、逐题标签、难度与双语数学解析。构建为支持便携预览保持单个主脚本，Vite 提示约 790 KB 主块过大是已知体积限制；未通过调整警告阈值隐藏该提示。

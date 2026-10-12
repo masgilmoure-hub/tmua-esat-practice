@@ -1,4 +1,4 @@
-import { readFileSync, writeFileSync, mkdirSync } from 'node:fs';
+import { readFileSync, writeFileSync, mkdirSync, readdirSync } from 'node:fs';
 import { resolve } from 'node:path';
 
 // Produce a portable, interactive file from the actual production build.
@@ -6,7 +6,10 @@ import { resolve } from 'node:path';
 const target = resolve(process.argv[2] || 'dist/tmua-esat-preview.html');
 let html = readFileSync('dist/index.html', 'utf8');
 html = html.replace(/<script[^>]*src="([^"]+)"[^>]*><\/script>/g, (_tag, asset) => {
-  const js = readFileSync(resolve('dist', asset.replace(/^\//, '')), 'utf8').replace(/<\/script/gi, '<\\/script');
+  const worker = readdirSync('dist/assets').find(name => name.startsWith('pdf.worker.min-') && name.endsWith('.mjs'));
+  const files = Object.fromEntries(readdirSync('dist/papers').filter(name => name.endsWith('.pdf')).map(name => [name, readFileSync(resolve('dist/papers', name)).toString('base64')]));
+  const bootstrap = `globalThis.__TMUA_LOCAL_PAPERS__=${JSON.stringify(files)};` + (worker ? `globalThis.__TMUA_PDF_WORKER_URL__=URL.createObjectURL(new Blob([${JSON.stringify(readFileSync(resolve('dist/assets', worker), 'utf8'))}],{type:'text/javascript'}));` : '');
+  const js = (bootstrap + readFileSync(resolve('dist', asset.replace(/^\//, '')), 'utf8')).replace(/<\/script/gi, '<\\/script');
   return `<script type="module">${js}</script>`;
 });
 html = html.replace(/<link[^>]*rel="stylesheet"[^>]*href="([^"]+)"[^>]*>/g, (_tag, asset) => {

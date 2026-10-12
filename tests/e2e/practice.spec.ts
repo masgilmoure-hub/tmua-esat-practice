@@ -14,6 +14,7 @@ test.beforeEach(async ({ page }) => {
   page.on('pageerror', e => errors.push(e.message));
   page.on('console', msg => { if (msg.type() === 'error') errors.push(msg.text()); });
   await page.goto('/');
+  await page.getByRole('group', { name: '来源', exact: true }).getByRole('button', { name: '原创示例', exact: true }).click();
 });
 test.afterEach(async ({ page }) => {
   expect(consoleErrors.get(page)).toEqual([]);
@@ -27,6 +28,8 @@ test('loads without console errors and all six filters plus language toggle work
   await page.reload();
   await expect(page).toHaveTitle('TMUA / ESAT · Practice');
   await expect(page.getByRole('heading', { level: 1 })).toHaveText('把练习，做得更有方向。');
+  await expect(page.getByText('找到 326 道题')).toBeVisible();
+  await page.getByRole('group', { name: '来源', exact: true }).getByRole('button', { name: '原创示例', exact: true }).click();
   await expect(page.getByText('找到 6 道示例题')).toBeVisible();
   await page.getByRole('group', { name: '试卷 / 科目', exact: true }).getByRole('button', { name: 'Paper 1', exact: true }).click();
   await expect(page.getByText('找到 3 道示例题')).toBeVisible();
@@ -34,7 +37,7 @@ test('loads without console errors and all six filters plus language toggle work
   await page.getByRole('group', { name: '细分考点', exact: true }).getByRole('button', { name: '二次方程', exact: true }).click();
   await page.getByRole('group', { name: '做题状态', exact: true }).getByRole('button', { name: '未做', exact: true }).click();
   await expect(page.getByText('找到 1 道示例题')).toBeVisible();
-  await page.getByRole('group', { name: '来源', exact: true }).getByRole('button', { name: '官方公开材料（待导入）', exact: true }).click();
+  await page.getByRole('group', { name: '来源', exact: true }).getByRole('button', { name: '官方公开材料', exact: true }).click();
   await expect(page.getByText('没有符合条件的题目')).toBeVisible();
   await expect(page.getByRole('button', { name: '开始训练', exact: true })).toBeDisabled();
   await page.getByRole('button', { name: '重置筛选', exact: true }).click();

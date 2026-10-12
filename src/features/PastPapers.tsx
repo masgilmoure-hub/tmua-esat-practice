@@ -15,7 +15,7 @@ export function PastPapers({ onStart }: { onStart: (questions: Question[], secti
   const included = papers.filter(paper => selection === 'both' || paper.moduleId === selection);
   return <>
     <PageHeading title={t('用官方原卷，认真练一次。', 'Practise with the official past papers.')} subtitle={t('TMUA 2016–2023 · 16 份原卷 · 320 道题的答案索引与答题卡', 'TMUA 2016–2023 · 16 papers · answer indices and sheets for 320 questions')} />
-    <Notice>{t('题干、选项内容和图表保留在官方 PDF。此处提供答题卡、计时与原始分判分，未转录原卷，不是 UAT-UK 官方考试软件。官方英文详解在交卷后提供链接，逐题双语解析与知识点标签尚未录入。', 'Questions, option text and diagrams remain in the official PDFs. This site provides answer sheets, timers and raw marking without reproducing the papers. It is not the UAT-UK test player. Official English worked-solution links appear after submission; bilingual solutions and topic tags are not yet available.')} </Notice>
+    <Notice>{t('你提供的原卷已接入站内阅读器，英文题干、选项内容和图表保持 PDF 原貌。此处提供答题卡、计时与原始分判分，不是 UAT-UK 官方考试软件。官方英文详解在交卷后提供链接，逐题双语解析与知识点标签尚未录入。', 'Your uploaded papers are available in the in-page reader, with original English text, options and diagrams. This site provides answer sheets, timers and raw marking. It is not the UAT-UK test player. Official English worked-solution links appear after submission; bilingual solutions and topic tags are not yet available.')} </Notice>
     <div className="two-columns archive-layout">
       <section className="panel archive-panel"><h2>{t('选择年份与试卷', 'Choose a year and paper')}</h2>
         <div className="archive-fields">

@@ -1,18 +1,20 @@
 import { useMemo, useState } from 'react';
 import { QUESTIONS } from './data/questions';
+import { PAST_PAPERS, linkedQuestions } from './data/pastPapers';
 import { BANK_STORAGE_KEY, loadImportedBank, MAX_BANK_BYTES, MAX_IMPORTED_QUESTIONS, validateQuestionBank } from './questionBank';
 import type { Question } from './types';
 import type { StorageIssue } from './storage';
+const BUILT_IN = [...QUESTIONS, ...PAST_PAPERS.flatMap(linkedQuestions)];
 
 export function useQuestionBank() {
   const [initial] = useState(() => {
-    try { return loadImportedBank(window.localStorage, QUESTIONS); }
+    try { return loadImportedBank(window.localStorage, BUILT_IN); }
     catch { return { questions: [], issue: 'unavailable' as StorageIssue, writable: false }; }
   });
   const [imported, setImported] = useState<Question[]>(initial.questions);
   const [issue, setIssue] = useState<StorageIssue>(initial.issue);
   const [writable, setWritable] = useState(initial.writable);
-  const questions = useMemo(() => [...QUESTIONS, ...imported], [imported]);
+  const questions = useMemo(() => [...BUILT_IN, ...imported], [imported]);
 
   function add(incoming: Question[]): 'saved' | 'invalid' | 'full' | 'blocked' | 'unavailable' {
     if (!writable) return 'blocked';

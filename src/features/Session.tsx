@@ -1,10 +1,11 @@
-import { useEffect, useState } from 'react';
+import { lazy, Suspense, useEffect, useState } from 'react';
 import { ArrowRight, Check, ChevronLeft, ChevronRight, Clock, Flag, Save, ExternalLink } from 'lucide-react';
 import type { ActiveSession } from '../types';
 import { formatTime, remainingSeconds } from '../domain';
 import { moduleInfo } from '../data/catalog';
 import { useI18n } from '../i18n';
 import { ConfirmDialog, Notice, PageHeading } from '../components/Common';
+const PaperReader = lazy(() => import('./PaperReader'));
 
 function SessionClock({ session }: { session: ActiveSession }) {
   const { t } = useI18n();
@@ -28,7 +29,8 @@ export function Session({ session, onAnswer, onFlag, onNavigate, onSubmit, onNex
   const flagged = questions.filter(item => session.flags.includes(item.id)).length;
   const hasNextSection = session.sectionIndex + 1 < session.sections.length;
   const linked = session.questions.some(item => !!item.external);
-  const title = linked ? session.mode === 'mock' ? t('TMUA 官方原卷答题卡', 'TMUA official past-paper answer sheet') : t('官方原卷错题练习', 'Past-paper mistake practice') : session.mode === 'mock' ? t(`${session.exam} 示例模考`, `${session.exam} demo mock`) : t('专项训练', 'Focused practice');
+  const title = linked ? session.mode === 'mock' ? t('TMUA 官方原卷答题卡', 'TMUA official past-paper answer sheet') : t('官方原卷专项训练', 'Past-paper focused practice') : session.mode === 'mock' ? t(`${session.exam} 示例模考`, `${session.exam} demo mock`) : t('专项训练', 'Focused practice');
+  const choices = <fieldset className={`answers ${q.external ? 'letter-answers' : ''}`} aria-labelledby="question-prompt"><legend className="sr-only">{t('选择一个答案', 'Choose one answer')}</legend>{q.options.map((option, index) => <label key={index} className={`answer-option ${session.answers[q.id] === index ? 'selected' : ''}`}><input type="radio" name={q.id} checked={session.answers[q.id] === index} onChange={() => onAnswer(q.id, index)} /><span className="option-letter">{String.fromCharCode(65 + index)}</span>{q.external ? null : <span lang="en">{option}</span>}</label>)}</fieldset>;
   const submitText = session.mode === 'mock' ? t('提交本卷 / 模块', 'Submit section') : t('交卷并查看结果', 'Submit & view results');
   if (session.phase === 'between') {
     const next = session.sections[session.sectionIndex + 1];
@@ -40,20 +42,22 @@ export function Session({ session, onAnswer, onFlag, onNavigate, onSubmit, onNex
       </section></>;
   }
   return <>
-    <PageHeading title={title} subtitle={linked ? t('官方原卷外链 + 站内答题卡 · 原始分判分 · 非官方考试软件', 'Official PDF + local answer sheet · raw marking · not the official test player') : session.questions.every(q => q.source.kind === 'original-demo') ? t('原创示例 · 练习流程体验，非完整官方模考', 'Original demos · practice flow preview, not a full official mock') : t('本地题库专项训练 · 非完整官方模考', 'Focused practice from the local bank · not a full official mock')} />
-    <Notice tone="warning">{linked ? t('请在官方 PDF 中阅读本题并在这里记录答案。计时仍在继续；题干与图表未在本站转录。A–H 为统一答题卡，请仅选择原卷列出的选项。', 'Read the question in the official PDF and record your answer here. The timer keeps running. Original text and diagrams are not reproduced here. A–H are standard slots; select only options shown in the paper.') : session.mode === 'mock' ? t(`本部分仅含 ${questions.length} 道原创示例题，按题量比例缩短计时。`, `This section has only ${questions.length} original demos with proportionally shorter timing.`) : session.questions.every(q => q.source.kind === 'original-demo') ? t('题目为原创示例。交卷后可查看完整解析和易错点。', 'These are original demos. Full explanations and pitfalls are available after submission.') : t('题目来源按导入文件标注。交卷后可查看完整解析和易错点。', 'Sources reflect the imported files. Full explanations and pitfalls are available after submission.')}</Notice>
-    <div className="session-bar"><strong>{session.mode === 'mock' ? moduleInfo(section.moduleId).name[lang] : linked ? t('TMUA · 原卷错题', 'TMUA · Past-paper mistakes') : t(`${session.exam} · 专项训练`, `${session.exam} · Focused practice`)}</strong><SessionClock session={session} /></div>
-    <div className="two-columns answering-layout">
+    <PageHeading title={title} subtitle={linked ? t('站内原卷阅读 + 答题卡 · 原始分判分 · 非官方考试软件', 'In-page paper + answer sheet · raw marking · not the official test player') : session.questions.every(q => q.source.kind === 'original-demo') ? t('原创示例 · 练习流程体验，非完整官方模考', 'Original demos · practice flow preview, not a full official mock') : t('本地题库专项训练 · 非完整官方模考', 'Focused practice from the local bank · not a full official mock')} />
+    <Notice tone="warning">{linked ? t('原卷会在下方阅读器显示。可翻页或按题号定位，再记录答案；计时仍在继续。A–H 为统一答题卡，请仅选择原卷列出的选项。', 'Read the paper in the viewer below, navigate pages or question numbers, then record your answer. The timer keeps running. A–H are standard slots; select only options shown in the paper.') : session.mode === 'mock' ? t(`本部分仅含 ${questions.length} 道原创示例题，按题量比例缩短计时。`, `This section has only ${questions.length} original demos with proportionally shorter timing.`) : session.questions.every(q => q.source.kind === 'original-demo') ? t('题目为原创示例。交卷后可查看完整解析和易错点。', 'These are original demos. Full explanations and pitfalls are available after submission.') : t('题目来源按导入文件标注。交卷后可查看完整解析和易错点。', 'Sources reflect the imported files. Full explanations and pitfalls are available after submission.')}</Notice>
+    <div className="session-bar"><strong>{session.mode === 'mock' ? moduleInfo(section.moduleId).name[lang] : linked ? t('TMUA · 原卷练习', 'TMUA · Past-paper practice') : t(`${session.exam} · 专项训练`, `${session.exam} · Focused practice`)}</strong><SessionClock session={session} /></div>
+    <div className={`two-columns answering-layout ${linked ? 'paper-layout' : ''}`}>
       <section className="panel answer-panel" aria-label={t('答题区', 'Answer area')}>
         <div className="answer-content"><div className="question-top"><span>Question {session.questionIndex + 1} of {questions.length}</span><button className={`text-button flag-button ${session.flags.includes(q.id) ? 'flagged' : ''}`} aria-pressed={session.flags.includes(q.id)} onClick={() => onFlag(q.id)}><Flag size={19} />{session.flags.includes(q.id) ? t('已标记待检查', 'Flagged for review') : t('标记待检查', 'Flag for review')}</button></div>
           <p className="answer-prompt" lang="en" id="question-prompt">{q.prompt}</p>
           {q.external && q.source.url ? <a className="button outline original-paper-link" href={q.source.url} target="_blank" rel="noreferrer">{t(`打开原卷 · 第 ${q.source.originalNumber} 题`, `Open paper · Question ${q.source.originalNumber}`)}<ExternalLink size={16} /></a> : null}
-          <fieldset className={`answers ${q.external ? 'letter-answers' : ''}`} aria-labelledby="question-prompt"><legend className="sr-only">{t('选择一个答案', 'Choose one answer')}</legend>{q.options.map((option, index) => <label key={index} className={`answer-option ${session.answers[q.id] === index ? 'selected' : ''}`}><input type="radio" name={q.id} checked={session.answers[q.id] === index} onChange={() => onAnswer(q.id, index)} /><span className="option-letter">{String.fromCharCode(65 + index)}</span>{q.external ? null : <span lang="en">{option}</span>}</label>)}</fieldset>
+          {q.external ? <Suspense fallback={<p>{t('正在加载阅读器…', 'Loading paper reader…')}</p>}><PaperReader key={`${q.source.year}-${q.moduleId}`} question={q} /></Suspense> : null}
+          {!q.external ? choices : null}
           <p className="small muted source-inline">{t('来源：', 'Source: ')}{q.source.title[lang]} · {q.source.originalNumber}</p>
         </div>
         <div className="answer-footer"><button className="button secondary" disabled={session.questionIndex === 0} onClick={() => onNavigate(session.questionIndex - 1)}><ChevronLeft size={18} />{t('上一题', 'Previous')}</button><button className="button primary" disabled={session.questionIndex + 1 === questions.length} onClick={() => onNavigate(session.questionIndex + 1)}>{t('下一题', 'Next')}<ChevronRight size={18} /></button></div>
       </section>
       <aside className="panel navigator-panel"><div className="navigator-heading"><h2>{t('题号导航', 'Questions')}</h2><span className="small muted">{t(`已答 ${answered} / ${questions.length}`, `${answered} / ${questions.length} answered`)}</span></div>
+        {q.external ? <div className="paper-answer-controls"><h3>{t('选择答案', 'Choose an answer')}</h3>{choices}</div> : null}
         <div className="question-nav" aria-label={t('题号导航', 'Question navigation')}>{questions.map((item, index) => <button key={item.id} onClick={() => onNavigate(index)} className={`question-number ${index === session.questionIndex ? 'current' : ''} ${session.answers[item.id] !== undefined ? 'answered' : ''} ${session.flags.includes(item.id) ? 'flagged' : ''}`} aria-current={index === session.questionIndex ? 'step' : undefined} aria-label={t(`第 ${index + 1} 题${session.answers[item.id] !== undefined ? '，已答' : '，未答'}${session.flags.includes(item.id) ? '，待检查' : ''}`, `Question ${index + 1}, ${session.answers[item.id] !== undefined ? 'answered' : 'unanswered'}${session.flags.includes(item.id) ? ', flagged' : ''}`)}>{index + 1}</button>)}</div>
         <div className="nav-legend"><span><i className="answered" />{t('已答', 'Answered')}</span><span><i />{t('未答', 'Unanswered')}</span><span><Flag size={16} />{t('待检查', 'Flagged')}</span></div>
         <div className="navigator-bottom"><p className="muted">{session.mode === 'mock' ? section.limitSeconds === null ? t('本卷不限时。提交后答案锁定，不能返回修改。', 'This paper is untimed. Submission locks its answers.') : t('每卷 / 模块独立计时。提交后不能返回；时间到自动提交。', 'Each section is timed separately. Submission locks the section; timeouts submit automatically.') : t('时间到自动交卷（限时模式）。未答题单独统计。', 'Timed sets submit automatically on expiry. Unanswered questions are counted separately.')}</p><button className="button primary full" onClick={() => setConfirm(true)}>{submitText}</button></div>

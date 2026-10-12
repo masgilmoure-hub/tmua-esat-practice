@@ -87,12 +87,33 @@ fieldset { border: 0; padding: 0; margin: 0; min-width: 0; }
 .archive-instructions li + li { margin-top: 10px; }
 .archive-info > p, .archive-info > a { display: block; margin-top: 16px; }
 .original-paper-link { margin-bottom: 24px; }
+.paper-reader { margin-bottom: 24px; border: 1px solid var(--line); border-radius: 8px; padding: 16px; background: #f8faff; }
+.reader-heading { display: flex; justify-content: space-between; gap: 12px; flex-wrap: wrap; margin-bottom: 14px; }
+.reader-upload label { display: block; font-size: 13px; margin-bottom: 8px; }
+.reader-upload input { max-width: 100%; font-size: 13px; }
+.reader-file, .reader-error, .reader-warning { margin-top: 12px; font-size: 13px; overflow-wrap: anywhere; }
+.reader-error { color: #a33636; background: #fff1f0; padding: 10px; border-radius: 6px; }
+.reader-warning { color: #8a5a19; background: #fff7e8; padding: 10px; border-radius: 6px; }
+.reader-controls { display: flex; gap: 10px; flex-wrap: wrap; align-items: center; margin: 16px 0; }
+.reader-controls label { display: flex; gap: 6px; align-items: center; font-size: 13px; }
+.reader-controls input { width: 64px; padding: 5px; border: 1px solid var(--line); border-radius: 6px; }
+.reader-controls select { padding: 6px; border: 1px solid var(--line); border-radius: 6px; background: white; }
+.reader-canvas { background: white; border: 1px solid var(--line); overflow: auto; max-height: 800px; }
+.reader-canvas canvas { display: block; width: 100%; height: auto; }
+.reader-bottom { display: flex; align-items: center; gap: 12px; justify-content: space-between; flex-wrap: wrap; margin-top: 12px; }
+.reader-remove { margin-top: 14px; }
+.paper-layout { align-items: start; }
+.paper-layout .navigator-panel { position: sticky; top: 20px; }
+.paper-answer-controls { margin: 18px 0; }
+.paper-answer-controls .answers.letter-answers { grid-template-columns: repeat(2, minmax(0, 1fr)); margin-top: 12px; }
 .answers.letter-answers { display: grid; grid-template-columns: repeat(4, minmax(0, 1fr)); gap: 12px; }
 .letter-answers .answer-option { justify-content: center; padding: 14px; margin: 0; }
 .letter-answers .option-letter { margin: 0; }
 .linked-review h3, .linked-source-actions { margin-top: 18px; margin-bottom: 18px; }
 .linked-source-actions { display: flex; flex-wrap: wrap; align-items: center; gap: 12px; }
 @media (max-width: 640px) {
+  .paper-layout .navigator-panel { position: static; }
+  .reader-canvas { max-height: 500px; }
   .answers.letter-answers { grid-template-columns: repeat(2, minmax(0, 1fr)); }
   .official-entry { align-items: start; flex-direction: column; }
   .archive-fields { grid-template-columns: 1fr; gap: 0; }

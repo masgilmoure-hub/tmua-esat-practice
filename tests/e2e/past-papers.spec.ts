@@ -62,7 +62,7 @@ test('year selection, original PDF links, two 75-minute papers, reload, marking 
   await expect(page.getByLabel('解析语言', { exact: true })).toHaveCount(0);
   await expect(page.getByRole('heading', { name: '知识点表现', exact: true })).toHaveCount(0);
   await expect(page.locator('.linked-review').first()).toContainText('尚未提供本题的双语解析');
-  await expect(page.getByRole('link', { name: '官方英文详解', exact: true }).first()).toHaveAttribute('href', /TMUA-2023-paper-1-worked-answers\.pdf$/);
+  await expect(page.getByRole('link', { name: '官方英文详解', exact: true }).first()).toHaveAttribute('href', /tmua-2023-p1-worked\.pdf$/);
   await page.reload();
   await page.getByRole('navigation').getByRole('button', { name: '练习记录', exact: true }).click();
   await expect(page.locator('.records-table')).toContainText('官方历年原卷练习');
@@ -85,7 +85,7 @@ test('single paper can be untimed and past-paper mistakes remain retryable', asy
   await page.getByRole('button', { name: /^错题本/ }).click();
   await expect(page.locator('.mistake-row')).toHaveCount(19);
   await page.locator('.mistake-row').first().getByRole('button', { name: '重练', exact: true }).click();
-  await expect(page.getByRole('heading', { level: 1 })).toHaveText('官方原卷错题练习');
+  await expect(page.getByRole('heading', { level: 1 })).toHaveText('官方原卷专项训练');
   await expect(page.getByRole('link', { name: '打开原卷 · 第 2 题', exact: true })).toHaveAttribute('href', /TMUA-2018-paper-2\.pdf$/);
   await page.getByRole('radio').nth(1).check(); // Official key: 2018 Paper 2 question 2 = B.
   await page.locator('.navigator-panel').getByRole('button', { name: '交卷并查看结果', exact: true }).click();
