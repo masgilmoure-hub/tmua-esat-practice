@@ -1,0 +1,1372 @@
+[
+  {
+    "id": "ARCHIVE-TMUA-2021-P2-Q01",
+    "exam": "TMUA",
+    "moduleId": "p2",
+    "format": "latex",
+    "topic": {
+      "id": "calculus",
+      "name": {
+        "zh": "微积分",
+        "en": "Calculus"
+      }
+    },
+    "subtopic": {
+      "id": "power-definite-integral",
+      "name": {
+        "zh": "幂函数定积分",
+        "en": "Definite integration of powers"
+      }
+    },
+    "prompt": "Read question 1 in the official TMUA 2021 Paper 2. Record your answer here.",
+    "options": [
+      "A",
+      "B",
+      "C",
+      "D",
+      "E",
+      "F",
+      "G",
+      "H"
+    ],
+    "correctIndex": 3,
+    "difficulty": "foundation",
+    "external": {
+      "kind": "linked-paper",
+      "workedAnswersUrl": "https://uat-wp.s3.eu-west-2.amazonaws.com/wp-content/uploads/2024/05/07141118/TMUA-2021-paper-2-worked-answers.pdf",
+      "answerKeyUrl": "https://uat-wp.s3.eu-west-2.amazonaws.com/wp-content/uploads/2024/05/07141122/TMUA-2021-answer-keys.pdf",
+      "explanationReady": true
+    },
+    "explanation": {
+      "zh": {
+        "steps": [
+          "被积函数为 $3x^{1/2}+4x^{-2}$，原函数可取 $2x^{3/2}-4/x$。",
+          "上限 4 的值为 $16-1=15$，下限 1 的值为 $2-4=-2$。",
+          "定积分为 $15-(-2)=17$，选 D。"
+        ],
+        "pitfall": "x 的 −2 次方积分后带负号，代入下限时还需整体相减。"
+      },
+      "en": {
+        "steps": [
+          "The integrand is $3x^{1/2}+4x^{-2}$, with antiderivative $2x^{3/2}-4/x$.",
+          "At 4 the antiderivative is $16-1=15$; at 1 it is $2-4=-2$.",
+          "The integral is $15-(-2)=17$. Choose D."
+        ],
+        "pitfall": "Integrating x to power −2 introduces a minus sign; subtract the complete lower-limit value."
+      }
+    },
+    "source": {
+      "kind": "official-public",
+      "title": {
+        "zh": "TMUA 2021 Paper 2 · 官方原卷",
+        "en": "TMUA 2021 Paper 2 · official archive"
+      },
+      "url": "https://uat-wp.s3.eu-west-2.amazonaws.com/wp-content/uploads/2024/05/07141117/TMUA-2021-paper-2.pdf",
+      "originalNumber": "1",
+      "year": 2021,
+      "rightsNote": "Original papers and worked solutions: Cambridge University Press & Assessment / Cambridge Assessment; public archive provided by UAT-UK. No affiliation or endorsement."
+    }
+  },
+  {
+    "id": "ARCHIVE-TMUA-2021-P2-Q02",
+    "exam": "TMUA",
+    "moduleId": "p2",
+    "format": "latex",
+    "topic": {
+      "id": "geometry",
+      "name": {
+        "zh": "几何",
+        "en": "Geometry"
+      }
+    },
+    "subtopic": {
+      "id": "square-other-diagonal",
+      "name": {
+        "zh": "正方形的另一条对角线",
+        "en": "The other diagonal of a square"
+      }
+    },
+    "prompt": "Read question 2 in the official TMUA 2021 Paper 2. Record your answer here.",
+    "options": [
+      "A",
+      "B",
+      "C",
+      "D",
+      "E",
+      "F",
+      "G",
+      "H"
+    ],
+    "correctIndex": 4,
+    "difficulty": "foundation",
+    "external": {
+      "kind": "linked-paper",
+      "workedAnswersUrl": "https://uat-wp.s3.eu-west-2.amazonaws.com/wp-content/uploads/2024/05/07141118/TMUA-2021-paper-2-worked-answers.pdf",
+      "answerKeyUrl": "https://uat-wp.s3.eu-west-2.amazonaws.com/wp-content/uploads/2024/05/07141122/TMUA-2021-answer-keys.pdf",
+      "explanationReady": true
+    },
+    "explanation": {
+      "zh": {
+        "steps": [
+          "对角线 AC 的中点为 $(2,1)$，斜率为 $(0-2)/(4-0)=-1/2$。",
+          "正方形两条对角线互相垂直平分，因此 BD 过该中点且斜率为 2。",
+          "$y-1=2(x-2)$，即 $y=2x-3$，选 E。"
+        ],
+        "pitfall": "题给的是对角顶点，不是相邻顶点。"
+      },
+      "en": {
+        "steps": [
+          "Diagonal AC has midpoint $(2,1)$ and slope $(0-2)/(4-0)=-1/2$.",
+          "The diagonals of a square bisect each other at right angles, so BD passes through that midpoint with slope 2.",
+          "Thus $y-1=2(x-2)$, or $y=2x-3$. Choose E."
+        ],
+        "pitfall": "The given vertices are opposite, not adjacent."
+      }
+    },
+    "source": {
+      "kind": "official-public",
+      "title": {
+        "zh": "TMUA 2021 Paper 2 · 官方原卷",
+        "en": "TMUA 2021 Paper 2 · official archive"
+      },
+      "url": "https://uat-wp.s3.eu-west-2.amazonaws.com/wp-content/uploads/2024/05/07141117/TMUA-2021-paper-2.pdf",
+      "originalNumber": "2",
+      "year": 2021,
+      "rightsNote": "Original papers and worked solutions: Cambridge University Press & Assessment / Cambridge Assessment; public archive provided by UAT-UK. No affiliation or endorsement."
+    }
+  },
+  {
+    "id": "ARCHIVE-TMUA-2021-P2-Q03",
+    "exam": "TMUA",
+    "moduleId": "p2",
+    "format": "latex",
+    "topic": {
+      "id": "reasoning",
+      "name": {
+        "zh": "逻辑与证明",
+        "en": "Logic & proof"
+      }
+    },
+    "subtopic": {
+      "id": "probability-necessary-counts",
+      "name": {
+        "zh": "概率比例与必要人数条件",
+        "en": "Necessary counts for a probability ratio"
+      }
+    },
+    "prompt": "Read question 3 in the official TMUA 2021 Paper 2. Record your answer here.",
+    "options": [
+      "A",
+      "B",
+      "C",
+      "D",
+      "E",
+      "F",
+      "G",
+      "H"
+    ],
+    "correctIndex": 2,
+    "difficulty": "standard",
+    "external": {
+      "kind": "linked-paper",
+      "workedAnswersUrl": "https://uat-wp.s3.eu-west-2.amazonaws.com/wp-content/uploads/2024/05/07141118/TMUA-2021-paper-2-worked-answers.pdf",
+      "answerKeyUrl": "https://uat-wp.s3.eu-west-2.amazonaws.com/wp-content/uploads/2024/05/07141122/TMUA-2021-answer-keys.pdf",
+      "explanationReady": true
+    },
+    "explanation": {
+      "zh": {
+        "steps": [
+          "设总人数为 $N$，戴眼镜人数为 $G$，有 $G/N=4/15$。因分数已约分，整数人数要求 $N=15k,G=4k$，其中 $k$ 为正整数。",
+          "不戴眼镜人数为 $11k$，不必恰为 11，故 I 非必要；$N=15k$ 一定能被 3 整除，故 II 必要。",
+          "III 仅取 $k=2$，是充分的一个例子，但不必要；$k=1$ 就是反例。因此仅 II，选 C。"
+        ],
+        "pitfall": "一种实现目标概率的人数配置，不等于必须采用的配置。"
+      },
+      "en": {
+        "steps": [
+          "Let $N$ be the class size and $G$ the glasses-wearing count. Since $G/N=4/15$ is reduced, integer counts require $N=15k,G=4k$ for a positive integer $k$.",
+          "The non-glasses count is $11k$, not necessarily 11, so I is not necessary. The total $15k$ is always divisible by 3, so II is necessary.",
+          "III specifies only $k=2$: a sufficient example but not necessary, as $k=1$ shows. Only II is necessary. Choose C."
+        ],
+        "pitfall": "One configuration giving the target probability is not a required configuration."
+      }
+    },
+    "source": {
+      "kind": "official-public",
+      "title": {
+        "zh": "TMUA 2021 Paper 2 · 官方原卷",
+        "en": "TMUA 2021 Paper 2 · official archive"
+      },
+      "url": "https://uat-wp.s3.eu-west-2.amazonaws.com/wp-content/uploads/2024/05/07141117/TMUA-2021-paper-2.pdf",
+      "originalNumber": "3",
+      "year": 2021,
+      "rightsNote": "Original papers and worked solutions: Cambridge University Press & Assessment / Cambridge Assessment; public archive provided by UAT-UK. No affiliation or endorsement."
+    }
+  },
+  {
+    "id": "ARCHIVE-TMUA-2021-P2-Q04",
+    "exam": "TMUA",
+    "moduleId": "p2",
+    "format": "latex",
+    "topic": {
+      "id": "reasoning",
+      "name": {
+        "zh": "逻辑与证明",
+        "en": "Logic & proof"
+      }
+    },
+    "subtopic": {
+      "id": "divisibility-counterexamples",
+      "name": {
+        "zh": "整除命题的反例",
+        "en": "Counterexamples to a divisibility claim"
+      }
+    },
+    "prompt": "Read question 4 in the official TMUA 2021 Paper 2. Record your answer here.",
+    "options": [
+      "A",
+      "B",
+      "C",
+      "D",
+      "E",
+      "F",
+      "G",
+      "H"
+    ],
+    "correctIndex": 2,
+    "difficulty": "foundation",
+    "external": {
+      "kind": "linked-paper",
+      "workedAnswersUrl": "https://uat-wp.s3.eu-west-2.amazonaws.com/wp-content/uploads/2024/05/07141118/TMUA-2021-paper-2-worked-answers.pdf",
+      "answerKeyUrl": "https://uat-wp.s3.eu-west-2.amazonaws.com/wp-content/uploads/2024/05/07141122/TMUA-2021-answer-keys.pdf",
+      "explanationReady": true
+    },
+    "explanation": {
+      "zh": {
+        "steps": [
+          "反例需同时满足 $a\\mid bc$、$a\\nmid b$ 和 $a\\nmid c$。",
+          "I 中 5 整除 10 与 20，结论成立；II 中 8 整除 16 却不整除两个 4，符合反例条件。",
+          "III 中 6 整除 12，原结论中的“或”已满足，不是反例。仅 II，选 C。"
+        ],
+        "pitfall": "否定“整除 b 或 c”要求两个都不整除，不是只找到一个不整除。"
+      },
+      "en": {
+        "steps": [
+          "A counterexample must satisfy $a\\mid bc$, $a\\nmid b$ and $a\\nmid c$ simultaneously.",
+          "In I, 5 divides both 10 and 20, so the conclusion holds. In II, 8 divides 16 but neither factor 4, giving a counterexample.",
+          "In III, 6 divides 12, so the conclusion with “or” holds. Only II is a counterexample. Choose C."
+        ],
+        "pitfall": "To negate “divides b or c”, neither divisibility may hold."
+      }
+    },
+    "source": {
+      "kind": "official-public",
+      "title": {
+        "zh": "TMUA 2021 Paper 2 · 官方原卷",
+        "en": "TMUA 2021 Paper 2 · official archive"
+      },
+      "url": "https://uat-wp.s3.eu-west-2.amazonaws.com/wp-content/uploads/2024/05/07141117/TMUA-2021-paper-2.pdf",
+      "originalNumber": "4",
+      "year": 2021,
+      "rightsNote": "Original papers and worked solutions: Cambridge University Press & Assessment / Cambridge Assessment; public archive provided by UAT-UK. No affiliation or endorsement."
+    }
+  },
+  {
+    "id": "ARCHIVE-TMUA-2021-P2-Q05",
+    "exam": "TMUA",
+    "moduleId": "p2",
+    "format": "latex",
+    "topic": {
+      "id": "reasoning",
+      "name": {
+        "zh": "逻辑与证明",
+        "en": "Logic & proof"
+      }
+    },
+    "subtopic": {
+      "id": "square-root-first-error",
+      "name": {
+        "zh": "开平方推理的首个错误",
+        "en": "The first error when taking square roots"
+      }
+    },
+    "prompt": "Read question 5 in the official TMUA 2021 Paper 2. Record your answer here.",
+    "options": [
+      "A",
+      "B",
+      "C",
+      "D",
+      "E",
+      "F",
+      "G",
+      "H"
+    ],
+    "correctIndex": 1,
+    "difficulty": "foundation",
+    "external": {
+      "kind": "linked-paper",
+      "workedAnswersUrl": "https://uat-wp.s3.eu-west-2.amazonaws.com/wp-content/uploads/2024/05/07141118/TMUA-2021-paper-2-worked-answers.pdf",
+      "answerKeyUrl": "https://uat-wp.s3.eu-west-2.amazonaws.com/wp-content/uploads/2024/05/07141122/TMUA-2021-answer-keys.pdf",
+      "explanationReady": true
+    },
+    "explanation": {
+      "zh": {
+        "steps": [
+          "A 的恒等式正确，给出 $\\cos^2x=1-\\sin^2x$。",
+          "开非负平方根只能得到 $|\\cos x|=\\sqrt{1-\\sin^2x}$，不能对所有 $x$ 都去掉绝对值。",
+          "例如 $x=\\pi$ 时，B 左边为 $-1$，右边为 1，故首错在 B。后续矛盾由此产生。"
+        ],
+        "pitfall": "应找首次无效推理，不是最后出现明显矛盾的一行。"
+      },
+      "en": {
+        "steps": [
+          "Line A is a valid identity, giving $\\cos^2x=1-\\sin^2x$.",
+          "Taking the nonnegative square root gives $|\\cos x|=\\sqrt{1-\\sin^2x}$, not equality with $\\cos x$ for every $x$.",
+          "For $x=\\pi$, line B has left side $-1$ and right side 1. The first error is B; the later contradiction follows from it."
+        ],
+        "pitfall": "Identify the first invalid step, not the final visible contradiction."
+      }
+    },
+    "source": {
+      "kind": "official-public",
+      "title": {
+        "zh": "TMUA 2021 Paper 2 · 官方原卷",
+        "en": "TMUA 2021 Paper 2 · official archive"
+      },
+      "url": "https://uat-wp.s3.eu-west-2.amazonaws.com/wp-content/uploads/2024/05/07141117/TMUA-2021-paper-2.pdf",
+      "originalNumber": "5",
+      "year": 2021,
+      "rightsNote": "Original papers and worked solutions: Cambridge University Press & Assessment / Cambridge Assessment; public archive provided by UAT-UK. No affiliation or endorsement."
+    }
+  },
+  {
+    "id": "ARCHIVE-TMUA-2021-P2-Q06",
+    "exam": "TMUA",
+    "moduleId": "p2",
+    "format": "latex",
+    "topic": {
+      "id": "reasoning",
+      "name": {
+        "zh": "逻辑与证明",
+        "en": "Logic & proof"
+      }
+    },
+    "subtopic": {
+      "id": "exact-root-critical-counts",
+      "name": {
+        "zh": "精确根数与驻点数的关系",
+        "en": "Exact root counts versus stationary-point counts"
+      }
+    },
+    "prompt": "Read question 6 in the official TMUA 2021 Paper 2. Record your answer here.",
+    "options": [
+      "A",
+      "B",
+      "C",
+      "D",
+      "E",
+      "F",
+      "G",
+      "H"
+    ],
+    "correctIndex": 3,
+    "difficulty": "challenge",
+    "external": {
+      "kind": "linked-paper",
+      "workedAnswersUrl": "https://uat-wp.s3.eu-west-2.amazonaws.com/wp-content/uploads/2024/05/07141118/TMUA-2021-paper-2-worked-answers.pdf",
+      "answerKeyUrl": "https://uat-wp.s3.eu-west-2.amazonaws.com/wp-content/uploads/2024/05/07141122/TMUA-2021-answer-keys.pdf",
+      "explanationReady": true
+    },
+    "explanation": {
+      "zh": {
+        "steps": [
+          "P 的三个不同实根只能保证其间至少两个驻点，不能保证恰好两个。反例 $f(x)=x^4-x^2$ 的根为 $-1,0,1$。",
+          "该反例导数为 $2x(2x^2-1)$，有 $0,\\pm1/\\sqrt2$ 三个不同零点，故 P 不充分。",
+          "反过来，$f(x)=x^3-x+1$ 的导数有 $\\pm1/\\sqrt3$ 两根，但局部最小值 $1-2/(3\\sqrt3)>0$，局部最大值也为正，因此函数仅有一个实根。",
+          "因此 Q 可以成立而 P 不成立，P 也不必要。P 对 Q 既非必要也非充分，选 D。"
+        ],
+        "pitfall": "原题没有限制多项式必须为三次，也不能把“至少”改成“恰好”。"
+      },
+      "en": {
+        "steps": [
+          "Three distinct roots guarantee at least two intervening stationary points, not exactly two. For $f(x)=x^4-x^2$, the roots are $-1,0,1$.",
+          "Its derivative $2x(2x^2-1)$ has three distinct zeros, $0,\\pm1/\\sqrt2$, so P is not sufficient.",
+          "Conversely, $f(x)=x^3-x+1$ has two derivative zeros at $\\pm1/\\sqrt3$. Its local minimum $1-2/(3\\sqrt3)>0$, and its local maximum is also positive, so it has only one real root.",
+          "Thus Q can hold without P, so P is not necessary either. Choose D: P is neither necessary nor sufficient for Q."
+        ],
+        "pitfall": "The polynomial is not restricted to degree three; “at least” cannot replace “exactly”."
+      }
+    },
+    "source": {
+      "kind": "official-public",
+      "title": {
+        "zh": "TMUA 2021 Paper 2 · 官方原卷",
+        "en": "TMUA 2021 Paper 2 · official archive"
+      },
+      "url": "https://uat-wp.s3.eu-west-2.amazonaws.com/wp-content/uploads/2024/05/07141117/TMUA-2021-paper-2.pdf",
+      "originalNumber": "6",
+      "year": 2021,
+      "rightsNote": "Original papers and worked solutions: Cambridge University Press & Assessment / Cambridge Assessment; public archive provided by UAT-UK. No affiliation or endorsement."
+    }
+  },
+  {
+    "id": "ARCHIVE-TMUA-2021-P2-Q07",
+    "exam": "TMUA",
+    "moduleId": "p2",
+    "format": "latex",
+    "topic": {
+      "id": "geometry",
+      "name": {
+        "zh": "几何",
+        "en": "Geometry"
+      }
+    },
+    "subtopic": {
+      "id": "bisect-two-centred-areas",
+      "name": {
+        "zh": "平分两个中心对称图形的面积",
+        "en": "Bisecting two centrally symmetric areas"
+      }
+    },
+    "prompt": "Read question 7 in the official TMUA 2021 Paper 2. Record your answer here.",
+    "options": [
+      "A",
+      "B",
+      "C",
+      "D",
+      "E",
+      "F",
+      "G",
+      "H"
+    ],
+    "correctIndex": 1,
+    "difficulty": "standard",
+    "external": {
+      "kind": "linked-paper",
+      "workedAnswersUrl": "https://uat-wp.s3.eu-west-2.amazonaws.com/wp-content/uploads/2024/05/07141118/TMUA-2021-paper-2-worked-answers.pdf",
+      "answerKeyUrl": "https://uat-wp.s3.eu-west-2.amazonaws.com/wp-content/uploads/2024/05/07141122/TMUA-2021-answer-keys.pdf",
+      "explanationReady": true
+    },
+    "explanation": {
+      "zh": {
+        "steps": [
+          "平分圆面积的直线必须经过圆心 $(9,-2)$。正方形的中心为 $(0,1)$，过中心的任何直线均平分其面积。",
+          "对这个正方形，偏离中心的平行直线会使两侧面积严格不等，所以所求直线必须同时通过两个中心。",
+          "斜率为 $(-2-1)/9=-1/3$，直线 $y=1-x/3$。令 $y=0$ 得 $x=3$，选 B。"
+        ],
+        "pitfall": "正方形面积平分线不一定是对角线或边的中垂线；中心连线在此唯一确定。"
+      },
+      "en": {
+        "steps": [
+          "A line bisecting a circle must pass through its centre $(9,-2)$. The square has centre $(0,1)$, and every line through that centre bisects its area.",
+          "For this square, shifting a line away from its centre makes the two areas unequal, so the required line must pass through both centres.",
+          "The slope is $(-2-1)/9=-1/3$, giving $y=1-x/3$. At $y=0$, $x=3$. Choose B."
+        ],
+        "pitfall": "A square bisector need not be a diagonal or side bisector; the two centres uniquely determine this line."
+      }
+    },
+    "source": {
+      "kind": "official-public",
+      "title": {
+        "zh": "TMUA 2021 Paper 2 · 官方原卷",
+        "en": "TMUA 2021 Paper 2 · official archive"
+      },
+      "url": "https://uat-wp.s3.eu-west-2.amazonaws.com/wp-content/uploads/2024/05/07141117/TMUA-2021-paper-2.pdf",
+      "originalNumber": "7",
+      "year": 2021,
+      "rightsNote": "Original papers and worked solutions: Cambridge University Press & Assessment / Cambridge Assessment; public archive provided by UAT-UK. No affiliation or endorsement."
+    }
+  },
+  {
+    "id": "ARCHIVE-TMUA-2021-P2-Q08",
+    "exam": "TMUA",
+    "moduleId": "p2",
+    "format": "latex",
+    "topic": {
+      "id": "reasoning",
+      "name": {
+        "zh": "逻辑与证明",
+        "en": "Logic & proof"
+      }
+    },
+    "subtopic": {
+      "id": "rolle-sufficiency-not-necessity",
+      "name": {
+        "zh": "罗尔定理的充分性与必要性",
+        "en": "Sufficiency and necessity in Rolle’s theorem"
+      }
+    },
+    "prompt": "Read question 8 in the official TMUA 2021 Paper 2. Record your answer here.",
+    "options": [
+      "A",
+      "B",
+      "C",
+      "D",
+      "E",
+      "F",
+      "G",
+      "H"
+    ],
+    "correctIndex": 2,
+    "difficulty": "standard",
+    "external": {
+      "kind": "linked-paper",
+      "workedAnswersUrl": "https://uat-wp.s3.eu-west-2.amazonaws.com/wp-content/uploads/2024/05/07141118/TMUA-2021-paper-2-worked-answers.pdf",
+      "answerKeyUrl": "https://uat-wp.s3.eu-west-2.amazonaws.com/wp-content/uploads/2024/05/07141122/TMUA-2021-answer-keys.pdf",
+      "explanationReady": true
+    },
+    "explanation": {
+      "zh": {
+        "steps": [
+          "多项式在 $[a,b]$ 连续且在 $(a,b)$ 可导。当 $p(a)=p(b)$ 时，罗尔定理保证某个内部点 $c$ 满足 $p^{\\prime}(c)=0$。",
+          "所以端点等值条件是充分条件，但不必是必要条件。取 $p(x)=x^2,a=-1,b=2$。",
+          "此时内部点 $c=0$ 的导数为零，但 $p(-1)=1\\ne4=p(2)$。因此充分而非必要，选 C。"
+        ],
+        "pitfall": "定理给出的充分条件不能直接倒过来当必要条件。"
+      },
+      "en": {
+        "steps": [
+          "A polynomial is continuous on $[a,b]$ and differentiable on $(a,b)$. If $p(a)=p(b)$, Rolle’s theorem guarantees an interior point with $p^{\\prime}(c)=0$.",
+          "The equal-endpoint condition is sufficient but need not be necessary. Take $p(x)=x^2,a=-1,b=2$.",
+          "The interior point $c=0$ has zero derivative, yet $p(-1)=1\\ne4=p(2)$. Choose C: sufficient but not necessary."
+        ],
+        "pitfall": "Do not reverse a sufficient condition supplied by a theorem."
+      }
+    },
+    "source": {
+      "kind": "official-public",
+      "title": {
+        "zh": "TMUA 2021 Paper 2 · 官方原卷",
+        "en": "TMUA 2021 Paper 2 · official archive"
+      },
+      "url": "https://uat-wp.s3.eu-west-2.amazonaws.com/wp-content/uploads/2024/05/07141117/TMUA-2021-paper-2.pdf",
+      "originalNumber": "8",
+      "year": 2021,
+      "rightsNote": "Original papers and worked solutions: Cambridge University Press & Assessment / Cambridge Assessment; public archive provided by UAT-UK. No affiliation or endorsement."
+    }
+  },
+  {
+    "id": "ARCHIVE-TMUA-2021-P2-Q09",
+    "exam": "TMUA",
+    "moduleId": "p2",
+    "format": "latex",
+    "topic": {
+      "id": "reasoning",
+      "name": {
+        "zh": "逻辑与证明",
+        "en": "Logic & proof"
+      }
+    },
+    "subtopic": {
+      "id": "polynomial-root-sufficient-tests",
+      "name": {
+        "zh": "多项式实根的充分条件",
+        "en": "Sufficient tests for a real polynomial root"
+      }
+    },
+    "prompt": "Read question 9 in the official TMUA 2021 Paper 2. Record your answer here.",
+    "options": [
+      "A",
+      "B",
+      "C",
+      "D",
+      "E",
+      "F",
+      "G",
+      "H"
+    ],
+    "correctIndex": 2,
+    "difficulty": "standard",
+    "external": {
+      "kind": "linked-paper",
+      "workedAnswersUrl": "https://uat-wp.s3.eu-west-2.amazonaws.com/wp-content/uploads/2024/05/07141118/TMUA-2021-paper-2-worked-answers.pdf",
+      "answerKeyUrl": "https://uat-wp.s3.eu-west-2.amazonaws.com/wp-content/uploads/2024/05/07141122/TMUA-2021-answer-keys.pdf",
+      "explanationReady": true
+    },
+    "explanation": {
+      "zh": {
+        "steps": [
+          "I 为非零三次项的多项式，在正负无穷处符号相反，由连续性必有实根，因此充分。",
+          "II 不充分：$f(x)=x^2+1$ 在 $t=0$ 有零导数，却没有实根。",
+          "III 的乘积为负意味着 $f(u),f(v)$ 异号，由介值定理有实根。组合为 Yes / No / Yes，对应 C。"
+        ],
+        "pitfall": "驻点不一定在横轴上；多项式的连续性才支持异号判根。"
+      },
+      "en": {
+        "steps": [
+          "I gives a polynomial with a nonzero cubic leading term. Its signs at the two infinities differ, so continuity guarantees a real root.",
+          "II is not sufficient: $f(x)=x^2+1$ has zero derivative at 0 but no real root.",
+          "III gives opposite signs at $u$ and $v$, so the intermediate value theorem guarantees a root. The pattern Yes / No / Yes is C."
+        ],
+        "pitfall": "A stationary point need not lie on the axis; continuity justifies the sign-change root test."
+      }
+    },
+    "source": {
+      "kind": "official-public",
+      "title": {
+        "zh": "TMUA 2021 Paper 2 · 官方原卷",
+        "en": "TMUA 2021 Paper 2 · official archive"
+      },
+      "url": "https://uat-wp.s3.eu-west-2.amazonaws.com/wp-content/uploads/2024/05/07141117/TMUA-2021-paper-2.pdf",
+      "originalNumber": "9",
+      "year": 2021,
+      "rightsNote": "Original papers and worked solutions: Cambridge University Press & Assessment / Cambridge Assessment; public archive provided by UAT-UK. No affiliation or endorsement."
+    }
+  },
+  {
+    "id": "ARCHIVE-TMUA-2021-P2-Q10",
+    "exam": "TMUA",
+    "moduleId": "p2",
+    "format": "latex",
+    "topic": {
+      "id": "reasoning",
+      "name": {
+        "zh": "逻辑与证明",
+        "en": "Logic & proof"
+      }
+    },
+    "subtopic": {
+      "id": "prime-index-counterexample",
+      "name": {
+        "zh": "质数下标条件的首个反例",
+        "en": "First counterexample with a prime index"
+      }
+    },
+    "prompt": "Read question 10 in the official TMUA 2021 Paper 2. Record your answer here.",
+    "options": [
+      "A",
+      "B",
+      "C",
+      "D",
+      "E",
+      "F",
+      "G",
+      "H"
+    ],
+    "correctIndex": 4,
+    "difficulty": "foundation",
+    "external": {
+      "kind": "linked-paper",
+      "workedAnswersUrl": "https://uat-wp.s3.eu-west-2.amazonaws.com/wp-content/uploads/2024/05/07141118/TMUA-2021-paper-2-worked-answers.pdf",
+      "answerKeyUrl": "https://uat-wp.s3.eu-west-2.amazonaws.com/wp-content/uploads/2024/05/07141122/TMUA-2021-answer-keys.pdf",
+      "explanationReady": true
+    },
+    "explanation": {
+      "zh": {
+        "steps": [
+          "反例要求下标 $n$ 为质数，而 $u_n$ 既不是 3 的倍数，也不是 5 的倍数。",
+          "依次检查质数下标：$n=2$ 时 $u_2=21$ 是 3 的倍数；$n=3$ 时 $u_3=30$ 满足条件。",
+          "$n=5$ 时 $u_5=44$ 两者都不整除，是最小反例下标，选 E。"
+        ],
+        "pitfall": "1 不是质数；应检查下标是否为质数，而不是数列项是否为质数。"
+      },
+      "en": {
+        "steps": [
+          "A counterexample requires a prime index $n$ with $u_n$ divisible by neither 3 nor 5.",
+          "Check prime indices in order: at $n=2$, $u_2=21$ is divisible by 3; at $n=3$, $u_3=30$ satisfies the conclusion.",
+          "At $n=5$, $u_5=44$ is divisible by neither, making 5 the smallest counterexample index. Choose E."
+        ],
+        "pitfall": "1 is not prime; the prime condition concerns the index, not the term."
+      }
+    },
+    "source": {
+      "kind": "official-public",
+      "title": {
+        "zh": "TMUA 2021 Paper 2 · 官方原卷",
+        "en": "TMUA 2021 Paper 2 · official archive"
+      },
+      "url": "https://uat-wp.s3.eu-west-2.amazonaws.com/wp-content/uploads/2024/05/07141117/TMUA-2021-paper-2.pdf",
+      "originalNumber": "10",
+      "year": 2021,
+      "rightsNote": "Original papers and worked solutions: Cambridge University Press & Assessment / Cambridge Assessment; public archive provided by UAT-UK. No affiliation or endorsement."
+    }
+  },
+  {
+    "id": "ARCHIVE-TMUA-2021-P2-Q11",
+    "exam": "TMUA",
+    "moduleId": "p2",
+    "format": "latex",
+    "topic": {
+      "id": "reasoning",
+      "name": {
+        "zh": "逻辑与证明",
+        "en": "Logic & proof"
+      }
+    },
+    "subtopic": {
+      "id": "existence-converse-proof",
+      "name": {
+        "zh": "存在性命题与逆命题证明",
+        "en": "An existence claim and its converse"
+      }
+    },
+    "prompt": "Read question 11 in the official TMUA 2021 Paper 2. Record your answer here.",
+    "options": [
+      "A",
+      "B",
+      "C",
+      "D",
+      "E",
+      "F",
+      "G",
+      "H"
+    ],
+    "correctIndex": 2,
+    "difficulty": "standard",
+    "external": {
+      "kind": "linked-paper",
+      "workedAnswersUrl": "https://uat-wp.s3.eu-west-2.amazonaws.com/wp-content/uploads/2024/05/07141118/TMUA-2021-paper-2-worked-answers.pdf",
+      "answerKeyUrl": "https://uat-wp.s3.eu-west-2.amazonaws.com/wp-content/uploads/2024/05/07141122/TMUA-2021-answer-keys.pdf",
+      "explanationReady": true
+    },
+    "explanation": {
+      "zh": {
+        "steps": [
+          "I 到 III 是正确恒等变形。III 到 IV 乘以 $x^2y^2\\geq0$，不等号方向也正确。",
+          "V 的代入已经假设 $a=xy(x+y),\\ b=xy$，所以实际证明的是“若存在这样的 $x,y$，则 $a^2-4b^3\\geq0$”。",
+          "原任务却是从该不等式出发证明 $x,y$ 存在，两者方向相反。学生证明了逆命题，选 C；简单倒排行序不能构造所需 $x,y$。"
+        ],
+        "pitfall": "代入表示式可能已经假设了需要证明的存在性。"
+      },
+      "en": {
+        "steps": [
+          "Lines I to III are valid identities. Multiplying by $x^2y^2\\geq0$ to reach IV preserves the inequality.",
+          "Line V substitutes $a=xy(x+y)$ and $b=xy$, so the proof assumes such $x,y$ exist and derives $a^2-4b^3\\geq0$.",
+          "The task asks for existence starting from the inequality, the opposite direction. The student proved the converse. Choose C; reversing the lines alone does not construct $x,y$."
+        ],
+        "pitfall": "Substituting representations can assume the very existence that needs proving."
+      }
+    },
+    "source": {
+      "kind": "official-public",
+      "title": {
+        "zh": "TMUA 2021 Paper 2 · 官方原卷",
+        "en": "TMUA 2021 Paper 2 · official archive"
+      },
+      "url": "https://uat-wp.s3.eu-west-2.amazonaws.com/wp-content/uploads/2024/05/07141117/TMUA-2021-paper-2.pdf",
+      "originalNumber": "11",
+      "year": 2021,
+      "rightsNote": "Original papers and worked solutions: Cambridge University Press & Assessment / Cambridge Assessment; public archive provided by UAT-UK. No affiliation or endorsement."
+    }
+  },
+  {
+    "id": "ARCHIVE-TMUA-2021-P2-Q12",
+    "exam": "TMUA",
+    "moduleId": "p2",
+    "format": "latex",
+    "topic": {
+      "id": "reasoning",
+      "name": {
+        "zh": "逻辑与证明",
+        "en": "Logic & proof"
+      }
+    },
+    "subtopic": {
+      "id": "integral-derivative-order",
+      "name": {
+        "zh": "积分与导数的大小关系",
+        "en": "Order comparisons for integrals and derivatives"
+      }
+    },
+    "prompt": "Read question 12 in the official TMUA 2021 Paper 2. Record your answer here.",
+    "options": [
+      "A",
+      "B",
+      "C",
+      "D",
+      "E",
+      "F",
+      "G",
+      "H"
+    ],
+    "correctIndex": 1,
+    "difficulty": "standard",
+    "external": {
+      "kind": "linked-paper",
+      "workedAnswersUrl": "https://uat-wp.s3.eu-west-2.amazonaws.com/wp-content/uploads/2024/05/07141118/TMUA-2021-paper-2-worked-answers.pdf",
+      "answerKeyUrl": "https://uat-wp.s3.eu-west-2.amazonaws.com/wp-content/uploads/2024/05/07141122/TMUA-2021-answer-keys.pdf",
+      "explanationReady": true
+    },
+    "explanation": {
+      "zh": {
+        "steps": [
+          "I 正确：$\\int_0^x(f(t)-g(t))\\,dt\\geq0$，因为 $x\\geq0$ 且被积函数非负。",
+          "II 不成立：取 $f(x)=(x-1)^2,g(x)=0$。虽 $f\\geq g$，但在 $x=0$ 有 $f^{\\prime}(0)=-2<0=g^{\\prime}(0)$。",
+          "III 也不成立：$f(x)=x,g(x)=x+1$ 的导数相等，却处处 $f<g$。仅 I 正确，选 B。"
+        ],
+        "pitfall": "函数值大小与斜率大小是不同关系，求导或积分不能随意保留不等式。"
+      },
+      "en": {
+        "steps": [
+          "I is true because $\\int_0^x(f(t)-g(t))\\,dt\\geq0$ for $x\\geq0$ when the integrand is nonnegative.",
+          "II fails for $f(x)=(x-1)^2,g(x)=0$. Although $f\\geq g$, at 0 we have $f^{\\prime}(0)=-2<0=g^{\\prime}(0)$.",
+          "III also fails: $f(x)=x,g(x)=x+1$ have equal derivatives but $f<g$ everywhere. Only I is true. Choose B."
+        ],
+        "pitfall": "Function order and slope order are different; inequalities do not survive arbitrary differentiation."
+      }
+    },
+    "source": {
+      "kind": "official-public",
+      "title": {
+        "zh": "TMUA 2021 Paper 2 · 官方原卷",
+        "en": "TMUA 2021 Paper 2 · official archive"
+      },
+      "url": "https://uat-wp.s3.eu-west-2.amazonaws.com/wp-content/uploads/2024/05/07141117/TMUA-2021-paper-2.pdf",
+      "originalNumber": "12",
+      "year": 2021,
+      "rightsNote": "Original papers and worked solutions: Cambridge University Press & Assessment / Cambridge Assessment; public archive provided by UAT-UK. No affiliation or endorsement."
+    }
+  },
+  {
+    "id": "ARCHIVE-TMUA-2021-P2-Q13",
+    "exam": "TMUA",
+    "moduleId": "p2",
+    "format": "latex",
+    "topic": {
+      "id": "reasoning",
+      "name": {
+        "zh": "逻辑与证明",
+        "en": "Logic & proof"
+      }
+    },
+    "subtopic": {
+      "id": "region-universal-counterexamples",
+      "name": {
+        "zh": "不等式区域内的全称反例",
+        "en": "Counterexamples to universal claims in a region"
+      }
+    },
+    "prompt": "Read question 13 in the official TMUA 2021 Paper 2. Record your answer here.",
+    "options": [
+      "A",
+      "B",
+      "C",
+      "D",
+      "E",
+      "F",
+      "G",
+      "H"
+    ],
+    "correctIndex": 0,
+    "difficulty": "standard",
+    "external": {
+      "kind": "linked-paper",
+      "workedAnswersUrl": "https://uat-wp.s3.eu-west-2.amazonaws.com/wp-content/uploads/2024/05/07141118/TMUA-2021-paper-2-worked-answers.pdf",
+      "answerKeyUrl": "https://uat-wp.s3.eu-west-2.amazonaws.com/wp-content/uploads/2024/05/07141122/TMUA-2021-answer-keys.pdf",
+      "explanationReady": true
+    },
+    "explanation": {
+      "zh": {
+        "steps": [
+          "区域满足 $y<x+3$ 且 $y<x^2+1$，是两条图像下方的共同区域，并不只位于它们的交点之间。",
+          "I 的反例为 $(10,0)$，满足原不等式但 $x$ 不在 $(-1,2)$。",
+          "II 的反例为 $(0,-2)$，其乘积 $(y-x)(y-x^2)=4$，不小于 3；III 的反例为 $(6,6)$，满足原条件但 $y=6\\geq5$。",
+          "三个命题均不对所有区域内点成立，选 A。"
+        ],
+        "pitfall": "带未知符号的两项不等式不能直接相乘或相减得出全称结论。"
+      },
+      "en": {
+        "steps": [
+          "The region is the intersection of $y<x+3$ and $y<x^2+1$, lying below both graphs, not just between their intersections.",
+          "For I, $(10,0)$ satisfies the original inequalities but has $x\\notin(-1,2)$.",
+          "For II, $(0,-2)$ gives $(y-x)(y-x^2)=4$, not below 3. For III, $(6,6)$ satisfies the original conditions but has $y=6\\geq5$.",
+          "None of the three statements holds for every point in the region. Choose A."
+        ],
+        "pitfall": "Do not multiply or subtract inequalities with unknown signs to obtain universal conclusions."
+      }
+    },
+    "source": {
+      "kind": "official-public",
+      "title": {
+        "zh": "TMUA 2021 Paper 2 · 官方原卷",
+        "en": "TMUA 2021 Paper 2 · official archive"
+      },
+      "url": "https://uat-wp.s3.eu-west-2.amazonaws.com/wp-content/uploads/2024/05/07141117/TMUA-2021-paper-2.pdf",
+      "originalNumber": "13",
+      "year": 2021,
+      "rightsNote": "Original papers and worked solutions: Cambridge University Press & Assessment / Cambridge Assessment; public archive provided by UAT-UK. No affiliation or endorsement."
+    }
+  },
+  {
+    "id": "ARCHIVE-TMUA-2021-P2-Q14",
+    "exam": "TMUA",
+    "moduleId": "p2",
+    "format": "latex",
+    "topic": {
+      "id": "functions",
+      "name": {
+        "zh": "函数",
+        "en": "Functions"
+      }
+    },
+    "subtopic": {
+      "id": "exponential-log-system-domain",
+      "name": {
+        "zh": "指数对数联立的定义域",
+        "en": "Domain restrictions in an exponential–logarithmic system"
+      }
+    },
+    "prompt": "Read question 14 in the official TMUA 2021 Paper 2. Record your answer here.",
+    "options": [
+      "A",
+      "B",
+      "C",
+      "D",
+      "E",
+      "F",
+      "G",
+      "H"
+    ],
+    "correctIndex": 2,
+    "difficulty": "standard",
+    "external": {
+      "kind": "linked-paper",
+      "workedAnswersUrl": "https://uat-wp.s3.eu-west-2.amazonaws.com/wp-content/uploads/2024/05/07141118/TMUA-2021-paper-2-worked-answers.pdf",
+      "answerKeyUrl": "https://uat-wp.s3.eu-west-2.amazonaws.com/wp-content/uploads/2024/05/07141122/TMUA-2021-answer-keys.pdf",
+      "explanationReady": true
+    },
+    "explanation": {
+      "zh": {
+        "steps": [
+          "令 $X=2^x>0,\\ Y=\\log_2y$。原方程为 $pX+Y=2,\\ X+Y=1$。",
+          "相减得 $(p-1)X=1$。$p=1$ 时矛盾；$p\\ne1$ 时 $X=1/(p-1)$。",
+          "$X$ 必须严格为正，因此 $p>1$。此时 $x=\\log_2(1/(p-1))$、$y=2^{(p-2)/(p-1)}>0$ 确实存在，选 C。"
+        ],
+        "pitfall": "消元只排除 p=1 还不够，2 的 x 次方不能为负。"
+      },
+      "en": {
+        "steps": [
+          "Set $X=2^x>0$ and $Y=\\log_2y$. The equations become $pX+Y=2$ and $X+Y=1$.",
+          "Subtracting gives $(p-1)X=1$. At $p=1$ this is impossible; otherwise $X=1/(p-1)$.",
+          "Positivity of $X$ requires $p>1$. Then $x=\\log_2(1/(p-1))$ and $y=2^{(p-2)/(p-1)}>0$ provide a solution. Choose C."
+        ],
+        "pitfall": "Eliminating p=1 is not enough: 2 raised to x must be positive."
+      }
+    },
+    "source": {
+      "kind": "official-public",
+      "title": {
+        "zh": "TMUA 2021 Paper 2 · 官方原卷",
+        "en": "TMUA 2021 Paper 2 · official archive"
+      },
+      "url": "https://uat-wp.s3.eu-west-2.amazonaws.com/wp-content/uploads/2024/05/07141117/TMUA-2021-paper-2.pdf",
+      "originalNumber": "14",
+      "year": 2021,
+      "rightsNote": "Original papers and worked solutions: Cambridge University Press & Assessment / Cambridge Assessment; public archive provided by UAT-UK. No affiliation or endorsement."
+    }
+  },
+  {
+    "id": "ARCHIVE-TMUA-2021-P2-Q15",
+    "exam": "TMUA",
+    "moduleId": "p2",
+    "format": "latex",
+    "topic": {
+      "id": "geometry",
+      "name": {
+        "zh": "几何",
+        "en": "Geometry"
+      }
+    },
+    "subtopic": {
+      "id": "circle-y-axis-tangency",
+      "name": {
+        "zh": "圆与纵轴相切的充要条件",
+        "en": "Tangency of a circle to the vertical axis"
+      }
+    },
+    "prompt": "Read question 15 in the official TMUA 2021 Paper 2. Record your answer here.",
+    "options": [
+      "A",
+      "B",
+      "C",
+      "D",
+      "E",
+      "F",
+      "G",
+      "H"
+    ],
+    "correctIndex": 1,
+    "difficulty": "standard",
+    "external": {
+      "kind": "linked-paper",
+      "workedAnswersUrl": "https://uat-wp.s3.eu-west-2.amazonaws.com/wp-content/uploads/2024/05/07141118/TMUA-2021-paper-2-worked-answers.pdf",
+      "answerKeyUrl": "https://uat-wp.s3.eu-west-2.amazonaws.com/wp-content/uploads/2024/05/07141122/TMUA-2021-answer-keys.pdf",
+      "explanationReady": true
+    },
+    "explanation": {
+      "zh": {
+        "steps": [
+          "令 $x=0$，圆与 y 轴的交点满足 $y^2+by+c=0$。相切等价于恰有一个实交点。",
+          "判别式为零给出 $b^2-4c=0$，即 $b^2=4c$，对应 B。",
+          "也可配方：圆心到 y 轴距离为 $|a|/2$，半径平方为 $(a^2+b^2)/4-c$。两者平方相等同样得到 $b^2=4c$；$a\\ne0$ 保证此时半径非零。"
+        ],
+        "pitfall": "距离用绝对值；把带符号的圆心坐标直接等于半径会漏掉一侧的圆。"
+      },
+      "en": {
+        "steps": [
+          "On the y-axis, $x=0$, so intersections satisfy $y^2+by+c=0$. Tangency requires exactly one real intersection.",
+          "A zero discriminant gives $b^2-4c=0$, or $b^2=4c$. Choose B.",
+          "Equivalently, the centre is distance $|a|/2$ from the y-axis and the squared radius is $(a^2+b^2)/4-c$. Equality of their squares gives the same condition; $a\\ne0$ ensures a nonzero radius."
+        ],
+        "pitfall": "Distance is an absolute value; equating a signed centre coordinate to the radius misses one side."
+      }
+    },
+    "source": {
+      "kind": "official-public",
+      "title": {
+        "zh": "TMUA 2021 Paper 2 · 官方原卷",
+        "en": "TMUA 2021 Paper 2 · official archive"
+      },
+      "url": "https://uat-wp.s3.eu-west-2.amazonaws.com/wp-content/uploads/2024/05/07141117/TMUA-2021-paper-2.pdf",
+      "originalNumber": "15",
+      "year": 2021,
+      "rightsNote": "Original papers and worked solutions: Cambridge University Press & Assessment / Cambridge Assessment; public archive provided by UAT-UK. No affiliation or endorsement."
+    }
+  },
+  {
+    "id": "ARCHIVE-TMUA-2021-P2-Q16",
+    "exam": "TMUA",
+    "moduleId": "p2",
+    "format": "latex",
+    "topic": {
+      "id": "functions",
+      "name": {
+        "zh": "函数",
+        "en": "Functions"
+      }
+    },
+    "subtopic": {
+      "id": "x-absolute-x-root-count",
+      "name": {
+        "zh": "x乘绝对值函数的根数",
+        "en": "Root counts for x times its absolute value"
+      }
+    },
+    "prompt": "Read question 16 in the official TMUA 2021 Paper 2. Record your answer here.",
+    "options": [
+      "A",
+      "B",
+      "C",
+      "D",
+      "E",
+      "F",
+      "G",
+      "H"
+    ],
+    "correctIndex": 4,
+    "difficulty": "challenge",
+    "external": {
+      "kind": "linked-paper",
+      "workedAnswersUrl": "https://uat-wp.s3.eu-west-2.amazonaws.com/wp-content/uploads/2024/05/07141118/TMUA-2021-paper-2-worked-answers.pdf",
+      "answerKeyUrl": "https://uat-wp.s3.eu-west-2.amazonaws.com/wp-content/uploads/2024/05/07141122/TMUA-2021-answer-keys.pdf",
+      "explanationReady": true
+    },
+    "explanation": {
+      "zh": {
+        "steps": [
+          "令 $H(x)=x|x|-px-q$，它连续，且在负无穷趋向负无穷、正无穷趋向正无穷，所以至少有一个实根。",
+          "$q>0$ 时，正半轴方程 $x^2-px-q=0$ 的两根异号，恰有一正根；负半轴最多两根。$q<0$ 时情形对称。$q=0$ 时根为 0，另最多一正一负。",
+          "因此最多三根。$(p,q)=(0,0)$ 时只有 0；$(2,1)$ 时有 $-1$ 与 $1+\\sqrt2$ 两根；$(1,0)$ 时有 $-1,0,1$ 三根。",
+          "完整可能列表为 $1,2,3$，选 E。"
+        ],
+        "pitfall": "两条二次分支各最多两根，不代表能同时合计四根；还需检查根的正负。"
+      },
+      "en": {
+        "steps": [
+          "The function $H(x)=x|x|-px-q$ is continuous and tends to opposite infinities, so it has at least one real root.",
+          "For $q>0$, the quadratic $x^2-px-q=0$ has roots of opposite signs, giving one positive root, while the negative branch has at most two. The $q<0$ case is symmetric. For $q=0$, there is root 0 and at most one root on each open half-axis.",
+          "Thus there are at most three. The choices $(p,q)=(0,0),(2,1),(1,0)$ yield respectively one root (0), two roots ($-1,1+\\sqrt2$), and three roots ($-1,0,1$).",
+          "The complete list is $1,2,3$. Choose E."
+        ],
+        "pitfall": "Two quadratic branches do not independently contribute two roots each; root signs restrict the total."
+      }
+    },
+    "source": {
+      "kind": "official-public",
+      "title": {
+        "zh": "TMUA 2021 Paper 2 · 官方原卷",
+        "en": "TMUA 2021 Paper 2 · official archive"
+      },
+      "url": "https://uat-wp.s3.eu-west-2.amazonaws.com/wp-content/uploads/2024/05/07141117/TMUA-2021-paper-2.pdf",
+      "originalNumber": "16",
+      "year": 2021,
+      "rightsNote": "Original papers and worked solutions: Cambridge University Press & Assessment / Cambridge Assessment; public archive provided by UAT-UK. No affiliation or endorsement."
+    }
+  },
+  {
+    "id": "ARCHIVE-TMUA-2021-P2-Q17",
+    "exam": "TMUA",
+    "moduleId": "p2",
+    "format": "latex",
+    "topic": {
+      "id": "functions",
+      "name": {
+        "zh": "函数",
+        "en": "Functions"
+      }
+    },
+    "subtopic": {
+      "id": "nested-log-order-threshold",
+      "name": {
+        "zh": "嵌套对数的排序分界",
+        "en": "An ordering threshold for nested logarithms"
+      }
+    },
+    "prompt": "Read question 17 in the official TMUA 2021 Paper 2. Record your answer here.",
+    "options": [
+      "A",
+      "B",
+      "C",
+      "D",
+      "E",
+      "F",
+      "G",
+      "H"
+    ],
+    "correctIndex": 5,
+    "difficulty": "standard",
+    "external": {
+      "kind": "linked-paper",
+      "workedAnswersUrl": "https://uat-wp.s3.eu-west-2.amazonaws.com/wp-content/uploads/2024/05/07141118/TMUA-2021-paper-2-worked-answers.pdf",
+      "answerKeyUrl": "https://uat-wp.s3.eu-west-2.amazonaws.com/wp-content/uploads/2024/05/07141122/TMUA-2021-answer-keys.pdf",
+      "explanationReady": true
+    },
+    "explanation": {
+      "zh": {
+        "steps": [
+          "$x>1$ 保证内层对数为正。令 $z=\\log_2(\\log_2x)$，则 $f=z-1$、$g=z/2$。",
+          "$z\\geq2$ 时 $1\\leq g\\leq f$；$z\\leq2$ 时 $f\\leq g\\leq1$。",
+          "这两个分支覆盖所有实数 $z$，分界为函数值 1，故选 F。"
+        ],
+        "pitfall": "log₂√x 与 √log₂x 不同；需先分别化简，再判断完整值域。"
+      },
+      "en": {
+        "steps": [
+          "For $x>1$ the inner logarithms are positive. Set $z=\\log_2(\\log_2x)$; then $f=z-1$ and $g=z/2$.",
+          "If $z\\geq2$, then $1\\leq g\\leq f$; if $z\\leq2$, then $f\\leq g\\leq1$.",
+          "These cases cover all real $z$, with threshold value 1. Choose F."
+        ],
+        "pitfall": "log₂√x and √log₂x are different; simplify each before comparing their full ranges."
+      }
+    },
+    "source": {
+      "kind": "official-public",
+      "title": {
+        "zh": "TMUA 2021 Paper 2 · 官方原卷",
+        "en": "TMUA 2021 Paper 2 · official archive"
+      },
+      "url": "https://uat-wp.s3.eu-west-2.amazonaws.com/wp-content/uploads/2024/05/07141117/TMUA-2021-paper-2.pdf",
+      "originalNumber": "17",
+      "year": 2021,
+      "rightsNote": "Original papers and worked solutions: Cambridge University Press & Assessment / Cambridge Assessment; public archive provided by UAT-UK. No affiliation or endorsement."
+    }
+  },
+  {
+    "id": "ARCHIVE-TMUA-2021-P2-Q18",
+    "exam": "TMUA",
+    "moduleId": "p2",
+    "format": "latex",
+    "topic": {
+      "id": "geometry",
+      "name": {
+        "zh": "几何",
+        "en": "Geometry"
+      }
+    },
+    "subtopic": {
+      "id": "two-sine-angle-triangles",
+      "name": {
+        "zh": "给定两个正弦值的三角形数量",
+        "en": "Counting triangles with two given angle sines"
+      }
+    },
+    "prompt": "Read question 18 in the official TMUA 2021 Paper 2. Record your answer here.",
+    "options": [
+      "A",
+      "B",
+      "C",
+      "D",
+      "E",
+      "F",
+      "G",
+      "H"
+    ],
+    "correctIndex": 2,
+    "difficulty": "challenge",
+    "external": {
+      "kind": "linked-paper",
+      "workedAnswersUrl": "https://uat-wp.s3.eu-west-2.amazonaws.com/wp-content/uploads/2024/05/07141118/TMUA-2021-paper-2-worked-answers.pdf",
+      "answerKeyUrl": "https://uat-wp.s3.eu-west-2.amazonaws.com/wp-content/uploads/2024/05/07141122/TMUA-2021-answer-keys.pdf",
+      "explanationReady": true
+    },
+    "explanation": {
+      "zh": {
+        "steps": [
+          "设 $\\alpha=\\arcsin x,\\ \\beta=\\arcsin y$，则 $0<\\alpha<\\beta<90^\\circ$。A 可取 $\\alpha$ 或 $180^\\circ-\\alpha$，B 可取 $\\beta$ 或 $180^\\circ-\\beta$。",
+          "A、B 都锐角时和小于 180°，产生一个三角形。A 锐角、B 钝角时和为 $180^\\circ+\\alpha-\\beta<180^\\circ$，也产生一个。",
+          "A 钝角、B 锐角时和超过 180°；两者都钝角时同样不成立。有效两组中给定两角及 AB=1，分别唯一确定三角形，且两组三角形不全等。",
+          "对每一组允许的 $x,y$，始终恰有两个三角形，因此仅 II 正确，选 C。"
+        ],
+        "pitfall": "“某些 x,y”不表示可任意改变三角形数量；所有补角组合必须检查内角和。"
+      },
+      "en": {
+        "steps": [
+          "Let $\\alpha=\\arcsin x,\\beta=\\arcsin y$, so $0<\\alpha<\\beta<90^\\circ$. Each angle can take its acute value or its supplement.",
+          "Both acute angles have sum below 180°, giving one triangle. Acute A and obtuse B give sum $180^\\circ+\\alpha-\\beta<180^\\circ$, giving another.",
+          "Obtuse A with acute B gives a sum above 180°, and both obtuse also fail. In each valid case, the two angles and AB=1 determine a unique triangle; the two angle sets are not congruent.",
+          "Every allowed pair $x,y$ therefore gives exactly two triangles. Only II is true. Choose C."
+        ],
+        "pitfall": "Check all supplementary-angle choices against the triangle angle sum."
+      }
+    },
+    "source": {
+      "kind": "official-public",
+      "title": {
+        "zh": "TMUA 2021 Paper 2 · 官方原卷",
+        "en": "TMUA 2021 Paper 2 · official archive"
+      },
+      "url": "https://uat-wp.s3.eu-west-2.amazonaws.com/wp-content/uploads/2024/05/07141117/TMUA-2021-paper-2.pdf",
+      "originalNumber": "18",
+      "year": 2021,
+      "rightsNote": "Original papers and worked solutions: Cambridge University Press & Assessment / Cambridge Assessment; public archive provided by UAT-UK. No affiliation or endorsement."
+    }
+  },
+  {
+    "id": "ARCHIVE-TMUA-2021-P2-Q19",
+    "exam": "TMUA",
+    "moduleId": "p2",
+    "format": "latex",
+    "topic": {
+      "id": "trigonometry",
+      "name": {
+        "zh": "三角函数与方程",
+        "en": "Trigonometric functions & equations"
+      }
+    },
+    "subtopic": {
+      "id": "absolute-trig-integer-angles",
+      "name": {
+        "zh": "绝对值三角式的整数角计数",
+        "en": "Integer-angle counts in an absolute trigonometric equation"
+      }
+    },
+    "prompt": "Read question 19 in the official TMUA 2021 Paper 2. Record your answer here.",
+    "options": [
+      "A",
+      "B",
+      "C",
+      "D",
+      "E",
+      "F",
+      "G",
+      "H"
+    ],
+    "correctIndex": 5,
+    "difficulty": "challenge",
+    "external": {
+      "kind": "linked-paper",
+      "workedAnswersUrl": "https://uat-wp.s3.eu-west-2.amazonaws.com/wp-content/uploads/2024/05/07141118/TMUA-2021-paper-2-worked-answers.pdf",
+      "answerKeyUrl": "https://uat-wp.s3.eu-west-2.amazonaws.com/wp-content/uploads/2024/05/07141122/TMUA-2021-answer-keys.pdf",
+      "explanationReady": true
+    },
+    "explanation": {
+      "zh": {
+        "steps": [
+          "合并各对根式后，原式变为 $\\sin\\theta\\sqrt{1-\\sin^2\\theta}+\\cos\\theta\\sqrt{1-\\cos^2\\theta}=0$。",
+          "利用 $\\sqrt{u^2}=|u|$，得到 $\\sin\\theta|\\cos\\theta|+\\cos\\theta|\\sin\\theta|=0$。",
+          "正弦余弦异号时相消，任一个为零时也成立；两者同号且非零时不成立。允许整数角为 $90^\\circ$ 至 $180^\\circ$、$270^\\circ$ 至 $360^\\circ$，都含端点。",
+          "每段有 $91$ 个整数，共 $182$ 个，选 F。$0^\\circ$ 不在题给列表内。"
+        ],
+        "pitfall": "平方根不能直接替换为带符号三角函数；整数角计数需含端点且不重复 0° 与 360°。"
+      },
+      "en": {
+        "steps": [
+          "Combining the radical pairs gives $\\sin\\theta\\sqrt{1-\\sin^2\\theta}+\\cos\\theta\\sqrt{1-\\cos^2\\theta}=0$.",
+          "Using $\\sqrt{u^2}=|u|$ gives $\\sin\\theta|\\cos\\theta|+\\cos\\theta|\\sin\\theta|=0$.",
+          "The terms cancel when sine and cosine have opposite signs; zeros also work. Equal nonzero signs do not. The allowed integer angles are 90° through 180° and 270° through 360°, inclusive.",
+          "Each interval contains 91 integers, for a total of 182. Choose F; 0° is not in the supplied list."
+        ],
+        "pitfall": "Retain absolute values after square roots and count the permitted endpoints without adding 0°."
+      }
+    },
+    "source": {
+      "kind": "official-public",
+      "title": {
+        "zh": "TMUA 2021 Paper 2 · 官方原卷",
+        "en": "TMUA 2021 Paper 2 · official archive"
+      },
+      "url": "https://uat-wp.s3.eu-west-2.amazonaws.com/wp-content/uploads/2024/05/07141117/TMUA-2021-paper-2.pdf",
+      "originalNumber": "19",
+      "year": 2021,
+      "rightsNote": "Original papers and worked solutions: Cambridge University Press & Assessment / Cambridge Assessment; public archive provided by UAT-UK. No affiliation or endorsement."
+    }
+  },
+  {
+    "id": "ARCHIVE-TMUA-2021-P2-Q20",
+    "exam": "TMUA",
+    "moduleId": "p2",
+    "format": "latex",
+    "topic": {
+      "id": "functions",
+      "name": {
+        "zh": "函数",
+        "en": "Functions"
+      }
+    },
+    "subtopic": {
+      "id": "iterated-absolute-function",
+      "name": {
+        "zh": "绝对值函数递推的奇偶规律",
+        "en": "Parity in an iterated absolute-value function"
+      }
+    },
+    "prompt": "Read question 20 in the official TMUA 2021 Paper 2. Record your answer here.",
+    "options": [
+      "A",
+      "B",
+      "C",
+      "D",
+      "E",
+      "F",
+      "G",
+      "H"
+    ],
+    "correctIndex": 4,
+    "difficulty": "standard",
+    "external": {
+      "kind": "linked-paper",
+      "workedAnswersUrl": "https://uat-wp.s3.eu-west-2.amazonaws.com/wp-content/uploads/2024/05/07141118/TMUA-2021-paper-2-worked-answers.pdf",
+      "answerKeyUrl": "https://uat-wp.s3.eu-west-2.amazonaws.com/wp-content/uploads/2024/05/07141122/TMUA-2021-answer-keys.pdf",
+      "explanationReady": true
+    },
+    "explanation": {
+      "zh": {
+        "steps": [
+          "$x\\geq0$ 时由递推归纳得到 $f_n(x)=nx$。",
+          "$x<0$ 时 $f_1(x)=-x$，$f_2(x)=|-x+x|=0$；下一项又为 $|x|=-x$。因此奇数项为 $-x$，偶数项为 0。",
+          "99 为奇数，所以积分为 $\\int_{-1}^0(-x)\\,dx+\\int_0^1 99x\\,dx=1/2+99/2=50$，选 E。"
+        ],
+        "pitfall": "递推中的绝对值不能分配到加法各项；负半轴按奇偶交替。"
+      },
+      "en": {
+        "steps": [
+          "For $x\\geq0$, induction gives $f_n(x)=nx$.",
+          "For $x<0$, $f_1(x)=-x$ and $f_2(x)=|-x+x|=0$. The next value is $|x|=-x$, so odd terms equal $-x$ and even terms equal 0.",
+          "Since 99 is odd, the integral is $\\int_{-1}^0(-x)\\,dx+\\int_0^1 99x\\,dx=1/2+99/2=50$. Choose E."
+        ],
+        "pitfall": "Absolute value does not distribute over addition; the negative branch alternates with parity."
+      }
+    },
+    "source": {
+      "kind": "official-public",
+      "title": {
+        "zh": "TMUA 2021 Paper 2 · 官方原卷",
+        "en": "TMUA 2021 Paper 2 · official archive"
+      },
+      "url": "https://uat-wp.s3.eu-west-2.amazonaws.com/wp-content/uploads/2024/05/07141117/TMUA-2021-paper-2.pdf",
+      "originalNumber": "20",
+      "year": 2021,
+      "rightsNote": "Original papers and worked solutions: Cambridge University Press & Assessment / Cambridge Assessment; public archive provided by UAT-UK. No affiliation or endorsement."
+    }
+  }
+]

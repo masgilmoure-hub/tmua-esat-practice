@@ -5,17 +5,17 @@ import { emptyState, loadState, validQuestion } from '../src/storage';
 
 describe('official external-paper answer sheets', () => {
   it('keeps complete paper plans separate from demos and uses actual 75-minute sections', () => {
-    const plan = pastPaperPlan(2021, 'both', true);
+    const plan = pastPaperPlan(2020, 'both', true);
     expect(plan.questions).toHaveLength(40);
     expect(new Set(plan.questions.map(q => q.id)).size).toBe(40);
-    expect(plan.questions.every(q => q.source.kind === 'official-public' && q.external && q.source.year === 2021)).toBe(true);
+    expect(plan.questions.every(q => q.source.kind === 'official-public' && q.external && q.source.year === 2020)).toBe(true);
     expect(plan.sections.map(s => [s.moduleId, s.questionIds.length, s.limitSeconds])).toEqual([['p1', 20, 4500], ['p2', 20, 4500]]);
     const one = pastPaperPlan(2018, 'p2', false);
     expect(one.questions).toHaveLength(20); expect(one.sections).toHaveLength(1); expect(one.sections[0].limitSeconds).toBeNull();
     expect(() => pastPaperPlan(2026, 'both', true)).toThrow('Unknown archived paper');
   });
   it('marks by the factual key, excludes transition time and does not infer unknown topic performance', () => {
-    const plan = pastPaperPlan(2021, 'both', true);
+    const plan = pastPaperPlan(2020, 'both', true);
     let active = createSession(plan.questions, plan.sections, 'mock', 1000);
     active = { ...active, answers: { [plan.questions[0].id]: plan.questions[0].correctIndex, [plan.questions[1].id]: (plan.questions[1].correctIndex + 1) % 8, [plan.questions[20].id]: plan.questions[20].correctIndex } };
     const first = closeSection(active, 9_001_000).active!;
@@ -32,7 +32,7 @@ describe('official external-paper answer sheets', () => {
     for (const paper of PAST_PAPERS) {
       for (const q of linkedQuestions(paper)) expect(validQuestion(q)).toBe(true);
     }
-    const plan = pastPaperPlan(2021, 'p1', false);
+    const plan = pastPaperPlan(2020, 'p1', false);
     const active = createSession(plan.questions, plan.sections, 'mock');
     const state = { ...emptyState(), active };
     expect(loadState({ getItem: () => JSON.stringify(state) })).toMatchObject({ state, issue: null, writable: true });

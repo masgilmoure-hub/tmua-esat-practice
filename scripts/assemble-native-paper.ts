@@ -7,9 +7,10 @@ import type { Question, Difficulty } from '../src/types.ts';
 
 // Drafts are editorial inputs, never runtime content. A full paper is written only
 // after all 20 reviewed drafts, independently entered letters and formulas pass.
-const [yearText, moduleId, input, output] = process.argv.slice(2);
-if (!/^20\d\d$/.test(yearText ?? '') || !['p1', 'p2'].includes(moduleId) || !input || !output) {
-  console.error('Usage: node --experimental-strip-types scripts/assemble-native-paper.ts YEAR p1|p2 drafts.json output.json');
+const [yearText, moduleId, input, output, mode] = process.argv.slice(2);
+const pdf = mode === '--pdf';
+if (!/^20\d\d$/.test(yearText ?? '') || !['p1', 'p2'].includes(moduleId) || !input || !output || (mode !== undefined && !pdf)) {
+  console.error('Usage: node --experimental-strip-types scripts/assemble-native-paper.ts YEAR p1|p2 drafts.json output.json [--pdf]');
   process.exit(1);
 }
 try {
@@ -29,9 +30,10 @@ try {
       exam: 'TMUA', moduleId: moduleId as 'p1' | 'p2', format: 'latex',
       topic: { id: draft.topic, name: TOPICS[draft.topic] },
       subtopic: { id: draft.subtopic[0], name: { zh: draft.subtopic[1], en: draft.subtopic[2] } },
-      prompt: draft.prompt, options: draft.options, correctIndex: draft.answer.charCodeAt(0) - 65,
+      prompt: pdf ? `Read question ${i + 1} in the official TMUA ${yearText} Paper ${moduleId.slice(1)}. Record your answer here.` : draft.prompt,
+      options: pdf ? [...'ABCDEFGH'] : draft.options, correctIndex: draft.answer.charCodeAt(0) - 65,
       difficulty: draft.difficulty as Difficulty,
-      ...(draft.diagram ? { diagram: draft.diagram } : {}),
+      ...(pdf ? { external: { kind: 'linked-paper' as const, workedAnswersUrl: paper.workedAnswersUrl, answerKeyUrl: paper.answerKeyUrl, explanationReady: true as const } } : draft.diagram ? { diagram: draft.diagram } : {}),
       explanation: {
         zh: { steps: draft.steps.map((pair: string[]) => pair[0]), pitfall: draft.pitfall[0] },
         en: { steps: draft.steps.map((pair: string[]) => pair[1]), pitfall: draft.pitfall[1] },

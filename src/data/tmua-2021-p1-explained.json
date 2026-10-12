@@ -1,0 +1,1368 @@
+[
+  {
+    "id": "ARCHIVE-TMUA-2021-P1-Q01",
+    "exam": "TMUA",
+    "moduleId": "p1",
+    "format": "latex",
+    "topic": {
+      "id": "geometry",
+      "name": {
+        "zh": "几何",
+        "en": "Geometry"
+      }
+    },
+    "subtopic": {
+      "id": "equal-circle-chord",
+      "name": {
+        "zh": "等半径圆的公共弦",
+        "en": "Common chord of equal circles"
+      }
+    },
+    "prompt": "Read question 1 in the official TMUA 2021 Paper 1. Record your answer here.",
+    "options": [
+      "A",
+      "B",
+      "C",
+      "D",
+      "E",
+      "F",
+      "G",
+      "H"
+    ],
+    "correctIndex": 5,
+    "difficulty": "foundation",
+    "external": {
+      "kind": "linked-paper",
+      "workedAnswersUrl": "https://uat-wp.s3.eu-west-2.amazonaws.com/wp-content/uploads/2024/05/07141121/TMUA-2021-paper-1-worked-answers.pdf",
+      "answerKeyUrl": "https://uat-wp.s3.eu-west-2.amazonaws.com/wp-content/uploads/2024/05/07141122/TMUA-2021-answer-keys.pdf",
+      "explanationReady": true
+    },
+    "explanation": {
+      "zh": {
+        "steps": [
+          "两个圆的方程为 $(x+2)^2+(y-1)^2=r^2$ 与 $(x-3)^2+(y+2)^2=r^2$。交点同时满足两式。",
+          "相减消去半径和平方项，得 $10x-6y-8=0$，即 $5x-3y=4$，选 F。",
+          "也可检查：公共弦过圆心连线的中点 $(1/2,-1/2)$，且与圆心连线垂直，斜率为 $5/3$。"
+        ],
+        "pitfall": "不要把圆心连线当成公共弦；展开时注意负坐标。"
+      },
+      "en": {
+        "steps": [
+          "The circles satisfy $(x+2)^2+(y-1)^2=r^2$ and $(x-3)^2+(y+2)^2=r^2$. Each intersection satisfies both equations.",
+          "Subtract to eliminate the radius and squared terms: $10x-6y-8=0$, hence $5x-3y=4$. Choose F.",
+          "Geometrically, the chord passes through the midpoint $(1/2,-1/2)$ and is perpendicular to the line of centres, so its slope is $5/3$."
+        ],
+        "pitfall": "The common chord is perpendicular to the line of centres; watch signs when expanding."
+      }
+    },
+    "source": {
+      "kind": "official-public",
+      "title": {
+        "zh": "TMUA 2021 Paper 1 · 官方原卷",
+        "en": "TMUA 2021 Paper 1 · official archive"
+      },
+      "url": "https://uat-wp.s3.eu-west-2.amazonaws.com/wp-content/uploads/2024/05/07141119/TMUA-2021-paper-1.pdf",
+      "originalNumber": "1",
+      "year": 2021,
+      "rightsNote": "Original papers and worked solutions: Cambridge University Press & Assessment / Cambridge Assessment; public archive provided by UAT-UK. No affiliation or endorsement."
+    }
+  },
+  {
+    "id": "ARCHIVE-TMUA-2021-P1-Q02",
+    "exam": "TMUA",
+    "moduleId": "p1",
+    "format": "latex",
+    "topic": {
+      "id": "calculus",
+      "name": {
+        "zh": "微积分",
+        "en": "Calculus"
+      }
+    },
+    "subtopic": {
+      "id": "symmetric-cubic-integral",
+      "name": {
+        "zh": "对称区间的三次函数积分",
+        "en": "Cubic integration on a symmetric interval"
+      }
+    },
+    "prompt": "Read question 2 in the official TMUA 2021 Paper 1. Record your answer here.",
+    "options": [
+      "A",
+      "B",
+      "C",
+      "D",
+      "E",
+      "F",
+      "G",
+      "H"
+    ],
+    "correctIndex": 5,
+    "difficulty": "foundation",
+    "external": {
+      "kind": "linked-paper",
+      "workedAnswersUrl": "https://uat-wp.s3.eu-west-2.amazonaws.com/wp-content/uploads/2024/05/07141121/TMUA-2021-paper-1-worked-answers.pdf",
+      "answerKeyUrl": "https://uat-wp.s3.eu-west-2.amazonaws.com/wp-content/uploads/2024/05/07141122/TMUA-2021-answer-keys.pdf",
+      "explanationReady": true
+    },
+    "explanation": {
+      "zh": {
+        "steps": [
+          "由 $y^{\\prime}=3x^2-6=0$ 得 $\\alpha=-\\sqrt2,\\ \\beta=\\sqrt2$。",
+          "$x^3-6x$ 是奇函数，在对称区间的积分为零；只需积分常数项 3。",
+          "积分为 $3(\\sqrt2-(-\\sqrt2))=6\\sqrt2$，选 F。"
+        ],
+        "pitfall": "这是带符号积分，不是曲线与横轴之间的总面积。"
+      },
+      "en": {
+        "steps": [
+          "From $y^{\\prime}=3x^2-6=0$, the limits are $\\alpha=-\\sqrt2,\\ \\beta=\\sqrt2$.",
+          "The odd part $x^3-6x$ integrates to zero on this symmetric interval, leaving only the constant 3.",
+          "The integral is $3(\\sqrt2-(-\\sqrt2))=6\\sqrt2$. Choose F."
+        ],
+        "pitfall": "This is a signed integral, not the total area between the curve and the axis."
+      }
+    },
+    "source": {
+      "kind": "official-public",
+      "title": {
+        "zh": "TMUA 2021 Paper 1 · 官方原卷",
+        "en": "TMUA 2021 Paper 1 · official archive"
+      },
+      "url": "https://uat-wp.s3.eu-west-2.amazonaws.com/wp-content/uploads/2024/05/07141119/TMUA-2021-paper-1.pdf",
+      "originalNumber": "2",
+      "year": 2021,
+      "rightsNote": "Original papers and worked solutions: Cambridge University Press & Assessment / Cambridge Assessment; public archive provided by UAT-UK. No affiliation or endorsement."
+    }
+  },
+  {
+    "id": "ARCHIVE-TMUA-2021-P1-Q03",
+    "exam": "TMUA",
+    "moduleId": "p1",
+    "format": "latex",
+    "topic": {
+      "id": "sequences",
+      "name": {
+        "zh": "数列与级数",
+        "en": "Sequences & series"
+      }
+    },
+    "subtopic": {
+      "id": "coupled-ap-gp",
+      "name": {
+        "zh": "等差与等比数列联立",
+        "en": "Coupled arithmetic and geometric progressions"
+      }
+    },
+    "prompt": "Read question 3 in the official TMUA 2021 Paper 1. Record your answer here.",
+    "options": [
+      "A",
+      "B",
+      "C",
+      "D",
+      "E",
+      "F",
+      "G",
+      "H"
+    ],
+    "correctIndex": 6,
+    "difficulty": "standard",
+    "external": {
+      "kind": "linked-paper",
+      "workedAnswersUrl": "https://uat-wp.s3.eu-west-2.amazonaws.com/wp-content/uploads/2024/05/07141121/TMUA-2021-paper-1-worked-answers.pdf",
+      "answerKeyUrl": "https://uat-wp.s3.eu-west-2.amazonaws.com/wp-content/uploads/2024/05/07141122/TMUA-2021-answer-keys.pdf",
+      "explanationReady": true
+    },
+    "explanation": {
+      "zh": {
+        "steps": [
+          "设等差公差为 $d$、等比公比为 $r$。第二项之和给出 $1/2+d+r/2=1/2$，故 $d=-r/2$。",
+          "第三项之和为 $1/2+2d+r^2/2=1/8$。代入得 $4r^2-8r+3=0$，所以 $r=1/2$ 或 $3/2$。",
+          "收敛要求 $|r|<1$，仅取 $r=1/2$。无穷和为 $(1/2)/(1-1/2)=1$，选 G。"
+        ],
+        "pitfall": "二次方程的两个根不能都保留，必须使用等比级数收敛条件。"
+      },
+      "en": {
+        "steps": [
+          "Let $d$ be the arithmetic difference and $r$ the geometric ratio. The second terms give $1/2+d+r/2=1/2$, so $d=-r/2$.",
+          "The third terms give $1/2+2d+r^2/2=1/8$. Substitution yields $4r^2-8r+3=0$, with $r=1/2$ or $3/2$.",
+          "Convergence requires $|r|<1$, leaving $r=1/2$. The infinite sum is $(1/2)/(1-1/2)=1$. Choose G."
+        ],
+        "pitfall": "Use the convergence condition to discard the second algebraic root."
+      }
+    },
+    "source": {
+      "kind": "official-public",
+      "title": {
+        "zh": "TMUA 2021 Paper 1 · 官方原卷",
+        "en": "TMUA 2021 Paper 1 · official archive"
+      },
+      "url": "https://uat-wp.s3.eu-west-2.amazonaws.com/wp-content/uploads/2024/05/07141119/TMUA-2021-paper-1.pdf",
+      "originalNumber": "3",
+      "year": 2021,
+      "rightsNote": "Original papers and worked solutions: Cambridge University Press & Assessment / Cambridge Assessment; public archive provided by UAT-UK. No affiliation or endorsement."
+    }
+  },
+  {
+    "id": "ARCHIVE-TMUA-2021-P1-Q04",
+    "exam": "TMUA",
+    "moduleId": "p1",
+    "format": "latex",
+    "topic": {
+      "id": "functions",
+      "name": {
+        "zh": "函数",
+        "en": "Functions"
+      }
+    },
+    "subtopic": {
+      "id": "exponential-quadratic-minimum",
+      "name": {
+        "zh": "指数换元求最小值",
+        "en": "Minimum by exponential substitution"
+      }
+    },
+    "prompt": "Read question 4 in the official TMUA 2021 Paper 1. Record your answer here.",
+    "options": [
+      "A",
+      "B",
+      "C",
+      "D",
+      "E",
+      "F",
+      "G",
+      "H"
+    ],
+    "correctIndex": 1,
+    "difficulty": "foundation",
+    "external": {
+      "kind": "linked-paper",
+      "workedAnswersUrl": "https://uat-wp.s3.eu-west-2.amazonaws.com/wp-content/uploads/2024/05/07141121/TMUA-2021-paper-1-worked-answers.pdf",
+      "answerKeyUrl": "https://uat-wp.s3.eu-west-2.amazonaws.com/wp-content/uploads/2024/05/07141122/TMUA-2021-answer-keys.pdf",
+      "explanationReady": true
+    },
+    "explanation": {
+      "zh": {
+        "steps": [
+          "令 $u=2^x>0$，原式为 $u^2-8u+4$。",
+          "配方得到 $(u-4)^2-12$，因此下界为 $-12$。",
+          "$u=4$ 对应 $x=2$，满足定义域，下界可达到。最小值为 $-12$，选 B。"
+        ],
+        "pitfall": "指数换元后需检查可达性；最小值的负号不能漏。"
+      },
+      "en": {
+        "steps": [
+          "Set $u=2^x>0$. The expression becomes $u^2-8u+4$.",
+          "Completing the square gives $(u-4)^2-12$, with lower bound $-12$.",
+          "The bound is attained at $u=4$, corresponding to $x=2$. The minimum is $-12$. Choose B."
+        ],
+        "pitfall": "Check that the substituted minimum is attainable and retain its negative sign."
+      }
+    },
+    "source": {
+      "kind": "official-public",
+      "title": {
+        "zh": "TMUA 2021 Paper 1 · 官方原卷",
+        "en": "TMUA 2021 Paper 1 · official archive"
+      },
+      "url": "https://uat-wp.s3.eu-west-2.amazonaws.com/wp-content/uploads/2024/05/07141119/TMUA-2021-paper-1.pdf",
+      "originalNumber": "4",
+      "year": 2021,
+      "rightsNote": "Original papers and worked solutions: Cambridge University Press & Assessment / Cambridge Assessment; public archive provided by UAT-UK. No affiliation or endorsement."
+    }
+  },
+  {
+    "id": "ARCHIVE-TMUA-2021-P1-Q05",
+    "exam": "TMUA",
+    "moduleId": "p1",
+    "format": "latex",
+    "topic": {
+      "id": "functions",
+      "name": {
+        "zh": "函数",
+        "en": "Functions"
+      }
+    },
+    "subtopic": {
+      "id": "multiplicative-function-rule",
+      "name": {
+        "zh": "整数函数的分段乘法规则",
+        "en": "Piecewise multiplicative rules on integers"
+      }
+    },
+    "prompt": "Read question 5 in the official TMUA 2021 Paper 1. Record your answer here.",
+    "options": [
+      "A",
+      "B",
+      "C",
+      "D",
+      "E",
+      "F",
+      "G",
+      "H"
+    ],
+    "correctIndex": 5,
+    "difficulty": "standard",
+    "external": {
+      "kind": "linked-paper",
+      "workedAnswersUrl": "https://uat-wp.s3.eu-west-2.amazonaws.com/wp-content/uploads/2024/05/07141121/TMUA-2021-paper-1-worked-answers.pdf",
+      "answerKeyUrl": "https://uat-wp.s3.eu-west-2.amazonaws.com/wp-content/uploads/2024/05/07141122/TMUA-2021-answer-keys.pdf",
+      "explanationReady": true
+    },
+    "explanation": {
+      "zh": {
+        "steps": [
+          "令 $t=f(3)$。由分段规则，$f(9)=t^2$；16 和 8 都不是 3 的倍数，所以 $f(16)=16,\\ f(8)=8$。",
+          "$24=3\\times8$ 是 3 的倍数，因此 $f(24)=f(3)f(8)=8t$。",
+          "代入已知式得 $t^2+16-8t=(t-4)^2=0$，故 $f(3)=4$，选 F。"
+        ],
+        "pitfall": "先判断乘积是否为 3 的倍数，不是判断两个因数是否都为倍数。"
+      },
+      "en": {
+        "steps": [
+          "Write $t=f(3)$. The rule gives $f(9)=t^2$. Since 16 and 8 are not multiples of 3, $f(16)=16$ and $f(8)=8$.",
+          "Because $24=3\\times8$ is a multiple of 3, $f(24)=f(3)f(8)=8t$.",
+          "The given equation becomes $t^2+16-8t=(t-4)^2=0$, so $f(3)=4$. Choose F."
+        ],
+        "pitfall": "The condition concerns the product, not whether both factors are multiples of 3."
+      }
+    },
+    "source": {
+      "kind": "official-public",
+      "title": {
+        "zh": "TMUA 2021 Paper 1 · 官方原卷",
+        "en": "TMUA 2021 Paper 1 · official archive"
+      },
+      "url": "https://uat-wp.s3.eu-west-2.amazonaws.com/wp-content/uploads/2024/05/07141119/TMUA-2021-paper-1.pdf",
+      "originalNumber": "5",
+      "year": 2021,
+      "rightsNote": "Original papers and worked solutions: Cambridge University Press & Assessment / Cambridge Assessment; public archive provided by UAT-UK. No affiliation or endorsement."
+    }
+  },
+  {
+    "id": "ARCHIVE-TMUA-2021-P1-Q06",
+    "exam": "TMUA",
+    "moduleId": "p1",
+    "format": "latex",
+    "topic": {
+      "id": "trigonometry",
+      "name": {
+        "zh": "三角函数与方程",
+        "en": "Trigonometric functions & equations"
+      }
+    },
+    "subtopic": {
+      "id": "trig-rational-range",
+      "name": {
+        "zh": "三角有理函数的值域",
+        "en": "Range of a trigonometric rational function"
+      }
+    },
+    "prompt": "Read question 6 in the official TMUA 2021 Paper 1. Record your answer here.",
+    "options": [
+      "A",
+      "B",
+      "C",
+      "D",
+      "E",
+      "F",
+      "G",
+      "H"
+    ],
+    "correctIndex": 3,
+    "difficulty": "standard",
+    "external": {
+      "kind": "linked-paper",
+      "workedAnswersUrl": "https://uat-wp.s3.eu-west-2.amazonaws.com/wp-content/uploads/2024/05/07141121/TMUA-2021-paper-1-worked-answers.pdf",
+      "answerKeyUrl": "https://uat-wp.s3.eu-west-2.amazonaws.com/wp-content/uploads/2024/05/07141122/TMUA-2021-answer-keys.pdf",
+      "explanationReady": true
+    },
+    "explanation": {
+      "zh": {
+        "steps": [
+          "用 $\\sin^2x=1-\\cos^2x$，分母变为 $\\cos^2x+5\\cos x+6=(\\cos x+2)(\\cos x+3)$。",
+          "$\\cos x+3$ 不为零，可以约去，得到 $f(x)=1/(\\cos x+2)$。",
+          "$-1\\leq\\cos x\\leq1$，故 $1/3\\leq f(x)\\leq1$，最大与最小之差为 $2/3$，选 D。"
+        ],
+        "pitfall": "约分前检查分母为零的可能性；取倒数会交换大小关系。"
+      },
+      "en": {
+        "steps": [
+          "Use $\\sin^2x=1-\\cos^2x$ to factor the denominator as $(\\cos x+2)(\\cos x+3)$.",
+          "The factor $\\cos x+3$ never vanishes, so cancellation gives $f(x)=1/(\\cos x+2)$.",
+          "As $-1\\leq\\cos x\\leq1$, the range is $1/3\\leq f(x)\\leq1$. The difference is $2/3$. Choose D."
+        ],
+        "pitfall": "Check for zero factors before cancellation; reciprocation reverses order."
+      }
+    },
+    "source": {
+      "kind": "official-public",
+      "title": {
+        "zh": "TMUA 2021 Paper 1 · 官方原卷",
+        "en": "TMUA 2021 Paper 1 · official archive"
+      },
+      "url": "https://uat-wp.s3.eu-west-2.amazonaws.com/wp-content/uploads/2024/05/07141119/TMUA-2021-paper-1.pdf",
+      "originalNumber": "6",
+      "year": 2021,
+      "rightsNote": "Original papers and worked solutions: Cambridge University Press & Assessment / Cambridge Assessment; public archive provided by UAT-UK. No affiliation or endorsement."
+    }
+  },
+  {
+    "id": "ARCHIVE-TMUA-2021-P1-Q07",
+    "exam": "TMUA",
+    "moduleId": "p1",
+    "format": "latex",
+    "topic": {
+      "id": "calculus",
+      "name": {
+        "zh": "微积分",
+        "en": "Calculus"
+      }
+    },
+    "subtopic": {
+      "id": "signed-absolute-integrals",
+      "name": {
+        "zh": "带符号积分与绝对值积分",
+        "en": "Signed and absolute-value integrals"
+      }
+    },
+    "prompt": "Read question 7 in the official TMUA 2021 Paper 1. Record your answer here.",
+    "options": [
+      "A",
+      "B",
+      "C",
+      "D",
+      "E",
+      "F",
+      "G",
+      "H"
+    ],
+    "correctIndex": 6,
+    "difficulty": "standard",
+    "external": {
+      "kind": "linked-paper",
+      "workedAnswersUrl": "https://uat-wp.s3.eu-west-2.amazonaws.com/wp-content/uploads/2024/05/07141121/TMUA-2021-paper-1-worked-answers.pdf",
+      "answerKeyUrl": "https://uat-wp.s3.eu-west-2.amazonaws.com/wp-content/uploads/2024/05/07141122/TMUA-2021-answer-keys.pdf",
+      "explanationReady": true
+    },
+    "explanation": {
+      "zh": {
+        "steps": [
+          "$xf(x)>0$ 表明 $f(x)$ 在正半轴为正、负半轴为负。令 $A=\\int_{-2}^0f(x)\\,dx,\\ B=\\int_0^2f(x)\\,dx$。",
+          "已知条件给出 $A+B=4$、$-A+B=8$，解得 $A=-2,\\ B=6$。",
+          "在 $[-2,0]$ 内 $|x|=-x$，换元 $u=-x$ 得 $\\int_{-2}^0f(|x|)\\,dx=\\int_0^2f(u)\\,du=6$，选 G。"
+        ],
+        "pitfall": "f(|x|) 与 |f(x)| 是不同函数，不能互换。"
+      },
+      "en": {
+        "steps": [
+          "The condition makes $f$ positive for positive $x$ and negative for negative $x$. Set $A=\\int_{-2}^0f(x)\\,dx$ and $B=\\int_0^2f(x)\\,dx$.",
+          "The integrals give $A+B=4$ and $-A+B=8$, hence $A=-2$ and $B=6$.",
+          "On $[-2,0]$, $|x|=-x$. Substituting $u=-x$ gives $\\int_{-2}^0f(|x|)\\,dx=\\int_0^2f(u)\\,du=6$. Choose G."
+        ],
+        "pitfall": "Do not confuse f(|x|) with |f(x)|."
+      }
+    },
+    "source": {
+      "kind": "official-public",
+      "title": {
+        "zh": "TMUA 2021 Paper 1 · 官方原卷",
+        "en": "TMUA 2021 Paper 1 · official archive"
+      },
+      "url": "https://uat-wp.s3.eu-west-2.amazonaws.com/wp-content/uploads/2024/05/07141119/TMUA-2021-paper-1.pdf",
+      "originalNumber": "7",
+      "year": 2021,
+      "rightsNote": "Original papers and worked solutions: Cambridge University Press & Assessment / Cambridge Assessment; public archive provided by UAT-UK. No affiliation or endorsement."
+    }
+  },
+  {
+    "id": "ARCHIVE-TMUA-2021-P1-Q08",
+    "exam": "TMUA",
+    "moduleId": "p1",
+    "format": "latex",
+    "topic": {
+      "id": "algebra",
+      "name": {
+        "zh": "代数",
+        "en": "Algebra"
+      }
+    },
+    "subtopic": {
+      "id": "two-tangent-discriminants",
+      "name": {
+        "zh": "两条切线与判别式",
+        "en": "Two tangencies and discriminants"
+      }
+    },
+    "prompt": "Read question 8 in the official TMUA 2021 Paper 1. Record your answer here.",
+    "options": [
+      "A",
+      "B",
+      "C",
+      "D",
+      "E",
+      "F",
+      "G",
+      "H"
+    ],
+    "correctIndex": 0,
+    "difficulty": "standard",
+    "external": {
+      "kind": "linked-paper",
+      "workedAnswersUrl": "https://uat-wp.s3.eu-west-2.amazonaws.com/wp-content/uploads/2024/05/07141121/TMUA-2021-paper-1-worked-answers.pdf",
+      "answerKeyUrl": "https://uat-wp.s3.eu-west-2.amazonaws.com/wp-content/uploads/2024/05/07141122/TMUA-2021-answer-keys.pdf",
+      "explanationReady": true
+    },
+    "explanation": {
+      "zh": {
+        "steps": [
+          "第一条直线给出 $x^2+(b-2)x+c-3=0$。只有一个交点要求 $(b-2)^2=4(c-3)$。",
+          "第二条直线同理给出 $(b-4)^2=4(c+2)$。两式相减得 $4b-12=-20$，所以 $b=-2$。",
+          "代回得 $c=7$，故 $b-c=-9$，选 A。"
+        ],
+        "pitfall": "恰有一个交点对应判别式等于零，不是小于零。"
+      },
+      "en": {
+        "steps": [
+          "The first line gives $x^2+(b-2)x+c-3=0$. One intersection requires $(b-2)^2=4(c-3)$.",
+          "The second line gives $(b-4)^2=4(c+2)$. Subtracting yields $4b-12=-20$, so $b=-2$.",
+          "Substitution gives $c=7$, hence $b-c=-9$. Choose A."
+        ],
+        "pitfall": "Exactly one intersection requires a zero discriminant, not a negative one."
+      }
+    },
+    "source": {
+      "kind": "official-public",
+      "title": {
+        "zh": "TMUA 2021 Paper 1 · 官方原卷",
+        "en": "TMUA 2021 Paper 1 · official archive"
+      },
+      "url": "https://uat-wp.s3.eu-west-2.amazonaws.com/wp-content/uploads/2024/05/07141119/TMUA-2021-paper-1.pdf",
+      "originalNumber": "8",
+      "year": 2021,
+      "rightsNote": "Original papers and worked solutions: Cambridge University Press & Assessment / Cambridge Assessment; public archive provided by UAT-UK. No affiliation or endorsement."
+    }
+  },
+  {
+    "id": "ARCHIVE-TMUA-2021-P1-Q09",
+    "exam": "TMUA",
+    "moduleId": "p1",
+    "format": "latex",
+    "topic": {
+      "id": "geometry",
+      "name": {
+        "zh": "几何",
+        "en": "Geometry"
+      }
+    },
+    "subtopic": {
+      "id": "absolute-value-diamond-area",
+      "name": {
+        "zh": "绝对值菱形的面积",
+        "en": "Area enclosed by an absolute-value diamond"
+      }
+    },
+    "prompt": "Read question 9 in the official TMUA 2021 Paper 1. Record your answer here.",
+    "options": [
+      "A",
+      "B",
+      "C",
+      "D",
+      "E",
+      "F",
+      "G",
+      "H"
+    ],
+    "correctIndex": 2,
+    "difficulty": "foundation",
+    "external": {
+      "kind": "linked-paper",
+      "workedAnswersUrl": "https://uat-wp.s3.eu-west-2.amazonaws.com/wp-content/uploads/2024/05/07141121/TMUA-2021-paper-1-worked-answers.pdf",
+      "answerKeyUrl": "https://uat-wp.s3.eu-west-2.amazonaws.com/wp-content/uploads/2024/05/07141122/TMUA-2021-answer-keys.pdf",
+      "explanationReady": true
+    },
+    "explanation": {
+      "zh": {
+        "steps": [
+          "$|x|+|y|=1$ 在四个象限分别是直线段，顶点为 $(1,0),(0,1),(-1,0),(0,-1)$。",
+          "图形可分成四个直角三角形，每个底和高都是 1，面积为 $1/2$。",
+          "总面积为 $4\\times1/2=2$，选 C。"
+        ],
+        "pitfall": "边长不是 1；用四个三角形或对角线长计算更稳妥。"
+      },
+      "en": {
+        "steps": [
+          "The equation gives one line segment in each quadrant, with vertices $(1,0),(0,1),(-1,0),(0,-1)$.",
+          "The diamond consists of four right triangles, each with base and height 1 and area $1/2$.",
+          "The total area is $4\\times1/2=2$. Choose C."
+        ],
+        "pitfall": "The square does not have side length 1; use triangles or its diagonals."
+      }
+    },
+    "source": {
+      "kind": "official-public",
+      "title": {
+        "zh": "TMUA 2021 Paper 1 · 官方原卷",
+        "en": "TMUA 2021 Paper 1 · official archive"
+      },
+      "url": "https://uat-wp.s3.eu-west-2.amazonaws.com/wp-content/uploads/2024/05/07141119/TMUA-2021-paper-1.pdf",
+      "originalNumber": "9",
+      "year": 2021,
+      "rightsNote": "Original papers and worked solutions: Cambridge University Press & Assessment / Cambridge Assessment; public archive provided by UAT-UK. No affiliation or endorsement."
+    }
+  },
+  {
+    "id": "ARCHIVE-TMUA-2021-P1-Q10",
+    "exam": "TMUA",
+    "moduleId": "p1",
+    "format": "latex",
+    "topic": {
+      "id": "calculus",
+      "name": {
+        "zh": "微积分",
+        "en": "Calculus"
+      }
+    },
+    "subtopic": {
+      "id": "trapezium-log-integral",
+      "name": {
+        "zh": "对数函数的梯形估算",
+        "en": "Trapezium estimate for a logarithmic integral"
+      }
+    },
+    "prompt": "Read question 10 in the official TMUA 2021 Paper 1. Record your answer here.",
+    "options": [
+      "A",
+      "B",
+      "C",
+      "D",
+      "E",
+      "F",
+      "G",
+      "H"
+    ],
+    "correctIndex": 1,
+    "difficulty": "standard",
+    "external": {
+      "kind": "linked-paper",
+      "workedAnswersUrl": "https://uat-wp.s3.eu-west-2.amazonaws.com/wp-content/uploads/2024/05/07141121/TMUA-2021-paper-1-worked-answers.pdf",
+      "answerKeyUrl": "https://uat-wp.s3.eu-west-2.amazonaws.com/wp-content/uploads/2024/05/07141122/TMUA-2021-answer-keys.pdf",
+      "explanationReady": true
+    },
+    "explanation": {
+      "zh": {
+        "steps": [
+          "区间为 $[1/2,2]$，三条等宽带的宽度 $h=1/2$，取点 $1/2,1,3/2,2$。令 $f(x)=2\\log_{10}x$。",
+          "梯形估计为 $\\frac14[f(1/2)+2f(1)+2f(3/2)+f(2)]$。两端函数值互相抵消，$f(1)=0$。",
+          "因此结果为 $\\frac12f(3/2)=\\log_{10}(3/2)$，选 B。"
+        ],
+        "pitfall": "三条带需要四个取点，中间取点的权重为 2。"
+      },
+      "en": {
+        "steps": [
+          "The interval is $[1/2,2]$. Three strips have width $h=1/2$ and nodes $1/2,1,3/2,2$. Write $f(x)=2\\log_{10}x$.",
+          "The estimate is $\\frac14[f(1/2)+2f(1)+2f(3/2)+f(2)]$. The endpoint values cancel and $f(1)=0$.",
+          "The estimate is therefore $\\frac12f(3/2)=\\log_{10}(3/2)$. Choose B."
+        ],
+        "pitfall": "Three strips require four nodes, with weight 2 at the interior nodes."
+      }
+    },
+    "source": {
+      "kind": "official-public",
+      "title": {
+        "zh": "TMUA 2021 Paper 1 · 官方原卷",
+        "en": "TMUA 2021 Paper 1 · official archive"
+      },
+      "url": "https://uat-wp.s3.eu-west-2.amazonaws.com/wp-content/uploads/2024/05/07141119/TMUA-2021-paper-1.pdf",
+      "originalNumber": "10",
+      "year": 2021,
+      "rightsNote": "Original papers and worked solutions: Cambridge University Press & Assessment / Cambridge Assessment; public archive provided by UAT-UK. No affiliation or endorsement."
+    }
+  },
+  {
+    "id": "ARCHIVE-TMUA-2021-P1-Q11",
+    "exam": "TMUA",
+    "moduleId": "p1",
+    "format": "latex",
+    "topic": {
+      "id": "calculus",
+      "name": {
+        "zh": "微积分",
+        "en": "Calculus"
+      }
+    },
+    "subtopic": {
+      "id": "decreasing-fractional-power",
+      "name": {
+        "zh": "分数幂函数的递减区间",
+        "en": "Decreasing interval of a fractional-power function"
+      }
+    },
+    "prompt": "Read question 11 in the official TMUA 2021 Paper 1. Record your answer here.",
+    "options": [
+      "A",
+      "B",
+      "C",
+      "D",
+      "E",
+      "F",
+      "G",
+      "H"
+    ],
+    "correctIndex": 0,
+    "difficulty": "standard",
+    "external": {
+      "kind": "linked-paper",
+      "workedAnswersUrl": "https://uat-wp.s3.eu-west-2.amazonaws.com/wp-content/uploads/2024/05/07141121/TMUA-2021-paper-1-worked-answers.pdf",
+      "answerKeyUrl": "https://uat-wp.s3.eu-west-2.amazonaws.com/wp-content/uploads/2024/05/07141122/TMUA-2021-answer-keys.pdf",
+      "explanationReady": true
+    },
+    "explanation": {
+      "zh": {
+        "steps": [
+          "展开 $f(x)=x^{15/7}-x^{8/7}+x^{1/7}$。求导得 $f^{\\prime}(x)=\\frac17x^{-6/7}(15x^2-8x+1)$。",
+          "$x>0$ 时前因子为正，二次项因式分解为 $(5x-1)(3x-1)$。导数在 $1/5<x<1/3$ 为负。",
+          "所求占比为区间长度 $(1/3-1/5)/1=2/15$，选 A。"
+        ],
+        "pitfall": "求的是递减区间的长度占比，不是函数值的变化量。"
+      },
+      "en": {
+        "steps": [
+          "Expand $f(x)=x^{15/7}-x^{8/7}+x^{1/7}$. Then $f^{\\prime}(x)=\\frac17x^{-6/7}(15x^2-8x+1)$.",
+          "For $x>0$ the prefactor is positive. The quadratic is $(5x-1)(3x-1)$, negative on $1/5<x<1/3$.",
+          "The requested fraction is $(1/3-1/5)/1=2/15$. Choose A."
+        ],
+        "pitfall": "The fraction measures interval length, not the change in function value."
+      }
+    },
+    "source": {
+      "kind": "official-public",
+      "title": {
+        "zh": "TMUA 2021 Paper 1 · 官方原卷",
+        "en": "TMUA 2021 Paper 1 · official archive"
+      },
+      "url": "https://uat-wp.s3.eu-west-2.amazonaws.com/wp-content/uploads/2024/05/07141119/TMUA-2021-paper-1.pdf",
+      "originalNumber": "11",
+      "year": 2021,
+      "rightsNote": "Original papers and worked solutions: Cambridge University Press & Assessment / Cambridge Assessment; public archive provided by UAT-UK. No affiliation or endorsement."
+    }
+  },
+  {
+    "id": "ARCHIVE-TMUA-2021-P1-Q12",
+    "exam": "TMUA",
+    "moduleId": "p1",
+    "format": "latex",
+    "topic": {
+      "id": "algebra",
+      "name": {
+        "zh": "代数",
+        "en": "Algebra"
+      }
+    },
+    "subtopic": {
+      "id": "linked-quartic-quadratic-minima",
+      "name": {
+        "zh": "四次与二次函数的最小值关联",
+        "en": "Linked quartic and quadratic minima"
+      }
+    },
+    "prompt": "Read question 12 in the official TMUA 2021 Paper 1. Record your answer here.",
+    "options": [
+      "A",
+      "B",
+      "C",
+      "D",
+      "E",
+      "F",
+      "G",
+      "H"
+    ],
+    "correctIndex": 4,
+    "difficulty": "standard",
+    "external": {
+      "kind": "linked-paper",
+      "workedAnswersUrl": "https://uat-wp.s3.eu-west-2.amazonaws.com/wp-content/uploads/2024/05/07141121/TMUA-2021-paper-1-worked-answers.pdf",
+      "answerKeyUrl": "https://uat-wp.s3.eu-west-2.amazonaws.com/wp-content/uploads/2024/05/07141122/TMUA-2021-answer-keys.pdf",
+      "explanationReady": true
+    },
+    "explanation": {
+      "zh": {
+        "steps": [
+          "$x^4-p^2x^2=(x^2-p^2/2)^2-p^4/4$。因 $p$ 为实数，$x^2=p^2/2$ 可达到，最小值为 $-p^4/4$。",
+          "令该值等于 $-9$ 得 $p^4=36$。由于 $p^2\\geq0$，必须 $p^2=6$。",
+          "$x^2-px+6=(x-p/2)^2+6-p^2/4$，最小值为 $6-6/4=9/2$，选 E。"
+        ],
+        "pitfall": "未知 p 的正负无需确定，但 p² 不可能取负值。"
+      },
+      "en": {
+        "steps": [
+          "Complete the square: $x^4-p^2x^2=(x^2-p^2/2)^2-p^4/4$. For real $p$, $x^2=p^2/2$ is attainable, so the minimum is $-p^4/4$.",
+          "The given minimum $-9$ implies $p^4=36$. Since $p^2\\geq0$, we have $p^2=6$.",
+          "Now $x^2-px+6=(x-p/2)^2+6-p^2/4$, whose minimum is $6-6/4=9/2$. Choose E."
+        ],
+        "pitfall": "The sign of p is irrelevant, but p² cannot be negative."
+      }
+    },
+    "source": {
+      "kind": "official-public",
+      "title": {
+        "zh": "TMUA 2021 Paper 1 · 官方原卷",
+        "en": "TMUA 2021 Paper 1 · official archive"
+      },
+      "url": "https://uat-wp.s3.eu-west-2.amazonaws.com/wp-content/uploads/2024/05/07141119/TMUA-2021-paper-1.pdf",
+      "originalNumber": "12",
+      "year": 2021,
+      "rightsNote": "Original papers and worked solutions: Cambridge University Press & Assessment / Cambridge Assessment; public archive provided by UAT-UK. No affiliation or endorsement."
+    }
+  },
+  {
+    "id": "ARCHIVE-TMUA-2021-P1-Q13",
+    "exam": "TMUA",
+    "moduleId": "p1",
+    "format": "latex",
+    "topic": {
+      "id": "calculus",
+      "name": {
+        "zh": "微积分",
+        "en": "Calculus"
+      }
+    },
+    "subtopic": {
+      "id": "sum-of-unit-interval-integrals",
+      "name": {
+        "zh": "单位区间积分的累加",
+        "en": "Accumulating unit-interval integrals"
+      }
+    },
+    "prompt": "Read question 13 in the official TMUA 2021 Paper 1. Record your answer here.",
+    "options": [
+      "A",
+      "B",
+      "C",
+      "D",
+      "E",
+      "F",
+      "G",
+      "H"
+    ],
+    "correctIndex": 2,
+    "difficulty": "standard",
+    "external": {
+      "kind": "linked-paper",
+      "workedAnswersUrl": "https://uat-wp.s3.eu-west-2.amazonaws.com/wp-content/uploads/2024/05/07141121/TMUA-2021-paper-1-worked-answers.pdf",
+      "answerKeyUrl": "https://uat-wp.s3.eu-west-2.amazonaws.com/wp-content/uploads/2024/05/07141122/TMUA-2021-answer-keys.pdf",
+      "explanationReady": true
+    },
+    "explanation": {
+      "zh": {
+        "steps": [
+          "将 $[0,r]$ 拆成单位区间，得 $\\int_0^rf(x)\\,dx=1+2+\\cdots+r=r(r+1)/2$。",
+          "$r=1,\\ldots,8$ 时各项依次为 $1,3,6,10,15,21,28,36$。",
+          "相加得 $120$，选 C。不需要知道 $f$ 的具体表达式。"
+        ],
+        "pitfall": "外层求和会重复累积前面的区间，不能只算一次从 0 到 8 的积分。"
+      },
+      "en": {
+        "steps": [
+          "Split $[0,r]$ into unit intervals: $\\int_0^rf(x)\\,dx=1+2+\\cdots+r=r(r+1)/2$.",
+          "For $r=1,\\ldots,8$, the terms are $1,3,6,10,15,21,28,36$.",
+          "Their sum is $120$. Choose C; no explicit expression for $f$ is needed."
+        ],
+        "pitfall": "The outer sum repeatedly accumulates earlier intervals; it is not a single integral from 0 to 8."
+      }
+    },
+    "source": {
+      "kind": "official-public",
+      "title": {
+        "zh": "TMUA 2021 Paper 1 · 官方原卷",
+        "en": "TMUA 2021 Paper 1 · official archive"
+      },
+      "url": "https://uat-wp.s3.eu-west-2.amazonaws.com/wp-content/uploads/2024/05/07141119/TMUA-2021-paper-1.pdf",
+      "originalNumber": "13",
+      "year": 2021,
+      "rightsNote": "Original papers and worked solutions: Cambridge University Press & Assessment / Cambridge Assessment; public archive provided by UAT-UK. No affiliation or endorsement."
+    }
+  },
+  {
+    "id": "ARCHIVE-TMUA-2021-P1-Q14",
+    "exam": "TMUA",
+    "moduleId": "p1",
+    "format": "latex",
+    "topic": {
+      "id": "functions",
+      "name": {
+        "zh": "函数",
+        "en": "Functions"
+      }
+    },
+    "subtopic": {
+      "id": "quadratic-cosine-root-count",
+      "name": {
+        "zh": "二次函数与余弦的交点计数",
+        "en": "Counting quadratic–cosine intersections"
+      }
+    },
+    "prompt": "Read question 14 in the official TMUA 2021 Paper 1. Record your answer here.",
+    "options": [
+      "A",
+      "B",
+      "C",
+      "D",
+      "E",
+      "F",
+      "G",
+      "H"
+    ],
+    "correctIndex": 1,
+    "difficulty": "challenge",
+    "external": {
+      "kind": "linked-paper",
+      "workedAnswersUrl": "https://uat-wp.s3.eu-west-2.amazonaws.com/wp-content/uploads/2024/05/07141121/TMUA-2021-paper-1-worked-answers.pdf",
+      "answerKeyUrl": "https://uat-wp.s3.eu-west-2.amazonaws.com/wp-content/uploads/2024/05/07141122/TMUA-2021-answer-keys.pdf",
+      "explanationReady": true
+    },
+    "explanation": {
+      "zh": {
+        "steps": [
+          "令 $t=x-1$，原方程成为 $4-t^2=2(1+\\cos\\pi t)$，即 $t^2=4\\sin^2(\\pi t/2)$。因此 $|t|\\leq2$，且 $t=0$ 是一根。",
+          "方程关于 $t=0$ 对称。对 $0<t<2$，需解 $h(t)=2\\sin(\\pi t/2)-t=0$。",
+          "$h^{\\prime\\prime}(t)=-(\\pi^2/2)\\sin(\\pi t/2)<0$，所以导数严格递减。$h^{\\prime}(0)=\\pi-1>0$、$h^{\\prime}(2)=-\\pi-1<0$，函数先增后减。",
+          "$h(1)=1>0$、$h(2)=-2<0$，故正半轴恰有一根；负半轴也一根。加上 $t=0$，共 3 个不同解，选 B。"
+        ],
+        "pitfall": "公共最高点对应的解也要计入；仅找到符号变化不能排除额外交点。"
+      },
+      "en": {
+        "steps": [
+          "Set $t=x-1$. The equation becomes $4-t^2=2(1+\\cos\\pi t)$, or $t^2=4\\sin^2(\\pi t/2)$. Thus $|t|\\leq2$, and $t=0$ is a root.",
+          "The equation is symmetric in $t$. For $0<t<2$, solve $h(t)=2\\sin(\\pi t/2)-t=0$.",
+          "Here $h^{\\prime\\prime}(t)=-(\\pi^2/2)\\sin(\\pi t/2)<0$, so the derivative strictly decreases. Since $h^{\\prime}(0)>0$ and $h^{\\prime}(2)<0$, $h$ increases then decreases.",
+          "As $h(1)=1>0$ and $h(2)=-2<0$, there is exactly one positive root and, by symmetry, one negative root. Including $t=0$ gives 3 distinct solutions. Choose B."
+        ],
+        "pitfall": "Include the common maximum; finding a sign change alone does not rule out additional roots."
+      }
+    },
+    "source": {
+      "kind": "official-public",
+      "title": {
+        "zh": "TMUA 2021 Paper 1 · 官方原卷",
+        "en": "TMUA 2021 Paper 1 · official archive"
+      },
+      "url": "https://uat-wp.s3.eu-west-2.amazonaws.com/wp-content/uploads/2024/05/07141119/TMUA-2021-paper-1.pdf",
+      "originalNumber": "14",
+      "year": 2021,
+      "rightsNote": "Original papers and worked solutions: Cambridge University Press & Assessment / Cambridge Assessment; public archive provided by UAT-UK. No affiliation or endorsement."
+    }
+  },
+  {
+    "id": "ARCHIVE-TMUA-2021-P1-Q15",
+    "exam": "TMUA",
+    "moduleId": "p1",
+    "format": "latex",
+    "topic": {
+      "id": "calculus",
+      "name": {
+        "zh": "微积分",
+        "en": "Calculus"
+      }
+    },
+    "subtopic": {
+      "id": "scaled-triangular-wave-integrals",
+      "name": {
+        "zh": "三角波缩放后的积分",
+        "en": "Integrals of scaled triangular waves"
+      }
+    },
+    "prompt": "Read question 15 in the official TMUA 2021 Paper 1. Record your answer here.",
+    "options": [
+      "A",
+      "B",
+      "C",
+      "D",
+      "E",
+      "F",
+      "G",
+      "H"
+    ],
+    "correctIndex": 2,
+    "difficulty": "standard",
+    "external": {
+      "kind": "linked-paper",
+      "workedAnswersUrl": "https://uat-wp.s3.eu-west-2.amazonaws.com/wp-content/uploads/2024/05/07141121/TMUA-2021-paper-1-worked-answers.pdf",
+      "answerKeyUrl": "https://uat-wp.s3.eu-west-2.amazonaws.com/wp-content/uploads/2024/05/07141122/TMUA-2021-answer-keys.pdf",
+      "explanationReady": true
+    },
+    "explanation": {
+      "zh": {
+        "steps": [
+          "原图在 $[0,1]$ 为底高均为 1 的三角形半边，积分为 $1/2$；一个完整周期 $[0,2]$ 的面积为 1。",
+          "对于 $r\\geq2$，令 $u=2^{r-1}x$，得 $\\int_0^1f(2^{r-1}x)\\,dx=2^{-(r-1)}\\int_0^{2^{r-1}}f(u)\\,du$。",
+          "新区间含 $2^{r-2}$ 个完整周期，积分仍为 $2^{-(r-1)}2^{r-2}=1/2$。连同 $r=1$，十项之和为 $10/2=5$，选 C。"
+        ],
+        "pitfall": "横向压缩增加周期数，同时缩小每个周期宽度，不能只乘其中一个因子。"
+      },
+      "en": {
+        "steps": [
+          "On $[0,1]$ the area under the original graph is $1/2$; a full period $[0,2]$ has area 1.",
+          "For $r\\geq2$, substitute $u=2^{r-1}x$: $\\int_0^1f(2^{r-1}x)\\,dx=2^{-(r-1)}\\int_0^{2^{r-1}}f(u)\\,du$.",
+          "The new interval contains $2^{r-2}$ full periods, giving $1/2$ again. Including $r=1$, the ten integrals sum to $5$. Choose C."
+        ],
+        "pitfall": "Horizontal compression increases the number of periods while decreasing their widths."
+      }
+    },
+    "source": {
+      "kind": "official-public",
+      "title": {
+        "zh": "TMUA 2021 Paper 1 · 官方原卷",
+        "en": "TMUA 2021 Paper 1 · official archive"
+      },
+      "url": "https://uat-wp.s3.eu-west-2.amazonaws.com/wp-content/uploads/2024/05/07141119/TMUA-2021-paper-1.pdf",
+      "originalNumber": "15",
+      "year": 2021,
+      "rightsNote": "Original papers and worked solutions: Cambridge University Press & Assessment / Cambridge Assessment; public archive provided by UAT-UK. No affiliation or endorsement."
+    }
+  },
+  {
+    "id": "ARCHIVE-TMUA-2021-P1-Q16",
+    "exam": "TMUA",
+    "moduleId": "p1",
+    "format": "latex",
+    "topic": {
+      "id": "algebra",
+      "name": {
+        "zh": "代数",
+        "en": "Algebra"
+      }
+    },
+    "subtopic": {
+      "id": "binomial-ascending-descending",
+      "name": {
+        "zh": "二项展开的升幂与降幂项",
+        "en": "Ascending and descending binomial terms"
+      }
+    },
+    "prompt": "Read question 16 in the official TMUA 2021 Paper 1. Record your answer here.",
+    "options": [
+      "A",
+      "B",
+      "C",
+      "D",
+      "E",
+      "F",
+      "G",
+      "H"
+    ],
+    "correctIndex": 1,
+    "difficulty": "standard",
+    "external": {
+      "kind": "linked-paper",
+      "workedAnswersUrl": "https://uat-wp.s3.eu-west-2.amazonaws.com/wp-content/uploads/2024/05/07141121/TMUA-2021-paper-1-worked-answers.pdf",
+      "answerKeyUrl": "https://uat-wp.s3.eu-west-2.amazonaws.com/wp-content/uploads/2024/05/07141122/TMUA-2021-answer-keys.pdf",
+      "explanationReady": true
+    },
+    "explanation": {
+      "zh": {
+        "steps": [
+          "降幂排列的第四项含 $x^{n-3}$，题给它是 $210x^3$，所以 $n-3=3$，即 $n=6$。",
+          "升幂第三、第四项分别给出 $15a^4b^2=105$、$20a^3b^3=210$，即 $a^4b^2=7$、$a^3b^3=21/2$。",
+          "相除得 $a/b=2/3$，故 $(a/b)^2=4/9$，选 B。非零系数保证可相除。"
+        ],
+        "pitfall": "升幂和降幂的第四项不是一般情况下的同一项；先确定总次数。"
+      },
+      "en": {
+        "steps": [
+          "The fourth term in descending order contains $x^{n-3}$. As it is $210x^3$, $n=6$.",
+          "The third and fourth ascending terms give $15a^4b^2=105$ and $20a^3b^3=210$, hence $a^4b^2=7$ and $a^3b^3=21/2$.",
+          "Division gives $a/b=2/3$, so $(a/b)^2=4/9$. Choose B; the nonzero coefficients justify division."
+        ],
+        "pitfall": "The fourth ascending and descending terms need not be the same; determine the degree first."
+      }
+    },
+    "source": {
+      "kind": "official-public",
+      "title": {
+        "zh": "TMUA 2021 Paper 1 · 官方原卷",
+        "en": "TMUA 2021 Paper 1 · official archive"
+      },
+      "url": "https://uat-wp.s3.eu-west-2.amazonaws.com/wp-content/uploads/2024/05/07141119/TMUA-2021-paper-1.pdf",
+      "originalNumber": "16",
+      "year": 2021,
+      "rightsNote": "Original papers and worked solutions: Cambridge University Press & Assessment / Cambridge Assessment; public archive provided by UAT-UK. No affiliation or endorsement."
+    }
+  },
+  {
+    "id": "ARCHIVE-TMUA-2021-P1-Q17",
+    "exam": "TMUA",
+    "moduleId": "p1",
+    "format": "latex",
+    "topic": {
+      "id": "geometry",
+      "name": {
+        "zh": "几何",
+        "en": "Geometry"
+      }
+    },
+    "subtopic": {
+      "id": "sine-concentric-circle-sketch",
+      "name": {
+        "zh": "正弦条件下的同心圆",
+        "en": "Concentric circles from a sine condition"
+      }
+    },
+    "prompt": "Read question 17 in the official TMUA 2021 Paper 1. Record your answer here.",
+    "options": [
+      "A",
+      "B",
+      "C",
+      "D",
+      "E",
+      "F",
+      "G",
+      "H"
+    ],
+    "correctIndex": 0,
+    "difficulty": "challenge",
+    "external": {
+      "kind": "linked-paper",
+      "workedAnswersUrl": "https://uat-wp.s3.eu-west-2.amazonaws.com/wp-content/uploads/2024/05/07141121/TMUA-2021-paper-1-worked-answers.pdf",
+      "answerKeyUrl": "https://uat-wp.s3.eu-west-2.amazonaws.com/wp-content/uploads/2024/05/07141122/TMUA-2021-answer-keys.pdf",
+      "explanationReady": true
+    },
+    "explanation": {
+      "zh": {
+        "steps": [
+          "令 $s=x^2+y^2$，则 $0\\leq s\\leq8\\pi$ 且 $\\sin s=1/2$。",
+          "允许的 $s$ 为 $\\pi/6$ 乘以 $1,5,13,17,25,29,37,41$，每一个值对应一条圆心在原点的圆。",
+          "半径为 $\\sqrt{\\pi/6}$ 乘以这些数的平方根；八条圆半径依次约为公因子乘 $1,2.24,3.61,4.12,5,5.39,6.08,6.40$。由间距对应原图 A。"
+        ],
+        "pitfall": "x²+y² 是半径平方，圆的间距需要比较平方根，而不是原数列。"
+      },
+      "en": {
+        "steps": [
+          "Set $s=x^2+y^2$. Then $0\\leq s\\leq8\\pi$ and $\\sin s=1/2$.",
+          "The allowed values of $s$ are $\\pi/6$ times $1,5,13,17,25,29,37,41$, each defining a circle centred at the origin.",
+          "The radii are $\\sqrt{\\pi/6}$ times the square roots of those numbers, approximately the common factor times $1,2.24,3.61,4.12,5,5.39,6.08,6.40$. Their spacing matches sketch A."
+        ],
+        "pitfall": "x²+y² is the squared radius; compare square roots to determine spacing."
+      }
+    },
+    "source": {
+      "kind": "official-public",
+      "title": {
+        "zh": "TMUA 2021 Paper 1 · 官方原卷",
+        "en": "TMUA 2021 Paper 1 · official archive"
+      },
+      "url": "https://uat-wp.s3.eu-west-2.amazonaws.com/wp-content/uploads/2024/05/07141119/TMUA-2021-paper-1.pdf",
+      "originalNumber": "17",
+      "year": 2021,
+      "rightsNote": "Original papers and worked solutions: Cambridge University Press & Assessment / Cambridge Assessment; public archive provided by UAT-UK. No affiliation or endorsement."
+    }
+  },
+  {
+    "id": "ARCHIVE-TMUA-2021-P1-Q18",
+    "exam": "TMUA",
+    "moduleId": "p1",
+    "format": "latex",
+    "topic": {
+      "id": "geometry",
+      "name": {
+        "zh": "几何",
+        "en": "Geometry"
+      }
+    },
+    "subtopic": {
+      "id": "parabola-clockwise-rotation",
+      "name": {
+        "zh": "抛物线绕点顺时针旋转",
+        "en": "Clockwise rotation of a parabola"
+      }
+    },
+    "prompt": "Read question 18 in the official TMUA 2021 Paper 1. Record your answer here.",
+    "options": [
+      "A",
+      "B",
+      "C",
+      "D",
+      "E",
+      "F",
+      "G",
+      "H"
+    ],
+    "correctIndex": 1,
+    "difficulty": "standard",
+    "external": {
+      "kind": "linked-paper",
+      "workedAnswersUrl": "https://uat-wp.s3.eu-west-2.amazonaws.com/wp-content/uploads/2024/05/07141121/TMUA-2021-paper-1-worked-answers.pdf",
+      "answerKeyUrl": "https://uat-wp.s3.eu-west-2.amazonaws.com/wp-content/uploads/2024/05/07141122/TMUA-2021-answer-keys.pdf",
+      "explanationReady": true
+    },
+    "explanation": {
+      "zh": {
+        "steps": [
+          "原曲线写为 $x=(y-3)^2+2$。以 $P=(-2,3)$ 为原点，令 $u=x+2,v=y-3$，得到 $u=v^2+4$。",
+          "顺时针 $90^\\circ$ 将 $(u,v)$ 变为 $(U,V)=(v,-u)$，所以新曲线为 $V=-U^2-4$。",
+          "换回全局坐标 $U=x+2,V=y-3$，得 $y=-(x+2)^2-1=-x^2-4x-5$，选 B。"
+        ],
+        "pitfall": "先平移到旋转中心再旋转；顺时针变换不是 (−v,u)。"
+      },
+      "en": {
+        "steps": [
+          "Write the curve as $x=(y-3)^2+2$. Relative to $P=(-2,3)$, set $u=x+2,v=y-3$, giving $u=v^2+4$.",
+          "A clockwise $90^\\circ$ rotation maps $(u,v)$ to $(U,V)=(v,-u)$, so the rotated curve is $V=-U^2-4$.",
+          "Returning to global coordinates gives $y-3=-(x+2)^2-4$, hence $y=-x^2-4x-5$. Choose B."
+        ],
+        "pitfall": "Translate to the rotation centre first; clockwise rotation is (v,−u)."
+      }
+    },
+    "source": {
+      "kind": "official-public",
+      "title": {
+        "zh": "TMUA 2021 Paper 1 · 官方原卷",
+        "en": "TMUA 2021 Paper 1 · official archive"
+      },
+      "url": "https://uat-wp.s3.eu-west-2.amazonaws.com/wp-content/uploads/2024/05/07141119/TMUA-2021-paper-1.pdf",
+      "originalNumber": "18",
+      "year": 2021,
+      "rightsNote": "Original papers and worked solutions: Cambridge University Press & Assessment / Cambridge Assessment; public archive provided by UAT-UK. No affiliation or endorsement."
+    }
+  },
+  {
+    "id": "ARCHIVE-TMUA-2021-P1-Q19",
+    "exam": "TMUA",
+    "moduleId": "p1",
+    "format": "latex",
+    "topic": {
+      "id": "trigonometry",
+      "name": {
+        "zh": "三角函数与方程",
+        "en": "Trigonometric functions & equations"
+      }
+    },
+    "subtopic": {
+      "id": "nested-trig-exponential-solutions",
+      "name": {
+        "zh": "嵌套三角指数方程的解序列",
+        "en": "Solutions of a nested trigonometric exponential equation"
+      }
+    },
+    "prompt": "Read question 19 in the official TMUA 2021 Paper 1. Record your answer here.",
+    "options": [
+      "A",
+      "B",
+      "C",
+      "D",
+      "E",
+      "F",
+      "G",
+      "H"
+    ],
+    "correctIndex": 1,
+    "difficulty": "challenge",
+    "external": {
+      "kind": "linked-paper",
+      "workedAnswersUrl": "https://uat-wp.s3.eu-west-2.amazonaws.com/wp-content/uploads/2024/05/07141121/TMUA-2021-paper-1-worked-answers.pdf",
+      "answerKeyUrl": "https://uat-wp.s3.eu-west-2.amazonaws.com/wp-content/uploads/2024/05/07141122/TMUA-2021-answer-keys.pdf",
+      "explanationReady": true
+    },
+    "explanation": {
+      "zh": {
+        "steps": [
+          "令 $t=4^{\\cos\\theta}$，则 $1/4\\leq t\\leq4$。$\\sin^2(60^\\circ t)=3/4$ 要求角度为 $60^\\circ,120^\\circ,240^\\circ,300^\\circ,\\ldots$。",
+          "范围内仅有 $t=1,2,4$，对应 $\\cos\\theta=0,1/2,1$。",
+          "非负角度解依次为 $0^\\circ,60^\\circ,90^\\circ,270^\\circ,300^\\circ,360^\\circ,\\ldots$。",
+          "区间 $0^\\circ\\leq\\theta\\leq x^\\circ$ 恰含前三个解，要求 $90\\leq x<270$，选 B。"
+        ],
+        "pitfall": "原题是 4 的 cos θ 次方，不是 4cos θ；第四个解的端点必须排除。"
+      },
+      "en": {
+        "steps": [
+          "Set $t=4^{\\cos\\theta}$, so $1/4\\leq t\\leq4$. The allowed positive angles for $\\sin^2(60^\\circ t)=3/4$ begin $60^\\circ,120^\\circ,240^\\circ,300^\\circ,\\ldots$.",
+          "Within the range of $t$, only $t=1,2,4$ are allowed, giving $\\cos\\theta=0,1/2,1$.",
+          "The nonnegative solutions begin $0^\\circ,60^\\circ,90^\\circ,270^\\circ,300^\\circ,360^\\circ,\\ldots$.",
+          "Exactly the first three solutions lie in $0^\\circ\\leq\\theta\\leq x^\\circ$ when $90\\leq x<270$. Choose B."
+        ],
+        "pitfall": "The expression is 4 raised to cos θ, not 4cos θ; exclude the fourth-solution endpoint."
+      }
+    },
+    "source": {
+      "kind": "official-public",
+      "title": {
+        "zh": "TMUA 2021 Paper 1 · 官方原卷",
+        "en": "TMUA 2021 Paper 1 · official archive"
+      },
+      "url": "https://uat-wp.s3.eu-west-2.amazonaws.com/wp-content/uploads/2024/05/07141119/TMUA-2021-paper-1.pdf",
+      "originalNumber": "19",
+      "year": 2021,
+      "rightsNote": "Original papers and worked solutions: Cambridge University Press & Assessment / Cambridge Assessment; public archive provided by UAT-UK. No affiliation or endorsement."
+    }
+  },
+  {
+    "id": "ARCHIVE-TMUA-2021-P1-Q20",
+    "exam": "TMUA",
+    "moduleId": "p1",
+    "format": "latex",
+    "topic": {
+      "id": "geometry",
+      "name": {
+        "zh": "几何",
+        "en": "Geometry"
+      }
+    },
+    "subtopic": {
+      "id": "logarithmic-circle-arc-domain",
+      "name": {
+        "zh": "对数方程与圆弧定义域",
+        "en": "A circle arc restricted by logarithmic domains"
+      }
+    },
+    "prompt": "Read question 20 in the official TMUA 2021 Paper 1. Record your answer here.",
+    "options": [
+      "A",
+      "B",
+      "C",
+      "D",
+      "E",
+      "F",
+      "G",
+      "H"
+    ],
+    "correctIndex": 3,
+    "difficulty": "challenge",
+    "external": {
+      "kind": "linked-paper",
+      "workedAnswersUrl": "https://uat-wp.s3.eu-west-2.amazonaws.com/wp-content/uploads/2024/05/07141121/TMUA-2021-paper-1-worked-answers.pdf",
+      "answerKeyUrl": "https://uat-wp.s3.eu-west-2.amazonaws.com/wp-content/uploads/2024/05/07141122/TMUA-2021-answer-keys.pdf",
+      "explanationReady": true
+    },
+    "explanation": {
+      "zh": {
+        "steps": [
+          "原对数存在要求 $x>y,\\ x<1,\\ y>-5$。合并对数后得 $(x-y)^2=(2-2x)(y+5)$。",
+          "展开配方得到 $(x+5)^2+(y-1)^2=36$，圆心 $(-5,1)$、半径 6。",
+          "直线 $x=y$ 与圆交于 $(1,1)$ 和 $(-5,-5)$。从圆心到这两点的向量为 $(6,0)$ 和 $(0,-6)$，夹角 $\\pi/2$。",
+          "$x>y$ 选取这两点之间、远离圆心所在半平面的短弧；其内部同时满足其余两项限制。端点不取但不改变弧长，长度为 $6\\times\\pi/2=3\\pi$，选 D。"
+        ],
+        "pitfall": "化成圆后不能直接用整圆周长；原始对数定义域仍然有效。"
+      },
+      "en": {
+        "steps": [
+          "The logarithms require $x>y$, $x<1$ and $y>-5$. Combining them gives $(x-y)^2=(2-2x)(y+5)$.",
+          "Expansion and completing squares give $(x+5)^2+(y-1)^2=36$, with centre $(-5,1)$ and radius 6.",
+          "The line $x=y$ meets the circle at $(1,1)$ and $(-5,-5)$. The radius vectors $(6,0)$ and $(0,-6)$ make angle $\\pi/2$.",
+          "The condition $x>y$ selects the minor arc on the side away from the centre. Its interior satisfies the other domain restrictions. Excluding endpoints does not change its length, $6\\times\\pi/2=3\\pi$. Choose D."
+        ],
+        "pitfall": "The algebraic circle is not the full domain; retain the original logarithmic restrictions."
+      }
+    },
+    "source": {
+      "kind": "official-public",
+      "title": {
+        "zh": "TMUA 2021 Paper 1 · 官方原卷",
+        "en": "TMUA 2021 Paper 1 · official archive"
+      },
+      "url": "https://uat-wp.s3.eu-west-2.amazonaws.com/wp-content/uploads/2024/05/07141119/TMUA-2021-paper-1.pdf",
+      "originalNumber": "20",
+      "year": 2021,
+      "rightsNote": "Original papers and worked solutions: Cambridge University Press & Assessment / Cambridge Assessment; public archive provided by UAT-UK. No affiliation or endorsement."
+    }
+  }
+]

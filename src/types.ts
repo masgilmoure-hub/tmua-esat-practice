@@ -18,7 +18,7 @@ export interface Question {
   diagram?: { path: string; alt: string };
   // A letter-only answer sheet referring to an unchanged official PDF.
   // The prompt/options are UI instructions, not transcribed exam content.
-  external?: { kind: 'linked-paper'; workedAnswersUrl: string; answerKeyUrl: string };
+  external?: { kind: 'linked-paper'; workedAnswersUrl: string; answerKeyUrl: string; explanationReady?: true };
   explanation: Record<Language, { steps: string[]; pitfall: string }>;
   source: {
     kind: 'original-demo' | 'official-public';

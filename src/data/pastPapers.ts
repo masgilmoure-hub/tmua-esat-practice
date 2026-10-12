@@ -3,6 +3,8 @@ import nativePaper from './tmua-2023-p1.json';
 import nativePaper2 from './tmua-2023-p2.json';
 import native2022P1 from './tmua-2022-p1.json';
 import native2022P2 from './tmua-2022-p2.json';
+import explained2021P1 from './tmua-2021-p1-explained.json';
+import explained2021P2 from './tmua-2021-p2-explained.json';
 import type { Question, Section } from '../types';
 export const PAST_PAPERS = data.papers;
 export const PAST_PAPER_SOURCE = data;
@@ -13,14 +15,21 @@ export const NATIVE_2023_P2 = nativePaper2 as Question[];
 export const NATIVE_2022_P1 = native2022P1 as Question[];
 export const NATIVE_2022_P2 = native2022P2 as Question[];
 const nativePapers: Record<string, Question[]> = { '2023:p1': NATIVE_2023_P1, '2023:p2': NATIVE_2023_P2, '2022:p1': NATIVE_2022_P1, '2022:p2': NATIVE_2022_P2 };
+export const PDF_2021_P1 = explained2021P1 as Question[];
+export const PDF_2021_P2 = explained2021P2 as Question[];
+const explainedPapers: Record<string, Question[]> = { '2021:p1': PDF_2021_P1, '2021:p2': PDF_2021_P2 };
 export const isNativePaper = (paper: PastPaper) => !!nativePapers[`${paper.year}:${paper.moduleId}`];
+export const hasPaperExplanations = (paper: PastPaper) => isNativePaper(paper) || !!explainedPapers[`${paper.year}:${paper.moduleId}`];
 export const NATIVE_PAPER_YEARS = PAST_PAPER_YEARS.filter(year => PAST_PAPERS.filter(paper => paper.year === year).every(isNativePaper));
 export const NATIVE_QUESTION_COUNT = PAST_PAPERS.filter(isNativePaper).reduce((total, paper) => total + paper.questionCount, 0);
+export const PDF_EXPLANATION_PAPER_YEARS = PAST_PAPER_YEARS.filter(year => PAST_PAPERS.filter(paper => paper.year === year).every(p => !isNativePaper(p) && hasPaperExplanations(p)));
+export const PDF_EXPLANATION_QUESTION_COUNT = PAST_PAPERS.filter(p => !isNativePaper(p) && hasPaperExplanations(p)).reduce((total, paper) => total + paper.questionCount, 0);
 
 export function linkedQuestions(paper: PastPaper): Question[] {
   if (!['p1', 'p2'].includes(paper.moduleId) || paper.questionCount !== 20 || paper.minutes !== 75
     || !/^[A-H]{20}$/.test(paper.answers)) throw new Error('Invalid official answer index');
   if (isNativePaper(paper)) return nativePapers[`${paper.year}:${paper.moduleId}`];
+  if (explainedPapers[`${paper.year}:${paper.moduleId}`]) return explainedPapers[`${paper.year}:${paper.moduleId}`];
   return [...paper.answers].map((answer, index) => ({
     id: `ARCHIVE-TMUA-${paper.year}-${paper.moduleId.toUpperCase()}-Q${String(index + 1).padStart(2, '0')}`,
     exam: 'TMUA', moduleId: paper.moduleId as 'p1' | 'p2',
