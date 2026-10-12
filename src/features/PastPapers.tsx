@@ -1,7 +1,7 @@
 import { useState } from 'react';
 import { ArrowRight, ExternalLink, FileText } from 'lucide-react';
 import { useI18n } from '../i18n';
-import { PAST_PAPERS, PAST_PAPER_SOURCE, PAST_PAPER_YEARS, pastPaperPlan, isNativePaper } from '../data/pastPapers';
+import { PAST_PAPERS, PAST_PAPER_SOURCE, PAST_PAPER_YEARS, pastPaperPlan, isNativePaper, NATIVE_PAPER_YEARS, NATIVE_QUESTION_COUNT } from '../data/pastPapers';
 import type { Question, Section } from '../types';
 import { Notice, PageHeading, PrivacyNote } from '../components/Common';
 
@@ -15,8 +15,8 @@ export function PastPapers({ onStart }: { onStart: (questions: Question[], secti
   const included = papers.filter(paper => selection === 'both' || paper.moduleId === selection);
   const allNative = included.every(isNativePaper);
   return <>
-    <PageHeading title={t('用官方原卷，认真练一次。', 'Practise with the official past papers.')} subtitle={t('TMUA 2016–2023 · 16 份原卷 · 40 道文字题 + 280 道 PDF 答题卡', 'TMUA 2016–2023 · 16 papers · 40 text questions + 280 PDF answer slots')} />
-    <Notice>{t('2023 Paper 1 与 Paper 2 的全部 40 道题已支持站内文字作答、原图、双语解析和考点表现。其余试卷仍使用 PDF 阅读器与答题卡。每卷均可独立限时 75 分钟，只计算原始分；本站不是 UAT-UK 官方考试软件。', 'All 40 questions in 2023 Paper 1 and Paper 2 support direct text answers, original diagrams, bilingual explanations and topic results. Other papers use the PDF reader and answer sheet. Each paper can be timed for 75 minutes. Raw marks only; this is not the UAT-UK test player.')} </Notice>
+    <PageHeading title={t('用官方原卷，认真练一次。', 'Practise with the official past papers.')} subtitle={t(`TMUA 2016–2023 · 16 份原卷 · ${NATIVE_QUESTION_COUNT} 道文字题 + ${320-NATIVE_QUESTION_COUNT} 道 PDF 答题卡`, `TMUA 2016–2023 · 16 papers · ${NATIVE_QUESTION_COUNT} text questions + ${320-NATIVE_QUESTION_COUNT} PDF answer slots`)} />
+    <Notice>{t(`${NATIVE_PAPER_YEARS.join('、')} 两卷均已支持站内文字作答、原图、双语解析和考点表现。其余试卷仍使用 PDF 阅读器与答题卡。每卷可独立限时 75 分钟，只计算原始分；本站不是 UAT-UK 官方考试软件。`, `Both papers from ${NATIVE_PAPER_YEARS.join(', ')} support direct text answers, original diagrams, bilingual explanations and topic results. Other years use the PDF reader. Each paper can be timed for 75 minutes. Raw marks only; this is not the UAT-UK test player.`)} </Notice>
     <div className="two-columns archive-layout">
       <section className="panel archive-panel"><h2>{t('选择年份与试卷', 'Choose a year and paper')}</h2>
         <div className="archive-fields">

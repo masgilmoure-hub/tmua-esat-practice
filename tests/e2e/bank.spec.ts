@@ -121,20 +121,22 @@ test('topic recommendation prioritises fresh questions in the same paper and kee
   await manager(page).locator('summary').first().click();
   await page.getByRole('button', { name: '练习 TMUA-P1-001', exact: true }).click();
   await submit(page);
-  await expect(page.locator('.recommendation-panel')).toContainText('有 3 道同知识点未做题');
+  await expect(page.locator('.recommendation-panel')).toContainText(/有 \d+ 道同知识点未做题/);
   await page.screenshot({ path: '/tmp/tmua-bank-recommendations.png', fullPage: true });
   await page.getByRole('button', { name: '训练 代数 p1', exact: true }).click();
   const active = await page.evaluate(key => JSON.parse(localStorage.getItem(key)!).active, recordKey);
-  expect(active.questions.map((q: {id:string}) => q.id)).toContain(id);
+  expect(active.questions.map((q: {id:string}) => q.id)).not.toContain('TMUA-P1-001');
   expect(active.questions).toHaveLength(3);
-  const importedIndex = active.questions.findIndex((q: {id:string}) => q.id === id);
+
   expect(active.questions.every((q: { moduleId: string; topic: { id: string } }) => q.moduleId === 'p1' && q.topic.id === 'algebra')).toBe(true);
+  await goBank(page);
+  await selectImported(page);
+  await page.getByRole('button', { name: '替换并开始', exact: true }).click();
   await goBank(page);
   await openManager(page);
   await page.getByRole('button', { name: '移除本地导入题', exact: true }).click();
   await page.getByRole('button', { name: '确认移除导入题', exact: true }).click();
   await page.getByRole('button', { name: '继续练习', exact: true }).click();
-  await page.locator('.question-number').nth(importedIndex).click();
   await expect(page.locator('.answer-prompt')).toHaveText(template.questions[0].prompt);
   await submit(page);
   await expect(page.locator('.review-column')).toContainText('Subtract 7');

@@ -1,0 +1,1187 @@
+[
+  {
+    "id": "ARCHIVE-TMUA-2022-P2-Q01",
+    "exam": "TMUA",
+    "moduleId": "p2",
+    "format": "latex",
+    "topic": {
+      "id": "calculus",
+      "name": {
+        "zh": "微积分",
+        "en": "Calculus"
+      }
+    },
+    "subtopic": {
+      "id": "polynomial-stationary-count",
+      "name": {
+        "zh": "多项式驻点个数",
+        "en": "Counting polynomial stationary points"
+      }
+    },
+    "prompt": "Determine the number of stationary points on the curve $$y=3x^4+4x^3+6x^2-5.$$",
+    "options": [
+      "$0$",
+      "$1$",
+      "$2$",
+      "$3$",
+      "$4$"
+    ],
+    "correctIndex": 1,
+    "difficulty": "foundation",
+    "explanation": {
+      "zh": {
+        "steps": [
+          "$y^{\\prime}=12x^3+12x^2+12x=12x(x^2+x+1)$。二次因子判别式为 -3，没有实根。",
+          "导数仅在 $x=0$ 为零，故只有一个驻点，选 B。"
+        ],
+        "pitfall": "驻点数由导数的不同实根决定，不由原多项式次数直接决定。"
+      },
+      "en": {
+        "steps": [
+          "$y^{\\prime}=12x^3+12x^2+12x=12x(x^2+x+1)$. The quadratic factor has discriminant -3 and no real roots.",
+          "The derivative vanishes only at $x=0$, so there is one stationary point. Choose B."
+        ],
+        "pitfall": "Count distinct real zeros of the derivative, not the degree of the original polynomial."
+      }
+    },
+    "source": {
+      "kind": "official-public",
+      "title": {
+        "zh": "TMUA 2022 Paper 2 · 官方原卷",
+        "en": "TMUA 2022 Paper 2 · official archive"
+      },
+      "url": "https://uat-wp.s3.eu-west-2.amazonaws.com/wp-content/uploads/2024/05/07141239/TMUA-2022-paper-2.pdf",
+      "originalNumber": "1",
+      "year": 2022,
+      "rightsNote": "Original papers and worked solutions: Cambridge University Press & Assessment / Cambridge Assessment; public archive provided by UAT-UK. No affiliation or endorsement."
+    }
+  },
+  {
+    "id": "ARCHIVE-TMUA-2022-P2-Q02",
+    "exam": "TMUA",
+    "moduleId": "p2",
+    "format": "latex",
+    "topic": {
+      "id": "algebra",
+      "name": {
+        "zh": "代数",
+        "en": "Algebra"
+      }
+    },
+    "subtopic": {
+      "id": "product-coefficient-sum",
+      "name": {
+        "zh": "乘积展开的系数求和",
+        "en": "Coefficient sums in products"
+      }
+    },
+    "prompt": "Find the coefficient of the $x^5$ term in the expansion of $$(1+x)^5\\times\\sum_{i=0}^{5}x^i.$$",
+    "options": [
+      "$1$",
+      "$5$",
+      "$16$",
+      "$25$",
+      "$32$"
+    ],
+    "correctIndex": 4,
+    "difficulty": "foundation",
+    "explanation": {
+      "zh": {
+        "steps": [
+          "第一因子的第 k 次项与第二因子的第 (5−k) 次项配对，$k=0,\\ldots,5$。第二因子每项系数均为 1，所以所求系数为 $\\sum_{k=0}^5\\binom5k$。",
+          "由二项式定理，系数和为 $(1+1)^5=32$，选 E。"
+        ],
+        "pitfall": "x⁵ 的系数包含六组配对，不只是两个因子各自的 x⁵ 系数。"
+      },
+      "en": {
+        "steps": [
+          "Pair degree k from the first factor with degree 5−k from the second, for $k=0,\\ldots,5$. All coefficients in the second factor are 1, so the answer is $\\sum_{k=0}^5\\binom5k$.",
+          "The binomial theorem gives the sum as $(1+1)^5=32$. Choose E."
+        ],
+        "pitfall": "Include all six degree pairs, not only the individual x⁵ terms."
+      }
+    },
+    "source": {
+      "kind": "official-public",
+      "title": {
+        "zh": "TMUA 2022 Paper 2 · 官方原卷",
+        "en": "TMUA 2022 Paper 2 · official archive"
+      },
+      "url": "https://uat-wp.s3.eu-west-2.amazonaws.com/wp-content/uploads/2024/05/07141239/TMUA-2022-paper-2.pdf",
+      "originalNumber": "2",
+      "year": 2022,
+      "rightsNote": "Original papers and worked solutions: Cambridge University Press & Assessment / Cambridge Assessment; public archive provided by UAT-UK. No affiliation or endorsement."
+    }
+  },
+  {
+    "id": "ARCHIVE-TMUA-2022-P2-Q03",
+    "exam": "TMUA",
+    "moduleId": "p2",
+    "format": "latex",
+    "topic": {
+      "id": "reasoning",
+      "name": {
+        "zh": "逻辑与证明",
+        "en": "Logic & proof"
+      }
+    },
+    "subtopic": {
+      "id": "counterexample",
+      "name": {
+        "zh": "反例",
+        "en": "Counterexamples"
+      }
+    },
+    "prompt": "Consider the following statement about the positive integer $n$:\n\nif $n$ is prime, then $n^2+2$ is not prime.\n\nWhich of the following is a counterexample?\n\nI   $n=2$\nII   $n=3$\nIII   $n=4$",
+    "options": [
+      "none of them",
+      "I only",
+      "II only",
+      "III only",
+      "I and II only",
+      "I and III only",
+      "II and III only",
+      "I, II and III"
+    ],
+    "correctIndex": 2,
+    "difficulty": "foundation",
+    "explanation": {
+      "zh": {
+        "steps": [
+          "反例必须同时满足前提“n 为素数”和结论失败“n²+2 为素数”。",
+          "I：$2^2+2=6$ 非素数，命题成立。II：3 为素数且 $3^2+2=11$ 也是素数，构成反例。III：4 不满足前提，不是反例。只有 II，选 C。"
+        ],
+        "pitfall": "前提为假不能反驳一个条件命题。"
+      },
+      "en": {
+        "steps": [
+          "A counterexample needs a prime n and a prime n²+2, making the implication fail.",
+          "I: $2^2+2=6$ is composite, so the statement holds. II: 3 and $3^2+2=11$ are both prime, giving a counterexample. III: 4 fails the premise. Only II works. Choose C."
+        ],
+        "pitfall": "A false premise does not provide a counterexample to an implication."
+      }
+    },
+    "source": {
+      "kind": "official-public",
+      "title": {
+        "zh": "TMUA 2022 Paper 2 · 官方原卷",
+        "en": "TMUA 2022 Paper 2 · official archive"
+      },
+      "url": "https://uat-wp.s3.eu-west-2.amazonaws.com/wp-content/uploads/2024/05/07141239/TMUA-2022-paper-2.pdf",
+      "originalNumber": "3",
+      "year": 2022,
+      "rightsNote": "Original papers and worked solutions: Cambridge University Press & Assessment / Cambridge Assessment; public archive provided by UAT-UK. No affiliation or endorsement."
+    }
+  },
+  {
+    "id": "ARCHIVE-TMUA-2022-P2-Q04",
+    "exam": "TMUA",
+    "moduleId": "p2",
+    "format": "latex",
+    "topic": {
+      "id": "geometry",
+      "name": {
+        "zh": "几何",
+        "en": "Geometry"
+      }
+    },
+    "subtopic": {
+      "id": "circle-centre-sufficiency",
+      "name": {
+        "zh": "圆心距离的信息充分性",
+        "en": "Sufficient information for centre distances"
+      }
+    },
+    "prompt": "The point $P$ has coordinates $(p,q)$, and the equation of a circle is $$x^2+2fx+y^2+2gy+h=0,$$ where $f,g,h,p,q$ are all real constants.\n\nLet $L$ be the distance between the centre and $P$. Which one of the following is sufficient on its own to calculate $L$?",
+    "options": [
+      "the values of $f$, $g$ and $h$",
+      "the values of $f$, $g$, $p$ and $q$",
+      "the values of $f$, $h$, $p$ and $q$",
+      "the values of $g$, $h$, $p$ and $q$",
+      "none of the options A–D is sufficient on its own"
+    ],
+    "correctIndex": 1,
+    "difficulty": "foundation",
+    "explanation": {
+      "zh": {
+        "steps": [
+          "配方得 $(x+f)^2+(y+g)^2=f^2+g^2-h$，圆心为 $(-f,-g)$。故 $L=\\sqrt{(p+f)^2+(q+g)^2}$。",
+          "因此 B 的四个值足够；h 只影响半径。A 缺少点的位置，C、D 各缺少一个圆心坐标，均不能单独确定距离。选 B。"
+        ],
+        "pitfall": "圆心坐标带负号；点到圆心距离与半径无关。"
+      },
+      "en": {
+        "steps": [
+          "Completing the square gives centre $(-f,-g)$, so $L=\\sqrt{(p+f)^2+(q+g)^2}$.",
+          "B supplies all four needed values; h affects the radius only. A omits the point position, and C and D each omit a centre coordinate. Choose B."
+        ],
+        "pitfall": "The centre coordinates carry minus signs. Its distance to P does not depend on radius."
+      }
+    },
+    "source": {
+      "kind": "official-public",
+      "title": {
+        "zh": "TMUA 2022 Paper 2 · 官方原卷",
+        "en": "TMUA 2022 Paper 2 · official archive"
+      },
+      "url": "https://uat-wp.s3.eu-west-2.amazonaws.com/wp-content/uploads/2024/05/07141239/TMUA-2022-paper-2.pdf",
+      "originalNumber": "4",
+      "year": 2022,
+      "rightsNote": "Original papers and worked solutions: Cambridge University Press & Assessment / Cambridge Assessment; public archive provided by UAT-UK. No affiliation or endorsement."
+    }
+  },
+  {
+    "id": "ARCHIVE-TMUA-2022-P2-Q05",
+    "exam": "TMUA",
+    "moduleId": "p2",
+    "format": "latex",
+    "topic": {
+      "id": "reasoning",
+      "name": {
+        "zh": "逻辑与证明",
+        "en": "Logic & proof"
+      }
+    },
+    "subtopic": {
+      "id": "line-converse",
+      "name": {
+        "zh": "直线命题的逆与逆否",
+        "en": "Converse & contrapositive for lines"
+      }
+    },
+    "prompt": "A straight line $L$ passes through $(1,2)$.\n\nLet $P$ be the statement: if the $y$-intercept of $L$ is negative, then the $x$-intercept of $L$ is positive.\n\nWhich of the following statements must be true?\n\nI   $P$\nII   the converse of $P$\nIII   the contrapositive of $P$",
+    "options": [
+      "none of them",
+      "I only",
+      "II only",
+      "III only",
+      "I and II only",
+      "I and III only",
+      "II and III only",
+      "I, II and III"
+    ],
+    "correctIndex": 5,
+    "difficulty": "standard",
+    "explanation": {
+      "zh": {
+        "steps": [
+          "若纵截距为负，直线在 x = 0 处为负、x = 1 处为 2，所以横截距在 0 与 1 之间，必为正。I 真。",
+          "II 假：直线 $y=-x+3$ 经过 $(1,2)$，横截距为正的 3，但纵截距也是正的 3。逆否命题与原命题等价，III 真。只有 I、III，选 F。"
+        ],
+        "pitfall": "逆命题要独立判断；逆否命题与原命题等价。"
+      },
+      "en": {
+        "steps": [
+          "A negative y-intercept gives a negative value at x = 0 and value 2 at x = 1, so the x-intercept lies between 0 and 1. I is true.",
+          "II is false: $y=-x+3$ passes through $(1,2)$, with positive x- and y-intercepts of 3. The contrapositive is equivalent to P, so III is true. Choose F: I and III."
+        ],
+        "pitfall": "Judge the converse independently; the contrapositive is equivalent to the original."
+      }
+    },
+    "source": {
+      "kind": "official-public",
+      "title": {
+        "zh": "TMUA 2022 Paper 2 · 官方原卷",
+        "en": "TMUA 2022 Paper 2 · official archive"
+      },
+      "url": "https://uat-wp.s3.eu-west-2.amazonaws.com/wp-content/uploads/2024/05/07141239/TMUA-2022-paper-2.pdf",
+      "originalNumber": "5",
+      "year": 2022,
+      "rightsNote": "Original papers and worked solutions: Cambridge University Press & Assessment / Cambridge Assessment; public archive provided by UAT-UK. No affiliation or endorsement."
+    }
+  },
+  {
+    "id": "ARCHIVE-TMUA-2022-P2-Q06",
+    "exam": "TMUA",
+    "moduleId": "p2",
+    "format": "latex",
+    "topic": {
+      "id": "reasoning",
+      "name": {
+        "zh": "逻辑与证明",
+        "en": "Logic & proof"
+      }
+    },
+    "subtopic": {
+      "id": "median-conditions",
+      "name": {
+        "zh": "中位数的充分必要条件",
+        "en": "Necessary & sufficient median conditions"
+      }
+    },
+    "prompt": "A list consists of $n$ integers.\n\nConsider the statements:\nP: $n$ is odd.\nQ: The median is one of the numbers in the list.\n\nWhich one of the following is true?",
+    "options": [
+      "P is necessary and sufficient for Q.",
+      "P is necessary but not sufficient for Q.",
+      "P is sufficient but not necessary for Q.",
+      "P is not necessary and not sufficient for Q."
+    ],
+    "correctIndex": 2,
+    "difficulty": "foundation",
+    "explanation": {
+      "zh": {
+        "steps": [
+          "奇数个数排序后有唯一中间项，中位数就是列表中的该数，所以 P 推出 Q，P 充分。",
+          "但列表 [2,2] 有偶数项，中位数仍为 2，Q 真而 P 假，所以 P 不必要。选 C。"
+        ],
+        "pitfall": "列表中的整数可以重复；偶数项的中位数也可能恰好等于列表中的值。"
+      },
+      "en": {
+        "steps": [
+          "An odd-sized sorted list has one middle term, which is the median and belongs to the list. Thus P implies Q, making P sufficient.",
+          "The even-sized list [2,2] still has median 2, making Q true and P false. P is not necessary. Choose C."
+        ],
+        "pitfall": "Repetition is allowed; an even-sized list can have a median equal to one of its entries."
+      }
+    },
+    "source": {
+      "kind": "official-public",
+      "title": {
+        "zh": "TMUA 2022 Paper 2 · 官方原卷",
+        "en": "TMUA 2022 Paper 2 · official archive"
+      },
+      "url": "https://uat-wp.s3.eu-west-2.amazonaws.com/wp-content/uploads/2024/05/07141239/TMUA-2022-paper-2.pdf",
+      "originalNumber": "6",
+      "year": 2022,
+      "rightsNote": "Original papers and worked solutions: Cambridge University Press & Assessment / Cambridge Assessment; public archive provided by UAT-UK. No affiliation or endorsement."
+    }
+  },
+  {
+    "id": "ARCHIVE-TMUA-2022-P2-Q07",
+    "exam": "TMUA",
+    "moduleId": "p2",
+    "format": "latex",
+    "topic": {
+      "id": "reasoning",
+      "name": {
+        "zh": "逻辑与证明",
+        "en": "Logic & proof"
+      }
+    },
+    "subtopic": {
+      "id": "algebra-integer-factorisation",
+      "name": {
+        "zh": "多项式与整数分解的区别",
+        "en": "Polynomial versus integer factorisation"
+      }
+    },
+    "prompt": "Consider the claim: The difference between two consecutive positive cube numbers is always prime.\n\nHere is an attempted proof:\n\nI   $(x+1)^3=x^3+3x^2+3x+1$\nII   Taking $x$ to be a positive integer, the difference is $(x+1)^3-x^3=3x^2+3x+1$.\nIII   It is impossible to factorise $3x^2+3x+1$ into two linear factors with integer coefficients because its discriminant is negative.\nIV   Therefore for every positive integer $x$ the integer $3x^2+3x+1$ cannot be factorised.\nV   Hence the difference between two consecutive cube numbers will always be prime.\n\nWhich of the following best describes this proof?",
+    "options": [
+      "The proof is completely correct, and the claim is true.",
+      "The proof is completely correct, but there are counterexamples to the claim.",
+      "The proof is wrong, and the first error occurs on line I.",
+      "The proof is wrong, and the first error occurs on line II.",
+      "The proof is wrong, and the first error occurs on line III.",
+      "The proof is wrong, and the first error occurs on line IV.",
+      "The proof is wrong, and the first error occurs on line V."
+    ],
+    "correctIndex": 5,
+    "difficulty": "standard",
+    "explanation": {
+      "zh": {
+        "steps": [
+          "I、II 的展开正确。III 的判别式 $3^2-4\\cdot3\\cdot1=-3$，所以确实没有整数系数一次因式分解。",
+          "IV 把多项式不能分解误当作每个代入所得整数都不能分解。取 $x=5$，差 $6^3-5^3=91=7\\cdot13$，直接反驳 IV。第一处错误在 IV，选 F。"
+        ],
+        "pitfall": "代数因式分解与具体整数的素因数分解不是同一性质。"
+      },
+      "en": {
+        "steps": [
+          "I and II expand correctly. In III, the discriminant is $3^2-4\\cdot3\\cdot1=-3$, ruling out linear factors with integer coefficients.",
+          "IV confuses polynomial irreducibility with primality of every integer value. With $x=5$, $6^3-5^3=91=7\\cdot13$, refuting IV. The first error is IV. Choose F."
+        ],
+        "pitfall": "Irreducibility of a polynomial does not imply primality of each integer value."
+      }
+    },
+    "source": {
+      "kind": "official-public",
+      "title": {
+        "zh": "TMUA 2022 Paper 2 · 官方原卷",
+        "en": "TMUA 2022 Paper 2 · official archive"
+      },
+      "url": "https://uat-wp.s3.eu-west-2.amazonaws.com/wp-content/uploads/2024/05/07141239/TMUA-2022-paper-2.pdf",
+      "originalNumber": "7",
+      "year": 2022,
+      "rightsNote": "Original papers and worked solutions: Cambridge University Press & Assessment / Cambridge Assessment; public archive provided by UAT-UK. No affiliation or endorsement."
+    }
+  },
+  {
+    "id": "ARCHIVE-TMUA-2022-P2-Q08",
+    "exam": "TMUA",
+    "moduleId": "p2",
+    "format": "latex",
+    "topic": {
+      "id": "reasoning",
+      "name": {
+        "zh": "逻辑与证明",
+        "en": "Logic & proof"
+      }
+    },
+    "subtopic": {
+      "id": "pigeonhole-pair-sums",
+      "name": {
+        "zh": "抽屉原理与配对和",
+        "en": "Pigeonhole principle for pair sums"
+      }
+    },
+    "prompt": "A selection $S$ of $n$ terms is taken from the arithmetic sequence $1,4,7,10,\\ldots,70$.\n\nConsider $(*)$: There are two distinct terms in $S$ whose sum is $74$.\n\nWhat is the smallest $n$ for which $(*)$ is necessarily true?",
+    "options": [
+      "$12$",
+      "$13$",
+      "$14$",
+      "$21$",
+      "$22$",
+      "$23$"
+    ],
+    "correctIndex": 2,
+    "difficulty": "standard",
+    "explanation": {
+      "zh": {
+        "steps": [
+          "原序列有 $(70-1)/3+1=24$ 项。和为 74 的不同配对有 $(4,70),(7,67),\\ldots,(34,40)$，共 11 对；1 和 37 无合法搭档。",
+          "不出现目标配对时，每对最多取一个，加上 1 和 37，最多取 13 项，且这个上界可以达到。取 14 项必有一对，所以最小为 14，选 C。"
+        ],
+        "pitfall": "两项必须不同，37 + 37 不能作为有效配对；要证明最小值还需构造 13 项的反例。"
+      },
+      "en": {
+        "steps": [
+          "There are $(70-1)/3+1=24$ terms. The distinct pairs summing to 74 are $(4,70),(7,67),\\ldots,(34,40)$: eleven pairs. The terms 1 and 37 have no valid partner.",
+          "Avoiding a target pair allows at most one term from each pair plus 1 and 37, giving 13 terms, and that bound is attainable. Fourteen terms force a pair. Choose C."
+        ],
+        "pitfall": "The terms must be distinct, so 37 + 37 is excluded. Show that a pair-free selection of 13 is possible."
+      }
+    },
+    "source": {
+      "kind": "official-public",
+      "title": {
+        "zh": "TMUA 2022 Paper 2 · 官方原卷",
+        "en": "TMUA 2022 Paper 2 · official archive"
+      },
+      "url": "https://uat-wp.s3.eu-west-2.amazonaws.com/wp-content/uploads/2024/05/07141239/TMUA-2022-paper-2.pdf",
+      "originalNumber": "8",
+      "year": 2022,
+      "rightsNote": "Original papers and worked solutions: Cambridge University Press & Assessment / Cambridge Assessment; public archive provided by UAT-UK. No affiliation or endorsement."
+    }
+  },
+  {
+    "id": "ARCHIVE-TMUA-2022-P2-Q09",
+    "exam": "TMUA",
+    "moduleId": "p2",
+    "format": "latex",
+    "topic": {
+      "id": "reasoning",
+      "name": {
+        "zh": "逻辑与证明",
+        "en": "Logic & proof"
+      }
+    },
+    "subtopic": {
+      "id": "unbounded-counterexample",
+      "name": {
+        "zh": "无界区间上的反例",
+        "en": "Counterexamples on unbounded domains"
+      }
+    },
+    "prompt": "Consider $(*)$: For all real numbers $x$, if $x<k$ then $x^2<k$.\n\nWhat is the complete set of values of $k$ for which $(*)$ is true?",
+    "options": [
+      "no real numbers",
+      "$k>0$",
+      "$k<1$",
+      "$k\\leq1$",
+      "$0<k<1$",
+      "$0<k\\leq1$",
+      "all real numbers"
+    ],
+    "correctIndex": 0,
+    "difficulty": "standard",
+    "explanation": {
+      "zh": {
+        "steps": [
+          "若 $k\\leq0$，取 $x=k-1$，则 $x<k$，但 $x^2>0\\geq k$，结论失败。",
+          "若 $k>0$，取 $x=-\\sqrt{k}$，则 $x<k$ 而 $x^2=k$，仍不满足严格小于。每个实 k 均有反例，所以选 A。"
+        ],
+        "pitfall": "x 可以是很大的负数；不能只在 0 到 k 之间检验。"
+      },
+      "en": {
+        "steps": [
+          "If $k\\leq0$, take $x=k-1$. Then $x<k$ but $x^2>0\\geq k$, so the conclusion fails.",
+          "If $k>0$, take $x=-\\sqrt{k}$. Then $x<k$ but $x^2=k$, violating the strict inequality. Every real k has a counterexample. Choose A."
+        ],
+        "pitfall": "The variable x can be negative without bound; do not restrict attention to 0 through k."
+      }
+    },
+    "source": {
+      "kind": "official-public",
+      "title": {
+        "zh": "TMUA 2022 Paper 2 · 官方原卷",
+        "en": "TMUA 2022 Paper 2 · official archive"
+      },
+      "url": "https://uat-wp.s3.eu-west-2.amazonaws.com/wp-content/uploads/2024/05/07141239/TMUA-2022-paper-2.pdf",
+      "originalNumber": "9",
+      "year": 2022,
+      "rightsNote": "Original papers and worked solutions: Cambridge University Press & Assessment / Cambridge Assessment; public archive provided by UAT-UK. No affiliation or endorsement."
+    }
+  },
+  {
+    "id": "ARCHIVE-TMUA-2022-P2-Q10",
+    "exam": "TMUA",
+    "moduleId": "p2",
+    "format": "latex",
+    "topic": {
+      "id": "reasoning",
+      "name": {
+        "zh": "逻辑与证明",
+        "en": "Logic & proof"
+      }
+    },
+    "subtopic": {
+      "id": "quantifier-order",
+      "name": {
+        "zh": "量词顺序与作用范围",
+        "en": "Quantifier order & scope"
+      }
+    },
+    "prompt": "Which of the following statements is/are true?\n\nI   For all real $x$ and all positive integers $n$, $x<n$.\nII   For all real $x$, there exists a positive integer $n$ such that $x<n$.\nIII   There exists a real $x$ such that for all positive integers $n$, $x<n$.",
+    "options": [
+      "none of them",
+      "I only",
+      "II only",
+      "III only",
+      "I and II only",
+      "I and III only",
+      "II and III only",
+      "I, II and III"
+    ],
+    "correctIndex": 6,
+    "difficulty": "standard",
+    "explanation": {
+      "zh": {
+        "steps": [
+          "I 假，反例为 $x=2,n=1$。II 真：正整数无上界，给定 x 可以选一个比它大的正整数。",
+          "III 真：取 $x=0$，它小于所有正整数。故 II、III 真，选 G。"
+        ],
+        "pitfall": "II 中 n 可依赖 x；III 中同一个 x 要适用于所有正整数 n。"
+      },
+      "en": {
+        "steps": [
+          "I is false, for example $x=2,n=1$. II is true: positive integers are unbounded, so for each x choose one larger than x.",
+          "III is true: $x=0$ is below every positive integer. Therefore II and III are true. Choose G."
+        ],
+        "pitfall": "In II, n may depend on x; in III, one fixed x must work for all positive n."
+      }
+    },
+    "source": {
+      "kind": "official-public",
+      "title": {
+        "zh": "TMUA 2022 Paper 2 · 官方原卷",
+        "en": "TMUA 2022 Paper 2 · official archive"
+      },
+      "url": "https://uat-wp.s3.eu-west-2.amazonaws.com/wp-content/uploads/2024/05/07141239/TMUA-2022-paper-2.pdf",
+      "originalNumber": "10",
+      "year": 2022,
+      "rightsNote": "Original papers and worked solutions: Cambridge University Press & Assessment / Cambridge Assessment; public archive provided by UAT-UK. No affiliation or endorsement."
+    }
+  },
+  {
+    "id": "ARCHIVE-TMUA-2022-P2-Q11",
+    "exam": "TMUA",
+    "moduleId": "p2",
+    "format": "latex",
+    "topic": {
+      "id": "geometry",
+      "name": {
+        "zh": "几何",
+        "en": "Geometry"
+      }
+    },
+    "subtopic": {
+      "id": "kite-right-angle",
+      "name": {
+        "zh": "风筝形的直角条件",
+        "en": "Right-angle conditions in kites"
+      }
+    },
+    "prompt": "The diagram shows a kite $PQRS$ whose diagonals meet at $O$.\n\n$OP=x$, $OQ=y$, $OR=x$, $OS=z$.\n\nWhich of the following is necessary and sufficient for $\\angle SPQ$ to be a right angle?",
+    "options": [
+      "$x=y=z$",
+      "$2x=y+z$",
+      "$x^2=yz$",
+      "$y=z$",
+      "$y^2=x^2+z^2$"
+    ],
+    "correctIndex": 2,
+    "difficulty": "standard",
+    "diagram": {
+      "path": "question-images/tmua-2022-p2-q11.png",
+      "alt": "Kite PQRS with perpendicular diagonals PR and SQ meeting at O; OP=OR=x, OQ=y and OS=z."
+    },
+    "explanation": {
+      "zh": {
+        "steps": [
+          "风筝形两条对角线垂直，所以 $SP^2=x^2+z^2$、$PQ^2=x^2+y^2$，且 $SQ=y+z$。",
+          "由勾股定理及其逆定理，$\\angle SPQ$ 为直角当且仅当 $SP^2+PQ^2=SQ^2$，化为 $2x^2+y^2+z^2=(y+z)^2$，即 $x^2=yz$。选 C。"
+        ],
+        "pitfall": "直角在 P 点，不是 O 点；O 点垂直只用于计算两条边。"
+      },
+      "en": {
+        "steps": [
+          "The kite diagonals are perpendicular, so $SP^2=x^2+z^2$, $PQ^2=x^2+y^2$, and $SQ=y+z$.",
+          "Pythagoras and its converse give a right angle exactly when $SP^2+PQ^2=SQ^2$. This becomes $2x^2+y^2+z^2=(y+z)^2$, or $x^2=yz$. Choose C."
+        ],
+        "pitfall": "The requested right angle is at P. Perpendicular diagonals at O help calculate the sides."
+      }
+    },
+    "source": {
+      "kind": "official-public",
+      "title": {
+        "zh": "TMUA 2022 Paper 2 · 官方原卷",
+        "en": "TMUA 2022 Paper 2 · official archive"
+      },
+      "url": "https://uat-wp.s3.eu-west-2.amazonaws.com/wp-content/uploads/2024/05/07141239/TMUA-2022-paper-2.pdf",
+      "originalNumber": "11",
+      "year": 2022,
+      "rightsNote": "Original papers and worked solutions: Cambridge University Press & Assessment / Cambridge Assessment; public archive provided by UAT-UK. No affiliation or endorsement."
+    }
+  },
+  {
+    "id": "ARCHIVE-TMUA-2022-P2-Q12",
+    "exam": "TMUA",
+    "moduleId": "p2",
+    "format": "latex",
+    "topic": {
+      "id": "calculus",
+      "name": {
+        "zh": "微积分",
+        "en": "Calculus"
+      }
+    },
+    "subtopic": {
+      "id": "integrand-order-comparison",
+      "name": {
+        "zh": "比较被积函数的大小",
+        "en": "Ordering integrals by their integrands"
+      }
+    },
+    "prompt": "Place the following integrals in order of size, starting with the smallest. $$P=\\int_0^1 2^{\\sqrt{x}}\\,dx,$$ $$Q=\\int_0^1 2^x\\,dx,$$ $$R=\\int_0^1(\\sqrt2)^x\\,dx.$$",
+    "options": [
+      "$P<Q<R$",
+      "$P<R<Q$",
+      "$Q<P<R$",
+      "$Q<R<P$",
+      "$R<P<Q$",
+      "$R<Q<P$"
+    ],
+    "correctIndex": 5,
+    "difficulty": "standard",
+    "explanation": {
+      "zh": {
+        "steps": [
+          "在 $0<x<1$ 上，$x/2<x<\\sqrt{x}$。底数 2 的指数函数严格递增，所以 $2^{x/2}<2^x<2^{\\sqrt{x}}$。",
+          "又 $(\\sqrt2)^x=2^{x/2}$，三积分上下限相同，因此 $R<Q<P$，选 F，无需计算原函数。"
+        ],
+        "pitfall": "根号在 P 中作用于指数 x，在 R 中作用于底数 2。"
+      },
+      "en": {
+        "steps": [
+          "For $0<x<1$, $x/2<x<\\sqrt{x}$. Since base-2 exponentiation is strictly increasing, $2^{x/2}<2^x<2^{\\sqrt{x}}$.",
+          "As $(\\sqrt2)^x=2^{x/2}$ and the limits agree, $R<Q<P$. Choose F; no antiderivatives are needed."
+        ],
+        "pitfall": "In P, the radical applies to exponent x; in R, it applies to base 2."
+      }
+    },
+    "source": {
+      "kind": "official-public",
+      "title": {
+        "zh": "TMUA 2022 Paper 2 · 官方原卷",
+        "en": "TMUA 2022 Paper 2 · official archive"
+      },
+      "url": "https://uat-wp.s3.eu-west-2.amazonaws.com/wp-content/uploads/2024/05/07141239/TMUA-2022-paper-2.pdf",
+      "originalNumber": "12",
+      "year": 2022,
+      "rightsNote": "Original papers and worked solutions: Cambridge University Press & Assessment / Cambridge Assessment; public archive provided by UAT-UK. No affiliation or endorsement."
+    }
+  },
+  {
+    "id": "ARCHIVE-TMUA-2022-P2-Q13",
+    "exam": "TMUA",
+    "moduleId": "p2",
+    "format": "latex",
+    "topic": {
+      "id": "reasoning",
+      "name": {
+        "zh": "逻辑与证明",
+        "en": "Logic & proof"
+      }
+    },
+    "subtopic": {
+      "id": "existential-linear-parameter",
+      "name": {
+        "zh": "线性表达式的存在量词",
+        "en": "Existential conditions in linear expressions"
+      }
+    },
+    "prompt": "Consider $(*)$ about a real number $x$:\n\nThere exists a real number $y$ such that $x-xy+y$ is negative.\n\nFor how many real values of $x$ is $(*)$ true?",
+    "options": [
+      "no values of $x$",
+      "exactly one value of $x$",
+      "exactly two values of $x$",
+      "all except exactly two values of $x$",
+      "all except exactly one value of $x$",
+      "all values of $x$"
+    ],
+    "correctIndex": 4,
+    "difficulty": "standard",
+    "explanation": {
+      "zh": {
+        "steps": [
+          "表达式为 $x+(1-x)y$。若 $x=1$，它恒为 1，不能为负。",
+          "若 $x\\ne1$，可取 $y=(-1-x)/(1-x)$，使表达式恰为 -1。因此除 $x=1$ 外全都满足，选 E。"
+        ],
+        "pitfall": "存在量词允许 y 随 x 改变；系数为零的 x = 1 要单独检查。"
+      },
+      "en": {
+        "steps": [
+          "The expression is $x+(1-x)y$. If $x=1$, it is always 1 and cannot be negative.",
+          "If $x\\ne1$, choose $y=(-1-x)/(1-x)$ to make the expression -1. Thus all except $x=1$ satisfy the claim. Choose E."
+        ],
+        "pitfall": "The existential choice y may depend on x. Check x = 1 separately, where the coefficient vanishes."
+      }
+    },
+    "source": {
+      "kind": "official-public",
+      "title": {
+        "zh": "TMUA 2022 Paper 2 · 官方原卷",
+        "en": "TMUA 2022 Paper 2 · official archive"
+      },
+      "url": "https://uat-wp.s3.eu-west-2.amazonaws.com/wp-content/uploads/2024/05/07141239/TMUA-2022-paper-2.pdf",
+      "originalNumber": "13",
+      "year": 2022,
+      "rightsNote": "Original papers and worked solutions: Cambridge University Press & Assessment / Cambridge Assessment; public archive provided by UAT-UK. No affiliation or endorsement."
+    }
+  },
+  {
+    "id": "ARCHIVE-TMUA-2022-P2-Q14",
+    "exam": "TMUA",
+    "moduleId": "p2",
+    "format": "latex",
+    "topic": {
+      "id": "algebra",
+      "name": {
+        "zh": "代数",
+        "en": "Algebra"
+      }
+    },
+    "subtopic": {
+      "id": "absolute-distance-inequalities",
+      "name": {
+        "zh": "绝对值与距离不等式",
+        "en": "Absolute-value distance inequalities"
+      }
+    },
+    "prompt": "Consider the two inequalities: $$|x+5|<|x+11|,$$ $$|x+11|<|x+1|.$$ Which one of the following is correct?",
+    "options": [
+      "There is no real number for which both inequalities are true.",
+      "There is exactly one real number for which both inequalities are true.",
+      "The real numbers for which both inequalities are true form an interval of length 1.",
+      "The real numbers for which both inequalities are true form an interval of length 2.",
+      "The real numbers for which both inequalities are true form an interval of length 3.",
+      "The real numbers for which both inequalities are true form an interval of length 4.",
+      "The real numbers for which both inequalities are true form an interval of length 5."
+    ],
+    "correctIndex": 3,
+    "difficulty": "standard",
+    "explanation": {
+      "zh": {
+        "steps": [
+          "第一个要求 x 到 -5 比到 -11 近，中点为 -8，所以 $x>-8$。第二个要求到 -11 比到 -1 近，中点为 -6，所以 $x<-6$。",
+          "交集为 $-8<x<-6$，长度为 2，选 D。"
+        ],
+        "pitfall": "必须保留绝对值；若把它们漏掉，会把题目变成恒真与恒假的无关不等式。"
+      },
+      "en": {
+        "steps": [
+          "The first says x is closer to -5 than -11, whose midpoint is -8, so $x>-8$. The second says x is closer to -11 than -1, with midpoint -6, so $x<-6$.",
+          "The intersection is $-8<x<-6$, an interval of length 2. Choose D."
+        ],
+        "pitfall": "Keep the absolute values. Omitting them changes the problem entirely."
+      }
+    },
+    "source": {
+      "kind": "official-public",
+      "title": {
+        "zh": "TMUA 2022 Paper 2 · 官方原卷",
+        "en": "TMUA 2022 Paper 2 · official archive"
+      },
+      "url": "https://uat-wp.s3.eu-west-2.amazonaws.com/wp-content/uploads/2024/05/07141239/TMUA-2022-paper-2.pdf",
+      "originalNumber": "14",
+      "year": 2022,
+      "rightsNote": "Original papers and worked solutions: Cambridge University Press & Assessment / Cambridge Assessment; public archive provided by UAT-UK. No affiliation or endorsement."
+    }
+  },
+  {
+    "id": "ARCHIVE-TMUA-2022-P2-Q15",
+    "exam": "TMUA",
+    "moduleId": "p2",
+    "format": "latex",
+    "topic": {
+      "id": "functions",
+      "name": {
+        "zh": "函数",
+        "en": "Functions"
+      }
+    },
+    "subtopic": {
+      "id": "cyclic-logarithms",
+      "name": {
+        "zh": "循环对数关系",
+        "en": "Cyclic logarithmic identities"
+      }
+    },
+    "prompt": "The real numbers $x,y,z$ are all greater than $1$, and satisfy $$\\log_x y=z\\quad\\text{and}\\quad\\log_y z=x.$$ Which equation for $\\log_z x$ must be true?",
+    "options": [
+      "$\\log_z x=y$",
+      "$\\log_z x=\\frac1y$",
+      "$\\log_z x=xy$",
+      "$\\log_z x=\\frac1{xy}$",
+      "$\\log_z x=xz$",
+      "$\\log_z x=\\frac1{xz}$",
+      "$\\log_z x=yz$",
+      "$\\log_z x=\\frac1{yz}$"
+    ],
+    "correctIndex": 5,
+    "difficulty": "standard",
+    "explanation": {
+      "zh": {
+        "steps": [
+          "三个循环对数相乘为 1，因为换底后 $\\frac{\\ln y}{\\ln x}\\frac{\\ln z}{\\ln y}\\frac{\\ln x}{\\ln z}=1$；条件保证分母均非零。",
+          "代入已知两个对数，得 $zx\\log_z x=1$，所以 $\\log_z x=1/(xz)$，选 F。"
+        ],
+        "pitfall": "准确区分底数与真数，代入时第一个对数的值为 z、第二个为 x。"
+      },
+      "en": {
+        "steps": [
+          "The product of the three cyclic logarithms is 1: $\\frac{\\ln y}{\\ln x}\\frac{\\ln z}{\\ln y}\\frac{\\ln x}{\\ln z}=1$. The assumptions ensure nonzero denominators.",
+          "Substituting the given values yields $zx\\log_z x=1$, so $\\log_z x=1/(xz)$. Choose F."
+        ],
+        "pitfall": "Keep the bases and arguments distinct: the first logarithm equals z and the second equals x."
+      }
+    },
+    "source": {
+      "kind": "official-public",
+      "title": {
+        "zh": "TMUA 2022 Paper 2 · 官方原卷",
+        "en": "TMUA 2022 Paper 2 · official archive"
+      },
+      "url": "https://uat-wp.s3.eu-west-2.amazonaws.com/wp-content/uploads/2024/05/07141239/TMUA-2022-paper-2.pdf",
+      "originalNumber": "15",
+      "year": 2022,
+      "rightsNote": "Original papers and worked solutions: Cambridge University Press & Assessment / Cambridge Assessment; public archive provided by UAT-UK. No affiliation or endorsement."
+    }
+  },
+  {
+    "id": "ARCHIVE-TMUA-2022-P2-Q16",
+    "exam": "TMUA",
+    "moduleId": "p2",
+    "format": "latex",
+    "topic": {
+      "id": "reasoning",
+      "name": {
+        "zh": "逻辑与证明",
+        "en": "Logic & proof"
+      }
+    },
+    "subtopic": {
+      "id": "sequence-extrema-inequalities",
+      "name": {
+        "zh": "数列极值的不等式",
+        "en": "Inequalities for sequence extrema"
+      }
+    },
+    "prompt": "In this question, $a_1,\\ldots,a_{100}$, $b_1,\\ldots,b_{100}$ and $c_1,\\ldots,c_{100}$ are three sequences of integers such that $a_n\\leq b_n+c_n$ for each $n$.\n\nWhich statements must be true?\n\nI   $$\\min(a_1,\\ldots,a_{100})\\leq\\min(b_1,\\ldots,b_{100})+\\min(c_1,\\ldots,c_{100})$$\nII   $$\\min(a_1,\\ldots,a_{100})\\geq\\min(b_1,\\ldots,b_{100})+\\min(c_1,\\ldots,c_{100})$$\nIII   $$\\max(a_1,\\ldots,a_{100})\\leq\\max(b_1,\\ldots,b_{100})+\\max(c_1,\\ldots,c_{100})$$",
+    "options": [
+      "none of them",
+      "I only",
+      "II only",
+      "III only",
+      "I and II only",
+      "I and III only",
+      "II and III only",
+      "I, II and III"
+    ],
+    "correctIndex": 3,
+    "difficulty": "standard",
+    "explanation": {
+      "zh": {
+        "steps": [
+          "I 不必真：令 aₙ 全为 2，奇数下标 bₙ = 0、cₙ = 2，偶数下标 bₙ = 2、cₙ = 0。逐项条件成立，但 min a = 2 > min b + min c = 0。",
+          "II 不必真：令 aₙ 全为 0，bₙ、cₙ 全为 1。逐项条件成立，但 min a = 0 < 2。",
+          "III 必真：对每个 n 都有 $a_n\\leq b_n+c_n\\leq\\max b+\\max c$，对左侧取最大值仍成立。只有 III，选 D。"
+        ],
+        "pitfall": "b 与 c 的最小值可能出现在不同下标；不能把逐项求和与取最小值随意交换。"
+      },
+      "en": {
+        "steps": [
+          "I need not hold: let every aₙ = 2; for odd indices use bₙ = 0,cₙ = 2, and for even indices bₙ = 2,cₙ = 0. The premise holds, but min a = 2 > min b + min c = 0.",
+          "II need not hold: let all aₙ = 0 and all bₙ,cₙ = 1. The premise holds, but min a = 0 < 2.",
+          "III always holds: for every n, $a_n\\leq b_n+c_n\\leq\\max b+\\max c$. Taking the maximum on the left preserves the inequality. Only III is guaranteed. Choose D."
+        ],
+        "pitfall": "The minima of b and c may occur at different indices; minimisation does not commute with addition."
+      }
+    },
+    "source": {
+      "kind": "official-public",
+      "title": {
+        "zh": "TMUA 2022 Paper 2 · 官方原卷",
+        "en": "TMUA 2022 Paper 2 · official archive"
+      },
+      "url": "https://uat-wp.s3.eu-west-2.amazonaws.com/wp-content/uploads/2024/05/07141239/TMUA-2022-paper-2.pdf",
+      "originalNumber": "16",
+      "year": 2022,
+      "rightsNote": "Original papers and worked solutions: Cambridge University Press & Assessment / Cambridge Assessment; public archive provided by UAT-UK. No affiliation or endorsement."
+    }
+  },
+  {
+    "id": "ARCHIVE-TMUA-2022-P2-Q17",
+    "exam": "TMUA",
+    "moduleId": "p2",
+    "format": "latex",
+    "topic": {
+      "id": "reasoning",
+      "name": {
+        "zh": "逻辑与证明",
+        "en": "Logic & proof"
+      }
+    },
+    "subtopic": {
+      "id": "cubic-proof-direction",
+      "name": {
+        "zh": "三次方程证明的方向",
+        "en": "Implication direction in cubic proofs"
+      }
+    },
+    "prompt": "A student answered the following question:\n\n$a$ and $b$ are non-zero real numbers. Prove that $x^3+ax^2+b=0$ has three distinct real roots if $27b\\left(b+\\frac{4a^3}{27}\\right)<0$.\n\nHere is the student’s solution:\n\nI   We differentiate $y=x^3+ax^2+b$ to get $dy/dx=3x^2+2ax=x(3x+2a)$. Solving $dy/dx=0$ shows stationary points at $(0,b)$ and $\\left(-\\frac{2a}3,b+\\frac{4a^3}{27}\\right)$.\nII   If $27b\\left(b+\\frac{4a^3}{27}\\right)<0$, then $b$ and $b+\\frac{4a^3}{27}$ have opposite signs, so one stationary point is above the $x$-axis and one below.\nIII   If the cubic has three distinct real roots, then one stationary point is above the $x$-axis and one below.\nIV   Hence if $27b\\left(b+\\frac{4a^3}{27}\\right)<0$, then the equation has three distinct real roots.\n\nWhich option best describes the solution?",
+    "options": [
+      "It is a completely correct solution.",
+      "The student has instead proved the converse of the statement in the question.",
+      "The solution is wrong, because the student should have stated step II after step III.",
+      "The solution is wrong, because the student should have shown the converse of the result in step II.",
+      "The solution is wrong, because the student should have shown the converse of the result in step III."
+    ],
+    "correctIndex": 4,
+    "difficulty": "standard",
+    "explanation": {
+      "zh": {
+        "steps": [
+          "I 求驻点正确，II 正确推出两个极值异号。III 却只说明“三个实根 ⇒ 极值异号”。IV 需要相反方向“极值异号 ⇒ 三个实根”，没有由 III 得到。",
+          "缺失的是 III 的逆命题，其可由三次函数两端趋向相反无穷及两个转折点异号来证明。交换顺序或改写 II 都不能补上这个方向，选 E。"
+        ],
+        "pitfall": "一个命题是真命题，不代表它证明了所需的蕴含方向。"
+      },
+      "en": {
+        "steps": [
+          "I calculates stationary points correctly, and II establishes opposite signs of extrema. III states only “three real roots ⇒ opposite-sign extrema”. IV requires the reverse implication, which III does not supply.",
+          "The missing step is the converse of III. It follows from the cubic tails and opposite signs of the turning points. Changing the order or reversing II does not fill that gap. Choose E."
+        ],
+        "pitfall": "A true statement may still point in the wrong direction for the proof."
+      }
+    },
+    "source": {
+      "kind": "official-public",
+      "title": {
+        "zh": "TMUA 2022 Paper 2 · 官方原卷",
+        "en": "TMUA 2022 Paper 2 · official archive"
+      },
+      "url": "https://uat-wp.s3.eu-west-2.amazonaws.com/wp-content/uploads/2024/05/07141239/TMUA-2022-paper-2.pdf",
+      "originalNumber": "17",
+      "year": 2022,
+      "rightsNote": "Original papers and worked solutions: Cambridge University Press & Assessment / Cambridge Assessment; public archive provided by UAT-UK. No affiliation or endorsement."
+    }
+  },
+  {
+    "id": "ARCHIVE-TMUA-2022-P2-Q18",
+    "exam": "TMUA",
+    "moduleId": "p2",
+    "format": "latex",
+    "topic": {
+      "id": "functions",
+      "name": {
+        "zh": "函数",
+        "en": "Functions"
+      }
+    },
+    "subtopic": {
+      "id": "variable-exponent-graphs",
+      "name": {
+        "zh": "变量指数函数的图像",
+        "en": "Graphs with variable exponents"
+      }
+    },
+    "prompt": "$P,Q,R,S$ show the graphs of $$y=(\\cos x)^{\\cos x},\\quad y=(\\sin x)^{\\sin x},$$ $$y=(\\cos x)^{\\sin x}\\quad\\text{and}\\quad y=(\\sin x)^{\\cos x}$$ for $0<x<\\pi/2$ in some order.\n\nWhich row correctly identifies the graphs?",
+    "options": [
+      "$(\\cos x)^{\\cos x}$: P; $(\\sin x)^{\\sin x}$: Q; $(\\cos x)^{\\sin x}$: R; $(\\sin x)^{\\cos x}$: S",
+      "$(\\cos x)^{\\cos x}$: P; $(\\sin x)^{\\sin x}$: Q; $(\\cos x)^{\\sin x}$: S; $(\\sin x)^{\\cos x}$: R",
+      "$(\\cos x)^{\\cos x}$: Q; $(\\sin x)^{\\sin x}$: P; $(\\cos x)^{\\sin x}$: R; $(\\sin x)^{\\cos x}$: S",
+      "$(\\cos x)^{\\cos x}$: Q; $(\\sin x)^{\\sin x}$: P; $(\\cos x)^{\\sin x}$: S; $(\\sin x)^{\\cos x}$: R",
+      "$(\\cos x)^{\\cos x}$: R; $(\\sin x)^{\\sin x}$: S; $(\\cos x)^{\\sin x}$: P; $(\\sin x)^{\\cos x}$: Q",
+      "$(\\cos x)^{\\cos x}$: R; $(\\sin x)^{\\sin x}$: S; $(\\cos x)^{\\sin x}$: Q; $(\\sin x)^{\\cos x}$: P",
+      "$(\\cos x)^{\\cos x}$: S; $(\\sin x)^{\\sin x}$: R; $(\\cos x)^{\\sin x}$: P; $(\\sin x)^{\\cos x}$: Q",
+      "$(\\cos x)^{\\cos x}$: S; $(\\sin x)^{\\sin x}$: R; $(\\cos x)^{\\sin x}$: Q; $(\\sin x)^{\\cos x}$: P"
+    ],
+    "correctIndex": 4,
+    "difficulty": "challenge",
+    "diagram": {
+      "path": "question-images/tmua-2022-p2-q18.png",
+      "alt": "Four original labelled graphs P, Q, R and S over 0 to pi/2, including their grid, vertical values and pi/6 and pi/3 tick labels."
+    },
+    "explanation": {
+      "zh": {
+        "steps": [
+          "靠近 $x=0$，$(\\sin x)^{\\cos x}$ 趋于 0，只有 Q 有此走势；靠近 $x=\\pi/2$，$(\\cos x)^{\\sin x}$ 趋于 0，只有 P 有此走势。",
+          "在 $x=\\pi/6$，$(\\sin x)^{\\sin x}=(1/2)^{1/2}=1/\\sqrt2$，对应约 0.7 的 S；另一个值 $(\\sqrt3/2)^{\\sqrt3/2}>\\sqrt3/2>1/\\sqrt2$，对应 R。",
+          "按原表列顺序是 R、S、P、Q，选 E。区间端点不包括，不能直接把 0⁰ 当作已定义值。"
+        ],
+        "pitfall": "指数也是三角函数；利用端点邻近走势及一个内部取值辨认，不必把图重新绘制出来。"
+      },
+      "en": {
+        "steps": [
+          "As $x$ approaches 0, $(\\sin x)^{\\cos x}$ tends to 0, identifying Q. As $x$ approaches $\\pi/2$, $(\\cos x)^{\\sin x}$ tends to 0, identifying P.",
+          "At $x=\\pi/6$, $(\\sin x)^{\\sin x}=(1/2)^{1/2}=1/\\sqrt2$, identifying S near 0.7. The other value is $(\\sqrt3/2)^{\\sqrt3/2}>\\sqrt3/2>1/\\sqrt2$, identifying R.",
+          "The original column order is R,S,P,Q. Choose E. The endpoints are excluded; do not treat 0⁰ as a defined endpoint value."
+        ],
+        "pitfall": "The exponents vary too. Use endpoint behaviour and one interior value to identify the original graphs."
+      }
+    },
+    "source": {
+      "kind": "official-public",
+      "title": {
+        "zh": "TMUA 2022 Paper 2 · 官方原卷",
+        "en": "TMUA 2022 Paper 2 · official archive"
+      },
+      "url": "https://uat-wp.s3.eu-west-2.amazonaws.com/wp-content/uploads/2024/05/07141239/TMUA-2022-paper-2.pdf",
+      "originalNumber": "18",
+      "year": 2022,
+      "rightsNote": "Original papers and worked solutions: Cambridge University Press & Assessment / Cambridge Assessment; public archive provided by UAT-UK. No affiliation or endorsement."
+    }
+  },
+  {
+    "id": "ARCHIVE-TMUA-2022-P2-Q19",
+    "exam": "TMUA",
+    "moduleId": "p2",
+    "format": "latex",
+    "topic": {
+      "id": "geometry",
+      "name": {
+        "zh": "几何",
+        "en": "Geometry"
+      }
+    },
+    "subtopic": {
+      "id": "cyclic-equal-area-polygons",
+      "name": {
+        "zh": "圆内等面积分割与正多边形",
+        "en": "Equal-area cyclic polygons"
+      }
+    },
+    "prompt": "A polygon has $n$ vertices, where $n\\geq3$, and the following properties:\n\n• Every vertex lies on a circle $C$.\n• The centre of $C$ is inside the polygon.\n• The radii to the vertices cut it into $n$ triangles of equal area.\n\nFor which values of $n$ are these properties sufficient to deduce that the polygon is regular?",
+    "options": [
+      "no values of $n$",
+      "$n=3$ only",
+      "$n=3$ and $n=4$ only",
+      "$n=3$ and $n\\geq5$ only",
+      "all values of $n$"
+    ],
+    "correctIndex": 1,
+    "difficulty": "challenge",
+    "explanation": {
+      "zh": {
+        "steps": [
+          "每个中心三角形面积为 $R^2\\sin\\theta/2$，中心在多边形内使 $0<\\theta<\\pi$。等面积意味着中心角相等或互补，且全部角和为 $2\\pi$。",
+          "$n=3$ 时，若混合锐角 $\\alpha$ 与钝角 $\\pi-\\alpha$，角和只能是 $\\pi+\\alpha$ 或 $2\\pi-\\alpha$，均小于 $2\\pi$。所以三角相同为 $2\\pi/3$，得到正三角形。",
+          "n = 4 时，非正方形矩形满足所有条件却不正。",
+          "对 $n\\geq5$，取 $\\alpha=\\pi/(n-2)<\\pi/2$，安排一个中心角 $\\pi-\\alpha$ 和其余 $n-1$ 个角 $\\alpha$。总和为 $2\\pi$、正弦相同，且各角小于 $\\pi$，形成中心在内部的非正多边形。故仅 n = 3 保证，选 B。"
+        ],
+        "pitfall": "等面积只给出正弦相等，不能直接推出中心角相等；互补角提供反例。"
+      },
+      "en": {
+        "steps": [
+          "Each central triangle has area $R^2\\sin\\theta/2$, with $0<\\theta<\\pi$ because the centre is inside. Equal areas imply equal or supplementary central angles, whose sum is $2\\pi$.",
+          "For $n=3$, mixing acute $\\alpha$ and obtuse $\\pi-\\alpha$ gives sums $\\pi+\\alpha$ or $2\\pi-\\alpha$, both below $2\\pi$. The three central angles must therefore all be $2\\pi/3$, giving an equilateral triangle.",
+          "For n = 4, a nonsquare rectangle satisfies every condition but is not regular.",
+          "For $n\\geq5$, take $\\alpha=\\pi/(n-2)<\\pi/2$, one central angle $\\pi-\\alpha$, and $n-1$ angles $\\alpha$. Their sum is $2\\pi$, their sines agree, and every gap is below $\\pi$, giving a nonregular polygon with the centre inside. Only n = 3 is guaranteed. Choose B."
+        ],
+        "pitfall": "Equal areas imply equal sines, not necessarily equal angles; supplementary angles give counterexamples."
+      }
+    },
+    "source": {
+      "kind": "official-public",
+      "title": {
+        "zh": "TMUA 2022 Paper 2 · 官方原卷",
+        "en": "TMUA 2022 Paper 2 · official archive"
+      },
+      "url": "https://uat-wp.s3.eu-west-2.amazonaws.com/wp-content/uploads/2024/05/07141239/TMUA-2022-paper-2.pdf",
+      "originalNumber": "19",
+      "year": 2022,
+      "rightsNote": "Original papers and worked solutions: Cambridge University Press & Assessment / Cambridge Assessment; public archive provided by UAT-UK. No affiliation or endorsement."
+    }
+  },
+  {
+    "id": "ARCHIVE-TMUA-2022-P2-Q20",
+    "exam": "TMUA",
+    "moduleId": "p2",
+    "format": "latex",
+    "topic": {
+      "id": "functions",
+      "name": {
+        "zh": "函数",
+        "en": "Functions"
+      }
+    },
+    "subtopic": {
+      "id": "nested-trigonometric-ranges",
+      "name": {
+        "zh": "嵌套三角函数的值域",
+        "en": "Ranges of nested trigonometric functions"
+      }
+    },
+    "prompt": "The functions $f_1$ to $f_5$ are defined on the real numbers by $$f_1(x)=\\cos x,$$ $$f_2(x)=\\sin(\\cos x),$$ $$f_3(x)=\\cos(\\sin(\\cos x)),$$ $$f_4(x)=\\sin(\\cos(\\sin(\\cos x))),$$ $$f_5(x)=\\cos(\\sin(\\cos(\\sin(\\cos x)))),$$ where all numbers are in radians.\n\nThese functions have maximum values $m_1,m_2,m_3,m_4,m_5$, respectively. Which statement is true?",
+    "options": [
+      "The five maxima are all equal to $1$.",
+      "$0<m_5<m_4<m_3<m_2<m_1=1$",
+      "$m_1=m_3=m_5=1$ and $0<m_2=m_4<1$",
+      "$m_1=m_3=m_5=1$ and $0<m_4<m_2<1$",
+      "$m_1=m_3=1$, $0<m_2=m_4<1$ and $0<m_5<1$",
+      "$m_1=m_3=1$, $0<m_4<m_2<1$ and $0<m_5<1$"
+    ],
+    "correctIndex": 4,
+    "difficulty": "challenge",
+    "explanation": {
+      "zh": {
+        "steps": [
+          "设 $s=\\sin1\\in(0,1)$。$f_1$ 值域为 $[-1,1]$；正弦在该区间递增，所以 $f_2$ 值域为 $[-s,s]$。因此 $m_1=1,m_2=s$。",
+          "令 $c=\\cos s\\in(0,1)$。由于余弦在零处最大，$f_3$ 值域为 $[c,1]$，$m_3=1$。在此正区间正弦递增，$f_4$ 值域为 $[\\sin c,s]$，$m_4=s=m_2$。",
+          "$f_4$ 恒正且小于 1，余弦在此区间递减，所以 $m_5=\\cos(\\sin c)$，严格在 0 与 1 之间。故正确关系为 E。"
+        ],
+        "pitfall": "每次复合都需传递完整值域；仅看上一层最大值不足以判断下一层最大值。"
+      },
+      "en": {
+        "steps": [
+          "Let $s=\\sin1\\in(0,1)$. The range of $f_1$ is $[-1,1]$. Sine is increasing there, so $f_2$ ranges over $[-s,s]$. Thus $m_1=1,m_2=s$.",
+          "Let $c=\\cos s\\in(0,1)$. Cosine is largest at zero, so $f_3$ ranges over $[c,1]$ and $m_3=1$. Sine is increasing on this positive interval, giving $f_4$ range $[\\sin c,s]$, so $m_4=s=m_2$.",
+          "$f_4$ is strictly positive and below 1. Cosine decreases on that interval, so $m_5=\\cos(\\sin c)$ lies strictly between 0 and 1. The correct relations are E."
+        ],
+        "pitfall": "Propagate the full range through each composition, not just the previous maximum."
+      }
+    },
+    "source": {
+      "kind": "official-public",
+      "title": {
+        "zh": "TMUA 2022 Paper 2 · 官方原卷",
+        "en": "TMUA 2022 Paper 2 · official archive"
+      },
+      "url": "https://uat-wp.s3.eu-west-2.amazonaws.com/wp-content/uploads/2024/05/07141239/TMUA-2022-paper-2.pdf",
+      "originalNumber": "20",
+      "year": 2022,
+      "rightsNote": "Original papers and worked solutions: Cambridge University Press & Assessment / Cambridge Assessment; public archive provided by UAT-UK. No affiliation or endorsement."
+    }
+  }
+]

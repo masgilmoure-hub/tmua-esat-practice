@@ -485,3 +485,10 @@ input[type=checkbox], input[type=radio] { accent-color: var(--blue); }
 .answering-layout { align-items: start; }
 .answering-layout .navigator-panel { position: sticky; top: 1rem; }
 @media(max-width: 900px) { .answering-layout .navigator-panel { position: static; } }
+.diagram-modal { width: min(1000px, 94vw); max-height: 90vh; border: 1px solid #dce3ee; border-radius: 12px; padding: 16px; }
+.diagram-modal::backdrop { background: #18223680; }
+.diagram-modal-header { display: flex; align-items: center; justify-content: space-between; gap: 12px; }
+.diagram-modal-header strong { font-size: .85rem; }
+.diagram-original { max-height: 70vh; overflow: auto; background: white; }
+.diagram-original img { display: block; max-width: none; max-height: none; width: auto; height: auto; margin: auto; }
+@media(max-width:600px) { .diagram-modal-header { align-items: start; flex-direction: column; } }

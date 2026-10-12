@@ -1,0 +1,1192 @@
+[
+  {
+    "id": "ARCHIVE-TMUA-2022-P1-Q01",
+    "exam": "TMUA",
+    "moduleId": "p1",
+    "format": "latex",
+    "topic": {
+      "id": "trigonometry",
+      "name": {
+        "zh": "三角函数与方程",
+        "en": "Trigonometric functions & equations"
+      }
+    },
+    "subtopic": {
+      "id": "trig-root-count",
+      "name": {
+        "zh": "三角方程解的个数",
+        "en": "Counting trigonometric roots"
+      }
+    },
+    "prompt": "How many real solutions are there to the equation $$2\\cos^4\\theta-5\\cos^2\\theta+3=0$$ in the interval $0\\leq\\theta\\leq2\\pi$?",
+    "options": [
+      "$1$",
+      "$2$",
+      "$3$",
+      "$4$",
+      "$5$",
+      "$6$",
+      "$7$",
+      "$8$"
+    ],
+    "correctIndex": 2,
+    "difficulty": "foundation",
+    "explanation": {
+      "zh": {
+        "steps": [
+          "令 $u=\\cos^2\\theta$，有 $0\\leq u\\leq1$。方程分解为 $(2u-3)(u-1)=0$，其中 $u=3/2$ 不在值域，故只能 $u=1$。",
+          "$\\cos\\theta=\\pm1$ 在闭区间内给出 $\\theta=0,\\pi,2\\pi$，共三个不同解，选 C。"
+        ],
+        "pitfall": "闭区间的两个端点均计入；代数换元后的根还要满足余弦平方的值域。"
+      },
+      "en": {
+        "steps": [
+          "Put $u=\\cos^2\\theta$, with $0\\leq u\\leq1$. Factoring gives $(2u-3)(u-1)=0$. The root $u=3/2$ is outside the range, leaving $u=1$.",
+          "$\\cos\\theta=\\pm1$ gives $\\theta=0,\\pi,2\\pi$ in the closed interval: three distinct roots. Choose C."
+        ],
+        "pitfall": "Include both closed endpoints and check the range of the substitution."
+      }
+    },
+    "source": {
+      "kind": "official-public",
+      "title": {
+        "zh": "TMUA 2022 Paper 1 · 官方原卷",
+        "en": "TMUA 2022 Paper 1 · official archive"
+      },
+      "url": "https://uat-wp.s3.eu-west-2.amazonaws.com/wp-content/uploads/2024/05/07141241/TMUA-2022-paper-1.pdf",
+      "originalNumber": "1",
+      "year": 2022,
+      "rightsNote": "Original papers and worked solutions: Cambridge University Press & Assessment / Cambridge Assessment; public archive provided by UAT-UK. No affiliation or endorsement."
+    }
+  },
+  {
+    "id": "ARCHIVE-TMUA-2022-P1-Q02",
+    "exam": "TMUA",
+    "moduleId": "p1",
+    "format": "latex",
+    "topic": {
+      "id": "geometry",
+      "name": {
+        "zh": "几何",
+        "en": "Geometry"
+      }
+    },
+    "subtopic": {
+      "id": "circle-parameter-range",
+      "name": {
+        "zh": "圆方程的参数范围",
+        "en": "Parameter ranges for circles"
+      }
+    },
+    "prompt": "Find the complete set of values of $p$ for which the equation $$x^2-2px+y^2-6y-p^2+8p+9=0$$ describes a circle in the $xy$-plane.",
+    "options": [
+      "$p<-\\frac94$",
+      "$0<p<4$",
+      "$-1<p<9$",
+      "$p<0$ or $p>4$",
+      "$p<-1$ or $p>9$",
+      "all real values of $p$"
+    ],
+    "correctIndex": 3,
+    "difficulty": "foundation",
+    "explanation": {
+      "zh": {
+        "steps": [
+          "配方为 $(x-p)^2+(y-3)^2=2p^2-8p=2p(p-4)$。",
+          "圆的半径平方必须严格为正，故 $p(p-4)>0$，解为 $p<0$ 或 $p>4$，选 D。等于零时只有一个点。"
+        ],
+        "pitfall": "配方时需补上并减去 p²；半径为零不是此处要求的圆。"
+      },
+      "en": {
+        "steps": [
+          "Completing the square gives $(x-p)^2+(y-3)^2=2p^2-8p=2p(p-4)$.",
+          "A circle requires a strictly positive squared radius, so $p(p-4)>0$. Thus $p<0$ or $p>4$. Choose D; zero radius gives only a point."
+        ],
+        "pitfall": "Account for the added p² when completing the square. A zero radius is excluded."
+      }
+    },
+    "source": {
+      "kind": "official-public",
+      "title": {
+        "zh": "TMUA 2022 Paper 1 · 官方原卷",
+        "en": "TMUA 2022 Paper 1 · official archive"
+      },
+      "url": "https://uat-wp.s3.eu-west-2.amazonaws.com/wp-content/uploads/2024/05/07141241/TMUA-2022-paper-1.pdf",
+      "originalNumber": "2",
+      "year": 2022,
+      "rightsNote": "Original papers and worked solutions: Cambridge University Press & Assessment / Cambridge Assessment; public archive provided by UAT-UK. No affiliation or endorsement."
+    }
+  },
+  {
+    "id": "ARCHIVE-TMUA-2022-P1-Q03",
+    "exam": "TMUA",
+    "moduleId": "p1",
+    "format": "latex",
+    "topic": {
+      "id": "calculus",
+      "name": {
+        "zh": "微积分",
+        "en": "Calculus"
+      }
+    },
+    "subtopic": {
+      "id": "integral-constraints",
+      "name": {
+        "zh": "积分条件与联立方程",
+        "en": "Integral constraints"
+      }
+    },
+    "prompt": "Given the following statements about a function $f$:\n\n• $f^{\\prime\\prime}(x)=a$ for all $x$\n• $f(0)=1$, $f(1)=2$\n• $\\int_0^1f(x)\\,dx=1$\n\nfind the value of $a$.",
+    "options": [
+      "$-6$",
+      "$-3$",
+      "$-2$",
+      "$2$",
+      "$3$",
+      "$6$"
+    ],
+    "correctIndex": 5,
+    "difficulty": "standard",
+    "explanation": {
+      "zh": {
+        "steps": [
+          "积分两次得到 $f(x)=ax^2/2+bx+c$。由 $f(0)=1$ 得 $c=1$；由 $f(1)=2$ 得 $a+2b=2$。",
+          "积分条件为 $a/6+b/2+1=1$，即 $a+3b=0$。联立得 $b=-2,a=6$，选 F。"
+        ],
+        "pitfall": "题目给的是二阶导数；两次积分的常数都需要由条件确定。"
+      },
+      "en": {
+        "steps": [
+          "Integrating twice gives $f(x)=ax^2/2+bx+c$. The conditions give $c=1$ and $a+2b=2$.",
+          "The integral condition is $a/6+b/2+1=1$, or $a+3b=0$. Solving gives $b=-2,a=6$. Choose F."
+        ],
+        "pitfall": "The given derivative is second order; retain constants from both integrations."
+      }
+    },
+    "source": {
+      "kind": "official-public",
+      "title": {
+        "zh": "TMUA 2022 Paper 1 · 官方原卷",
+        "en": "TMUA 2022 Paper 1 · official archive"
+      },
+      "url": "https://uat-wp.s3.eu-west-2.amazonaws.com/wp-content/uploads/2024/05/07141241/TMUA-2022-paper-1.pdf",
+      "originalNumber": "3",
+      "year": 2022,
+      "rightsNote": "Original papers and worked solutions: Cambridge University Press & Assessment / Cambridge Assessment; public archive provided by UAT-UK. No affiliation or endorsement."
+    }
+  },
+  {
+    "id": "ARCHIVE-TMUA-2022-P1-Q04",
+    "exam": "TMUA",
+    "moduleId": "p1",
+    "format": "latex",
+    "topic": {
+      "id": "geometry",
+      "name": {
+        "zh": "几何",
+        "en": "Geometry"
+      }
+    },
+    "subtopic": {
+      "id": "similar-sector-perimeters",
+      "name": {
+        "zh": "相似扇形的周长",
+        "en": "Perimeters of similar sectors"
+      }
+    },
+    "prompt": "These sectors of circles are similar.\n\nThe arc length of the smaller sector is $6$.\nThe difference between the areas of the sectors is $21$.\n\nFind the positive difference between the perimeters of the sectors.",
+    "options": [
+      "$4.5$",
+      "$7$",
+      "$8$",
+      "$9$",
+      "$10.5$",
+      "$14$",
+      "$15$"
+    ],
+    "correctIndex": 2,
+    "difficulty": "standard",
+    "diagram": {
+      "path": "question-images/tmua-2022-p1-q04.png",
+      "alt": "Two similar sectors: the smaller has radius r and arc length 6, and the larger has radius r+3."
+    },
+    "explanation": {
+      "zh": {
+        "steps": [
+          "两扇形角相同，记为 $\\theta$。小扇形 $r\\theta=6$，故 $\\theta=6/r$；面积差为 $\\frac12[(r+3)^2-r^2]\\theta=18+27/r$。",
+          "令 $18+27/r=21$，得 $r=9$。大扇形弧长为 $12\\cdot6/9=8$；周长差 $[2(12)+8]-[2(9)+6]=8$，选 C。"
+        ],
+        "pitfall": "扇形周长包含两条半径与弧长；相似扇形面积和长度的比例不同。"
+      },
+      "en": {
+        "steps": [
+          "Both sectors have angle $\\theta$. Since $r\\theta=6$, $\\theta=6/r$. The area difference is $\\frac12[(r+3)^2-r^2]\\theta=18+27/r$.",
+          "Setting $18+27/r=21$ gives $r=9$. The larger arc is $12\\cdot6/9=8$. The perimeter difference is $[2(12)+8]-[2(9)+6]=8$. Choose C."
+        ],
+        "pitfall": "Include both radii and the arc. Areas and lengths have different scale factors."
+      }
+    },
+    "source": {
+      "kind": "official-public",
+      "title": {
+        "zh": "TMUA 2022 Paper 1 · 官方原卷",
+        "en": "TMUA 2022 Paper 1 · official archive"
+      },
+      "url": "https://uat-wp.s3.eu-west-2.amazonaws.com/wp-content/uploads/2024/05/07141241/TMUA-2022-paper-1.pdf",
+      "originalNumber": "4",
+      "year": 2022,
+      "rightsNote": "Original papers and worked solutions: Cambridge University Press & Assessment / Cambridge Assessment; public archive provided by UAT-UK. No affiliation or endorsement."
+    }
+  },
+  {
+    "id": "ARCHIVE-TMUA-2022-P1-Q05",
+    "exam": "TMUA",
+    "moduleId": "p1",
+    "format": "latex",
+    "topic": {
+      "id": "sequences",
+      "name": {
+        "zh": "数列与级数",
+        "en": "Sequences & series"
+      }
+    },
+    "subtopic": {
+      "id": "rational-recurrence",
+      "name": {
+        "zh": "分式递推与参数",
+        "en": "Rational recurrences & parameters"
+      }
+    },
+    "prompt": "The terms $x_n$ of a sequence follow the rule $$x_{n+1}=\\frac{x_n+p}{x_n+q}$$ where $p$ and $q$ are real numbers.\n\nGiven that $x_1=3$, $x_2=5$, and $x_3=7$, find the value of $x_4$.",
+    "options": [
+      "$-5$",
+      "$5$",
+      "$\\frac{51}7$",
+      "$\\frac{15}2$",
+      "$\\frac{23}3$",
+      "$9$",
+      "$11$",
+      "$13$"
+    ],
+    "correctIndex": 7,
+    "difficulty": "standard",
+    "explanation": {
+      "zh": {
+        "steps": [
+          "代入前两次递推，得 $5(3+q)=3+p$ 与 $7(5+q)=5+p$，即 $p=12+5q=30+7q$。",
+          "解得 $q=-9,p=-33$。因此 $x_4=(7-33)/(7-9)=13$，选 H；所用分母均非零。"
+        ],
+        "pitfall": "递推中的 xₙ 是当前项，不是下标 n；负的分子和分母相除得到正值。"
+      },
+      "en": {
+        "steps": [
+          "The first two recurrences give $5(3+q)=3+p$ and $7(5+q)=5+p$, so $p=12+5q=30+7q$.",
+          "Thus $q=-9,p=-33$. Hence $x_4=(7-33)/(7-9)=13$. Choose H. The denominators used are nonzero."
+        ],
+        "pitfall": "Use the current term rather than its index. Here both numerator and denominator are negative."
+      }
+    },
+    "source": {
+      "kind": "official-public",
+      "title": {
+        "zh": "TMUA 2022 Paper 1 · 官方原卷",
+        "en": "TMUA 2022 Paper 1 · official archive"
+      },
+      "url": "https://uat-wp.s3.eu-west-2.amazonaws.com/wp-content/uploads/2024/05/07141241/TMUA-2022-paper-1.pdf",
+      "originalNumber": "5",
+      "year": 2022,
+      "rightsNote": "Original papers and worked solutions: Cambridge University Press & Assessment / Cambridge Assessment; public archive provided by UAT-UK. No affiliation or endorsement."
+    }
+  },
+  {
+    "id": "ARCHIVE-TMUA-2022-P1-Q06",
+    "exam": "TMUA",
+    "moduleId": "p1",
+    "format": "latex",
+    "topic": {
+      "id": "calculus",
+      "name": {
+        "zh": "微积分",
+        "en": "Calculus"
+      }
+    },
+    "subtopic": {
+      "id": "logarithmic-integral-limits",
+      "name": {
+        "zh": "对数上下限的积分",
+        "en": "Integrals with logarithmic limits"
+      }
+    },
+    "prompt": "Given that $$\\int_{\\log_2 5}^{\\log_2 20}x\\,dx=\\log_2 M,$$ what is the value of $M$?",
+    "options": [
+      "$4$",
+      "$15$",
+      "$16$",
+      "$20$",
+      "$25$",
+      "$100$",
+      "$10000$"
+    ],
+    "correctIndex": 5,
+    "difficulty": "standard",
+    "explanation": {
+      "zh": {
+        "steps": [
+          "设 $t=\\log_2 5$，则 $\\log_2 20=t+2$。积分为 $\\frac12[(t+2)^2-t^2]=2t+2$。",
+          "$2t+2=\\log_2 25+\\log_2 4=\\log_2 100$，故 $M=100$，选 F。"
+        ],
+        "pitfall": "不要将上下限误读成被积函数里的对数；最终要求 M，不是 log₂M。"
+      },
+      "en": {
+        "steps": [
+          "Let $t=\\log_2 5$, so $\\log_2 20=t+2$. The integral is $\\frac12[(t+2)^2-t^2]=2t+2$.",
+          "$2t+2=\\log_2 25+\\log_2 4=\\log_2 100$. Thus $M=100$. Choose F."
+        ],
+        "pitfall": "The logarithms are the limits, not the integrand. Return M rather than log₂M."
+      }
+    },
+    "source": {
+      "kind": "official-public",
+      "title": {
+        "zh": "TMUA 2022 Paper 1 · 官方原卷",
+        "en": "TMUA 2022 Paper 1 · official archive"
+      },
+      "url": "https://uat-wp.s3.eu-west-2.amazonaws.com/wp-content/uploads/2024/05/07141241/TMUA-2022-paper-1.pdf",
+      "originalNumber": "6",
+      "year": 2022,
+      "rightsNote": "Original papers and worked solutions: Cambridge University Press & Assessment / Cambridge Assessment; public archive provided by UAT-UK. No affiliation or endorsement."
+    }
+  },
+  {
+    "id": "ARCHIVE-TMUA-2022-P1-Q07",
+    "exam": "TMUA",
+    "moduleId": "p1",
+    "format": "latex",
+    "topic": {
+      "id": "calculus",
+      "name": {
+        "zh": "微积分",
+        "en": "Calculus"
+      }
+    },
+    "subtopic": {
+      "id": "absolute-value-area",
+      "name": {
+        "zh": "绝对值曲线的面积",
+        "en": "Areas with absolute-value curves"
+      }
+    },
+    "prompt": "Find the finite area enclosed between the line $y=0$ and the curve $y=x^2-4|x|-12$.",
+    "options": [
+      "$\\frac{128}3$",
+      "$\\frac{176}3$",
+      "$\\frac{256}3$",
+      "$108$",
+      "$144$",
+      "$288$"
+    ],
+    "correctIndex": 4,
+    "difficulty": "standard",
+    "explanation": {
+      "zh": {
+        "steps": [
+          "曲线关于纵轴对称。在 $x\\geq0$ 上为 $(x-6)(x+2)$，有效交点为 6；另一交点为 -6，封闭区间内曲线在横轴下方。",
+          "面积 $A=-2\\int_0^6(x^2-4x-12)\\,dx=-2[x^3/3-2x^2-12x]_0^6=144$，选 E。"
+        ],
+        "pitfall": "面积取正值；绝对值分支上的代数根还需满足分支区间。"
+      },
+      "en": {
+        "steps": [
+          "The curve is even. For $x\\geq0$, it is $(x-6)(x+2)$, with valid intercept 6. The other intercept is -6; the curve is below the axis between them.",
+          "The area is $A=-2\\int_0^6(x^2-4x-12)\\,dx=-2[x^3/3-2x^2-12x]_0^6=144$. Choose E."
+        ],
+        "pitfall": "Area is positive. Roots of a branch must belong to that branch."
+      }
+    },
+    "source": {
+      "kind": "official-public",
+      "title": {
+        "zh": "TMUA 2022 Paper 1 · 官方原卷",
+        "en": "TMUA 2022 Paper 1 · official archive"
+      },
+      "url": "https://uat-wp.s3.eu-west-2.amazonaws.com/wp-content/uploads/2024/05/07141241/TMUA-2022-paper-1.pdf",
+      "originalNumber": "7",
+      "year": 2022,
+      "rightsNote": "Original papers and worked solutions: Cambridge University Press & Assessment / Cambridge Assessment; public archive provided by UAT-UK. No affiliation or endorsement."
+    }
+  },
+  {
+    "id": "ARCHIVE-TMUA-2022-P1-Q08",
+    "exam": "TMUA",
+    "moduleId": "p1",
+    "format": "latex",
+    "topic": {
+      "id": "sequences",
+      "name": {
+        "zh": "数列与级数",
+        "en": "Sequences & series"
+      }
+    },
+    "subtopic": {
+      "id": "geometric-block-sums",
+      "name": {
+        "zh": "等比数列的分段和",
+        "en": "Block sums in geometric sequences"
+      }
+    },
+    "prompt": "A geometric sequence has first term $a$ and common ratio $r$, where $a$ and $r$ are positive integers and $r>1$.\n\nThe sum of the first $n$ terms is denoted by $S_n$. It is given that $$S_{30}-S_{20}=kS_{10}$$ for some positive integer $k$. What is the smallest possible value of $k$?",
+    "options": [
+      "$2^{10}$",
+      "$2^{20}$",
+      "$2^{30}$",
+      "$\\frac{2^{10}}{2^{10}-1}$",
+      "$2^{10}(2^{10}-1)$"
+    ],
+    "correctIndex": 1,
+    "difficulty": "standard",
+    "explanation": {
+      "zh": {
+        "steps": [
+          "第 21–30 项分别是第 1–10 项的 $r^{20}$ 倍，所以 $S_{30}-S_{20}=r^{20}S_{10}$。由于 $S_{10}>0$，可约去，得 $k=r^{20}$。",
+          "$r$ 是大于 1 的整数，最小为 2。因此最小 $k=2^{20}$，选 B。"
+        ],
+        "pitfall": "第 21 项与第 1 项相差 20 次乘公比；不是相差 10 次。"
+      },
+      "en": {
+        "steps": [
+          "Terms 21–30 are $r^{20}$ times terms 1–10, so $S_{30}-S_{20}=r^{20}S_{10}$. Since $S_{10}>0$, cancellation gives $k=r^{20}$.",
+          "The smallest integer $r>1$ is 2. Thus the smallest $k$ is $2^{20}$. Choose B."
+        ],
+        "pitfall": "Term 21 is twenty ratio multiplications after term 1, not ten."
+      }
+    },
+    "source": {
+      "kind": "official-public",
+      "title": {
+        "zh": "TMUA 2022 Paper 1 · 官方原卷",
+        "en": "TMUA 2022 Paper 1 · official archive"
+      },
+      "url": "https://uat-wp.s3.eu-west-2.amazonaws.com/wp-content/uploads/2024/05/07141241/TMUA-2022-paper-1.pdf",
+      "originalNumber": "8",
+      "year": 2022,
+      "rightsNote": "Original papers and worked solutions: Cambridge University Press & Assessment / Cambridge Assessment; public archive provided by UAT-UK. No affiliation or endorsement."
+    }
+  },
+  {
+    "id": "ARCHIVE-TMUA-2022-P1-Q09",
+    "exam": "TMUA",
+    "moduleId": "p1",
+    "format": "latex",
+    "topic": {
+      "id": "functions",
+      "name": {
+        "zh": "函数",
+        "en": "Functions"
+      }
+    },
+    "subtopic": {
+      "id": "coupled-function-range",
+      "name": {
+        "zh": "联立函数的值域",
+        "en": "Ranges of coupled functions"
+      }
+    },
+    "prompt": "This question is about pairs of functions $f$ and $g$ that satisfy $$f(x)-g(x)=2\\sin x,$$ $$f(x)g(x)=\\cos^2x$$ for all real numbers $x$.\n\nAcross all solutions for $f(x)$, what is the minimum value that $f(x)$ attains for any $x$?",
+    "options": [
+      "$1-\\sqrt2$",
+      "$-1-\\sqrt2$",
+      "$0$",
+      "$-1$",
+      "$-2$",
+      "$-3$",
+      "$-4$"
+    ],
+    "correctIndex": 4,
+    "difficulty": "standard",
+    "explanation": {
+      "zh": {
+        "steps": [
+          "消去 $g$：$f^2-2\\sin x\\,f-\\cos^2x=0$。用二次公式与 $\\sin^2x+\\cos^2x=1$ 得每个 $x$ 处 $f(x)=\\sin x\\pm1$。",
+          "两种取值都不小于 -2；选择 $f(x)=\\sin x-1$、$g(x)=\\sin x+1$，在 $\\sin x=-1$ 时取到 -2。因此最小值为 -2，选 E。"
+        ],
+        "pitfall": "必须考虑二次公式的两个符号；不需要额外假设函数连续才能确定全局下界。"
+      },
+      "en": {
+        "steps": [
+          "Eliminate $g$ to obtain $f^2-2\\sin x\\,f-\\cos^2x=0$. The quadratic formula and $\\sin^2x+\\cos^2x=1$ give $f(x)=\\sin x\\pm1$ at each $x$.",
+          "Neither value is below -2. Taking $f(x)=\\sin x-1$, $g(x)=\\sin x+1$ attains -2 when $\\sin x=-1$. Therefore the minimum is -2. Choose E."
+        ],
+        "pitfall": "Keep both signs. No continuity assumption is needed to establish this lower bound."
+      }
+    },
+    "source": {
+      "kind": "official-public",
+      "title": {
+        "zh": "TMUA 2022 Paper 1 · 官方原卷",
+        "en": "TMUA 2022 Paper 1 · official archive"
+      },
+      "url": "https://uat-wp.s3.eu-west-2.amazonaws.com/wp-content/uploads/2024/05/07141241/TMUA-2022-paper-1.pdf",
+      "originalNumber": "9",
+      "year": 2022,
+      "rightsNote": "Original papers and worked solutions: Cambridge University Press & Assessment / Cambridge Assessment; public archive provided by UAT-UK. No affiliation or endorsement."
+    }
+  },
+  {
+    "id": "ARCHIVE-TMUA-2022-P1-Q10",
+    "exam": "TMUA",
+    "moduleId": "p1",
+    "format": "latex",
+    "topic": {
+      "id": "functions",
+      "name": {
+        "zh": "函数",
+        "en": "Functions"
+      }
+    },
+    "subtopic": {
+      "id": "cubic-translations",
+      "name": {
+        "zh": "三次函数的平移",
+        "en": "Translations of cubic functions"
+      }
+    },
+    "prompt": "A sequence of translations is applied to the graph of $y=x^3$.\n\nWhich of the following graphs could be the result?\n\nI   $y=x^3-3x^2+9x-27$\nII   $y=x^3-9x^2+27x-3$\nIII   $y=27x^3-9x^2+x-3$",
+    "options": [
+      "none of them",
+      "I only",
+      "II only",
+      "III only",
+      "I and II only",
+      "I and III only",
+      "II and III only",
+      "I, II and III"
+    ],
+    "correctIndex": 2,
+    "difficulty": "standard",
+    "explanation": {
+      "zh": {
+        "steps": [
+          "任何平移后的方程为 $y=(x-h)^3+v=x^3-3hx^2+3h^2x-h^3+v$。",
+          "I 的二次项要求 $h=1$，却应有一次项 $3x$ 而不是 $9x$；II 要求 $h=3$，一次项正确且 $v=24$；III 改变了三次项系数，不能靠平移得到。只有 II，选 C。"
+        ],
+        "pitfall": "竖直平移只改变常数项；三次项系数保持为 1。"
+      },
+      "en": {
+        "steps": [
+          "After any translation, $y=(x-h)^3+v=x^3-3hx^2+3h^2x-h^3+v$.",
+          "I requires $h=1$, but then its linear term should be $3x$, not $9x$. II works with $h=3,v=24$. III changes the leading coefficient, impossible under translation. Only II works. Choose C."
+        ],
+        "pitfall": "Vertical translation changes only the constant term; the leading coefficient stays 1."
+      }
+    },
+    "source": {
+      "kind": "official-public",
+      "title": {
+        "zh": "TMUA 2022 Paper 1 · 官方原卷",
+        "en": "TMUA 2022 Paper 1 · official archive"
+      },
+      "url": "https://uat-wp.s3.eu-west-2.amazonaws.com/wp-content/uploads/2024/05/07141241/TMUA-2022-paper-1.pdf",
+      "originalNumber": "10",
+      "year": 2022,
+      "rightsNote": "Original papers and worked solutions: Cambridge University Press & Assessment / Cambridge Assessment; public archive provided by UAT-UK. No affiliation or endorsement."
+    }
+  },
+  {
+    "id": "ARCHIVE-TMUA-2022-P1-Q11",
+    "exam": "TMUA",
+    "moduleId": "p1",
+    "format": "latex",
+    "topic": {
+      "id": "sequences",
+      "name": {
+        "zh": "数列与级数",
+        "en": "Sequences & series"
+      }
+    },
+    "subtopic": {
+      "id": "log-arithmetic-sum",
+      "name": {
+        "zh": "对数与等差求和",
+        "en": "Logarithms & arithmetic summation"
+      }
+    },
+    "prompt": "Evaluate $$\\sum_{n=1}^{100}\\log_{10}\\left(3^{1-n}\\right).$$",
+    "options": [
+      "$-4950\\log_{10}3$",
+      "$4950\\log_{10}3$",
+      "$-5050\\log_{10}3$",
+      "$5050\\log_{10}3$",
+      "$1-4950\\log_{10}3$",
+      "$1+4950\\log_{10}3$",
+      "$1-5050\\log_{10}3$",
+      "$1+5050\\log_{10}3$"
+    ],
+    "correctIndex": 0,
+    "difficulty": "foundation",
+    "explanation": {
+      "zh": {
+        "steps": [
+          "每项为 $(1-n)\\log_{10}3$。系数依次 $0,-1,\\ldots,-99$，有 100 项。",
+          "系数和为 $-99\\cdot100/2=-4950$，因此结果为 $-4950\\log_{10}3$，选 A。"
+        ],
+        "pitfall": "指数为 1−n，第一项系数为 0，末项为 −99。"
+      },
+      "en": {
+        "steps": [
+          "Each term is $(1-n)\\log_{10}3$. The coefficients are $0,-1,\\ldots,-99$, a total of 100 terms.",
+          "The coefficient sum is $-99\\cdot100/2=-4950$. Hence the result is $-4950\\log_{10}3$. Choose A."
+        ],
+        "pitfall": "The exponent is 1−n; the coefficients start at 0 and end at −99."
+      }
+    },
+    "source": {
+      "kind": "official-public",
+      "title": {
+        "zh": "TMUA 2022 Paper 1 · 官方原卷",
+        "en": "TMUA 2022 Paper 1 · official archive"
+      },
+      "url": "https://uat-wp.s3.eu-west-2.amazonaws.com/wp-content/uploads/2024/05/07141241/TMUA-2022-paper-1.pdf",
+      "originalNumber": "11",
+      "year": 2022,
+      "rightsNote": "Original papers and worked solutions: Cambridge University Press & Assessment / Cambridge Assessment; public archive provided by UAT-UK. No affiliation or endorsement."
+    }
+  },
+  {
+    "id": "ARCHIVE-TMUA-2022-P1-Q12",
+    "exam": "TMUA",
+    "moduleId": "p1",
+    "format": "latex",
+    "topic": {
+      "id": "functions",
+      "name": {
+        "zh": "函数",
+        "en": "Functions"
+      }
+    },
+    "subtopic": {
+      "id": "family-global-minimum",
+      "name": {
+        "zh": "函数族的全局最小值",
+        "en": "Global minima of function families"
+      }
+    },
+    "prompt": "A family of quadratic curves is given by $$y_k=2\\left(x-\\frac k2\\right)^2+\\frac{k^2}2+4k+3,$$ where $k$ is any real number and $y_k$ is a function of $x$.\n\nAll these curves are sketched, and the point with the lowest $y$-coordinate among all the curves $y_k$ is $(a,b)$. Find $a+b$.",
+    "options": [
+      "$-1$",
+      "$-3$",
+      "$-5$",
+      "$-7$",
+      "$-9$"
+    ],
+    "correctIndex": 3,
+    "difficulty": "standard",
+    "explanation": {
+      "zh": {
+        "steps": [
+          "固定 $k$ 时最低点在 $x=k/2$，纵坐标为 $k^2/2+4k+3=(k+4)^2/2-5$。",
+          "再对 $k$ 取最小值，得 $k=-4$，所以最低点 $(a,b)=(-2,-5)$，$a+b=-7$，选 D。"
+        ],
+        "pitfall": "先求各曲线最低点，再在这些最低点中比较；k 不是所求横坐标 a。"
+      },
+      "en": {
+        "steps": [
+          "For fixed $k$, the minimum occurs at $x=k/2$, with height $k^2/2+4k+3=(k+4)^2/2-5$.",
+          "Minimising over $k$ gives $k=-4$. Thus $(a,b)=(-2,-5)$ and $a+b=-7$. Choose D."
+        ],
+        "pitfall": "Minimise each curve first, then compare those minima. The parameter k is not the coordinate a."
+      }
+    },
+    "source": {
+      "kind": "official-public",
+      "title": {
+        "zh": "TMUA 2022 Paper 1 · 官方原卷",
+        "en": "TMUA 2022 Paper 1 · official archive"
+      },
+      "url": "https://uat-wp.s3.eu-west-2.amazonaws.com/wp-content/uploads/2024/05/07141241/TMUA-2022-paper-1.pdf",
+      "originalNumber": "12",
+      "year": 2022,
+      "rightsNote": "Original papers and worked solutions: Cambridge University Press & Assessment / Cambridge Assessment; public archive provided by UAT-UK. No affiliation or endorsement."
+    }
+  },
+  {
+    "id": "ARCHIVE-TMUA-2022-P1-Q13",
+    "exam": "TMUA",
+    "moduleId": "p1",
+    "format": "latex",
+    "topic": {
+      "id": "algebra",
+      "name": {
+        "zh": "代数",
+        "en": "Algebra"
+      }
+    },
+    "subtopic": {
+      "id": "product-substitution",
+      "name": {
+        "zh": "乘积换元与实根",
+        "en": "Product substitutions & real roots"
+      }
+    },
+    "prompt": "Given that $$\\left(a^3+\\frac2{b^3}\\right)\\left(\\frac2{a^3}-b^3\\right)=\\sqrt2,$$ where $a$ and $b$ are real numbers, what is the least value of $ab$?",
+    "options": [
+      "$-\\sqrt2$",
+      "$\\sqrt2$",
+      "$-2\\sqrt2$",
+      "$2\\sqrt2$",
+      "$-\\frac{\\sqrt2}2$",
+      "$\\frac{\\sqrt2}2$",
+      "$-2^{1/6}$",
+      "$2^{1/6}$"
+    ],
+    "correctIndex": 0,
+    "difficulty": "challenge",
+    "explanation": {
+      "zh": {
+        "steps": [
+          "原式要求 $a,b\\ne0$。展开后两个常数项相消，得 $4/(ab)^3-(ab)^3=\\sqrt2$。设 $t=(ab)^3$，得 $t^2+\\sqrt2t-4=0$。",
+          "解得 $t=\\sqrt2$ 或 $-2\\sqrt2$。实数立方根递增，最小 $ab=\\sqrt[3]{-2\\sqrt2}=-\\sqrt2$，可取 $a=1,b=-\\sqrt2$ 实现，选 A。"
+        ],
+        "pitfall": "负数的实立方根仍为负；分母要求 a、b 均不为零。"
+      },
+      "en": {
+        "steps": [
+          "The original expression requires $a,b\\ne0$. Expansion gives $4/(ab)^3-(ab)^3=\\sqrt2$. Put $t=(ab)^3$ to obtain $t^2+\\sqrt2t-4=0$.",
+          "The roots are $t=\\sqrt2$ and $-2\\sqrt2$. Real cube roots are increasing, so the least $ab=\\sqrt[3]{-2\\sqrt2}=-\\sqrt2$, attained by $a=1,b=-\\sqrt2$. Choose A."
+        ],
+        "pitfall": "A negative number has a negative real cube root. Both denominators must be nonzero."
+      }
+    },
+    "source": {
+      "kind": "official-public",
+      "title": {
+        "zh": "TMUA 2022 Paper 1 · 官方原卷",
+        "en": "TMUA 2022 Paper 1 · official archive"
+      },
+      "url": "https://uat-wp.s3.eu-west-2.amazonaws.com/wp-content/uploads/2024/05/07141241/TMUA-2022-paper-1.pdf",
+      "originalNumber": "13",
+      "year": 2022,
+      "rightsNote": "Original papers and worked solutions: Cambridge University Press & Assessment / Cambridge Assessment; public archive provided by UAT-UK. No affiliation or endorsement."
+    }
+  },
+  {
+    "id": "ARCHIVE-TMUA-2022-P1-Q14",
+    "exam": "TMUA",
+    "moduleId": "p1",
+    "format": "latex",
+    "topic": {
+      "id": "geometry",
+      "name": {
+        "zh": "几何",
+        "en": "Geometry"
+      }
+    },
+    "subtopic": {
+      "id": "circle-triangle-max-area",
+      "name": {
+        "zh": "圆内三角形的最大面积",
+        "en": "Maximum triangle area in a circle"
+      }
+    },
+    "prompt": "A circle has centre $O$ and radius $6$.\n\n$P$, $Q$ and $R$ are points on the circumference with $\\angle POQ\\geq\\pi/2$. The area of triangle $POQ$ is $9\\sqrt3$.\n\nWhat is the greatest possible area of triangle $PRQ$?",
+    "options": [
+      "$18+9\\sqrt3$",
+      "$18\\sqrt3$",
+      "$27+9\\sqrt3$",
+      "$27\\sqrt3$",
+      "$36+9\\sqrt3$",
+      "$36\\sqrt3$"
+    ],
+    "correctIndex": 3,
+    "difficulty": "standard",
+    "explanation": {
+      "zh": {
+        "steps": [
+          "设中心角为 $\\phi$，$18\\sin\\phi=9\\sqrt3$。结合角度条件得 $\\phi=2\\pi/3$，于是弦长 $PQ=12\\sin(\\phi/2)=6\\sqrt3$。",
+          "圆心到弦的距离为 $6\\cos(\\phi/2)=3$。R 到弦的最大距离为 $6+3=9$，故最大面积 $\\frac12\\cdot6\\sqrt3\\cdot9=27\\sqrt3$，选 D。"
+        ],
+        "pitfall": "正弦方程有两个角度分支；用中心角条件选定，再取远离弦的一侧最大高度。"
+      },
+      "en": {
+        "steps": [
+          "Let the central angle be $\\phi$. Then $18\\sin\\phi=9\\sqrt3$, and the angle condition selects $\\phi=2\\pi/3$. Thus $PQ=12\\sin(\\phi/2)=6\\sqrt3$.",
+          "The centre-to-chord distance is $6\\cos(\\phi/2)=3$. The greatest distance of R from the chord is $6+3=9$, giving area $\\frac12\\cdot6\\sqrt3\\cdot9=27\\sqrt3$. Choose D."
+        ],
+        "pitfall": "Use the central-angle condition to choose the correct sine branch, then maximise height on the far side of the chord."
+      }
+    },
+    "source": {
+      "kind": "official-public",
+      "title": {
+        "zh": "TMUA 2022 Paper 1 · 官方原卷",
+        "en": "TMUA 2022 Paper 1 · official archive"
+      },
+      "url": "https://uat-wp.s3.eu-west-2.amazonaws.com/wp-content/uploads/2024/05/07141241/TMUA-2022-paper-1.pdf",
+      "originalNumber": "14",
+      "year": 2022,
+      "rightsNote": "Original papers and worked solutions: Cambridge University Press & Assessment / Cambridge Assessment; public archive provided by UAT-UK. No affiliation or endorsement."
+    }
+  },
+  {
+    "id": "ARCHIVE-TMUA-2022-P1-Q15",
+    "exam": "TMUA",
+    "moduleId": "p1",
+    "format": "latex",
+    "topic": {
+      "id": "calculus",
+      "name": {
+        "zh": "微积分",
+        "en": "Calculus"
+      }
+    },
+    "subtopic": {
+      "id": "inscribed-area-optimisation",
+      "name": {
+        "zh": "内接矩形的面积最优化",
+        "en": "Optimising inscribed rectangle areas"
+      }
+    },
+    "prompt": "A rectangle is drawn in the region enclosed by the curves $p$ and $q$, where $$p(x)=8-2x^2,\\qquad q(x)=x^2-2,$$ such that the sides of the rectangle are parallel to the $x$- and $y$-axes.\n\nWhat is the maximum possible area of the rectangle?",
+    "options": [
+      "$\\frac{26}9$",
+      "$\\frac{52}9$",
+      "$\\frac{4\\sqrt6}3$",
+      "$\\frac{8\\sqrt6}3$",
+      "$4\\sqrt2$",
+      "$8\\sqrt2$",
+      "$\\frac{20\\sqrt{10}}9$",
+      "$\\frac{40\\sqrt{10}}9$"
+    ],
+    "correctIndex": 7,
+    "difficulty": "challenge",
+    "explanation": {
+      "zh": {
+        "steps": [
+          "设左右边横坐标的绝对值最大为 $t$。高度最多 $10-3t^2$，宽度最多 $2t$，两者在左右对称并触及曲线时可同时达到。所以优化 $A(t)=2t(10-3t^2)$，$0<t<\\sqrt{10/3}$。",
+          "$A^{\\prime}(t)=20-18t^2$，唯一正驻点 $t=\\sqrt{10}/3$。导数先正后负且边界面积为零，故为最大值。",
+          "最大面积为 $2(\\sqrt{10}/3)(20/3)=40\\sqrt{10}/9$，选 H。"
+        ],
+        "pitfall": "宽度是 2t；还要说明对称矩形能达到所列面积上界，并确认驻点为最大值。"
+      },
+      "en": {
+        "steps": [
+          "Let $t$ be the largest absolute x-coordinate of the vertical sides. Height is at most $10-3t^2$ and width at most $2t$, both attained by a symmetric rectangle touching the curves. Thus maximise $A(t)=2t(10-3t^2)$ for $0<t<\\sqrt{10/3}$.",
+          "$A^{\\prime}(t)=20-18t^2$ has the sole positive stationary point $t=\\sqrt{10}/3$. The derivative changes from positive to negative and boundary areas are zero, so this is the maximum.",
+          "The maximum area is $2(\\sqrt{10}/3)(20/3)=40\\sqrt{10}/9$. Choose H."
+        ],
+        "pitfall": "The width is 2t. Justify the symmetric rectangle and confirm the stationary point is a maximum."
+      }
+    },
+    "source": {
+      "kind": "official-public",
+      "title": {
+        "zh": "TMUA 2022 Paper 1 · 官方原卷",
+        "en": "TMUA 2022 Paper 1 · official archive"
+      },
+      "url": "https://uat-wp.s3.eu-west-2.amazonaws.com/wp-content/uploads/2024/05/07141241/TMUA-2022-paper-1.pdf",
+      "originalNumber": "15",
+      "year": 2022,
+      "rightsNote": "Original papers and worked solutions: Cambridge University Press & Assessment / Cambridge Assessment; public archive provided by UAT-UK. No affiliation or endorsement."
+    }
+  },
+  {
+    "id": "ARCHIVE-TMUA-2022-P1-Q16",
+    "exam": "TMUA",
+    "moduleId": "p1",
+    "format": "latex",
+    "topic": {
+      "id": "trigonometry",
+      "name": {
+        "zh": "三角函数与方程",
+        "en": "Trigonometric functions & equations"
+      }
+    },
+    "subtopic": {
+      "id": "complementary-root-transform",
+      "name": {
+        "zh": "互补三角值的根变换",
+        "en": "Root transformations for complementary trig values"
+      }
+    },
+    "prompt": "The solutions to $7x^4-6x^2+1=0$ are $\\pm\\cos\\theta$ and $\\pm\\cos\\beta$.\n\nWhich one of the following equations has solutions $\\pm\\sin\\theta$ and $\\pm\\sin\\beta$?",
+    "options": [
+      "$7x^4-8x^2-5=0$",
+      "$7x^4-8x^2+2=0$",
+      "$7x^4-6x^2-2=0$",
+      "$7x^4-6x^2+1=0$",
+      "$7x^4+6x^2-1=0$",
+      "$7x^4+6x^2+5=0$"
+    ],
+    "correctIndex": 1,
+    "difficulty": "standard",
+    "explanation": {
+      "zh": {
+        "steps": [
+          "原方程在 $u=x^2$ 下为 $7u^2-6u+1=0$，其两个根是 $\\cos^2\\theta,\\cos^2\\beta$。所需平方根值 $v=1-u$。",
+          "代入 $u=1-v$，得 $7(1-v)^2-6(1-v)+1=7v^2-8v+2=0$。再令 $v=x^2$，得到 $7x^4-8x^2+2=0$，选 B。"
+        ],
+        "pitfall": "转换的是平方值；恢复变量后仍是四次方程，不能漏掉 x 的平方。"
+      },
+      "en": {
+        "steps": [
+          "With $u=x^2$, the original equation is $7u^2-6u+1=0$, whose roots are $\\cos^2\\theta,\\cos^2\\beta$. The required squared values are $v=1-u$.",
+          "Substitute $u=1-v$: $7(1-v)^2-6(1-v)+1=7v^2-8v+2=0$. Finally put $v=x^2$ to obtain $7x^4-8x^2+2=0$. Choose B."
+        ],
+        "pitfall": "Transform the squared values. Restoring x gives a quartic, not a quadratic."
+      }
+    },
+    "source": {
+      "kind": "official-public",
+      "title": {
+        "zh": "TMUA 2022 Paper 1 · 官方原卷",
+        "en": "TMUA 2022 Paper 1 · official archive"
+      },
+      "url": "https://uat-wp.s3.eu-west-2.amazonaws.com/wp-content/uploads/2024/05/07141241/TMUA-2022-paper-1.pdf",
+      "originalNumber": "16",
+      "year": 2022,
+      "rightsNote": "Original papers and worked solutions: Cambridge University Press & Assessment / Cambridge Assessment; public archive provided by UAT-UK. No affiliation or endorsement."
+    }
+  },
+  {
+    "id": "ARCHIVE-TMUA-2022-P1-Q17",
+    "exam": "TMUA",
+    "moduleId": "p1",
+    "format": "latex",
+    "topic": {
+      "id": "geometry",
+      "name": {
+        "zh": "几何",
+        "en": "Geometry"
+      }
+    },
+    "subtopic": {
+      "id": "ssa-ambiguity",
+      "name": {
+        "zh": "正弦定理的两解情形",
+        "en": "The ambiguous sine-rule case"
+      }
+    },
+    "prompt": "Find the complete set of values of $x$ for which there are two non-congruent triangles with the side lengths and angle as shown in the diagram.",
+    "options": [
+      "$1<x<3$",
+      "$1<x<4$",
+      "$1<x<5$",
+      "$3<x<4$",
+      "$3<x<5$",
+      "$4<x<5$"
+    ],
+    "correctIndex": 3,
+    "difficulty": "challenge",
+    "diagram": {
+      "path": "question-images/tmua-2022-p1-q17.png",
+      "alt": "A triangle with a 30-degree angle; its opposite side is x-1 and an adjacent side is -x squared +6x-5."
+    },
+    "explanation": {
+      "zh": {
+        "steps": [
+          "设对边 $a=x-1$，另一已知边 $b=-x^2+6x-5=(x-1)(5-x)$。边长为正要求 $1<x<5$。",
+          "已知锐角 $30^\\circ$ 的两解条件是 $b\\sin30^\\circ<a<b$，即 $b/2<a<b$。在 $x>1$ 下约去 $x-1$，得到 $(5-x)/2<1<5-x$。",
+          "所以 $x>3$ 且 $x<4$，均满足正边长条件。解为 $3<x<4$，选 D；边界都不能有两个非全等三角形。"
+        ],
+        "pitfall": "对边需大于高但小于另一边；两个严格边界各只保留一个有效三角形。"
+      },
+      "en": {
+        "steps": [
+          "Let the opposite side be $a=x-1$ and the other given side $b=-x^2+6x-5=(x-1)(5-x)$. Positive side lengths require $1<x<5$.",
+          "The ambiguous-case condition for the acute angle $30^\\circ$ is $b\\sin30^\\circ<a<b$, or $b/2<a<b$. Cancelling $x-1>0$ gives $(5-x)/2<1<5-x$.",
+          "Thus $x>3$ and $x<4$, within the positive-length range. The answer is $3<x<4$. Choose D; neither boundary permits two non-congruent triangles."
+        ],
+        "pitfall": "The opposite side must exceed the altitude but be shorter than the other side. The boundaries do not give two triangles."
+      }
+    },
+    "source": {
+      "kind": "official-public",
+      "title": {
+        "zh": "TMUA 2022 Paper 1 · 官方原卷",
+        "en": "TMUA 2022 Paper 1 · official archive"
+      },
+      "url": "https://uat-wp.s3.eu-west-2.amazonaws.com/wp-content/uploads/2024/05/07141241/TMUA-2022-paper-1.pdf",
+      "originalNumber": "17",
+      "year": 2022,
+      "rightsNote": "Original papers and worked solutions: Cambridge University Press & Assessment / Cambridge Assessment; public archive provided by UAT-UK. No affiliation or endorsement."
+    }
+  },
+  {
+    "id": "ARCHIVE-TMUA-2022-P1-Q18",
+    "exam": "TMUA",
+    "moduleId": "p1",
+    "format": "latex",
+    "topic": {
+      "id": "functions",
+      "name": {
+        "zh": "函数",
+        "en": "Functions"
+      }
+    },
+    "subtopic": {
+      "id": "guaranteed-polynomial-intersections",
+      "name": {
+        "zh": "多项式交点的保证条件",
+        "en": "Guaranteed polynomial intersections"
+      }
+    },
+    "prompt": "It is given that $$f(x)=x^2(x-1)^2(x-2),$$ $$g(x)=-p(x-q)^2(x-r)^2,$$ where $p$, $q$ and $r$ are positive and $q<r$.\n\nFind the set of values of $q$ and $r$ that guarantees the greatest number of distinct real solutions of $f(x)=g(x)$ for all $p$.",
+    "options": [
+      "$q<1$ and $r<1$",
+      "$q<1$ and $1<r<2$",
+      "$q<1$ and $r>2$",
+      "$1<q<2$ and $1<r<2$",
+      "$1<q<2$ and $r>2$",
+      "$q>2$ and $r>2$"
+    ],
+    "correctIndex": 1,
+    "difficulty": "challenge",
+    "explanation": {
+      "zh": {
+        "steps": [
+          "令 $h=f-g=f+p(x-q)^2(x-r)^2$，它是首项系数为 1 的五次多项式，所以不同实根最多五个。",
+          "在选项 B 的 $0<q<1<r<2$ 下，对任意 $p>0$，$h(0),h(1),h(2)>0$，而 $h(q),h(r)<0$；同时 $h(x)\\to-\\infty$ 当 $x\\to-\\infty$。",
+          "连续性保证五个不相交区间 $(-\\infty,0),(0,q),(q,1),(1,r),(r,2)$ 各至少一根，达到五次方程的上界。这对任意 $p>0$ 成立，因此给定选项中选择 B。",
+          "边界补充：官方详解另指出 $0<q<1,r=2$ 也能保证五根，但不包含在给定选项中。B 是所列选项中的保证条件，不应误称为所有可能参数的完整必要条件。"
+        ],
+        "pitfall": "“对所有 p”要求根数有保证；注意不同实根与重根、以及原题选项未包含的边界。"
+      },
+      "en": {
+        "steps": [
+          "Let $h=f-g=f+p(x-q)^2(x-r)^2$. It is a monic quintic and has at most five distinct real roots.",
+          "Under B, $0<q<1<r<2$. For every $p>0$, $h(0),h(1),h(2)>0$ while $h(q),h(r)<0$, and $h(x)\\to-\\infty$ as $x\\to-\\infty$.",
+          "Continuity gives a root in each of five disjoint intervals: $(-\\infty,0),(0,q),(q,1),(1,r),(r,2)$, reaching the quintic degree bound. This holds for every $p>0$, so choose B among the listed options.",
+          "Boundary note: the official solution also observes that $0<q<1,r=2$ guarantees five roots, but is not included in the listed options. B is the guarantee among the choices, not a complete necessary characterisation of every parameter pair."
+        ],
+        "pitfall": "A guarantee for all p is required. Distinguish distinct roots from multiplicities and note the omitted boundary case."
+      }
+    },
+    "source": {
+      "kind": "official-public",
+      "title": {
+        "zh": "TMUA 2022 Paper 1 · 官方原卷",
+        "en": "TMUA 2022 Paper 1 · official archive"
+      },
+      "url": "https://uat-wp.s3.eu-west-2.amazonaws.com/wp-content/uploads/2024/05/07141241/TMUA-2022-paper-1.pdf",
+      "originalNumber": "18",
+      "year": 2022,
+      "rightsNote": "Original papers and worked solutions: Cambridge University Press & Assessment / Cambridge Assessment; public archive provided by UAT-UK. No affiliation or endorsement."
+    }
+  },
+  {
+    "id": "ARCHIVE-TMUA-2022-P1-Q19",
+    "exam": "TMUA",
+    "moduleId": "p1",
+    "format": "latex",
+    "topic": {
+      "id": "probability",
+      "name": {
+        "zh": "概率",
+        "en": "Probability"
+      }
+    },
+    "subtopic": {
+      "id": "circle-centre-probability",
+      "name": {
+        "zh": "随机圆心与相交概率",
+        "en": "Random centres & circle-intersection probability"
+      }
+    },
+    "prompt": "Circle $C_1$ is defined as $x^2+y^2=25$.\n\nA second circle $C_2$ has radius $4$ and centre $(a,b)$ where $-2\\leq a\\leq2$ and $-3\\leq b\\leq3$.\n\nIf the centre of $C_2$ is equally likely to be located anywhere within the given range, what is the probability that $C_2$ intersects $C_1$?",
+    "options": [
+      "$\\frac1{25}$",
+      "$\\frac9{25}$",
+      "$\\frac{16}{25}$",
+      "$\\frac{6-\\pi}6$",
+      "$\\frac{16-\\pi}{24}$",
+      "$\\frac{24-\\pi}{24}$"
+    ],
+    "correctIndex": 5,
+    "difficulty": "standard",
+    "explanation": {
+      "zh": {
+        "steps": [
+          "两圆半径为 5 和 4，圆心距 $d$ 的相交条件为 $1\\leq d\\leq9$。允许的圆心矩形内 $d\\leq\\sqrt{13}<9$，所以只需 $d\\geq1$。",
+          "矩形面积为 $4\\cdot6=24$，不能相交的圆心区域为完全位于矩形内的半径 1 圆盘，面积 $\\pi$。概率为 $(24-\\pi)/24$，选 F。相切边界面积为零，不改变概率。"
+        ],
+        "pitfall": "这里的随机对象是圆心位置，应比较允许区域的面积，不是圆周长度。"
+      },
+      "en": {
+        "steps": [
+          "The radii are 5 and 4. Intersection requires $1\\leq d\\leq9$. In the allowed centre rectangle, $d\\leq\\sqrt{13}<9$, leaving only $d\\geq1$.",
+          "The rectangle has area $4\\cdot6=24$. Non-intersecting centres form a unit disc entirely within it, of area $\\pi$. The probability is $(24-\\pi)/24$. Choose F. Tangency boundaries have zero area and do not change the probability."
+        ],
+        "pitfall": "The random variable is the centre position; use region areas, not circumferences."
+      }
+    },
+    "source": {
+      "kind": "official-public",
+      "title": {
+        "zh": "TMUA 2022 Paper 1 · 官方原卷",
+        "en": "TMUA 2022 Paper 1 · official archive"
+      },
+      "url": "https://uat-wp.s3.eu-west-2.amazonaws.com/wp-content/uploads/2024/05/07141241/TMUA-2022-paper-1.pdf",
+      "originalNumber": "19",
+      "year": 2022,
+      "rightsNote": "Original papers and worked solutions: Cambridge University Press & Assessment / Cambridge Assessment; public archive provided by UAT-UK. No affiliation or endorsement."
+    }
+  },
+  {
+    "id": "ARCHIVE-TMUA-2022-P1-Q20",
+    "exam": "TMUA",
+    "moduleId": "p1",
+    "format": "latex",
+    "topic": {
+      "id": "functions",
+      "name": {
+        "zh": "函数",
+        "en": "Functions"
+      }
+    },
+    "subtopic": {
+      "id": "absolute-graph-intersections",
+      "name": {
+        "zh": "绝对值图像的交点数",
+        "en": "Intersection counts for absolute-value graphs"
+      }
+    },
+    "prompt": "$n$ is the number of points of intersection of the graphs $$y=|x^2-a^2|\\quad\\text{and}\\quad y=a^2|x-1|,$$ where $a$ is a real number.\n\nWhat is the smallest value of $n$ that is not possible?",
+    "options": [
+      "$n=1$",
+      "$n=2$",
+      "$n=3$",
+      "$n=4$",
+      "$n=5$"
+    ],
+    "correctIndex": 1,
+    "difficulty": "challenge",
+    "explanation": {
+      "zh": {
+        "steps": [
+          "令 $t=a^2\\geq0$。等式两侧均非负，所以平方是等价变换：$(x^2-t)^2=t^2(x-1)^2$。因式分解得 $x(x-t)(x^2+tx-2t)=0$。",
+          "当 $t=0$，只有 $x=0$，所以 $n=1$。当 $t>0$，二次项有两个不同且异号的实根，且都不为零；还包括 0 和 t。",
+          "重复仅可能发生在正根等于 t；代入二次项得 $2t(t-1)=0$，在 $t>0$ 时仅 $t=1$。故 $t=1$ 有三根，其他正 t 有四根。可能数为 1、3、4，最小不可能的是 2，选 B。"
+        ],
+        "pitfall": "平方前确认两侧非负，才不会增加解；交点应按不同 x 计数，重复根只能计一次。"
+      },
+      "en": {
+        "steps": [
+          "Put $t=a^2\\geq0$. Both sides are nonnegative, so squaring is equivalent: $(x^2-t)^2=t^2(x-1)^2$. Factoring gives $x(x-t)(x^2+tx-2t)=0$.",
+          "For $t=0$, only $x=0$ occurs, so $n=1$. For $t>0$, the quadratic has two distinct nonzero roots of opposite signs, alongside 0 and t.",
+          "The only possible overlap is the positive root equalling t. Substitution gives $2t(t-1)=0$, hence only $t=1$ for $t>0$. That case gives three roots; all other positive t give four. Possible counts are 1,3,4, so 2 is the smallest impossible value. Choose B."
+        ],
+        "pitfall": "Squaring is equivalent because both sides are nonnegative. Count distinct x values, merging repeated roots."
+      }
+    },
+    "source": {
+      "kind": "official-public",
+      "title": {
+        "zh": "TMUA 2022 Paper 1 · 官方原卷",
+        "en": "TMUA 2022 Paper 1 · official archive"
+      },
+      "url": "https://uat-wp.s3.eu-west-2.amazonaws.com/wp-content/uploads/2024/05/07141241/TMUA-2022-paper-1.pdf",
+      "originalNumber": "20",
+      "year": 2022,
+      "rightsNote": "Original papers and worked solutions: Cambridge University Press & Assessment / Cambridge Assessment; public archive provided by UAT-UK. No affiliation or endorsement."
+    }
+  }
+]
