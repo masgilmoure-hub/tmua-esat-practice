@@ -16,6 +16,10 @@ function safeSourceUrl(value: unknown): boolean {
 }
 
 export function validQuestion(value: unknown): value is Question {
+  if (obj(value) && ((value.format !== undefined && value.format !== 'latex')
+    || (value.diagram !== undefined && (!obj(value.diagram) || typeof value.diagram.path !== 'string'
+      || !/^question-images\/[A-Za-z0-9_-]+\.png$/.test(value.diagram.path)
+      || typeof value.diagram.alt !== 'string' || !value.diagram.alt.trim())))) return false;
   if (!obj(value) || !identifier(value.id)
     || typeof value.exam !== 'string' || !['TMUA', 'ESAT'].includes(value.exam) || typeof value.moduleId !== 'string' || !modules.includes(value.moduleId)
     || ((['p1', 'p2'].includes(String(value.moduleId))) !== (value.exam === 'TMUA'))

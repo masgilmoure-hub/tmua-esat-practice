@@ -35,9 +35,9 @@ test('year selection, original PDF links, two 75-minute papers, reload, marking 
   await start(page);
   await expect(page.getByRole('timer')).toContainText('75:00');
   await expect(page.locator('.question-number')).toHaveCount(20);
-  await expect(page.getByRole('radio')).toHaveCount(8);
-  await expect(page.locator('.answer-prompt')).toContainText('Read question 1 in the official TMUA 2023 Paper 1');
-  await expect(page.getByRole('link', { name: '打开原卷 · 第 1 题', exact: true })).toHaveAttribute('target', '_blank');
+  await expect(page.getByRole('radio')).toHaveCount(7);
+  await expect(page.locator('.answer-prompt')).toContainText('Given that');
+  await expect(page.locator('.answer-prompt .katex')).not.toHaveCount(0);
   await page.getByRole('radio').nth(5).check(); // Official key: 2023 Paper 1 question 1 = F.
   await page.getByRole('button', { name: '标记待检查', exact: true }).click();
   await page.clock.fastForward(5000);
@@ -59,10 +59,12 @@ test('year selection, original PDF links, two 75-minute papers, reload, marking 
   await expect(page.locator('.result-stats > div').nth(2)).toContainText('00:05');
   await expect(page.locator('.result-stats > div').nth(3)).toContainText('38');
   await expect(page.locator('.section-results tbody tr')).toHaveCount(2);
-  await expect(page.getByLabel('解析语言', { exact: true })).toHaveCount(0);
-  await expect(page.getByRole('heading', { name: '知识点表现', exact: true })).toHaveCount(0);
+  await expect(page.getByLabel('解析语言', { exact: true })).toBeVisible();
+  await expect(page.getByRole('heading', { name: '知识点表现', exact: true })).toBeVisible();
+  await expect(page.locator('.performance-panel')).toContainText('仅统计已标注的文字题');
   await expect(page.locator('.linked-review').first()).toContainText('尚未提供本题的双语解析');
-  await expect(page.getByRole('link', { name: '官方英文详解', exact: true }).first()).toHaveAttribute('href', /tmua-2023-p1-worked\.pdf$/);
+  await expect(page.getByLabel('第 1 题解析', { exact: true })).toContainText('不是官方译文');
+  await expect(page.getByRole('link', { name: '官方英文详解', exact: true }).first()).toHaveAttribute('href', /tmua-2023-p2-worked\.pdf$/);
   await page.reload();
   await page.getByRole('navigation').getByRole('button', { name: '练习记录', exact: true }).click();
   await expect(page.locator('.records-table')).toContainText('官方历年原卷练习');

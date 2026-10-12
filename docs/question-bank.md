@@ -14,7 +14,9 @@ npm run validate:bank -- examples/local-import-demo.json
 | `exam` | `TMUA` / `ESAT` |
 | `moduleId` | `p1`, `p2`, `m1`, `m2`, `biology`, `chemistry`, `physics` |
 | `topic` / `subtopic` | 稳定 ID 与 `zh`、`en` 标签；建议另建官方考纲代码映射 |
-| `prompt` / `options` | 始终英文；纯文本，支持 Unicode 数学符号，当前不执行 HTML |
+| `prompt` / `options` | 始终英文；默认纯文本。`format: "latex"` 时识别 `$...$` 行内与 `$$...$$` 展示公式 |
+| `format` | 可选且仅接受 `latex`；KaTeX 禁用可信 HTML / 外链命令，解析失败显示原公式 |
+| `diagram` | 可选 `{ path, alt }`；path 仅接受 `question-images/文件名.png`，alt 为非空英文图像描述；文件须随构建提供，JSON 不上传图像 |
 | `difficulty` | 可选 `foundation` / `standard` / `challenge`；缺省为未标注。教学估计，非官方难度 |
 | `correctIndex` | 从 0 开始；A = 0，B = 1 |
 | `explanation` | `zh`、`en` 分别含步骤数组与易错点，步骤数对应 |
@@ -39,7 +41,7 @@ npm run validate:bank -- examples/local-import-demo.json
 
 **导入只更新当前浏览器，不会改变 GitHub、Sites 或其他学生的题库；导出不包含学生成绩。** 想让所有学生得到相同题库，需将审核后的数据纳入项目并重新发布，或后续开发服务端教师题库。清空练习记录会保留导入题；移除导入题会保留内置示例、未完成练习和历史记录。
 
-题库、答题、结果和错题页面按每题来源展示。`official-public` 是文件的来源声明，不是工具对官方身份的认证，必须保留原始 URL 并由教师核实。不要把原创示例改标官方。本版模考继续只使用内置原创示例，导入题不会扩大模考题量；不足完整题数时保持缩短版示例说明。
+题库、答题、结果和错题页面按每题来源展示。`official-public` 是文件的来源声明，不是工具对官方身份的认证，必须保留原始 URL 并由教师核实。不要把原创示例改标官方。“示例模考”仍只使用内置原创示例，导入题不会扩大它的题量。“官方历年卷”的 2023 Paper 1 使用内置的 20 道文字题、完整 75 分钟；其他卷仍使用 PDF 答题卡。
 
 结果保存完整题目快照，历史题干、答案和解析不随题库移除而丢失。错题本按最近一次提交更新，已移除题目使用最近的历史快照继续重练，答对后移出。旧 v1 记录未包含难度时可继续读取并归为未标注。
 

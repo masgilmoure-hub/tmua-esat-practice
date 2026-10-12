@@ -1,3 +1,4 @@
+import { MathText } from '../components/QuestionContent';
 import { useMemo, useState } from 'react';
 import { ArrowRight, ChevronLeft, ChevronRight, RotateCcw } from 'lucide-react';
 import { useI18n } from '../i18n';
@@ -8,7 +9,7 @@ import { filterQuestions, latestOutcomes, sampleQuestions } from '../domain';
 import type { Bilingual, Filters, Question, Result } from '../types';
 import { DemoNotice, Notice, PageHeading, PrivacyNote, RulesCard } from '../components/Common';
 
-export const initialFilters = (): Filters => ({ exam: 'TMUA', moduleId: 'all', topic: 'all', subtopic: 'all', source: 'all', status: 'all', difficulty: 'all' });
+export const initialFilters = (): Filters => ({ exam: 'TMUA', moduleId: 'all', topic: 'all', subtopic: 'all', source: 'all', status: 'all', difficulty: 'all', year: 'all', delivery: 'all' });
 function FilterRow({ label, choices, value, onChange }: { label: string; choices: { id: string; label: string }[]; value: string; onChange: (id: string) => void }) {
   return <fieldset className="filter-row"><legend>{label}</legend><div className="filter-choices">{choices.map(choice => <button key={choice.id} type="button" className={`filter-chip ${choice.id === value ? 'selected' : ''}`} aria-pressed={value === choice.id} onClick={() => onChange(choice.id)}>{choice.label}</button>)}</div></fieldset>;
 }
@@ -22,7 +23,8 @@ export function QuestionBank({ bank, filters, onFilters, results, onPractice, on
   const questions = bank.questions;
   const matched = useMemo(() => filterQuestions(questions, filters, results), [questions, filters, results]);
   const outcomes = latestOutcomes(results);
-  const base = questions.filter(q => q.exam === filters.exam && (filters.moduleId === 'all' || q.moduleId === filters.moduleId));
+  const base = questions.filter(q => q.exam === filters.exam && (filters.moduleId === 'all' || q.moduleId === filters.moduleId) && (!filters.year || filters.year === 'all' || String(q.source.year) === filters.year) && (!filters.delivery || filters.delivery === 'all' || (filters.delivery === 'pdf' ? !!q.external : !q.external)));
+  const years = [...new Set(questions.filter(q => q.exam === filters.exam && q.source.year !== null).map(q => q.source.year!))].sort((a,b) => b-a);
   const topics = new Map<string, Bilingual>(base.map(q => [q.topic.id, q.topic.name]));
   const subtopics = new Map<string, Bilingual>(base.filter(q => filters.topic === 'all' || q.topic.id === filters.topic).map(q => [q.subtopic.id, q.subtopic.name]));
   const all = { id: 'all', label: t('全部', 'All') };
@@ -34,7 +36,7 @@ export function QuestionBank({ bank, filters, onFilters, results, onPractice, on
     <PageHeading title={trainingPage ? t('有目标地练习，逐步突破。', 'Focused practice. Steady progress.') : t('把练习，做得更有方向。', 'Give your practice a clear direction.')} subtitle={t('按知识点找到题目，从每一次练习中看见进步。', 'Find questions by topic and learn from every attempt.')} />
     <a href="#training-settings" className="button outline mobile-training-link">{t('设置专项训练', 'Set up practice')}<ArrowRight size={16} /></a>
     {questions.every(q => q.source.kind === 'original-demo') ? <DemoNotice /> : <Notice>{t('题目按文件声明的来源展示。导入材料仅保存在当前浏览器，专项训练不代表完整官方模考。', 'Sources reflect file declarations. Imports are stored in this browser; focused practice is not a full official mock.')}</Notice>}
-    <div className="official-entry"><div><strong>{t('想练官方历年真题？', 'Ready for official past papers?')}</strong><p className="small muted">{t('TMUA 2016–2023 两卷原卷 · 320 题答题卡 · 原题在官方 PDF', 'TMUA 2016–2023 · answer sheets for 320 questions · originals in official PDFs')}</p></div><button className="button outline compact" onClick={onArchive}>{t('打开官方历年卷', 'Browse past papers')}<ArrowRight size={16} /></button></div>
+    <div className="official-entry"><div><strong>{t('想练官方历年真题？', 'Ready for official past papers?')}</strong><p className="small muted">{t('TMUA 2016–2023 · 2023 Paper 1 的 20 题可直接作答；其余 300 题使用原卷阅读器', 'TMUA 2016–2023 · 20 questions from 2023 Paper 1 ready for direct answers; 300 use the paper reader')}</p></div><button className="button outline compact" onClick={onArchive}>{t('打开官方历年卷', 'Browse past papers')}<ArrowRight size={16} /></button></div>
     <BankManager bank={bank} />
     <div className="two-columns bank-layout">
       <section className="panel bank-panel" aria-label={t('题库筛选和题目', 'Question filters and list')}>
@@ -44,6 +46,8 @@ export function QuestionBank({ bank, filters, onFilters, results, onPractice, on
           <FilterRow label={t('知识点', 'Topic')} value={filters.topic} choices={[all, ...[...topics].map(([id, name]) => ({ id, label: name[lang] }))]} onChange={id => change({ topic: id, subtopic: 'all' })} />
           <FilterRow label={t('细分考点', 'Subtopic')} value={filters.subtopic} choices={[all, ...[...subtopics].map(([id, name]) => ({ id, label: name[lang] }))]} onChange={id => change({ subtopic: id })} />
           <FilterRow label={t('来源', 'Source')} value={filters.source} choices={[all, { id: 'original-demo', label: t('原创示例', 'Original demo') }, { id: 'official-public', label: questions.some(q => q.source.kind === 'official-public') ? t('官方公开材料', 'Official public material') : t('官方公开材料（待导入）', 'Official public material (not imported)') }]} onChange={id => change({ source: id })} />
+          <FilterRow label={t('年份', 'Year')} value={filters.year ?? 'all'} choices={[all, ...years.map(year => ({ id: String(year), label: String(year) }))]} onChange={id => change({ year: id, topic: 'all', subtopic: 'all' })} />
+          <FilterRow label={t('作答方式', 'Question format')} value={filters.delivery ?? 'all'} choices={[all, { id: 'native', label: t('文字题 · 直接作答', 'Text questions · direct answers') }, { id: 'pdf', label: t('PDF 原卷答题卡', 'PDF answer sheets') }]} onChange={id => change({ delivery: id as Filters['delivery'], topic: 'all', subtopic: 'all' })} />
           <FilterRow label={t('难度', 'Difficulty')} value={filters.difficulty} choices={[all, ...Object.entries(DIFFICULTIES).map(([id, name]) => ({ id, label: name[lang] }))]} onChange={id => change({ difficulty: id as Filters['difficulty'] })} />
           <FilterRow label={t('做题状态', 'Attempt status')} value={filters.status} choices={[all, { id: 'new', label: t('未做', 'Unattempted') }, { id: 'done', label: t('已做', 'Attempted') }, { id: 'wrong', label: t('错题', 'Mistakes') }]} onChange={id => change({ status: id as Filters['status'] })} />
         </div>
@@ -52,7 +56,7 @@ export function QuestionBank({ bank, filters, onFilters, results, onPractice, on
         {matched.length ? <>
           <div className="question-table-wrap"><table className="question-table"><thead><tr><th>{t('题目 / 考点', 'Question / topic')}</th><th>{t('试卷 / 科目', 'Paper / subject')}</th><th>{t('状态', 'Status')}</th><th><span className="sr-only">{t('操作', 'Action')}</span></th></tr></thead><tbody>
             {matched.slice(actualPage * 6, actualPage * 6 + 6).map(q => <tr key={q.id}>
-              <td><div className="question-id">{q.source.kind === 'original-demo' ? 'DEMO' : 'PUBLIC MATERIAL'} · {q.id} · {DIFFICULTIES[q.difficulty ?? 'unrated'][lang]}</div><p lang="en" className="question-preview">{q.prompt}</p><div className="topic-label">{q.topic.name[lang]} / {q.subtopic.name[lang]}</div><div className="small muted question-provenance">{q.source.title[lang]} · {q.source.originalNumber}{q.source.year ? ` · ${q.source.year}` : ''}</div></td>
+              <td><div className="question-id">{q.source.kind === 'original-demo' ? 'DEMO' : 'PUBLIC MATERIAL'} · {q.id} · {DIFFICULTIES[q.difficulty ?? 'unrated'][lang]}</div><div lang="en" className="question-preview"><MathText text={q.prompt} format={q.format} /></div><div className="topic-label">{q.topic.name[lang]} / {q.subtopic.name[lang]}</div><div className="small muted question-provenance">{q.source.title[lang]} · {q.source.originalNumber}{q.source.year ? ` · ${q.source.year}` : ''}</div></td>
               <td className="module-cell">{q.moduleId === 'p1' ? 'Paper 1' : q.moduleId === 'p2' ? 'Paper 2' : MODULES.find(m => m.id === q.moduleId)?.name[lang]}</td>
               <td><span className={`status ${outcomes[q.id] === 'correct' ? 'correct' : outcomes[q.id] ? 'wrong' : ''}`}>{outcomes[q.id] === undefined ? t('未做', 'New') : outcomes[q.id] === 'correct' ? t('正确', 'Correct') : outcomes[q.id] === 'unanswered' ? t('未答', 'Skipped') : t('错题', 'Wrong')}</span></td>
               <td><button className="button outline compact" onClick={() => onPractice([q], null)} aria-label={t(`练习 ${q.id}`, `Practice ${q.id}`)}>{t('练习', 'Practice')}</button></td>

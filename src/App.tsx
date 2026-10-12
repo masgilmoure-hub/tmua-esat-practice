@@ -64,7 +64,7 @@ function PracticeApp({ store }: { store: ReturnType<typeof usePracticeStore> }) 
   const storageMessage = issue === 'unavailable' ? t('浏览器存储不可用或已满。当前练习仅保留在页面内，请勿刷新。', 'Browser storage is unavailable or full. This attempt is held in memory only; do not reload.') : t('本地记录格式无法读取，原数据未覆盖。当前练习仅保留在页面内；可在“练习记录”中明确清空后恢复保存。', 'Local records could not be read and were not overwritten. New attempts are held in memory; explicitly clear local data in Records to restore saving.');
   return <>
     <a className="skip-link" href="#main">{t('跳到主要内容', 'Skip to main content')}</a>
-    <Header page={page} sessionMode={state.active?.mode} linkedSession={state.active?.questions.some(q => !!q.external)} onNavigate={setPage} />
+    <Header page={page} sessionMode={state.active?.mode} linkedSession={state.active?.questions.some(q => !!q.external) || (state.active?.mode === 'mock' && state.active.questions.every(q => q.source.kind === 'official-public'))} onNavigate={setPage} />
     <main id="main" className="main-container">
       {issue ? <Notice tone="error">{storageMessage}</Notice> : null}
       {state.active && page !== 'session' ? <div className="resume-banner"><div><strong>{t('有一份未完成的练习', 'You have an unfinished set')}</strong><p>{t('答案已保留；限时练习仍在计时。', 'Your answers are retained; timed sets keep counting down.')}</p></div><button className="button outline compact" onClick={() => setPage('session')}>{t('继续练习', 'Resume')}<ArrowRight size={16} /></button></div> : null}

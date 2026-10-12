@@ -16,6 +16,8 @@ export function filterQuestions(questions: Question[], filters: Filters, results
     && (filters.topic === 'all' || q.topic.id === filters.topic)
     && (filters.subtopic === 'all' || q.subtopic.id === filters.subtopic)
     && (filters.source === 'all' || q.source.kind === filters.source)
+    && (!filters.year || filters.year === 'all' || String(q.source.year) === filters.year)
+    && (!filters.delivery || filters.delivery === 'all' || (filters.delivery === 'pdf' ? !!q.external : !q.external))
     && (filters.difficulty === 'all' || (q.difficulty ?? 'unrated') === filters.difficulty)
     && (filters.status === 'all'
       || (filters.status === 'new' && outcomes[q.id] === undefined)

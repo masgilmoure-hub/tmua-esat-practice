@@ -468,3 +468,20 @@ input[type=checkbox], input[type=radio] { accent-color: var(--blue); }
   .dialog-content { font-size: 14px; }
 }
 @media (prefers-reduced-motion: reduce) { *, *::before, *::after { transition: none !important; scroll-behavior: auto !important; } }
+
+/* Real paper content: formulas use bundled KaTeX fonts; diagrams preserve source labels. */
+.answer-prompt, .review-prompt { white-space: pre-wrap; line-height: 1.8; }
+.math-display { display: block; max-width: 100%; overflow-x: auto; margin: .8rem 0; }
+.math-display .katex-display { margin: .3rem 0; }
+.math-inline { display: inline; }
+.answer-option > span:last-child { min-width: 0; overflow-wrap: anywhere; }
+.question-diagram { margin: 1rem 0 1.5rem; text-align: center; }
+.question-diagram img { display: block; max-width: 100%; height: auto; margin: auto; max-height: 360px; object-fit: contain; }
+.question-diagram figcaption { color: var(--muted); font-size: .75rem; margin-top: .5rem; }
+.question-preview .math-display { margin: .2rem 0; font-size: .9em; }
+.explanation-steps .katex { font-size: 1.05em; }
+.math-error { color: #9d2121; }
+@media(max-width: 600px) { .answer-prompt .katex { font-size: 1.05em; } .answer-prompt { font-size: 1rem; } }
+.answering-layout { align-items: start; }
+.answering-layout .navigator-panel { position: sticky; top: 1rem; }
+@media(max-width: 900px) { .answering-layout .navigator-panel { position: static; } }

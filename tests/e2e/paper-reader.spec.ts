@@ -1,6 +1,6 @@
 import { test, expect, type Page } from '@playwright/test';
 const errors = new WeakMap<Page, string[]>();
-async function startPaper(page: Page, year = '2023') {
+async function startPaper(page: Page, year = '2022') {
   await page.getByRole('navigation').getByRole('button', { name: '官方历年卷', exact: true }).click();
   await page.getByLabel('原卷年份', { exact: true }).selectOption(year);
   await page.getByLabel('练习试卷', { exact: true }).selectOption('p1');
@@ -39,7 +39,7 @@ test('question navigation, uploaded PDF persistence, manual page mapping, remova
   await expect(page.getByRole('spinbutton', { name: 'PDF 页码', exact: true })).toHaveValue('3');
   await page.getByRole('button', { name: '第 20 题，未答', exact: true }).click();
   await expect(page.getByRole('spinbutton', { name: 'PDF 页码', exact: true })).toHaveValue('22');
-  await page.getByLabel('上传本地原卷 PDF（最大 20 MB）', { exact: true }).setInputFiles('public/papers/tmua-2023-p1-paper.pdf');
+  await page.getByLabel('上传本地原卷 PDF（最大 20 MB）', { exact: true }).setInputFiles('public/papers/tmua-2022-p1-paper.pdf');
   await ready(page);
   await page.getByRole('spinbutton', { name: 'PDF 页码', exact: true }).fill('21');
   await page.getByRole('button', { name: '将当前页设为本题位置', exact: true }).click();
@@ -68,9 +68,10 @@ test('invalid uploads preserve the existing paper and page controls remain reada
   await page.screenshot({ path: '/tmp/tmua-reader-mobile.png', fullPage: true });
 });
 
-test('all 16 uploaded original papers render their first and last question pages', async ({ page }) => {
+test('all 15 remaining PDF answer-sheet papers render their first and last question pages', async ({ page }) => {
   test.setTimeout(120_000);
   for (let year = 2016; year <= 2023; year++) for (const paper of ['p1', 'p2']) {
+    if (year === 2023 && paper === 'p1') continue;
     await page.getByRole('navigation').getByRole('button', { name: '官方历年卷', exact: true }).click();
     await page.getByLabel('原卷年份', { exact: true }).selectOption(String(year));
     await page.getByLabel('练习试卷', { exact: true }).selectOption(paper);
@@ -99,7 +100,7 @@ test('blocked PDF storage still permits the bundled paper and reports unsaved up
   await page.reload();
   await startPaper(page);
   await expect(page.locator('.paper-reader').getByRole('alert')).toContainText('原数据已保留');
-  await page.getByLabel('上传本地原卷 PDF（最大 20 MB）', { exact: true }).setInputFiles('public/papers/tmua-2023-p1-paper.pdf');
+  await page.getByLabel('上传本地原卷 PDF（最大 20 MB）', { exact: true }).setInputFiles('public/papers/tmua-2022-p1-paper.pdf');
   await ready(page);
   await expect(page.locator('.paper-reader').getByRole('alert')).toContainText('PDF 未能保存');
 });

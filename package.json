@@ -17,6 +17,7 @@
     "preview:standalone": "npm run build && node scripts/build-preview.mjs"
   },
   "dependencies": {
+    "katex": "0.16.38",
     "lucide-react": "^0.468.0",
     "pdfjs-dist": "6.4.299",
     "react": "^19.2.0",
@@ -24,6 +25,7 @@
   },
   "devDependencies": {
     "@playwright/test": "^1.56.0",
+    "@types/katex": "^0.16.8",
     "@types/node": "^24.0.0",
     "@types/react": "^19.2.0",
     "@types/react-dom": "^19.2.0",
