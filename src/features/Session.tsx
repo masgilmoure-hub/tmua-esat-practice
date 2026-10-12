@@ -29,6 +29,7 @@ export function Session({ session, onAnswer, onFlag, onNavigate, onSubmit, onNex
   const answered = questions.filter(item => session.answers[item.id] !== undefined).length;
   const flagged = questions.filter(item => session.flags.includes(item.id)).length;
   const hasNextSection = session.sectionIndex + 1 < session.sections.length;
+  const isLastQuestion = session.questionIndex + 1 === questions.length;
   const linked = session.questions.some(item => !!item.external);
   const official = session.questions.every(item => item.source.kind === 'official-public');
   const title = linked ? session.mode === 'mock' ? t('TMUA 官方原卷答题卡', 'TMUA official past-paper answer sheet') : t('官方原卷专项训练', 'Past-paper focused practice') : session.mode === 'mock' ? official ? t('TMUA 真题整卷练习', 'TMUA past-paper timed practice') : t(`${session.exam} 示例模考`, `${session.exam} demo mock`) : t('专项训练', 'Focused practice');
@@ -57,7 +58,12 @@ export function Session({ session, onAnswer, onFlag, onNavigate, onSubmit, onNex
           {!q.external ? choices : null}
           <p className="small muted source-inline">{t('来源：', 'Source: ')}{q.source.title[lang]} · {q.source.originalNumber}</p>
         </div>
-        <div className="answer-footer"><button className="button secondary" disabled={session.questionIndex === 0} onClick={() => onNavigate(session.questionIndex - 1)}><ChevronLeft size={18} />{t('上一题', 'Previous')}</button><button className="button primary" disabled={session.questionIndex + 1 === questions.length} onClick={() => onNavigate(session.questionIndex + 1)}>{t('下一题', 'Next')}<ChevronRight size={18} /></button></div>
+        <div className="answer-footer">
+          <button className="button secondary" disabled={session.questionIndex === 0} onClick={() => onNavigate(session.questionIndex - 1)}><ChevronLeft size={18} />{t('上一题', 'Previous')}</button>
+          {isLastQuestion
+            ? <button className="button primary" onClick={() => setConfirm(true)}>{submitText}<Check size={18} /></button>
+            : <button className="button primary" onClick={() => onNavigate(session.questionIndex + 1)}>{t('下一题', 'Next')}<ChevronRight size={18} /></button>}
+        </div>
       </section>
       <aside className="panel navigator-panel"><div className="navigator-heading"><h2>{t('题号导航', 'Questions')}</h2><span className="small muted">{t(`已答 ${answered} / ${questions.length}`, `${answered} / ${questions.length} answered`)}</span></div>
         {q.external ? <div className="paper-answer-controls"><h3>{t('选择答案', 'Choose an answer')}</h3>{choices}</div> : null}
