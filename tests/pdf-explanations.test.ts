@@ -4,7 +4,7 @@ import { mkdtempSync, readFileSync, writeFileSync, rmSync } from 'node:fs';
 import { tmpdir } from 'node:os';
 import { join } from 'node:path';
 import { execFileSync } from 'node:child_process';
-import { PDF_2021_P1, PDF_2021_P2, PDF_2020_P1, PDF_2020_P2, PAST_PAPERS, linkedQuestions, pastPaperPlan } from '../src/data/pastPapers';
+import { PDF_2021_P1, PDF_2021_P2, PDF_2020_P1, PDF_2020_P2, PDF_2019_P1, PDF_2019_P2, PDF_2018_P1, PDF_2018_P2, PAST_PAPERS, linkedQuestions, pastPaperPlan } from '../src/data/pastPapers';
 import { hasBilingualExplanation, hasTopicClassification } from '../src/questionCapabilities';
 import { closeSection, createSession, summary, startNextSection, topicRecommendations, notebookQuestions } from '../src/domain';
 import { emptyState, loadState, validQuestion } from '../src/storage';
@@ -12,8 +12,8 @@ import { validateQuestionBank } from '../src/questionBank';
 import { QUESTIONS } from '../src/data/questions';
 
 describe('reviewed explanations independent of PDF reading', () => {
- it('keeps 80 PDF questions with stable provenance, independent keys and valid bilingual formulas', () => {
-  for (const [year, questions, moduleId, key] of [[2021,PDF_2021_P1,'p1','FFGBFDGACBAECBCBABBD'],[2021,PDF_2021_P2,'p2','DECCBDBCCECBACBEFCFE'],[2020,PDF_2020_P1,'p1','CCBDACADCAEDFECCAAEC'],[2020,PDF_2020_P2,'p2','EFCGAAHEFFGDDADDEGEC']] as const) {
+ it('keeps 160 PDF questions with stable provenance, independent keys and valid bilingual formulas', () => {
+  for (const [year, questions, moduleId, key] of [[2021,PDF_2021_P1,'p1','FFGBFDGACBAECBCBABBD'],[2021,PDF_2021_P2,'p2','DECCBDBCCECBACBEFCFE'],[2020,PDF_2020_P1,'p1','CCBDACADCAEDFECCAAEC'],[2020,PDF_2020_P2,'p2','EFCGAAHEFFGDDADDEGEC'],[2019,PDF_2019_P1,'p1','AAECECFEDFHCBBACCBCE'],[2019,PDF_2019_P2,'p2','ECADBDBEDAAFDBBFDEEB'],[2018,PDF_2018_P1,'p1','DCEGDEADBECFCBEFABDE'],[2018,PDF_2018_P2,'p2','CBFDACBDFBAFFEGFCCCB']] as const) {
    const paper=PAST_PAPERS.find(p=>p.year===year&&p.moduleId===moduleId)!;
    expect(questions.map(q=>String.fromCharCode(65+q.correctIndex)).join('')).toBe(key);
    expect(questions).toHaveLength(20);
@@ -30,8 +30,8 @@ describe('reviewed explanations independent of PDF reading', () => {
   const all=PAST_PAPERS.flatMap(linkedQuestions);
   expect(all).toHaveLength(320);expect(new Set(all.map(q=>q.id)).size).toBe(320);
   expect(all.filter(q=>!q.external)).toHaveLength(80);
-  expect(all.filter(q=>q.external&&hasBilingualExplanation(q))).toHaveLength(80);
-  expect(all.filter(q=>!hasBilingualExplanation(q))).toHaveLength(160);
+  expect(all.filter(q=>q.external&&hasBilingualExplanation(q))).toHaveLength(160);
+  expect(all.filter(q=>!hasBilingualExplanation(q))).toHaveLength(80);
   expect(validateQuestionBank({schemaVersion:1,questions:[...QUESTIONS,...all]}).ok).toBe(true);
  });
  it('supports classified PDF recommendations while preserving and upgrading old notebook snapshots',()=>{

@@ -1,0 +1,1362 @@
+[
+  {
+    "id": "ARCHIVE-TMUA-2019-P2-Q01",
+    "exam": "TMUA",
+    "moduleId": "p2",
+    "format": "latex",
+    "topic": {
+      "id": "algebra",
+      "name": {
+        "zh": "代数",
+        "en": "Algebra"
+      }
+    },
+    "subtopic": {
+      "id": "binomial-prefactor-power-coefficient",
+      "name": {
+        "zh": "带前因子的二项展开系数",
+        "en": "A binomial coefficient with a power prefactor"
+      }
+    },
+    "prompt": "Read question 1 in the official TMUA 2019 Paper 2. Record your answer here.",
+    "options": [
+      "A",
+      "B",
+      "C",
+      "D",
+      "E",
+      "F",
+      "G",
+      "H"
+    ],
+    "correctIndex": 4,
+    "difficulty": "standard",
+    "external": {
+      "kind": "linked-paper",
+      "workedAnswersUrl": "https://uat-wp.s3.eu-west-2.amazonaws.com/wp-content/uploads/2024/05/07140824/TMUA-2019-paper-2-worked-answers.pdf",
+      "answerKeyUrl": "https://uat-wp.s3.eu-west-2.amazonaws.com/wp-content/uploads/2024/05/07140827/TMUA-2019-answer-keys.pdf",
+      "explanationReady": true
+    },
+    "explanation": {
+      "zh": {
+        "steps": [
+          "若在六个括号中选 r 个 $1/x$，其余选 $2x$，乘上 $x^2$ 后幂次为 $2+(6-r)-r=8-2r$。",
+          "要求 $x^4$，故 $r=2$。",
+          "系数为 $\\binom62 2^4=15\\times16=240$，选 E。"
+        ],
+        "pitfall": "前面的 x² 也贡献幂次；系数 2 只来自选取 2x 的四个因子。"
+      },
+      "en": {
+        "steps": [
+          "Choosing r reciprocal terms gives total x power $8-2r$ after the prefactor x².",
+          "For x⁴, r=2.",
+          "The coefficient is $\\binom62 2^4=240$. Choose E."
+        ],
+        "pitfall": "Include the x² prefactor; four selected 2x factors supply the power of 2."
+      }
+    },
+    "source": {
+      "kind": "official-public",
+      "title": {
+        "zh": "TMUA 2019 Paper 2 · 官方原卷",
+        "en": "TMUA 2019 Paper 2 · official archive"
+      },
+      "url": "https://uat-wp.s3.eu-west-2.amazonaws.com/wp-content/uploads/2024/05/07140823/TMUA-2019-paper-2.pdf",
+      "originalNumber": "1",
+      "year": 2019,
+      "rightsNote": "Original papers and worked solutions: Cambridge University Press & Assessment / Cambridge Assessment; public archive provided by UAT-UK. No affiliation or endorsement."
+    }
+  },
+  {
+    "id": "ARCHIVE-TMUA-2019-P2-Q02",
+    "exam": "TMUA",
+    "moduleId": "p2",
+    "format": "latex",
+    "topic": {
+      "id": "algebra",
+      "name": {
+        "zh": "代数",
+        "en": "Algebra"
+      }
+    },
+    "subtopic": {
+      "id": "two-factors-missing-linear-term",
+      "name": {
+        "zh": "无一次项多项式的因式条件",
+        "en": "Factor conditions with a missing linear term"
+      }
+    },
+    "prompt": "Read question 2 in the official TMUA 2019 Paper 2. Record your answer here.",
+    "options": [
+      "A",
+      "B",
+      "C",
+      "D",
+      "E",
+      "F",
+      "G",
+      "H"
+    ],
+    "correctIndex": 2,
+    "difficulty": "foundation",
+    "external": {
+      "kind": "linked-paper",
+      "workedAnswersUrl": "https://uat-wp.s3.eu-west-2.amazonaws.com/wp-content/uploads/2024/05/07140824/TMUA-2019-paper-2-worked-answers.pdf",
+      "answerKeyUrl": "https://uat-wp.s3.eu-west-2.amazonaws.com/wp-content/uploads/2024/05/07140827/TMUA-2019-answer-keys.pdf",
+      "explanationReady": true
+    },
+    "explanation": {
+      "zh": {
+        "steps": [
+          "因式 $x-2$ 与 $2x+1$ 分别给出根 $2,-1/2$，代入 $2x^3+px^2+q$。",
+          "得到 $16+4p+q=0$ 与 $-1+p+4q=0$。解得 $p=-13/3,q=4/3$。",
+          "故 $2p+q=-22/3$，选 C。"
+        ],
+        "pitfall": "2x+1 对应的根是 −1/2，不是 −2；原式没有一次项。"
+      },
+      "en": {
+        "steps": [
+          "The factors $x-2$ and $2x+1$ give roots $2,-1/2$. Substitute both into $2x^3+px^2+q$.",
+          "The equations are $16+4p+q=0$ and $-1+p+4q=0$, giving $p=-13/3,q=4/3$.",
+          "Thus $2p+q=-22/3$. Choose C."
+        ],
+        "pitfall": "The root of 2x+1 is −1/2, not −2, and the polynomial has no linear term."
+      }
+    },
+    "source": {
+      "kind": "official-public",
+      "title": {
+        "zh": "TMUA 2019 Paper 2 · 官方原卷",
+        "en": "TMUA 2019 Paper 2 · official archive"
+      },
+      "url": "https://uat-wp.s3.eu-west-2.amazonaws.com/wp-content/uploads/2024/05/07140823/TMUA-2019-paper-2.pdf",
+      "originalNumber": "2",
+      "year": 2019,
+      "rightsNote": "Original papers and worked solutions: Cambridge University Press & Assessment / Cambridge Assessment; public archive provided by UAT-UK. No affiliation or endorsement."
+    }
+  },
+  {
+    "id": "ARCHIVE-TMUA-2019-P2-Q03",
+    "exam": "TMUA",
+    "moduleId": "p2",
+    "format": "latex",
+    "topic": {
+      "id": "reasoning",
+      "name": {
+        "zh": "逻辑与证明",
+        "en": "Logic & proof"
+      }
+    },
+    "subtopic": {
+      "id": "zero-factor-disjunction-not-individual",
+      "name": {
+        "zh": "零因子析取与单项必然性",
+        "en": "A zero-factor disjunction versus individual necessity"
+      }
+    },
+    "prompt": "Read question 3 in the official TMUA 2019 Paper 2. Record your answer here.",
+    "options": [
+      "A",
+      "B",
+      "C",
+      "D",
+      "E",
+      "F",
+      "G",
+      "H"
+    ],
+    "correctIndex": 0,
+    "difficulty": "foundation",
+    "external": {
+      "kind": "linked-paper",
+      "workedAnswersUrl": "https://uat-wp.s3.eu-west-2.amazonaws.com/wp-content/uploads/2024/05/07140824/TMUA-2019-paper-2-worked-answers.pdf",
+      "answerKeyUrl": "https://uat-wp.s3.eu-west-2.amazonaws.com/wp-content/uploads/2024/05/07140827/TMUA-2019-answer-keys.pdf",
+      "explanationReady": true
+    },
+    "explanation": {
+      "zh": {
+        "steps": [
+          "$ab=ac$ 等价于 $a(b-c)=0$，只保证 $a=0$ 或 $b=c$，不保证其中固定一项。",
+          "$a=1,b=c=2$ 满足条件，却否定 I 和 II；$a=0,b=1,c=2$ 满足条件，却否定 III。",
+          "所以没有一个列出的单项必然成立，选 A。"
+        ],
+        "pitfall": "不能未经检查就约去 a；a 可能为零。"
+      },
+      "en": {
+        "steps": [
+          "The equation gives $a(b-c)=0$, guaranteeing a=0 or b=c, not either individually.",
+          "The case a=1,b=c=2 refutes I and II; a=0,b=1,c=2 refutes III while satisfying the equation.",
+          "None of the individual statements is necessary. Choose A."
+        ],
+        "pitfall": "Do not cancel a without checking whether it is zero."
+      }
+    },
+    "source": {
+      "kind": "official-public",
+      "title": {
+        "zh": "TMUA 2019 Paper 2 · 官方原卷",
+        "en": "TMUA 2019 Paper 2 · official archive"
+      },
+      "url": "https://uat-wp.s3.eu-west-2.amazonaws.com/wp-content/uploads/2024/05/07140823/TMUA-2019-paper-2.pdf",
+      "originalNumber": "3",
+      "year": 2019,
+      "rightsNote": "Original papers and worked solutions: Cambridge University Press & Assessment / Cambridge Assessment; public archive provided by UAT-UK. No affiliation or endorsement."
+    }
+  },
+  {
+    "id": "ARCHIVE-TMUA-2019-P2-Q04",
+    "exam": "TMUA",
+    "moduleId": "p2",
+    "format": "latex",
+    "topic": {
+      "id": "reasoning",
+      "name": {
+        "zh": "逻辑与证明",
+        "en": "Logic & proof"
+      }
+    },
+    "subtopic": {
+      "id": "prime-conjecture-zero-count-domain",
+      "name": {
+        "zh": "质数猜想中零的个数限制",
+        "en": "The zero-count premise in a primality conjecture"
+      }
+    },
+    "prompt": "Read question 4 in the official TMUA 2019 Paper 2. Record your answer here.",
+    "options": [
+      "A",
+      "B",
+      "C",
+      "D",
+      "E",
+      "F",
+      "G",
+      "H"
+    ],
+    "correctIndex": 3,
+    "difficulty": "foundation",
+    "external": {
+      "kind": "linked-paper",
+      "workedAnswersUrl": "https://uat-wp.s3.eu-west-2.amazonaws.com/wp-content/uploads/2024/05/07140824/TMUA-2019-paper-2-worked-answers.pdf",
+      "answerKeyUrl": "https://uat-wp.s3.eu-west-2.amazonaws.com/wp-content/uploads/2024/05/07140827/TMUA-2019-answer-keys.pdf",
+      "explanationReady": true
+    },
+    "explanation": {
+      "zh": {
+        "steps": [
+          "反例要同时满足“两个 1 之间有奇数个 0”与“不是质数”。",
+          "101 有一个 0 但为质数，不是反例；1001 有两个 0，不满足前提。",
+          "10001 有三个 0 且等于 $73\\times137$，满足前提而结论假。只有 III，选 D。"
+        ],
+        "pitfall": "不能把任何合数都当反例，先检查它是否属于猜想限定的数字形式。"
+      },
+      "en": {
+        "steps": [
+          "A counterexample needs an odd number of zeros between the 1s and a composite number.",
+          "101 has one zero but is prime; 1001 has two zeros and fails the premise.",
+          "10001 has three zeros and factors as 73×137. Only III is a counterexample. Choose D."
+        ],
+        "pitfall": "A composite number is not a counterexample unless it satisfies the digit-pattern premise."
+      }
+    },
+    "source": {
+      "kind": "official-public",
+      "title": {
+        "zh": "TMUA 2019 Paper 2 · 官方原卷",
+        "en": "TMUA 2019 Paper 2 · official archive"
+      },
+      "url": "https://uat-wp.s3.eu-west-2.amazonaws.com/wp-content/uploads/2024/05/07140823/TMUA-2019-paper-2.pdf",
+      "originalNumber": "4",
+      "year": 2019,
+      "rightsNote": "Original papers and worked solutions: Cambridge University Press & Assessment / Cambridge Assessment; public archive provided by UAT-UK. No affiliation or endorsement."
+    }
+  },
+  {
+    "id": "ARCHIVE-TMUA-2019-P2-Q05",
+    "exam": "TMUA",
+    "moduleId": "p2",
+    "format": "latex",
+    "topic": {
+      "id": "reasoning",
+      "name": {
+        "zh": "逻辑与证明",
+        "en": "Logic & proof"
+      }
+    },
+    "subtopic": {
+      "id": "factor-divisibility-sufficiency",
+      "name": {
+        "zh": "因数整除的充分性",
+        "en": "Sufficiency of divisibility of one factor"
+      }
+    },
+    "prompt": "Read question 5 in the official TMUA 2019 Paper 2. Record your answer here.",
+    "options": [
+      "A",
+      "B",
+      "C",
+      "D",
+      "E",
+      "F",
+      "G",
+      "H"
+    ],
+    "correctIndex": 1,
+    "difficulty": "foundation",
+    "external": {
+      "kind": "linked-paper",
+      "workedAnswersUrl": "https://uat-wp.s3.eu-west-2.amazonaws.com/wp-content/uploads/2024/05/07140824/TMUA-2019-paper-2-worked-answers.pdf",
+      "answerKeyUrl": "https://uat-wp.s3.eu-west-2.amazonaws.com/wp-content/uploads/2024/05/07140827/TMUA-2019-answer-keys.pdf",
+      "explanationReady": true
+    },
+    "explanation": {
+      "zh": {
+        "steps": [
+          "若 $n\\mid a$，则 $n\\mid ab$；若 $n\\mid b$ 同样成立。因此条件充分。",
+          "它不必要：取 $a=b=2,n=4$，乘积 4 能被 4 整除，但两个因数均不能。",
+          "充分但不必要，选 B。"
+        ],
+        "pitfall": "n 未限定为质数，不能把质数的整除性质用于一般 n。"
+      },
+      "en": {
+        "steps": [
+          "If n divides either factor, it divides the product, so the condition is sufficient.",
+          "It is not necessary: a=b=2,n=4 gives a divisible product but neither factor is divisible by 4.",
+          "Choose B: sufficient but not necessary."
+        ],
+        "pitfall": "The divisor n need not be prime; do not assume prime-divisor properties."
+      }
+    },
+    "source": {
+      "kind": "official-public",
+      "title": {
+        "zh": "TMUA 2019 Paper 2 · 官方原卷",
+        "en": "TMUA 2019 Paper 2 · official archive"
+      },
+      "url": "https://uat-wp.s3.eu-west-2.amazonaws.com/wp-content/uploads/2024/05/07140823/TMUA-2019-paper-2.pdf",
+      "originalNumber": "5",
+      "year": 2019,
+      "rightsNote": "Original papers and worked solutions: Cambridge University Press & Assessment / Cambridge Assessment; public archive provided by UAT-UK. No affiliation or endorsement."
+    }
+  },
+  {
+    "id": "ARCHIVE-TMUA-2019-P2-Q06",
+    "exam": "TMUA",
+    "moduleId": "p2",
+    "format": "latex",
+    "topic": {
+      "id": "reasoning",
+      "name": {
+        "zh": "逻辑与证明",
+        "en": "Logic & proof"
+      }
+    },
+    "subtopic": {
+      "id": "nonzero-product-factor-error",
+      "name": {
+        "zh": "非零乘积的拆因子错误",
+        "en": "Incorrectly splitting a nonzero product"
+      }
+    },
+    "prompt": "Read question 6 in the official TMUA 2019 Paper 2. Record your answer here.",
+    "options": [
+      "A",
+      "B",
+      "C",
+      "D",
+      "E",
+      "F",
+      "G",
+      "H"
+    ],
+    "correctIndex": 3,
+    "difficulty": "standard",
+    "external": {
+      "kind": "linked-paper",
+      "workedAnswersUrl": "https://uat-wp.s3.eu-west-2.amazonaws.com/wp-content/uploads/2024/05/07140824/TMUA-2019-paper-2-worked-answers.pdf",
+      "answerKeyUrl": "https://uat-wp.s3.eu-west-2.amazonaws.com/wp-content/uploads/2024/05/07140827/TMUA-2019-answer-keys.pdf",
+      "explanationReady": true
+    },
+    "explanation": {
+      "zh": {
+        "steps": [
+          "原式有 $\\cos x\\ne0$ 的定义域。I 只是移项；II 展开 $(\\sin x-\\cos x)(\\tan x-1)$ 并利用 $\\cos x\\tan x=\\sin x$，也正确。",
+          "III 从两个因子的乘积等于 −1 推出某个因子等于 −1，这是错误的；只有乘积为零才有零因子结论。",
+          "例如 $2\\times(-1/2)=-1$，两个因子都不是 −1。首错在 III，对应 D，后续增根或定义域问题都更晚。"
+        ],
+        "pitfall": "要找首错，不是从最后一行的 tan 定义域问题倒推。"
+      },
+      "en": {
+        "steps": [
+          "The domain requires cosx≠0. I rearranges terms; II is valid by expansion and cosx·tanx=sinx.",
+          "III falsely infers that one factor equals −1 from their product being −1. The zero-product rule applies only to zero.",
+          "For example 2×(−1/2)=−1 with neither factor −1. The first error is III, option D; later issues occur after it."
+        ],
+        "pitfall": "Identify the first error, not just a later tangent-domain problem."
+      }
+    },
+    "source": {
+      "kind": "official-public",
+      "title": {
+        "zh": "TMUA 2019 Paper 2 · 官方原卷",
+        "en": "TMUA 2019 Paper 2 · official archive"
+      },
+      "url": "https://uat-wp.s3.eu-west-2.amazonaws.com/wp-content/uploads/2024/05/07140823/TMUA-2019-paper-2.pdf",
+      "originalNumber": "6",
+      "year": 2019,
+      "rightsNote": "Original papers and worked solutions: Cambridge University Press & Assessment / Cambridge Assessment; public archive provided by UAT-UK. No affiliation or endorsement."
+    }
+  },
+  {
+    "id": "ARCHIVE-TMUA-2019-P2-Q07",
+    "exam": "TMUA",
+    "moduleId": "p2",
+    "format": "latex",
+    "topic": {
+      "id": "reasoning",
+      "name": {
+        "zh": "逻辑与证明",
+        "en": "Logic & proof"
+      }
+    },
+    "subtopic": {
+      "id": "pythagorean-derived-counterexample",
+      "name": {
+        "zh": "勾股数组改写为反例",
+        "en": "Rewriting a Pythagorean triple as a counterexample"
+      }
+    },
+    "prompt": "Read question 7 in the official TMUA 2019 Paper 2. Record your answer here.",
+    "options": [
+      "A",
+      "B",
+      "C",
+      "D",
+      "E",
+      "F",
+      "G",
+      "H"
+    ],
+    "correctIndex": 1,
+    "difficulty": "standard",
+    "external": {
+      "kind": "linked-paper",
+      "workedAnswersUrl": "https://uat-wp.s3.eu-west-2.amazonaws.com/wp-content/uploads/2024/05/07140824/TMUA-2019-paper-2-worked-answers.pdf",
+      "answerKeyUrl": "https://uat-wp.s3.eu-west-2.amazonaws.com/wp-content/uploads/2024/05/07140827/TMUA-2019-answer-keys.pdf",
+      "explanationReady": true
+    },
+    "explanation": {
+      "zh": {
+        "steps": [
+          "$12^2+16^2=20^2$ 中 $16^2=4^4$，所以可改写为 $4^4+12^2=20^2$。",
+          "取 $(a,b,c)=(4,12,20)$ 就给出 B 所称不存在的正整数解，故 B 被反驳。",
+          "原三元组有公因数 4，不满足 A 的前提；它也不是四次幂三元组，且 16 正是 12 与 20 的均值，所以不能反驳 C 或 D。"
+        ],
+        "pitfall": "可根据给定恒等式重新选择变量，但新变量仍必须是正整数。"
+      },
+      "en": {
+        "steps": [
+          "Since 16²=4⁴, the given identity becomes 4⁴+12²=20².",
+          "The positive integers (4,12,20) refute the no-solution assertion in B.",
+          "The original triple has common divisor 4, so it does not satisfy A’s premise. It is not a fourth-power triple, and 16 is the mean of 12 and 20, so it does not refute C or D."
+        ],
+        "pitfall": "You may reassign variables using the identity, but they must remain positive integers."
+      }
+    },
+    "source": {
+      "kind": "official-public",
+      "title": {
+        "zh": "TMUA 2019 Paper 2 · 官方原卷",
+        "en": "TMUA 2019 Paper 2 · official archive"
+      },
+      "url": "https://uat-wp.s3.eu-west-2.amazonaws.com/wp-content/uploads/2024/05/07140823/TMUA-2019-paper-2.pdf",
+      "originalNumber": "7",
+      "year": 2019,
+      "rightsNote": "Original papers and worked solutions: Cambridge University Press & Assessment / Cambridge Assessment; public archive provided by UAT-UK. No affiliation or endorsement."
+    }
+  },
+  {
+    "id": "ARCHIVE-TMUA-2019-P2-Q08",
+    "exam": "TMUA",
+    "moduleId": "p2",
+    "format": "latex",
+    "topic": {
+      "id": "algebra",
+      "name": {
+        "zh": "代数",
+        "en": "Algebra"
+      }
+    },
+    "subtopic": {
+      "id": "ordered-negatives-product-inequalities",
+      "name": {
+        "zh": "有序负数的乘除不等式",
+        "en": "Multiplication and division of ordered negative numbers"
+      }
+    },
+    "prompt": "Read question 8 in the official TMUA 2019 Paper 2. Record your answer here.",
+    "options": [
+      "A",
+      "B",
+      "C",
+      "D",
+      "E",
+      "F",
+      "G",
+      "H"
+    ],
+    "correctIndex": 4,
+    "difficulty": "foundation",
+    "external": {
+      "kind": "linked-paper",
+      "workedAnswersUrl": "https://uat-wp.s3.eu-west-2.amazonaws.com/wp-content/uploads/2024/05/07140824/TMUA-2019-paper-2-worked-answers.pdf",
+      "answerKeyUrl": "https://uat-wp.s3.eu-west-2.amazonaws.com/wp-content/uploads/2024/05/07140827/TMUA-2019-answer-keys.pdf",
+      "explanationReady": true
+    },
+    "explanation": {
+      "zh": {
+        "steps": [
+          "由 $a<b<c$ 乘以负数 a，得 $a^2>ab>ac$，所以 I 正确。",
+          "b 为负，c+a 也为负，所以 $b(c+a)>0$，II 正确。",
+          "由 c>a 除以负数 b，得 $c/b<a/b$，III 的方向相反。I、II 对应 E。"
+        ],
+        "pitfall": "乘或除负数必须翻转不等号，即使原变量都为负也一样。"
+      },
+      "en": {
+        "steps": [
+          "Multiplying a<b<c by negative a gives a²>ab>ac, proving I.",
+          "Both b and c+a are negative, so b(c+a)>0. II is true.",
+          "Dividing c>a by negative b gives c/b<a/b, the opposite of III. Choose E."
+        ],
+        "pitfall": "Multiplication or division by a negative reverses the inequality."
+      }
+    },
+    "source": {
+      "kind": "official-public",
+      "title": {
+        "zh": "TMUA 2019 Paper 2 · 官方原卷",
+        "en": "TMUA 2019 Paper 2 · official archive"
+      },
+      "url": "https://uat-wp.s3.eu-west-2.amazonaws.com/wp-content/uploads/2024/05/07140823/TMUA-2019-paper-2.pdf",
+      "originalNumber": "8",
+      "year": 2019,
+      "rightsNote": "Original papers and worked solutions: Cambridge University Press & Assessment / Cambridge Assessment; public archive provided by UAT-UK. No affiliation or endorsement."
+    }
+  },
+  {
+    "id": "ARCHIVE-TMUA-2019-P2-Q09",
+    "exam": "TMUA",
+    "moduleId": "p2",
+    "format": "latex",
+    "topic": {
+      "id": "reasoning",
+      "name": {
+        "zh": "逻辑与证明",
+        "en": "Logic & proof"
+      }
+    },
+    "subtopic": {
+      "id": "cyclic-seat-domination",
+      "name": {
+        "zh": "环形座位的邻接覆盖",
+        "en": "Covering adjacent seats on a cycle"
+      }
+    },
+    "prompt": "Read question 9 in the official TMUA 2019 Paper 2. Record your answer here.",
+    "options": [
+      "A",
+      "B",
+      "C",
+      "D",
+      "E",
+      "F",
+      "G",
+      "H"
+    ],
+    "correctIndex": 3,
+    "difficulty": "standard",
+    "external": {
+      "kind": "linked-paper",
+      "workedAnswersUrl": "https://uat-wp.s3.eu-west-2.amazonaws.com/wp-content/uploads/2024/05/07140824/TMUA-2019-paper-2-worked-answers.pdf",
+      "answerKeyUrl": "https://uat-wp.s3.eu-west-2.amazonaws.com/wp-content/uploads/2024/05/07140827/TMUA-2019-answer-keys.pdf",
+      "explanationReady": true
+    },
+    "explanation": {
+      "zh": {
+        "steps": [
+          "每个空位都必须邻接已坐的人，否则下一人可以坐在无邻居的空位。每人至多覆盖自己与两邻座，共 3 个位置。",
+          "若已有 n 人，则 $3n\\geq40$，因此至少 $\\lceil40/3\\rceil=14$ 人。",
+          "坐在编号 $1,4,7,\\ldots,40$ 的 14 个位置可实现；两人之间最多两个空座，环首尾也满足。所以选 D。"
+        ],
+        "pitfall": "圆桌首尾相邻也要检查；证明最小值需同时给下界与可行坐法。"
+      },
+      "en": {
+        "steps": [
+          "Every empty seat must neighbour an occupied one. Each occupant covers at most three positions including their own seat.",
+          "With n occupants, 3n≥40, giving at least 14.",
+          "Fourteen suffice at seats 1,4,7,…,40. Every gap has at most two empty seats, including the wraparound gap. Choose D."
+        ],
+        "pitfall": "Check the wraparound adjacency and provide both a lower bound and a construction."
+      }
+    },
+    "source": {
+      "kind": "official-public",
+      "title": {
+        "zh": "TMUA 2019 Paper 2 · 官方原卷",
+        "en": "TMUA 2019 Paper 2 · official archive"
+      },
+      "url": "https://uat-wp.s3.eu-west-2.amazonaws.com/wp-content/uploads/2024/05/07140823/TMUA-2019-paper-2.pdf",
+      "originalNumber": "9",
+      "year": 2019,
+      "rightsNote": "Original papers and worked solutions: Cambridge University Press & Assessment / Cambridge Assessment; public archive provided by UAT-UK. No affiliation or endorsement."
+    }
+  },
+  {
+    "id": "ARCHIVE-TMUA-2019-P2-Q10",
+    "exam": "TMUA",
+    "moduleId": "p2",
+    "format": "latex",
+    "topic": {
+      "id": "reasoning",
+      "name": {
+        "zh": "逻辑与证明",
+        "en": "Logic & proof"
+      }
+    },
+    "subtopic": {
+      "id": "parallelogram-necessary-insufficient",
+      "name": {
+        "zh": "平行四边形的必要非充分条件",
+        "en": "A necessary but insufficient parallelogram condition"
+      }
+    },
+    "prompt": "Read question 10 in the official TMUA 2019 Paper 2. Record your answer here.",
+    "options": [
+      "A",
+      "B",
+      "C",
+      "D",
+      "E",
+      "F",
+      "G",
+      "H"
+    ],
+    "correctIndex": 0,
+    "difficulty": "standard",
+    "external": {
+      "kind": "linked-paper",
+      "workedAnswersUrl": "https://uat-wp.s3.eu-west-2.amazonaws.com/wp-content/uploads/2024/05/07140824/TMUA-2019-paper-2-worked-answers.pdf",
+      "answerKeyUrl": "https://uat-wp.s3.eu-west-2.amazonaws.com/wp-content/uploads/2024/05/07140827/TMUA-2019-answer-keys.pdf",
+      "explanationReady": true
+    },
+    "explanation": {
+      "zh": {
+        "steps": [
+          "平行四边形必满足 A 的一对对边等长及另一对对边平行，所以 A 必要。",
+          "A 不充分：取 $P=(0,0),Q=(1,-2),R=(3,-2),S=(4,0)$，按逆时针排列，有 $PQ=SR=\\sqrt5$ 且 $PS\\parallel QR$，但另两边不平行。",
+          "B 的同一对对边等长且平行已充分；C 要求菱形，不是所有平行四边形都满足；D 的等长对角线也非必要。选 A。"
+        ],
+        "pitfall": "注意等长与平行是否涉及同一对对边；等腰梯形提供关键反例。"
+      },
+      "en": {
+        "steps": [
+          "A parallelogram satisfies A’s equal opposite sides and the other pair’s parallelism, so A is necessary.",
+          "A is insufficient: the anticlockwise vertices P=(0,0), Q=(1,−2), R=(3,−2), S=(4,0) give equal legs and PS parallel to QR, but not a parallelogram.",
+          "B is sufficient; C requires a rhombus and is not necessary; D’s equal diagonals are not necessary. Choose A."
+        ],
+        "pitfall": "Check whether equality and parallelism involve the same pair of sides."
+      }
+    },
+    "source": {
+      "kind": "official-public",
+      "title": {
+        "zh": "TMUA 2019 Paper 2 · 官方原卷",
+        "en": "TMUA 2019 Paper 2 · official archive"
+      },
+      "url": "https://uat-wp.s3.eu-west-2.amazonaws.com/wp-content/uploads/2024/05/07140823/TMUA-2019-paper-2.pdf",
+      "originalNumber": "10",
+      "year": 2019,
+      "rightsNote": "Original papers and worked solutions: Cambridge University Press & Assessment / Cambridge Assessment; public archive provided by UAT-UK. No affiliation or endorsement."
+    }
+  },
+  {
+    "id": "ARCHIVE-TMUA-2019-P2-Q11",
+    "exam": "TMUA",
+    "moduleId": "p2",
+    "format": "latex",
+    "topic": {
+      "id": "reasoning",
+      "name": {
+        "zh": "逻辑与证明",
+        "en": "Logic & proof"
+      }
+    },
+    "subtopic": {
+      "id": "integer-arithmetic-series-parity",
+      "name": {
+        "zh": "整数等差级数的奇偶反例",
+        "en": "Parity counterexamples in integer arithmetic series"
+      }
+    },
+    "prompt": "Read question 11 in the official TMUA 2019 Paper 2. Record your answer here.",
+    "options": [
+      "A",
+      "B",
+      "C",
+      "D",
+      "E",
+      "F",
+      "G",
+      "H"
+    ],
+    "correctIndex": 0,
+    "difficulty": "foundation",
+    "external": {
+      "kind": "linked-paper",
+      "workedAnswersUrl": "https://uat-wp.s3.eu-west-2.amazonaws.com/wp-content/uploads/2024/05/07140824/TMUA-2019-paper-2-worked-answers.pdf",
+      "answerKeyUrl": "https://uat-wp.s3.eu-west-2.amazonaws.com/wp-content/uploads/2024/05/07140827/TMUA-2019-answer-keys.pdf",
+      "explanationReady": true
+    },
+    "explanation": {
+      "zh": {
+        "steps": [
+          "I 不必要：只有两项的 $9,11$ 为等差数列，和为 20，但首项是奇数。",
+          "$2,3,4,5,6$ 的和同样为 20，项数 5 为奇数，公差 1 也为奇数，分别否定 II 与 III。",
+          "没有一项必真，选 A。"
+        ],
+        "pitfall": "偶数总和不强制项数、首项或公差为偶数，要用满足所有条件的反例。"
+      },
+      "en": {
+        "steps": [
+          "I is not necessary: the arithmetic series 9,11 sums to 20 with an odd first term.",
+          "The series 2,3,4,5,6 also sums to 20, with odd term count and odd difference, refuting II and III.",
+          "None is necessary. Choose A."
+        ],
+        "pitfall": "An even sum does not force evenness of the first term, term count or difference."
+      }
+    },
+    "source": {
+      "kind": "official-public",
+      "title": {
+        "zh": "TMUA 2019 Paper 2 · 官方原卷",
+        "en": "TMUA 2019 Paper 2 · official archive"
+      },
+      "url": "https://uat-wp.s3.eu-west-2.amazonaws.com/wp-content/uploads/2024/05/07140823/TMUA-2019-paper-2.pdf",
+      "originalNumber": "11",
+      "year": 2019,
+      "rightsNote": "Original papers and worked solutions: Cambridge University Press & Assessment / Cambridge Assessment; public archive provided by UAT-UK. No affiliation or endorsement."
+    }
+  },
+  {
+    "id": "ARCHIVE-TMUA-2019-P2-Q12",
+    "exam": "TMUA",
+    "moduleId": "p2",
+    "format": "latex",
+    "topic": {
+      "id": "probability",
+      "name": {
+        "zh": "概率",
+        "en": "Probability"
+      }
+    },
+    "subtopic": {
+      "id": "nested-selection-events",
+      "name": {
+        "zh": "抽样事件的包含与概率排序",
+        "en": "Ordering probabilities of nested selection events"
+      }
+    },
+    "prompt": "Read question 12 in the official TMUA 2019 Paper 2. Record your answer here.",
+    "options": [
+      "A",
+      "B",
+      "C",
+      "D",
+      "E",
+      "F",
+      "G",
+      "H"
+    ],
+    "correctIndex": 5,
+    "difficulty": "standard",
+    "external": {
+      "kind": "linked-paper",
+      "workedAnswersUrl": "https://uat-wp.s3.eu-west-2.amazonaws.com/wp-content/uploads/2024/05/07140824/TMUA-2019-paper-2-worked-answers.pdf",
+      "answerKeyUrl": "https://uat-wp.s3.eu-west-2.amazonaws.com/wp-content/uploads/2024/05/07140827/TMUA-2019-answer-keys.pdf",
+      "explanationReady": true
+    },
+    "explanation": {
+      "zh": {
+        "steps": [
+          "“三人都学数学”包含于“第二人学数学”，后者又包含于“至少一人学数学”，因此 $T\\leq S\\leq R$。",
+          "按原题 most 的通常解读，存在数学学生及少数非数学学生。可以出现第二人学数学而另一人不学，也可以第二人不学但第一人学，因此两个包含都严格。",
+          "所以 $T<S<R$，选 F。不放回随机选择不改变第二个位置的边际概率。"
+        ],
+        "pitfall": "只凭包含关系先得到非严格排序；若全校都学数学三者均为 1。本题 most 按大部分但非全部解读。"
+      },
+      "en": {
+        "steps": [
+          "The all-three event is contained in the second-student event, itself contained in the at-least-one event. Hence T≤S≤R.",
+          "With some mathematics students and some non-mathematics students, there are possible outcomes in each event difference, making both containments strict.",
+          "Thus T<S<R, option F. Sampling without replacement does not change the second position’s marginal probability."
+        ],
+        "pitfall": "Containment first gives weak inequalities. If all students studied mathematics, all probabilities would be 1; most is read here as a majority but not everyone."
+      }
+    },
+    "source": {
+      "kind": "official-public",
+      "title": {
+        "zh": "TMUA 2019 Paper 2 · 官方原卷",
+        "en": "TMUA 2019 Paper 2 · official archive"
+      },
+      "url": "https://uat-wp.s3.eu-west-2.amazonaws.com/wp-content/uploads/2024/05/07140823/TMUA-2019-paper-2.pdf",
+      "originalNumber": "12",
+      "year": 2019,
+      "rightsNote": "Original papers and worked solutions: Cambridge University Press & Assessment / Cambridge Assessment; public archive provided by UAT-UK. No affiliation or endorsement."
+    }
+  },
+  {
+    "id": "ARCHIVE-TMUA-2019-P2-Q13",
+    "exam": "TMUA",
+    "moduleId": "p2",
+    "format": "latex",
+    "topic": {
+      "id": "calculus",
+      "name": {
+        "zh": "微积分",
+        "en": "Calculus"
+      }
+    },
+    "subtopic": {
+      "id": "trapezium-even-complement-error",
+      "name": {
+        "zh": "偶函数镜像与互补积分误差",
+        "en": "Even reflection and complementary quadrature errors"
+      }
+    },
+    "prompt": "Read question 13 in the official TMUA 2019 Paper 2. Record your answer here.",
+    "options": [
+      "A",
+      "B",
+      "C",
+      "D",
+      "E",
+      "F",
+      "G",
+      "H"
+    ],
+    "correctIndex": 3,
+    "difficulty": "standard",
+    "external": {
+      "kind": "linked-paper",
+      "workedAnswersUrl": "https://uat-wp.s3.eu-west-2.amazonaws.com/wp-content/uploads/2024/05/07140824/TMUA-2019-paper-2-worked-answers.pdf",
+      "answerKeyUrl": "https://uat-wp.s3.eu-west-2.amazonaws.com/wp-content/uploads/2024/05/07140827/TMUA-2019-answer-keys.pdf",
+      "explanationReady": true
+    },
+    "explanation": {
+      "zh": {
+        "steps": [
+          "$\\sin^2x$ 是偶函数。把 [a,b] 镜像到 [−b,−a]，准确积分与梯形取点值只是对应反序，误差相同，所以 I 必真。",
+          "$\\cos^2x=1-\\sin^2x$，梯形法对常数 1 精确，补函数的误差是原误差的相反数。",
+          "已知正弦平方积分被高估，余弦平方就被低估，II 也必真。选 D。"
+        ],
+        "pitfall": "镜像后的上下限是 −b 到 −a，不是 −a 到 −b；常数项不引入误差。"
+      },
+      "en": {
+        "steps": [
+          "Since sin²x is even, reflection to [−b,−a] preserves both integral and trapezium values. I is necessary.",
+          "Using cos²x=1−sin²x and exactness for constants reverses the original error.",
+          "The original overestimate becomes an underestimate for cosine squared. Both hold; choose D."
+        ],
+        "pitfall": "The reflected bounds are −b to −a, and constants introduce no quadrature error."
+      }
+    },
+    "source": {
+      "kind": "official-public",
+      "title": {
+        "zh": "TMUA 2019 Paper 2 · 官方原卷",
+        "en": "TMUA 2019 Paper 2 · official archive"
+      },
+      "url": "https://uat-wp.s3.eu-west-2.amazonaws.com/wp-content/uploads/2024/05/07140823/TMUA-2019-paper-2.pdf",
+      "originalNumber": "13",
+      "year": 2019,
+      "rightsNote": "Original papers and worked solutions: Cambridge University Press & Assessment / Cambridge Assessment; public archive provided by UAT-UK. No affiliation or endorsement."
+    }
+  },
+  {
+    "id": "ARCHIVE-TMUA-2019-P2-Q14",
+    "exam": "TMUA",
+    "moduleId": "p2",
+    "format": "latex",
+    "topic": {
+      "id": "reasoning",
+      "name": {
+        "zh": "逻辑与证明",
+        "en": "Logic & proof"
+      }
+    },
+    "subtopic": {
+      "id": "increasing-polynomial-endpoint-conditions",
+      "name": {
+        "zh": "递增多项式的端点必要条件",
+        "en": "Endpoint conditions for an increasing polynomial"
+      }
+    },
+    "prompt": "Read question 14 in the official TMUA 2019 Paper 2. Record your answer here.",
+    "options": [
+      "A",
+      "B",
+      "C",
+      "D",
+      "E",
+      "F",
+      "G",
+      "H"
+    ],
+    "correctIndex": 1,
+    "difficulty": "standard",
+    "external": {
+      "kind": "linked-paper",
+      "workedAnswersUrl": "https://uat-wp.s3.eu-west-2.amazonaws.com/wp-content/uploads/2024/05/07140824/TMUA-2019-paper-2-worked-answers.pdf",
+      "answerKeyUrl": "https://uat-wp.s3.eu-west-2.amazonaws.com/wp-content/uploads/2024/05/07140827/TMUA-2019-answer-keys.pdf",
+      "explanationReady": true
+    },
+    "explanation": {
+      "zh": {
+        "steps": [
+          "在 [a,b] 递增必有 $p(a)\\leq p(b)$，所以 I 必要。",
+          "II 不必要：$p(x)=-x^2$ 在 [−2,−1] 严格递增，但导数从 4 降到 2。",
+          "III 也不必要：$p(x)=x-x^3/3$ 在 [0,1/2] 有正导数，但二阶导数从 0 降到 −1。仅 I，选 B。"
+        ],
+        "pitfall": "函数递增不代表导数或二阶导数也递增；应区分函数值与增长速率。"
+      },
+      "en": {
+        "steps": [
+          "Increasing on [a,b] requires p(a)≤p(b), proving I.",
+          "II fails for p(x)=−x² on [−2,−1]: p increases while its derivative falls from 4 to 2.",
+          "III fails for p(x)=x−x³/3 on [0,1/2], where the first derivative is positive but the second decreases from 0 to −1. Only I is necessary; choose B."
+        ],
+        "pitfall": "An increasing function need not have increasing first or second derivatives."
+      }
+    },
+    "source": {
+      "kind": "official-public",
+      "title": {
+        "zh": "TMUA 2019 Paper 2 · 官方原卷",
+        "en": "TMUA 2019 Paper 2 · official archive"
+      },
+      "url": "https://uat-wp.s3.eu-west-2.amazonaws.com/wp-content/uploads/2024/05/07140823/TMUA-2019-paper-2.pdf",
+      "originalNumber": "14",
+      "year": 2019,
+      "rightsNote": "Original papers and worked solutions: Cambridge University Press & Assessment / Cambridge Assessment; public archive provided by UAT-UK. No affiliation or endorsement."
+    }
+  },
+  {
+    "id": "ARCHIVE-TMUA-2019-P2-Q15",
+    "exam": "TMUA",
+    "moduleId": "p2",
+    "format": "latex",
+    "topic": {
+      "id": "functions",
+      "name": {
+        "zh": "函数",
+        "en": "Functions"
+      }
+    },
+    "subtopic": {
+      "id": "unknown-log-base-linear-system",
+      "name": {
+        "zh": "未知对数底数的线性联立",
+        "en": "A linear system identifying a logarithmic base"
+      }
+    },
+    "prompt": "Read question 15 in the official TMUA 2019 Paper 2. Record your answer here.",
+    "options": [
+      "A",
+      "B",
+      "C",
+      "D",
+      "E",
+      "F",
+      "G",
+      "H"
+    ],
+    "correctIndex": 1,
+    "difficulty": "standard",
+    "external": {
+      "kind": "linked-paper",
+      "workedAnswersUrl": "https://uat-wp.s3.eu-west-2.amazonaws.com/wp-content/uploads/2024/05/07140824/TMUA-2019-paper-2-worked-answers.pdf",
+      "answerKeyUrl": "https://uat-wp.s3.eu-west-2.amazonaws.com/wp-content/uploads/2024/05/07140827/TMUA-2019-answer-keys.pdf",
+      "explanationReady": true
+    },
+    "explanation": {
+      "zh": {
+        "steps": [
+          "设共同底数为 t，令 $u=\\log_ta,v=\\log_tb,w=\\log_tc$。方程为 $u+2v+w=7,2u+v+2w=11,2u+2v+3w=15$。",
+          "两倍第一式减第二式得 $3v=3$，所以 $v=1$；进一步得 $u=2,w=3$。",
+          "$\\log_tb=1$ 等价于 $b=t$，共同底数就是 b，选 B。"
+        ],
+        "pitfall": "底数未知仍可以把三种对数当未知量；对数乘法对应加法而非相乘。"
+      },
+      "en": {
+        "steps": [
+          "With common base t, set u=log_t a, v=log_t b, w=log_t c to obtain the three linear equations.",
+          "Twice the first minus the second gives 3v=3, so v=1; then u=2,w=3.",
+          "Since log_t b=1, b=t. The base is b, option B."
+        ],
+        "pitfall": "Use the three logarithms as unknowns even when the base is unknown."
+      }
+    },
+    "source": {
+      "kind": "official-public",
+      "title": {
+        "zh": "TMUA 2019 Paper 2 · 官方原卷",
+        "en": "TMUA 2019 Paper 2 · official archive"
+      },
+      "url": "https://uat-wp.s3.eu-west-2.amazonaws.com/wp-content/uploads/2024/05/07140823/TMUA-2019-paper-2.pdf",
+      "originalNumber": "15",
+      "year": 2019,
+      "rightsNote": "Original papers and worked solutions: Cambridge University Press & Assessment / Cambridge Assessment; public archive provided by UAT-UK. No affiliation or endorsement."
+    }
+  },
+  {
+    "id": "ARCHIVE-TMUA-2019-P2-Q16",
+    "exam": "TMUA",
+    "moduleId": "p2",
+    "format": "latex",
+    "topic": {
+      "id": "algebra",
+      "name": {
+        "zh": "代数",
+        "en": "Algebra"
+      }
+    },
+    "subtopic": {
+      "id": "quadratic-parameter-discriminant-region",
+      "name": {
+        "zh": "二次式参数的判别式区域",
+        "en": "A discriminant region in parameter space"
+      }
+    },
+    "prompt": "Read question 16 in the official TMUA 2019 Paper 2. Record your answer here.",
+    "options": [
+      "A",
+      "B",
+      "C",
+      "D",
+      "E",
+      "F",
+      "G",
+      "H"
+    ],
+    "correctIndex": 5,
+    "difficulty": "standard",
+    "external": {
+      "kind": "linked-paper",
+      "workedAnswersUrl": "https://uat-wp.s3.eu-west-2.amazonaws.com/wp-content/uploads/2024/05/07140824/TMUA-2019-paper-2-worked-answers.pdf",
+      "answerKeyUrl": "https://uat-wp.s3.eu-west-2.amazonaws.com/wp-content/uploads/2024/05/07140827/TMUA-2019-answer-keys.pdf",
+      "explanationReady": true
+    },
+    "explanation": {
+      "zh": {
+        "steps": [
+          "两不同横轴交点要求 $q^2-4p^2>0$，同时题给 $p>0$。",
+          "因此 $q>2p$ 或 $q<-2p$，是右半平面中直线 q=±2p 外侧的上下两部分，不含边界。",
+          "对应原卷图 F；判别式为零的直线不应划入。"
+        ],
+        "pitfall": "横轴是 p、纵轴是 q；先限制 p>0，再按正确斜率画区域。"
+      },
+      "en": {
+        "steps": [
+          "Two distinct intercepts require q²−4p²>0, together with p>0.",
+          "Thus q>2p or q<−2p, the two outside regions in the right half-plane, excluding boundaries.",
+          "This matches sketch F; the zero-discriminant lines are excluded."
+        ],
+        "pitfall": "The horizontal axis is p and vertical q; enforce p>0 and slopes ±2."
+      }
+    },
+    "source": {
+      "kind": "official-public",
+      "title": {
+        "zh": "TMUA 2019 Paper 2 · 官方原卷",
+        "en": "TMUA 2019 Paper 2 · official archive"
+      },
+      "url": "https://uat-wp.s3.eu-west-2.amazonaws.com/wp-content/uploads/2024/05/07140823/TMUA-2019-paper-2.pdf",
+      "originalNumber": "16",
+      "year": 2019,
+      "rightsNote": "Original papers and worked solutions: Cambridge University Press & Assessment / Cambridge Assessment; public archive provided by UAT-UK. No affiliation or endorsement."
+    }
+  },
+  {
+    "id": "ARCHIVE-TMUA-2019-P2-Q17",
+    "exam": "TMUA",
+    "moduleId": "p2",
+    "format": "latex",
+    "topic": {
+      "id": "reasoning",
+      "name": {
+        "zh": "逻辑与证明",
+        "en": "Logic & proof"
+      }
+    },
+    "subtopic": {
+      "id": "unique-correct-nested-implications",
+      "name": {
+        "zh": "嵌套充分条件中的唯一正确项",
+        "en": "A unique correct option among nested implications"
+      }
+    },
+    "prompt": "Read question 17 in the official TMUA 2019 Paper 2. Record your answer here.",
+    "options": [
+      "A",
+      "B",
+      "C",
+      "D",
+      "E",
+      "F",
+      "G",
+      "H"
+    ],
+    "correctIndex": 3,
+    "difficulty": "standard",
+    "external": {
+      "kind": "linked-paper",
+      "workedAnswersUrl": "https://uat-wp.s3.eu-west-2.amazonaws.com/wp-content/uploads/2024/05/07140824/TMUA-2019-paper-2-worked-answers.pdf",
+      "answerKeyUrl": "https://uat-wp.s3.eu-west-2.amazonaws.com/wp-content/uploads/2024/05/07140827/TMUA-2019-answer-keys.pdf",
+      "explanationReady": true
+    },
+    "explanation": {
+      "zh": {
+        "steps": [
+          "若 A 的充要条件正确，则 B 的充分条件也正确；若 C 正确，则 D 也正确。因此 A、C 都不能是唯一正确项。",
+          "若 B 正确，由 $x>2\\Rightarrow x>1$ 可推出 D 也正确，故 B 也不能唯一。",
+          "只能选 D。相容例子是该语句当且仅当 x>3/2 为真：D 成立，其余三项都不成立。"
+        ],
+        "pitfall": "充分与充要条件不能混读；较强前提 x>2 可继承 x>1 的充分性。"
+      },
+      "en": {
+        "steps": [
+          "If A holds, B holds; if C holds, D holds. Thus neither A nor C can be uniquely correct.",
+          "If B holds, x>2 implies x>1, so D also holds. B cannot be unique either.",
+          "Only D remains. For consistency, a statement true exactly when x>3/2 makes D true and the other options false."
+        ],
+        "pitfall": "Distinguish sufficient from necessary-and-sufficient conditions and use the nesting of thresholds."
+      }
+    },
+    "source": {
+      "kind": "official-public",
+      "title": {
+        "zh": "TMUA 2019 Paper 2 · 官方原卷",
+        "en": "TMUA 2019 Paper 2 · official archive"
+      },
+      "url": "https://uat-wp.s3.eu-west-2.amazonaws.com/wp-content/uploads/2024/05/07140823/TMUA-2019-paper-2.pdf",
+      "originalNumber": "17",
+      "year": 2019,
+      "rightsNote": "Original papers and worked solutions: Cambridge University Press & Assessment / Cambridge Assessment; public archive provided by UAT-UK. No affiliation or endorsement."
+    }
+  },
+  {
+    "id": "ARCHIVE-TMUA-2019-P2-Q18",
+    "exam": "TMUA",
+    "moduleId": "p2",
+    "format": "latex",
+    "topic": {
+      "id": "algebra",
+      "name": {
+        "zh": "代数",
+        "en": "Algebra"
+      }
+    },
+    "subtopic": {
+      "id": "absolute-inequality-global-parameter",
+      "name": {
+        "zh": "绝对值不等式的全局参数",
+        "en": "A parameter in an absolute inequality for all real inputs"
+      }
+    },
+    "prompt": "Read question 18 in the official TMUA 2019 Paper 2. Record your answer here.",
+    "options": [
+      "A",
+      "B",
+      "C",
+      "D",
+      "E",
+      "F",
+      "G",
+      "H"
+    ],
+    "correctIndex": 4,
+    "difficulty": "challenge",
+    "external": {
+      "kind": "linked-paper",
+      "workedAnswersUrl": "https://uat-wp.s3.eu-west-2.amazonaws.com/wp-content/uploads/2024/05/07140824/TMUA-2019-paper-2-worked-answers.pdf",
+      "answerKeyUrl": "https://uat-wp.s3.eu-west-2.amazonaws.com/wp-content/uploads/2024/05/07140827/TMUA-2019-answer-keys.pdf",
+      "explanationReady": true
+    },
+    "explanation": {
+      "zh": {
+        "steps": [
+          "先取 x=2，得到 $2a+1\\leq0$，所以必要条件为 $a\\leq-1/2$。",
+          "证明充分性只需取最大允许 a=−1/2；更小 a 只会减小左边。当 $|x|\\geq2$，左边 $1-|x|/2\\leq0$，不等式自动成立。",
+          "当 $|x|\\leq2$，由三角不等式 $|x-2|\\geq2-|x|\\geq1-|x|/2$，同样成立。因此完整范围 $a\\leq-1/2$，选 E。"
+        ],
+        "pitfall": "代入一个特殊 x 只能得必要条件，还须证明该范围对所有 x 都成立。"
+      },
+      "en": {
+        "steps": [
+          "At x=2, 2a+1≤0, so a≤−1/2 is necessary.",
+          "For sufficiency take the largest allowed a=−1/2; smaller a only reduces the left side. If |x|≥2, that side is nonpositive.",
+          "If |x|≤2, the triangle inequality gives |x−2|≥2−|x|≥1−|x|/2. Thus a≤−1/2 is both necessary and sufficient. Choose E."
+        ],
+        "pitfall": "A special input gives necessity; also prove sufficiency for all inputs."
+      }
+    },
+    "source": {
+      "kind": "official-public",
+      "title": {
+        "zh": "TMUA 2019 Paper 2 · 官方原卷",
+        "en": "TMUA 2019 Paper 2 · official archive"
+      },
+      "url": "https://uat-wp.s3.eu-west-2.amazonaws.com/wp-content/uploads/2024/05/07140823/TMUA-2019-paper-2.pdf",
+      "originalNumber": "18",
+      "year": 2019,
+      "rightsNote": "Original papers and worked solutions: Cambridge University Press & Assessment / Cambridge Assessment; public archive provided by UAT-UK. No affiliation or endorsement."
+    }
+  },
+  {
+    "id": "ARCHIVE-TMUA-2019-P2-Q19",
+    "exam": "TMUA",
+    "moduleId": "p2",
+    "format": "latex",
+    "topic": {
+      "id": "algebra",
+      "name": {
+        "zh": "代数",
+        "en": "Algebra"
+      }
+    },
+    "subtopic": {
+      "id": "radical-perfect-square-sum",
+      "name": {
+        "zh": "根式配方与非负平方根",
+        "en": "Completing squares inside radicals"
+      }
+    },
+    "prompt": "Read question 19 in the official TMUA 2019 Paper 2. Record your answer here.",
+    "options": [
+      "A",
+      "B",
+      "C",
+      "D",
+      "E",
+      "F",
+      "G",
+      "H"
+    ],
+    "correctIndex": 4,
+    "difficulty": "standard",
+    "external": {
+      "kind": "linked-paper",
+      "workedAnswersUrl": "https://uat-wp.s3.eu-west-2.amazonaws.com/wp-content/uploads/2024/05/07140824/TMUA-2019-paper-2-worked-answers.pdf",
+      "answerKeyUrl": "https://uat-wp.s3.eu-west-2.amazonaws.com/wp-content/uploads/2024/05/07140827/TMUA-2019-answer-keys.pdf",
+      "explanationReady": true
+    },
+    "explanation": {
+      "zh": {
+        "steps": [
+          "第一根式内 $8-4\\sqrt2+1=(2\\sqrt2-1)^2$，第二根式内 $9-12\\sqrt2+8=(3-2\\sqrt2)^2$。",
+          "$2\\sqrt2-1>0$ 且 $3-2\\sqrt2>0$，所以非负平方根分别是这两个数。",
+          "相加得到 2，选 E。"
+        ],
+        "pitfall": "√(u²)=|u|，不能无条件直接取 u；先确认两项符号。"
+      },
+      "en": {
+        "steps": [
+          "The radicands are $(2\\sqrt2-1)^2$ and $(3-2\\sqrt2)^2$.",
+          "Both 2√2−1 and 3−2√2 are positive, so they are the nonnegative square roots.",
+          "The sum is 2. Choose E."
+        ],
+        "pitfall": "√(u²)=|u|; check signs before removing the square roots."
+      }
+    },
+    "source": {
+      "kind": "official-public",
+      "title": {
+        "zh": "TMUA 2019 Paper 2 · 官方原卷",
+        "en": "TMUA 2019 Paper 2 · official archive"
+      },
+      "url": "https://uat-wp.s3.eu-west-2.amazonaws.com/wp-content/uploads/2024/05/07140823/TMUA-2019-paper-2.pdf",
+      "originalNumber": "19",
+      "year": 2019,
+      "rightsNote": "Original papers and worked solutions: Cambridge University Press & Assessment / Cambridge Assessment; public archive provided by UAT-UK. No affiliation or endorsement."
+    }
+  },
+  {
+    "id": "ARCHIVE-TMUA-2019-P2-Q20",
+    "exam": "TMUA",
+    "moduleId": "p2",
+    "format": "latex",
+    "topic": {
+      "id": "functions",
+      "name": {
+        "zh": "函数",
+        "en": "Functions"
+      }
+    },
+    "subtopic": {
+      "id": "reflection-translation-order-period",
+      "name": {
+        "zh": "反射平移顺序与周期条件",
+        "en": "Order of reflection and translation as a periodicity condition"
+      }
+    },
+    "prompt": "Read question 20 in the official TMUA 2019 Paper 2. Record your answer here.",
+    "options": [
+      "A",
+      "B",
+      "C",
+      "D",
+      "E",
+      "F",
+      "G",
+      "H"
+    ],
+    "correctIndex": 1,
+    "difficulty": "standard",
+    "external": {
+      "kind": "linked-paper",
+      "workedAnswersUrl": "https://uat-wp.s3.eu-west-2.amazonaws.com/wp-content/uploads/2024/05/07140824/TMUA-2019-paper-2-worked-answers.pdf",
+      "answerKeyUrl": "https://uat-wp.s3.eu-west-2.amazonaws.com/wp-content/uploads/2024/05/07140827/TMUA-2019-answer-keys.pdf",
+      "explanationReady": true
+    },
+    "explanation": {
+      "zh": {
+        "steps": [
+          "先反射再左移 2，得 $g(x)=f(-x-2)$；先左移再反射，得 $h(x)=f(2-x)$。",
+          "令 u=−x−2，则 $2-x=u+4$。两函数处处相同等价于 $f(u)=f(u+4)$ 对所有实数 u 成立。",
+          "该条件既必要又充分，对应 B；不要求最小正周期恰为 4，周期 2 的函数或常数函数也可满足。"
+        ],
+        "pitfall": "平移与反射一般不交换；不要把周期条件误当偶函数条件。"
+      },
+      "en": {
+        "steps": [
+          "Reflecting then shifting left gives g(x)=f(−x−2); reversing the order gives h(x)=f(2−x).",
+          "Set u=−x−2, so 2−x=u+4. Equality is equivalent to f(u)=f(u+4) for every u.",
+          "This necessary-and-sufficient condition is B. It need not be a fundamental period of 4; period-2 and constant functions may satisfy it."
+        ],
+        "pitfall": "Translation and reflection generally do not commute; the condition is periodicity, not evenness."
+      }
+    },
+    "source": {
+      "kind": "official-public",
+      "title": {
+        "zh": "TMUA 2019 Paper 2 · 官方原卷",
+        "en": "TMUA 2019 Paper 2 · official archive"
+      },
+      "url": "https://uat-wp.s3.eu-west-2.amazonaws.com/wp-content/uploads/2024/05/07140823/TMUA-2019-paper-2.pdf",
+      "originalNumber": "20",
+      "year": 2019,
+      "rightsNote": "Original papers and worked solutions: Cambridge University Press & Assessment / Cambridge Assessment; public archive provided by UAT-UK. No affiliation or endorsement."
+    }
+  }
+]

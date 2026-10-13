@@ -1,0 +1,1362 @@
+[
+  {
+    "id": "ARCHIVE-TMUA-2018-P1-Q01",
+    "exam": "TMUA",
+    "moduleId": "p1",
+    "format": "latex",
+    "topic": {
+      "id": "calculus",
+      "name": {
+        "zh": "微积分",
+        "en": "Calculus"
+      }
+    },
+    "subtopic": {
+      "id": "negative-fractional-powers-integral",
+      "name": {
+        "zh": "负分数幂的定积分",
+        "en": "Integrating negative fractional powers"
+      }
+    },
+    "prompt": "Read question 1 in the official TMUA 2018 Paper 1. Record your answer here.",
+    "options": [
+      "A",
+      "B",
+      "C",
+      "D",
+      "E",
+      "F",
+      "G",
+      "H"
+    ],
+    "correctIndex": 3,
+    "difficulty": "foundation",
+    "external": {
+      "kind": "linked-paper",
+      "workedAnswersUrl": "https://uat-wp.s3.eu-west-2.amazonaws.com/wp-content/uploads/2024/05/07125413/TMUA-2018-paper-1-worked-answers.pdf",
+      "answerKeyUrl": "https://uat-wp.s3.eu-west-2.amazonaws.com/wp-content/uploads/2024/05/07125413/TMUA-2018-answer-keys.pdf",
+      "explanationReady": true
+    },
+    "explanation": {
+      "zh": {
+        "steps": [
+          "将被积函数改写为 $3x^{-3/2}-2x^{-1/2}$，在给定正区间内有效。",
+          "原函数为 $-6x^{-1/2}-4x^{1/2}$。",
+          "上限 4 得 −11，下限 1 得 −10，相减为 −1，选 D。"
+        ],
+        "pitfall": "负幂积分仍需除以新指数，且定积分允许负值。"
+      },
+      "en": {
+        "steps": [
+          "Rewrite the integrand as $3x^{-3/2}-2x^{-1/2}$ on the positive interval.",
+          "An antiderivative is $-6x^{-1/2}-4x^{1/2}$.",
+          "The upper and lower values are −11 and −10, giving −1. Choose D."
+        ],
+        "pitfall": "Divide by the new exponent when integrating negative powers; a definite integral can be negative."
+      }
+    },
+    "source": {
+      "kind": "official-public",
+      "title": {
+        "zh": "TMUA 2018 Paper 1 · 官方原卷",
+        "en": "TMUA 2018 Paper 1 · official archive"
+      },
+      "url": "https://uat-wp.s3.eu-west-2.amazonaws.com/wp-content/uploads/2024/05/07125407/TMUA-2018-paper-1.pdf",
+      "originalNumber": "1",
+      "year": 2018,
+      "rightsNote": "Original papers and worked solutions: Cambridge University Press & Assessment / Cambridge Assessment; public archive provided by UAT-UK. No affiliation or endorsement."
+    }
+  },
+  {
+    "id": "ARCHIVE-TMUA-2018-P1-Q02",
+    "exam": "TMUA",
+    "moduleId": "p1",
+    "format": "latex",
+    "topic": {
+      "id": "sequences",
+      "name": {
+        "zh": "数列与级数",
+        "en": "Sequences & series"
+      }
+    },
+    "subtopic": {
+      "id": "equal-arithmetic-prefix-sums",
+      "name": {
+        "zh": "等差数列不同前缀和相等",
+        "en": "Equal sums of different arithmetic prefixes"
+      }
+    },
+    "prompt": "Read question 2 in the official TMUA 2018 Paper 1. Record your answer here.",
+    "options": [
+      "A",
+      "B",
+      "C",
+      "D",
+      "E",
+      "F",
+      "G",
+      "H"
+    ],
+    "correctIndex": 2,
+    "difficulty": "foundation",
+    "external": {
+      "kind": "linked-paper",
+      "workedAnswersUrl": "https://uat-wp.s3.eu-west-2.amazonaws.com/wp-content/uploads/2024/05/07125413/TMUA-2018-paper-1-worked-answers.pdf",
+      "answerKeyUrl": "https://uat-wp.s3.eu-west-2.amazonaws.com/wp-content/uploads/2024/05/07125413/TMUA-2018-answer-keys.pdf",
+      "explanationReady": true
+    },
+    "explanation": {
+      "zh": {
+        "steps": [
+          "前 8 项和等于前 5 项和，意味着第 6、7、8 项之和为零。",
+          "后三项为 $a+5d,a+6d,a+7d$，故 $3a+18d=0$。",
+          "因此 $a=-6d$，选 C。"
+        ],
+        "pitfall": "第六项是 a+5d，不是 a+6d；可以只考虑多出来的三项。"
+      },
+      "en": {
+        "steps": [
+          "Equality of the first eight and first five sums means terms 6,7,8 sum to zero.",
+          "Those terms are a+5d,a+6d,a+7d, so 3a+18d=0.",
+          "Thus a=−6d. Choose C."
+        ],
+        "pitfall": "The sixth term is a+5d; work directly with the three additional terms."
+      }
+    },
+    "source": {
+      "kind": "official-public",
+      "title": {
+        "zh": "TMUA 2018 Paper 1 · 官方原卷",
+        "en": "TMUA 2018 Paper 1 · official archive"
+      },
+      "url": "https://uat-wp.s3.eu-west-2.amazonaws.com/wp-content/uploads/2024/05/07125407/TMUA-2018-paper-1.pdf",
+      "originalNumber": "2",
+      "year": 2018,
+      "rightsNote": "Original papers and worked solutions: Cambridge University Press & Assessment / Cambridge Assessment; public archive provided by UAT-UK. No affiliation or endorsement."
+    }
+  },
+  {
+    "id": "ARCHIVE-TMUA-2018-P1-Q03",
+    "exam": "TMUA",
+    "moduleId": "p1",
+    "format": "latex",
+    "topic": {
+      "id": "geometry",
+      "name": {
+        "zh": "几何",
+        "en": "Geometry"
+      }
+    },
+    "subtopic": {
+      "id": "distance-between-separated-circles",
+      "name": {
+        "zh": "分离圆周之间的最短距离",
+        "en": "Shortest distance between separated circles"
+      }
+    },
+    "prompt": "Read question 3 in the official TMUA 2018 Paper 1. Record your answer here.",
+    "options": [
+      "A",
+      "B",
+      "C",
+      "D",
+      "E",
+      "F",
+      "G",
+      "H"
+    ],
+    "correctIndex": 4,
+    "difficulty": "foundation",
+    "external": {
+      "kind": "linked-paper",
+      "workedAnswersUrl": "https://uat-wp.s3.eu-west-2.amazonaws.com/wp-content/uploads/2024/05/07125413/TMUA-2018-paper-1-worked-answers.pdf",
+      "answerKeyUrl": "https://uat-wp.s3.eu-west-2.amazonaws.com/wp-content/uploads/2024/05/07125413/TMUA-2018-answer-keys.pdf",
+      "explanationReady": true
+    },
+    "explanation": {
+      "zh": {
+        "steps": [
+          "圆心为 $(-2,3),(7,-6)$，距离 $\\sqrt{9^2+9^2}=9\\sqrt2$。",
+          "半径分别为 $\\sqrt{18}=3\\sqrt2$、$\\sqrt2$，半径和小于圆心距，所以两圆分离。",
+          "最近点在圆心连线上，距离 $9\\sqrt2-3\\sqrt2-\\sqrt2=5\\sqrt2$，选 E。"
+        ],
+        "pitfall": "先判断是否相交或包含，不能不分情形就减去半径。"
+      },
+      "en": {
+        "steps": [
+          "The centres are (−2,3) and (7,−6), separated by $9\\sqrt2$.",
+          "The radii are $3\\sqrt2$ and $\\sqrt2$, whose sum is below the centre distance, so the circles are separate.",
+          "The nearest points lie on the centre line, giving distance $5\\sqrt2$. Choose E."
+        ],
+        "pitfall": "Check the relative circle positions before subtracting radii."
+      }
+    },
+    "source": {
+      "kind": "official-public",
+      "title": {
+        "zh": "TMUA 2018 Paper 1 · 官方原卷",
+        "en": "TMUA 2018 Paper 1 · official archive"
+      },
+      "url": "https://uat-wp.s3.eu-west-2.amazonaws.com/wp-content/uploads/2024/05/07125407/TMUA-2018-paper-1.pdf",
+      "originalNumber": "3",
+      "year": 2018,
+      "rightsNote": "Original papers and worked solutions: Cambridge University Press & Assessment / Cambridge Assessment; public archive provided by UAT-UK. No affiliation or endorsement."
+    }
+  },
+  {
+    "id": "ARCHIVE-TMUA-2018-P1-Q04",
+    "exam": "TMUA",
+    "moduleId": "p1",
+    "format": "latex",
+    "topic": {
+      "id": "algebra",
+      "name": {
+        "zh": "代数",
+        "en": "Algebra"
+      }
+    },
+    "subtopic": {
+      "id": "substitution-unconditionally-positive-discriminant",
+      "name": {
+        "zh": "代入后恒正的判别式",
+        "en": "A discriminant positive for every parameter"
+      }
+    },
+    "prompt": "Read question 4 in the official TMUA 2018 Paper 1. Record your answer here.",
+    "options": [
+      "A",
+      "B",
+      "C",
+      "D",
+      "E",
+      "F",
+      "G",
+      "H"
+    ],
+    "correctIndex": 6,
+    "difficulty": "foundation",
+    "external": {
+      "kind": "linked-paper",
+      "workedAnswersUrl": "https://uat-wp.s3.eu-west-2.amazonaws.com/wp-content/uploads/2024/05/07125413/TMUA-2018-paper-1-worked-answers.pdf",
+      "answerKeyUrl": "https://uat-wp.s3.eu-west-2.amazonaws.com/wp-content/uploads/2024/05/07125413/TMUA-2018-answer-keys.pdf",
+      "explanationReady": true
+    },
+    "explanation": {
+      "zh": {
+        "steps": [
+          "由 $x+y=a$ 得 $y=a-x$，代入第一式得到 $x^2+2ax-4=0$。",
+          "判别式为 $4a^2+16$，对每个实数 a 都严格大于零。",
+          "因此始终有两个不同实数 x，各自对应唯一 y，所有实数 a 均可，选 G。"
+        ],
+        "pitfall": "要求两不同实根需要严格正判别式，本题表达式本身已经保证。"
+      },
+      "en": {
+        "steps": [
+          "Substitute y=a−x into the first equation to obtain x²+2ax−4=0.",
+          "The discriminant 4a²+16 is strictly positive for every real a.",
+          "There are always two distinct real x values, each with a unique y. All real a work, option G."
+        ],
+        "pitfall": "Distinct real roots require a strictly positive discriminant, automatically satisfied here."
+      }
+    },
+    "source": {
+      "kind": "official-public",
+      "title": {
+        "zh": "TMUA 2018 Paper 1 · 官方原卷",
+        "en": "TMUA 2018 Paper 1 · official archive"
+      },
+      "url": "https://uat-wp.s3.eu-west-2.amazonaws.com/wp-content/uploads/2024/05/07125407/TMUA-2018-paper-1.pdf",
+      "originalNumber": "4",
+      "year": 2018,
+      "rightsNote": "Original papers and worked solutions: Cambridge University Press & Assessment / Cambridge Assessment; public archive provided by UAT-UK. No affiliation or endorsement."
+    }
+  },
+  {
+    "id": "ARCHIVE-TMUA-2018-P1-Q05",
+    "exam": "TMUA",
+    "moduleId": "p1",
+    "format": "latex",
+    "topic": {
+      "id": "algebra",
+      "name": {
+        "zh": "代数",
+        "en": "Algebra"
+      }
+    },
+    "subtopic": {
+      "id": "remainder-difference-permuted-coefficients",
+      "name": {
+        "zh": "余数差与系数排列",
+        "en": "Remainder differences with permuted coefficients"
+      }
+    },
+    "prompt": "Read question 5 in the official TMUA 2018 Paper 1. Record your answer here.",
+    "options": [
+      "A",
+      "B",
+      "C",
+      "D",
+      "E",
+      "F",
+      "G",
+      "H"
+    ],
+    "correctIndex": 3,
+    "difficulty": "standard",
+    "external": {
+      "kind": "linked-paper",
+      "workedAnswersUrl": "https://uat-wp.s3.eu-west-2.amazonaws.com/wp-content/uploads/2024/05/07125413/TMUA-2018-paper-1-worked-answers.pdf",
+      "answerKeyUrl": "https://uat-wp.s3.eu-west-2.amazonaws.com/wp-content/uploads/2024/05/07125413/TMUA-2018-answer-keys.pdf",
+      "explanationReady": true
+    },
+    "explanation": {
+      "zh": {
+        "steps": [
+          "由余数定理 $R=f(-2),S=f(-3)$，因此 $R-S=19-5a+b$，c 消去。",
+          "要最大化，负系数较大的 a 应取最小值 1，正系数的 b 取最大值 3；剩余 c=2。",
+          "最大值 $19-5+3=17$，选 D。"
+        ],
+        "pitfall": "除式 x+2、x+3 对应代入负数；三个系数必须互不相同。"
+      },
+      "en": {
+        "steps": [
+          "The remainder theorem gives R=f(−2), S=f(−3), hence R−S=19−5a+b.",
+          "Maximise by taking a=1 for the negative coefficient and b=3 for the positive coefficient, leaving c=2.",
+          "The maximum is 17. Choose D."
+        ],
+        "pitfall": "Use negative inputs for x+2 and x+3; the coefficients must be distinct."
+      }
+    },
+    "source": {
+      "kind": "official-public",
+      "title": {
+        "zh": "TMUA 2018 Paper 1 · 官方原卷",
+        "en": "TMUA 2018 Paper 1 · official archive"
+      },
+      "url": "https://uat-wp.s3.eu-west-2.amazonaws.com/wp-content/uploads/2024/05/07125407/TMUA-2018-paper-1.pdf",
+      "originalNumber": "5",
+      "year": 2018,
+      "rightsNote": "Original papers and worked solutions: Cambridge University Press & Assessment / Cambridge Assessment; public archive provided by UAT-UK. No affiliation or endorsement."
+    }
+  },
+  {
+    "id": "ARCHIVE-TMUA-2018-P1-Q06",
+    "exam": "TMUA",
+    "moduleId": "p1",
+    "format": "latex",
+    "topic": {
+      "id": "trigonometry",
+      "name": {
+        "zh": "三角函数与方程",
+        "en": "Trigonometric functions & equations"
+      }
+    },
+    "subtopic": {
+      "id": "cotangent-line-root-count",
+      "name": {
+        "zh": "余切分支与直线的交点计数",
+        "en": "Counting cotangent–line intersections"
+      }
+    },
+    "prompt": "Read question 6 in the official TMUA 2018 Paper 1. Record your answer here.",
+    "options": [
+      "A",
+      "B",
+      "C",
+      "D",
+      "E",
+      "F",
+      "G",
+      "H"
+    ],
+    "correctIndex": 4,
+    "difficulty": "challenge",
+    "external": {
+      "kind": "linked-paper",
+      "workedAnswersUrl": "https://uat-wp.s3.eu-west-2.amazonaws.com/wp-content/uploads/2024/05/07125413/TMUA-2018-paper-1-worked-answers.pdf",
+      "answerKeyUrl": "https://uat-wp.s3.eu-west-2.amazonaws.com/wp-content/uploads/2024/05/07125413/TMUA-2018-answer-keys.pdf",
+      "explanationReady": true
+    },
+    "explanation": {
+      "zh": {
+        "steps": [
+          "若 $\\sin2x=0$，原式左边为零而右边为 ±1，不可能成立。因此可以除以 $\\sin2x$ 得 $x=\\cot2x$。",
+          "区间 [0,2π] 被余切渐近线分为四个分支：$(0,\\pi/2),(\\pi/2,\\pi),(\\pi,3\\pi/2),(3\\pi/2,2\\pi)$。",
+          "每个分支余切从正无穷严格降到负无穷，而 x 递增，因此各有恰一交点。共 4 解，选 E。"
+        ],
+        "pitfall": "渐近线上的点不是解；周期应按 2x 的余切计算，x 的周期为 π/2。"
+      },
+      "en": {
+        "steps": [
+          "At sin2x=0 the original equation is impossible, so division gives x=cot2x without losing solutions.",
+          "The domain contains four cotangent branches between consecutive multiples of π/2.",
+          "On each branch cot2x decreases from positive to negative infinity while x increases, giving exactly one intersection per branch. There are four solutions, option E."
+        ],
+        "pitfall": "Exclude poles and use the x-period π/2 for cot2x."
+      }
+    },
+    "source": {
+      "kind": "official-public",
+      "title": {
+        "zh": "TMUA 2018 Paper 1 · 官方原卷",
+        "en": "TMUA 2018 Paper 1 · official archive"
+      },
+      "url": "https://uat-wp.s3.eu-west-2.amazonaws.com/wp-content/uploads/2024/05/07125407/TMUA-2018-paper-1.pdf",
+      "originalNumber": "6",
+      "year": 2018,
+      "rightsNote": "Original papers and worked solutions: Cambridge University Press & Assessment / Cambridge Assessment; public archive provided by UAT-UK. No affiliation or endorsement."
+    }
+  },
+  {
+    "id": "ARCHIVE-TMUA-2018-P1-Q07",
+    "exam": "TMUA",
+    "moduleId": "p1",
+    "format": "latex",
+    "topic": {
+      "id": "algebra",
+      "name": {
+        "zh": "代数",
+        "en": "Algebra"
+      }
+    },
+    "subtopic": {
+      "id": "equal-binomial-coefficient-powers",
+      "name": {
+        "zh": "两个二项展开系数相等",
+        "en": "Equal coefficients in two binomial expansions"
+      }
+    },
+    "prompt": "Read question 7 in the official TMUA 2018 Paper 1. Record your answer here.",
+    "options": [
+      "A",
+      "B",
+      "C",
+      "D",
+      "E",
+      "F",
+      "G",
+      "H"
+    ],
+    "correctIndex": 0,
+    "difficulty": "standard",
+    "external": {
+      "kind": "linked-paper",
+      "workedAnswersUrl": "https://uat-wp.s3.eu-west-2.amazonaws.com/wp-content/uploads/2024/05/07125413/TMUA-2018-paper-1-worked-answers.pdf",
+      "answerKeyUrl": "https://uat-wp.s3.eu-west-2.amazonaws.com/wp-content/uploads/2024/05/07125413/TMUA-2018-answer-keys.pdf",
+      "explanationReady": true
+    },
+    "explanation": {
+      "zh": {
+        "steps": [
+          "$(1+kx^2)^7$ 的 x⁶ 项需选三个 kx²，系数为 $\\binom73k^3=35k^3$。",
+          "$(k+x)^{10}$ 中选六个 x，系数为 $\\binom{10}6k^4=210k^4$。",
+          "由 $35k^3=210k^4$ 且 k≠0，得 $k=1/6$，选 A。"
+        ],
+        "pitfall": "两个展开式中的 x 次方不同，不能直接用同一个选择项数。"
+      },
+      "en": {
+        "steps": [
+          "The x⁶ term in (1+kx²)⁷ uses three kx² factors, giving 35k³.",
+          "Choosing six x terms from (k+x)¹⁰ gives coefficient 210k⁴.",
+          "With k≠0, equality gives k=1/6. Choose A."
+        ],
+        "pitfall": "The powers of x differ between the two expansions; select the correct number of factors."
+      }
+    },
+    "source": {
+      "kind": "official-public",
+      "title": {
+        "zh": "TMUA 2018 Paper 1 · 官方原卷",
+        "en": "TMUA 2018 Paper 1 · official archive"
+      },
+      "url": "https://uat-wp.s3.eu-west-2.amazonaws.com/wp-content/uploads/2024/05/07125407/TMUA-2018-paper-1.pdf",
+      "originalNumber": "7",
+      "year": 2018,
+      "rightsNote": "Original papers and worked solutions: Cambridge University Press & Assessment / Cambridge Assessment; public archive provided by UAT-UK. No affiliation or endorsement."
+    }
+  },
+  {
+    "id": "ARCHIVE-TMUA-2018-P1-Q08",
+    "exam": "TMUA",
+    "moduleId": "p1",
+    "format": "latex",
+    "topic": {
+      "id": "sequences",
+      "name": {
+        "zh": "数列与级数",
+        "en": "Sequences & series"
+      }
+    },
+    "subtopic": {
+      "id": "geometric-term-powers-infinite-sums",
+      "name": {
+        "zh": "等比各项幂次的无穷和",
+        "en": "Infinite sums of powers of geometric terms"
+      }
+    },
+    "prompt": "Read question 8 in the official TMUA 2018 Paper 1. Record your answer here.",
+    "options": [
+      "A",
+      "B",
+      "C",
+      "D",
+      "E",
+      "F",
+      "G",
+      "H"
+    ],
+    "correctIndex": 3,
+    "difficulty": "standard",
+    "external": {
+      "kind": "linked-paper",
+      "workedAnswersUrl": "https://uat-wp.s3.eu-west-2.amazonaws.com/wp-content/uploads/2024/05/07125413/TMUA-2018-paper-1-worked-answers.pdf",
+      "answerKeyUrl": "https://uat-wp.s3.eu-west-2.amazonaws.com/wp-content/uploads/2024/05/07125413/TMUA-2018-answer-keys.pdf",
+      "explanationReady": true
+    },
+    "explanation": {
+      "zh": {
+        "steps": [
+          "设首项 a、公比 r，收敛要求 |r|<1。条件为 $a/(1-r)=6$、$a^2/(1-r^2)=12$。",
+          "代入 $a=6(1-r)$，得到 $36(1-r)/(1+r)=12$，解得 r=1/2、a=3。",
+          "各项立方仍为等比，首项 27、公比 1/8，和为 $27/(1-1/8)=216/7$，选 D。"
+        ],
+        "pitfall": "“每项的平方之和”不同于“总和的平方”；立方项的公比为 r³。"
+      },
+      "en": {
+        "steps": [
+          "Let the first term be a and ratio r, with |r|<1. The conditions are a/(1−r)=6 and a²/(1−r²)=12.",
+          "Substitution gives 36(1−r)/(1+r)=12, hence r=1/2,a=3.",
+          "The cubed terms have first term 27 and ratio 1/8, giving sum 216/7. Choose D."
+        ],
+        "pitfall": "The sum of squared terms is not the squared sum; cubed terms use ratio r³."
+      }
+    },
+    "source": {
+      "kind": "official-public",
+      "title": {
+        "zh": "TMUA 2018 Paper 1 · 官方原卷",
+        "en": "TMUA 2018 Paper 1 · official archive"
+      },
+      "url": "https://uat-wp.s3.eu-west-2.amazonaws.com/wp-content/uploads/2024/05/07125407/TMUA-2018-paper-1.pdf",
+      "originalNumber": "8",
+      "year": 2018,
+      "rightsNote": "Original papers and worked solutions: Cambridge University Press & Assessment / Cambridge Assessment; public archive provided by UAT-UK. No affiliation or endorsement."
+    }
+  },
+  {
+    "id": "ARCHIVE-TMUA-2018-P1-Q09",
+    "exam": "TMUA",
+    "moduleId": "p1",
+    "format": "latex",
+    "topic": {
+      "id": "functions",
+      "name": {
+        "zh": "函数",
+        "en": "Functions"
+      }
+    },
+    "subtopic": {
+      "id": "cubic-three-roots-extrema-level",
+      "name": {
+        "zh": "三次函数极值与三个不同实根",
+        "en": "Cubic extrema and three distinct real roots"
+      }
+    },
+    "prompt": "Read question 9 in the official TMUA 2018 Paper 1. Record your answer here.",
+    "options": [
+      "A",
+      "B",
+      "C",
+      "D",
+      "E",
+      "F",
+      "G",
+      "H"
+    ],
+    "correctIndex": 1,
+    "difficulty": "standard",
+    "external": {
+      "kind": "linked-paper",
+      "workedAnswersUrl": "https://uat-wp.s3.eu-west-2.amazonaws.com/wp-content/uploads/2024/05/07125413/TMUA-2018-paper-1-worked-answers.pdf",
+      "answerKeyUrl": "https://uat-wp.s3.eu-west-2.amazonaws.com/wp-content/uploads/2024/05/07125413/TMUA-2018-answer-keys.pdf",
+      "explanationReady": true
+    },
+    "explanation": {
+      "zh": {
+        "steps": [
+          "设 $g(x)=2x^3-3x^2-12x+c$，导数为 $6(x-2)(x+1)$。",
+          "局部最大在 x=−1，值 c+7；局部最小在 x=2，值 c−20。",
+          "三个不同实根要求最大值严格为正、最小值严格为负，故 $-7<c<20$，选 B。"
+        ],
+        "pitfall": "极值恰好为零会出现重根，不能包含区间端点。"
+      },
+      "en": {
+        "steps": [
+          "For g(x)=2x³−3x²−12x+c, the derivative is 6(x−2)(x+1).",
+          "The local maximum is c+7 at x=−1; the local minimum is c−20 at x=2.",
+          "Three distinct real roots require c+7>0 and c−20<0, hence −7<c<20. Choose B."
+        ],
+        "pitfall": "Zero extrema produce repeated roots; exclude the endpoints."
+      }
+    },
+    "source": {
+      "kind": "official-public",
+      "title": {
+        "zh": "TMUA 2018 Paper 1 · 官方原卷",
+        "en": "TMUA 2018 Paper 1 · official archive"
+      },
+      "url": "https://uat-wp.s3.eu-west-2.amazonaws.com/wp-content/uploads/2024/05/07125407/TMUA-2018-paper-1.pdf",
+      "originalNumber": "9",
+      "year": 2018,
+      "rightsNote": "Original papers and worked solutions: Cambridge University Press & Assessment / Cambridge Assessment; public archive provided by UAT-UK. No affiliation or endorsement."
+    }
+  },
+  {
+    "id": "ARCHIVE-TMUA-2018-P1-Q10",
+    "exam": "TMUA",
+    "moduleId": "p1",
+    "format": "latex",
+    "topic": {
+      "id": "algebra",
+      "name": {
+        "zh": "代数",
+        "en": "Algebra"
+      }
+    },
+    "subtopic": {
+      "id": "rectangle-bound-product-absolute",
+      "name": {
+        "zh": "区间限制下乘积绝对值的最大值",
+        "en": "Maximising an absolute product under interval bounds"
+      }
+    },
+    "prompt": "Read question 10 in the official TMUA 2018 Paper 1. Record your answer here.",
+    "options": [
+      "A",
+      "B",
+      "C",
+      "D",
+      "E",
+      "F",
+      "G",
+      "H"
+    ],
+    "correctIndex": 4,
+    "difficulty": "foundation",
+    "external": {
+      "kind": "linked-paper",
+      "workedAnswersUrl": "https://uat-wp.s3.eu-west-2.amazonaws.com/wp-content/uploads/2024/05/07125413/TMUA-2018-paper-1-worked-answers.pdf",
+      "answerKeyUrl": "https://uat-wp.s3.eu-west-2.amazonaws.com/wp-content/uploads/2024/05/07125413/TMUA-2018-answer-keys.pdf",
+      "explanationReady": true
+    },
+    "explanation": {
+      "zh": {
+        "steps": [
+          "$|2-x|\\leq6$ 给 $-4\\leq x\\leq8$，$|y+2|\\leq4$ 给 $-6\\leq y\\leq2$。",
+          "因此 |x|≤8、|y|≤6，故 |xy|≤48。",
+          "x=8、y=−6 满足条件并达到 48，选 E。"
+        ],
+        "pitfall": "最大绝对值可能在负端点；找到上界后要核对能同时达到。"
+      },
+      "en": {
+        "steps": [
+          "The bounds give −4≤x≤8 and −6≤y≤2.",
+          "Hence |x|≤8 and |y|≤6, so |xy|≤48.",
+          "The value 48 is attained at x=8,y=−6. Choose E."
+        ],
+        "pitfall": "A negative endpoint may maximise absolute value; check joint attainability."
+      }
+    },
+    "source": {
+      "kind": "official-public",
+      "title": {
+        "zh": "TMUA 2018 Paper 1 · 官方原卷",
+        "en": "TMUA 2018 Paper 1 · official archive"
+      },
+      "url": "https://uat-wp.s3.eu-west-2.amazonaws.com/wp-content/uploads/2024/05/07125407/TMUA-2018-paper-1.pdf",
+      "originalNumber": "10",
+      "year": 2018,
+      "rightsNote": "Original papers and worked solutions: Cambridge University Press & Assessment / Cambridge Assessment; public archive provided by UAT-UK. No affiliation or endorsement."
+    }
+  },
+  {
+    "id": "ARCHIVE-TMUA-2018-P1-Q11",
+    "exam": "TMUA",
+    "moduleId": "p1",
+    "format": "latex",
+    "topic": {
+      "id": "calculus",
+      "name": {
+        "zh": "微积分",
+        "en": "Calculus"
+      }
+    },
+    "subtopic": {
+      "id": "normal-parabola-point-condition",
+      "name": {
+        "zh": "抛物线法线与交点条件",
+        "en": "A normal line and its point on a parabola"
+      }
+    },
+    "prompt": "Read question 11 in the official TMUA 2018 Paper 1. Record your answer here.",
+    "options": [
+      "A",
+      "B",
+      "C",
+      "D",
+      "E",
+      "F",
+      "G",
+      "H"
+    ],
+    "correctIndex": 2,
+    "difficulty": "standard",
+    "external": {
+      "kind": "linked-paper",
+      "workedAnswersUrl": "https://uat-wp.s3.eu-west-2.amazonaws.com/wp-content/uploads/2024/05/07125413/TMUA-2018-paper-1-worked-answers.pdf",
+      "answerKeyUrl": "https://uat-wp.s3.eu-west-2.amazonaws.com/wp-content/uploads/2024/05/07125413/TMUA-2018-answer-keys.pdf",
+      "explanationReady": true
+    },
+    "explanation": {
+      "zh": {
+        "steps": [
+          "曲线在 x=p 的切线斜率为 −2p，因此法线斜率 $m=1/(2p)$；m>0 给 p>0。",
+          "该点同时满足 $q=10-p^2$ 与 $q=mp+5=11/2$。",
+          "所以 p²=9/2，取正根 $p=3\\sqrt2/2$，选 C。"
+        ],
+        "pitfall": "法线斜率是切线斜率的负倒数；还要使用 m>0 选择根。"
+      },
+      "en": {
+        "steps": [
+          "The tangent slope is −2p, so the normal slope is m=1/(2p). Since m>0, p>0.",
+          "The point satisfies q=10−p² and q=mp+5=11/2.",
+          "Thus p²=9/2 and the positive root is $3\\sqrt2/2$. Choose C."
+        ],
+        "pitfall": "Use the negative reciprocal for the normal and m>0 to select the root."
+      }
+    },
+    "source": {
+      "kind": "official-public",
+      "title": {
+        "zh": "TMUA 2018 Paper 1 · 官方原卷",
+        "en": "TMUA 2018 Paper 1 · official archive"
+      },
+      "url": "https://uat-wp.s3.eu-west-2.amazonaws.com/wp-content/uploads/2024/05/07125407/TMUA-2018-paper-1.pdf",
+      "originalNumber": "11",
+      "year": 2018,
+      "rightsNote": "Original papers and worked solutions: Cambridge University Press & Assessment / Cambridge Assessment; public archive provided by UAT-UK. No affiliation or endorsement."
+    }
+  },
+  {
+    "id": "ARCHIVE-TMUA-2018-P1-Q12",
+    "exam": "TMUA",
+    "moduleId": "p1",
+    "format": "latex",
+    "topic": {
+      "id": "calculus",
+      "name": {
+        "zh": "微积分",
+        "en": "Calculus"
+      }
+    },
+    "subtopic": {
+      "id": "quartic-signed-lobe-areas",
+      "name": {
+        "zh": "四次函数正负区域的总面积",
+        "en": "Total area of signed quartic lobes"
+      }
+    },
+    "prompt": "Read question 12 in the official TMUA 2018 Paper 1. Record your answer here.",
+    "options": [
+      "A",
+      "B",
+      "C",
+      "D",
+      "E",
+      "F",
+      "G",
+      "H"
+    ],
+    "correctIndex": 5,
+    "difficulty": "standard",
+    "external": {
+      "kind": "linked-paper",
+      "workedAnswersUrl": "https://uat-wp.s3.eu-west-2.amazonaws.com/wp-content/uploads/2024/05/07125413/TMUA-2018-paper-1-worked-answers.pdf",
+      "answerKeyUrl": "https://uat-wp.s3.eu-west-2.amazonaws.com/wp-content/uploads/2024/05/07125413/TMUA-2018-answer-keys.pdf",
+      "explanationReady": true
+    },
+    "explanation": {
+      "zh": {
+        "steps": [
+          "由根的顺序，f 在 (0,p) 为正、(p,q) 为负、(q,r) 为正。令三块正面积分别 A、B、C。",
+          "积分条件变为 $A-B+C=0,A-B=-2,-B+C=-3$。",
+          "解得 C=2、B=5、A=3，总面积 A+B+C=10，选 F。"
+        ],
+        "pitfall": "总带符号积分为零不代表面积为零；先判断各段函数符号。"
+      },
+      "en": {
+        "steps": [
+          "The signs are positive, negative, positive on the three successive intervals. Let their unsigned areas be A,B,C.",
+          "The conditions become A−B+C=0, A−B=−2, −B+C=−3.",
+          "Solving gives C=2,B=5,A=3 and total area 10. Choose F."
+        ],
+        "pitfall": "A zero signed integral does not mean zero area; determine signs first."
+      }
+    },
+    "source": {
+      "kind": "official-public",
+      "title": {
+        "zh": "TMUA 2018 Paper 1 · 官方原卷",
+        "en": "TMUA 2018 Paper 1 · official archive"
+      },
+      "url": "https://uat-wp.s3.eu-west-2.amazonaws.com/wp-content/uploads/2024/05/07125407/TMUA-2018-paper-1.pdf",
+      "originalNumber": "12",
+      "year": 2018,
+      "rightsNote": "Original papers and worked solutions: Cambridge University Press & Assessment / Cambridge Assessment; public archive provided by UAT-UK. No affiliation or endorsement."
+    }
+  },
+  {
+    "id": "ARCHIVE-TMUA-2018-P1-Q13",
+    "exam": "TMUA",
+    "moduleId": "p1",
+    "format": "latex",
+    "topic": {
+      "id": "calculus",
+      "name": {
+        "zh": "微积分",
+        "en": "Calculus"
+      }
+    },
+    "subtopic": {
+      "id": "derivative-sign-change-minimum",
+      "name": {
+        "zh": "导数图像的符号变化与极小值",
+        "en": "Local minima from derivative sign changes"
+      }
+    },
+    "prompt": "Read question 13 in the official TMUA 2018 Paper 1. Record your answer here.",
+    "options": [
+      "A",
+      "B",
+      "C",
+      "D",
+      "E",
+      "F",
+      "G",
+      "H"
+    ],
+    "correctIndex": 2,
+    "difficulty": "standard",
+    "external": {
+      "kind": "linked-paper",
+      "workedAnswersUrl": "https://uat-wp.s3.eu-west-2.amazonaws.com/wp-content/uploads/2024/05/07125413/TMUA-2018-paper-1-worked-answers.pdf",
+      "answerKeyUrl": "https://uat-wp.s3.eu-west-2.amazonaws.com/wp-content/uploads/2024/05/07125413/TMUA-2018-answer-keys.pdf",
+      "explanationReady": true
+    },
+    "explanation": {
+      "zh": {
+        "steps": [
+          "题图是 f′ 而非 f。f 的局部极小值要求 f′ 从负变正，使 f 由减转增。",
+          "C 处导数穿过横轴，由负转正，正好符合；A 处由正转负是局部极大。",
+          "B 是导数自身的低点，导数仍负；F 处导数触零但两侧为正，f 仍递增。故唯一 C。"
+        ],
+        "pitfall": "导数为零不自动意味着极值，导数自身的极小点也不是原函数的极小点。"
+      },
+      "en": {
+        "steps": [
+          "The diagram shows f′, not f. A local minimum of f requires a negative-to-positive derivative change.",
+          "At C the derivative crosses from negative to positive; A has the opposite change and gives a local maximum.",
+          "B is a low point of the derivative while it remains negative. At F it touches zero with positive values on both sides, so f keeps increasing. Choose C."
+        ],
+        "pitfall": "A zero derivative alone is insufficient, and a derivative minimum is not a function minimum."
+      }
+    },
+    "source": {
+      "kind": "official-public",
+      "title": {
+        "zh": "TMUA 2018 Paper 1 · 官方原卷",
+        "en": "TMUA 2018 Paper 1 · official archive"
+      },
+      "url": "https://uat-wp.s3.eu-west-2.amazonaws.com/wp-content/uploads/2024/05/07125407/TMUA-2018-paper-1.pdf",
+      "originalNumber": "13",
+      "year": 2018,
+      "rightsNote": "Original papers and worked solutions: Cambridge University Press & Assessment / Cambridge Assessment; public archive provided by UAT-UK. No affiliation or endorsement."
+    }
+  },
+  {
+    "id": "ARCHIVE-TMUA-2018-P1-Q14",
+    "exam": "TMUA",
+    "moduleId": "p1",
+    "format": "latex",
+    "topic": {
+      "id": "functions",
+      "name": {
+        "zh": "函数",
+        "en": "Functions"
+      }
+    },
+    "subtopic": {
+      "id": "log-point-line-zero-product",
+      "name": {
+        "zh": "对数坐标与直线的零乘积条件",
+        "en": "Logarithmic coordinates and a zero-product line condition"
+      }
+    },
+    "prompt": "Read question 14 in the official TMUA 2018 Paper 1. Record your answer here.",
+    "options": [
+      "A",
+      "B",
+      "C",
+      "D",
+      "E",
+      "F",
+      "G",
+      "H"
+    ],
+    "correctIndex": 1,
+    "difficulty": "standard",
+    "external": {
+      "kind": "linked-paper",
+      "workedAnswersUrl": "https://uat-wp.s3.eu-west-2.amazonaws.com/wp-content/uploads/2024/05/07125413/TMUA-2018-paper-1-worked-answers.pdf",
+      "answerKeyUrl": "https://uat-wp.s3.eu-west-2.amazonaws.com/wp-content/uploads/2024/05/07125413/TMUA-2018-answer-keys.pdf",
+      "explanationReady": true
+    },
+    "explanation": {
+      "zh": {
+        "steps": [
+          "令 t=log₂p，要求 p>0。点 (t,4) 在 y=mx+4 上，给 mt=0。",
+          "若 t=0，则 p=1，另一点 (3,0) 给 m=−4/3，确实可行。",
+          "若 m=0，直线为 y=4，另一点要求 t=4，所以 p=16。两值为 1、16，选 B。"
+        ],
+        "pitfall": "mt=0 应讨论两种情况，不能直接除以 t 或 m。"
+      },
+      "en": {
+        "steps": [
+          "Set t=log₂p with p>0. The point (t,4) gives mt=0.",
+          "If t=0, p=1 and the other point gives m=−4/3, a valid line.",
+          "If m=0, the other point requires t=4, hence p=16. The values are 1 and 16, option B."
+        ],
+        "pitfall": "Consider both factors in mt=0; do not cancel either without checking zero."
+      }
+    },
+    "source": {
+      "kind": "official-public",
+      "title": {
+        "zh": "TMUA 2018 Paper 1 · 官方原卷",
+        "en": "TMUA 2018 Paper 1 · official archive"
+      },
+      "url": "https://uat-wp.s3.eu-west-2.amazonaws.com/wp-content/uploads/2024/05/07125407/TMUA-2018-paper-1.pdf",
+      "originalNumber": "14",
+      "year": 2018,
+      "rightsNote": "Original papers and worked solutions: Cambridge University Press & Assessment / Cambridge Assessment; public archive provided by UAT-UK. No affiliation or endorsement."
+    }
+  },
+  {
+    "id": "ARCHIVE-TMUA-2018-P1-Q15",
+    "exam": "TMUA",
+    "moduleId": "p1",
+    "format": "latex",
+    "topic": {
+      "id": "functions",
+      "name": {
+        "zh": "函数",
+        "en": "Functions"
+      }
+    },
+    "subtopic": {
+      "id": "square-root-base-exponential-roots",
+      "name": {
+        "zh": "平方根底数指数方程的解和",
+        "en": "Summing roots of an exponential equation with a square-root base"
+      }
+    },
+    "prompt": "Read question 15 in the official TMUA 2018 Paper 1. Record your answer here.",
+    "options": [
+      "A",
+      "B",
+      "C",
+      "D",
+      "E",
+      "F",
+      "G",
+      "H"
+    ],
+    "correctIndex": 4,
+    "difficulty": "standard",
+    "external": {
+      "kind": "linked-paper",
+      "workedAnswersUrl": "https://uat-wp.s3.eu-west-2.amazonaws.com/wp-content/uploads/2024/05/07125413/TMUA-2018-paper-1-worked-answers.pdf",
+      "answerKeyUrl": "https://uat-wp.s3.eu-west-2.amazonaws.com/wp-content/uploads/2024/05/07125413/TMUA-2018-answer-keys.pdf",
+      "explanationReady": true
+    },
+    "explanation": {
+      "zh": {
+        "steps": [
+          "令 $u=(\\sqrt3)^x>0$，则 $3^x=u^2$、$(\\sqrt3)^{x+4}=9u$。",
+          "方程变为 $u^2-9u+20=(u-4)(u-5)=0$，所以 u=4 或 5。",
+          "两解为 $x=2\\log_3 4,2\\log_3 5$，和为 $2\\log_3 20$，选 E。"
+        ],
+        "pitfall": "√3 是底数，整个 x+4 是指数；换回 x 时注意底数换算中的因子 2。"
+      },
+      "en": {
+        "steps": [
+          "Set $u=(\\sqrt3)^x>0$, giving 3^x=u² and $(\\sqrt3)^{x+4}=9u$.",
+          "The equation becomes (u−4)(u−5)=0, so u=4 or 5.",
+          "The x values are $2\\log_3 4$ and $2\\log_3 5$, with sum $2\\log_3 20$. Choose E."
+        ],
+        "pitfall": "√3 is the base and x+4 the exponent; the conversion back to x introduces a factor 2."
+      }
+    },
+    "source": {
+      "kind": "official-public",
+      "title": {
+        "zh": "TMUA 2018 Paper 1 · 官方原卷",
+        "en": "TMUA 2018 Paper 1 · official archive"
+      },
+      "url": "https://uat-wp.s3.eu-west-2.amazonaws.com/wp-content/uploads/2024/05/07125407/TMUA-2018-paper-1.pdf",
+      "originalNumber": "15",
+      "year": 2018,
+      "rightsNote": "Original papers and worked solutions: Cambridge University Press & Assessment / Cambridge Assessment; public archive provided by UAT-UK. No affiliation or endorsement."
+    }
+  },
+  {
+    "id": "ARCHIVE-TMUA-2018-P1-Q16",
+    "exam": "TMUA",
+    "moduleId": "p1",
+    "format": "latex",
+    "topic": {
+      "id": "geometry",
+      "name": {
+        "zh": "几何",
+        "en": "Geometry"
+      }
+    },
+    "subtopic": {
+      "id": "parabola-vertex-distance-parameter",
+      "name": {
+        "zh": "抛物线顶点到原点的距离参数",
+        "en": "A parameter minimising vertex distance to the origin"
+      }
+    },
+    "prompt": "Read question 16 in the official TMUA 2018 Paper 1. Record your answer here.",
+    "options": [
+      "A",
+      "B",
+      "C",
+      "D",
+      "E",
+      "F",
+      "G",
+      "H"
+    ],
+    "correctIndex": 5,
+    "difficulty": "standard",
+    "external": {
+      "kind": "linked-paper",
+      "workedAnswersUrl": "https://uat-wp.s3.eu-west-2.amazonaws.com/wp-content/uploads/2024/05/07125413/TMUA-2018-paper-1-worked-answers.pdf",
+      "answerKeyUrl": "https://uat-wp.s3.eu-west-2.amazonaws.com/wp-content/uploads/2024/05/07125413/TMUA-2018-answer-keys.pdf",
+      "explanationReady": true
+    },
+    "explanation": {
+      "zh": {
+        "steps": [
+          "驻点为 $(-b/2,2-b^2/4)$，距离平方为 $b^2/4+(2-b^2/4)^2$。",
+          "令 u=b²/4≥0，距离平方为 $u+(2-u)^2=(u-3/2)^2+7/4$。",
+          "最小值在 u=3/2 可达到，结合 b≥0 得 $b=\\sqrt6$，选 F。"
+        ],
+        "pitfall": "最小化距离平方与距离等价，但不能只最小化顶点的纵坐标。"
+      },
+      "en": {
+        "steps": [
+          "The stationary point is (−b/2,2−b²/4), with squared distance b²/4+(2−b²/4)².",
+          "Set u=b²/4≥0; the squared distance is $(u-3/2)^2+7/4$.",
+          "The minimum at u=3/2 is attainable; b≥0 gives b=√6. Choose F."
+        ],
+        "pitfall": "Minimising squared distance is equivalent, but minimising just the vertex height is not."
+      }
+    },
+    "source": {
+      "kind": "official-public",
+      "title": {
+        "zh": "TMUA 2018 Paper 1 · 官方原卷",
+        "en": "TMUA 2018 Paper 1 · official archive"
+      },
+      "url": "https://uat-wp.s3.eu-west-2.amazonaws.com/wp-content/uploads/2024/05/07125407/TMUA-2018-paper-1.pdf",
+      "originalNumber": "16",
+      "year": 2018,
+      "rightsNote": "Original papers and worked solutions: Cambridge University Press & Assessment / Cambridge Assessment; public archive provided by UAT-UK. No affiliation or endorsement."
+    }
+  },
+  {
+    "id": "ARCHIVE-TMUA-2018-P1-Q17",
+    "exam": "TMUA",
+    "moduleId": "p1",
+    "format": "latex",
+    "topic": {
+      "id": "statistics",
+      "name": {
+        "zh": "统计",
+        "en": "Statistics"
+      }
+    },
+    "subtopic": {
+      "id": "exchanged-data-weighted-mean",
+      "name": {
+        "zh": "交换数据后的加权均值",
+        "en": "A combined mean after exchanging observations"
+      }
+    },
+    "prompt": "Read question 17 in the official TMUA 2018 Paper 1. Record your answer here.",
+    "options": [
+      "A",
+      "B",
+      "C",
+      "D",
+      "E",
+      "F",
+      "G",
+      "H"
+    ],
+    "correctIndex": 0,
+    "difficulty": "standard",
+    "external": {
+      "kind": "linked-paper",
+      "workedAnswersUrl": "https://uat-wp.s3.eu-west-2.amazonaws.com/wp-content/uploads/2024/05/07125413/TMUA-2018-paper-1-worked-answers.pdf",
+      "answerKeyUrl": "https://uat-wp.s3.eu-west-2.amazonaws.com/wp-content/uploads/2024/05/07125413/TMUA-2018-answer-keys.pdf",
+      "explanationReady": true
+    },
+    "explanation": {
+      "zh": {
+        "steps": [
+          "设两组数量为 n、m，交换导致第一组总和增加 Δ、第二组减少同一个 Δ。",
+          "均值变化给 Δ/n=1、Δ/m=3，因此 n=3m。",
+          "交换不改变合计总和，合并均值为 $(15n+20m)/(n+m)=65/4=16.25$，选 A。"
+        ],
+        "pitfall": "合并均值必须按数量加权，不能直接取 15 与 20 的平均。"
+      },
+      "en": {
+        "steps": [
+          "Let the group sizes be n,m and the exchanged values change their sums by +Δ and −Δ.",
+          "The mean changes give Δ/n=1 and Δ/m=3, hence n=3m.",
+          "The combined sum is unchanged, giving mean (15n+20m)/(n+m)=65/4. Choose A."
+        ],
+        "pitfall": "Weight the means by group sizes; do not simply average 15 and 20."
+      }
+    },
+    "source": {
+      "kind": "official-public",
+      "title": {
+        "zh": "TMUA 2018 Paper 1 · 官方原卷",
+        "en": "TMUA 2018 Paper 1 · official archive"
+      },
+      "url": "https://uat-wp.s3.eu-west-2.amazonaws.com/wp-content/uploads/2024/05/07125407/TMUA-2018-paper-1.pdf",
+      "originalNumber": "17",
+      "year": 2018,
+      "rightsNote": "Original papers and worked solutions: Cambridge University Press & Assessment / Cambridge Assessment; public archive provided by UAT-UK. No affiliation or endorsement."
+    }
+  },
+  {
+    "id": "ARCHIVE-TMUA-2018-P1-Q18",
+    "exam": "TMUA",
+    "moduleId": "p1",
+    "format": "latex",
+    "topic": {
+      "id": "trigonometry",
+      "name": {
+        "zh": "三角函数与方程",
+        "en": "Trigonometric functions & equations"
+      }
+    },
+    "subtopic": {
+      "id": "shifted-sine-vertical-symmetry",
+      "name": {
+        "zh": "平移正弦的竖直对称轴",
+        "en": "Vertical symmetry axes of a shifted sine"
+      }
+    },
+    "prompt": "Read question 18 in the official TMUA 2018 Paper 1. Record your answer here.",
+    "options": [
+      "A",
+      "B",
+      "C",
+      "D",
+      "E",
+      "F",
+      "G",
+      "H"
+    ],
+    "correctIndex": 1,
+    "difficulty": "standard",
+    "external": {
+      "kind": "linked-paper",
+      "workedAnswersUrl": "https://uat-wp.s3.eu-west-2.amazonaws.com/wp-content/uploads/2024/05/07125413/TMUA-2018-paper-1-worked-answers.pdf",
+      "answerKeyUrl": "https://uat-wp.s3.eu-west-2.amazonaws.com/wp-content/uploads/2024/05/07125413/TMUA-2018-answer-keys.pdf",
+      "explanationReady": true
+    },
+    "explanation": {
+      "zh": {
+        "steps": [
+          "正弦图像的竖直对称轴经过极大或极小点，要求 $2a-4\\pi/3=\\pi/2+k\\pi$。",
+          "解得 $a=11\\pi/12+k\\pi/2$，其中 k 为整数。",
+          "取 k=−1 得最小正值 $5\\pi/12$，k=−2 已为负，选 B。"
+        ],
+        "pitfall": "零点对应中心旋转对称，不是竖直反射对称；极大极小点都可提供轴。"
+      },
+      "en": {
+        "steps": [
+          "Vertical symmetry axes pass through extrema, requiring $2a-4\\pi/3=\\pi/2+k\\pi$.",
+          "Thus $a=11\\pi/12+k\\pi/2$ for integer k.",
+          "The smallest positive value occurs at k=−1, giving 5π/12; k=−2 is negative. Choose B."
+        ],
+        "pitfall": "Zeros give rotational symmetry, not vertical reflection axes; both maxima and minima qualify."
+      }
+    },
+    "source": {
+      "kind": "official-public",
+      "title": {
+        "zh": "TMUA 2018 Paper 1 · 官方原卷",
+        "en": "TMUA 2018 Paper 1 · official archive"
+      },
+      "url": "https://uat-wp.s3.eu-west-2.amazonaws.com/wp-content/uploads/2024/05/07125407/TMUA-2018-paper-1.pdf",
+      "originalNumber": "18",
+      "year": 2018,
+      "rightsNote": "Original papers and worked solutions: Cambridge University Press & Assessment / Cambridge Assessment; public archive provided by UAT-UK. No affiliation or endorsement."
+    }
+  },
+  {
+    "id": "ARCHIVE-TMUA-2018-P1-Q19",
+    "exam": "TMUA",
+    "moduleId": "p1",
+    "format": "latex",
+    "topic": {
+      "id": "geometry",
+      "name": {
+        "zh": "几何",
+        "en": "Geometry"
+      }
+    },
+    "subtopic": {
+      "id": "ambiguous-triangle-area-ratio",
+      "name": {
+        "zh": "两种三角形的面积比",
+        "en": "An area ratio between two ambiguous triangles"
+      }
+    },
+    "prompt": "Read question 19 in the official TMUA 2018 Paper 1. Record your answer here.",
+    "options": [
+      "A",
+      "B",
+      "C",
+      "D",
+      "E",
+      "F",
+      "G",
+      "H"
+    ],
+    "correctIndex": 3,
+    "difficulty": "challenge",
+    "external": {
+      "kind": "linked-paper",
+      "workedAnswersUrl": "https://uat-wp.s3.eu-west-2.amazonaws.com/wp-content/uploads/2024/05/07125413/TMUA-2018-paper-1-worked-answers.pdf",
+      "answerKeyUrl": "https://uat-wp.s3.eu-west-2.amazonaws.com/wp-content/uploads/2024/05/07125413/TMUA-2018-answer-keys.pdf",
+      "explanationReady": true
+    },
+    "explanation": {
+      "zh": {
+        "steps": [
+          "设两种 AC 长度为 t、3t。两三角形 AB 和角 A 相同，面积 $(1/2)AB\\cdot AC\\sin\\theta$ 与 AC 成正比。",
+          "余弦定理 $7^2=10^2+s^2-20s\\cos\\theta$ 给出 $s^2-20\\cos\\theta\\,s+51=0$，两个正根即上述长度。",
+          "根积 $3t^2=51$ 得 $t=\\sqrt{17}$；根和 $4\\sqrt{17}=20\\cos\\theta$，故 $\\cos\\theta=\\sqrt{17}/5$，选 D。"
+        ],
+        "pitfall": "面积比对应同一夹角下的 AC 长度比，不是 BC 的长度比；必须使用两个可行正根。"
+      },
+      "en": {
+        "steps": [
+          "Let the two AC lengths be t and 3t. With common AB and angle A, area is proportional to AC.",
+          "The cosine rule gives $s^2-20\\cos\\theta\\,s+51=0$, whose two positive roots are those lengths.",
+          "The product gives t=√17 and the sum gives cosθ=√17/5. Choose D."
+        ],
+        "pitfall": "The area ratio gives the AC ratio for the common included angle, not a ratio of BC lengths."
+      }
+    },
+    "source": {
+      "kind": "official-public",
+      "title": {
+        "zh": "TMUA 2018 Paper 1 · 官方原卷",
+        "en": "TMUA 2018 Paper 1 · official archive"
+      },
+      "url": "https://uat-wp.s3.eu-west-2.amazonaws.com/wp-content/uploads/2024/05/07125407/TMUA-2018-paper-1.pdf",
+      "originalNumber": "19",
+      "year": 2018,
+      "rightsNote": "Original papers and worked solutions: Cambridge University Press & Assessment / Cambridge Assessment; public archive provided by UAT-UK. No affiliation or endorsement."
+    }
+  },
+  {
+    "id": "ARCHIVE-TMUA-2018-P1-Q20",
+    "exam": "TMUA",
+    "moduleId": "p1",
+    "format": "latex",
+    "topic": {
+      "id": "trigonometry",
+      "name": {
+        "zh": "三角函数与方程",
+        "en": "Trigonometric functions & equations"
+      }
+    },
+    "subtopic": {
+      "id": "complementary-sine-square-sum",
+      "name": {
+        "zh": "互余角正弦平方和",
+        "en": "A sum of sine squares at complementary angles"
+      }
+    },
+    "prompt": "Read question 20 in the official TMUA 2018 Paper 1. Record your answer here.",
+    "options": [
+      "A",
+      "B",
+      "C",
+      "D",
+      "E",
+      "F",
+      "G",
+      "H"
+    ],
+    "correctIndex": 4,
+    "difficulty": "foundation",
+    "external": {
+      "kind": "linked-paper",
+      "workedAnswersUrl": "https://uat-wp.s3.eu-west-2.amazonaws.com/wp-content/uploads/2024/05/07125413/TMUA-2018-paper-1-worked-answers.pdf",
+      "answerKeyUrl": "https://uat-wp.s3.eu-west-2.amazonaws.com/wp-content/uploads/2024/05/07125413/TMUA-2018-answer-keys.pdf",
+      "explanationReady": true
+    },
+    "explanation": {
+      "zh": {
+        "steps": [
+          "利用 $\\sin^2\\theta+\\sin^2(90^\\circ-\\theta)=1$。",
+          "0° 到 90° 共 91 项，除 45° 外分成 45 对，每对贡献 1。",
+          "$\\sin^245^\\circ=1/2$，总和为 45.5，选 E。"
+        ],
+        "pitfall": "45° 只能计一次；0° 与 90° 的端点构成一对。"
+      },
+      "en": {
+        "steps": [
+          "Use sin²θ+sin²(90°−θ)=1.",
+          "The 91 terms form 45 complementary pairs plus the central 45° term.",
+          "The central term is 1/2, giving total 45.5. Choose E."
+        ],
+        "pitfall": "Count 45° once; the 0° and 90° endpoints form a pair."
+      }
+    },
+    "source": {
+      "kind": "official-public",
+      "title": {
+        "zh": "TMUA 2018 Paper 1 · 官方原卷",
+        "en": "TMUA 2018 Paper 1 · official archive"
+      },
+      "url": "https://uat-wp.s3.eu-west-2.amazonaws.com/wp-content/uploads/2024/05/07125407/TMUA-2018-paper-1.pdf",
+      "originalNumber": "20",
+      "year": 2018,
+      "rightsNote": "Original papers and worked solutions: Cambridge University Press & Assessment / Cambridge Assessment; public archive provided by UAT-UK. No affiliation or endorsement."
+    }
+  }
+]

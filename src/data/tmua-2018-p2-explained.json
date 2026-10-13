@@ -1,0 +1,1364 @@
+[
+  {
+    "id": "ARCHIVE-TMUA-2018-P2-Q01",
+    "exam": "TMUA",
+    "moduleId": "p2",
+    "format": "latex",
+    "topic": {
+      "id": "calculus",
+      "name": {
+        "zh": "微积分",
+        "en": "Calculus"
+      }
+    },
+    "subtopic": {
+      "id": "simplified-fractional-derivative-value",
+      "name": {
+        "zh": "分数幂化简后的导数值",
+        "en": "A derivative value after fractional-power simplification"
+      }
+    },
+    "prompt": "Read question 1 in the official TMUA 2018 Paper 2. Record your answer here.",
+    "options": [
+      "A",
+      "B",
+      "C",
+      "D",
+      "E",
+      "F",
+      "G",
+      "H"
+    ],
+    "correctIndex": 2,
+    "difficulty": "foundation",
+    "external": {
+      "kind": "linked-paper",
+      "workedAnswersUrl": "https://uat-wp.s3.eu-west-2.amazonaws.com/wp-content/uploads/2024/05/07125406/TMUA-2018-paper-2-worked-answers.pdf",
+      "answerKeyUrl": "https://uat-wp.s3.eu-west-2.amazonaws.com/wp-content/uploads/2024/05/07125413/TMUA-2018-answer-keys.pdf",
+      "explanationReady": true
+    },
+    "explanation": {
+      "zh": {
+        "steps": [
+          "在 x>0，$f(x)=\\frac12x^{5/2}-2x^{1/2}$。",
+          "$f^{\\prime}(x)=\\frac54x^{3/2}-x^{-1/2}$。",
+          "代入 x=4，得 $10-1/2=9.5$，选 C。"
+        ],
+        "pitfall": "分母是 2√x，不是 2x√x；先核对根号范围。"
+      },
+      "en": {
+        "steps": [
+          "For x>0, $f(x)=\\frac12x^{5/2}-2x^{1/2}$.",
+          "The derivative is $\\frac54x^{3/2}-x^{-1/2}$.",
+          "At x=4 this gives 9.5. Choose C."
+        ],
+        "pitfall": "The denominator is 2√x, not 2x√x; check the radical’s extent."
+      }
+    },
+    "source": {
+      "kind": "official-public",
+      "title": {
+        "zh": "TMUA 2018 Paper 2 · 官方原卷",
+        "en": "TMUA 2018 Paper 2 · official archive"
+      },
+      "url": "https://uat-wp.s3.eu-west-2.amazonaws.com/wp-content/uploads/2024/05/07125404/TMUA-2018-paper-2.pdf",
+      "originalNumber": "1",
+      "year": 2018,
+      "rightsNote": "Original papers and worked solutions: Cambridge University Press & Assessment / Cambridge Assessment; public archive provided by UAT-UK. No affiliation or endorsement."
+    }
+  },
+  {
+    "id": "ARCHIVE-TMUA-2018-P2-Q02",
+    "exam": "TMUA",
+    "moduleId": "p2",
+    "format": "latex",
+    "topic": {
+      "id": "algebra",
+      "name": {
+        "zh": "代数",
+        "en": "Algebra"
+      }
+    },
+    "subtopic": {
+      "id": "binomial-constant-term-reciprocal",
+      "name": {
+        "zh": "含负幂二项式的常数项",
+        "en": "The constant term of a binomial with negative powers"
+      }
+    },
+    "prompt": "Read question 2 in the official TMUA 2018 Paper 2. Record your answer here.",
+    "options": [
+      "A",
+      "B",
+      "C",
+      "D",
+      "E",
+      "F",
+      "G",
+      "H"
+    ],
+    "correctIndex": 1,
+    "difficulty": "standard",
+    "external": {
+      "kind": "linked-paper",
+      "workedAnswersUrl": "https://uat-wp.s3.eu-west-2.amazonaws.com/wp-content/uploads/2024/05/07125406/TMUA-2018-paper-2-worked-answers.pdf",
+      "answerKeyUrl": "https://uat-wp.s3.eu-west-2.amazonaws.com/wp-content/uploads/2024/05/07125413/TMUA-2018-answer-keys.pdf",
+      "explanationReady": true
+    },
+    "explanation": {
+      "zh": {
+        "steps": [
+          "选 r 个 $-x^{-2}$、其余 $x^6$，总幂次为 $6(12-r)-2r=72-8r$。",
+          "常数项要求 r=9，系数为 $\\binom{12}9(-1)^9$。",
+          "$\\binom{12}9=220$，九个负号使结果为 −220，选 B。"
+        ],
+        "pitfall": "常数项幂次为零，仍需保留所选负项的符号。"
+      },
+      "en": {
+        "steps": [
+          "Choosing r negative-power terms gives total exponent 72−8r.",
+          "The constant term requires r=9, with coefficient $\\binom{12}9(-1)^9$.",
+          "The coefficient is −220. Choose B."
+        ],
+        "pitfall": "A zero exponent does not remove the sign from the selected negative terms."
+      }
+    },
+    "source": {
+      "kind": "official-public",
+      "title": {
+        "zh": "TMUA 2018 Paper 2 · 官方原卷",
+        "en": "TMUA 2018 Paper 2 · official archive"
+      },
+      "url": "https://uat-wp.s3.eu-west-2.amazonaws.com/wp-content/uploads/2024/05/07125404/TMUA-2018-paper-2.pdf",
+      "originalNumber": "2",
+      "year": 2018,
+      "rightsNote": "Original papers and worked solutions: Cambridge University Press & Assessment / Cambridge Assessment; public archive provided by UAT-UK. No affiliation or endorsement."
+    }
+  },
+  {
+    "id": "ARCHIVE-TMUA-2018-P2-Q03",
+    "exam": "TMUA",
+    "moduleId": "p2",
+    "format": "latex",
+    "topic": {
+      "id": "reasoning",
+      "name": {
+        "zh": "逻辑与证明",
+        "en": "Logic & proof"
+      }
+    },
+    "subtopic": {
+      "id": "average-speed-time-weighted",
+      "name": {
+        "zh": "平均速度的时间加权反例",
+        "en": "Time weighting and counterexamples for average speed"
+      }
+    },
+    "prompt": "Read question 3 in the official TMUA 2018 Paper 2. Record your answer here.",
+    "options": [
+      "A",
+      "B",
+      "C",
+      "D",
+      "E",
+      "F",
+      "G",
+      "H"
+    ],
+    "correctIndex": 5,
+    "difficulty": "standard",
+    "external": {
+      "kind": "linked-paper",
+      "workedAnswersUrl": "https://uat-wp.s3.eu-west-2.amazonaws.com/wp-content/uploads/2024/05/07125406/TMUA-2018-paper-2-worked-answers.pdf",
+      "answerKeyUrl": "https://uat-wp.s3.eu-west-2.amazonaws.com/wp-content/uploads/2024/05/07125413/TMUA-2018-answer-keys.pdf",
+      "explanationReady": true
+    },
+    "explanation": {
+      "zh": {
+        "steps": [
+          "平均速度应为总路程除以总时间，并非一般直接平均两个速度。",
+          "I 的时间为 2 与 2.5 小时，平均 $200/4.5=400/9\\ne45$，是反例。II 两段各一小时，平均 (50+40)/2=45，不是反例。",
+          "III 的时间为 1.6 与 2.5 小时，平均 $180/4.1=1800/41\\ne45$，也是反例。I、III 对应 F。"
+        ],
+        "pitfall": "等距离不同于等时间，直接平均速度只在适当时间权重相等时有效。"
+      },
+      "en": {
+        "steps": [
+          "Average speed is total distance divided by total time, not generally the arithmetic mean of speeds.",
+          "I gives 200/(2+2.5)=400/9, not 45, so it is a counterexample. II has equal times and average 45, so it is not.",
+          "III gives 180/(1.6+2.5)=1800/41, not 45. Thus I and III refute the claim; choose F."
+        ],
+        "pitfall": "Equal distances differ from equal times; the arithmetic mean requires equal time weights."
+      }
+    },
+    "source": {
+      "kind": "official-public",
+      "title": {
+        "zh": "TMUA 2018 Paper 2 · 官方原卷",
+        "en": "TMUA 2018 Paper 2 · official archive"
+      },
+      "url": "https://uat-wp.s3.eu-west-2.amazonaws.com/wp-content/uploads/2024/05/07125404/TMUA-2018-paper-2.pdf",
+      "originalNumber": "3",
+      "year": 2018,
+      "rightsNote": "Original papers and worked solutions: Cambridge University Press & Assessment / Cambridge Assessment; public archive provided by UAT-UK. No affiliation or endorsement."
+    }
+  },
+  {
+    "id": "ARCHIVE-TMUA-2018-P2-Q04",
+    "exam": "TMUA",
+    "moduleId": "p2",
+    "format": "latex",
+    "topic": {
+      "id": "trigonometry",
+      "name": {
+        "zh": "三角函数与方程",
+        "en": "Trigonometric functions & equations"
+      }
+    },
+    "subtopic": {
+      "id": "squared-double-cosine-solution-count",
+      "name": {
+        "zh": "平方二倍角余弦的解数",
+        "en": "Counting squared double-angle cosine solutions"
+      }
+    },
+    "prompt": "Read question 4 in the official TMUA 2018 Paper 2. Record your answer here.",
+    "options": [
+      "A",
+      "B",
+      "C",
+      "D",
+      "E",
+      "F",
+      "G",
+      "H"
+    ],
+    "correctIndex": 3,
+    "difficulty": "standard",
+    "external": {
+      "kind": "linked-paper",
+      "workedAnswersUrl": "https://uat-wp.s3.eu-west-2.amazonaws.com/wp-content/uploads/2024/05/07125406/TMUA-2018-paper-2-worked-answers.pdf",
+      "answerKeyUrl": "https://uat-wp.s3.eu-west-2.amazonaws.com/wp-content/uploads/2024/05/07125413/TMUA-2018-answer-keys.pdf",
+      "explanationReady": true
+    },
+    "explanation": {
+      "zh": {
+        "steps": [
+          "cosx=c 在开区间 (0,3π/2) 有两解且 c≠0，要求 −1<c<0；其他可能值至多一解。",
+          "因此 0<c²<1。函数 cos²2x 的周期为 π/2，每个完整周期对这个水平值有两交点。",
+          "(0,3π/2) 包含三个周期，端点函数值为 1 不是目标值，所以共 6 解，选 D。"
+        ],
+        "pitfall": "开区间端点不能计入，且 c=0、±1 的特殊根数已被前提排除。"
+      },
+      "en": {
+        "steps": [
+          "Two cosine roots in (0,3π/2), with c≠0, require −1<c<0; other values give at most one.",
+          "Thus 0<c²<1. The period of cos²2x is π/2, with two intersections per period.",
+          "There are three periods; endpoint values 1 are not the target. Hence six solutions, option D."
+        ],
+        "pitfall": "Exclude open endpoints; the premise rules out c=0 and ±1."
+      }
+    },
+    "source": {
+      "kind": "official-public",
+      "title": {
+        "zh": "TMUA 2018 Paper 2 · 官方原卷",
+        "en": "TMUA 2018 Paper 2 · official archive"
+      },
+      "url": "https://uat-wp.s3.eu-west-2.amazonaws.com/wp-content/uploads/2024/05/07125404/TMUA-2018-paper-2.pdf",
+      "originalNumber": "4",
+      "year": 2018,
+      "rightsNote": "Original papers and worked solutions: Cambridge University Press & Assessment / Cambridge Assessment; public archive provided by UAT-UK. No affiliation or endorsement."
+    }
+  },
+  {
+    "id": "ARCHIVE-TMUA-2018-P2-Q05",
+    "exam": "TMUA",
+    "moduleId": "p2",
+    "format": "latex",
+    "topic": {
+      "id": "reasoning",
+      "name": {
+        "zh": "逻辑与证明",
+        "en": "Logic & proof"
+      }
+    },
+    "subtopic": {
+      "id": "perpendicular-diagonal-non-symmetry",
+      "name": {
+        "zh": "垂直对角线不保证对称或正方形",
+        "en": "Perpendicular diagonals do not ensure symmetry or a square"
+      }
+    },
+    "prompt": "Read question 5 in the official TMUA 2018 Paper 2. Record your answer here.",
+    "options": [
+      "A",
+      "B",
+      "C",
+      "D",
+      "E",
+      "F",
+      "G",
+      "H"
+    ],
+    "correctIndex": 0,
+    "difficulty": "standard",
+    "external": {
+      "kind": "linked-paper",
+      "workedAnswersUrl": "https://uat-wp.s3.eu-west-2.amazonaws.com/wp-content/uploads/2024/05/07125406/TMUA-2018-paper-2-worked-answers.pdf",
+      "answerKeyUrl": "https://uat-wp.s3.eu-west-2.amazonaws.com/wp-content/uploads/2024/05/07125413/TMUA-2018-answer-keys.pdf",
+      "explanationReady": true
+    },
+    "explanation": {
+      "zh": {
+        "steps": [
+          "取四边形顶点 $(-2,0),(0,3),(1,0),(0,-1)$，两对角线位于坐标轴，互相垂直。",
+          "两条对角线都不是对称轴：横向两端距纵轴不等，纵向两端距横轴也不等，所以 I 不必成立。",
+          "各边中点构成的平行四边形，其边平行且等于原对角线长度的一半。原对角线长 3 与 4，故中点图形为长方形但非正方形，II 也不必成立。选 A。"
+        ],
+        "pitfall": "垂直不等于互相平分或等长，不能额外假设原四边形为菱形。"
+      },
+      "en": {
+        "steps": [
+          "Take vertices (−2,0),(0,3),(1,0),(0,−1); the diagonals are perpendicular coordinate-axis segments.",
+          "Neither diagonal is a symmetry axis: the endpoint distances differ on both axes. I is not necessary.",
+          "The midpoint parallelogram has sides half the original diagonal lengths. Lengths 3 and 4 give a non-square rectangle, refuting II. Choose A."
+        ],
+        "pitfall": "Perpendicular does not mean equal or mutually bisecting; do not assume a rhombus."
+      }
+    },
+    "source": {
+      "kind": "official-public",
+      "title": {
+        "zh": "TMUA 2018 Paper 2 · 官方原卷",
+        "en": "TMUA 2018 Paper 2 · official archive"
+      },
+      "url": "https://uat-wp.s3.eu-west-2.amazonaws.com/wp-content/uploads/2024/05/07125404/TMUA-2018-paper-2.pdf",
+      "originalNumber": "5",
+      "year": 2018,
+      "rightsNote": "Original papers and worked solutions: Cambridge University Press & Assessment / Cambridge Assessment; public archive provided by UAT-UK. No affiliation or endorsement."
+    }
+  },
+  {
+    "id": "ARCHIVE-TMUA-2018-P2-Q06",
+    "exam": "TMUA",
+    "moduleId": "p2",
+    "format": "latex",
+    "topic": {
+      "id": "reasoning",
+      "name": {
+        "zh": "逻辑与证明",
+        "en": "Logic & proof"
+      }
+    },
+    "subtopic": {
+      "id": "increasing-function-not-positive",
+      "name": {
+        "zh": "递增函数不必恒正",
+        "en": "An increasing function need not be positive"
+      }
+    },
+    "prompt": "Read question 6 in the official TMUA 2018 Paper 2. Record your answer here.",
+    "options": [
+      "A",
+      "B",
+      "C",
+      "D",
+      "E",
+      "F",
+      "G",
+      "H"
+    ],
+    "correctIndex": 2,
+    "difficulty": "standard",
+    "external": {
+      "kind": "linked-paper",
+      "workedAnswersUrl": "https://uat-wp.s3.eu-west-2.amazonaws.com/wp-content/uploads/2024/05/07125406/TMUA-2018-paper-2-worked-answers.pdf",
+      "answerKeyUrl": "https://uat-wp.s3.eu-west-2.amazonaws.com/wp-content/uploads/2024/05/07125413/TMUA-2018-answer-keys.pdf",
+      "explanationReady": true
+    },
+    "explanation": {
+      "zh": {
+        "steps": [
+          "反例必须满足前提“导数对所有实数严格为正”，同时在某些点函数值不为正。",
+          "C 的 $f(x)=x^3+x+1$ 有 $f^{\\prime}(x)=3x^2+1>0$，但 f(−1)=−1，符合。",
+          "A、B 的导数在负半轴为负，D 的导数为 −1；E 是 2ˣ，虽递增却始终为正，不能反驳结论。选 C。"
+        ],
+        "pitfall": "必须核对整个实数域的前提；原卷 E 为 2ˣ，不是 2x。"
+      },
+      "en": {
+        "steps": [
+          "A counterexample needs a strictly positive derivative everywhere and a nonpositive function value somewhere.",
+          "For C, f′(x)=3x²+1>0 but f(−1)=−1, satisfying both requirements.",
+          "A and B fail the derivative premise, D has negative derivative, and E is 2^x, always positive. Choose C."
+        ],
+        "pitfall": "Check the premise on all real numbers; option E is 2^x, not 2x."
+      }
+    },
+    "source": {
+      "kind": "official-public",
+      "title": {
+        "zh": "TMUA 2018 Paper 2 · 官方原卷",
+        "en": "TMUA 2018 Paper 2 · official archive"
+      },
+      "url": "https://uat-wp.s3.eu-west-2.amazonaws.com/wp-content/uploads/2024/05/07125404/TMUA-2018-paper-2.pdf",
+      "originalNumber": "6",
+      "year": 2018,
+      "rightsNote": "Original papers and worked solutions: Cambridge University Press & Assessment / Cambridge Assessment; public archive provided by UAT-UK. No affiliation or endorsement."
+    }
+  },
+  {
+    "id": "ARCHIVE-TMUA-2018-P2-Q07",
+    "exam": "TMUA",
+    "moduleId": "p2",
+    "format": "latex",
+    "topic": {
+      "id": "sequences",
+      "name": {
+        "zh": "数列与级数",
+        "en": "Sequences & series"
+      }
+    },
+    "subtopic": {
+      "id": "common-arithmetic-progression-terms",
+      "name": {
+        "zh": "两个等差数列的公共项",
+        "en": "Common terms of two arithmetic progressions"
+      }
+    },
+    "prompt": "Read question 7 in the official TMUA 2018 Paper 2. Record your answer here.",
+    "options": [
+      "A",
+      "B",
+      "C",
+      "D",
+      "E",
+      "F",
+      "G",
+      "H"
+    ],
+    "correctIndex": 1,
+    "difficulty": "standard",
+    "external": {
+      "kind": "linked-paper",
+      "workedAnswersUrl": "https://uat-wp.s3.eu-west-2.amazonaws.com/wp-content/uploads/2024/05/07125406/TMUA-2018-paper-2-worked-answers.pdf",
+      "answerKeyUrl": "https://uat-wp.s3.eu-west-2.amazonaws.com/wp-content/uploads/2024/05/07125413/TMUA-2018-answer-keys.pdf",
+      "explanationReady": true
+    },
+    "explanation": {
+      "zh": {
+        "steps": [
+          "第一数列各项模 3 余 2，第二数列各项模 5 余 2，公共项满足 N≡2 mod15。",
+          "不小于第一首项 11 的最小公共项是 17，随后为 17、32、47……公差 15。",
+          "第 20 个为 $17+19\\times15=302$，除以 7 余 1，选 B。"
+        ],
+        "pitfall": "公共同余解 2 不是第一数列中的项，计数应从第一个实际公共项 17 开始。"
+      },
+      "en": {
+        "steps": [
+          "Common terms have remainder 2 modulo both 3 and 5, hence modulo 15.",
+          "The first common term at least 11 is 17; subsequent common terms increase by 15.",
+          "The twentieth is 302, with remainder 1 modulo 7. Choose B."
+        ],
+        "pitfall": "The residue representative 2 is not in the first sequence; start counting actual common terms at 17."
+      }
+    },
+    "source": {
+      "kind": "official-public",
+      "title": {
+        "zh": "TMUA 2018 Paper 2 · 官方原卷",
+        "en": "TMUA 2018 Paper 2 · official archive"
+      },
+      "url": "https://uat-wp.s3.eu-west-2.amazonaws.com/wp-content/uploads/2024/05/07125404/TMUA-2018-paper-2.pdf",
+      "originalNumber": "7",
+      "year": 2018,
+      "rightsNote": "Original papers and worked solutions: Cambridge University Press & Assessment / Cambridge Assessment; public archive provided by UAT-UK. No affiliation or endorsement."
+    }
+  },
+  {
+    "id": "ARCHIVE-TMUA-2018-P2-Q08",
+    "exam": "TMUA",
+    "moduleId": "p2",
+    "format": "latex",
+    "topic": {
+      "id": "reasoning",
+      "name": {
+        "zh": "逻辑与证明",
+        "en": "Logic & proof"
+      }
+    },
+    "subtopic": {
+      "id": "mountain-code-prefix-validity",
+      "name": {
+        "zh": "山形编码的前缀合法性",
+        "en": "Prefix validity of mountain-profile codes"
+      }
+    },
+    "prompt": "Read question 8 in the official TMUA 2018 Paper 2. Record your answer here.",
+    "options": [
+      "A",
+      "B",
+      "C",
+      "D",
+      "E",
+      "F",
+      "G",
+      "H"
+    ],
+    "correctIndex": 3,
+    "difficulty": "standard",
+    "external": {
+      "kind": "linked-paper",
+      "workedAnswersUrl": "https://uat-wp.s3.eu-west-2.amazonaws.com/wp-content/uploads/2024/05/07125406/TMUA-2018-paper-2-worked-answers.pdf",
+      "answerKeyUrl": "https://uat-wp.s3.eu-west-2.amazonaws.com/wp-content/uploads/2024/05/07125413/TMUA-2018-answer-keys.pdf",
+      "explanationReady": true
+    },
+    "explanation": {
+      "zh": {
+        "steps": [
+          "合法编码总 U、D 数相等，且每个前缀 U 不少于 D。最简单合法例子是 UD。",
+          "UD 反序或交换字母都会变成 DU，第一步低于海平面，分别反驳 I、II。",
+          "在任意合法编码前加 U，所有原前缀高度加 1；末尾加 D 正好回到零，不会负。III 总成立，选 D。"
+        ],
+        "pitfall": "只保持 U、D 数量相等还不够，必须检查每个前缀高度。"
+      },
+      "en": {
+        "steps": [
+          "A valid code has equal total counts and no prefix with more D than U. The simplest example is UD.",
+          "Reversal or letter swapping turns UD into DU, immediately below sea level, refuting I and II.",
+          "Adding U raises every original prefix by 1; the final D returns to zero. III always holds, option D."
+        ],
+        "pitfall": "Equal total counts are insufficient; check all prefix heights."
+      }
+    },
+    "source": {
+      "kind": "official-public",
+      "title": {
+        "zh": "TMUA 2018 Paper 2 · 官方原卷",
+        "en": "TMUA 2018 Paper 2 · official archive"
+      },
+      "url": "https://uat-wp.s3.eu-west-2.amazonaws.com/wp-content/uploads/2024/05/07125404/TMUA-2018-paper-2.pdf",
+      "originalNumber": "8",
+      "year": 2018,
+      "rightsNote": "Original papers and worked solutions: Cambridge University Press & Assessment / Cambridge Assessment; public archive provided by UAT-UK. No affiliation or endorsement."
+    }
+  },
+  {
+    "id": "ARCHIVE-TMUA-2018-P2-Q09",
+    "exam": "TMUA",
+    "moduleId": "p2",
+    "format": "latex",
+    "topic": {
+      "id": "reasoning",
+      "name": {
+        "zh": "逻辑与证明",
+        "en": "Logic & proof"
+      }
+    },
+    "subtopic": {
+      "id": "radical-equation-cancelled-root",
+      "name": {
+        "zh": "根号方程约分导致漏根",
+        "en": "A root lost by cancellation in a radical equation"
+      }
+    },
+    "prompt": "Read question 9 in the official TMUA 2018 Paper 2. Record your answer here.",
+    "options": [
+      "A",
+      "B",
+      "C",
+      "D",
+      "E",
+      "F",
+      "G",
+      "H"
+    ],
+    "correctIndex": 5,
+    "difficulty": "challenge",
+    "external": {
+      "kind": "linked-paper",
+      "workedAnswersUrl": "https://uat-wp.s3.eu-west-2.amazonaws.com/wp-content/uploads/2024/05/07125406/TMUA-2018-paper-2-worked-answers.pdf",
+      "answerKeyUrl": "https://uat-wp.s3.eu-west-2.amazonaws.com/wp-content/uploads/2024/05/07125413/TMUA-2018-answer-keys.pdf",
+      "explanationReady": true
+    },
+    "explanation": {
+      "zh": {
+        "steps": [
+          "原式定义域 x≥1/2。直接代入 x=5/8 与 5/2，左右分别均为 5/4 与 20，两者都是有效解。",
+          "原图 III 这一步把平方后的等式除以 2x−1，遗漏该因子为零时的 x=1/2。此时原式两边都为零，也是解。",
+          "可令 t=√(2x−1)≥0：原式为 $2t(t^2+1)=5t^2$，即 $t(2t-1)(t-2)=0$。得到 t=0、1/2、2，正好三个上述解。选 F。"
+        ],
+        "pitfall": "罗马数字标的是原图中的变换箭头；除以可能为零的因子前必须单独检查零因子。"
+      },
+      "en": {
+        "steps": [
+          "The domain is x≥1/2. Substituting 5/8 and 5/2 gives equal sides 5/4 and 20, so both are valid.",
+          "Step III divides the squared equation by 2x−1, losing x=1/2, which also makes both original sides zero.",
+          "With t=√(2x−1)≥0, the equation factors as t(2t−1)(t−2)=0, giving exactly the three roots. Choose F."
+        ],
+        "pitfall": "The Roman labels identify transformation arrows; check zero factors before division."
+      }
+    },
+    "source": {
+      "kind": "official-public",
+      "title": {
+        "zh": "TMUA 2018 Paper 2 · 官方原卷",
+        "en": "TMUA 2018 Paper 2 · official archive"
+      },
+      "url": "https://uat-wp.s3.eu-west-2.amazonaws.com/wp-content/uploads/2024/05/07125404/TMUA-2018-paper-2.pdf",
+      "originalNumber": "9",
+      "year": 2018,
+      "rightsNote": "Original papers and worked solutions: Cambridge University Press & Assessment / Cambridge Assessment; public archive provided by UAT-UK. No affiliation or endorsement."
+    }
+  },
+  {
+    "id": "ARCHIVE-TMUA-2018-P2-Q10",
+    "exam": "TMUA",
+    "moduleId": "p2",
+    "format": "latex",
+    "topic": {
+      "id": "reasoning",
+      "name": {
+        "zh": "逻辑与证明",
+        "en": "Logic & proof"
+      }
+    },
+    "subtopic": {
+      "id": "reflection-symmetry-equivalent-formulas",
+      "name": {
+        "zh": "反射对称的等价函数式",
+        "en": "Equivalent formulas for reflection symmetry"
+      }
+    },
+    "prompt": "Read question 10 in the official TMUA 2018 Paper 2. Record your answer here.",
+    "options": [
+      "A",
+      "B",
+      "C",
+      "D",
+      "E",
+      "F",
+      "G",
+      "H"
+    ],
+    "correctIndex": 1,
+    "difficulty": "standard",
+    "external": {
+      "kind": "linked-paper",
+      "workedAnswersUrl": "https://uat-wp.s3.eu-west-2.amazonaws.com/wp-content/uploads/2024/05/07125406/TMUA-2018-paper-2-worked-answers.pdf",
+      "answerKeyUrl": "https://uat-wp.s3.eu-west-2.amazonaws.com/wp-content/uploads/2024/05/07125413/TMUA-2018-answer-keys.pdf",
+      "explanationReady": true
+    },
+    "explanation": {
+      "zh": {
+        "steps": [
+          "关于 x=a 对称意味着对任意偏移 t，$f(a-t)=f(a+t)$，I 正是这个定义。",
+          "反射把任意点 x 送到 2a−x，所以 $f(2a-x)=f(x)$ 也正好是充要条件，II 成立。",
+          "III 一般表示关于 a/2 对称，不能代替 x=a；例如 a=1、f(x)=(x−1)² 对 I、II 成立却不满足 III。组合 Yes/Yes/No，对应 B。"
+        ],
+        "pitfall": "反射点是 2a−x，不是 a−x；特殊 a=0 的重合不构成一般充要性。"
+      },
+      "en": {
+        "steps": [
+          "Symmetry about x=a means f(a−t)=f(a+t) for every t, exactly I.",
+          "Reflection sends x to 2a−x, so II is also necessary and sufficient.",
+          "III generally describes symmetry about a/2. For a=1,f(x)=(x−1)², it fails while I and II hold. The pattern Yes/Yes/No is B."
+        ],
+        "pitfall": "The reflected coordinate is 2a−x; coincidence at a=0 does not prove the general claim."
+      }
+    },
+    "source": {
+      "kind": "official-public",
+      "title": {
+        "zh": "TMUA 2018 Paper 2 · 官方原卷",
+        "en": "TMUA 2018 Paper 2 · official archive"
+      },
+      "url": "https://uat-wp.s3.eu-west-2.amazonaws.com/wp-content/uploads/2024/05/07125404/TMUA-2018-paper-2.pdf",
+      "originalNumber": "10",
+      "year": 2018,
+      "rightsNote": "Original papers and worked solutions: Cambridge University Press & Assessment / Cambridge Assessment; public archive provided by UAT-UK. No affiliation or endorsement."
+    }
+  },
+  {
+    "id": "ARCHIVE-TMUA-2018-P2-Q11",
+    "exam": "TMUA",
+    "moduleId": "p2",
+    "format": "latex",
+    "topic": {
+      "id": "reasoning",
+      "name": {
+        "zh": "逻辑与证明",
+        "en": "Logic & proof"
+      }
+    },
+    "subtopic": {
+      "id": "exponential-line-counterexamples",
+      "name": {
+        "zh": "指数曲线与直线断言的反例",
+        "en": "Counterexamples for an exponential–line intersection claim"
+      }
+    },
+    "prompt": "Read question 11 in the official TMUA 2018 Paper 2. Record your answer here.",
+    "options": [
+      "A",
+      "B",
+      "C",
+      "D",
+      "E",
+      "F",
+      "G",
+      "H"
+    ],
+    "correctIndex": 0,
+    "difficulty": "standard",
+    "external": {
+      "kind": "linked-paper",
+      "workedAnswersUrl": "https://uat-wp.s3.eu-west-2.amazonaws.com/wp-content/uploads/2024/05/07125406/TMUA-2018-paper-2-worked-answers.pdf",
+      "answerKeyUrl": "https://uat-wp.s3.eu-west-2.amazonaws.com/wp-content/uploads/2024/05/07125413/TMUA-2018-answer-keys.pdf",
+      "explanationReady": true
+    },
+    "explanation": {
+      "zh": {
+        "steps": [
+          "I 不成立：取 m=0,c=1/2，方程 2ˣ=1/2 有负根 x=−1，却 c≤1。",
+          "II 不成立：取 m=0,c=2，虽然 c>1，但 2ˣ=2 只有一个实根 x=1。",
+          "III 的 c≤1 不充分，同样 m=0,c=1/2 仅一个负根，不是两个正根。三项都假，选 A。"
+        ],
+        "pitfall": "m 没有被要求为正，不能把正斜率图形的结论推广到所有实参数。"
+      },
+      "en": {
+        "steps": [
+          "I fails with m=0,c=1/2: 2^x=1/2 has negative root −1 despite c≤1.",
+          "II fails with m=0,c=2: c>1 but there is only one root x=1.",
+          "The c≤1 condition in III is not sufficient, as the first example has only one negative root. Choose A."
+        ],
+        "pitfall": "The slope m need not be positive; include zero and negative slopes."
+      }
+    },
+    "source": {
+      "kind": "official-public",
+      "title": {
+        "zh": "TMUA 2018 Paper 2 · 官方原卷",
+        "en": "TMUA 2018 Paper 2 · official archive"
+      },
+      "url": "https://uat-wp.s3.eu-west-2.amazonaws.com/wp-content/uploads/2024/05/07125404/TMUA-2018-paper-2.pdf",
+      "originalNumber": "11",
+      "year": 2018,
+      "rightsNote": "Original papers and worked solutions: Cambridge University Press & Assessment / Cambridge Assessment; public archive provided by UAT-UK. No affiliation or endorsement."
+    }
+  },
+  {
+    "id": "ARCHIVE-TMUA-2018-P2-Q12",
+    "exam": "TMUA",
+    "moduleId": "p2",
+    "format": "latex",
+    "topic": {
+      "id": "reasoning",
+      "name": {
+        "zh": "逻辑与证明",
+        "en": "Logic & proof"
+      }
+    },
+    "subtopic": {
+      "id": "nested-quantifier-negation",
+      "name": {
+        "zh": "嵌套量词的逐层否定",
+        "en": "Negating nested quantifiers"
+      }
+    },
+    "prompt": "Read question 12 in the official TMUA 2018 Paper 2. Record your answer here.",
+    "options": [
+      "A",
+      "B",
+      "C",
+      "D",
+      "E",
+      "F",
+      "G",
+      "H"
+    ],
+    "correctIndex": 5,
+    "difficulty": "standard",
+    "external": {
+      "kind": "linked-paper",
+      "workedAnswersUrl": "https://uat-wp.s3.eu-west-2.amazonaws.com/wp-content/uploads/2024/05/07125406/TMUA-2018-paper-2-worked-answers.pdf",
+      "answerKeyUrl": "https://uat-wp.s3.eu-west-2.amazonaws.com/wp-content/uploads/2024/05/07125413/TMUA-2018-answer-keys.pdf",
+      "explanationReady": true
+    },
+    "explanation": {
+      "zh": {
+        "steps": [
+          "原句结构为 $\\forall N\\,\\exists K\\,\\forall m\\,\\neg P(N,K,m)$，P 表示该表达式为质数，变量均限定为正整数。",
+          "逐层否定，全称变存在、存在变全称，末尾非质数变质数：$\\exists N\\,\\forall K\\,\\exists m\\,P(N,K,m)$。",
+          "即存在某个 N，使任意 K 都能找到 m 令表达式为质数，对应 F。"
+        ],
+        "pitfall": "只否定末尾结论会漏改量词；量词顺序与正整数域都必须保留。"
+      },
+      "en": {
+        "steps": [
+          "The structure is $\\forall N\\,\\exists K\\,\\forall m\\,\\neg P(N,K,m)$, with positive-integer domains.",
+          "Negation gives $\\exists N\\,\\forall K\\,\\exists m\\,P(N,K,m)$, switching each quantifier and the final predicate.",
+          "There exists N such that every K admits an m making the expression prime. Choose F."
+        ],
+        "pitfall": "Change all quantifiers while retaining their order and domains."
+      }
+    },
+    "source": {
+      "kind": "official-public",
+      "title": {
+        "zh": "TMUA 2018 Paper 2 · 官方原卷",
+        "en": "TMUA 2018 Paper 2 · official archive"
+      },
+      "url": "https://uat-wp.s3.eu-west-2.amazonaws.com/wp-content/uploads/2024/05/07125404/TMUA-2018-paper-2.pdf",
+      "originalNumber": "12",
+      "year": 2018,
+      "rightsNote": "Original papers and worked solutions: Cambridge University Press & Assessment / Cambridge Assessment; public archive provided by UAT-UK. No affiliation or endorsement."
+    }
+  },
+  {
+    "id": "ARCHIVE-TMUA-2018-P2-Q13",
+    "exam": "TMUA",
+    "moduleId": "p2",
+    "format": "latex",
+    "topic": {
+      "id": "reasoning",
+      "name": {
+        "zh": "逻辑与证明",
+        "en": "Logic & proof"
+      }
+    },
+    "subtopic": {
+      "id": "square-inequality-sign-branch",
+      "name": {
+        "zh": "平方不等式的符号分支",
+        "en": "Sign branches of a squared inequality"
+      }
+    },
+    "prompt": "Read question 13 in the official TMUA 2018 Paper 2. Record your answer here.",
+    "options": [
+      "A",
+      "B",
+      "C",
+      "D",
+      "E",
+      "F",
+      "G",
+      "H"
+    ],
+    "correctIndex": 5,
+    "difficulty": "standard",
+    "external": {
+      "kind": "linked-paper",
+      "workedAnswersUrl": "https://uat-wp.s3.eu-west-2.amazonaws.com/wp-content/uploads/2024/05/07125406/TMUA-2018-paper-2-worked-answers.pdf",
+      "answerKeyUrl": "https://uat-wp.s3.eu-west-2.amazonaws.com/wp-content/uploads/2024/05/07125413/TMUA-2018-answer-keys.pdf",
+      "explanationReady": true
+    },
+    "explanation": {
+      "zh": {
+        "steps": [
+          "I 到 IV 有效：tanθ>0 且 cosθ≠0，确实得到 $(\\sin\\theta+\\cos\\theta)^2>1$。",
+          "平方大于 1 只推出和大于 1 或小于 −1，不能只保留正分支。因此首错在 V，选 F。",
+          "例如 θ=5π/4，tanθ=1>0，但 sinθ+cosθ=−√2，满足平方条件却否定目标结论。"
+        ],
+        "pitfall": "正切为正允许第三象限；开平方或解平方不等式时不能忽略负支。"
+      },
+      "en": {
+        "steps": [
+          "Steps I–IV validly produce $(\\sin\\theta+\\cos\\theta)^2>1$.",
+          "A square above 1 allows a value above 1 or below −1. The first error is V, option F.",
+          "At θ=5π/4, tangent is positive but sine plus cosine is −√2, a counterexample."
+        ],
+        "pitfall": "Positive tangent allows quadrant III; retain the negative branch of a squared inequality."
+      }
+    },
+    "source": {
+      "kind": "official-public",
+      "title": {
+        "zh": "TMUA 2018 Paper 2 · 官方原卷",
+        "en": "TMUA 2018 Paper 2 · official archive"
+      },
+      "url": "https://uat-wp.s3.eu-west-2.amazonaws.com/wp-content/uploads/2024/05/07125404/TMUA-2018-paper-2.pdf",
+      "originalNumber": "13",
+      "year": 2018,
+      "rightsNote": "Original papers and worked solutions: Cambridge University Press & Assessment / Cambridge Assessment; public archive provided by UAT-UK. No affiliation or endorsement."
+    }
+  },
+  {
+    "id": "ARCHIVE-TMUA-2018-P2-Q14",
+    "exam": "TMUA",
+    "moduleId": "p2",
+    "format": "latex",
+    "topic": {
+      "id": "geometry",
+      "name": {
+        "zh": "几何",
+        "en": "Geometry"
+      }
+    },
+    "subtopic": {
+      "id": "ssa-triangle-unique-positive-length",
+      "name": {
+        "zh": "SSA 三角形的唯一正边长",
+        "en": "A unique positive side length in an SSA triangle"
+      }
+    },
+    "prompt": "Read question 14 in the official TMUA 2018 Paper 2. Record your answer here.",
+    "options": [
+      "A",
+      "B",
+      "C",
+      "D",
+      "E",
+      "F",
+      "G",
+      "H"
+    ],
+    "correctIndex": 4,
+    "difficulty": "challenge",
+    "external": {
+      "kind": "linked-paper",
+      "workedAnswersUrl": "https://uat-wp.s3.eu-west-2.amazonaws.com/wp-content/uploads/2024/05/07125406/TMUA-2018-paper-2-worked-answers.pdf",
+      "answerKeyUrl": "https://uat-wp.s3.eu-west-2.amazonaws.com/wp-content/uploads/2024/05/07125413/TMUA-2018-answer-keys.pdf",
+      "explanationReady": true
+    },
+    "explanation": {
+      "zh": {
+        "steps": [
+          "令 x=PQ>0，余弦定理给 $p^2=x^2-2\\sqrt3x+4=(x-\\sqrt3)^2+1$。",
+          "p<1 时无解；p=1 时唯一 x=√3；1<p<2 时两个根 $\\sqrt3\\pm\\sqrt{p^2-1}$ 都正，因此不唯一。",
+          "p=2 时一个根为零，是退化三角形而应排除，另一根正；p>2 时仅正号分支为正。因此完整范围 p=1 或 p≥2，选 E。"
+        ],
+        "pitfall": "无解不算唯一；零边长对应退化图形，不能当作第二个三角形。"
+      },
+      "en": {
+        "steps": [
+          "For x=PQ>0, the cosine rule gives p²=(x−√3)²+1.",
+          "For p<1 there is no root; p=1 gives one; for 1<p<2 both roots are positive, giving two possibilities.",
+          "At p=2 one root is zero and degenerate; for p>2 the minus root is negative. Exactly one positive root occurs at p=1 or p≥2. Choose E."
+        ],
+        "pitfall": "No solution is not uniqueness; a zero side gives a degenerate triangle."
+      }
+    },
+    "source": {
+      "kind": "official-public",
+      "title": {
+        "zh": "TMUA 2018 Paper 2 · 官方原卷",
+        "en": "TMUA 2018 Paper 2 · official archive"
+      },
+      "url": "https://uat-wp.s3.eu-west-2.amazonaws.com/wp-content/uploads/2024/05/07125404/TMUA-2018-paper-2.pdf",
+      "originalNumber": "14",
+      "year": 2018,
+      "rightsNote": "Original papers and worked solutions: Cambridge University Press & Assessment / Cambridge Assessment; public archive provided by UAT-UK. No affiliation or endorsement."
+    }
+  },
+  {
+    "id": "ARCHIVE-TMUA-2018-P2-Q15",
+    "exam": "TMUA",
+    "moduleId": "p2",
+    "format": "latex",
+    "topic": {
+      "id": "functions",
+      "name": {
+        "zh": "函数",
+        "en": "Functions"
+      }
+    },
+    "subtopic": {
+      "id": "cubic-shifts-preserve-three-roots",
+      "name": {
+        "zh": "三次曲线平移后的三根条件",
+        "en": "Three-root conditions under cubic transformations"
+      }
+    },
+    "prompt": "Read question 15 in the official TMUA 2018 Paper 2. Record your answer here.",
+    "options": [
+      "A",
+      "B",
+      "C",
+      "D",
+      "E",
+      "F",
+      "G",
+      "H"
+    ],
+    "correctIndex": 6,
+    "difficulty": "challenge",
+    "external": {
+      "kind": "linked-paper",
+      "workedAnswersUrl": "https://uat-wp.s3.eu-west-2.amazonaws.com/wp-content/uploads/2024/05/07125406/TMUA-2018-paper-2-worked-answers.pdf",
+      "answerKeyUrl": "https://uat-wp.s3.eu-west-2.amazonaws.com/wp-content/uploads/2024/05/07125413/TMUA-2018-answer-keys.pdf",
+      "explanationReady": true
+    },
+    "explanation": {
+      "zh": {
+        "steps": [
+          "$f^{\\prime}(x)=3x(x+2q)$。三个不同实根迫使 q<0，局部最大为 f(0)=2，局部最小为 f(−2q)=2+4q³<0。",
+          "I 不必成立：q=−9/10 时原最小值 −229/250<0，增加 1 后最小值 21/250>0，两个极值都正，只有一个实根。",
+          "II 的水平平移把每个原根移到左侧一单位，根数不变，必真。",
+          "III 等价于 f(u)=1，其中 u=−x。水平线 y=1 严格介于负最小值与最大值 2 之间，因此仍有三个不同实根；反射不改变数量。II、III 对应 G。"
+        ],
+        "pitfall": "水平变换总保持实根数量，竖直平移则需检查极值位置，不能一概而论。"
+      },
+      "en": {
+        "steps": [
+          "Three distinct roots force q<0, with local maximum 2 at 0 and local minimum 2+4q³<0 at −2q.",
+          "I fails at q=−9/10: the original minimum is −229/250, but adding 1 makes it 21/250; both extrema become positive and only one real root remains.",
+          "II is a horizontal translation, preserving the number of roots.",
+          "III is f(u)=1 with u=−x. The level 1 lies strictly between the negative minimum and maximum 2, giving three distinct roots. Reflection preserves their count. Choose G."
+        ],
+        "pitfall": "Horizontal transformations preserve root counts; vertical shifts require checking extrema."
+      }
+    },
+    "source": {
+      "kind": "official-public",
+      "title": {
+        "zh": "TMUA 2018 Paper 2 · 官方原卷",
+        "en": "TMUA 2018 Paper 2 · official archive"
+      },
+      "url": "https://uat-wp.s3.eu-west-2.amazonaws.com/wp-content/uploads/2024/05/07125404/TMUA-2018-paper-2.pdf",
+      "originalNumber": "15",
+      "year": 2018,
+      "rightsNote": "Original papers and worked solutions: Cambridge University Press & Assessment / Cambridge Assessment; public archive provided by UAT-UK. No affiliation or endorsement."
+    }
+  },
+  {
+    "id": "ARCHIVE-TMUA-2018-P2-Q16",
+    "exam": "TMUA",
+    "moduleId": "p2",
+    "format": "latex",
+    "topic": {
+      "id": "sequences",
+      "name": {
+        "zh": "数列与级数",
+        "en": "Sequences & series"
+      }
+    },
+    "subtopic": {
+      "id": "arithmetic-medians-parity",
+      "name": {
+        "zh": "整数等差数列中位数的奇偶条件",
+        "en": "Parity of medians in integer arithmetic progressions"
+      }
+    },
+    "prompt": "Read question 16 in the official TMUA 2018 Paper 2. Record your answer here.",
+    "options": [
+      "A",
+      "B",
+      "C",
+      "D",
+      "E",
+      "F",
+      "G",
+      "H"
+    ],
+    "correctIndex": 5,
+    "difficulty": "standard",
+    "external": {
+      "kind": "linked-paper",
+      "workedAnswersUrl": "https://uat-wp.s3.eu-west-2.amazonaws.com/wp-content/uploads/2024/05/07125406/TMUA-2018-paper-2-worked-answers.pdf",
+      "answerKeyUrl": "https://uat-wp.s3.eu-west-2.amazonaws.com/wp-content/uploads/2024/05/07125413/TMUA-2018-answer-keys.pdf",
+      "explanationReady": true
+    },
+    "explanation": {
+      "zh": {
+        "steps": [
+          "设首项 a、公差 d 都为整数，无论数列递增或递减，前 n 项中位数为 $M_n=a+(n-1)d/2$。",
+          "$M_{n+2}=M_n+d$，所以 I 必真；II 非必真，取 a=d=1,n=1，原中位数为 1，而前两项中位数为 1.5。",
+          "偶数下标的 n 项首项 a+d、末项 a+(2n−1)d，中位数为 a+nd，必为整数。I、III 对应 F。"
+        ],
+        "pitfall": "偶数项数的中位数可能是半整数；偶数下标子列的公差则为 2d。"
+      },
+      "en": {
+        "steps": [
+          "For integer a,d, the median is $M_n=a+(n-1)d/2$ whether the progression increases or decreases.",
+          "Since $M_{n+2}=M_n+d$, I holds. II fails at a=d=n=1, where the first median is 1 but the two-term median is 1.5.",
+          "The even-indexed terms have median a+nd, always an integer. Choose F."
+        ],
+        "pitfall": "An even term count may give a half-integer median; the even-index subsequence has difference 2d."
+      }
+    },
+    "source": {
+      "kind": "official-public",
+      "title": {
+        "zh": "TMUA 2018 Paper 2 · 官方原卷",
+        "en": "TMUA 2018 Paper 2 · official archive"
+      },
+      "url": "https://uat-wp.s3.eu-west-2.amazonaws.com/wp-content/uploads/2024/05/07125404/TMUA-2018-paper-2.pdf",
+      "originalNumber": "16",
+      "year": 2018,
+      "rightsNote": "Original papers and worked solutions: Cambridge University Press & Assessment / Cambridge Assessment; public archive provided by UAT-UK. No affiliation or endorsement."
+    }
+  },
+  {
+    "id": "ARCHIVE-TMUA-2018-P2-Q17",
+    "exam": "TMUA",
+    "moduleId": "p2",
+    "format": "latex",
+    "topic": {
+      "id": "reasoning",
+      "name": {
+        "zh": "逻辑与证明",
+        "en": "Logic & proof"
+      }
+    },
+    "subtopic": {
+      "id": "sum-of-squares-prime-parity",
+      "name": {
+        "zh": "平方和定理中的质因数奇偶",
+        "en": "Prime-exponent parity in a sum-of-squares theorem"
+      }
+    },
+    "prompt": "Read question 17 in the official TMUA 2018 Paper 2. Record your answer here.",
+    "options": [
+      "A",
+      "B",
+      "C",
+      "D",
+      "E",
+      "F",
+      "G",
+      "H"
+    ],
+    "correctIndex": 2,
+    "difficulty": "standard",
+    "external": {
+      "kind": "linked-paper",
+      "workedAnswersUrl": "https://uat-wp.s3.eu-west-2.amazonaws.com/wp-content/uploads/2024/05/07125406/TMUA-2018-paper-2-worked-answers.pdf",
+      "answerKeyUrl": "https://uat-wp.s3.eu-west-2.amazonaws.com/wp-content/uploads/2024/05/07125413/TMUA-2018-answer-keys.pdf",
+      "explanationReady": true
+    },
+    "explanation": {
+      "zh": {
+        "steps": [
+          "A 正确：每个平方数都是自身加零平方，且所有质因数幂次为偶数。B 正确：两个 squaresum 相乘时 awkward 质数的偶指数相加仍偶。",
+          "C 错误：N=M=3 均不是 squaresum，但 NM=9=3²+0² 是，乘积中两个奇指数相加可变偶。",
+          "D 正确：把 N 中指数为奇数的 awkward 质数各乘一次，所有这些指数变偶，得到 squaresum。故选不正确的 C。"
+        ],
+        "pitfall": "题目要求找“不正确”的断言；乘积满足偶指数不意味着两个因子分别满足。"
+      },
+      "en": {
+        "steps": [
+          "A holds by adding zero squared. B holds because even exponents of awkward primes add to even exponents in a product.",
+          "C fails with N=M=3: neither is a squaresum, but NM=9 is one because two odd exponents add to an even one.",
+          "D holds by multiplying once by each awkward prime with odd exponent, making every such exponent even. Choose the false statement C."
+        ],
+        "pitfall": "Find the false assertion; even exponents in a product do not require even exponents in both factors."
+      }
+    },
+    "source": {
+      "kind": "official-public",
+      "title": {
+        "zh": "TMUA 2018 Paper 2 · 官方原卷",
+        "en": "TMUA 2018 Paper 2 · official archive"
+      },
+      "url": "https://uat-wp.s3.eu-west-2.amazonaws.com/wp-content/uploads/2024/05/07125404/TMUA-2018-paper-2.pdf",
+      "originalNumber": "17",
+      "year": 2018,
+      "rightsNote": "Original papers and worked solutions: Cambridge University Press & Assessment / Cambridge Assessment; public archive provided by UAT-UK. No affiliation or endorsement."
+    }
+  },
+  {
+    "id": "ARCHIVE-TMUA-2018-P2-Q18",
+    "exam": "TMUA",
+    "moduleId": "p2",
+    "format": "latex",
+    "topic": {
+      "id": "reasoning",
+      "name": {
+        "zh": "逻辑与证明",
+        "en": "Logic & proof"
+      }
+    },
+    "subtopic": {
+      "id": "midpoint-convexity-second-derivative",
+      "name": {
+        "zh": "中点凸性与二阶导数必要条件",
+        "en": "Second-derivative necessity for midpoint convexity"
+      }
+    },
+    "prompt": "Read question 18 in the official TMUA 2018 Paper 2. Record your answer here.",
+    "options": [
+      "A",
+      "B",
+      "C",
+      "D",
+      "E",
+      "F",
+      "G",
+      "H"
+    ],
+    "correctIndex": 2,
+    "difficulty": "standard",
+    "external": {
+      "kind": "linked-paper",
+      "workedAnswersUrl": "https://uat-wp.s3.eu-west-2.amazonaws.com/wp-content/uploads/2024/05/07125406/TMUA-2018-paper-2-worked-answers.pdf",
+      "answerKeyUrl": "https://uat-wp.s3.eu-west-2.amazonaws.com/wp-content/uploads/2024/05/07125413/TMUA-2018-answer-keys.pdf",
+      "explanationReady": true
+    },
+    "explanation": {
+      "zh": {
+        "steps": [
+          "题目要求每个中点都不高于两端平均值，即中点凸性。取 a=x−h、b=x+h，h>0。",
+          "得到 $f(x+h)+f(x-h)-2f(x)\\geq0$。除以 h² 并令 h→0，多项式二阶可导，极限为 f″(x)。",
+          "因此对所有 x 必有 f″(x)≥0，对应 C；函数本身或一阶导数的正负不由该不等式决定。"
+        ],
+        "pitfall": "凸性与递增不同；比较两端平均和中点应看二阶导数，而非函数是否为正。"
+      },
+      "en": {
+        "steps": [
+          "The requirement is midpoint convexity. Take a=x−h,b=x+h with h>0.",
+          "Dividing the nonnegative central difference by h² and taking h→0 gives f″(x), which exists for a polynomial.",
+          "Hence f″(x)≥0 everywhere, option C. Neither function nor first-derivative sign is forced."
+        ],
+        "pitfall": "Convexity differs from monotonicity; midpoint comparisons concern the second derivative."
+      }
+    },
+    "source": {
+      "kind": "official-public",
+      "title": {
+        "zh": "TMUA 2018 Paper 2 · 官方原卷",
+        "en": "TMUA 2018 Paper 2 · official archive"
+      },
+      "url": "https://uat-wp.s3.eu-west-2.amazonaws.com/wp-content/uploads/2024/05/07125404/TMUA-2018-paper-2.pdf",
+      "originalNumber": "18",
+      "year": 2018,
+      "rightsNote": "Original papers and worked solutions: Cambridge University Press & Assessment / Cambridge Assessment; public archive provided by UAT-UK. No affiliation or endorsement."
+    }
+  },
+  {
+    "id": "ARCHIVE-TMUA-2018-P2-Q19",
+    "exam": "TMUA",
+    "moduleId": "p2",
+    "format": "latex",
+    "topic": {
+      "id": "algebra",
+      "name": {
+        "zh": "代数",
+        "en": "Algebra"
+      }
+    },
+    "subtopic": {
+      "id": "ordered-exponential-fraction-bound",
+      "name": {
+        "zh": "有序指数分式的界",
+        "en": "Bounding exponential fractions with ordered exponents"
+      }
+    },
+    "prompt": "Read question 19 in the official TMUA 2018 Paper 2. Record your answer here.",
+    "options": [
+      "A",
+      "B",
+      "C",
+      "D",
+      "E",
+      "F",
+      "G",
+      "H"
+    ],
+    "correctIndex": 2,
+    "difficulty": "standard",
+    "external": {
+      "kind": "linked-paper",
+      "workedAnswersUrl": "https://uat-wp.s3.eu-west-2.amazonaws.com/wp-content/uploads/2024/05/07125406/TMUA-2018-paper-2-worked-answers.pdf",
+      "answerKeyUrl": "https://uat-wp.s3.eu-west-2.amazonaws.com/wp-content/uploads/2024/05/07125413/TMUA-2018-answer-keys.pdf",
+      "explanationReady": true
+    },
+    "explanation": {
+      "zh": {
+        "steps": [
+          "由 y>z，分母 5ʸ>5ᶻ 且分子正，得到 $(5^x+5^z)/5^y<(5^x+5^z)/5^z$。",
+          "右边为 $5^{x-z}+1$；又 x>z，所以 $5^{x-z}>1$，从而 $5^{x-z}+1<2\\cdot5^{x-z}$。",
+          "合并得到 $(5^x+5^z)/5^y<2\\cdot5^x/5^z$，正是 C 的不等式，且均为严格关系。"
+        ],
+        "pitfall": "正分子下增大分母使值减小；不同指数的和不能直接合并成单个指数。"
+      },
+      "en": {
+        "steps": [
+          "Since y>z and the numerator is positive, $(5^x+5^z)/5^y<(5^x+5^z)/5^z$.",
+          "The right side is 5^(x−z)+1, below 2·5^(x−z) because x>z.",
+          "Combining the bounds gives exactly the strict inequality in C. Choose C."
+        ],
+        "pitfall": "A larger positive denominator lowers the fraction; sums of powers do not combine into a single power."
+      }
+    },
+    "source": {
+      "kind": "official-public",
+      "title": {
+        "zh": "TMUA 2018 Paper 2 · 官方原卷",
+        "en": "TMUA 2018 Paper 2 · official archive"
+      },
+      "url": "https://uat-wp.s3.eu-west-2.amazonaws.com/wp-content/uploads/2024/05/07125404/TMUA-2018-paper-2.pdf",
+      "originalNumber": "19",
+      "year": 2018,
+      "rightsNote": "Original papers and worked solutions: Cambridge University Press & Assessment / Cambridge Assessment; public archive provided by UAT-UK. No affiliation or endorsement."
+    }
+  },
+  {
+    "id": "ARCHIVE-TMUA-2018-P2-Q20",
+    "exam": "TMUA",
+    "moduleId": "p2",
+    "format": "latex",
+    "topic": {
+      "id": "functions",
+      "name": {
+        "zh": "函数",
+        "en": "Functions"
+      }
+    },
+    "subtopic": {
+      "id": "radical-parameter-existence",
+      "name": {
+        "zh": "根式方程的参数存在范围",
+        "en": "A parameter range for existence of radical roots"
+      }
+    },
+    "prompt": "Read question 20 in the official TMUA 2018 Paper 2. Record your answer here.",
+    "options": [
+      "A",
+      "B",
+      "C",
+      "D",
+      "E",
+      "F",
+      "G",
+      "H"
+    ],
+    "correctIndex": 1,
+    "difficulty": "challenge",
+    "external": {
+      "kind": "linked-paper",
+      "workedAnswersUrl": "https://uat-wp.s3.eu-west-2.amazonaws.com/wp-content/uploads/2024/05/07125406/TMUA-2018-paper-2-worked-answers.pdf",
+      "answerKeyUrl": "https://uat-wp.s3.eu-west-2.amazonaws.com/wp-content/uploads/2024/05/07125413/TMUA-2018-answer-keys.pdf",
+      "explanationReady": true
+    },
+    "explanation": {
+      "zh": {
+        "steps": [
+          "左边为非负数，故 p≥0。p=0 时 x=0 确实成立，应单独保留。",
+          "p>0 时 x≥0，左边至少 √p，故 p≥√p，必要条件为 p≥1。",
+          "对每个 p≥1，取 $x=(p-1)^2/4$，两根式分别为 (p+1)/2 与 (p−1)/2，相加正好 p，证明充分。完整范围 p=0 或 p≥1，选 B。"
+        ],
+        "pitfall": "除以 p 前必须单独处理 p=0；必要界限还需构造解证明充分。"
+      },
+      "en": {
+        "steps": [
+          "The left side is nonnegative, so p≥0. At p=0, x=0 is a solution and must be retained.",
+          "For p>0 and x≥0, the left side is at least √p, so p≥√p requires p≥1.",
+          "For every p≥1, set x=(p−1)²/4. The radicals are (p+1)/2 and (p−1)/2, summing to p. Thus p=0 or p≥1 is complete, option B."
+        ],
+        "pitfall": "Handle p=0 before dividing and construct solutions to prove sufficiency."
+      }
+    },
+    "source": {
+      "kind": "official-public",
+      "title": {
+        "zh": "TMUA 2018 Paper 2 · 官方原卷",
+        "en": "TMUA 2018 Paper 2 · official archive"
+      },
+      "url": "https://uat-wp.s3.eu-west-2.amazonaws.com/wp-content/uploads/2024/05/07125404/TMUA-2018-paper-2.pdf",
+      "originalNumber": "20",
+      "year": 2018,
+      "rightsNote": "Original papers and worked solutions: Cambridge University Press & Assessment / Cambridge Assessment; public archive provided by UAT-UK. No affiliation or endorsement."
+    }
+  }
+]

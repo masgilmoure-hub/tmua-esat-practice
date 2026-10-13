@@ -1,0 +1,1366 @@
+[
+  {
+    "id": "ARCHIVE-TMUA-2019-P1-Q01",
+    "exam": "TMUA",
+    "moduleId": "p1",
+    "format": "latex",
+    "topic": {
+      "id": "functions",
+      "name": {
+        "zh": "函数",
+        "en": "Functions"
+      }
+    },
+    "subtopic": {
+      "id": "quadratic-vertex-and-point",
+      "name": {
+        "zh": "顶点与一点确定二次函数",
+        "en": "A quadratic from its vertex and a point"
+      }
+    },
+    "prompt": "Read question 1 in the official TMUA 2019 Paper 1. Record your answer here.",
+    "options": [
+      "A",
+      "B",
+      "C",
+      "D",
+      "E",
+      "F",
+      "G",
+      "H"
+    ],
+    "correctIndex": 0,
+    "difficulty": "foundation",
+    "external": {
+      "kind": "linked-paper",
+      "workedAnswersUrl": "https://uat-wp.s3.eu-west-2.amazonaws.com/wp-content/uploads/2024/05/07140826/TMUA-2019-paper-1-worked-answers.pdf",
+      "answerKeyUrl": "https://uat-wp.s3.eu-west-2.amazonaws.com/wp-content/uploads/2024/05/07140827/TMUA-2019-answer-keys.pdf",
+      "explanationReady": true
+    },
+    "explanation": {
+      "zh": {
+        "steps": [
+          "由顶点 $(-1,3)$，写成 $f(x)=a(x+1)^2+3$。",
+          "代入 $(1,-1)$ 得 $4a+3=-1$，所以 $a=-1$。",
+          "展开 $f(x)=-(x+1)^2+3=-x^2-2x+2$，选 A。"
+        ],
+        "pitfall": "顶点式横坐标为 −1，括号应是 x+1，不是 x−1。"
+      },
+      "en": {
+        "steps": [
+          "The vertex $(-1,3)$ gives $f(x)=a(x+1)^2+3$.",
+          "Substituting $(1,-1)$ gives $4a+3=-1$, so $a=-1$.",
+          "Expand to obtain $f(x)=-x^2-2x+2$. Choose A."
+        ],
+        "pitfall": "A vertex at x=−1 uses x+1 in the bracket, not x−1."
+      }
+    },
+    "source": {
+      "kind": "official-public",
+      "title": {
+        "zh": "TMUA 2019 Paper 1 · 官方原卷",
+        "en": "TMUA 2019 Paper 1 · official archive"
+      },
+      "url": "https://uat-wp.s3.eu-west-2.amazonaws.com/wp-content/uploads/2024/05/07140825/TMUA-2019-paper-1.pdf",
+      "originalNumber": "1",
+      "year": 2019,
+      "rightsNote": "Original papers and worked solutions: Cambridge University Press & Assessment / Cambridge Assessment; public archive provided by UAT-UK. No affiliation or endorsement."
+    }
+  },
+  {
+    "id": "ARCHIVE-TMUA-2019-P1-Q02",
+    "exam": "TMUA",
+    "moduleId": "p1",
+    "format": "latex",
+    "topic": {
+      "id": "algebra",
+      "name": {
+        "zh": "代数",
+        "en": "Algebra"
+      }
+    },
+    "subtopic": {
+      "id": "strictly-positive-parametric-quadratic",
+      "name": {
+        "zh": "参数二次式严格恒正",
+        "en": "A parameterised quadratic strictly positive everywhere"
+      }
+    },
+    "prompt": "Read question 2 in the official TMUA 2019 Paper 1. Record your answer here.",
+    "options": [
+      "A",
+      "B",
+      "C",
+      "D",
+      "E",
+      "F",
+      "G",
+      "H"
+    ],
+    "correctIndex": 0,
+    "difficulty": "foundation",
+    "external": {
+      "kind": "linked-paper",
+      "workedAnswersUrl": "https://uat-wp.s3.eu-west-2.amazonaws.com/wp-content/uploads/2024/05/07140826/TMUA-2019-paper-1-worked-answers.pdf",
+      "answerKeyUrl": "https://uat-wp.s3.eu-west-2.amazonaws.com/wp-content/uploads/2024/05/07140827/TMUA-2019-answer-keys.pdf",
+      "explanationReady": true
+    },
+    "explanation": {
+      "zh": {
+        "steps": [
+          "合并一次项得到 $x^2+(k+2)x+1-2k$。首项系数为正，对所有实数严格为正等价于判别式严格小于零。",
+          "$\\Delta=(k+2)^2-4(1-2k)=k^2+12k=k(k+12)$。",
+          "$k(k+12)<0$ 给出 $-12<k<0$，选 A。"
+        ],
+        "pitfall": "恒正是严格条件，重根处值为零，所以端点不能包括。"
+      },
+      "en": {
+        "steps": [
+          "The quadratic is $x^2+(k+2)x+1-2k$. With positive leading coefficient, strict positivity for all real x requires a strictly negative discriminant.",
+          "The discriminant is $\\Delta=k(k+12)$.",
+          "Thus $-12<k<0$. Choose A."
+        ],
+        "pitfall": "Strict positivity excludes repeated-root cases where the function reaches zero."
+      }
+    },
+    "source": {
+      "kind": "official-public",
+      "title": {
+        "zh": "TMUA 2019 Paper 1 · 官方原卷",
+        "en": "TMUA 2019 Paper 1 · official archive"
+      },
+      "url": "https://uat-wp.s3.eu-west-2.amazonaws.com/wp-content/uploads/2024/05/07140825/TMUA-2019-paper-1.pdf",
+      "originalNumber": "2",
+      "year": 2019,
+      "rightsNote": "Original papers and worked solutions: Cambridge University Press & Assessment / Cambridge Assessment; public archive provided by UAT-UK. No affiliation or endorsement."
+    }
+  },
+  {
+    "id": "ARCHIVE-TMUA-2019-P1-Q03",
+    "exam": "TMUA",
+    "moduleId": "p1",
+    "format": "latex",
+    "topic": {
+      "id": "algebra",
+      "name": {
+        "zh": "代数",
+        "en": "Algebra"
+      }
+    },
+    "subtopic": {
+      "id": "summed-binomial-linear-coefficients",
+      "name": {
+        "zh": "二项展开一次项系数求和",
+        "en": "Summing linear coefficients of binomial powers"
+      }
+    },
+    "prompt": "Read question 3 in the official TMUA 2019 Paper 1. Record your answer here.",
+    "options": [
+      "A",
+      "B",
+      "C",
+      "D",
+      "E",
+      "F",
+      "G",
+      "H"
+    ],
+    "correctIndex": 4,
+    "difficulty": "foundation",
+    "external": {
+      "kind": "linked-paper",
+      "workedAnswersUrl": "https://uat-wp.s3.eu-west-2.amazonaws.com/wp-content/uploads/2024/05/07140826/TMUA-2019-paper-1-worked-answers.pdf",
+      "answerKeyUrl": "https://uat-wp.s3.eu-west-2.amazonaws.com/wp-content/uploads/2024/05/07140827/TMUA-2019-answer-keys.pdf",
+      "explanationReady": true
+    },
+    "explanation": {
+      "zh": {
+        "steps": [
+          "$(1+x)^n$ 的 $x$ 项系数为 $\\binom n1=n$；$n=0$ 时没有一次项，系数为 0。",
+          "所求为 $0+1+\\cdots+80$。",
+          "等差求和得 $80\\times81/2=3240$，选 E。"
+        ],
+        "pitfall": "不要把每个展开式的一次项系数都当成 1；共有 81 个式子但首项贡献零。"
+      },
+      "en": {
+        "steps": [
+          "The coefficient of x in $(1+x)^n$ is n, including coefficient 0 at n=0.",
+          "The required sum is $0+1+\\cdots+80$.",
+          "The sum is $80\\times81/2=3240$. Choose E."
+        ],
+        "pitfall": "The linear coefficient is n, not always 1; there are 81 expressions but the first contributes zero."
+      }
+    },
+    "source": {
+      "kind": "official-public",
+      "title": {
+        "zh": "TMUA 2019 Paper 1 · 官方原卷",
+        "en": "TMUA 2019 Paper 1 · official archive"
+      },
+      "url": "https://uat-wp.s3.eu-west-2.amazonaws.com/wp-content/uploads/2024/05/07140825/TMUA-2019-paper-1.pdf",
+      "originalNumber": "3",
+      "year": 2019,
+      "rightsNote": "Original papers and worked solutions: Cambridge University Press & Assessment / Cambridge Assessment; public archive provided by UAT-UK. No affiliation or endorsement."
+    }
+  },
+  {
+    "id": "ARCHIVE-TMUA-2019-P1-Q04",
+    "exam": "TMUA",
+    "moduleId": "p1",
+    "format": "latex",
+    "topic": {
+      "id": "sequences",
+      "name": {
+        "zh": "数列与级数",
+        "en": "Sequences & series"
+      }
+    },
+    "subtopic": {
+      "id": "repeated-square-root-exponent",
+      "name": {
+        "zh": "反复开平方的指数规律",
+        "en": "Exponents under repeated square roots"
+      }
+    },
+    "prompt": "Read question 4 in the official TMUA 2019 Paper 1. Record your answer here.",
+    "options": [
+      "A",
+      "B",
+      "C",
+      "D",
+      "E",
+      "F",
+      "G",
+      "H"
+    ],
+    "correctIndex": 2,
+    "difficulty": "standard",
+    "external": {
+      "kind": "linked-paper",
+      "workedAnswersUrl": "https://uat-wp.s3.eu-west-2.amazonaws.com/wp-content/uploads/2024/05/07140826/TMUA-2019-paper-1-worked-answers.pdf",
+      "answerKeyUrl": "https://uat-wp.s3.eu-west-2.amazonaws.com/wp-content/uploads/2024/05/07140827/TMUA-2019-answer-keys.pdf",
+      "explanationReady": true
+    },
+    "explanation": {
+      "zh": {
+        "steps": [
+          "$x_1=10$，每次开平方使指数减半：$x_2=10^{1/2},x_3=10^{1/4}$。",
+          "因此 $x_n=10^{2^{-(n-1)}}$；从首项到第 n 项进行了 n−1 次开平方。",
+          "$x_{100}=10^{2^{-99}}$，对应 C。"
+        ],
+        "pitfall": "指数塔按题目说明从右结合，且第 100 项只有 99 次递推。"
+      },
+      "en": {
+        "steps": [
+          "Each square root halves the exponent: $x_2=10^{1/2},x_3=10^{1/4}$.",
+          "Thus $x_n=10^{2^{-(n-1)}}$, with n−1 square-root operations.",
+          "$x_{100}=10^{2^{-99}}$. Choose C."
+        ],
+        "pitfall": "Read the exponent tower right-associatively; the 100th term uses 99 iterations."
+      }
+    },
+    "source": {
+      "kind": "official-public",
+      "title": {
+        "zh": "TMUA 2019 Paper 1 · 官方原卷",
+        "en": "TMUA 2019 Paper 1 · official archive"
+      },
+      "url": "https://uat-wp.s3.eu-west-2.amazonaws.com/wp-content/uploads/2024/05/07140825/TMUA-2019-paper-1.pdf",
+      "originalNumber": "4",
+      "year": 2019,
+      "rightsNote": "Original papers and worked solutions: Cambridge University Press & Assessment / Cambridge Assessment; public archive provided by UAT-UK. No affiliation or endorsement."
+    }
+  },
+  {
+    "id": "ARCHIVE-TMUA-2019-P1-Q05",
+    "exam": "TMUA",
+    "moduleId": "p1",
+    "format": "latex",
+    "topic": {
+      "id": "sequences",
+      "name": {
+        "zh": "数列与级数",
+        "en": "Sequences & series"
+      }
+    },
+    "subtopic": {
+      "id": "geometric-block-sums-and-seventh-term",
+      "name": {
+        "zh": "等比数列分块和与第七项",
+        "en": "Geometric block sums and the seventh term"
+      }
+    },
+    "prompt": "Read question 5 in the official TMUA 2019 Paper 1. Record your answer here.",
+    "options": [
+      "A",
+      "B",
+      "C",
+      "D",
+      "E",
+      "F",
+      "G",
+      "H"
+    ],
+    "correctIndex": 4,
+    "difficulty": "standard",
+    "external": {
+      "kind": "linked-paper",
+      "workedAnswersUrl": "https://uat-wp.s3.eu-west-2.amazonaws.com/wp-content/uploads/2024/05/07140826/TMUA-2019-paper-1-worked-answers.pdf",
+      "answerKeyUrl": "https://uat-wp.s3.eu-west-2.amazonaws.com/wp-content/uploads/2024/05/07140827/TMUA-2019-answer-keys.pdf",
+      "explanationReady": true
+    },
+    "explanation": {
+      "zh": {
+        "steps": [
+          "设首项为 $a$、实公比为 $r$。后三项是前三项各乘 $r^3$，因此 $S_6=(1+r^3)S_3$。",
+          "第七项非零保证 $a\\ne0$，而 $1+r+r^2>0$，故 $S_3\\ne0$。由 $S_6=9S_3$ 得 $r^3=8$，即 $r=2$。",
+          "第七项 $ar^6=360$，故 $a=360/64=45/8$，选 E。"
+        ],
+        "pitfall": "第七项的公比幂次是 6；消去前三项和前需确认它不为零。"
+      },
+      "en": {
+        "steps": [
+          "With first term a and real ratio r, the next three terms are the first three multiplied by $r^3$, so $S_6=(1+r^3)S_3$.",
+          "The nonzero seventh term ensures $a\\ne0$, and $1+r+r^2>0$, so $S_3\\ne0$. Hence $r^3=8$ and $r=2$.",
+          "The seventh term is $ar^6=360$, giving $a=45/8$. Choose E."
+        ],
+        "pitfall": "The seventh term uses power 6; check that the three-term sum is nonzero before cancelling."
+      }
+    },
+    "source": {
+      "kind": "official-public",
+      "title": {
+        "zh": "TMUA 2019 Paper 1 · 官方原卷",
+        "en": "TMUA 2019 Paper 1 · official archive"
+      },
+      "url": "https://uat-wp.s3.eu-west-2.amazonaws.com/wp-content/uploads/2024/05/07140825/TMUA-2019-paper-1.pdf",
+      "originalNumber": "5",
+      "year": 2019,
+      "rightsNote": "Original papers and worked solutions: Cambridge University Press & Assessment / Cambridge Assessment; public archive provided by UAT-UK. No affiliation or endorsement."
+    }
+  },
+  {
+    "id": "ARCHIVE-TMUA-2019-P1-Q06",
+    "exam": "TMUA",
+    "moduleId": "p1",
+    "format": "latex",
+    "topic": {
+      "id": "geometry",
+      "name": {
+        "zh": "几何",
+        "en": "Geometry"
+      }
+    },
+    "subtopic": {
+      "id": "internal-external-circle-tangency",
+      "name": {
+        "zh": "圆的内切与外切半径",
+        "en": "Radii for internal and external circle tangency"
+      }
+    },
+    "prompt": "Read question 6 in the official TMUA 2019 Paper 1. Record your answer here.",
+    "options": [
+      "A",
+      "B",
+      "C",
+      "D",
+      "E",
+      "F",
+      "G",
+      "H"
+    ],
+    "correctIndex": 2,
+    "difficulty": "standard",
+    "external": {
+      "kind": "linked-paper",
+      "workedAnswersUrl": "https://uat-wp.s3.eu-west-2.amazonaws.com/wp-content/uploads/2024/05/07140826/TMUA-2019-paper-1-worked-answers.pdf",
+      "answerKeyUrl": "https://uat-wp.s3.eu-west-2.amazonaws.com/wp-content/uploads/2024/05/07140827/TMUA-2019-answer-keys.pdf",
+      "explanationReady": true
+    },
+    "explanation": {
+      "zh": {
+        "steps": [
+          "两圆心为 $(-4,-1),(8,4)$，距离为 $\\sqrt{12^2+5^2}=13$，第一圆半径为 8。",
+          "外切时 $8+r=13$，得 $r=5$；内切时 $|r-8|=13$，正半径只能 $r=21$。",
+          "两可能半径之差为 $21-5=16$，选 C。"
+        ],
+        "pitfall": "一个公共点既可能内切也可能外切；圆方程的右侧是半径平方。"
+      },
+      "en": {
+        "steps": [
+          "The centres are $(-4,-1),(8,4)$, separated by 13; the first radius is 8.",
+          "External tangency gives $r=5$; internal tangency gives $|r-8|=13$, whose positive-radius solution is $r=21$.",
+          "The difference is $21-5=16$. Choose C."
+        ],
+        "pitfall": "One shared point can arise from internal or external tangency; the equation contains the squared radius."
+      }
+    },
+    "source": {
+      "kind": "official-public",
+      "title": {
+        "zh": "TMUA 2019 Paper 1 · 官方原卷",
+        "en": "TMUA 2019 Paper 1 · official archive"
+      },
+      "url": "https://uat-wp.s3.eu-west-2.amazonaws.com/wp-content/uploads/2024/05/07140825/TMUA-2019-paper-1.pdf",
+      "originalNumber": "6",
+      "year": 2019,
+      "rightsNote": "Original papers and worked solutions: Cambridge University Press & Assessment / Cambridge Assessment; public archive provided by UAT-UK. No affiliation or endorsement."
+    }
+  },
+  {
+    "id": "ARCHIVE-TMUA-2019-P1-Q07",
+    "exam": "TMUA",
+    "moduleId": "p1",
+    "format": "latex",
+    "topic": {
+      "id": "calculus",
+      "name": {
+        "zh": "微积分",
+        "en": "Calculus"
+      }
+    },
+    "subtopic": {
+      "id": "parameter-minimises-curve-gradient",
+      "name": {
+        "zh": "参数使指定点斜率最小",
+        "en": "A parameter minimising the gradient at a point"
+      }
+    },
+    "prompt": "Read question 7 in the official TMUA 2019 Paper 1. Record your answer here.",
+    "options": [
+      "A",
+      "B",
+      "C",
+      "D",
+      "E",
+      "F",
+      "G",
+      "H"
+    ],
+    "correctIndex": 5,
+    "difficulty": "standard",
+    "external": {
+      "kind": "linked-paper",
+      "workedAnswersUrl": "https://uat-wp.s3.eu-west-2.amazonaws.com/wp-content/uploads/2024/05/07140826/TMUA-2019-paper-1-worked-answers.pdf",
+      "answerKeyUrl": "https://uat-wp.s3.eu-west-2.amazonaws.com/wp-content/uploads/2024/05/07140827/TMUA-2019-answer-keys.pdf",
+      "explanationReady": true
+    },
+    "explanation": {
+      "zh": {
+        "steps": [
+          "展开 $y=4q^2x+6q-2qx^3-3x^2$，对 x 求导得 $y^{\\prime}=4q^2-6qx^2-6x$。",
+          "在 $x=-1$，斜率为 $4q^2-6q+6=4(q-3/4)^2+15/4$。",
+          "因此斜率最小时 $q=3/4$，选 F；题目要参数，不是最小斜率数值。"
+        ],
+        "pitfall": "先对 x 求导并代入指定点，再对参数求最小值，不能直接最小化原函数。"
+      },
+      "en": {
+        "steps": [
+          "Expand $y=4q^2x+6q-2qx^3-3x^2$, giving $y^{\\prime}=4q^2-6qx^2-6x$.",
+          "At x=−1 the gradient is $4q^2-6q+6=4(q-3/4)^2+15/4$.",
+          "The minimising parameter is $q=3/4$. Choose F; the question asks for the parameter, not the minimum gradient value."
+        ],
+        "pitfall": "Differentiate in x and evaluate the point before minimising with respect to the parameter."
+      }
+    },
+    "source": {
+      "kind": "official-public",
+      "title": {
+        "zh": "TMUA 2019 Paper 1 · 官方原卷",
+        "en": "TMUA 2019 Paper 1 · official archive"
+      },
+      "url": "https://uat-wp.s3.eu-west-2.amazonaws.com/wp-content/uploads/2024/05/07140825/TMUA-2019-paper-1.pdf",
+      "originalNumber": "7",
+      "year": 2019,
+      "rightsNote": "Original papers and worked solutions: Cambridge University Press & Assessment / Cambridge Assessment; public archive provided by UAT-UK. No affiliation or endorsement."
+    }
+  },
+  {
+    "id": "ARCHIVE-TMUA-2019-P1-Q08",
+    "exam": "TMUA",
+    "moduleId": "p1",
+    "format": "latex",
+    "topic": {
+      "id": "calculus",
+      "name": {
+        "zh": "微积分",
+        "en": "Calculus"
+      }
+    },
+    "subtopic": {
+      "id": "trapezium-error-complement",
+      "name": {
+        "zh": "梯形估算误差的补函数变换",
+        "en": "Complementing a trapezium-rule error"
+      }
+    },
+    "prompt": "Read question 8 in the official TMUA 2019 Paper 1. Record your answer here.",
+    "options": [
+      "A",
+      "B",
+      "C",
+      "D",
+      "E",
+      "F",
+      "G",
+      "H"
+    ],
+    "correctIndex": 4,
+    "difficulty": "standard",
+    "external": {
+      "kind": "linked-paper",
+      "workedAnswersUrl": "https://uat-wp.s3.eu-west-2.amazonaws.com/wp-content/uploads/2024/05/07140826/TMUA-2019-paper-1-worked-answers.pdf",
+      "answerKeyUrl": "https://uat-wp.s3.eu-west-2.amazonaws.com/wp-content/uploads/2024/05/07140827/TMUA-2019-answer-keys.pdf",
+      "explanationReady": true
+    },
+    "explanation": {
+      "zh": {
+        "steps": [
+          "记准确积分为 I、梯形估计为 T，已知 $T<I$。梯形法对函数的加法与常数倍具有线性，并对常数函数精确。",
+          "对 $1-f(x)$，准确积分为 $1-I$，估计为 $1-T$，于是 $1-T>1-I$，成为高估。",
+          "加 1 或乘正数仍保留误差方向；平移或镜像区间只改变取点顺序，仍是同样低估。唯一 E。"
+        ],
+        "pitfall": "已知具体误差方向，无需额外假设 f 的凸凹性；负系数会翻转误差。"
+      },
+      "en": {
+        "steps": [
+          "Let I be the exact integral and T its estimate, with $T<I$. The rule is linear and integrates constants exactly.",
+          "For $1-f(x)$ the exact integral is $1-I$ and the estimate is $1-T>1-I$, an overestimate.",
+          "Adding a constant, positive scaling, translation or reflection preserves the error direction in the other options. Only E reverses it."
+        ],
+        "pitfall": "Use the given error direction without assuming convexity; a negative coefficient reverses the error."
+      }
+    },
+    "source": {
+      "kind": "official-public",
+      "title": {
+        "zh": "TMUA 2019 Paper 1 · 官方原卷",
+        "en": "TMUA 2019 Paper 1 · official archive"
+      },
+      "url": "https://uat-wp.s3.eu-west-2.amazonaws.com/wp-content/uploads/2024/05/07140825/TMUA-2019-paper-1.pdf",
+      "originalNumber": "8",
+      "year": 2019,
+      "rightsNote": "Original papers and worked solutions: Cambridge University Press & Assessment / Cambridge Assessment; public archive provided by UAT-UK. No affiliation or endorsement."
+    }
+  },
+  {
+    "id": "ARCHIVE-TMUA-2019-P1-Q09",
+    "exam": "TMUA",
+    "moduleId": "p1",
+    "format": "latex",
+    "topic": {
+      "id": "calculus",
+      "name": {
+        "zh": "微积分",
+        "en": "Calculus"
+      }
+    },
+    "subtopic": {
+      "id": "paired-square-root-enclosed-area",
+      "name": {
+        "zh": "互换平方根曲线的围成面积",
+        "en": "Area between paired square-root curves"
+      }
+    },
+    "prompt": "Read question 9 in the official TMUA 2019 Paper 1. Record your answer here.",
+    "options": [
+      "A",
+      "B",
+      "C",
+      "D",
+      "E",
+      "F",
+      "G",
+      "H"
+    ],
+    "correctIndex": 3,
+    "difficulty": "standard",
+    "external": {
+      "kind": "linked-paper",
+      "workedAnswersUrl": "https://uat-wp.s3.eu-west-2.amazonaws.com/wp-content/uploads/2024/05/07140826/TMUA-2019-paper-1-worked-answers.pdf",
+      "answerKeyUrl": "https://uat-wp.s3.eu-west-2.amazonaws.com/wp-content/uploads/2024/05/07140827/TMUA-2019-answer-keys.pdf",
+      "explanationReady": true
+    },
+    "explanation": {
+      "zh": {
+        "steps": [
+          "由 $x=p\\sqrt y$ 得 $y=x^2/p^2$，定义域限制 $x,y\\geq0$。联立与 $y=p\\sqrt x$，交点为 $(0,0)$ 与 $(p^2,p^2)$。",
+          "区间 $0<x<p^2$ 上平方根曲线在上，面积为 $\\int_0^{p^2}(p\\sqrt x-x^2/p^2)\\,dx$。",
+          "结果为 $2p^4/3-p^4/3=p^4/3$，选 D。"
+        ],
+        "pitfall": "把 x=p√y 改写后仍需保留非负定义域，不可任意扩展到负 x。"
+      },
+      "en": {
+        "steps": [
+          "From $x=p\\sqrt y$, obtain $y=x^2/p^2$ with nonnegative coordinates. Intersections with $y=p\\sqrt x$ are $(0,0)$ and $(p^2,p^2)$.",
+          "The square-root curve is higher on $0<x<p^2$, so integrate $p\\sqrt x-x^2/p^2$.",
+          "The result is $p^4/3$. Choose D."
+        ],
+        "pitfall": "Retain nonnegative coordinates when rewriting x=p√y."
+      }
+    },
+    "source": {
+      "kind": "official-public",
+      "title": {
+        "zh": "TMUA 2019 Paper 1 · 官方原卷",
+        "en": "TMUA 2019 Paper 1 · official archive"
+      },
+      "url": "https://uat-wp.s3.eu-west-2.amazonaws.com/wp-content/uploads/2024/05/07140825/TMUA-2019-paper-1.pdf",
+      "originalNumber": "9",
+      "year": 2019,
+      "rightsNote": "Original papers and worked solutions: Cambridge University Press & Assessment / Cambridge Assessment; public archive provided by UAT-UK. No affiliation or endorsement."
+    }
+  },
+  {
+    "id": "ARCHIVE-TMUA-2019-P1-Q10",
+    "exam": "TMUA",
+    "moduleId": "p1",
+    "format": "latex",
+    "topic": {
+      "id": "calculus",
+      "name": {
+        "zh": "微积分",
+        "en": "Calculus"
+      }
+    },
+    "subtopic": {
+      "id": "absolute-factor-signed-integral",
+      "name": {
+        "zh": "绝对值因子的分段积分",
+        "en": "A signed integral with an absolute-value factor"
+      }
+    },
+    "prompt": "Read question 10 in the official TMUA 2019 Paper 1. Record your answer here.",
+    "options": [
+      "A",
+      "B",
+      "C",
+      "D",
+      "E",
+      "F",
+      "G",
+      "H"
+    ],
+    "correctIndex": 5,
+    "difficulty": "standard",
+    "external": {
+      "kind": "linked-paper",
+      "workedAnswersUrl": "https://uat-wp.s3.eu-west-2.amazonaws.com/wp-content/uploads/2024/05/07140826/TMUA-2019-paper-1-worked-answers.pdf",
+      "answerKeyUrl": "https://uat-wp.s3.eu-west-2.amazonaws.com/wp-content/uploads/2024/05/07140827/TMUA-2019-answer-keys.pdf",
+      "explanationReady": true
+    },
+    "explanation": {
+      "zh": {
+        "steps": [
+          "在 $[-1,0]$，$|x|=-x$；在 $[0,3]$，$|x|=x$，必须在 0 处分段。",
+          "第一段 $\\int_{-1}^0(-x+x^2)\\,dx=5/6$；第二段 $\\int_0^3(x-x^2)\\,dx=-9/2$。",
+          "相加 $5/6-9/2=-11/3$，选 F。"
+        ],
+        "pitfall": "只有 x 被取绝对值，整个被积函数仍可能为负；题目不是总面积。"
+      },
+      "en": {
+        "steps": [
+          "Split at 0: $|x|=-x$ on $[-1,0]$ and $|x|=x$ on $[0,3]$.",
+          "The two integrals are $5/6$ and $-9/2$, respectively.",
+          "The total is $-11/3$. Choose F."
+        ],
+        "pitfall": "Only x is inside the absolute value; the full integrand may still be negative."
+      }
+    },
+    "source": {
+      "kind": "official-public",
+      "title": {
+        "zh": "TMUA 2019 Paper 1 · 官方原卷",
+        "en": "TMUA 2019 Paper 1 · official archive"
+      },
+      "url": "https://uat-wp.s3.eu-west-2.amazonaws.com/wp-content/uploads/2024/05/07140825/TMUA-2019-paper-1.pdf",
+      "originalNumber": "10",
+      "year": 2019,
+      "rightsNote": "Original papers and worked solutions: Cambridge University Press & Assessment / Cambridge Assessment; public archive provided by UAT-UK. No affiliation or endorsement."
+    }
+  },
+  {
+    "id": "ARCHIVE-TMUA-2019-P1-Q11",
+    "exam": "TMUA",
+    "moduleId": "p1",
+    "format": "latex",
+    "topic": {
+      "id": "functions",
+      "name": {
+        "zh": "函数",
+        "en": "Functions"
+      }
+    },
+    "subtopic": {
+      "id": "logarithmic-product-system",
+      "name": {
+        "zh": "对数乘积联立方程",
+        "en": "A system involving a product of logarithms"
+      }
+    },
+    "prompt": "Read question 11 in the official TMUA 2019 Paper 1. Record your answer here.",
+    "options": [
+      "A",
+      "B",
+      "C",
+      "D",
+      "E",
+      "F",
+      "G",
+      "H"
+    ],
+    "correctIndex": 7,
+    "difficulty": "standard",
+    "external": {
+      "kind": "linked-paper",
+      "workedAnswersUrl": "https://uat-wp.s3.eu-west-2.amazonaws.com/wp-content/uploads/2024/05/07140826/TMUA-2019-paper-1-worked-answers.pdf",
+      "answerKeyUrl": "https://uat-wp.s3.eu-west-2.amazonaws.com/wp-content/uploads/2024/05/07140827/TMUA-2019-answer-keys.pdf",
+      "explanationReady": true
+    },
+    "explanation": {
+      "zh": {
+        "steps": [
+          "对数要求 $x,y>0$。令 $u=\\log_3x,v=\\log_3y$，得到 $u+2v=1,uv=-3$。",
+          "代入 $v=(1-u)/2$ 得 $u^2-u-6=0$，所以 $u=3$ 或 $-2$。",
+          "还原 $x=27$ 或 $1/9$，两值之和为 $27+1/9$，选 H。"
+        ],
+        "pitfall": "对数值为负不代表原变量为负；题问的是 x 的和而非对数的和。"
+      },
+      "en": {
+        "steps": [
+          "With x,y>0, set $u=\\log_3x,v=\\log_3y$ to obtain $u+2v=1,uv=-3$.",
+          "Substitution gives $u^2-u-6=0$, so $u=3$ or −2.",
+          "The x values are 27 and $1/9$, whose sum is $27+1/9$. Choose H."
+        ],
+        "pitfall": "A negative logarithm does not mean a negative variable; sum x values, not logarithms."
+      }
+    },
+    "source": {
+      "kind": "official-public",
+      "title": {
+        "zh": "TMUA 2019 Paper 1 · 官方原卷",
+        "en": "TMUA 2019 Paper 1 · official archive"
+      },
+      "url": "https://uat-wp.s3.eu-west-2.amazonaws.com/wp-content/uploads/2024/05/07140825/TMUA-2019-paper-1.pdf",
+      "originalNumber": "11",
+      "year": 2019,
+      "rightsNote": "Original papers and worked solutions: Cambridge University Press & Assessment / Cambridge Assessment; public archive provided by UAT-UK. No affiliation or endorsement."
+    }
+  },
+  {
+    "id": "ARCHIVE-TMUA-2019-P1-Q12",
+    "exam": "TMUA",
+    "moduleId": "p1",
+    "format": "latex",
+    "topic": {
+      "id": "calculus",
+      "name": {
+        "zh": "微积分",
+        "en": "Calculus"
+      }
+    },
+    "subtopic": {
+      "id": "rationalised-rate-integral",
+      "name": {
+        "zh": "因式化简变化率再积分",
+        "en": "Simplifying a rate before integration"
+      }
+    },
+    "prompt": "Read question 12 in the official TMUA 2019 Paper 1. Record your answer here.",
+    "options": [
+      "A",
+      "B",
+      "C",
+      "D",
+      "E",
+      "F",
+      "G",
+      "H"
+    ],
+    "correctIndex": 2,
+    "difficulty": "standard",
+    "external": {
+      "kind": "linked-paper",
+      "workedAnswersUrl": "https://uat-wp.s3.eu-west-2.amazonaws.com/wp-content/uploads/2024/05/07140826/TMUA-2019-paper-1-worked-answers.pdf",
+      "answerKeyUrl": "https://uat-wp.s3.eu-west-2.amazonaws.com/wp-content/uploads/2024/05/07140827/TMUA-2019-answer-keys.pdf",
+      "explanationReady": true
+    },
+    "explanation": {
+      "zh": {
+        "steps": [
+          "$t-1=(\\sqrt t-1)(\\sqrt t+1)$，所以 $dV/dt=24\\pi(\\sqrt t-1)$，在 $t\\geq1$ 分母不为零。",
+          "变化量为 $24\\pi[(2/3)t^{3/2}-t]_1^9=24\\pi(9+1/3)=224\\pi$。",
+          "加上初值 $V(1)=7$ 得 $V(9)=224\\pi+7$，选 C。"
+        ],
+        "pitfall": "定积分给出变化量，不是最终 V；别漏掉初始值 7。"
+      },
+      "en": {
+        "steps": [
+          "Factor $t-1$ to obtain $dV/dt=24\\pi(\\sqrt t-1)$; the cancelled denominator is nonzero for t≥1.",
+          "The change is $24\\pi[(2/3)t^{3/2}-t]_1^9=224\\pi$.",
+          "Add the initial value to get $V(9)=224\\pi+7$. Choose C."
+        ],
+        "pitfall": "The definite integral is the change in V, not its final value; add the initial 7."
+      }
+    },
+    "source": {
+      "kind": "official-public",
+      "title": {
+        "zh": "TMUA 2019 Paper 1 · 官方原卷",
+        "en": "TMUA 2019 Paper 1 · official archive"
+      },
+      "url": "https://uat-wp.s3.eu-west-2.amazonaws.com/wp-content/uploads/2024/05/07140825/TMUA-2019-paper-1.pdf",
+      "originalNumber": "12",
+      "year": 2019,
+      "rightsNote": "Original papers and worked solutions: Cambridge University Press & Assessment / Cambridge Assessment; public archive provided by UAT-UK. No affiliation or endorsement."
+    }
+  },
+  {
+    "id": "ARCHIVE-TMUA-2019-P1-Q13",
+    "exam": "TMUA",
+    "moduleId": "p1",
+    "format": "latex",
+    "topic": {
+      "id": "functions",
+      "name": {
+        "zh": "函数",
+        "en": "Functions"
+      }
+    },
+    "subtopic": {
+      "id": "bounded-trig-exponential-quadratic",
+      "name": {
+        "zh": "三角指数换元的有界二次式",
+        "en": "A bounded quadratic after trigonometric exponential substitution"
+      }
+    },
+    "prompt": "Read question 13 in the official TMUA 2019 Paper 1. Record your answer here.",
+    "options": [
+      "A",
+      "B",
+      "C",
+      "D",
+      "E",
+      "F",
+      "G",
+      "H"
+    ],
+    "correctIndex": 1,
+    "difficulty": "standard",
+    "external": {
+      "kind": "linked-paper",
+      "workedAnswersUrl": "https://uat-wp.s3.eu-west-2.amazonaws.com/wp-content/uploads/2024/05/07140826/TMUA-2019-paper-1-worked-answers.pdf",
+      "answerKeyUrl": "https://uat-wp.s3.eu-west-2.amazonaws.com/wp-content/uploads/2024/05/07140827/TMUA-2019-answer-keys.pdf",
+      "explanationReady": true
+    },
+    "explanation": {
+      "zh": {
+        "steps": [
+          "令 $u=2^{\\sin x}$。因 $-1\\leq\\sin x\\leq1$，得到 $1/2\\leq u\\leq2$。",
+          "原式为 $u^2-4u+17/4=(u-2)^2+1/4$，在给定区间随 u 递减。",
+          "最大值在 $u=1/2$ 达到，为 $9/4+1/4=5/2$，选 B。"
+        ],
+        "pitfall": "17/4 只是常数项，不是整个式子除以 4；换元变量有界，不能讨论全实数上的二次式。"
+      },
+      "en": {
+        "steps": [
+          "Set $u=2^{\\sin x}$, so $1/2\\leq u\\leq2$.",
+          "The expression is $u^2-4u+17/4=(u-2)^2+1/4$, decreasing on that interval.",
+          "The maximum at u=1/2 is $5/2$. Choose B."
+        ],
+        "pitfall": "17/4 is only the constant term; the substituted variable is bounded."
+      }
+    },
+    "source": {
+      "kind": "official-public",
+      "title": {
+        "zh": "TMUA 2019 Paper 1 · 官方原卷",
+        "en": "TMUA 2019 Paper 1 · official archive"
+      },
+      "url": "https://uat-wp.s3.eu-west-2.amazonaws.com/wp-content/uploads/2024/05/07140825/TMUA-2019-paper-1.pdf",
+      "originalNumber": "13",
+      "year": 2019,
+      "rightsNote": "Original papers and worked solutions: Cambridge University Press & Assessment / Cambridge Assessment; public archive provided by UAT-UK. No affiliation or endorsement."
+    }
+  },
+  {
+    "id": "ARCHIVE-TMUA-2019-P1-Q14",
+    "exam": "TMUA",
+    "moduleId": "p1",
+    "format": "latex",
+    "topic": {
+      "id": "trigonometry",
+      "name": {
+        "zh": "三角函数与方程",
+        "en": "Trigonometric functions & equations"
+      }
+    },
+    "subtopic": {
+      "id": "simultaneous-double-angle-linear-system",
+      "name": {
+        "zh": "二倍角的线性联立与解范围",
+        "en": "A linear system in double-angle functions"
+      }
+    },
+    "prompt": "Read question 14 in the official TMUA 2019 Paper 1. Record your answer here.",
+    "options": [
+      "A",
+      "B",
+      "C",
+      "D",
+      "E",
+      "F",
+      "G",
+      "H"
+    ],
+    "correctIndex": 1,
+    "difficulty": "standard",
+    "external": {
+      "kind": "linked-paper",
+      "workedAnswersUrl": "https://uat-wp.s3.eu-west-2.amazonaws.com/wp-content/uploads/2024/05/07140826/TMUA-2019-paper-1-worked-answers.pdf",
+      "answerKeyUrl": "https://uat-wp.s3.eu-west-2.amazonaws.com/wp-content/uploads/2024/05/07140827/TMUA-2019-answer-keys.pdf",
+      "explanationReady": true
+    },
+    "explanation": {
+      "zh": {
+        "steps": [
+          "令 $s=\\sin2x,c=\\cos2x$，两式为 $s+\\sqrt3c=-1,\\sqrt3s-c=\\sqrt3$。",
+          "联立解得 $s=1/2,c=-\\sqrt3/2$，因此 $2x=150^\\circ+360^\\circ n$。",
+          "$0\\leq2x\\leq720^\\circ$ 中有 150° 与 510°，所以 $x=75^\\circ,255^\\circ$，和为 330°，选 B。"
+        ],
+        "pitfall": "需同时满足正弦和余弦条件，并将 x 的范围加倍后找全解。"
+      },
+      "en": {
+        "steps": [
+          "Set s=sin2x and c=cos2x, giving $s+\\sqrt3c=-1,\\sqrt3s-c=\\sqrt3$.",
+          "The solution is $s=1/2,c=-\\sqrt3/2$, hence $2x=150^\\circ+360^\\circ n$.",
+          "In 0≤2x≤720°, the angles are 150° and 510°, giving x=75°,255° and sum 330°. Choose B."
+        ],
+        "pitfall": "Use both sine and cosine conditions and double the domain before listing the angles."
+      }
+    },
+    "source": {
+      "kind": "official-public",
+      "title": {
+        "zh": "TMUA 2019 Paper 1 · 官方原卷",
+        "en": "TMUA 2019 Paper 1 · official archive"
+      },
+      "url": "https://uat-wp.s3.eu-west-2.amazonaws.com/wp-content/uploads/2024/05/07140825/TMUA-2019-paper-1.pdf",
+      "originalNumber": "14",
+      "year": 2019,
+      "rightsNote": "Original papers and worked solutions: Cambridge University Press & Assessment / Cambridge Assessment; public archive provided by UAT-UK. No affiliation or endorsement."
+    }
+  },
+  {
+    "id": "ARCHIVE-TMUA-2019-P1-Q15",
+    "exam": "TMUA",
+    "moduleId": "p1",
+    "format": "latex",
+    "topic": {
+      "id": "functions",
+      "name": {
+        "zh": "函数",
+        "en": "Functions"
+      }
+    },
+    "subtopic": {
+      "id": "nested-exponential-quadratic",
+      "name": {
+        "zh": "嵌套指数的二次换元",
+        "en": "A quadratic substitution in nested exponentials"
+      }
+    },
+    "prompt": "Read question 15 in the official TMUA 2019 Paper 1. Record your answer here.",
+    "options": [
+      "A",
+      "B",
+      "C",
+      "D",
+      "E",
+      "F",
+      "G",
+      "H"
+    ],
+    "correctIndex": 0,
+    "difficulty": "standard",
+    "external": {
+      "kind": "linked-paper",
+      "workedAnswersUrl": "https://uat-wp.s3.eu-west-2.amazonaws.com/wp-content/uploads/2024/05/07140826/TMUA-2019-paper-1-worked-answers.pdf",
+      "answerKeyUrl": "https://uat-wp.s3.eu-west-2.amazonaws.com/wp-content/uploads/2024/05/07140827/TMUA-2019-answer-keys.pdf",
+      "explanationReady": true
+    },
+    "explanation": {
+      "zh": {
+        "steps": [
+          "将分母写为 $8^{3^x}=2^{3\\cdot3^x}$。等式 $2^{9^x}/8^{3^x}=1/4$ 化为 $9^x-3\\cdot3^x=-2$。",
+          "令 $u=3^x>0$，则 $9^x=u^2$，得到 $(u-1)(u-2)=0$。",
+          "$u=1$ 给 $x=0$，题目排除；$u=2$ 给 $x=\\log_3 2$，选 A。"
+        ],
+        "pitfall": "原式为嵌套指数，不能把 2^(9^x) 读成 (2⁹)^x；保留非零解要求。"
+      },
+      "en": {
+        "steps": [
+          "Using $8^{3^x}=2^{3\\cdot3^x}$ gives $9^x-3\\cdot3^x=-2$.",
+          "Set u=3^x>0, so 9^x=u² and $(u-1)(u-2)=0$.",
+          "The root u=1 gives excluded x=0; u=2 gives $x=\\log_3 2$. Choose A."
+        ],
+        "pitfall": "Distinguish 2^(9^x) from (2⁹)^x and enforce the nonzero-solution requirement."
+      }
+    },
+    "source": {
+      "kind": "official-public",
+      "title": {
+        "zh": "TMUA 2019 Paper 1 · 官方原卷",
+        "en": "TMUA 2019 Paper 1 · official archive"
+      },
+      "url": "https://uat-wp.s3.eu-west-2.amazonaws.com/wp-content/uploads/2024/05/07140825/TMUA-2019-paper-1.pdf",
+      "originalNumber": "15",
+      "year": 2019,
+      "rightsNote": "Original papers and worked solutions: Cambridge University Press & Assessment / Cambridge Assessment; public archive provided by UAT-UK. No affiliation or endorsement."
+    }
+  },
+  {
+    "id": "ARCHIVE-TMUA-2019-P1-Q16",
+    "exam": "TMUA",
+    "moduleId": "p1",
+    "format": "latex",
+    "topic": {
+      "id": "calculus",
+      "name": {
+        "zh": "微积分",
+        "en": "Calculus"
+      }
+    },
+    "subtopic": {
+      "id": "shifted-integral-linear-relations",
+      "name": {
+        "zh": "平移积分与线性条件",
+        "en": "Linear relations involving a shifted integral"
+      }
+    },
+    "prompt": "Read question 16 in the official TMUA 2019 Paper 1. Record your answer here.",
+    "options": [
+      "A",
+      "B",
+      "C",
+      "D",
+      "E",
+      "F",
+      "G",
+      "H"
+    ],
+    "correctIndex": 2,
+    "difficulty": "standard",
+    "external": {
+      "kind": "linked-paper",
+      "workedAnswersUrl": "https://uat-wp.s3.eu-west-2.amazonaws.com/wp-content/uploads/2024/05/07140826/TMUA-2019-paper-1-worked-answers.pdf",
+      "answerKeyUrl": "https://uat-wp.s3.eu-west-2.amazonaws.com/wp-content/uploads/2024/05/07140827/TMUA-2019-answer-keys.pdf",
+      "explanationReady": true
+    },
+    "explanation": {
+      "zh": {
+        "steps": [
+          "换元 $u=x+1$ 给 $\\int_0^1f(x+1)\\,dx=\\int_1^2f(u)\\,du=6$。",
+          "令 $A=\\int_0^1f(x)\\,dx$，第一条件为 $2A+5\\times6=14$，故 $A=-8$。",
+          "目标积分为 $A+6=-2$，选 C。"
+        ],
+        "pitfall": "f(x+1) 的积分对应 [1,2]，不是 [0,1]；积分可为负。"
+      },
+      "en": {
+        "steps": [
+          "The substitution u=x+1 gives $\\int_1^2f(u)\\,du=6$.",
+          "Let $A=\\int_0^1f(x)\\,dx$. Then $2A+30=14$, so A=−8.",
+          "The target integral is A+6=−2. Choose C."
+        ],
+        "pitfall": "The shifted integral covers [1,2], not [0,1]; signed integrals may be negative."
+      }
+    },
+    "source": {
+      "kind": "official-public",
+      "title": {
+        "zh": "TMUA 2019 Paper 1 · 官方原卷",
+        "en": "TMUA 2019 Paper 1 · official archive"
+      },
+      "url": "https://uat-wp.s3.eu-west-2.amazonaws.com/wp-content/uploads/2024/05/07140825/TMUA-2019-paper-1.pdf",
+      "originalNumber": "16",
+      "year": 2019,
+      "rightsNote": "Original papers and worked solutions: Cambridge University Press & Assessment / Cambridge Assessment; public archive provided by UAT-UK. No affiliation or endorsement."
+    }
+  },
+  {
+    "id": "ARCHIVE-TMUA-2019-P1-Q17",
+    "exam": "TMUA",
+    "moduleId": "p1",
+    "format": "latex",
+    "topic": {
+      "id": "trigonometry",
+      "name": {
+        "zh": "三角函数与方程",
+        "en": "Trigonometric functions & equations"
+      }
+    },
+    "subtopic": {
+      "id": "trig-product-sign-intervals",
+      "name": {
+        "zh": "三角乘积的符号区间",
+        "en": "Sign intervals of a trigonometric product"
+      }
+    },
+    "prompt": "Read question 17 in the official TMUA 2019 Paper 1. Record your answer here.",
+    "options": [
+      "A",
+      "B",
+      "C",
+      "D",
+      "E",
+      "F",
+      "G",
+      "H"
+    ],
+    "correctIndex": 2,
+    "difficulty": "challenge",
+    "external": {
+      "kind": "linked-paper",
+      "workedAnswersUrl": "https://uat-wp.s3.eu-west-2.amazonaws.com/wp-content/uploads/2024/05/07140826/TMUA-2019-paper-1-worked-answers.pdf",
+      "answerKeyUrl": "https://uat-wp.s3.eu-west-2.amazonaws.com/wp-content/uploads/2024/05/07140827/TMUA-2019-answer-keys.pdf",
+      "explanationReady": true
+    },
+    "explanation": {
+      "zh": {
+        "steps": [
+          "$\\sin2\\theta-1/2$ 在 $\\pi/12<\\theta<5\\pi/12$ 为正，其余内部区间为负；零点为两端。",
+          "$\\sin\\theta-\\cos\\theta$ 在 $[0,\\pi/4)$ 为负，在 $(\\pi/4,\\pi]$ 为正。",
+          "两因子同号或为零时，解集为 $[0,\\pi/12]\\cup[\\pi/4,5\\pi/12]$。",
+          "总长度为 $\\pi/12+2\\pi/12=\\pi/4$，占整个区间的 $1/4$，选 C。"
+        ],
+        "pitfall": "乘积非负也允许两因子都负；求占比使用区间长度，不是零点数量。"
+      },
+      "en": {
+        "steps": [
+          "The first factor is positive on $\\pi/12<\\theta<5\\pi/12$, negative elsewhere in the interior, and zero at those boundaries.",
+          "The second factor is negative below π/4 and positive above π/4 on the given domain.",
+          "Equal signs or zero factors give $[0,\\pi/12]\\cup[\\pi/4,5\\pi/12]$.",
+          "The length is π/4, or one quarter of the full interval. Choose C."
+        ],
+        "pitfall": "A nonnegative product allows two negative factors; measure interval lengths, not root counts."
+      }
+    },
+    "source": {
+      "kind": "official-public",
+      "title": {
+        "zh": "TMUA 2019 Paper 1 · 官方原卷",
+        "en": "TMUA 2019 Paper 1 · official archive"
+      },
+      "url": "https://uat-wp.s3.eu-west-2.amazonaws.com/wp-content/uploads/2024/05/07140825/TMUA-2019-paper-1.pdf",
+      "originalNumber": "17",
+      "year": 2019,
+      "rightsNote": "Original papers and worked solutions: Cambridge University Press & Assessment / Cambridge Assessment; public archive provided by UAT-UK. No affiliation or endorsement."
+    }
+  },
+  {
+    "id": "ARCHIVE-TMUA-2019-P1-Q18",
+    "exam": "TMUA",
+    "moduleId": "p1",
+    "format": "latex",
+    "topic": {
+      "id": "geometry",
+      "name": {
+        "zh": "几何",
+        "en": "Geometry"
+      }
+    },
+    "subtopic": {
+      "id": "parabola-distance-to-line",
+      "name": {
+        "zh": "抛物线上点到直线的最短距离",
+        "en": "Shortest distance from a parabola to a line"
+      }
+    },
+    "prompt": "Read question 18 in the official TMUA 2019 Paper 1. Record your answer here.",
+    "options": [
+      "A",
+      "B",
+      "C",
+      "D",
+      "E",
+      "F",
+      "G",
+      "H"
+    ],
+    "correctIndex": 1,
+    "difficulty": "standard",
+    "external": {
+      "kind": "linked-paper",
+      "workedAnswersUrl": "https://uat-wp.s3.eu-west-2.amazonaws.com/wp-content/uploads/2024/05/07140826/TMUA-2019-paper-1-worked-answers.pdf",
+      "answerKeyUrl": "https://uat-wp.s3.eu-west-2.amazonaws.com/wp-content/uploads/2024/05/07140827/TMUA-2019-answer-keys.pdf",
+      "explanationReady": true
+    },
+    "explanation": {
+      "zh": {
+        "steps": [
+          "抛物线上点为 $(x,x^2+4)$，直线写为 $2x-y-2=0$。",
+          "垂直距离为 $|2x-(x^2+4)-2|/\\sqrt5=((x-1)^2+5)/\\sqrt5$。",
+          "在 $x=1$ 达最小值 $5/\\sqrt5=\\sqrt5$，选 B。"
+        ],
+        "pitfall": "最短距离垂直于直线，不是直接比较两曲线同一 x 处的纵坐标差。"
+      },
+      "en": {
+        "steps": [
+          "A point on the curve is $(x,x^2+4)$ and the line is $2x-y-2=0$.",
+          "The perpendicular distance is $((x-1)^2+5)/\\sqrt5$.",
+          "The minimum at x=1 is √5. Choose B."
+        ],
+        "pitfall": "Use perpendicular distance, not just the vertical gap at the same x."
+      }
+    },
+    "source": {
+      "kind": "official-public",
+      "title": {
+        "zh": "TMUA 2019 Paper 1 · 官方原卷",
+        "en": "TMUA 2019 Paper 1 · official archive"
+      },
+      "url": "https://uat-wp.s3.eu-west-2.amazonaws.com/wp-content/uploads/2024/05/07140825/TMUA-2019-paper-1.pdf",
+      "originalNumber": "18",
+      "year": 2019,
+      "rightsNote": "Original papers and worked solutions: Cambridge University Press & Assessment / Cambridge Assessment; public archive provided by UAT-UK. No affiliation or endorsement."
+    }
+  },
+  {
+    "id": "ARCHIVE-TMUA-2019-P1-Q19",
+    "exam": "TMUA",
+    "moduleId": "p1",
+    "format": "latex",
+    "topic": {
+      "id": "sequences",
+      "name": {
+        "zh": "数列与级数",
+        "en": "Sequences & series"
+      }
+    },
+    "subtopic": {
+      "id": "quarter-turn-sine-sum",
+      "name": {
+        "zh": "四分之一周旋转的正弦求和",
+        "en": "A sine sum in quarter-turn steps"
+      }
+    },
+    "prompt": "Read question 19 in the official TMUA 2019 Paper 1. Record your answer here.",
+    "options": [
+      "A",
+      "B",
+      "C",
+      "D",
+      "E",
+      "F",
+      "G",
+      "H"
+    ],
+    "correctIndex": 2,
+    "difficulty": "standard",
+    "external": {
+      "kind": "linked-paper",
+      "workedAnswersUrl": "https://uat-wp.s3.eu-west-2.amazonaws.com/wp-content/uploads/2024/05/07140826/TMUA-2019-paper-1-worked-answers.pdf",
+      "answerKeyUrl": "https://uat-wp.s3.eu-west-2.amazonaws.com/wp-content/uploads/2024/05/07140827/TMUA-2019-answer-keys.pdf",
+      "explanationReady": true
+    },
+    "explanation": {
+      "zh": {
+        "steps": [
+          "每四项为 $\\sin10^\\circ,\\cos10^\\circ,-\\sin10^\\circ,-\\cos10^\\circ$，和为零。",
+          "从 $k=0$ 到 90 共 91 项，前 88 项构成 22 个完整周期。",
+          "剩下三项之和为 $\\sin10^\\circ+\\cos10^\\circ-\\sin10^\\circ=\\cos10^\\circ=\\sin100^\\circ$，选 C。"
+        ],
+        "pitfall": "求和上下限都计入，共 91 项；别把终点 90 当作总项数。"
+      },
+      "en": {
+        "steps": [
+          "Each four-term block is sin10°, cos10°, −sin10°, −cos10°, summing to zero.",
+          "There are 91 terms; the first 88 form 22 complete blocks.",
+          "The remaining sum is cos10°=sin100°. Choose C."
+        ],
+        "pitfall": "Both bounds are included, giving 91 terms, not 90."
+      }
+    },
+    "source": {
+      "kind": "official-public",
+      "title": {
+        "zh": "TMUA 2019 Paper 1 · 官方原卷",
+        "en": "TMUA 2019 Paper 1 · official archive"
+      },
+      "url": "https://uat-wp.s3.eu-west-2.amazonaws.com/wp-content/uploads/2024/05/07140825/TMUA-2019-paper-1.pdf",
+      "originalNumber": "19",
+      "year": 2019,
+      "rightsNote": "Original papers and worked solutions: Cambridge University Press & Assessment / Cambridge Assessment; public archive provided by UAT-UK. No affiliation or endorsement."
+    }
+  },
+  {
+    "id": "ARCHIVE-TMUA-2019-P1-Q20",
+    "exam": "TMUA",
+    "moduleId": "p1",
+    "format": "latex",
+    "topic": {
+      "id": "functions",
+      "name": {
+        "zh": "函数",
+        "en": "Functions"
+      }
+    },
+    "subtopic": {
+      "id": "cubic-intersections-positive-roots",
+      "name": {
+        "zh": "三次交点中的正根数量",
+        "en": "Positive-root counts in cubic intersections"
+      }
+    },
+    "prompt": "Read question 20 in the official TMUA 2019 Paper 1. Record your answer here.",
+    "options": [
+      "A",
+      "B",
+      "C",
+      "D",
+      "E",
+      "F",
+      "G",
+      "H"
+    ],
+    "correctIndex": 4,
+    "difficulty": "challenge",
+    "external": {
+      "kind": "linked-paper",
+      "workedAnswersUrl": "https://uat-wp.s3.eu-west-2.amazonaws.com/wp-content/uploads/2024/05/07140826/TMUA-2019-paper-1-worked-answers.pdf",
+      "answerKeyUrl": "https://uat-wp.s3.eu-west-2.amazonaws.com/wp-content/uploads/2024/05/07140827/TMUA-2019-answer-keys.pdf",
+      "explanationReady": true
+    },
+    "explanation": {
+      "zh": {
+        "steps": [
+          "联立两曲线得到 $h(x)=k$，其中 $h(x)=x^3+x^2-16x+4$。",
+          "$h^{\\prime}(x)=(x-2)(3x+8)$，正半轴上先降后升，且 $h(0)=4,h(2)=-16$。",
+          "要有两个不同正根，水平线必须满足 $-16<k<4$。负半轴还有一根：其局部最大值 $h(-8/3)=940/27>4$，而左端趋向负无穷；中间下降段在 x=0 前仍高于 k。",
+          "该范围恰好给三不同交点且两个正横坐标，选 E。端点分别出现重根或零根。"
+        ],
+        "pitfall": "三个实交点还不够，必须同时检查正横坐标数量；零根不算正根。"
+      },
+      "en": {
+        "steps": [
+          "The intersections satisfy h(x)=k with $h(x)=x^3+x^2-16x+4$.",
+          "The derivative is $(x-2)(3x+8)$; h decreases then increases on the positive half-axis, with h(0)=4 and h(2)=−16.",
+          "Two distinct positive roots require −16<k<4. There is exactly one negative root: the negative-side local maximum is 940/27>4, the left tail tends to negative infinity, and the descending branch remains above k up to x=0.",
+          "This range gives exactly three distinct intersections, two with positive x. Choose E; endpoints give a repeated or zero root."
+        ],
+        "pitfall": "Three real intersections alone are insufficient; count positive coordinates and exclude zero."
+      }
+    },
+    "source": {
+      "kind": "official-public",
+      "title": {
+        "zh": "TMUA 2019 Paper 1 · 官方原卷",
+        "en": "TMUA 2019 Paper 1 · official archive"
+      },
+      "url": "https://uat-wp.s3.eu-west-2.amazonaws.com/wp-content/uploads/2024/05/07140825/TMUA-2019-paper-1.pdf",
+      "originalNumber": "20",
+      "year": 2019,
+      "rightsNote": "Original papers and worked solutions: Cambridge University Press & Assessment / Cambridge Assessment; public archive provided by UAT-UK. No affiliation or endorsement."
+    }
+  }
+]

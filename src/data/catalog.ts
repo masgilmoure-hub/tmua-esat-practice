@@ -26,6 +26,7 @@ export const OFFICIAL_LINKS = {
 export const RULES_VERIFIED = true;
 
 export const TOPICS: Record<string, Bilingual> = {
+  statistics: { zh: '统计', en: 'Statistics' },
   calculus: { zh: '微积分', en: 'Calculus' },
   sequences: { zh: '数列与级数', en: 'Sequences & series' },
   trigonometry: { zh: '三角函数与方程', en: 'Trigonometric functions & equations' },
