@@ -34,7 +34,7 @@ npm run preview:standalone
 
 ## 部署学生测试网址
 
-已有测试网址：[TMUA / ESAT Practice](https://tmua-esat-practice-test.tealcreek7.chatgpt.site)。此前通过 Codex Sites 公开发布，记录不跨设备同步。已有学生反馈被 `chatgpt.site` 的安全防护拦截；这不影响本地开发，但不能保证每位学生的网络均可访问。本轮未核实该网址当前版本，也没有重新发布；2018–2021 原卷＋解析与 2022 / 2023 文字题通过的是本地生产构建和最新便携预览的验收。各阶段验证记录与限制见 [验证记录](docs/validation.md)。
+已有测试网址：[TMUA / ESAT Practice](https://tmua-esat-practice-test.tealcreek7.chatgpt.site)。此前通过 Codex Sites 公开发布，记录不跨设备同步。已有学生反馈被 `chatgpt.site` 的安全防护拦截；这不影响本地开发，但不能保证每位学生的网络均可访问。2026-10-13 用户完成发布后，已核实线上主脚本 / CSS 与提交 `5e0538f` 的生产构建一致；6 项针对搜索考点、直接开始、历年分数、语言 / 刷新与手机的线上资源交互验收通过，六份分数表文件哈希匹配。云浏览器证书信任存在限制，交互验收使用保留 TLS 验证的 curl 传输真实线上资源，未验证普通浏览器原生 HTTPS 全套。各阶段验证记录与限制见 [验证记录](docs/validation.md)。
 
 后续代码提交到 GitHub 不会自动更新这次 Sites 部署，需在同一站点发布新版本。GitHub Pages 保留为**手动备用工作流**：当前私有仓库的 GitHub 套餐不支持启用 Pages。部署方式、上线验收和回退说明见 [部署说明](docs/deployment.md)。
 
