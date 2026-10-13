@@ -1,11 +1,11 @@
 import { test, expect, type Page } from '@playwright/test';
 const errors = new WeakMap<Page, string[]>();
 async function startPaper(page: Page, year = '2021') {
-  await page.getByRole('navigation').getByRole('button', { name: '官方历年卷', exact: true }).click();
+  await page.getByRole('navigation').getByRole('button', { name: '历年真题', exact: true }).click();
   await page.getByLabel('原卷年份', { exact: true }).selectOption(year);
   await page.getByLabel('练习试卷', { exact: true }).selectOption('p1');
   await page.getByLabel('按每卷 75 分钟限时', { exact: true }).uncheck();
-  await page.getByLabel('我能打开所选官方原卷，已准备好开始。', { exact: true }).check();
+
   await page.getByRole('button', { name: '开始原卷答题卡', exact: true }).click();
   await ready(page);
 }
@@ -72,11 +72,11 @@ test('all 12 remaining PDF answer-sheet papers render their first and last quest
   test.setTimeout(120_000);
   for (let year = 2016; year <= 2023; year++) for (const paper of ['p1', 'p2']) {
     if (year >= 2022) continue;
-    await page.getByRole('navigation').getByRole('button', { name: '官方历年卷', exact: true }).click();
+    await page.getByRole('navigation').getByRole('button', { name: '历年真题', exact: true }).click();
     await page.getByLabel('原卷年份', { exact: true }).selectOption(String(year));
     await page.getByLabel('练习试卷', { exact: true }).selectOption(paper);
     await page.getByLabel('按每卷 75 分钟限时', { exact: true }).uncheck();
-    await page.getByLabel('我能打开所选官方原卷，已准备好开始。', { exact: true }).check();
+
     await page.getByRole('button', { name: '开始原卷答题卡', exact: true }).click();
     if (year !== 2016 || paper !== 'p1') await page.getByRole('button', { name: '替换并开始', exact: true }).click();
     await ready(page);

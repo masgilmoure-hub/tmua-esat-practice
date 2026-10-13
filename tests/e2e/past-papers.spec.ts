@@ -2,10 +2,9 @@ import { test, expect, type Page } from '@playwright/test';
 const recordKey = 'tmua-esat-practice:v1';
 const errors = new WeakMap<Page, string[]>();
 async function openArchive(page: Page) {
-  await page.getByRole('navigation').getByRole('button', { name: '官方历年卷', exact: true }).click();
+  await page.getByRole('navigation').getByRole('button', { name: '历年真题', exact: true }).click();
 }
 async function start(page: Page) {
-  await page.locator('.import-confirm input').check();
   await page.getByRole('button', { name: /^开始(真题整卷练习|原卷答题卡)$/ }).click();
 }
 async function submit(page: Page) {
@@ -24,11 +23,11 @@ test.afterEach(async ({ page }) => {
 });
 test('year selection, original PDF links, two 75-minute papers, reload, marking and records work', async ({ page }) => {
   await page.clock.install();
-  await page.getByRole('button', { name: '打开官方历年卷', exact: true }).click();
+  await page.getByRole('button', { name: '打开历年真题', exact: true }).click();
   await expect(page).toHaveTitle('TMUA / ESAT · Practice');
   await expect(page.getByRole('heading', { level: 1 })).toHaveText('用官方原卷，认真练一次。');
   await expect(page.getByLabel('原卷年份', { exact: true }).locator('option')).toHaveCount(8);
-  await expect(page.getByRole('button', { name: '开始真题整卷练习', exact: true })).toBeDisabled();
+  await expect(page.getByRole('button', { name: '开始真题整卷练习', exact: true })).toBeEnabled();
   await expect(page.getByRole('link', { name: '打开官方原卷', exact: true }).first()).toHaveAttribute('href', /TMUA-2023-paper-1\.pdf$/);
   await expect(page.getByRole('link', { name: '官方英文详解', exact: true })).toHaveCount(0);
   await page.screenshot({ path: '/tmp/tmua-papers-desktop.png', fullPage: true });
@@ -118,14 +117,14 @@ test('mobile archive and letter grid fit the viewport and English controls prese
   await openArchive(page);
   await page.getByLabel('原卷年份', { exact: true }).selectOption('2016');
   await page.getByLabel('练习试卷', { exact: true }).selectOption('p1');
-  await page.getByLabel('我能打开所选官方原卷，已准备好开始。', { exact: true }).check();
+
   await page.getByLabel('原卷年份', { exact: true }).selectOption('2017');
-  await expect(page.getByRole('button', { name: '开始原卷答题卡', exact: true })).toBeDisabled();
+  await expect(page.getByRole('button', { name: '开始原卷答题卡', exact: true })).toBeEnabled();
   expect(await page.evaluate(() => document.documentElement.scrollWidth <= innerWidth)).toBe(true);
   await page.getByRole('button', { name: 'Switch language to English', exact: true }).click();
   await expect(page.getByLabel('Paper year', { exact: true })).toHaveValue('2017');
   await expect(page.getByLabel('Papers to practise', { exact: true })).toHaveValue('p1');
-  await page.getByLabel('I can open the selected official papers and am ready to begin.', { exact: true }).check();
+
   await page.getByRole('button', { name: 'Start past-paper answer sheet', exact: true }).click();
   await page.getByRole('radio').nth(2).check();
   await expect(page.getByRole('radio').nth(2)).toBeChecked();

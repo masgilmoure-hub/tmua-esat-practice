@@ -273,6 +273,16 @@ input[type=checkbox], input[type=radio] { accent-color: var(--blue); }
 .result-stats span { font-size: 14px; color: #52617a; }
 .result-stats strong { font-size: 32px; line-height: 1.2; font-variant-numeric: tabular-nums; }
 .score-note { margin-bottom: 30px; font-size: 13px; }
+.tmua-score-card { padding: 22px 24px; margin-bottom: 24px; border-color: #ccd8ff; background: #f8faff; }
+.tmua-score-summary { display: flex; align-items: center; justify-content: space-between; flex-wrap: wrap; gap: 16px; margin-bottom: 12px; }
+.tmua-score-summary h2 { font-size: 22px; margin-bottom: 4px; }
+.tmua-score-value { display: flex; align-items: baseline; gap: 8px; white-space: nowrap; color: var(--blue); }
+.tmua-score-value strong { font-size: 40px; line-height: 1; }
+.tmua-score-value span { color: var(--muted); font-size: 15px; }
+.tmua-score-calculation { margin-bottom: 8px; font-size: 14px; }
+.tmua-score-card > .small + .small { margin-top: 6px; }
+.tmua-score-links { display: flex; flex-wrap: wrap; gap: 12px 22px; margin-top: 14px; font-size: 13px; }
+.tmua-score-links a { display: inline-flex; align-items: center; gap: 5px; }
 .result-layout { margin-top: 20px; }
 .review-column > h2 { margin-bottom: 16px; }
 .review-toolbar { display: flex; align-items: center; justify-content: space-between; gap: 14px; margin-bottom: 14px; }

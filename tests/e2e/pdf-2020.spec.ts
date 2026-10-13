@@ -11,7 +11,7 @@ test('2020 full papers: all 40 PDF pages and reviewed explanations, independent 
  // Fix Date without pausing animation frames needed by PDF.js.
  await page.clock.setFixedTime(new Date('2026-10-13T12:00:00Z'));
  await expect(page).toHaveTitle('TMUA / ESAT · Practice');
- await page.getByRole('navigation').getByRole('button',{name:'官方历年卷',exact:true}).click();await page.getByLabel('原卷年份',{exact:true}).selectOption('2020');await expect(page.locator('.archive-papers')).toContainText('原卷阅读 + 双语解析');await page.getByLabel('我能打开所选官方原卷，已准备好开始。',{exact:true}).check();await page.getByRole('button',{name:'开始原卷答题卡',exact:true}).click();
+ await page.getByRole('navigation').getByRole('button',{name:'历年真题',exact:true}).click();await page.getByLabel('原卷年份',{exact:true}).selectOption('2020');await expect(page.locator('.archive-papers')).toContainText('原卷阅读 + 双语解析');await page.getByRole('button',{name:'开始原卷答题卡',exact:true}).click();
  for(let s=0;s<2;s++){
   await expect(page.getByRole('timer')).toContainText('75:00');await expect(page.locator('.explanation-steps')).toHaveCount(0);
   for(let i=0;i<20;i++){

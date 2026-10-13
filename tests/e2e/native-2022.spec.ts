@@ -9,8 +9,8 @@ test.afterEach(async({page})=>{expect(errors.get(page)).toEqual([]);await expect
 async function finish(page:Page,label='提交本卷 / 模块') {await page.locator('.answer-footer').getByRole('button',{name:label,exact:true}).click();await page.getByRole('dialog').getByRole('button',{name:label,exact:true}).click();}
 test('2022 batch: all 40 questions and diagrams render, both papers grade 20/20 with separate timers',async({page})=>{
  await page.clock.install({time:new Date('2026-10-12T12:00:00Z')});await page.clock.pauseAt(new Date('2026-10-12T12:01:00Z'));
- await page.getByRole('navigation').getByRole('button',{name:'官方历年卷',exact:true}).click();await page.getByLabel('原卷年份',{exact:true}).selectOption('2022');
- await page.getByLabel('我已准备好开始 2022 Paper 1 + Paper 2 整卷练习。',{exact:true}).check();await page.getByRole('button',{name:'开始真题整卷练习',exact:true}).click();
+ await page.getByRole('navigation').getByRole('button',{name:'历年真题',exact:true}).click();await page.getByLabel('原卷年份',{exact:true}).selectOption('2022');
+ await page.getByRole('button',{name:'开始真题整卷练习',exact:true}).click();
  for(let s=0;s<2;s++){
   await expect(page.getByRole('timer')).toContainText('75:00');
   for(let i=0;i<20;i++){

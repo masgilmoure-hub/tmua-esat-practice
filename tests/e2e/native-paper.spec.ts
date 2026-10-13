@@ -3,10 +3,10 @@ import { test, expect, type Page } from '@playwright/test';
 const key='FACCF EFBEB BFFAF EEEDF'.replaceAll(' ','');
 const errors=new WeakMap<Page,string[]>();
 async function start(page:Page) {
- await page.getByRole('navigation').getByRole('button',{name:'官方历年卷',exact:true}).click();
+ await page.getByRole('navigation').getByRole('button',{name:'历年真题',exact:true}).click();
  await page.getByLabel('练习试卷',{exact:true}).selectOption('p1');
  await expect(page.getByText('20 题 · 75 分钟 · 文字作答 + 双语解析',{exact:true})).toBeVisible();
- await page.getByLabel('我已准备好开始 2023 Paper 1 整卷练习。',{exact:true}).check();
+
  await page.getByRole('button',{name:'开始真题整卷练习',exact:true}).click();
 }
 async function submit(page:Page,label='提交本卷 / 模块') {

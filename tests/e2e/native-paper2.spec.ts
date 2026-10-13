@@ -19,9 +19,9 @@ async function finishFromFooter(page:Page,label='提交本卷 / 模块'){
 test('all 40 native questions, independently timed papers, last-question submission and complete bilingual results work',async({page})=>{
  await page.clock.install({time:new Date('2026-10-12T12:00:00Z')});
  await page.clock.pauseAt(new Date('2026-10-12T12:01:00Z'));
- await page.getByRole('navigation').getByRole('button',{name:'官方历年卷',exact:true}).click();
+ await page.getByRole('navigation').getByRole('button',{name:'历年真题',exact:true}).click();
  await expect(page.getByText('20 题 · 75 分钟 · 文字作答 + 双语解析',{exact:true})).toHaveCount(2);
- await page.getByLabel('我已准备好开始 2023 Paper 1 + Paper 2 整卷练习。',{exact:true}).check();
+
  await page.getByRole('button',{name:'开始真题整卷练习',exact:true}).click();
  await expect(page.getByRole('timer')).toContainText('75:00');
  for(let section=0;section<2;section++){
