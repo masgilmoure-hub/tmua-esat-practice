@@ -1,3 +1,4 @@
+import { chooseFilter } from './filters';
 import { test, expect, type Page } from '@playwright/test';
 const errors=new WeakMap<Page,string[]>();
 const keys=['FFGBFDGACBAECBCBABBD','DECCBDBCCECBACBEFCFE'];
@@ -32,7 +33,7 @@ test('2021 PDF-only questions provide all 40 explanations, independent clocks, m
 });
 test('mobile PDF topic training shows bilingual review, recommendations and corrected mistake removal',async({page})=>{
  await page.setViewportSize({width:390,height:844});
- for(const [label,value] of [['试卷 / 科目','Paper 2'],['来源','官方公开材料'],['年份','2021'],['作答方式','PDF 原卷答题卡'],['知识点','逻辑与证明'],['细分考点','整除命题的反例']])await page.getByRole('group',{name:label,exact:true}).getByRole('button',{name:value,exact:true}).click();
+ for(const [label,value] of [['试卷 / 科目','Paper 2'],['来源','官方公开材料'],['年份','2021'],['作答方式','PDF 原卷答题卡'],['知识点','逻辑与证明'],['细分考点','整除命题的反例']])await chooseFilter(page,label,value);
  await expect(page.getByText('找到 1 道题',{exact:true})).toBeVisible();await page.getByRole('button',{name:'开始训练',exact:true}).click();await rendered(page);await expect(page.getByRole('spinbutton',{name:'PDF 页码',exact:true})).toHaveValue('6');
  await page.getByRole('radio').nth(0).check();await submit(page,'交卷并查看结果');await expect(page.locator('.result-stats')).toContainText('0 / 1');await expect(page.getByLabel('第 1 题解析',{exact:true})).toContainText('仅 II');
  await expect(page.locator('.recommendation-panel')).toContainText(/有 \d+ 道同知识点未做题/);await expect(page.getByRole('meter',{name:'逻辑与证明',exact:true})).toHaveAttribute('aria-valuenow','0');

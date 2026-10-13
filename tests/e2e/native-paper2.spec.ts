@@ -1,3 +1,4 @@
+import { chooseFilter } from './filters';
 import { test, expect, type Page } from '@playwright/test';
 const keys=['FACCF EFBEB BFFAF EEEDF','HFCGA FEDDA GCCFB BFDHD'].map(key=>key.replaceAll(' ',''));
 const errors=new WeakMap<Page,string[]>();
@@ -86,7 +87,7 @@ test('Paper 2 topic filtering and original truth-table options work on mobile',a
  await expect(page.getByText('找到 20 道题',{exact:true})).toBeVisible();
  await page.getByRole('group',{name:'知识点',exact:true}).getByRole('button',{name:'逻辑与证明',exact:true}).click();
  await expect(page.getByText('找到 8 道题',{exact:true})).toBeVisible();
- await page.getByRole('group',{name:'细分考点',exact:true}).getByRole('button',{name:'条件命题的等价表述',exact:true}).click();
+ await chooseFilter(page, '细分考点', '条件命题的等价表述');
  await expect(page.getByText('找到 1 道题',{exact:true})).toBeVisible();
  await page.getByRole('button',{name:'开始训练',exact:true}).click();
  await expect(page.getByRole('radio')).toHaveCount(8);

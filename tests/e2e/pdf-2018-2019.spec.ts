@@ -1,3 +1,4 @@
+import { chooseFilter } from './filters';
 import { test, expect, type Page } from '@playwright/test';
 const errors=new WeakMap<Page,string[]>();
 const papers=[{year:2018,keys:['DCEGDEADBECFCBEFABDE','CBFDACBDFBAFFEGFCCCB'],reviewNumber:29,reviewText:'三个上述解',english:'three roots'},{year:2019,keys:['AAECECFEDFHCBBACCBCE','ECADBDBEDAAFDBBFDEEB'],reviewNumber:38,reviewText:'证明充分性',english:'necessary and sufficient'}];
@@ -30,7 +31,7 @@ const focused=[{year:2018,module:'Paper 1',topic:'统计',subtopic:'交换数据
 for(const item of focused){
  test(`${item.year}: focused PDF topic training and corrected mistake remain usable on mobile`,async({page})=>{
   await page.setViewportSize({width:390,height:844});
-  for(const [label,value] of [['试卷 / 科目',item.module],['来源','官方公开材料'],['年份',String(item.year)],['作答方式','PDF 原卷答题卡'],['知识点',item.topic],['细分考点',item.subtopic]])await page.getByRole('group',{name:label,exact:true}).getByRole('button',{name:value,exact:true}).click();
+  for(const [label,value] of [['试卷 / 科目',item.module],['来源','官方公开材料'],['年份',String(item.year)],['作答方式','PDF 原卷答题卡'],['知识点',item.topic],['细分考点',item.subtopic]])await chooseFilter(page,label,value);
   await expect(page.getByText('找到 1 道题',{exact:true})).toBeVisible();await page.getByRole('button',{name:'开始训练',exact:true}).click();await rendered(page);await expect(page.getByRole('spinbutton',{name:'PDF 页码',exact:true})).toHaveValue(String(item.number+2));await page.getByRole('radio').nth((item.key+1)%8).check();await submit(page,'交卷并查看结果');
   await expect(page.locator('.result-stats')).toContainText('0 / 1');await expect(page.getByRole('meter',{name:item.topic,exact:true})).toHaveAttribute('aria-valuenow','0');await page.getByLabel('解析语言',{exact:true}).selectOption('en');await expect(page.getByLabel('第 1 题解析',{exact:true})).toContainText(item.english);expect(await page.evaluate(()=>document.documentElement.scrollWidth<=innerWidth)).toBe(true);
   await page.evaluate(()=>{(document.activeElement as HTMLElement)?.blur();window.scrollTo(0,0);});await page.screenshot({path:`/tmp/tmua-${item.year}-review-mobile.png`,fullPage:true});await page.getByRole('button',{name:'练习本次错题',exact:true}).click();await rendered(page);await page.getByRole('radio').nth(item.key).check();await submit(page,'交卷并查看结果');await expect(page.locator('.result-stats')).toContainText('1 / 1');await page.getByRole('navigation').getByRole('button',{name:'练习记录',exact:true}).click();await page.getByRole('button',{name:/^错题本/}).click();await expect(page.locator('.mistake-row')).toHaveCount(0);

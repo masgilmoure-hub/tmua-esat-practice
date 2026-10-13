@@ -1,3 +1,4 @@
+import { chooseFilter } from './filters';
 import { test, expect, type Page } from '@playwright/test';
 const keys=['CDFCHFEBECADADHBDBFB','BECBFCFCAGCFEDFDEEBE'];
 const errors=new WeakMap<Page,string[]>();
@@ -31,7 +32,7 @@ test('2022 batch: all 40 questions and diagrams render, both papers grade 20/20 
 });
 test('2022 mobile graph question supports full-resolution inspection and direct marking without overflow',async({page})=>{
  await page.setViewportSize({width:390,height:844});
- for(const [label,value] of [['试卷 / 科目','Paper 2'],['来源','官方公开材料'],['年份','2022'],['作答方式','文字题 · 直接作答'],['知识点','函数'],['细分考点','变量指数函数的图像']])await page.getByRole('group',{name:label,exact:true}).getByRole('button',{name:value,exact:true}).click();
+ for(const [label,value] of [['试卷 / 科目','Paper 2'],['来源','官方公开材料'],['年份','2022'],['作答方式','文字题 · 直接作答'],['知识点','函数'],['细分考点','变量指数函数的图像']])await chooseFilter(page,label,value);
  await expect(page.getByText('找到 1 道题',{exact:true})).toBeVisible();await page.getByRole('button',{name:'开始训练',exact:true}).click();await page.getByRole('radio').nth(4).check();
  await page.getByRole('button',{name:'查看大图',exact:true}).click();const dialog=page.getByRole('dialog');await expect(dialog).toBeVisible();
  await expect.poll(()=>dialog.getByRole('img').evaluate((img:HTMLImageElement)=>img.complete&&img.naturalWidth>700)).toBe(true);

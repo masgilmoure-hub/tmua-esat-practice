@@ -1,3 +1,4 @@
+import { chooseFilter } from './filters';
 import { test, expect, type Page } from '@playwright/test';
 
 const storageKey = 'tmua-esat-practice:v1';
@@ -34,7 +35,7 @@ test('loads without console errors and all six filters plus language toggle work
   await page.getByRole('group', { name: '试卷 / 科目', exact: true }).getByRole('button', { name: 'Paper 1', exact: true }).click();
   await expect(page.getByText('找到 3 道示例题')).toBeVisible();
   await page.getByRole('group', { name: '知识点', exact: true }).getByRole('button', { name: '代数', exact: true }).click();
-  await page.getByRole('group', { name: '细分考点', exact: true }).getByRole('button', { name: '二次方程', exact: true }).click();
+  await chooseFilter(page, '细分考点', '二次方程');
   await page.getByRole('group', { name: '做题状态', exact: true }).getByRole('button', { name: '未做', exact: true }).click();
   await expect(page.getByText('找到 1 道示例题')).toBeVisible();
   await page.getByRole('group', { name: '来源', exact: true }).getByRole('button', { name: '官方公开材料', exact: true }).click();

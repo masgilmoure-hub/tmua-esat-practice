@@ -1,3 +1,4 @@
+import { chooseFilter } from './filters';
 import { test, expect, type Page } from '@playwright/test';
 const key='FACCF EFBEB BFFAF EEEDF'.replaceAll(' ','');
 const errors=new WeakMap<Page,string[]>();
@@ -82,7 +83,7 @@ test('year, delivery, topic and subtopic filters lead to focused practice on pho
  await expect(page.getByText('找到 20 道题',{exact:true})).toBeVisible();
  await page.getByRole('group',{name:'知识点',exact:true}).getByRole('button',{name:'几何',exact:true}).click();
  await expect(page.getByText('找到 5 道题',{exact:true})).toBeVisible();
- await page.getByRole('group',{name:'细分考点',exact:true}).getByRole('button',{name:'内接矩形与对称性',exact:true}).click();
+ await chooseFilter(page, '细分考点', '内接矩形与对称性');
  await expect(page.getByText('找到 1 道题',{exact:true})).toBeVisible();
  await page.getByLabel('限时训练',{exact:true}).check();
  await page.getByLabel('时间（分钟）',{exact:true}).fill('5');

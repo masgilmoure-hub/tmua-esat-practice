@@ -149,6 +149,21 @@ fieldset { border: 0; padding: 0; margin: 0; min-width: 0; }
 .filter-chip { background: #fff; border: 1px solid var(--line); border-radius: 6px; padding: 6px 14px; min-height: 34px; line-height: 1.5; }
 .filter-chip:hover { border-color: #94aaff; }
 .filter-chip.selected { background: #edf2ff; border-color: #9bb0ff; color: var(--blue); }
+.searchable-filter { position: relative; width: 100%; max-width: 480px; }
+.searchable-filter-control { display: flex; align-items: center; gap: 8px; min-height: 36px; border: 1px solid var(--line); border-radius: 6px; padding: 0 8px 0 11px; background: #fff; color: var(--muted); }
+.searchable-filter-control:focus-within { border-color: var(--blue); box-shadow: 0 0 0 2px #edf2ff; }
+.searchable-filter-control input { width: 100%; min-width: 0; padding: 7px 0; border: 0; background: transparent; color: var(--ink); text-overflow: ellipsis; }
+.searchable-filter-control input:focus-visible { outline: none; }
+.searchable-filter-control input::placeholder { color: var(--muted); }
+.searchable-filter-icon { display: flex; align-items: center; justify-content: center; border: 0; border-radius: 4px; padding: 6px; background: transparent; color: var(--muted); }
+.searchable-filter-icon:hover { background: var(--subtle); color: var(--blue); }
+.searchable-filter-popup { position: absolute; z-index: 20; top: calc(100% + 6px); left: 0; width: 100%; padding: 5px; border: 1px solid var(--line); border-radius: 8px; background: #fff; box-shadow: 0 8px 24px #19273b1a; }
+.searchable-filter-popup.above { top: auto; bottom: calc(100% + 6px); }
+.searchable-filter-options { max-height: min(250px, 35vh); overflow-y: auto; overscroll-behavior: contain; }
+.searchable-filter-option { display: flex; align-items: center; justify-content: space-between; gap: 10px; width: 100%; min-height: 36px; padding: 8px 10px; border: 0; border-radius: 4px; background: #fff; text-align: left; line-height: 1.5; overflow-wrap: anywhere; }
+.searchable-filter-option.active { background: var(--subtle); }
+.searchable-filter-option[aria-selected="true"] { color: var(--blue); }
+.searchable-filter-status { border-top: 1px solid var(--line); margin-top: 4px; padding: 8px 10px 4px; font-size: 12px; color: var(--muted); }
 .list-toolbar { display: flex; align-items: center; justify-content: space-between; gap: 12px; border-top: 1px solid var(--line); margin-top: 18px; padding: 16px 0; font-size: 14px; }
 .list-toolbar strong { font-weight: 500; }
 .question-table { width: 100%; border-collapse: collapse; font-size: 14px; }

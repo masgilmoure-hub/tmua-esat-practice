@@ -1,3 +1,4 @@
+import { chooseFilter } from './filters';
 import { test, expect, type Page } from '@playwright/test';
 import { readFile } from 'node:fs/promises';
 import template from '../../examples/local-import-demo.json' with { type: 'json' };
@@ -24,7 +25,7 @@ async function goBank(page: Page) {
   await page.getByRole('navigation').getByRole('button', { name: '题库', exact: true }).click();
 }
 async function selectImported(page: Page) {
-  await page.getByRole('group', { name: '细分考点', exact: true }).getByRole('button', { name: '一次方程', exact: true }).click();
+  await chooseFilter(page, '细分考点', '一次方程');
   await page.getByRole('button', { name: `练习 ${id}`, exact: true }).click();
 }
 async function submit(page: Page) {
@@ -63,7 +64,7 @@ test('file preview, explicit review, difficulty filtering, language switching, r
   await expect(manager(page).locator('summary')).toContainText('1 imported');
   await page.getByRole('button', { name: '切换到中文', exact: true }).click();
   await page.getByRole('group', { name: '难度', exact: true }).getByRole('button', { name: '基础', exact: true }).click();
-  await page.getByRole('group', { name: '细分考点', exact: true }).getByRole('button', { name: '一次方程', exact: true }).click();
+  await chooseFilter(page, '细分考点', '一次方程');
   await expect(page.locator('.question-table tbody tr')).toHaveCount(1);
   await expect(page.locator('.question-table')).toContainText('原创导入示例');
   await page.getByRole('group', { name: '难度', exact: true }).getByRole('button', { name: '挑战', exact: true }).click();

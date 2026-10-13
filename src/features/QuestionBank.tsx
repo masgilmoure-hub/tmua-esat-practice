@@ -1,5 +1,6 @@
 import { NATIVE_QUESTION_COUNT, NATIVE_PAPER_YEARS, PDF_EXPLANATION_PAPER_YEARS } from '../data/pastPapers';
 import { MathText } from '../components/QuestionContent';
+import { SearchableFilter } from '../components/SearchableFilter';
 import { useMemo, useState } from 'react';
 import { ArrowRight, ChevronLeft, ChevronRight, RotateCcw } from 'lucide-react';
 import { useI18n } from '../i18n';
@@ -45,7 +46,7 @@ export function QuestionBank({ bank, filters, onFilters, results, onPractice, on
         <div className="filters">
           <FilterRow label={t('试卷 / 科目', 'Paper / subject')} value={filters.moduleId} choices={[all, ...MODULES.filter(m => m.exam === filters.exam).map(m => ({ id: m.id, label: m.id.startsWith('p') && m.id !== 'physics' ? m.id === 'p1' ? 'Paper 1' : 'Paper 2' : m.name[lang] }))]} onChange={id => change({ moduleId: id, topic: 'all', subtopic: 'all' })} />
           <FilterRow label={t('知识点', 'Topic')} value={filters.topic} choices={[all, ...[...topics].map(([id, name]) => ({ id, label: name[lang] }))]} onChange={id => change({ topic: id, subtopic: 'all' })} />
-          <FilterRow label={t('细分考点', 'Subtopic')} value={filters.subtopic} choices={[all, ...[...subtopics].map(([id, name]) => ({ id, label: name[lang] }))]} onChange={id => change({ subtopic: id })} />
+          <SearchableFilter key={`${filters.exam}:${filters.moduleId}:${filters.topic}:${filters.year}:${filters.delivery}:${lang}`} label={t('细分考点', 'Subtopic')} value={filters.subtopic} choices={[{ ...all, searchText: '全部 All' }, ...[...subtopics].map(([id, name]) => ({ id, label: name[lang], searchText: `${name.zh} ${name.en}` }))]} onChange={id => change({ subtopic: id })} />
           <FilterRow label={t('来源', 'Source')} value={filters.source} choices={[all, { id: 'original-demo', label: t('原创示例', 'Original demo') }, { id: 'official-public', label: questions.some(q => q.source.kind === 'official-public') ? t('官方公开材料', 'Official public material') : t('官方公开材料（待导入）', 'Official public material (not imported)') }]} onChange={id => change({ source: id })} />
           <FilterRow label={t('年份', 'Year')} value={filters.year ?? 'all'} choices={[all, ...years.map(year => ({ id: String(year), label: String(year) }))]} onChange={id => change({ year: id, topic: 'all', subtopic: 'all' })} />
           <FilterRow label={t('作答方式', 'Question format')} value={filters.delivery ?? 'all'} choices={[all, { id: 'native', label: t('文字题 · 直接作答', 'Text questions · direct answers') }, { id: 'pdf', label: t('PDF 原卷答题卡', 'PDF answer sheets') }]} onChange={id => change({ delivery: id as Filters['delivery'], topic: 'all', subtopic: 'all' })} />

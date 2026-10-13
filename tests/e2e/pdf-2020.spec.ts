@@ -1,3 +1,4 @@
+import { chooseFilter } from './filters';
 import { test, expect, type Page } from '@playwright/test';
 const errors=new WeakMap<Page,string[]>();
 const keys=['CCBDACADCAEDFECCAAEC','EFCGAAHEFFGDDADDEGEC'];
@@ -30,7 +31,7 @@ test('2020 full papers: all 40 PDF pages and reviewed explanations, independent 
 });
 test('2020 focused PDF training filters by topic, shows reviewed integer bounds and corrects a mistake on mobile',async({page})=>{
  await page.setViewportSize({width:390,height:844});
- for(const [label,value] of [['试卷 / 科目','Paper 2'],['来源','官方公开材料'],['年份','2020'],['作答方式','PDF 原卷答题卡'],['知识点','代数'],['细分考点','不同整数的均值中位数与极差']])await page.getByRole('group',{name:label,exact:true}).getByRole('button',{name:value,exact:true}).click();
+ for(const [label,value] of [['试卷 / 科目','Paper 2'],['来源','官方公开材料'],['年份','2020'],['作答方式','PDF 原卷答题卡'],['知识点','代数'],['细分考点','不同整数的均值中位数与极差']])await chooseFilter(page,label,value);
  await expect(page.getByText('找到 1 道题',{exact:true})).toBeVisible();await page.getByRole('button',{name:'开始训练',exact:true}).click();await rendered(page);await expect(page.getByRole('spinbutton',{name:'PDF 页码',exact:true})).toHaveValue('19');await page.getByRole('radio').nth(0).check();await submit(page,'交卷并查看结果');
  await expect(page.locator('.result-stats')).toContainText('0 / 1');await expect(page.getByLabel('第 1 题解析',{exact:true})).toContainText('极差至少');await expect(page.locator('.recommendation-panel')).toContainText(/有 \d+ 道同知识点未做题/);await expect(page.getByRole('meter',{name:'代数',exact:true})).toHaveAttribute('aria-valuenow','0');
  expect(await page.evaluate(()=>document.documentElement.scrollWidth<=innerWidth)).toBe(true);await page.getByLabel('解析语言',{exact:true}).selectOption('en');await expect(page.getByLabel('第 1 题解析',{exact:true})).toContainText('range is therefore at least');await page.evaluate(()=>{(document.activeElement as HTMLElement)?.blur();window.scrollTo(0,0);});await page.screenshot({path:'/tmp/tmua-2020-review-mobile.png',fullPage:true});
