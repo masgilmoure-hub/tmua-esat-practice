@@ -30,7 +30,7 @@ python3 scripts/import-user-papers.py /path/to/user-archive.zip
 
 全部文件和页码通过校验后，才写入 `public/papers/` 的 32 份 PDF 与 `src/data/local-papers.json`。页码映射由布局位置提取，处理旧字体数字和相邻拆分数字；16 卷所有 1–20 题号均已定位。原始官方链接、题号、年份与校验值仍保留在 `src/data/past-papers.json`，不会因为本地文件名变化而重编号。
 
-原作者和公开来源：Cambridge Assessment / Cambridge University Press & Assessment，UAT-UK 官方资料库 <https://esat-tmua.ac.uk/tmua-preparation-materials/>。本项目无机构隶属或背书关系。导入源是用户在本对话实际提供的资料包；仓库仍为用户原有私有 GitHub 仓库。
+原作者和公开来源：Cambridge Assessment / Cambridge University Press & Assessment，UAT-UK 官方资料库 <https://esat-tmua.ac.uk/tmua-preparation-materials/>。本项目无机构隶属或背书关系。导入源是用户在本对话实际提供的资料包；资料首次接入时仓库为私有；2026-10-13 用户选择保留完整项目并将该仓库公开。
 
 ## 阅读器与本地保存
 
@@ -41,7 +41,7 @@ python3 scripts/import-user-papers.py /path/to/user-archive.zip
 - 移除本地 PDF 需确认，恢复内置原卷，不删除答案、练习记录或错题。存储不可用时原卷仍可阅读，个性上传仅在页面内保留并明确提示。
 - 无效 PDF 不覆盖之前保存的文件。加密、超大或无法渲染的文件提供可操作错误状态。画布大小有上限，翻页或离开时取消旧渲染和释放文档。
 
-内置原卷是项目静态资源，个性上传才是浏览器本地资源；本版没有正式账号、服务器权限或跨设备同步。目录名 `public` 是 Vite 的静态资源约定。本轮按个人实验范围保存代码和私有材料，不更新公开 Sites 部署。
+内置原卷是项目静态资源，个性上传才是浏览器本地资源；本版没有正式账号、服务器权限或跨设备同步。目录名 `public` 是 Vite 的静态资源约定。首次导入按个人实验范围在私有仓库保存资料；现已由用户保留全部材料并公开仓库，Sites 也已更新，当前验收状态见 [部署说明](deployment.md)。
 
 ## 预览
 

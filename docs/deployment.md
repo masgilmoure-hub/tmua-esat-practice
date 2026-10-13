@@ -32,7 +32,7 @@
 
 ## GitHub Pages（手动备用）
 
-当前私有仓库的套餐显示“Upgrade or make this repository public to enable Pages”。该路线暂未启用，不影响上述 Sites 网站使用。工作流仅支持手动触发，避免每次 GitHub 提交都尝试不可用的 Pages 部署。
+仓库已于 2026-10-13 由用户改为 Public，API 和未登录网页访问均已核实。此前私有仓库的套餐显示“Upgrade or make this repository public to enable Pages”；公开后可另外配置此备用部署路线。当前 Pages 尚未启用（has_pages=false），现有测试网站仍使用 Sites。工作流仅支持手动触发，不随每次 GitHub 提交自动部署。
 
 1. 打开仓库 **Settings → Pages**。
 2. 在 **Build and deployment → Source** 选择 **GitHub Actions**。如果没有此选项，检查仓库管理员权限、组织策略及当前 GitHub 方案是否支持该仓库的 Pages。

@@ -234,3 +234,7 @@ Browser plugin not available，使用系统 Chromium / Playwright。先尝试原
 6 项针对最新功能的线上资源交互全部通过：667×764 视口中的“历年真题”与删除准备确认框、选卷直接开始；2023 两卷真实选择官方答案，P1 全对 / P2 未答得到 20/40 → 6.2（增减一题 6.0–6.5），首卷提交无提前总分；2018 P2 不限时 11/20 → 6.5，单卷 / 不限时标签正确，错题重练不换算；细分考点双语交叉搜索、选择才应用、清除、空结果、键盘与联动；手机触摸筛选后实际进入对应 PDF 训练；英文切换和刷新查看结果。
 
 桌面 1536×1024、手机 390×844、用户标注 667×764 截图已通过 view_image 核对，PDF、公式、控件和分数正常，无全局横向溢出、应用 console / page error、数学错误或框架覆盖层。网络资料、脚本、截图与响应资源哈希清单保存在 /tmp/tmua-latest-sites-qa，测试没有修改仓库应用或用户实际浏览器记录。已有本地 63 项单元 / 49 项浏览器检查不因本轮只更新部署说明而重复执行。Safari / Firefox 全套和之前受拦截学生的网络仍未实测。
+
+## 2026-10-13 完整项目公开状态核验
+
+公开版 README 已整理并推送，原详细说明归档到 development-notes.md；完整题库、PDF、原图、解析和分数表保留。当前 GitHub 集成更改可见性时返回 403 Resource not accessible by integration，随后用户在 GitHub 手动完成公开。重新核查 API 为 visibility=public、private=false；未登录仓库网页 HTTP 200，user-login 为空并显示 Public；raw.githubusercontent.com 的 main README 返回 200，与本地正式 README SHA-256 一致。项目文档已同步此状态，旧阶段记录保留当时事实。GitHub Pages has_pages=false，当前网站仍为已验收的 Sites 部署。只更新文档，没有改动应用或题库，未重复运行应用测试。
