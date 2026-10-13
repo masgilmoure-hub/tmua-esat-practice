@@ -1,0 +1,1368 @@
+[
+  {
+    "id": "ARCHIVE-TMUA-2020-P1-Q01",
+    "exam": "TMUA",
+    "moduleId": "p1",
+    "format": "latex",
+    "topic": {
+      "id": "calculus",
+      "name": {
+        "zh": "微积分",
+        "en": "Calculus"
+      }
+    },
+    "subtopic": {
+      "id": "simplify-before-differentiating",
+      "name": {
+        "zh": "先化简再求导",
+        "en": "Simplifying before differentiation"
+      }
+    },
+    "prompt": "Read question 1 in the official TMUA 2020 Paper 1. Record your answer here.",
+    "options": [
+      "A",
+      "B",
+      "C",
+      "D",
+      "E",
+      "F",
+      "G",
+      "H"
+    ],
+    "correctIndex": 2,
+    "difficulty": "foundation",
+    "external": {
+      "kind": "linked-paper",
+      "workedAnswersUrl": "https://uat-wp.s3.eu-west-2.amazonaws.com/wp-content/uploads/2024/05/07140955/TMUA-2020-paper-1-worked-answers.pdf",
+      "answerKeyUrl": "https://uat-wp.s3.eu-west-2.amazonaws.com/wp-content/uploads/2024/05/07140956/TMUA-2020-answer-keys.pdf",
+      "explanationReady": true
+    },
+    "explanation": {
+      "zh": {
+        "steps": [
+          "原式的实数定义域为 $x>0$。约去 $x^{3/2}$ 后得到 $\\frac12x^{3/2}-\\frac52x^{1/2}$。",
+          "用幂函数求导法则，导数为 $\\frac34x^{1/2}-\\frac54x^{-1/2}$。",
+          "通分得到 $(3x-5)/(4\\sqrt{x})$，对应选项 C。"
+        ],
+        "pitfall": "分母是 2x√x；化简可避免在商法则中遗漏项。"
+      },
+      "en": {
+        "steps": [
+          "The real domain is $x>0$. Simplification gives $\\frac12x^{3/2}-\\frac52x^{1/2}$.",
+          "The power rule gives derivative $\\frac34x^{1/2}-\\frac54x^{-1/2}$.",
+          "Combining terms gives $(3x-5)/(4\\sqrt{x})$. Choose C."
+        ],
+        "pitfall": "The denominator is 2x√x; simplifying first reduces errors in the quotient rule."
+      }
+    },
+    "source": {
+      "kind": "official-public",
+      "title": {
+        "zh": "TMUA 2020 Paper 1 · 官方原卷",
+        "en": "TMUA 2020 Paper 1 · official archive"
+      },
+      "url": "https://uat-wp.s3.eu-west-2.amazonaws.com/wp-content/uploads/2024/05/07140953/TMUA-2020-paper-1.pdf",
+      "originalNumber": "1",
+      "year": 2020,
+      "rightsNote": "Original papers and worked solutions: Cambridge University Press & Assessment / Cambridge Assessment; public archive provided by UAT-UK. No affiliation or endorsement."
+    }
+  },
+  {
+    "id": "ARCHIVE-TMUA-2020-P1-Q02",
+    "exam": "TMUA",
+    "moduleId": "p1",
+    "format": "latex",
+    "topic": {
+      "id": "algebra",
+      "name": {
+        "zh": "代数",
+        "en": "Algebra"
+      }
+    },
+    "subtopic": {
+      "id": "two-factors-missing-linear-term",
+      "name": {
+        "zh": "无一次项多项式的因式条件",
+        "en": "Factor conditions with a missing linear term"
+      }
+    },
+    "prompt": "Read question 2 in the official TMUA 2020 Paper 1. Record your answer here.",
+    "options": [
+      "A",
+      "B",
+      "C",
+      "D",
+      "E",
+      "F",
+      "G",
+      "H"
+    ],
+    "correctIndex": 2,
+    "difficulty": "foundation",
+    "external": {
+      "kind": "linked-paper",
+      "workedAnswersUrl": "https://uat-wp.s3.eu-west-2.amazonaws.com/wp-content/uploads/2024/05/07140955/TMUA-2020-paper-1-worked-answers.pdf",
+      "answerKeyUrl": "https://uat-wp.s3.eu-west-2.amazonaws.com/wp-content/uploads/2024/05/07140956/TMUA-2020-answer-keys.pdf",
+      "explanationReady": true
+    },
+    "explanation": {
+      "zh": {
+        "steps": [
+          "因式 $x-2$ 与 $2x+1$ 分别给出根 $2,-1/2$，代入 $2x^3+px^2+q$。",
+          "得到 $16+4p+q=0$ 与 $-1+p+4q=0$。解得 $p=-13/3,q=4/3$。",
+          "故 $2p+q=-22/3$，选 C。"
+        ],
+        "pitfall": "2x+1 对应的根是 −1/2，不是 −2；原式没有一次项。"
+      },
+      "en": {
+        "steps": [
+          "The factors $x-2$ and $2x+1$ give roots $2,-1/2$. Substitute both into $2x^3+px^2+q$.",
+          "The equations are $16+4p+q=0$ and $-1+p+4q=0$, giving $p=-13/3,q=4/3$.",
+          "Thus $2p+q=-22/3$. Choose C."
+        ],
+        "pitfall": "The root of 2x+1 is −1/2, not −2, and the polynomial has no linear term."
+      }
+    },
+    "source": {
+      "kind": "official-public",
+      "title": {
+        "zh": "TMUA 2020 Paper 1 · 官方原卷",
+        "en": "TMUA 2020 Paper 1 · official archive"
+      },
+      "url": "https://uat-wp.s3.eu-west-2.amazonaws.com/wp-content/uploads/2024/05/07140953/TMUA-2020-paper-1.pdf",
+      "originalNumber": "2",
+      "year": 2020,
+      "rightsNote": "Original papers and worked solutions: Cambridge University Press & Assessment / Cambridge Assessment; public archive provided by UAT-UK. No affiliation or endorsement."
+    }
+  },
+  {
+    "id": "ARCHIVE-TMUA-2020-P1-Q03",
+    "exam": "TMUA",
+    "moduleId": "p1",
+    "format": "latex",
+    "topic": {
+      "id": "algebra",
+      "name": {
+        "zh": "代数",
+        "en": "Algebra"
+      }
+    },
+    "subtopic": {
+      "id": "simultaneous-product-inequalities",
+      "name": {
+        "zh": "乘积不等式的交集",
+        "en": "Intersecting product inequalities"
+      }
+    },
+    "prompt": "Read question 3 in the official TMUA 2020 Paper 1. Record your answer here.",
+    "options": [
+      "A",
+      "B",
+      "C",
+      "D",
+      "E",
+      "F",
+      "G",
+      "H"
+    ],
+    "correctIndex": 1,
+    "difficulty": "foundation",
+    "external": {
+      "kind": "linked-paper",
+      "workedAnswersUrl": "https://uat-wp.s3.eu-west-2.amazonaws.com/wp-content/uploads/2024/05/07140955/TMUA-2020-paper-1-worked-answers.pdf",
+      "answerKeyUrl": "https://uat-wp.s3.eu-west-2.amazonaws.com/wp-content/uploads/2024/05/07140956/TMUA-2020-answer-keys.pdf",
+      "explanationReady": true
+    },
+    "explanation": {
+      "zh": {
+        "steps": [
+          "第二个不等式 $(x+2)(x-2)<0$ 限制 $-2<x<2$。",
+          "在这个区间内 $x+4$、$x+3$ 均为正，因此第一个乘积为正等价于 $1-x>0$，即 $x<1$。",
+          "取交集得 $-2<x<1$，选 B。严格不等式不含两端。"
+        ],
+        "pitfall": "两个条件用“且”连接，应取交集，不能取并集。"
+      },
+      "en": {
+        "steps": [
+          "The second inequality $(x+2)(x-2)<0$ restricts $-2<x<2$.",
+          "On that interval, $x+4$ and $x+3$ are positive, so the first product is positive exactly when $1-x>0$, or $x<1$.",
+          "The intersection is $-2<x<1$. Choose B; neither endpoint is included."
+        ],
+        "pitfall": "The conditions are joined by “and”, so take their intersection."
+      }
+    },
+    "source": {
+      "kind": "official-public",
+      "title": {
+        "zh": "TMUA 2020 Paper 1 · 官方原卷",
+        "en": "TMUA 2020 Paper 1 · official archive"
+      },
+      "url": "https://uat-wp.s3.eu-west-2.amazonaws.com/wp-content/uploads/2024/05/07140953/TMUA-2020-paper-1.pdf",
+      "originalNumber": "3",
+      "year": 2020,
+      "rightsNote": "Original papers and worked solutions: Cambridge University Press & Assessment / Cambridge Assessment; public archive provided by UAT-UK. No affiliation or endorsement."
+    }
+  },
+  {
+    "id": "ARCHIVE-TMUA-2020-P1-Q04",
+    "exam": "TMUA",
+    "moduleId": "p1",
+    "format": "latex",
+    "topic": {
+      "id": "sequences",
+      "name": {
+        "zh": "数列与级数",
+        "en": "Sequences & series"
+      }
+    },
+    "subtopic": {
+      "id": "ap-gp-index-matching",
+      "name": {
+        "zh": "等差与等比数列的项号匹配",
+        "en": "Matching indices in arithmetic and geometric progressions"
+      }
+    },
+    "prompt": "Read question 4 in the official TMUA 2020 Paper 1. Record your answer here.",
+    "options": [
+      "A",
+      "B",
+      "C",
+      "D",
+      "E",
+      "F",
+      "G",
+      "H"
+    ],
+    "correctIndex": 3,
+    "difficulty": "standard",
+    "external": {
+      "kind": "linked-paper",
+      "workedAnswersUrl": "https://uat-wp.s3.eu-west-2.amazonaws.com/wp-content/uploads/2024/05/07140955/TMUA-2020-paper-1-worked-answers.pdf",
+      "answerKeyUrl": "https://uat-wp.s3.eu-west-2.amazonaws.com/wp-content/uploads/2024/05/07140956/TMUA-2020-answer-keys.pdf",
+      "explanationReady": true
+    },
+    "explanation": {
+      "zh": {
+        "steps": [
+          "设共同首项为 $a$、等比公比 $r$、等差公差 $d$。题给 $ar=a+3d$、$ar^2=a+5d$。",
+          "消去 $d$ 得 $a(3r^2-5r+2)=0$。无穷和为 12 保证 $a\\ne0$，所以 $(3r-2)(r-1)=0$。",
+          "收敛要求 $|r|<1$，取 $r=2/3$。由 $a/(1-r)=12$ 得 $a=4$，选 D。"
+        ],
+        "pitfall": "等差第四项是 a+3d，第六项是 a+5d；公比 r=1 必须排除。"
+      },
+      "en": {
+        "steps": [
+          "Let the common first term be $a$, with geometric ratio $r$ and arithmetic difference $d$. Then $ar=a+3d$ and $ar^2=a+5d$.",
+          "Eliminating $d$ gives $a(3r^2-5r+2)=0$. The nonzero infinite sum ensures $a\\ne0$, so $(3r-2)(r-1)=0$.",
+          "Convergence requires $|r|<1$, hence $r=2/3$. From $a/(1-r)=12$, we obtain $a=4$. Choose D."
+        ],
+        "pitfall": "The fourth and sixth arithmetic terms are a+3d and a+5d; discard ratio r=1."
+      }
+    },
+    "source": {
+      "kind": "official-public",
+      "title": {
+        "zh": "TMUA 2020 Paper 1 · 官方原卷",
+        "en": "TMUA 2020 Paper 1 · official archive"
+      },
+      "url": "https://uat-wp.s3.eu-west-2.amazonaws.com/wp-content/uploads/2024/05/07140953/TMUA-2020-paper-1.pdf",
+      "originalNumber": "4",
+      "year": 2020,
+      "rightsNote": "Original papers and worked solutions: Cambridge University Press & Assessment / Cambridge Assessment; public archive provided by UAT-UK. No affiliation or endorsement."
+    }
+  },
+  {
+    "id": "ARCHIVE-TMUA-2020-P1-Q05",
+    "exam": "TMUA",
+    "moduleId": "p1",
+    "format": "latex",
+    "topic": {
+      "id": "algebra",
+      "name": {
+        "zh": "代数",
+        "en": "Algebra"
+      }
+    },
+    "subtopic": {
+      "id": "parabola-axis-and-tangency",
+      "name": {
+        "zh": "抛物线对称轴与相切",
+        "en": "A parabola’s symmetry axis and tangency"
+      }
+    },
+    "prompt": "Read question 5 in the official TMUA 2020 Paper 1. Record your answer here.",
+    "options": [
+      "A",
+      "B",
+      "C",
+      "D",
+      "E",
+      "F",
+      "G",
+      "H"
+    ],
+    "correctIndex": 0,
+    "difficulty": "foundation",
+    "external": {
+      "kind": "linked-paper",
+      "workedAnswersUrl": "https://uat-wp.s3.eu-west-2.amazonaws.com/wp-content/uploads/2024/05/07140955/TMUA-2020-paper-1-worked-answers.pdf",
+      "answerKeyUrl": "https://uat-wp.s3.eu-west-2.amazonaws.com/wp-content/uploads/2024/05/07140956/TMUA-2020-answer-keys.pdf",
+      "explanationReady": true
+    },
+    "explanation": {
+      "zh": {
+        "steps": [
+          "$px^2+6x-q$ 的对称轴为 $x=-6/(2p)=-3/p$，等于 $-1/4$，故 $p=12$。",
+          "曲线与横轴相切要求判别式为零：$36+4pq=0$。代入 $p=12$ 得 $q=-3/4$。",
+          "$p+8q=12-6=6$，选 A。"
+        ],
+        "pitfall": "常数项是 −q，判别式中的对应项为 +4pq。"
+      },
+      "en": {
+        "steps": [
+          "The axis of $px^2+6x-q$ is $x=-3/p=-1/4$, so $p=12$.",
+          "Tangency to the axis requires $36+4pq=0$. Substituting $p=12$ gives $q=-3/4$.",
+          "$p+8q=12-6=6$. Choose A."
+        ],
+        "pitfall": "The constant term is −q, so the discriminant includes +4pq."
+      }
+    },
+    "source": {
+      "kind": "official-public",
+      "title": {
+        "zh": "TMUA 2020 Paper 1 · 官方原卷",
+        "en": "TMUA 2020 Paper 1 · official archive"
+      },
+      "url": "https://uat-wp.s3.eu-west-2.amazonaws.com/wp-content/uploads/2024/05/07140953/TMUA-2020-paper-1.pdf",
+      "originalNumber": "5",
+      "year": 2020,
+      "rightsNote": "Original papers and worked solutions: Cambridge University Press & Assessment / Cambridge Assessment; public archive provided by UAT-UK. No affiliation or endorsement."
+    }
+  },
+  {
+    "id": "ARCHIVE-TMUA-2020-P1-Q06",
+    "exam": "TMUA",
+    "moduleId": "p1",
+    "format": "latex",
+    "topic": {
+      "id": "functions",
+      "name": {
+        "zh": "函数",
+        "en": "Functions"
+      }
+    },
+    "subtopic": {
+      "id": "reciprocal-exponential-quadratic",
+      "name": {
+        "zh": "指数二次式倒数的最大值",
+        "en": "Maximum of a reciprocal exponential quadratic"
+      }
+    },
+    "prompt": "Read question 6 in the official TMUA 2020 Paper 1. Record your answer here.",
+    "options": [
+      "A",
+      "B",
+      "C",
+      "D",
+      "E",
+      "F",
+      "G",
+      "H"
+    ],
+    "correctIndex": 2,
+    "difficulty": "foundation",
+    "external": {
+      "kind": "linked-paper",
+      "workedAnswersUrl": "https://uat-wp.s3.eu-west-2.amazonaws.com/wp-content/uploads/2024/05/07140955/TMUA-2020-paper-1-worked-answers.pdf",
+      "answerKeyUrl": "https://uat-wp.s3.eu-west-2.amazonaws.com/wp-content/uploads/2024/05/07140956/TMUA-2020-answer-keys.pdf",
+      "explanationReady": true
+    },
+    "explanation": {
+      "zh": {
+        "steps": [
+          "令 $u=5^x>0$，分母为 $u^2-4u+7=(u-2)^2+3$。",
+          "分母始终为正，最小值 3 在 $u=2$ 处可达到，对应 $x=\\log_5 2$。",
+          "因此倒数的最大值为 $1/3$，选 C。"
+        ],
+        "pitfall": "求倒数最大值，应找正分母的最小值并检查可达性。"
+      },
+      "en": {
+        "steps": [
+          "Set $u=5^x>0$. The denominator is $u^2-4u+7=(u-2)^2+3$.",
+          "The denominator is positive and attains its minimum 3 at $u=2$, corresponding to $x=\\log_5 2$.",
+          "The reciprocal therefore has maximum $1/3$. Choose C."
+        ],
+        "pitfall": "Maximise the reciprocal by minimising its positive denominator, checking attainability."
+      }
+    },
+    "source": {
+      "kind": "official-public",
+      "title": {
+        "zh": "TMUA 2020 Paper 1 · 官方原卷",
+        "en": "TMUA 2020 Paper 1 · official archive"
+      },
+      "url": "https://uat-wp.s3.eu-west-2.amazonaws.com/wp-content/uploads/2024/05/07140953/TMUA-2020-paper-1.pdf",
+      "originalNumber": "6",
+      "year": 2020,
+      "rightsNote": "Original papers and worked solutions: Cambridge University Press & Assessment / Cambridge Assessment; public archive provided by UAT-UK. No affiliation or endorsement."
+    }
+  },
+  {
+    "id": "ARCHIVE-TMUA-2020-P1-Q07",
+    "exam": "TMUA",
+    "moduleId": "p1",
+    "format": "latex",
+    "topic": {
+      "id": "algebra",
+      "name": {
+        "zh": "代数",
+        "en": "Algebra"
+      }
+    },
+    "subtopic": {
+      "id": "exponential-common-base-system",
+      "name": {
+        "zh": "统一底数的指数联立",
+        "en": "An exponential system with a common base"
+      }
+    },
+    "prompt": "Read question 7 in the official TMUA 2020 Paper 1. Record your answer here.",
+    "options": [
+      "A",
+      "B",
+      "C",
+      "D",
+      "E",
+      "F",
+      "G",
+      "H"
+    ],
+    "correctIndex": 0,
+    "difficulty": "standard",
+    "external": {
+      "kind": "linked-paper",
+      "workedAnswersUrl": "https://uat-wp.s3.eu-west-2.amazonaws.com/wp-content/uploads/2024/05/07140955/TMUA-2020-paper-1-worked-answers.pdf",
+      "answerKeyUrl": "https://uat-wp.s3.eu-west-2.amazonaws.com/wp-content/uploads/2024/05/07140956/TMUA-2020-answer-keys.pdf",
+      "explanationReady": true
+    },
+    "explanation": {
+      "zh": {
+        "steps": [
+          "全部写成底数 2。第一式给出 $3x=3(y+3)$，即 $x-y=3$。",
+          "第二式给出 $2(x+1)=4(y+1)-3(y+3)=y-5$，即 $2x-y=-7$。",
+          "联立得 $x=-10,y=-13$，故 $x+y=-23$，选 A。"
+        ],
+        "pitfall": "指数相除时减去整个分母指数；括号中的常数项不能遗漏。"
+      },
+      "en": {
+        "steps": [
+          "Express everything in base 2. The first equation gives $3x=3(y+3)$, hence $x-y=3$.",
+          "The second gives $2(x+1)=4(y+1)-3(y+3)=y-5$, hence $2x-y=-7$.",
+          "Solving gives $x=-10,y=-13$, so $x+y=-23$. Choose A."
+        ],
+        "pitfall": "When dividing powers, subtract the entire denominator exponent, including constants."
+      }
+    },
+    "source": {
+      "kind": "official-public",
+      "title": {
+        "zh": "TMUA 2020 Paper 1 · 官方原卷",
+        "en": "TMUA 2020 Paper 1 · official archive"
+      },
+      "url": "https://uat-wp.s3.eu-west-2.amazonaws.com/wp-content/uploads/2024/05/07140953/TMUA-2020-paper-1.pdf",
+      "originalNumber": "7",
+      "year": 2020,
+      "rightsNote": "Original papers and worked solutions: Cambridge University Press & Assessment / Cambridge Assessment; public archive provided by UAT-UK. No affiliation or endorsement."
+    }
+  },
+  {
+    "id": "ARCHIVE-TMUA-2020-P1-Q08",
+    "exam": "TMUA",
+    "moduleId": "p1",
+    "format": "latex",
+    "topic": {
+      "id": "functions",
+      "name": {
+        "zh": "函数",
+        "en": "Functions"
+      }
+    },
+    "subtopic": {
+      "id": "downward-quadratic-max-parameter",
+      "name": {
+        "zh": "开口向下二次函数的最大值参数",
+        "en": "Parameter bounds for a downward quadratic maximum"
+      }
+    },
+    "prompt": "Read question 8 in the official TMUA 2020 Paper 1. Record your answer here.",
+    "options": [
+      "A",
+      "B",
+      "C",
+      "D",
+      "E",
+      "F",
+      "G",
+      "H"
+    ],
+    "correctIndex": 3,
+    "difficulty": "standard",
+    "external": {
+      "kind": "linked-paper",
+      "workedAnswersUrl": "https://uat-wp.s3.eu-west-2.amazonaws.com/wp-content/uploads/2024/05/07140955/TMUA-2020-paper-1-worked-answers.pdf",
+      "answerKeyUrl": "https://uat-wp.s3.eu-west-2.amazonaws.com/wp-content/uploads/2024/05/07140956/TMUA-2020-answer-keys.pdf",
+      "explanationReady": true
+    },
+    "explanation": {
+      "zh": {
+        "steps": [
+          "展开并配方：$(p-x)(x+2)=-(x-(p-2)/2)^2+(p+2)^2/4$。",
+          "定义域为全部实数，所以最大值总能达到，等于 $(p+2)^2/4$。",
+          "要求最大值小于 4，得到 $(p+2)^2<16$，即 $-6<p<2$，选 D。"
+        ],
+        "pitfall": "顶点坐标与最大函数值不能混淆，条件“less than”排除端点。"
+      },
+      "en": {
+        "steps": [
+          "Expand and complete the square: $(p-x)(x+2)=-(x-(p-2)/2)^2+(p+2)^2/4$.",
+          "The domain is all real numbers, so the maximum $(p+2)^2/4$ is always attained.",
+          "The maximum is below 4 exactly when $(p+2)^2<16$, or $-6<p<2$. Choose D."
+        ],
+        "pitfall": "Distinguish the vertex coordinate from the maximum value; “less than” excludes endpoints."
+      }
+    },
+    "source": {
+      "kind": "official-public",
+      "title": {
+        "zh": "TMUA 2020 Paper 1 · 官方原卷",
+        "en": "TMUA 2020 Paper 1 · official archive"
+      },
+      "url": "https://uat-wp.s3.eu-west-2.amazonaws.com/wp-content/uploads/2024/05/07140953/TMUA-2020-paper-1.pdf",
+      "originalNumber": "8",
+      "year": 2020,
+      "rightsNote": "Original papers and worked solutions: Cambridge University Press & Assessment / Cambridge Assessment; public archive provided by UAT-UK. No affiliation or endorsement."
+    }
+  },
+  {
+    "id": "ARCHIVE-TMUA-2020-P1-Q09",
+    "exam": "TMUA",
+    "moduleId": "p1",
+    "format": "latex",
+    "topic": {
+      "id": "algebra",
+      "name": {
+        "zh": "代数",
+        "en": "Algebra"
+      }
+    },
+    "subtopic": {
+      "id": "square-root-transformed-roots",
+      "name": {
+        "zh": "根开平方后的韦达关系",
+        "en": "Vieta’s formulas after taking square roots of roots"
+      }
+    },
+    "prompt": "Read question 9 in the official TMUA 2020 Paper 1. Record your answer here.",
+    "options": [
+      "A",
+      "B",
+      "C",
+      "D",
+      "E",
+      "F",
+      "G",
+      "H"
+    ],
+    "correctIndex": 2,
+    "difficulty": "standard",
+    "external": {
+      "kind": "linked-paper",
+      "workedAnswersUrl": "https://uat-wp.s3.eu-west-2.amazonaws.com/wp-content/uploads/2024/05/07140955/TMUA-2020-paper-1-worked-answers.pdf",
+      "answerKeyUrl": "https://uat-wp.s3.eu-west-2.amazonaws.com/wp-content/uploads/2024/05/07140956/TMUA-2020-answer-keys.pdf",
+      "explanationReady": true
+    },
+    "explanation": {
+      "zh": {
+        "steps": [
+          "原根满足 $\\alpha+\\beta=14$、$\\alpha\\beta=9$，且两根为正。",
+          "新根之积 $\\sqrt\\alpha\\sqrt\\beta=3$；新根之和的平方为 $14+2\\sqrt9=20$，所以和为 $\\sqrt{20}$。",
+          "对应首一二次式为 $x^2-\\sqrt{20}x+3$，选 C。"
+        ],
+        "pitfall": "√α+√β 不等于 √(α+β)，平方时要保留交叉项。"
+      },
+      "en": {
+        "steps": [
+          "The original roots satisfy $\\alpha+\\beta=14$ and $\\alpha\\beta=9$, and both are positive.",
+          "The new roots have product 3. Their sum has square $14+2\\sqrt9=20$, hence their sum is $\\sqrt{20}$.",
+          "The resulting monic quadratic is $x^2-\\sqrt{20}x+3$. Choose C."
+        ],
+        "pitfall": "√α+√β is not √(α+β); retain the cross term when squaring."
+      }
+    },
+    "source": {
+      "kind": "official-public",
+      "title": {
+        "zh": "TMUA 2020 Paper 1 · 官方原卷",
+        "en": "TMUA 2020 Paper 1 · official archive"
+      },
+      "url": "https://uat-wp.s3.eu-west-2.amazonaws.com/wp-content/uploads/2024/05/07140953/TMUA-2020-paper-1.pdf",
+      "originalNumber": "9",
+      "year": 2020,
+      "rightsNote": "Original papers and worked solutions: Cambridge University Press & Assessment / Cambridge Assessment; public archive provided by UAT-UK. No affiliation or endorsement."
+    }
+  },
+  {
+    "id": "ARCHIVE-TMUA-2020-P1-Q10",
+    "exam": "TMUA",
+    "moduleId": "p1",
+    "format": "latex",
+    "topic": {
+      "id": "functions",
+      "name": {
+        "zh": "函数",
+        "en": "Functions"
+      }
+    },
+    "subtopic": {
+      "id": "ordered-parabola-transformations",
+      "name": {
+        "zh": "抛物线变换的顺序",
+        "en": "Ordered transformations of a parabola"
+      }
+    },
+    "prompt": "Read question 10 in the official TMUA 2020 Paper 1. Record your answer here.",
+    "options": [
+      "A",
+      "B",
+      "C",
+      "D",
+      "E",
+      "F",
+      "G",
+      "H"
+    ],
+    "correctIndex": 0,
+    "difficulty": "standard",
+    "external": {
+      "kind": "linked-paper",
+      "workedAnswersUrl": "https://uat-wp.s3.eu-west-2.amazonaws.com/wp-content/uploads/2024/05/07140955/TMUA-2020-paper-1-worked-answers.pdf",
+      "answerKeyUrl": "https://uat-wp.s3.eu-west-2.amazonaws.com/wp-content/uploads/2024/05/07140956/TMUA-2020-answer-keys.pdf",
+      "explanationReady": true
+    },
+    "explanation": {
+      "zh": {
+        "steps": [
+          "先向右 3、向下 5 平移，得到 $y=4(x-3)^2-5$。",
+          "再关于横轴反射，得到 $y=-4(x-3)^2+5$，包括常数项也变号。",
+          "最后横向伸长 2 倍，用 $x/2$ 替换 $x$，得 $y=-4(x/2-3)^2+5=-x^2+12x-31$，选 A。"
+        ],
+        "pitfall": "变换顺序不能交换；横向伸长要替换为 x/2，而非 2x。"
+      },
+      "en": {
+        "steps": [
+          "Translating right 3 and down 5 gives $y=4(x-3)^2-5$.",
+          "Reflection in the x-axis gives $y=-4(x-3)^2+5$; the constant changes sign too.",
+          "Finally, stretching horizontally by 2 replaces $x$ with $x/2$, giving $y=-x^2+12x-31$. Choose A."
+        ],
+        "pitfall": "Transformation order matters; horizontal stretch by 2 uses x/2, not 2x."
+      }
+    },
+    "source": {
+      "kind": "official-public",
+      "title": {
+        "zh": "TMUA 2020 Paper 1 · 官方原卷",
+        "en": "TMUA 2020 Paper 1 · official archive"
+      },
+      "url": "https://uat-wp.s3.eu-west-2.amazonaws.com/wp-content/uploads/2024/05/07140953/TMUA-2020-paper-1.pdf",
+      "originalNumber": "10",
+      "year": 2020,
+      "rightsNote": "Original papers and worked solutions: Cambridge University Press & Assessment / Cambridge Assessment; public archive provided by UAT-UK. No affiliation or endorsement."
+    }
+  },
+  {
+    "id": "ARCHIVE-TMUA-2020-P1-Q11",
+    "exam": "TMUA",
+    "moduleId": "p1",
+    "format": "latex",
+    "topic": {
+      "id": "calculus",
+      "name": {
+        "zh": "微积分",
+        "en": "Calculus"
+      }
+    },
+    "subtopic": {
+      "id": "balanced-quadratic-signed-areas",
+      "name": {
+        "zh": "二次曲线两块面积相等",
+        "en": "Balancing two signed quadratic areas"
+      }
+    },
+    "prompt": "Read question 11 in the official TMUA 2020 Paper 1. Record your answer here.",
+    "options": [
+      "A",
+      "B",
+      "C",
+      "D",
+      "E",
+      "F",
+      "G",
+      "H"
+    ],
+    "correctIndex": 4,
+    "difficulty": "standard",
+    "external": {
+      "kind": "linked-paper",
+      "workedAnswersUrl": "https://uat-wp.s3.eu-west-2.amazonaws.com/wp-content/uploads/2024/05/07140955/TMUA-2020-paper-1-worked-answers.pdf",
+      "answerKeyUrl": "https://uat-wp.s3.eu-west-2.amazonaws.com/wp-content/uploads/2024/05/07140956/TMUA-2020-answer-keys.pdf",
+      "explanationReady": true
+    },
+    "explanation": {
+      "zh": {
+        "steps": [
+          "按原图可写为 $y=k(x-2)(x-q)$，其中 $k>0$。两块面积相等意味着从 0 到 $q$ 的带符号积分为零。",
+          "公共系数 $k$ 可消去，计算 $\\int_0^q[x^2-(q+2)x+2q]\\,dx=q^2-q^3/6$。",
+          "令 $q^2(1-q/6)=0$。由 $q>2$ 排除零根，得 $q=6$，选 E。"
+        ],
+        "pitfall": "横轴下方的积分为负；面积相等对应正负积分相消。"
+      },
+      "en": {
+        "steps": [
+          "The diagram gives $y=k(x-2)(x-q)$ with $k>0$. Equal areas mean the signed integral from 0 to $q$ is zero.",
+          "Cancel the common factor $k$ and compute $\\int_0^q[x^2-(q+2)x+2q]\\,dx=q^2-q^3/6$.",
+          "Set $q^2(1-q/6)=0$. The condition $q>2$ excludes zero, leaving $q=6$. Choose E."
+        ],
+        "pitfall": "Below-axis integrals are negative; equal areas make the signed contributions cancel."
+      }
+    },
+    "source": {
+      "kind": "official-public",
+      "title": {
+        "zh": "TMUA 2020 Paper 1 · 官方原卷",
+        "en": "TMUA 2020 Paper 1 · official archive"
+      },
+      "url": "https://uat-wp.s3.eu-west-2.amazonaws.com/wp-content/uploads/2024/05/07140953/TMUA-2020-paper-1.pdf",
+      "originalNumber": "11",
+      "year": 2020,
+      "rightsNote": "Original papers and worked solutions: Cambridge University Press & Assessment / Cambridge Assessment; public archive provided by UAT-UK. No affiliation or endorsement."
+    }
+  },
+  {
+    "id": "ARCHIVE-TMUA-2020-P1-Q12",
+    "exam": "TMUA",
+    "moduleId": "p1",
+    "format": "latex",
+    "topic": {
+      "id": "functions",
+      "name": {
+        "zh": "函数",
+        "en": "Functions"
+      }
+    },
+    "subtopic": {
+      "id": "cosine-square-root-root-count",
+      "name": {
+        "zh": "余弦与平方根的解数",
+        "en": "Counting intersections of cosine and a square root"
+      }
+    },
+    "prompt": "Read question 12 in the official TMUA 2020 Paper 1. Record your answer here.",
+    "options": [
+      "A",
+      "B",
+      "C",
+      "D",
+      "E",
+      "F",
+      "G",
+      "H"
+    ],
+    "correctIndex": 3,
+    "difficulty": "challenge",
+    "external": {
+      "kind": "linked-paper",
+      "workedAnswersUrl": "https://uat-wp.s3.eu-west-2.amazonaws.com/wp-content/uploads/2024/05/07140955/TMUA-2020-paper-1-worked-answers.pdf",
+      "answerKeyUrl": "https://uat-wp.s3.eu-west-2.amazonaws.com/wp-content/uploads/2024/05/07140956/TMUA-2020-answer-keys.pdf",
+      "explanationReady": true
+    },
+    "explanation": {
+      "zh": {
+        "steps": [
+          "由 $\\sqrt{x}\\geq0$ 且 $3\\cos x\\leq3$，只需考虑 $0\\leq x\\leq9$，并要求余弦非负。相关区间只有 $[0,\\pi/2]$ 和 $[3\\pi/2,5\\pi/2]$。",
+          "第一个区间内余弦严格递减、平方根严格递增，端点大小关系相反，因此恰有一解。",
+          "第二个区间考察 $R(x)=3\\cos x/\\sqrt{x}$，两端为 0，且 $R(2\\pi)=3/\\sqrt{2\\pi}>1$。在左半段，导数符号与 $-[\\tan x+1/(2x)]$ 相同；括号内导数为 $\\sec^2x-1/(2x^2)>0$，从负无穷增至正值，故 $R$ 先增后减。",
+          "右半段余弦递减、分母递增，$R$ 继续严格递减。因此第二个区间恰好两次达到 1。合计 3 解，选 D。"
+        ],
+        "pitfall": "不能跨过余弦负值区间计根；示意图给出交点后仍需排除额外根。"
+      },
+      "en": {
+        "steps": [
+          "The square root is nonnegative and $3\\cos x\\leq3$, so $0\\leq x\\leq9$ with nonnegative cosine. Only $[0,\\pi/2]$ and $[3\\pi/2,5\\pi/2]$ matter.",
+          "On the first interval, cosine strictly decreases while the square root strictly increases. Opposite endpoint comparisons give exactly one root.",
+          "On the second interval, consider $R(x)=3\\cos x/\\sqrt{x}$. Its endpoints are 0 and $R(2\\pi)>1$. On the left half, the derivative has the sign of $-[\\tan x+1/(2x)]$. That bracket strictly increases, since its derivative is $\\sec^2x-1/(2x^2)>0$, from negative infinity to a positive value. Thus $R$ rises then falls.",
+          "On the right half, cosine decreases and the denominator increases, so $R$ continues strictly decreasing. It equals 1 exactly twice on this interval. There are 3 roots in total. Choose D."
+        ],
+        "pitfall": "Exclude intervals where cosine is negative and justify that the observed intersections are exhaustive."
+      }
+    },
+    "source": {
+      "kind": "official-public",
+      "title": {
+        "zh": "TMUA 2020 Paper 1 · 官方原卷",
+        "en": "TMUA 2020 Paper 1 · official archive"
+      },
+      "url": "https://uat-wp.s3.eu-west-2.amazonaws.com/wp-content/uploads/2024/05/07140953/TMUA-2020-paper-1.pdf",
+      "originalNumber": "12",
+      "year": 2020,
+      "rightsNote": "Original papers and worked solutions: Cambridge University Press & Assessment / Cambridge Assessment; public archive provided by UAT-UK. No affiliation or endorsement."
+    }
+  },
+  {
+    "id": "ARCHIVE-TMUA-2020-P1-Q13",
+    "exam": "TMUA",
+    "moduleId": "p1",
+    "format": "latex",
+    "topic": {
+      "id": "algebra",
+      "name": {
+        "zh": "代数",
+        "en": "Algebra"
+      }
+    },
+    "subtopic": {
+      "id": "multinomial-mixed-coefficient",
+      "name": {
+        "zh": "多项展开的混合项系数",
+        "en": "A mixed coefficient in a multinomial expansion"
+      }
+    },
+    "prompt": "Read question 13 in the official TMUA 2020 Paper 1. Record your answer here.",
+    "options": [
+      "A",
+      "B",
+      "C",
+      "D",
+      "E",
+      "F",
+      "G",
+      "H"
+    ],
+    "correctIndex": 5,
+    "difficulty": "standard",
+    "external": {
+      "kind": "linked-paper",
+      "workedAnswersUrl": "https://uat-wp.s3.eu-west-2.amazonaws.com/wp-content/uploads/2024/05/07140955/TMUA-2020-paper-1-worked-answers.pdf",
+      "answerKeyUrl": "https://uat-wp.s3.eu-west-2.amazonaws.com/wp-content/uploads/2024/05/07140956/TMUA-2020-answer-keys.pdf",
+      "explanationReady": true
+    },
+    "explanation": {
+      "zh": {
+        "steps": [
+          "要产生 $x^2y^4$，七个因子中需选两个 $x$、两个 $y^2$，其余三个选 1。",
+          "先选两个因子提供 $x$，有 $\\binom72=21$ 种；再从剩余五个选两个提供 $y^2$，有 $\\binom52=10$ 种。",
+          "系数为 $21\\times10=210$，选 F。"
+        ],
+        "pitfall": "y⁴ 来自两个 y²，不能误选四个 y²。"
+      },
+      "en": {
+        "steps": [
+          "To obtain $x^2y^4$, choose $x$ from two factors, $y^2$ from two, and 1 from the remaining three.",
+          "Choose the two $x$ factors in $\\binom72=21$ ways, then the two $y^2$ factors in $\\binom52=10$ ways.",
+          "The coefficient is $21\\times10=210$. Choose F."
+        ],
+        "pitfall": "The y⁴ term requires two y² factors, not four."
+      }
+    },
+    "source": {
+      "kind": "official-public",
+      "title": {
+        "zh": "TMUA 2020 Paper 1 · 官方原卷",
+        "en": "TMUA 2020 Paper 1 · official archive"
+      },
+      "url": "https://uat-wp.s3.eu-west-2.amazonaws.com/wp-content/uploads/2024/05/07140953/TMUA-2020-paper-1.pdf",
+      "originalNumber": "13",
+      "year": 2020,
+      "rightsNote": "Original papers and worked solutions: Cambridge University Press & Assessment / Cambridge Assessment; public archive provided by UAT-UK. No affiliation or endorsement."
+    }
+  },
+  {
+    "id": "ARCHIVE-TMUA-2020-P1-Q14",
+    "exam": "TMUA",
+    "moduleId": "p1",
+    "format": "latex",
+    "topic": {
+      "id": "calculus",
+      "name": {
+        "zh": "微积分",
+        "en": "Calculus"
+      }
+    },
+    "subtopic": {
+      "id": "cubic-line-total-enclosed-area",
+      "name": {
+        "zh": "三次曲线与直线的总围成面积",
+        "en": "Total enclosed area between a cubic and a line"
+      }
+    },
+    "prompt": "Read question 14 in the official TMUA 2020 Paper 1. Record your answer here.",
+    "options": [
+      "A",
+      "B",
+      "C",
+      "D",
+      "E",
+      "F",
+      "G",
+      "H"
+    ],
+    "correctIndex": 4,
+    "difficulty": "standard",
+    "external": {
+      "kind": "linked-paper",
+      "workedAnswersUrl": "https://uat-wp.s3.eu-west-2.amazonaws.com/wp-content/uploads/2024/05/07140955/TMUA-2020-paper-1-worked-answers.pdf",
+      "answerKeyUrl": "https://uat-wp.s3.eu-west-2.amazonaws.com/wp-content/uploads/2024/05/07140956/TMUA-2020-answer-keys.pdf",
+      "explanationReady": true
+    },
+    "explanation": {
+      "zh": {
+        "steps": [
+          "有限非零围成面积要求 $m>0$，交点为 $x=-\\sqrt m,0,\\sqrt m$。",
+          "两侧面积对称，正半轴面积为 $\\int_0^{\\sqrt m}(mx-x^3)\\,dx=m^2/4$。",
+          "总面积为 $m^2/2=6$，结合 $m>0$ 得 $m=2\\sqrt3$，选 E。"
+        ],
+        "pitfall": "题求两块围成区域的总面积；从负交点到正交点的带符号积分会相消。"
+      },
+      "en": {
+        "steps": [
+          "A nonzero enclosed area requires $m>0$, with intersections at $x=-\\sqrt m,0,\\sqrt m$.",
+          "The two lobes are symmetric. The positive-side area is $\\int_0^{\\sqrt m}(mx-x^3)\\,dx=m^2/4$.",
+          "The total area is $m^2/2=6$. With $m>0$, this gives $m=2\\sqrt3$. Choose E."
+        ],
+        "pitfall": "Use both enclosed lobes; the signed integral across both cancels."
+      }
+    },
+    "source": {
+      "kind": "official-public",
+      "title": {
+        "zh": "TMUA 2020 Paper 1 · 官方原卷",
+        "en": "TMUA 2020 Paper 1 · official archive"
+      },
+      "url": "https://uat-wp.s3.eu-west-2.amazonaws.com/wp-content/uploads/2024/05/07140953/TMUA-2020-paper-1.pdf",
+      "originalNumber": "14",
+      "year": 2020,
+      "rightsNote": "Original papers and worked solutions: Cambridge University Press & Assessment / Cambridge Assessment; public archive provided by UAT-UK. No affiliation or endorsement."
+    }
+  },
+  {
+    "id": "ARCHIVE-TMUA-2020-P1-Q15",
+    "exam": "TMUA",
+    "moduleId": "p1",
+    "format": "latex",
+    "topic": {
+      "id": "functions",
+      "name": {
+        "zh": "函数",
+        "en": "Functions"
+      }
+    },
+    "subtopic": {
+      "id": "logarithmic-biquadratic-substitution",
+      "name": {
+        "zh": "对数双二次方程的换元",
+        "en": "A logarithmic biquadratic substitution"
+      }
+    },
+    "prompt": "Read question 15 in the official TMUA 2020 Paper 1. Record your answer here.",
+    "options": [
+      "A",
+      "B",
+      "C",
+      "D",
+      "E",
+      "F",
+      "G",
+      "H"
+    ],
+    "correctIndex": 2,
+    "difficulty": "standard",
+    "external": {
+      "kind": "linked-paper",
+      "workedAnswersUrl": "https://uat-wp.s3.eu-west-2.amazonaws.com/wp-content/uploads/2024/05/07140955/TMUA-2020-paper-1-worked-answers.pdf",
+      "answerKeyUrl": "https://uat-wp.s3.eu-west-2.amazonaws.com/wp-content/uploads/2024/05/07140956/TMUA-2020-answer-keys.pdf",
+      "explanationReady": true
+    },
+    "explanation": {
+      "zh": {
+        "steps": [
+          "定义域为 $x>0$。令 $t=\\log_2x$，则 $\\log_2(1/x)=-t$，原式成为 $t^4+12t^2-64=0$。原题常数为 $2^6$。",
+          "令 $u=t^2\\geq0$，得到 $(u-4)(u+16)=0$，所以仅取 $u=4$，即 $t=\\pm2$。",
+          "两解为 $x=4,1/4$，正差为 $15/4$，选 C。"
+        ],
+        "pitfall": "常数是 2⁶，不是 26；u=t² 不能取负根，最终要还原 x。"
+      },
+      "en": {
+        "steps": [
+          "For $x>0$, set $t=\\log_2x$. Then $\\log_2(1/x)=-t$, so the equation is $t^4+12t^2-64=0$. The original constant is $2^6$.",
+          "Set $u=t^2\\geq0$. Then $(u-4)(u+16)=0$, leaving $u=4$ and $t=\\pm2$.",
+          "The solutions are $x=4,1/4$, with positive difference $15/4$. Choose C."
+        ],
+        "pitfall": "The constant is 2⁶, not 26; reject negative u=t² and convert back to x."
+      }
+    },
+    "source": {
+      "kind": "official-public",
+      "title": {
+        "zh": "TMUA 2020 Paper 1 · 官方原卷",
+        "en": "TMUA 2020 Paper 1 · official archive"
+      },
+      "url": "https://uat-wp.s3.eu-west-2.amazonaws.com/wp-content/uploads/2024/05/07140953/TMUA-2020-paper-1.pdf",
+      "originalNumber": "15",
+      "year": 2020,
+      "rightsNote": "Original papers and worked solutions: Cambridge University Press & Assessment / Cambridge Assessment; public archive provided by UAT-UK. No affiliation or endorsement."
+    }
+  },
+  {
+    "id": "ARCHIVE-TMUA-2020-P1-Q16",
+    "exam": "TMUA",
+    "moduleId": "p1",
+    "format": "latex",
+    "topic": {
+      "id": "geometry",
+      "name": {
+        "zh": "几何",
+        "en": "Geometry"
+      }
+    },
+    "subtopic": {
+      "id": "equal-circle-internal-tangent",
+      "name": {
+        "zh": "等半径圆的内公切线",
+        "en": "An internal common tangent of equal circles"
+      }
+    },
+    "prompt": "Read question 16 in the official TMUA 2020 Paper 1. Record your answer here.",
+    "options": [
+      "A",
+      "B",
+      "C",
+      "D",
+      "E",
+      "F",
+      "G",
+      "H"
+    ],
+    "correctIndex": 2,
+    "difficulty": "challenge",
+    "external": {
+      "kind": "linked-paper",
+      "workedAnswersUrl": "https://uat-wp.s3.eu-west-2.amazonaws.com/wp-content/uploads/2024/05/07140955/TMUA-2020-paper-1-worked-answers.pdf",
+      "answerKeyUrl": "https://uat-wp.s3.eu-west-2.amazonaws.com/wp-content/uploads/2024/05/07140956/TMUA-2020-answer-keys.pdf",
+      "explanationReady": true
+    },
+    "explanation": {
+      "zh": {
+        "steps": [
+          "两圆半径均为 $\\sqrt3$，圆心相距 6。两条外公切线水平，正斜率切线为内公切线，经过圆心连线的中点。",
+          "中点到任一圆心距离为 3，切点处半径垂直切线。对应直角三角形斜边为 3、对边为 $\\sqrt3$、邻边为 $\\sqrt{9-3}=\\sqrt6$。",
+          "因此 $\\tan\\theta=\\sqrt3/\\sqrt6=\\sqrt2/2$，选 C。"
+        ],
+        "pitfall": "圆方程右侧为 3，所以半径是 √3；应区分内外公切线。"
+      },
+      "en": {
+        "steps": [
+          "Both circles have radius $\\sqrt3$ and their centres are 6 apart. The external tangents are horizontal; the positive-slope tangent is internal and passes through the midpoint of the centres.",
+          "The midpoint is 3 from either centre. The radius is perpendicular to the tangent, forming a right triangle with hypotenuse 3, opposite side $\\sqrt3$, and adjacent side $\\sqrt6$.",
+          "Thus $\\tan\\theta=\\sqrt3/\\sqrt6=\\sqrt2/2$. Choose C."
+        ],
+        "pitfall": "A circle equation with right side 3 has radius √3; distinguish internal and external tangents."
+      }
+    },
+    "source": {
+      "kind": "official-public",
+      "title": {
+        "zh": "TMUA 2020 Paper 1 · 官方原卷",
+        "en": "TMUA 2020 Paper 1 · official archive"
+      },
+      "url": "https://uat-wp.s3.eu-west-2.amazonaws.com/wp-content/uploads/2024/05/07140953/TMUA-2020-paper-1.pdf",
+      "originalNumber": "16",
+      "year": 2020,
+      "rightsNote": "Original papers and worked solutions: Cambridge University Press & Assessment / Cambridge Assessment; public archive provided by UAT-UK. No affiliation or endorsement."
+    }
+  },
+  {
+    "id": "ARCHIVE-TMUA-2020-P1-Q17",
+    "exam": "TMUA",
+    "moduleId": "p1",
+    "format": "latex",
+    "topic": {
+      "id": "functions",
+      "name": {
+        "zh": "函数",
+        "en": "Functions"
+      }
+    },
+    "subtopic": {
+      "id": "square-root-line-intersection-boundary",
+      "name": {
+        "zh": "平方根与直线交点的边界条件",
+        "en": "Boundary conditions for line–square-root intersections"
+      }
+    },
+    "prompt": "Read question 17 in the official TMUA 2020 Paper 1. Record your answer here.",
+    "options": [
+      "A",
+      "B",
+      "C",
+      "D",
+      "E",
+      "F",
+      "G",
+      "H"
+    ],
+    "correctIndex": 0,
+    "difficulty": "challenge",
+    "external": {
+      "kind": "linked-paper",
+      "workedAnswersUrl": "https://uat-wp.s3.eu-west-2.amazonaws.com/wp-content/uploads/2024/05/07140955/TMUA-2020-paper-1-worked-answers.pdf",
+      "answerKeyUrl": "https://uat-wp.s3.eu-west-2.amazonaws.com/wp-content/uploads/2024/05/07140956/TMUA-2020-answer-keys.pdf",
+      "explanationReady": true
+    },
+    "explanation": {
+      "zh": {
+        "steps": [
+          "令 $t=\\sqrt{x}\\geq0$，交点等价于非负根 $mt^2-t+c=0$。$m=0$ 至多一个交点；要有两根，其和 $1/m$ 为正，必须 $m>0$。",
+          "$c>0$ 时，根的积 $c/m$ 为正且和为正；两根不同要求 $1-4mc>0$。故 $0<m<1/(4c)$，对应官方答案 A。",
+          "边界补充：$c=0$ 时，对任意 $m>0$ 都有 $t=0,1/m$，即 $x=0,1/m^2$ 两个交点；$c<0$ 则不可能有两个非负根。完整条件是 $m>0,\\ c\\geq0,\\ 4mc<1$。",
+          "原选项没有覆盖 $c=0$，官方详解也承认 A 是最接近的选项。本站保留官方 A 判分，不将它宣称为全部边界的完整答案。"
+        ],
+        "pitfall": "正判别式还不够，√x 对应的根必须非负；注意原题选项漏掉 c=0 的情况。"
+      },
+      "en": {
+        "steps": [
+          "Set $t=\\sqrt{x}\\geq0$. Intersections correspond to nonnegative roots of $mt^2-t+c=0$. At $m=0$ there is at most one; for two roots their positive sum $1/m$ requires $m>0$.",
+          "For $c>0$, the root product $c/m$ and sum are positive. Distinct roots require $1-4mc>0$, giving $0<m<1/(4c)$, the official answer A.",
+          "Boundary note: at $c=0$, every $m>0$ gives $t=0,1/m$, hence two intersections $x=0,1/m^2$. For $c<0$ there cannot be two nonnegative roots. The complete condition is $m>0,\\ c\\geq0,\\ 4mc<1$.",
+          "The options omit $c=0$; the official worked solution also identifies A as the closest offered answer. This site marks A using the official key without calling it a complete answer at every boundary."
+        ],
+        "pitfall": "A positive discriminant is not enough: roots representing √x must be nonnegative. The original options omit c=0."
+      }
+    },
+    "source": {
+      "kind": "official-public",
+      "title": {
+        "zh": "TMUA 2020 Paper 1 · 官方原卷",
+        "en": "TMUA 2020 Paper 1 · official archive"
+      },
+      "url": "https://uat-wp.s3.eu-west-2.amazonaws.com/wp-content/uploads/2024/05/07140953/TMUA-2020-paper-1.pdf",
+      "originalNumber": "17",
+      "year": 2020,
+      "rightsNote": "Original papers and worked solutions: Cambridge University Press & Assessment / Cambridge Assessment; public archive provided by UAT-UK. No affiliation or endorsement."
+    }
+  },
+  {
+    "id": "ARCHIVE-TMUA-2020-P1-Q18",
+    "exam": "TMUA",
+    "moduleId": "p1",
+    "format": "latex",
+    "topic": {
+      "id": "trigonometry",
+      "name": {
+        "zh": "三角函数与方程",
+        "en": "Trigonometric functions & equations"
+      }
+    },
+    "subtopic": {
+      "id": "absolute-cosine-quadratic",
+      "name": {
+        "zh": "绝对值余弦的二次换元",
+        "en": "A quadratic substitution in absolute cosine"
+      }
+    },
+    "prompt": "Read question 18 in the official TMUA 2020 Paper 1. Record your answer here.",
+    "options": [
+      "A",
+      "B",
+      "C",
+      "D",
+      "E",
+      "F",
+      "G",
+      "H"
+    ],
+    "correctIndex": 0,
+    "difficulty": "standard",
+    "external": {
+      "kind": "linked-paper",
+      "workedAnswersUrl": "https://uat-wp.s3.eu-west-2.amazonaws.com/wp-content/uploads/2024/05/07140955/TMUA-2020-paper-1-worked-answers.pdf",
+      "answerKeyUrl": "https://uat-wp.s3.eu-west-2.amazonaws.com/wp-content/uploads/2024/05/07140956/TMUA-2020-answer-keys.pdf",
+      "explanationReady": true
+    },
+    "explanation": {
+      "zh": {
+        "steps": [
+          "令 $t=|\\cos x|$，则 $0\\leq t\\leq1$ 且 $\\cos^2x=t^2$，方程为 $2t^2+t-1=0$。",
+          "因式分解 $(2t-1)(t+1)=0$，仅保留 $t=1/2$。",
+          "在 $0^\\circ\\leq x\\leq180^\\circ$ 内，解为 $60^\\circ,120^\\circ$。共 2 解，和为 $180^\\circ$，选 A。"
+        ],
+        "pitfall": "绝对值可对应正负两种余弦值，但 t 自身不能取 −1。"
+      },
+      "en": {
+        "steps": [
+          "Set $t=|\\cos x|$, so $0\\leq t\\leq1$ and $\\cos^2x=t^2$. The equation becomes $2t^2+t-1=0$.",
+          "Factor $(2t-1)(t+1)=0$, retaining only $t=1/2$.",
+          "On $0^\\circ\\leq x\\leq180^\\circ$, the solutions are $60^\\circ,120^\\circ$: two solutions summing to $180^\\circ$. Choose A."
+        ],
+        "pitfall": "The absolute value allows either cosine sign, but t itself cannot be −1."
+      }
+    },
+    "source": {
+      "kind": "official-public",
+      "title": {
+        "zh": "TMUA 2020 Paper 1 · 官方原卷",
+        "en": "TMUA 2020 Paper 1 · official archive"
+      },
+      "url": "https://uat-wp.s3.eu-west-2.amazonaws.com/wp-content/uploads/2024/05/07140953/TMUA-2020-paper-1.pdf",
+      "originalNumber": "18",
+      "year": 2020,
+      "rightsNote": "Original papers and worked solutions: Cambridge University Press & Assessment / Cambridge Assessment; public archive provided by UAT-UK. No affiliation or endorsement."
+    }
+  },
+  {
+    "id": "ARCHIVE-TMUA-2020-P1-Q19",
+    "exam": "TMUA",
+    "moduleId": "p1",
+    "format": "latex",
+    "topic": {
+      "id": "algebra",
+      "name": {
+        "zh": "代数",
+        "en": "Algebra"
+      }
+    },
+    "subtopic": {
+      "id": "smallest-positive-integer-quadratic",
+      "name": {
+        "zh": "二次不等式的最小正整数",
+        "en": "Smallest positive integer for a quadratic inequality"
+      }
+    },
+    "prompt": "Read question 19 in the official TMUA 2020 Paper 1. Record your answer here.",
+    "options": [
+      "A",
+      "B",
+      "C",
+      "D",
+      "E",
+      "F",
+      "G",
+      "H"
+    ],
+    "correctIndex": 4,
+    "difficulty": "foundation",
+    "external": {
+      "kind": "linked-paper",
+      "workedAnswersUrl": "https://uat-wp.s3.eu-west-2.amazonaws.com/wp-content/uploads/2024/05/07140955/TMUA-2020-paper-1-worked-answers.pdf",
+      "answerKeyUrl": "https://uat-wp.s3.eu-west-2.amazonaws.com/wp-content/uploads/2024/05/07140956/TMUA-2020-answer-keys.pdf",
+      "explanationReady": true
+    },
+    "explanation": {
+      "zh": {
+        "steps": [
+          "将原式写成 $x(x-52)-52$。当正整数 $1\\leq x\\leq52$ 时，$x(x-52)\\leq0$，原式一定为负。",
+          "检查下一个整数 53：$53^2-52\\times53-52=53-52=1>0$。",
+          "因此最小正整数是 53，选 E，无需计算二次根的近似值。"
+        ],
+        "pitfall": "找到一个正值还需排除所有更小正整数；不要只比较两个相邻候选。"
+      },
+      "en": {
+        "steps": [
+          "Write the expression as $x(x-52)-52$. For integers $1\\leq x\\leq52$, the product is nonpositive, so the expression is negative.",
+          "The next integer gives $53^2-52\\times53-52=53-52=1>0$.",
+          "The smallest positive integer is therefore 53. Choose E; approximate quadratic roots are unnecessary."
+        ],
+        "pitfall": "Finding a positive value also requires ruling out every smaller positive integer."
+      }
+    },
+    "source": {
+      "kind": "official-public",
+      "title": {
+        "zh": "TMUA 2020 Paper 1 · 官方原卷",
+        "en": "TMUA 2020 Paper 1 · official archive"
+      },
+      "url": "https://uat-wp.s3.eu-west-2.amazonaws.com/wp-content/uploads/2024/05/07140953/TMUA-2020-paper-1.pdf",
+      "originalNumber": "19",
+      "year": 2020,
+      "rightsNote": "Original papers and worked solutions: Cambridge University Press & Assessment / Cambridge Assessment; public archive provided by UAT-UK. No affiliation or endorsement."
+    }
+  },
+  {
+    "id": "ARCHIVE-TMUA-2020-P1-Q20",
+    "exam": "TMUA",
+    "moduleId": "p1",
+    "format": "latex",
+    "topic": {
+      "id": "algebra",
+      "name": {
+        "zh": "代数",
+        "en": "Algebra"
+      }
+    },
+    "subtopic": {
+      "id": "cubic-factor-distinct-root-count",
+      "name": {
+        "zh": "因式方程的不同实根数量",
+        "en": "Distinct real roots of a factored cubic"
+      }
+    },
+    "prompt": "Read question 20 in the official TMUA 2020 Paper 1. Record your answer here.",
+    "options": [
+      "A",
+      "B",
+      "C",
+      "D",
+      "E",
+      "F",
+      "G",
+      "H"
+    ],
+    "correctIndex": 2,
+    "difficulty": "challenge",
+    "external": {
+      "kind": "linked-paper",
+      "workedAnswersUrl": "https://uat-wp.s3.eu-west-2.amazonaws.com/wp-content/uploads/2024/05/07140955/TMUA-2020-paper-1-worked-answers.pdf",
+      "answerKeyUrl": "https://uat-wp.s3.eu-west-2.amazonaws.com/wp-content/uploads/2024/05/07140956/TMUA-2020-answer-keys.pdf",
+      "explanationReady": true
+    },
+    "explanation": {
+      "zh": {
+        "steps": [
+          "线性因式总给出根 $x=a$。二次因式的判别式为 $1-4a$，按正、零、负三种情况讨论。",
+          "$a>1/4$ 时二次项无实根，总数为 1；$a=1/4$ 时二次项重根为 $1/2$，与 $a$ 不同，恰好 2 根。",
+          "$a<1/4$ 时二次项有两不同实根，要总计两根必须让 $x=a$ 与其中之一重合。代入二次项得 $a^2-a+a=a^2=0$，所以 $a=0$。",
+          "允许参数仅 $a=0,1/4$，共 2 个值，选 C。"
+        ],
+        "pitfall": "统计不同实根，不是把各因式的根数机械相加；重根和公共根要分别处理。"
+      },
+      "en": {
+        "steps": [
+          "The linear factor always gives $x=a$. The quadratic discriminant is $1-4a$, so consider positive, zero and negative cases.",
+          "For $a>1/4$, only the linear root is real. At $a=1/4$, the quadratic has repeated root $1/2$, distinct from $a$, giving exactly two.",
+          "For $a<1/4$, the quadratic has two distinct real roots. To keep only two overall, $x=a$ must be one of them. Substitution gives $a^2=0$, hence $a=0$.",
+          "Only $a=0,1/4$ work, giving two parameter values. Choose C."
+        ],
+        "pitfall": "Count distinct real roots, treating repeated and shared roots separately."
+      }
+    },
+    "source": {
+      "kind": "official-public",
+      "title": {
+        "zh": "TMUA 2020 Paper 1 · 官方原卷",
+        "en": "TMUA 2020 Paper 1 · official archive"
+      },
+      "url": "https://uat-wp.s3.eu-west-2.amazonaws.com/wp-content/uploads/2024/05/07140953/TMUA-2020-paper-1.pdf",
+      "originalNumber": "20",
+      "year": 2020,
+      "rightsNote": "Original papers and worked solutions: Cambridge University Press & Assessment / Cambridge Assessment; public archive provided by UAT-UK. No affiliation or endorsement."
+    }
+  }
+]

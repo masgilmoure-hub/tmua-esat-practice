@@ -1,0 +1,1366 @@
+[
+  {
+    "id": "ARCHIVE-TMUA-2020-P2-Q01",
+    "exam": "TMUA",
+    "moduleId": "p2",
+    "format": "latex",
+    "topic": {
+      "id": "algebra",
+      "name": {
+        "zh": "代数",
+        "en": "Algebra"
+      }
+    },
+    "subtopic": {
+      "id": "line-quadratic-touch-cross",
+      "name": {
+        "zh": "直线与二次曲线相交或相切",
+        "en": "A line crossing or touching a quadratic"
+      }
+    },
+    "prompt": "Read question 1 in the official TMUA 2020 Paper 2. Record your answer here.",
+    "options": [
+      "A",
+      "B",
+      "C",
+      "D",
+      "E",
+      "F",
+      "G",
+      "H"
+    ],
+    "correctIndex": 4,
+    "difficulty": "foundation",
+    "external": {
+      "kind": "linked-paper",
+      "workedAnswersUrl": "https://uat-wp.s3.eu-west-2.amazonaws.com/wp-content/uploads/2024/05/07140952/TMUA-2020-paper-2-worked-answers.pdf",
+      "answerKeyUrl": "https://uat-wp.s3.eu-west-2.amazonaws.com/wp-content/uploads/2024/05/07140956/TMUA-2020-answer-keys.pdf",
+      "explanationReady": true
+    },
+    "explanation": {
+      "zh": {
+        "steps": [
+          "联立得到 $x^2+(k-1)x+4=0$。相交或相切要求至少一个实根。",
+          "判别式 $(k-1)^2-16\\geq0$，所以 $|k-1|\\geq4$。",
+          "解得 $k\\leq-3$ 或 $k\\geq5$，选 E；等号对应相切。"
+        ],
+        "pitfall": "“crosses or touches”需要包含判别式为零的情况。"
+      },
+      "en": {
+        "steps": [
+          "The intersection equation is $x^2+(k-1)x+4=0$. Crossing or touching requires at least one real root.",
+          "The discriminant condition is $(k-1)^2-16\\geq0$, or $|k-1|\\geq4$.",
+          "Thus $k\\leq-3$ or $k\\geq5$. Choose E; equality gives tangency."
+        ],
+        "pitfall": "“Crosses or touches” includes a zero discriminant."
+      }
+    },
+    "source": {
+      "kind": "official-public",
+      "title": {
+        "zh": "TMUA 2020 Paper 2 · 官方原卷",
+        "en": "TMUA 2020 Paper 2 · official archive"
+      },
+      "url": "https://uat-wp.s3.eu-west-2.amazonaws.com/wp-content/uploads/2024/05/07140951/TMUA-2020-paper-2.pdf",
+      "originalNumber": "1",
+      "year": 2020,
+      "rightsNote": "Original papers and worked solutions: Cambridge University Press & Assessment / Cambridge Assessment; public archive provided by UAT-UK. No affiliation or endorsement."
+    }
+  },
+  {
+    "id": "ARCHIVE-TMUA-2020-P2-Q02",
+    "exam": "TMUA",
+    "moduleId": "p2",
+    "format": "latex",
+    "topic": {
+      "id": "trigonometry",
+      "name": {
+        "zh": "三角函数与方程",
+        "en": "Trigonometric functions & equations"
+      }
+    },
+    "subtopic": {
+      "id": "tangent-quadrant-cosine",
+      "name": {
+        "zh": "正切与象限决定余弦",
+        "en": "Cosine determined by tangent and quadrant"
+      }
+    },
+    "prompt": "Read question 2 in the official TMUA 2020 Paper 2. Record your answer here.",
+    "options": [
+      "A",
+      "B",
+      "C",
+      "D",
+      "E",
+      "F",
+      "G",
+      "H"
+    ],
+    "correctIndex": 5,
+    "difficulty": "foundation",
+    "external": {
+      "kind": "linked-paper",
+      "workedAnswersUrl": "https://uat-wp.s3.eu-west-2.amazonaws.com/wp-content/uploads/2024/05/07140952/TMUA-2020-paper-2-worked-answers.pdf",
+      "answerKeyUrl": "https://uat-wp.s3.eu-west-2.amazonaws.com/wp-content/uploads/2024/05/07140956/TMUA-2020-answer-keys.pdf",
+      "explanationReady": true
+    },
+    "explanation": {
+      "zh": {
+        "steps": [
+          "$\\tan\\theta=2>0$，在题给 $180^\\circ<\\theta<360^\\circ$ 范围内只能位于第三象限，因此余弦为负。",
+          "由 $1+\\tan^2\\theta=1/\\cos^2\\theta$ 得 $\\cos^2\\theta=1/5$。",
+          "取负根，$\\cos\\theta=-1/\\sqrt5=-\\sqrt5/5$，选 F。"
+        ],
+        "pitfall": "正切为正不意味着余弦为正，必须使用给定角度范围。"
+      },
+      "en": {
+        "steps": [
+          "Positive tangent in $180^\\circ<\\theta<360^\\circ$ places the angle in quadrant III, where cosine is negative.",
+          "The identity $1+\\tan^2\\theta=1/\\cos^2\\theta$ gives $\\cos^2\\theta=1/5$.",
+          "Take the negative root: $\\cos\\theta=-1/\\sqrt5=-\\sqrt5/5$. Choose F."
+        ],
+        "pitfall": "A positive tangent does not imply positive cosine; use the angle range."
+      }
+    },
+    "source": {
+      "kind": "official-public",
+      "title": {
+        "zh": "TMUA 2020 Paper 2 · 官方原卷",
+        "en": "TMUA 2020 Paper 2 · official archive"
+      },
+      "url": "https://uat-wp.s3.eu-west-2.amazonaws.com/wp-content/uploads/2024/05/07140951/TMUA-2020-paper-2.pdf",
+      "originalNumber": "2",
+      "year": 2020,
+      "rightsNote": "Original papers and worked solutions: Cambridge University Press & Assessment / Cambridge Assessment; public archive provided by UAT-UK. No affiliation or endorsement."
+    }
+  },
+  {
+    "id": "ARCHIVE-TMUA-2020-P2-Q03",
+    "exam": "TMUA",
+    "moduleId": "p2",
+    "format": "latex",
+    "topic": {
+      "id": "reasoning",
+      "name": {
+        "zh": "逻辑与证明",
+        "en": "Logic & proof"
+      }
+    },
+    "subtopic": {
+      "id": "subtracted-bracket-first-error",
+      "name": {
+        "zh": "减括号中的首个符号错误",
+        "en": "The first sign error in subtracting a bracket"
+      }
+    },
+    "prompt": "Read question 3 in the official TMUA 2020 Paper 2. Record your answer here.",
+    "options": [
+      "A",
+      "B",
+      "C",
+      "D",
+      "E",
+      "F",
+      "G",
+      "H"
+    ],
+    "correctIndex": 2,
+    "difficulty": "foundation",
+    "external": {
+      "kind": "linked-paper",
+      "workedAnswersUrl": "https://uat-wp.s3.eu-west-2.amazonaws.com/wp-content/uploads/2024/05/07140952/TMUA-2020-paper-2-worked-answers.pdf",
+      "answerKeyUrl": "https://uat-wp.s3.eu-west-2.amazonaws.com/wp-content/uploads/2024/05/07140956/TMUA-2020-answer-keys.pdf",
+      "explanationReady": true
+    },
+    "explanation": {
+      "zh": {
+        "steps": [
+          "I 将外面的 4 写成 $2\\times2$，整个差式仍保留在内层括号中，所以正确。",
+          "II 错误地将 $-(3n-1)$ 写成 $-3n-1$，正确应为 $-3n+1$。因此首错在 II，对应 C。",
+          "直接化简原表达式可得 $4(3n+1)=12n+4$，除以 3 的余数为 1，原整除断言确实不成立。"
+        ],
+        "pitfall": "减去一个括号时，括号内每一项都必须变号。"
+      },
+      "en": {
+        "steps": [
+          "Line I rewrites the outer 4 as $2\\times2$, retaining the complete difference in brackets, so it is valid.",
+          "Line II writes $-(3n-1)$ as $-3n-1$ instead of $-3n+1$. The first error is II, so choose C.",
+          "The original expression simplifies to $4(3n+1)=12n+4$, with remainder 1 on division by 3. The divisibility claim is indeed false."
+        ],
+        "pitfall": "Subtracting a bracket changes the sign of every term."
+      }
+    },
+    "source": {
+      "kind": "official-public",
+      "title": {
+        "zh": "TMUA 2020 Paper 2 · 官方原卷",
+        "en": "TMUA 2020 Paper 2 · official archive"
+      },
+      "url": "https://uat-wp.s3.eu-west-2.amazonaws.com/wp-content/uploads/2024/05/07140951/TMUA-2020-paper-2.pdf",
+      "originalNumber": "3",
+      "year": 2020,
+      "rightsNote": "Original papers and worked solutions: Cambridge University Press & Assessment / Cambridge Assessment; public archive provided by UAT-UK. No affiliation or endorsement."
+    }
+  },
+  {
+    "id": "ARCHIVE-TMUA-2020-P2-Q04",
+    "exam": "TMUA",
+    "moduleId": "p2",
+    "format": "latex",
+    "topic": {
+      "id": "reasoning",
+      "name": {
+        "zh": "逻辑与证明",
+        "en": "Logic & proof"
+      }
+    },
+    "subtopic": {
+      "id": "restricted-domain-composite-sum",
+      "name": {
+        "zh": "受限整数域内的合数和反例",
+        "en": "Composite-sum counterexamples in a restricted domain"
+      }
+    },
+    "prompt": "Read question 4 in the official TMUA 2020 Paper 2. Record your answer here.",
+    "options": [
+      "A",
+      "B",
+      "C",
+      "D",
+      "E",
+      "F",
+      "G",
+      "H"
+    ],
+    "correctIndex": 6,
+    "difficulty": "standard",
+    "external": {
+      "kind": "linked-paper",
+      "workedAnswersUrl": "https://uat-wp.s3.eu-west-2.amazonaws.com/wp-content/uploads/2024/05/07140952/TMUA-2020-paper-2-worked-answers.pdf",
+      "answerKeyUrl": "https://uat-wp.s3.eu-west-2.amazonaws.com/wp-content/uploads/2024/05/07140956/TMUA-2020-answer-keys.pdf",
+      "explanationReady": true
+    },
+    "explanation": {
+      "zh": {
+        "steps": [
+          "反例必须先满足前提 $N>6$。I 的 $N=5$ 不在断言适用范围，不能作为反例。",
+          "大于 1 的最小非质数为 4，因此两个这样的数之和至少为 8，$N=7$ 不可能表示，是反例。",
+          "$N=9$ 时其中较小加数只能为 4，否则和至少 12；剩下 5 是质数，也不允许。故 9 同样是反例，II 与 III 对应 G。"
+        ],
+        "pitfall": "反例要满足命题前提；此处 1 被明确排除，不能用 1+8。"
+      },
+      "en": {
+        "steps": [
+          "A counterexample must first satisfy $N>6$. The value 5 is outside the claim’s domain and cannot be a counterexample.",
+          "The smallest non-prime integer above 1 is 4, so the sum of two is at least 8. Thus 7 is a counterexample.",
+          "For 9, the smaller addend must be 4; otherwise both are at least 6 and sum to at least 12. The other addend 5 is prime, so 9 also fails. II and III give G."
+        ],
+        "pitfall": "A counterexample must satisfy the premise; 1 is explicitly excluded, so 1+8 is invalid."
+      }
+    },
+    "source": {
+      "kind": "official-public",
+      "title": {
+        "zh": "TMUA 2020 Paper 2 · 官方原卷",
+        "en": "TMUA 2020 Paper 2 · official archive"
+      },
+      "url": "https://uat-wp.s3.eu-west-2.amazonaws.com/wp-content/uploads/2024/05/07140951/TMUA-2020-paper-2.pdf",
+      "originalNumber": "4",
+      "year": 2020,
+      "rightsNote": "Original papers and worked solutions: Cambridge University Press & Assessment / Cambridge Assessment; public archive provided by UAT-UK. No affiliation or endorsement."
+    }
+  },
+  {
+    "id": "ARCHIVE-TMUA-2020-P2-Q05",
+    "exam": "TMUA",
+    "moduleId": "p2",
+    "format": "latex",
+    "topic": {
+      "id": "functions",
+      "name": {
+        "zh": "函数",
+        "en": "Functions"
+      }
+    },
+    "subtopic": {
+      "id": "exponential-sigmoid-sketch",
+      "name": {
+        "zh": "指数比值函数的图像",
+        "en": "Sketching an exponential ratio"
+      }
+    },
+    "prompt": "Read question 5 in the official TMUA 2020 Paper 2. Record your answer here.",
+    "options": [
+      "A",
+      "B",
+      "C",
+      "D",
+      "E",
+      "F",
+      "G",
+      "H"
+    ],
+    "correctIndex": 0,
+    "difficulty": "standard",
+    "external": {
+      "kind": "linked-paper",
+      "workedAnswersUrl": "https://uat-wp.s3.eu-west-2.amazonaws.com/wp-content/uploads/2024/05/07140952/TMUA-2020-paper-2-worked-answers.pdf",
+      "answerKeyUrl": "https://uat-wp.s3.eu-west-2.amazonaws.com/wp-content/uploads/2024/05/07140956/TMUA-2020-answer-keys.pdf",
+      "explanationReady": true
+    },
+    "explanation": {
+      "zh": {
+        "steps": [
+          "设 $u=2^x>0$，则 $y=u/(1+u)$，始终满足 $0<y<1$，且 $y(0)=1/2$。",
+          "$x\\to-\\infty$ 时 $u\\to0$，所以 $y\\to0$；$x\\to+\\infty$ 时 $y\\to1$。两条水平渐近线为 $y=0,1$。",
+          "导数 $y^{\\prime}=(\\ln2)2^x/(1+2^x)^2>0$，曲线单调递增且有上界，对应原图 A。"
+        ],
+        "pitfall": "只看左侧指数形状不够，还要核对右侧有限渐近线与单调方向。"
+      },
+      "en": {
+        "steps": [
+          "Set $u=2^x>0$. Then $y=u/(1+u)$ satisfies $0<y<1$, with $y(0)=1/2$.",
+          "As $x\\to-\\infty$, $u\\to0$ and $y\\to0$. As $x\\to+\\infty$, $y\\to1$. The horizontal asymptotes are $y=0,1$.",
+          "The derivative $y^{\\prime}=(\\ln2)2^x/(1+2^x)^2>0$, so the curve increases with an upper bound. This matches sketch A."
+        ],
+        "pitfall": "Check the finite right-hand asymptote and increasing direction, not just the left-hand exponential shape."
+      }
+    },
+    "source": {
+      "kind": "official-public",
+      "title": {
+        "zh": "TMUA 2020 Paper 2 · 官方原卷",
+        "en": "TMUA 2020 Paper 2 · official archive"
+      },
+      "url": "https://uat-wp.s3.eu-west-2.amazonaws.com/wp-content/uploads/2024/05/07140951/TMUA-2020-paper-2.pdf",
+      "originalNumber": "5",
+      "year": 2020,
+      "rightsNote": "Original papers and worked solutions: Cambridge University Press & Assessment / Cambridge Assessment; public archive provided by UAT-UK. No affiliation or endorsement."
+    }
+  },
+  {
+    "id": "ARCHIVE-TMUA-2020-P2-Q06",
+    "exam": "TMUA",
+    "moduleId": "p2",
+    "format": "latex",
+    "topic": {
+      "id": "reasoning",
+      "name": {
+        "zh": "逻辑与证明",
+        "en": "Logic & proof"
+      }
+    },
+    "subtopic": {
+      "id": "equal-half-integrals-necessity",
+      "name": {
+        "zh": "两半区间积分相等的必要性",
+        "en": "Necessary conditions for equal half-interval integrals"
+      }
+    },
+    "prompt": "Read question 6 in the official TMUA 2020 Paper 2. Record your answer here.",
+    "options": [
+      "A",
+      "B",
+      "C",
+      "D",
+      "E",
+      "F",
+      "G",
+      "H"
+    ],
+    "correctIndex": 0,
+    "difficulty": "standard",
+    "external": {
+      "kind": "linked-paper",
+      "workedAnswersUrl": "https://uat-wp.s3.eu-west-2.amazonaws.com/wp-content/uploads/2024/05/07140952/TMUA-2020-paper-2-worked-answers.pdf",
+      "answerKeyUrl": "https://uat-wp.s3.eu-west-2.amazonaws.com/wp-content/uploads/2024/05/07140956/TMUA-2020-answer-keys.pdf",
+      "explanationReady": true
+    },
+    "explanation": {
+      "zh": {
+        "steps": [
+          "必要条件必须对所有满足积分等式的函数都成立；不能仅因一个条件能保证等式，就称它必要。",
+          "取 $f(x)=\\sin(2\\pi x)$，两半区间各含五个整周期，积分都为零，但函数不是偶函数，所以 I 不必要。",
+          "取 $f(x)=x^2$，两半区间积分相等，但它既非常数也非奇函数，因此 II、III 均不必要。选 A。"
+        ],
+        "pitfall": "偶函数与常数函数是充分条件，题目问的是必要条件；奇函数一般使两积分互为相反数。"
+      },
+      "en": {
+        "steps": [
+          "A necessary condition must hold for every function satisfying the integral equation; a condition that guarantees equality is only sufficient.",
+          "For $f(x)=\\sin(2\\pi x)$, each half contains five full periods, so both integrals are zero. The function is not even, showing I is not necessary.",
+          "For $f(x)=x^2$, the two integrals agree, but the function is neither constant nor odd. Thus II and III are not necessary either. Choose A."
+        ],
+        "pitfall": "Evenness and constancy are sufficient, while the question asks necessity. Oddness generally makes the two integrals opposite."
+      }
+    },
+    "source": {
+      "kind": "official-public",
+      "title": {
+        "zh": "TMUA 2020 Paper 2 · 官方原卷",
+        "en": "TMUA 2020 Paper 2 · official archive"
+      },
+      "url": "https://uat-wp.s3.eu-west-2.amazonaws.com/wp-content/uploads/2024/05/07140951/TMUA-2020-paper-2.pdf",
+      "originalNumber": "6",
+      "year": 2020,
+      "rightsNote": "Original papers and worked solutions: Cambridge University Press & Assessment / Cambridge Assessment; public archive provided by UAT-UK. No affiliation or endorsement."
+    }
+  },
+  {
+    "id": "ARCHIVE-TMUA-2020-P2-Q07",
+    "exam": "TMUA",
+    "moduleId": "p2",
+    "format": "latex",
+    "topic": {
+      "id": "reasoning",
+      "name": {
+        "zh": "逻辑与证明",
+        "en": "Logic & proof"
+      }
+    },
+    "subtopic": {
+      "id": "parallelogram-square-individual-tests",
+      "name": {
+        "zh": "平行四边形成为正方形的单项条件",
+        "en": "Individual square conditions for a parallelogram"
+      }
+    },
+    "prompt": "Read question 7 in the official TMUA 2020 Paper 2. Record your answer here.",
+    "options": [
+      "A",
+      "B",
+      "C",
+      "D",
+      "E",
+      "F",
+      "G",
+      "H"
+    ],
+    "correctIndex": 7,
+    "difficulty": "standard",
+    "external": {
+      "kind": "linked-paper",
+      "workedAnswersUrl": "https://uat-wp.s3.eu-west-2.amazonaws.com/wp-content/uploads/2024/05/07140952/TMUA-2020-paper-2-worked-answers.pdf",
+      "answerKeyUrl": "https://uat-wp.s3.eu-west-2.amazonaws.com/wp-content/uploads/2024/05/07140956/TMUA-2020-answer-keys.pdf",
+      "explanationReady": true
+    },
+    "explanation": {
+      "zh": {
+        "steps": [
+          "I 的相邻边等长只保证菱形，例如内角为 $60^\\circ$ 的菱形，不是正方形。",
+          "该非正方形菱形的对角线也互相垂直，因此 II 单独同样不充分。",
+          "III 的相邻内角相等，结合平行四边形邻角和为 180°，只保证矩形；长宽为 2 和 1 的矩形并非正方形。三项分别都不充分，选 H。"
+        ],
+        "pitfall": "题问每一项单独是否充分，不能把多个条件合并后判断。"
+      },
+      "en": {
+        "steps": [
+          "I gives a rhombus, which need not be a square; a rhombus with a 60° angle is a counterexample.",
+          "The diagonals of that non-square rhombus are also perpendicular, so II alone is not sufficient.",
+          "Equal adjacent angles in a parallelogram sum to 180°, giving a rectangle. A 2-by-1 rectangle is not a square. None is individually sufficient, so choose H."
+        ],
+        "pitfall": "Test each condition individually, not several conditions combined."
+      }
+    },
+    "source": {
+      "kind": "official-public",
+      "title": {
+        "zh": "TMUA 2020 Paper 2 · 官方原卷",
+        "en": "TMUA 2020 Paper 2 · official archive"
+      },
+      "url": "https://uat-wp.s3.eu-west-2.amazonaws.com/wp-content/uploads/2024/05/07140951/TMUA-2020-paper-2.pdf",
+      "originalNumber": "7",
+      "year": 2020,
+      "rightsNote": "Original papers and worked solutions: Cambridge University Press & Assessment / Cambridge Assessment; public archive provided by UAT-UK. No affiliation or endorsement."
+    }
+  },
+  {
+    "id": "ARCHIVE-TMUA-2020-P2-Q08",
+    "exam": "TMUA",
+    "moduleId": "p2",
+    "format": "latex",
+    "topic": {
+      "id": "reasoning",
+      "name": {
+        "zh": "逻辑与证明",
+        "en": "Logic & proof"
+      }
+    },
+    "subtopic": {
+      "id": "strict-triangle-inequality-counterexample",
+      "name": {
+        "zh": "严格三角不等式的反例",
+        "en": "A counterexample to a strict triangle inequality"
+      }
+    },
+    "prompt": "Read question 8 in the official TMUA 2020 Paper 2. Record your answer here.",
+    "options": [
+      "A",
+      "B",
+      "C",
+      "D",
+      "E",
+      "F",
+      "G",
+      "H"
+    ],
+    "correctIndex": 4,
+    "difficulty": "foundation",
+    "external": {
+      "kind": "linked-paper",
+      "workedAnswersUrl": "https://uat-wp.s3.eu-west-2.amazonaws.com/wp-content/uploads/2024/05/07140952/TMUA-2020-paper-2-worked-answers.pdf",
+      "answerKeyUrl": "https://uat-wp.s3.eu-west-2.amazonaws.com/wp-content/uploads/2024/05/07140956/TMUA-2020-answer-keys.pdf",
+      "explanationReady": true
+    },
+    "explanation": {
+      "zh": {
+        "steps": [
+          "断言是对所有实数 $a,b$ 都有严格不等式。只要找到一组不满足，就足以推翻全称断言。",
+          "学生取 $a=3,b=4$，两边都为 7，严格关系 $7<7$ 为假，是有效反例。",
+          "无需列出所有反例，也无需额外证明另一个正确的不等式。该证明完全正确，选 E。"
+        ],
+        "pitfall": "≤ 的三角不等式成立，不代表原题中的严格 < 对所有数成立。"
+      },
+      "en": {
+        "steps": [
+          "The claim asserts a strict inequality for every real pair. A single failing pair refutes the universal statement.",
+          "At $a=3,b=4$, both sides are 7 and $7<7$ is false, giving a valid counterexample.",
+          "No list of all counterexamples or proof of a different inequality is needed. The student’s proof is fully correct. Choose E."
+        ],
+        "pitfall": "The valid non-strict triangle inequality does not make the strict version universally true."
+      }
+    },
+    "source": {
+      "kind": "official-public",
+      "title": {
+        "zh": "TMUA 2020 Paper 2 · 官方原卷",
+        "en": "TMUA 2020 Paper 2 · official archive"
+      },
+      "url": "https://uat-wp.s3.eu-west-2.amazonaws.com/wp-content/uploads/2024/05/07140951/TMUA-2020-paper-2.pdf",
+      "originalNumber": "8",
+      "year": 2020,
+      "rightsNote": "Original papers and worked solutions: Cambridge University Press & Assessment / Cambridge Assessment; public archive provided by UAT-UK. No affiliation or endorsement."
+    }
+  },
+  {
+    "id": "ARCHIVE-TMUA-2020-P2-Q09",
+    "exam": "TMUA",
+    "moduleId": "p2",
+    "format": "latex",
+    "topic": {
+      "id": "trigonometry",
+      "name": {
+        "zh": "三角函数与方程",
+        "en": "Trigonometric functions & equations"
+      }
+    },
+    "subtopic": {
+      "id": "radian-input-degree-calculator",
+      "name": {
+        "zh": "弧度输入转换为角度计算",
+        "en": "Evaluating radians on a degree-mode calculator"
+      }
+    },
+    "prompt": "Read question 9 in the official TMUA 2020 Paper 2. Record your answer here.",
+    "options": [
+      "A",
+      "B",
+      "C",
+      "D",
+      "E",
+      "F",
+      "G",
+      "H"
+    ],
+    "correctIndex": 5,
+    "difficulty": "foundation",
+    "external": {
+      "kind": "linked-paper",
+      "workedAnswersUrl": "https://uat-wp.s3.eu-west-2.amazonaws.com/wp-content/uploads/2024/05/07140952/TMUA-2020-paper-2-worked-answers.pdf",
+      "answerKeyUrl": "https://uat-wp.s3.eu-west-2.amazonaws.com/wp-content/uploads/2024/05/07140956/TMUA-2020-answer-keys.pdf",
+      "explanationReady": true
+    },
+    "explanation": {
+      "zh": {
+        "steps": [
+          "所求为 $f(4)=4\\sin(4\\text{ radians})$，前面的乘数仍是普通数值 4。",
+          "弧度转角度乘以 $180/\\pi$，所以正弦计算器应输入 $180\\times4/\\pi$。",
+          "完整输入为 $4\\times\\sin(180\\times4/\\pi)$，选 F。"
+        ],
+        "pitfall": "只转换正弦内部角度，不要把前面的乘数 4 一并转换。"
+      },
+      "en": {
+        "steps": [
+          "The target is $f(4)=4\\sin(4\\text{ radians})$; the prefactor remains the number 4.",
+          "Convert radians to degrees by multiplying by $180/\\pi$, so the sine input is $180\\times4/\\pi$.",
+          "The complete input is $4\\times\\sin(180\\times4/\\pi)$. Choose F."
+        ],
+        "pitfall": "Convert only the sine argument, not the prefactor 4."
+      }
+    },
+    "source": {
+      "kind": "official-public",
+      "title": {
+        "zh": "TMUA 2020 Paper 2 · 官方原卷",
+        "en": "TMUA 2020 Paper 2 · official archive"
+      },
+      "url": "https://uat-wp.s3.eu-west-2.amazonaws.com/wp-content/uploads/2024/05/07140951/TMUA-2020-paper-2.pdf",
+      "originalNumber": "9",
+      "year": 2020,
+      "rightsNote": "Original papers and worked solutions: Cambridge University Press & Assessment / Cambridge Assessment; public archive provided by UAT-UK. No affiliation or endorsement."
+    }
+  },
+  {
+    "id": "ARCHIVE-TMUA-2020-P2-Q10",
+    "exam": "TMUA",
+    "moduleId": "p2",
+    "format": "latex",
+    "topic": {
+      "id": "reasoning",
+      "name": {
+        "zh": "逻辑与证明",
+        "en": "Logic & proof"
+      }
+    },
+    "subtopic": {
+      "id": "sum-inequalities-necessary-claims",
+      "name": {
+        "zh": "不等式相加与必然结论",
+        "en": "Necessary conclusions by adding inequalities"
+      }
+    },
+    "prompt": "Read question 10 in the official TMUA 2020 Paper 2. Record your answer here.",
+    "options": [
+      "A",
+      "B",
+      "C",
+      "D",
+      "E",
+      "F",
+      "G",
+      "H"
+    ],
+    "correctIndex": 5,
+    "difficulty": "standard",
+    "external": {
+      "kind": "linked-paper",
+      "workedAnswersUrl": "https://uat-wp.s3.eu-west-2.amazonaws.com/wp-content/uploads/2024/05/07140952/TMUA-2020-paper-2-worked-answers.pdf",
+      "answerKeyUrl": "https://uat-wp.s3.eu-west-2.amazonaws.com/wp-content/uploads/2024/05/07140956/TMUA-2020-answer-keys.pdf",
+      "explanationReady": true
+    },
+    "explanation": {
+      "zh": {
+        "steps": [
+          "将 $a+b<c+d$ 与 $a+c<b+d$ 相加，消去 $b+c$，得 $2a<2d$，所以 I 必真。",
+          "II 非必真：取 $(a,b,c,d)=(0,2,1,3)$，满足 $0<2<4$ 与 $0<1<5$，却有 $b>c$。",
+          "$a+b>0$，且 $c+d>a+b>0$，故总和 $a+b+c+d>0$，III 必真。I 与 III 对应 F。"
+        ],
+        "pitfall": "不能直接相减两条同方向不等式来比较 b 与 c；反例能检验是否必然。"
+      },
+      "en": {
+        "steps": [
+          "Adding $a+b<c+d$ and $a+c<b+d$ cancels $b+c$, giving $2a<2d$. Thus I is necessary.",
+          "II need not hold: $(a,b,c,d)=(0,2,1,3)$ satisfies $0<2<4$ and $0<1<5$, but has $b>c$.",
+          "Both $a+b$ and $c+d$ are positive, so their sum is positive. III is necessary. I and III give F."
+        ],
+        "pitfall": "Subtracting two inequalities does not safely compare b and c; test necessity with a counterexample."
+      }
+    },
+    "source": {
+      "kind": "official-public",
+      "title": {
+        "zh": "TMUA 2020 Paper 2 · 官方原卷",
+        "en": "TMUA 2020 Paper 2 · official archive"
+      },
+      "url": "https://uat-wp.s3.eu-west-2.amazonaws.com/wp-content/uploads/2024/05/07140951/TMUA-2020-paper-2.pdf",
+      "originalNumber": "10",
+      "year": 2020,
+      "rightsNote": "Original papers and worked solutions: Cambridge University Press & Assessment / Cambridge Assessment; public archive provided by UAT-UK. No affiliation or endorsement."
+    }
+  },
+  {
+    "id": "ARCHIVE-TMUA-2020-P2-Q11",
+    "exam": "TMUA",
+    "moduleId": "p2",
+    "format": "latex",
+    "topic": {
+      "id": "geometry",
+      "name": {
+        "zh": "几何",
+        "en": "Geometry"
+      }
+    },
+    "subtopic": {
+      "id": "square-spiral-coordinate-membership",
+      "name": {
+        "zh": "方形螺旋的坐标归属",
+        "en": "Membership of coordinates on a square spiral"
+      }
+    },
+    "prompt": "Read question 11 in the official TMUA 2020 Paper 2. Record your answer here.",
+    "options": [
+      "A",
+      "B",
+      "C",
+      "D",
+      "E",
+      "F",
+      "G",
+      "H"
+    ],
+    "correctIndex": 6,
+    "difficulty": "challenge",
+    "external": {
+      "kind": "linked-paper",
+      "workedAnswersUrl": "https://uat-wp.s3.eu-west-2.amazonaws.com/wp-content/uploads/2024/05/07140952/TMUA-2020-paper-2-worked-answers.pdf",
+      "answerKeyUrl": "https://uat-wp.s3.eu-west-2.amazonaws.com/wp-content/uploads/2024/05/07140956/TMUA-2020-answer-keys.pdf",
+      "explanationReady": true
+    },
+    "explanation": {
+      "zh": {
+        "steps": [
+          "按原图追踪：$(0,0)\\to(-2,0)\\to(-2,-2)\\to(2,-2)\\to(2,2)\\to(-4,2)$，随后继续扩展。",
+          "第 $n$ 层左边为 $x=-2n$，纵坐标从 $2n-2$ 到 $-2n$；右边 $x=2n$ 覆盖 $[-2n,2n]$。上、下横边经过该层两侧的内部坐标。",
+          "取 $n=50$，$x=-100$ 的竖边最高只到 $y=98$，所以 $(-100,99)$ 不在螺旋上；其余七个点分别位于 $y=\\pm100$、$x=100$ 或左竖边 $y=-99$，都在图线上。选 G。"
+        ],
+        "pitfall": "螺旋不是一组封闭正方形，左上方有进入下一层的缺口；需保留走线方向。"
+      },
+      "en": {
+        "steps": [
+          "Trace the original pattern: $(0,0)\\to(-2,0)\\to(-2,-2)\\to(2,-2)\\to(2,2)\\to(-4,2)$, then outward.",
+          "At layer $n$, the left edge $x=-2n$ runs from $y=2n-2$ down to $-2n$, while the right edge $x=2n$ covers $[-2n,2n]$. The horizontal edges contain the interior coordinates at the top and bottom.",
+          "At $n=50$, the vertical edge at $x=-100$ ends at $y=98$, so $(-100,99)$ is absent. The other seven lie on $y=\\pm100$, $x=100$, or the left edge at $y=-99$. Choose G."
+        ],
+        "pitfall": "The spiral is not a collection of closed squares; retain the upper-left gap and direction of progression."
+      }
+    },
+    "source": {
+      "kind": "official-public",
+      "title": {
+        "zh": "TMUA 2020 Paper 2 · 官方原卷",
+        "en": "TMUA 2020 Paper 2 · official archive"
+      },
+      "url": "https://uat-wp.s3.eu-west-2.amazonaws.com/wp-content/uploads/2024/05/07140951/TMUA-2020-paper-2.pdf",
+      "originalNumber": "11",
+      "year": 2020,
+      "rightsNote": "Original papers and worked solutions: Cambridge University Press & Assessment / Cambridge Assessment; public archive provided by UAT-UK. No affiliation or endorsement."
+    }
+  },
+  {
+    "id": "ARCHIVE-TMUA-2020-P2-Q12",
+    "exam": "TMUA",
+    "moduleId": "p2",
+    "format": "latex",
+    "topic": {
+      "id": "reasoning",
+      "name": {
+        "zh": "逻辑与证明",
+        "en": "Logic & proof"
+      }
+    },
+    "subtopic": {
+      "id": "trapezium-convexity-sufficient",
+      "name": {
+        "zh": "梯形估算与凸性的充分条件",
+        "en": "A sufficient convexity condition for trapezium overestimates"
+      }
+    },
+    "prompt": "Read question 12 in the official TMUA 2020 Paper 2. Record your answer here.",
+    "options": [
+      "A",
+      "B",
+      "C",
+      "D",
+      "E",
+      "F",
+      "G",
+      "H"
+    ],
+    "correctIndex": 3,
+    "difficulty": "standard",
+    "external": {
+      "kind": "linked-paper",
+      "workedAnswersUrl": "https://uat-wp.s3.eu-west-2.amazonaws.com/wp-content/uploads/2024/05/07140952/TMUA-2020-paper-2-worked-answers.pdf",
+      "answerKeyUrl": "https://uat-wp.s3.eu-west-2.amazonaws.com/wp-content/uploads/2024/05/07140956/TMUA-2020-answer-keys.pdf",
+      "explanationReady": true
+    },
+    "explanation": {
+      "zh": {
+        "steps": [
+          "$f^{\\prime\\prime}(x)>0$ 时图像严格凸，相邻取点的弦在图像上方，因此每个梯形面积都大于对应积分。",
+          "D 给出 $f^{\\prime}<0$ 且 $f^{\\prime\\prime}>0$，其中凸性已足以保证高估；递减条件不妨碍这个充分性，所以 D 正确。",
+          "该条件不必要：$f(x)=x^2+1$ 在 $[1,2]$ 递增且凸，梯形估算也高估。因此不能选“only if”或“if and only if”。凹函数则由弦产生低估。"
+        ],
+        "pitfall": "估算方向主要由凸凹性决定，单调方向不是必要条件；注意 if 与 only if 的方向。"
+      },
+      "en": {
+        "steps": [
+          "When $f^{\\prime\\prime}(x)>0$, the graph is strictly convex. Chords lie above it, so each trapezium overestimates its integral.",
+          "D supplies $f^{\\prime}<0$ and $f^{\\prime\\prime}>0$. Convexity is sufficient, and decreasing behaviour does not invalidate that guarantee. Thus D is correct.",
+          "The condition is not necessary: $f(x)=x^2+1$ on $[1,2]$ increases and is convex, yet trapezia overestimate. Thus “only if” and “if and only if” fail. Concave graphs give underestimates."
+        ],
+        "pitfall": "Convexity controls the error direction; monotonicity is not necessary. Distinguish “if” from “only if”."
+      }
+    },
+    "source": {
+      "kind": "official-public",
+      "title": {
+        "zh": "TMUA 2020 Paper 2 · 官方原卷",
+        "en": "TMUA 2020 Paper 2 · official archive"
+      },
+      "url": "https://uat-wp.s3.eu-west-2.amazonaws.com/wp-content/uploads/2024/05/07140951/TMUA-2020-paper-2.pdf",
+      "originalNumber": "12",
+      "year": 2020,
+      "rightsNote": "Original papers and worked solutions: Cambridge University Press & Assessment / Cambridge Assessment; public archive provided by UAT-UK. No affiliation or endorsement."
+    }
+  },
+  {
+    "id": "ARCHIVE-TMUA-2020-P2-Q13",
+    "exam": "TMUA",
+    "moduleId": "p2",
+    "format": "latex",
+    "topic": {
+      "id": "reasoning",
+      "name": {
+        "zh": "逻辑与证明",
+        "en": "Logic & proof"
+      }
+    },
+    "subtopic": {
+      "id": "nonnegative-square-integral-claims",
+      "name": {
+        "zh": "平方积分非负与必然结论",
+        "en": "Necessary consequences of a nonnegative square integral"
+      }
+    },
+    "prompt": "Read question 13 in the official TMUA 2020 Paper 2. Record your answer here.",
+    "options": [
+      "A",
+      "B",
+      "C",
+      "D",
+      "E",
+      "F",
+      "G",
+      "H"
+    ],
+    "correctIndex": 3,
+    "difficulty": "standard",
+    "external": {
+      "kind": "linked-paper",
+      "workedAnswersUrl": "https://uat-wp.s3.eu-west-2.amazonaws.com/wp-content/uploads/2024/05/07140952/TMUA-2020-paper-2-worked-answers.pdf",
+      "answerKeyUrl": "https://uat-wp.s3.eu-west-2.amazonaws.com/wp-content/uploads/2024/05/07140956/TMUA-2020-answer-keys.pdf",
+      "explanationReady": true
+    },
+    "explanation": {
+      "zh": {
+        "steps": [
+          "记 $A=\\int_0^3f(x)^2\\,dx\\geq0$。题给等式直接得 $\\int_0^3f(x)\\,dx=\\int_0^1f(x)\\,dx-A$，所以 II 必真。",
+          "进一步相减得 $\\int_1^3f(x)\\,dx=-A\\leq0$。",
+          "若 $f$ 在整个 $[1,3]$ 都严格为正，其积分会为正，矛盾。因此至少有一点满足 $f(x)\\leq0$，I 也必真。两者都成立，选 D。"
+        ],
+        "pitfall": "I 只要求存在一个非正值，不代表整个区间都非正；f² 的积分不能为负。"
+      },
+      "en": {
+        "steps": [
+          "Let $A=\\int_0^3f(x)^2\\,dx\\geq0$. The equation gives $\\int_0^3f=\\int_0^1f-A$, proving II.",
+          "Subtracting the integrals gives $\\int_1^3f(x)\\,dx=-A\\leq0$.",
+          "If $f$ were strictly positive throughout $[1,3]$, its integral would be positive, a contradiction. Thus I also holds: some point has $f(x)\\leq0$. Choose D."
+        ],
+        "pitfall": "I asserts existence of a nonpositive value, not nonpositivity everywhere; an integral of f² is nonnegative."
+      }
+    },
+    "source": {
+      "kind": "official-public",
+      "title": {
+        "zh": "TMUA 2020 Paper 2 · 官方原卷",
+        "en": "TMUA 2020 Paper 2 · official archive"
+      },
+      "url": "https://uat-wp.s3.eu-west-2.amazonaws.com/wp-content/uploads/2024/05/07140951/TMUA-2020-paper-2.pdf",
+      "originalNumber": "13",
+      "year": 2020,
+      "rightsNote": "Original papers and worked solutions: Cambridge University Press & Assessment / Cambridge Assessment; public archive provided by UAT-UK. No affiliation or endorsement."
+    }
+  },
+  {
+    "id": "ARCHIVE-TMUA-2020-P2-Q14",
+    "exam": "TMUA",
+    "moduleId": "p2",
+    "format": "latex",
+    "topic": {
+      "id": "reasoning",
+      "name": {
+        "zh": "逻辑与证明",
+        "en": "Logic & proof"
+      }
+    },
+    "subtopic": {
+      "id": "arithmetic-sum-equality-integer-m",
+      "name": {
+        "zh": "等差前缀和相等的整数限制",
+        "en": "An integer constraint from equal arithmetic prefix sums"
+      }
+    },
+    "prompt": "Read question 14 in the official TMUA 2020 Paper 2. Record your answer here.",
+    "options": [
+      "A",
+      "B",
+      "C",
+      "D",
+      "E",
+      "F",
+      "G",
+      "H"
+    ],
+    "correctIndex": 0,
+    "difficulty": "standard",
+    "external": {
+      "kind": "linked-paper",
+      "workedAnswersUrl": "https://uat-wp.s3.eu-west-2.amazonaws.com/wp-content/uploads/2024/05/07140952/TMUA-2020-paper-2-worked-answers.pdf",
+      "answerKeyUrl": "https://uat-wp.s3.eu-west-2.amazonaws.com/wp-content/uploads/2024/05/07140956/TMUA-2020-answer-keys.pdf",
+      "explanationReady": true
+    },
+    "explanation": {
+      "zh": {
+        "steps": [
+          "用 $S_m=m[2a+(m-1)d]/2$ 与 $S_{2m}=m[2a+(2m-1)d]$，相等化简为 $2a+(3m-1)d=0$。",
+          "I 不充分：取 $a=1,d=-2$，虽 $ad<0$，但方程要求 $m=2/3$，不是正整数。",
+          "II 不必要：取 $a=1,d=-1,m=1$，有 $S_1=1=S_2$，公差却为奇数。两个断言均假，选 A。"
+        ],
+        "pitfall": "m 必须为正整数；异号条件无法保证这个整除要求。"
+      },
+      "en": {
+        "steps": [
+          "Using $S_m=m[2a+(m-1)d]/2$ and $S_{2m}=m[2a+(2m-1)d]$, equality simplifies to $2a+(3m-1)d=0$.",
+          "I is not sufficient: $a=1,d=-2$ has $ad<0$, but the equation requires $m=2/3$, not a positive integer.",
+          "II is not necessary: $a=1,d=-1,m=1$ gives $S_1=1=S_2$ with odd difference. Neither assertion holds. Choose A."
+        ],
+        "pitfall": "The value of m must be a positive integer; opposite signs do not ensure integrality."
+      }
+    },
+    "source": {
+      "kind": "official-public",
+      "title": {
+        "zh": "TMUA 2020 Paper 2 · 官方原卷",
+        "en": "TMUA 2020 Paper 2 · official archive"
+      },
+      "url": "https://uat-wp.s3.eu-west-2.amazonaws.com/wp-content/uploads/2024/05/07140951/TMUA-2020-paper-2.pdf",
+      "originalNumber": "14",
+      "year": 2020,
+      "rightsNote": "Original papers and worked solutions: Cambridge University Press & Assessment / Cambridge Assessment; public archive provided by UAT-UK. No affiliation or endorsement."
+    }
+  },
+  {
+    "id": "ARCHIVE-TMUA-2020-P2-Q15",
+    "exam": "TMUA",
+    "moduleId": "p2",
+    "format": "latex",
+    "topic": {
+      "id": "sequences",
+      "name": {
+        "zh": "数列与级数",
+        "en": "Sequences & series"
+      }
+    },
+    "subtopic": {
+      "id": "periodic-sine-partial-sums",
+      "name": {
+        "zh": "周期正弦项的部分和",
+        "en": "Partial sums of a periodic sine sequence"
+      }
+    },
+    "prompt": "Read question 15 in the official TMUA 2020 Paper 2. Record your answer here.",
+    "options": [
+      "A",
+      "B",
+      "C",
+      "D",
+      "E",
+      "F",
+      "G",
+      "H"
+    ],
+    "correctIndex": 3,
+    "difficulty": "standard",
+    "external": {
+      "kind": "linked-paper",
+      "workedAnswersUrl": "https://uat-wp.s3.eu-west-2.amazonaws.com/wp-content/uploads/2024/05/07140952/TMUA-2020-paper-2-worked-answers.pdf",
+      "answerKeyUrl": "https://uat-wp.s3.eu-west-2.amazonaws.com/wp-content/uploads/2024/05/07140956/TMUA-2020-answer-keys.pdf",
+      "explanationReady": true
+    },
+    "explanation": {
+      "zh": {
+        "steps": [
+          "令 $h=\\sqrt3/2$。$\\sin(k\\pi/3)$ 每六项依次为 $h,h,0,-h,-h,0$，一周期总和为零。",
+          "周期内第 1 至第 6 项的部分和依次为 $h,2h,2h,h,0,0$。",
+          "总和等于 $h$ 当且仅当 $n\\equiv1$ 或 $4\\pmod6$，等价于 $n\\equiv1\\pmod3$，即比 3 的倍数多 1，选 D。"
+        ],
+        "pitfall": "只检查 n=1 会漏掉 n=4；项的周期与部分和的满足条件要分别考虑。"
+      },
+      "en": {
+        "steps": [
+          "Write $h=\\sqrt3/2$. Each six-term period is $h,h,0,-h,-h,0$, summing to zero.",
+          "The within-period partial sums are $h,2h,2h,h,0,0$.",
+          "The sum equals $h$ exactly when $n\\equiv1$ or $4\\pmod6$, equivalently $n\\equiv1\\pmod3$. Choose D."
+        ],
+        "pitfall": "Checking only n=1 misses n=4; examine the partial sums within a full period."
+      }
+    },
+    "source": {
+      "kind": "official-public",
+      "title": {
+        "zh": "TMUA 2020 Paper 2 · 官方原卷",
+        "en": "TMUA 2020 Paper 2 · official archive"
+      },
+      "url": "https://uat-wp.s3.eu-west-2.amazonaws.com/wp-content/uploads/2024/05/07140951/TMUA-2020-paper-2.pdf",
+      "originalNumber": "15",
+      "year": 2020,
+      "rightsNote": "Original papers and worked solutions: Cambridge University Press & Assessment / Cambridge Assessment; public archive provided by UAT-UK. No affiliation or endorsement."
+    }
+  },
+  {
+    "id": "ARCHIVE-TMUA-2020-P2-Q16",
+    "exam": "TMUA",
+    "moduleId": "p2",
+    "format": "latex",
+    "topic": {
+      "id": "calculus",
+      "name": {
+        "zh": "微积分",
+        "en": "Calculus"
+      }
+    },
+    "subtopic": {
+      "id": "variable-integral-limit-chain-rule",
+      "name": {
+        "zh": "积分变上限求导的链式法则",
+        "en": "The chain rule with variable integral limits"
+      }
+    },
+    "prompt": "Read question 16 in the official TMUA 2020 Paper 2. Record your answer here.",
+    "options": [
+      "A",
+      "B",
+      "C",
+      "D",
+      "E",
+      "F",
+      "G",
+      "H"
+    ],
+    "correctIndex": 3,
+    "difficulty": "standard",
+    "external": {
+      "kind": "linked-paper",
+      "workedAnswersUrl": "https://uat-wp.s3.eu-west-2.amazonaws.com/wp-content/uploads/2024/05/07140952/TMUA-2020-paper-2-worked-answers.pdf",
+      "answerKeyUrl": "https://uat-wp.s3.eu-west-2.amazonaws.com/wp-content/uploads/2024/05/07140956/TMUA-2020-answer-keys.pdf",
+      "explanationReady": true
+    },
+    "explanation": {
+      "zh": {
+        "steps": [
+          "I 的积分拆分恒成立，包括 $x<0$ 时的有向积分；II 对上限为 $x$ 的积分使用微积分基本定理正确。",
+          "III 的上限是 $2x$，必须再乘其导数 2：$\\frac{d}{dx}\\int_0^{2x}t^2\\,dt=(2x)^2\\times2=8x^2$。",
+          "因此首错在 III，选 D。正确的最终导数为 $8x^2-x^2=7x^2$，也可由原积分 $7x^3/3$ 求导核对。"
+        ],
+        "pitfall": "变上限不等于直接代入上限；必须乘上限函数的导数。"
+      },
+      "en": {
+        "steps": [
+          "The split in I is valid for directed integrals, even when $x<0$. Applying FTC to the upper limit $x$ in II is also correct.",
+          "Line III has upper limit $2x$ and needs the chain factor 2: $\\frac{d}{dx}\\int_0^{2x}t^2\\,dt=(2x)^2\\times2=8x^2$.",
+          "The first error is III, so choose D. The correct final derivative is $7x^2$, consistent with differentiating the integral $7x^3/3$."
+        ],
+        "pitfall": "With a variable limit, multiply the substituted integrand by the derivative of that limit."
+      }
+    },
+    "source": {
+      "kind": "official-public",
+      "title": {
+        "zh": "TMUA 2020 Paper 2 · 官方原卷",
+        "en": "TMUA 2020 Paper 2 · official archive"
+      },
+      "url": "https://uat-wp.s3.eu-west-2.amazonaws.com/wp-content/uploads/2024/05/07140951/TMUA-2020-paper-2.pdf",
+      "originalNumber": "16",
+      "year": 2020,
+      "rightsNote": "Original papers and worked solutions: Cambridge University Press & Assessment / Cambridge Assessment; public archive provided by UAT-UK. No affiliation or endorsement."
+    }
+  },
+  {
+    "id": "ARCHIVE-TMUA-2020-P2-Q17",
+    "exam": "TMUA",
+    "moduleId": "p2",
+    "format": "latex",
+    "topic": {
+      "id": "algebra",
+      "name": {
+        "zh": "代数",
+        "en": "Algebra"
+      }
+    },
+    "subtopic": {
+      "id": "distinct-integer-mean-median-range",
+      "name": {
+        "zh": "不同整数的均值中位数与极差",
+        "en": "Range of distinct integers with given means and medians"
+      }
+    },
+    "prompt": "Read question 17 in the official TMUA 2020 Paper 2. Record your answer here.",
+    "options": [
+      "A",
+      "B",
+      "C",
+      "D",
+      "E",
+      "F",
+      "G",
+      "H"
+    ],
+    "correctIndex": 4,
+    "difficulty": "challenge",
+    "external": {
+      "kind": "linked-paper",
+      "workedAnswersUrl": "https://uat-wp.s3.eu-west-2.amazonaws.com/wp-content/uploads/2024/05/07140952/TMUA-2020-paper-2-worked-answers.pdf",
+      "answerKeyUrl": "https://uat-wp.s3.eu-west-2.amazonaws.com/wp-content/uploads/2024/05/07140956/TMUA-2020-answer-keys.pdf",
+      "explanationReady": true
+    },
+    "explanation": {
+      "zh": {
+        "steps": [
+          "按顺序写为 $(a,8,b)$ 与 $(c,9,d)$，均值给出 $a+b=22,c+d=27$。不同整数要求 $a\\leq7$；$c<9$ 且不能等于已有的 8，所以 $c\\leq7$。",
+          "由 $c\\leq7$ 得 $d\\geq20$。又 $a,c$ 为两个不同整数且都不超过 7，较小者至少低至 6，即 $\\min(a,c)\\leq6$。",
+          "因此六数极差至少 $20-6=14$。取两组 $(6,8,16)$ 与 $(7,9,20)$，均值中位数均满足且六数不同，达到极差 14，选 E。"
+        ],
+        "pitfall": "六个整数在两组之间也必须互不相同，不能重复使用 8、9 或较小数。"
+      },
+      "en": {
+        "steps": [
+          "Write the ordered triples as $(a,8,b)$ and $(c,9,d)$. The means give $a+b=22,c+d=27$. Distinctness requires $a\\leq7$ and $c\\leq7$, since c cannot equal the already-used 8.",
+          "Since $c\\leq7$, $d\\geq20$. As a and c are distinct integers at most 7, $\\min(a,c)\\leq6$.",
+          "The range is therefore at least $20-6=14$. The triples $(6,8,16)$ and $(7,9,20)$ satisfy all requirements and attain range 14. Choose E."
+        ],
+        "pitfall": "Distinctness applies across both triples, not just within each triple."
+      }
+    },
+    "source": {
+      "kind": "official-public",
+      "title": {
+        "zh": "TMUA 2020 Paper 2 · 官方原卷",
+        "en": "TMUA 2020 Paper 2 · official archive"
+      },
+      "url": "https://uat-wp.s3.eu-west-2.amazonaws.com/wp-content/uploads/2024/05/07140951/TMUA-2020-paper-2.pdf",
+      "originalNumber": "17",
+      "year": 2020,
+      "rightsNote": "Original papers and worked solutions: Cambridge University Press & Assessment / Cambridge Assessment; public archive provided by UAT-UK. No affiliation or endorsement."
+    }
+  },
+  {
+    "id": "ARCHIVE-TMUA-2020-P2-Q18",
+    "exam": "TMUA",
+    "moduleId": "p2",
+    "format": "latex",
+    "topic": {
+      "id": "reasoning",
+      "name": {
+        "zh": "逻辑与证明",
+        "en": "Logic & proof"
+      }
+    },
+    "subtopic": {
+      "id": "positive-cubic-difference-coefficients",
+      "name": {
+        "zh": "三次函数差恒正的系数条件",
+        "en": "Coefficient conditions for a globally positive cubic difference"
+      }
+    },
+    "prompt": "Read question 18 in the official TMUA 2020 Paper 2. Record your answer here.",
+    "options": [
+      "A",
+      "B",
+      "C",
+      "D",
+      "E",
+      "F",
+      "G",
+      "H"
+    ],
+    "correctIndex": 6,
+    "difficulty": "standard",
+    "external": {
+      "kind": "linked-paper",
+      "workedAnswersUrl": "https://uat-wp.s3.eu-west-2.amazonaws.com/wp-content/uploads/2024/05/07140952/TMUA-2020-paper-2-worked-answers.pdf",
+      "answerKeyUrl": "https://uat-wp.s3.eu-west-2.amazonaws.com/wp-content/uploads/2024/05/07140956/TMUA-2020-answer-keys.pdf",
+      "explanationReady": true
+    },
+    "explanation": {
+      "zh": {
+        "steps": [
+          "$f-g$ 的三次项若非零，在正负无穷处符号相反，不可能处处为正。因此必须 $a=p$，I 的 $a>p$ 反而不成立。",
+          "若再有 $b=q$，差式变成 $(c-r)x+(d-s)$。非零一次系数同样不能处处为正，所以必须 $c=r$，II 必真。",
+          "令 $x=0$ 得 $d-s>0$，III 必真。因此 II 与 III，对应 G。"
+        ],
+        "pitfall": "两个三次多项式相减后可以降次，不能假设差式仍是三次。"
+      },
+      "en": {
+        "steps": [
+          "If the cubic coefficient of $f-g$ were nonzero, the signs at the two infinities would differ. Global positivity requires $a=p$, so I fails.",
+          "If also $b=q$, the difference is $(c-r)x+(d-s)$. A nonzero linear coefficient cannot stay positive everywhere, so $c=r$. II is necessary.",
+          "At $x=0$, positivity gives $d-s>0$, proving III. II and III correspond to G."
+        ],
+        "pitfall": "The difference of two cubics may have lower degree; do not assume it remains cubic."
+      }
+    },
+    "source": {
+      "kind": "official-public",
+      "title": {
+        "zh": "TMUA 2020 Paper 2 · 官方原卷",
+        "en": "TMUA 2020 Paper 2 · official archive"
+      },
+      "url": "https://uat-wp.s3.eu-west-2.amazonaws.com/wp-content/uploads/2024/05/07140951/TMUA-2020-paper-2.pdf",
+      "originalNumber": "18",
+      "year": 2020,
+      "rightsNote": "Original papers and worked solutions: Cambridge University Press & Assessment / Cambridge Assessment; public archive provided by UAT-UK. No affiliation or endorsement."
+    }
+  },
+  {
+    "id": "ARCHIVE-TMUA-2020-P2-Q19",
+    "exam": "TMUA",
+    "moduleId": "p2",
+    "format": "latex",
+    "topic": {
+      "id": "reasoning",
+      "name": {
+        "zh": "逻辑与证明",
+        "en": "Logic & proof"
+      }
+    },
+    "subtopic": {
+      "id": "grid-truth-liar-extremes",
+      "name": {
+        "zh": "网格真话者与说谎者的数量界",
+        "en": "Extremal truth-teller counts on a grid"
+      }
+    },
+    "prompt": "Read question 19 in the official TMUA 2020 Paper 2. Record your answer here.",
+    "options": [
+      "A",
+      "B",
+      "C",
+      "D",
+      "E",
+      "F",
+      "G",
+      "H"
+    ],
+    "correctIndex": 4,
+    "difficulty": "challenge",
+    "external": {
+      "kind": "linked-paper",
+      "workedAnswersUrl": "https://uat-wp.s3.eu-west-2.amazonaws.com/wp-content/uploads/2024/05/07140952/TMUA-2020-paper-2-worked-answers.pdf",
+      "answerKeyUrl": "https://uat-wp.s3.eu-west-2.amazonaws.com/wp-content/uploads/2024/05/07140956/TMUA-2020-answer-keys.pdf",
+      "explanationReady": true
+    },
+    "explanation": {
+      "zh": {
+        "steps": [
+          "真话者 T 的所有邻居必须为 L；说谎者 L 至少有一个 T 邻居，否则“邻居全说谎”会成为真话。这两项条件必须同时满足。",
+          "若中心为 T，四个边中点为 L，每个角的邻居又都为 L，所以四角必须为 T，得到 5 人。若中心为 L，任何 T 至多有三个邻居，连自己最多覆盖四个格子，两名 T 无法让九格都得到所需覆盖，因此至少 3 人。",
+          "3 人可实现：三行分别为 LTL / LLL / TLT，每个 L 都邻接至少一个 T，且 T 互不邻接。",
+          "最多为 5：把左上—上中、右上—右中、左中—左下、下中—右下分为四对邻接格，另留中心；每对至多一 T，所以至多 $4+1=5$。中心和四角为 T 正好达到。最少 3、最多 5，选 E。"
+        ],
+        "pitfall": "说谎者的句子为假表示至少一位邻居说真话，并不表示每位邻居都说真话。"
+      },
+      "en": {
+        "steps": [
+          "Every truth-teller T has only L neighbours; every liar L needs at least one T neighbour, otherwise the statement would be true. Both conditions are required.",
+          "If the centre is T, all four edge-middle cells are L and each corner must be T, giving 5. If the centre is L, any T has at most three neighbours and covers at most four cells including itself. Two T cells cannot cover all nine, so at least 3 are needed.",
+          "Three are possible with rows LTL / LLL / TLT: every L has a T neighbour and no T cells are adjacent.",
+          "For the upper bound, pair top-left with top-middle, top-right with middle-right, middle-left with bottom-left, and bottom-middle with bottom-right, leaving the centre. Each adjacent pair has at most one T, so at most 5 are possible. Centre plus four corners attain 5. Choose E: minimum 3, maximum 5."
+        ],
+        "pitfall": "A liar’s false claim means at least one neighbour is truthful, not that all neighbours are truthful."
+      }
+    },
+    "source": {
+      "kind": "official-public",
+      "title": {
+        "zh": "TMUA 2020 Paper 2 · 官方原卷",
+        "en": "TMUA 2020 Paper 2 · official archive"
+      },
+      "url": "https://uat-wp.s3.eu-west-2.amazonaws.com/wp-content/uploads/2024/05/07140951/TMUA-2020-paper-2.pdf",
+      "originalNumber": "19",
+      "year": 2020,
+      "rightsNote": "Original papers and worked solutions: Cambridge University Press & Assessment / Cambridge Assessment; public archive provided by UAT-UK. No affiliation or endorsement."
+    }
+  },
+  {
+    "id": "ARCHIVE-TMUA-2020-P2-Q20",
+    "exam": "TMUA",
+    "moduleId": "p2",
+    "format": "latex",
+    "topic": {
+      "id": "reasoning",
+      "name": {
+        "zh": "逻辑与证明",
+        "en": "Logic & proof"
+      }
+    },
+    "subtopic": {
+      "id": "single-true-function-implication",
+      "name": {
+        "zh": "函数条件句中唯一真断言",
+        "en": "A uniquely true conditional assertion about a function"
+      }
+    },
+    "prompt": "Read question 20 in the official TMUA 2020 Paper 2. Record your answer here.",
+    "options": [
+      "A",
+      "B",
+      "C",
+      "D",
+      "E",
+      "F",
+      "G",
+      "H"
+    ],
+    "correctIndex": 2,
+    "difficulty": "challenge",
+    "external": {
+      "kind": "linked-paper",
+      "workedAnswersUrl": "https://uat-wp.s3.eu-west-2.amazonaws.com/wp-content/uploads/2024/05/07140952/TMUA-2020-paper-2-worked-answers.pdf",
+      "answerKeyUrl": "https://uat-wp.s3.eu-west-2.amazonaws.com/wp-content/uploads/2024/05/07140956/TMUA-2020-answer-keys.pdf",
+      "explanationReady": true
+    },
+    "explanation": {
+      "zh": {
+        "steps": [
+          "按官方详解将各项视作关于函数的整体条件断言。A 与 B 互为逆否命题，所以真值相同；D 与 E 也互为逆否命题。",
+          "既然恰有一项为真，两组等价项 A/B、D/E 必须都为假。F 的双条件包含 B，所以 F 若真还会使 B 真，也必须排除。",
+          "唯一剩下 C：若 $x\\geq0$，则 $f(x)\\geq0$。用 $f(x)=|x|$ 的全实数函数断言检验，C 为真而其余五项均不对所有 $x$ 成立。",
+          "解读说明：若固定单个 $x$ 并按材料蕴含逐项作真值表，没有“恰一项真”的情形。原题措辞有歧义；这里沿用官方对整体函数条件的解读与答案 C。"
+        ],
+        "pitfall": "only if 与 if 的箭头方向不同；先识别逆否等价，并留意整体函数断言与单点真值的区别。"
+      },
+      "en": {
+        "steps": [
+          "Following the official worked solution, treat the options as assertions about the function as a whole. A and B are contrapositives and have the same truth value; so do D and E.",
+          "With exactly one true assertion, the equivalent pairs A/B and D/E must be false. F includes B, so if F were true, B would also be true; exclude F too.",
+          "Only C remains: if $x\\geq0$, then $f(x)\\geq0$. As global assertions, the function $f(x)=|x|$ makes C true and each other assertion fail for some x.",
+          "Interpretation note: for a single fixed x under material implication, a truth table has no case with exactly one true option. The wording is ambiguous; this review follows the official global-function interpretation and answer C."
+        ],
+        "pitfall": "“Only if” and “if” point in different directions; distinguish global function assertions from truth values at one fixed input."
+      }
+    },
+    "source": {
+      "kind": "official-public",
+      "title": {
+        "zh": "TMUA 2020 Paper 2 · 官方原卷",
+        "en": "TMUA 2020 Paper 2 · official archive"
+      },
+      "url": "https://uat-wp.s3.eu-west-2.amazonaws.com/wp-content/uploads/2024/05/07140951/TMUA-2020-paper-2.pdf",
+      "originalNumber": "20",
+      "year": 2020,
+      "rightsNote": "Original papers and worked solutions: Cambridge University Press & Assessment / Cambridge Assessment; public archive provided by UAT-UK. No affiliation or endorsement."
+    }
+  }
+]

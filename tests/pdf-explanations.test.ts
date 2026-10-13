@@ -4,7 +4,7 @@ import { mkdtempSync, readFileSync, writeFileSync, rmSync } from 'node:fs';
 import { tmpdir } from 'node:os';
 import { join } from 'node:path';
 import { execFileSync } from 'node:child_process';
-import { PDF_2021_P1, PDF_2021_P2, PAST_PAPERS, linkedQuestions, pastPaperPlan } from '../src/data/pastPapers';
+import { PDF_2021_P1, PDF_2021_P2, PDF_2020_P1, PDF_2020_P2, PAST_PAPERS, linkedQuestions, pastPaperPlan } from '../src/data/pastPapers';
 import { hasBilingualExplanation, hasTopicClassification } from '../src/questionCapabilities';
 import { closeSection, createSession, summary, startNextSection, topicRecommendations, notebookQuestions } from '../src/domain';
 import { emptyState, loadState, validQuestion } from '../src/storage';
@@ -12,26 +12,26 @@ import { validateQuestionBank } from '../src/questionBank';
 import { QUESTIONS } from '../src/data/questions';
 
 describe('reviewed explanations independent of PDF reading', () => {
- it('keeps 40 PDF questions with stable provenance, independent keys and valid bilingual formulas', () => {
-  for (const [questions, moduleId, key] of [[PDF_2021_P1,'p1','FFGBFDGACBAECBCBABBD'],[PDF_2021_P2,'p2','DECCBDBCCECBACBEFCFE']] as const) {
-   const paper=PAST_PAPERS.find(p=>p.year===2021&&p.moduleId===moduleId)!;
+ it('keeps 80 PDF questions with stable provenance, independent keys and valid bilingual formulas', () => {
+  for (const [year, questions, moduleId, key] of [[2021,PDF_2021_P1,'p1','FFGBFDGACBAECBCBABBD'],[2021,PDF_2021_P2,'p2','DECCBDBCCECBACBEFCFE'],[2020,PDF_2020_P1,'p1','CCBDACADCAEDFECCAAEC'],[2020,PDF_2020_P2,'p2','EFCGAAHEFFGDDADDEGEC']] as const) {
+   const paper=PAST_PAPERS.find(p=>p.year===year&&p.moduleId===moduleId)!;
    expect(questions.map(q=>String.fromCharCode(65+q.correctIndex)).join('')).toBe(key);
    expect(questions).toHaveLength(20);
    questions.forEach((q,i)=>{
     expect(validQuestion(q)).toBe(true);expect(hasBilingualExplanation(q)&&hasTopicClassification(q)).toBe(true);
     expect(q.external).toMatchObject({kind:'linked-paper',explanationReady:true,workedAnswersUrl:paper.workedAnswersUrl});
-    expect(q.source).toMatchObject({year:2021,url:paper.paperUrl,originalNumber:String(i+1)});
-    expect(q.id).toBe(`ARCHIVE-TMUA-2021-${moduleId.toUpperCase()}-Q${String(i+1).padStart(2,'0')}`);
+    expect(q.source).toMatchObject({year,url:paper.paperUrl,originalNumber:String(i+1)});
+    expect(q.id).toBe(`ARCHIVE-TMUA-${year}-${moduleId.toUpperCase()}-Q${String(i+1).padStart(2,'0')}`);
     expect(q.options).toEqual([...'ABCDEFGH']);expect(q.diagram).toBeUndefined();
-    expect(q.prompt).toBe(`Read question ${i+1} in the official TMUA 2021 Paper ${moduleId.slice(1)}. Record your answer here.`);
+    expect(q.prompt).toBe(`Read question ${i+1} in the official TMUA ${year} Paper ${moduleId.slice(1)}. Record your answer here.`);
     for(const text of [...q.explanation.zh.steps,...q.explanation.en.steps,q.explanation.zh.pitfall,q.explanation.en.pitfall])for(const part of text.match(/\$\$[\s\S]+?\$\$|\$[^$\n]+?\$/g)??[]){const display=part.startsWith('$$');expect(()=>katex.renderToString(part.slice(display?2:1,display?-2:-1),{throwOnError:true,strict:'error',trust:false})).not.toThrow();}
    });
   }
   const all=PAST_PAPERS.flatMap(linkedQuestions);
   expect(all).toHaveLength(320);expect(new Set(all.map(q=>q.id)).size).toBe(320);
   expect(all.filter(q=>!q.external)).toHaveLength(80);
-  expect(all.filter(q=>q.external&&hasBilingualExplanation(q))).toHaveLength(40);
-  expect(all.filter(q=>!hasBilingualExplanation(q))).toHaveLength(200);
+  expect(all.filter(q=>q.external&&hasBilingualExplanation(q))).toHaveLength(80);
+  expect(all.filter(q=>!hasBilingualExplanation(q))).toHaveLength(160);
   expect(validateQuestionBank({schemaVersion:1,questions:[...QUESTIONS,...all]}).ok).toBe(true);
  });
  it('supports classified PDF recommendations while preserving and upgrading old notebook snapshots',()=>{
